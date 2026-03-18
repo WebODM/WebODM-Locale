@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-26 03:13+0000\n"
-"PO-Revision-Date: 2026-03-05 19:44+0000\n"
+"PO-Revision-Date: 2026-03-18 15:10+0000\n"
 "Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "pl/>\n"
@@ -434,40 +434,36 @@ msgid "Permissions"
 msgstr "Uprawnienia"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:21
-#, fuzzy
-#| msgid "Start Processing"
 msgid "Input & Preprocessing"
-msgstr "Rozpocznij przetwarzanie"
+msgstr "Dane wejściowe i Przetwarzanie"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:24
-#, fuzzy
-#| msgid "Camera Animation"
 msgid "Camera Configuration"
-msgstr "Animacja kamery"
+msgstr "Konfiguracja kamery"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:25
 msgid "Masking"
-msgstr ""
+msgstr "Maskowanie"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Multispectral"
-msgstr ""
+msgstr "Wielospektralne"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Video Input"
-msgstr ""
+msgstr "Wejście wideo"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:32
 msgid "Bounds & Cropping"
-msgstr ""
+msgstr "Granice i przycinanie"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:35
 msgid "Boundary"
-msgstr ""
+msgstr "Granica"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:40
 msgid "Coordinate Reference System"
-msgstr ""
+msgstr "Układ odniesień przestrzennych (CRS)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:43
 #: app/static/app/js/components/EditTaskForm.jsx:625
@@ -476,115 +472,91 @@ msgstr "Opcje"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:51
 msgid "Feature Extraction"
-msgstr ""
+msgstr "Wykrywanie obiektów"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:52
 msgid "Feature Matching"
-msgstr ""
+msgstr "Dopasowywanie obiektów"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:53
-#, fuzzy
-#| msgid "Reconstructed Points:"
 msgid "Reconstruction"
-msgstr "Punkty zrekonstruowane:"
+msgstr "Rekonstrukcja"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:62
-#, fuzzy
-#| msgid "Elevation"
 msgid "Generation"
-msgstr "Wysokość n.p.m."
+msgstr "Generowanie"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:63
-#, fuzzy
-#| msgid "Filter"
 msgid "Filtering"
-msgstr "Filtr"
+msgstr "Filtrowanie"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:64
-#, fuzzy
-#| msgid "Processing"
 msgid "Post-Processing"
-msgstr "Przetwarzanie"
+msgstr "Przetwarzanie końcowe"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:72
 msgid "Mesh Generation"
-msgstr ""
+msgstr "Generowanie siatki mesh"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:80
-#, fuzzy
-#| msgid "Texturing"
 msgid "Texture Options"
-msgstr "Teksturowanie"
+msgstr "Parametry teksturowania"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:85
 msgid "Digital Elevation Models"
-msgstr ""
+msgstr "Numeryczne Modele Terenu (NMT/DEM)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:88
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Outputs"
-msgstr "Wynik zadania:"
+msgstr "Dane wyjściowe"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:89
 msgid "Resolution & Sampling"
-msgstr ""
+msgstr "Rozdzielczość i próbkowanie"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:90
-#, fuzzy
-#| msgid "Classification filter"
 msgid "Ground Classification (SMRF)"
-msgstr "Filtr klasyfikacji"
+msgstr "Wykrywanie gruntu (algorytm SMRF)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:98
-#, fuzzy
-#| msgid "Orthophoto Cutline"
 msgid "Orthophoto Options"
-msgstr "Linia przycięcia ortofotomapy"
+msgstr "Parametry ortofotomapy"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:103
-#, fuzzy
-#| msgid "Miles"
 msgid "Tiles"
-msgstr "Mile"
+msgstr "Kafelki"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:106
-#, fuzzy
-#| msgid "Options"
 msgid "Tiles Options"
-msgstr "Opcje"
+msgstr "Parametry kafelkowania"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:111
 msgid "System & Pipeline Control"
-msgstr ""
+msgstr "System i kontrola potoku przetwarzania (\"pipeline\")"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:114
 msgid "Performance"
-msgstr ""
+msgstr "Wydajność"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:115
-#, fuzzy
-#| msgid "Helicopter control"
 msgid "Pipeline Control"
-msgstr "Sterowanie helikopterem"
+msgstr "Sterowanie potokiem przetwarzania (\"pipeline\")"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:120
 msgid "Split/Merge"
-msgstr ""
+msgstr "Podziel/Scal"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:123
 msgid "Splitting"
-msgstr ""
+msgstr "Dzielenie"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:124
 msgid "Merging"
-msgstr ""
+msgstr "Scalanie"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:469
-#, fuzzy
-#| msgid "Other settings"
 msgid "Other Options"
-msgstr "Inne ustawienia"
+msgstr "Inne Ustawienia"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:506
 #: app/static/app/js/components/EditTaskForm.jsx:571
@@ -609,23 +581,23 @@ msgstr "Szukaj"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:523
 msgid "Flat View"
-msgstr ""
+msgstr "Widok spłaszczony"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:523
 msgid "Grouped View"
-msgstr ""
+msgstr "Widok pogrupowany"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:527
 msgid "Expand"
-msgstr ""
+msgstr "Rozszerz"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:527
 msgid "Collapse"
-msgstr ""
+msgstr "Zwiń widok"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:537
 msgid "Search options..."
-msgstr ""
+msgstr "Parametry wyszukiwania..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -936,46 +908,41 @@ msgid "Download Image"
 msgstr "Pobierz obraz"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:114
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid ""
 "Upload failed after multiple retries. Please check your connection and try "
 "again."
 msgstr ""
-"Nie można przesłać pliku. Sprawdź swoje połączenie internetowe i spróbuj "
-"ponownie."
+"Nie udało się przesłać, pomimo kilku prób. Sprawdź swoje połączenie "
+"internetowe i spróbuj ponownie."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:206
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Failed to complete upload. Try again later."
-msgstr "Nie można pobrać oszacowania. Spróbuj ponownie później."
+msgstr "Nie udało się poprawnie wczytać. Spróbuj ponownie później."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:216
 msgid "Select at least one file to upload."
-msgstr ""
+msgstr "Zaznacz co najmniej jeden plik do wgrania."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:223
 msgid "A textured model requires also a point cloud to be properly displayed."
 msgstr ""
+"Model teksturowany wymaga też chmury punktów by go poprawnie wyświetlić."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:247
 msgid "Failed to initialize upload. Try again later."
-msgstr ""
+msgstr "Nie udało się zainicjować przesłania. Spróbuj jeszcze raz później."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:286
-#, fuzzy
-#| msgid "Import Existing Assets"
 msgid "Import External Data"
-msgstr "Importuj istniejące zasoby"
+msgstr "Import zewnętrznych danych"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:287
 msgid "Select files. At least one file is required."
-msgstr ""
+msgstr "Zaznacz pliki. Wymagany jest przynajmniej jeden."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:307
 msgid "Remove"
-msgstr ""
+msgstr "Usuń"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
@@ -983,10 +950,8 @@ msgid "Cancel Upload"
 msgstr "Anuluj przesyłanie"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:333
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload"
-msgstr "Prześlij plik"
+msgstr "Prześlij"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
@@ -1408,14 +1373,12 @@ msgid "Select Images and GCP"
 msgstr "Wybierz obrazy i GCP"
 
 #: app/static/app/js/components/ProjectListItem.jsx:723
-#, fuzzy
-#| msgid "Import Assets or Backups"
 msgid "Assets / Backups"
-msgstr "Importuj Zasoby i Kopie zapasowe"
+msgstr "Zasoby i Kopie zapasowe"
 
 #: app/static/app/js/components/ProjectListItem.jsx:724
 msgid "External Data"
-msgstr ""
+msgstr "Zewnętrzne dane"
 
 #: app/static/app/js/components/ProjectListItem.jsx:756
 #, python-format
@@ -1664,7 +1627,7 @@ msgstr "ID zadania:"
 
 #: app/static/app/js/components/TaskListItem.jsx:658
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Skopiuj do schowka"
 
 #: app/static/app/js/components/TaskListItem.jsx:661
 msgid "Created on:"
@@ -1696,16 +1659,12 @@ msgid "Area:"
 msgstr "Obszar:"
 
 #: app/static/app/js/components/TaskListItem.jsx:685
-#, fuzzy
-#| msgid "Point"
 msgid "Points:"
-msgstr "Punkt"
+msgstr "Punkty:"
 
 #: app/static/app/js/components/TaskListItem.jsx:690
-#, fuzzy
-#| msgid "Georeferencing"
 msgid "Georeferencing:"
-msgstr "Nadawanie georeferencji"
+msgstr "Nadawanie georeferencji:"
 
 #: app/static/app/js/components/TaskListItem.jsx:700
 msgid "Disk Usage:"
