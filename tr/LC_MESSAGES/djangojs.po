@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-26 03:13+0000\n"
-"PO-Revision-Date: 2026-03-05 19:35+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2026-04-03 10:09+0000\n"
+"Last-Translator: Coşkun ERTUĞRUL <coskunertugrul@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "tr/>\n"
 "Language: tr\n"
@@ -104,7 +104,7 @@ msgstr "Kameraları Göster"
 
 #: app/static/app/js/ModelView.jsx:149
 msgid "Size"
-msgstr ""
+msgstr "Boyut"
 
 #: app/static/app/js/ModelView.jsx:886
 msgid "Loading textured model..."
@@ -202,7 +202,7 @@ msgstr "Geçersiz yanıt: %(error)s"
 
 #: app/static/app/js/classes/Gcp.js:44
 msgid "Empty GCP file"
-msgstr ""
+msgstr "Boş YKN dosyası"
 
 #: app/static/app/js/classes/PendingActions.js:12
 msgid "Canceling..."
@@ -390,11 +390,11 @@ msgstr "Metreküp"
 
 #: app/static/app/js/classes/Units.js:151
 msgid "Celsius"
-msgstr ""
+msgstr "Santigrat"
 
 #: app/static/app/js/classes/Units.js:161
 msgid "Fahrenheit"
-msgstr ""
+msgstr "Fahrenhayt"
 
 #: app/static/app/js/classes/Units.js:279
 msgid "Metric"
@@ -422,7 +422,7 @@ msgstr "Yedekle"
 
 #: app/static/app/js/components/CropButton.jsx:16
 msgid "Crop"
-msgstr ""
+msgstr "Kırp"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:49
 msgid "Cannot load permissions."
@@ -462,27 +462,27 @@ msgstr "Kamera Animasyonu"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:25
 msgid "Masking"
-msgstr ""
+msgstr "Maskele"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Multispectral"
-msgstr ""
+msgstr "Çok Spektrumlu"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Video Input"
-msgstr ""
+msgstr "Video Girişi"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:32
 msgid "Bounds & Cropping"
-msgstr ""
+msgstr "Sınırlar ve Kırpma"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:35
 msgid "Boundary"
-msgstr ""
+msgstr "Sınır"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:40
 msgid "Coordinate Reference System"
-msgstr ""
+msgstr "Koordinat Referans Sistemi"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:43
 #: app/static/app/js/components/EditTaskForm.jsx:625
@@ -491,23 +491,19 @@ msgstr "Ayarlar"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:51
 msgid "Feature Extraction"
-msgstr ""
+msgstr "Özellik Çıkarma"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:52
 msgid "Feature Matching"
-msgstr ""
+msgstr "Özellik Eşleştirme"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:53
-#, fuzzy
-#| msgid "Reconstructed Points:"
 msgid "Reconstruction"
-msgstr "Yeniden Yapılandırılan Noktalar:"
+msgstr "Yeniden İnşa Et"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:62
-#, fuzzy
-#| msgid "Elevation"
 msgid "Generation"
-msgstr "Yükseklik"
+msgstr "Nesil"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:63
 #, fuzzy
@@ -516,14 +512,12 @@ msgid "Filtering"
 msgstr "Filtre"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:64
-#, fuzzy
-#| msgid "Processing"
 msgid "Post-Processing"
-msgstr "Veri İşleme"
+msgstr "İleri işleme"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:72
 msgid "Mesh Generation"
-msgstr ""
+msgstr "Mesh Üretimİ"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:80
 #, fuzzy
@@ -533,7 +527,7 @@ msgstr "Dokulandırma"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:85
 msgid "Digital Elevation Models"
-msgstr ""
+msgstr "Dijital Yükseklik Modelleri"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:88
 #, fuzzy
@@ -543,7 +537,7 @@ msgstr "Görev Çıktısı:"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:89
 msgid "Resolution & Sampling"
-msgstr ""
+msgstr "Çözünürlük & Örnekleme"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:90
 #, fuzzy
@@ -571,11 +565,11 @@ msgstr "Ayarlar"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:111
 msgid "System & Pipeline Control"
-msgstr ""
+msgstr "Sistem ve Boru Hattı Kontrolü"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:114
 msgid "Performance"
-msgstr ""
+msgstr "Performans"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:115
 #, fuzzy
@@ -585,15 +579,15 @@ msgstr "Helikopter Kontrolü"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:120
 msgid "Split/Merge"
-msgstr ""
+msgstr "Bölme/Birleştirme"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:123
 msgid "Splitting"
-msgstr ""
+msgstr "Bölme"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:124
 msgid "Merging"
-msgstr ""
+msgstr "Birleştirme"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:469
 #, fuzzy
@@ -624,23 +618,23 @@ msgstr "Araştır"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:523
 msgid "Flat View"
-msgstr ""
+msgstr "Düz Görünüm"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:523
 msgid "Grouped View"
-msgstr ""
+msgstr "Gruplandırılmış Görünüm"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:527
 msgid "Expand"
-msgstr ""
+msgstr "Genişlet"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:527
 msgid "Collapse"
-msgstr ""
+msgstr "Yığ"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:537
 msgid "Search options..."
-msgstr ""
+msgstr "Arama seçenekleri..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -931,15 +925,15 @@ msgstr "Max:"
 
 #: app/static/app/js/components/ImagePopup.jsx:249
 msgid "Latitude"
-msgstr ""
+msgstr "Enlem"
 
 #: app/static/app/js/components/ImagePopup.jsx:253
 msgid "Longitude"
-msgstr ""
+msgstr "Boylam"
 
 #: app/static/app/js/components/ImagePopup.jsx:257
 msgid "Altitude"
-msgstr ""
+msgstr "Yükseklik"
 
 #: app/static/app/js/components/ImagePopup.jsx:265
 msgid "Download Image"
@@ -963,15 +957,17 @@ msgstr "Tahmin alınamıyor. Daha sonra tekrar deneyin."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:216
 msgid "Select at least one file to upload."
-msgstr ""
+msgstr "Yüklemek için en az bir dosya seçin."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:223
 msgid "A textured model requires also a point cloud to be properly displayed."
 msgstr ""
+"Dokulu bir modelin düzgün şekilde görüntülenebilmesi için nokta bulutuna da "
+"ihtiyaç duyulmaktadır."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:247
 msgid "Failed to initialize upload. Try again later."
-msgstr ""
+msgstr "Yükleme başlatılamadı. Lütfen daha sonra tekrar deneyin."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:286
 #, fuzzy
@@ -981,11 +977,11 @@ msgstr "Mevcut Varlıkları İçe Aktar"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:287
 msgid "Select files. At least one file is required."
-msgstr ""
+msgstr "Dosyaları seçin. En az bir dosya gereklidir."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:307
 msgid "Remove"
-msgstr ""
+msgstr "Sil"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
@@ -1026,7 +1022,7 @@ msgstr "URL den alınamıyor. Lütfen internet bağlantınızı kontrol edin."
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:166
 msgid "Import Assets or Backups"
-msgstr ""
+msgstr "Öğeleri veya Yedeklemeleri İçe Aktar"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:167
 #, fuzzy, python-format
@@ -1077,7 +1073,7 @@ msgstr "GeoJSON Dışarı Aktar"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:393
 msgid "Side By Side"
-msgstr ""
+msgstr "Yan Yana"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:393
 msgid "Zoom To"
@@ -1211,7 +1207,7 @@ msgstr "Nokta Konumu"
 #: app/static/app/js/components/MapPreview.jsx:429
 #, python-format
 msgid "For performance reasons, only %(num)s images are plotted"
-msgstr ""
+msgstr "Performans nedenleriyle, yalnızca %(num)s görüntü çizilecektir."
 
 #: app/static/app/js/components/MapPreview.jsx:440
 #, fuzzy
@@ -1265,7 +1261,7 @@ msgstr "%(count)s dosya başarıyla yüklendi"
 #: app/static/app/js/components/NewTaskPanel.jsx:235
 #, python-format
 msgid "%(count)s files and GCP file (%(name)s) selected."
-msgstr ""
+msgstr "%(count)s dosya ve %(name)s YKN dosyası seçildi."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:242
 #, fuzzy
