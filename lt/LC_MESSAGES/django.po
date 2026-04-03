@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 03:13+0000\n"
+"POT-Creation-Date: 2026-04-03 20:31+0000\n"
 "PO-Revision-Date: 2026-03-05 19:50+0000\n"
 "Last-Translator: Paul <paulius@infoera.lt>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -81,8 +81,8 @@ msgstr "Autorius"
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
-"Reikia paleisti iš naujo. Prašome iš naujo paleisti WebODM, kad įjungtumėte %"
-"(plugin)s"
+"Reikia paleisti iš naujo. Prašome iš naujo paleisti WebODM, kad įjungtumėte "
+"%(plugin)s"
 
 #: app/admin.py:186
 #, python-format
@@ -266,6 +266,14 @@ msgstr "Temperatūra Celcijaus laipsniais."
 msgid "Temperature in Centikelvin degrees."
 msgstr ""
 
+#: app/api/media.py:72 app/api/tasks.py:304
+msgid "No files uploaded"
+msgstr "Neįkeltas nei vienas failas"
+
+#: app/api/media.py:153
+msgid "File exceeds maximum allowed size"
+msgstr ""
+
 #: app/api/projects.py:130
 msgid "Cannot duplicate project"
 msgstr "Nepavyksta dubliuoti projekto"
@@ -278,84 +286,80 @@ msgstr "Netinkamas naudotojas leidimų sąraše"
 msgid "Invalid permissions"
 msgstr "Netinkamos teisės"
 
-#: app/api/tasks.py:278
+#: app/api/tasks.py:282
 msgid "You need to upload at least 1 file before commit"
 msgstr "Jums reikia įkelti bent 1 failą prieš patvirtinant"
 
-#: app/api/tasks.py:300
-msgid "No files uploaded"
-msgstr "Neįkeltas nei vienas failas"
-
-#: app/api/tasks.py:356
+#: app/api/tasks.py:360
 msgid "Cannot duplicate task"
 msgstr "Nepavyksta dubliuoti užduoties"
 
-#: app/api/tasks.py:370
+#: app/api/tasks.py:374
 #, fuzzy
 #| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, alignment task is not valid"
 msgstr "Nepavyksta sukurti užduoties, jums reikia bent 2 nuotraukų"
 
-#: app/api/tasks.py:387
+#: app/api/tasks.py:391
 msgid "Cannot create task, you need at least 2 images"
 msgstr "Nepavyksta sukurti užduoties, jums reikia bent 2 nuotraukų"
 
-#: app/api/tasks.py:511 app/api/tasks.py:515 app/api/tasks.py:656
-#: app/api/tasks.py:659 app/api/tasks.py:677 app/api/tasks.py:998
+#: app/api/tasks.py:515 app/api/tasks.py:519 app/api/tasks.py:660
+#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1002
 msgid "Asset does not exist"
 msgstr "Daiktas neegzistuoja"
 
-#: app/api/tasks.py:695 app/api/tasks.py:910
+#: app/api/tasks.py:699 app/api/tasks.py:914
 msgid "Imported Task"
 msgstr "Importuota užduotis"
 
-#: app/api/tasks.py:698 app/api/tasks.py:824
+#: app/api/tasks.py:702 app/api/tasks.py:828
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "Nepavyksta sukurti užduoties, jums reikia įkelti 1 failą"
 
-#: app/api/tasks.py:702
+#: app/api/tasks.py:706
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr ""
 "Nepavyksta įkelti užduoties, arba nurodykite URL, arba įkelkite 1 failą."
 
-#: app/api/tasks.py:704
+#: app/api/tasks.py:708
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr ""
 
-#: app/api/tasks.py:808 app/api/tasks.py:811
+#: app/api/tasks.py:812 app/api/tasks.py:815
 #, fuzzy
 #| msgid "Invalid boundaries"
 msgid "Invalid uuid"
 msgstr "Netinkamos ribos"
 
-#: app/api/tasks.py:832 app/api/tasks.py:840
+#: app/api/tasks.py:836 app/api/tasks.py:844
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid file type"
 msgstr "Netinkamas zip failas"
 
-#: app/api/tasks.py:864
+#: app/api/tasks.py:868
 msgid "Some parameters are not integers"
 msgstr ""
 
-#: app/api/tasks.py:923 app/api/tasks.py:928
+#: app/api/tasks.py:927 app/api/tasks.py:932
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:930
+#: app/api/tasks.py:934
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:936
+#: app/api/tasks.py:940
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:942
+#: app/api/tasks.py:946
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:946
+#: app/api/tasks.py:950
 #, fuzzy
 #| msgid "No files uploaded"
 msgid "No assets uploaded"
@@ -446,7 +450,7 @@ msgid "Plugin name"
 msgstr "Įskiepio pavadinimas"
 
 #: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:242 app/models/theme.py:18
+#: app/models/task.py:246 app/models/theme.py:18
 msgid "Name"
 msgstr "Vardas"
 
@@ -524,15 +528,15 @@ msgstr ""
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 
-#: app/models/preset.py:11 app/models/task.py:248
+#: app/models/preset.py:11 app/models/task.py:252
 msgid "Options"
 msgstr "Nustatymai"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:256
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:260
 msgid "Creation date"
 msgstr "Sukūrimo data"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:256
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:260
 msgid "Created at"
 msgstr "Sukurta"
 
@@ -600,7 +604,7 @@ msgstr "Trinama"
 msgid "Project tags"
 msgstr "Projekto žymos"
 
-#: app/models/project.py:32 app/models/task.py:282
+#: app/models/project.py:32 app/models/task.py:286
 msgid "Tags"
 msgstr "Žymos"
 
@@ -610,7 +614,7 @@ msgstr "Žymos"
 msgid "A flag indicating whether this project is available to the public"
 msgstr "Žyma ar ši užduotis prieinama viešai"
 
-#: app/models/project.py:33 app/models/task.py:259
+#: app/models/project.py:33 app/models/task.py:263
 msgid "Public"
 msgstr "Viešas"
 
@@ -620,7 +624,7 @@ msgstr "Viešas"
 msgid "A flag indicating whether this public project can be edited"
 msgstr "Žyma ar ši užduotis prieinama viešai"
 
-#: app/models/project.py:34 app/models/task.py:260
+#: app/models/project.py:34 app/models/task.py:264
 #, fuzzy
 #| msgid "Public"
 msgid "Public Edit"
@@ -638,12 +642,12 @@ msgstr "Detalesnis projekto aprašymas"
 msgid "Public Id"
 msgstr "Viešas"
 
-#: app/models/project.py:109 app/models/task.py:467
+#: app/models/project.py:109 app/models/task.py:478
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "%(task)s kopija"
 
-#: app/models/project.py:142 app/models/task.py:241
+#: app/models/project.py:142 app/models/task.py:245
 msgid "Project"
 msgstr "Projektas"
 
@@ -726,27 +730,27 @@ msgstr "Aplikacija"
 msgid "Settings"
 msgstr "Nustatymai"
 
-#: app/models/task.py:238
+#: app/models/task.py:242
 msgid "Id"
 msgstr "Id"
 
-#: app/models/task.py:240
+#: app/models/task.py:244
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr "Užduoties identifikatorius (kaip jį grąžino NodeODM API)"
 
-#: app/models/task.py:240
+#: app/models/task.py:244
 msgid "UUID"
 msgstr "UUID"
 
-#: app/models/task.py:241
+#: app/models/task.py:245
 msgid "Project that this task belongs to"
 msgstr "Projektas, kuriam priklauso ši užduotis"
 
-#: app/models/task.py:242
+#: app/models/task.py:246
 msgid "A label for the task"
 msgstr "Užduoties etiketė"
 
-#: app/models/task.py:243
+#: app/models/task.py:247
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
@@ -754,11 +758,11 @@ msgstr ""
 "Skaičius milisekundžių, praėjusių nuo šios užduoties pradžios (-1 rodo, kad "
 "nėra informacijos)"
 
-#: app/models/task.py:243
+#: app/models/task.py:247
 msgid "Processing Time"
 msgstr "Apdorojimo laikas"
 
-#: app/models/task.py:244
+#: app/models/task.py:248
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
@@ -766,77 +770,77 @@ msgstr ""
 "Šiai užduočiai paskirtas apdorojimo mazgas (arba null, jei ši užduotis dar "
 "nesusieta)"
 
-#: app/models/task.py:244 app/views/app.py:138 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:138 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Apdorojimo mazgas"
 
-#: app/models/task.py:245
+#: app/models/task.py:249
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
 msgstr "Žyma, ar užduotis turėtų būti automatiškai priskirta apdorojimo mazgui"
 
-#: app/models/task.py:245
+#: app/models/task.py:249
 msgid "Auto Processing Node"
 msgstr "Automatinis apdorojimo mazgas"
 
-#: app/models/task.py:246
+#: app/models/task.py:250
 msgid "Current status of the task"
 msgstr "Dabartinė užduoties būsena"
 
-#: app/models/task.py:246
+#: app/models/task.py:250
 msgid "Status"
 msgstr "Būsena"
 
-#: app/models/task.py:247
+#: app/models/task.py:251
 msgid "The last processing error received"
 msgstr "Paskutinė gauta apdorojimo klaida"
 
-#: app/models/task.py:247
+#: app/models/task.py:251
 msgid "Last Error"
 msgstr "Paskutinė klaida"
 
-#: app/models/task.py:248
+#: app/models/task.py:252
 msgid "Options that are being used to process this task"
 msgstr "Šios užduoties apdorojimui naudojamos parinktys"
 
-#: app/models/task.py:249
+#: app/models/task.py:253
 msgid "List of available assets to download"
 msgstr "Sąrašas daiktų, kuriuos galima atsisiųsti"
 
-#: app/models/task.py:249
+#: app/models/task.py:253
 msgid "Available Assets"
 msgstr "Galimi daiktai"
 
-#: app/models/task.py:251
+#: app/models/task.py:255
 msgid "Extent of the orthophoto"
 msgstr "Ortofoto apimtis"
 
-#: app/models/task.py:251
+#: app/models/task.py:255
 msgid "Orthophoto Extent"
 msgstr "Ortofoto apimtis"
 
-#: app/models/task.py:252
+#: app/models/task.py:256
 #, fuzzy
 #| msgid "Extent of the orthophoto"
 msgid "Extent of the DSM"
 msgstr "Ortofoto apimtis"
 
-#: app/models/task.py:252
+#: app/models/task.py:256
 msgid "DSM Extent"
 msgstr "DSM apimtis"
 
-#: app/models/task.py:253
+#: app/models/task.py:257
 #, fuzzy
 #| msgid "Extent of the orthophoto"
 msgid "Extent of the DTM"
 msgstr "Ortofoto apimtis"
 
-#: app/models/task.py:253
+#: app/models/task.py:257
 msgid "DTM Extent"
 msgstr "DTM apimtis"
 
-#: app/models/task.py:257
+#: app/models/task.py:261
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
@@ -844,32 +848,32 @@ msgstr ""
 "Užduočiai paprašytas veiksmas. Darbuotojas vykdys parinktą veiksmą kitoje "
 "iteracijoje."
 
-#: app/models/task.py:257
+#: app/models/task.py:261
 msgid "Pending Action"
 msgstr "Laukiamas veiksmas"
 
-#: app/models/task.py:259
+#: app/models/task.py:263
 msgid "A flag indicating whether this task is available to the public"
 msgstr "Žyma ar ši užduotis prieinama viešai"
 
-#: app/models/task.py:260
+#: app/models/task.py:264
 #, fuzzy
 #| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this public task can be edited"
 msgstr "Žyma ar ši užduotis prieinama viešai"
 
-#: app/models/task.py:262
+#: app/models/task.py:266
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
 "processing."
 msgstr ""
 
-#: app/models/task.py:262
+#: app/models/task.py:266
 msgid "Resize To"
 msgstr "Keisti dydį į"
 
-#: app/models/task.py:265
+#: app/models/task.py:269
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
@@ -877,71 +881,71 @@ msgstr ""
 "Reikšmė tarp 0 ir 1, nurodanti šios užduoties failų siuntimo į apdorojimo "
 "mazgą eigą"
 
-#: app/models/task.py:266
+#: app/models/task.py:270
 msgid "Upload Progress"
 msgstr "Įkėlimo eiga"
 
-#: app/models/task.py:269
+#: app/models/task.py:273
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr ""
 "Reikšmė tarp 0 ir 1, rodanti šios užduoties nuotraukų dydžio keitimo eigą"
 
-#: app/models/task.py:270
+#: app/models/task.py:274
 msgid "Resize Progress"
 msgstr "Dydžio keitimo eiga"
 
-#: app/models/task.py:273
+#: app/models/task.py:277
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr "Reikšmė tarp 0 ir 1, rodanti šios užduoties vykdymo eigą (numatomą)"
 
-#: app/models/task.py:274
+#: app/models/task.py:278
 msgid "Running Progress"
 msgstr "Vykdymo eiga"
 
-#: app/models/task.py:276
+#: app/models/task.py:280
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr "URL, iš kurio importuota ši užduotis (tik importuotoms užduotims)"
 
-#: app/models/task.py:276
+#: app/models/task.py:280
 msgid "Import URL"
 msgstr "Importo URL"
 
-#: app/models/task.py:277
+#: app/models/task.py:281
 msgid "Number of images associated with this task"
 msgstr "Su šia užduotimi susijusių nuotraukų skaičius"
 
-#: app/models/task.py:277
+#: app/models/task.py:281
 msgid "Images Count"
 msgstr "Nuotraukų skaičius"
 
-#: app/models/task.py:278
+#: app/models/task.py:282
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
 msgstr ""
 
-#: app/models/task.py:278
+#: app/models/task.py:282
 msgid "Partial"
 msgstr ""
 
-#: app/models/task.py:279
+#: app/models/task.py:283
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
 msgstr ""
 
-#: app/models/task.py:279
+#: app/models/task.py:283
 msgid "Potree Scene"
 msgstr ""
 
-#: app/models/task.py:280
+#: app/models/task.py:284
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "Duomenų aibės EPSG kodas (jei pririštas)"
 
-#: app/models/task.py:281
+#: app/models/task.py:285
 #, fuzzy
 #| msgid "EPSG code of the dataset (if georeferenced)"
 msgid ""
@@ -949,78 +953,88 @@ msgid ""
 "available)"
 msgstr "Duomenų aibės EPSG kodas (jei pririštas)"
 
-#: app/models/task.py:282
+#: app/models/task.py:286
 msgid "Task tags"
 msgstr "Užduoties žymos"
 
-#: app/models/task.py:283
+#: app/models/task.py:287
 msgid "List of orthophoto bands"
 msgstr "Ortofoto juostų sąrašas"
 
-#: app/models/task.py:283
+#: app/models/task.py:287
 msgid "Orthophoto Bands"
 msgstr "Ortofoto juostos"
 
-#: app/models/task.py:284
+#: app/models/task.py:288
 msgid "Size of the task on disk in megabytes"
 msgstr "Užduoties dydis diske megabaitais"
 
-#: app/models/task.py:284
+#: app/models/task.py:288
 msgid "Size"
 msgstr "Dydis"
 
-#: app/models/task.py:285
+#: app/models/task.py:289
 #, fuzzy
 #| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this task was compacted"
 msgstr "Žyma ar ši užduotis prieinama viešai"
 
-#: app/models/task.py:285
+#: app/models/task.py:289
 msgid "Compact"
 msgstr ""
 
-#: app/models/task.py:286
+#: app/models/task.py:290
 msgid "Polygon defining the crop area of this task"
 msgstr ""
 
-#: app/models/task.py:286
+#: app/models/task.py:290
 msgid "Crop Polygon"
 msgstr ""
 
-#: app/models/task.py:290
+#: app/models/task.py:291
+#, fuzzy
+#| msgid "Number of images associated with this task"
+msgid "List of media files associated with this task"
+msgstr "Su šia užduotimi susijusių nuotraukų skaičius"
+
+#: app/models/task.py:291
+msgid "Media"
+msgstr ""
+
+#: app/models/task.py:295
 msgid "Task"
 msgstr "Užduotis"
 
-#: app/models/task.py:291
+#: app/models/task.py:296
 msgid "Tasks"
 msgstr "Užduotys"
 
-#: app/models/task.py:302
+#: app/models/task.py:307
 msgid "unnamed"
 msgstr "bevardis"
 
-#: app/models/task.py:599
+#: app/models/task.py:610
 msgid "Importing assets..."
 msgstr "Importuojami daiktai..."
 
-#: app/models/task.py:654 app/models/task.py:932
+#: app/models/task.py:665 app/models/task.py:943
 msgid "Invalid zip file"
 msgstr "Netinkamas zip failas"
 
-#: app/models/task.py:656
+#: app/models/task.py:667
 msgid "Unsupported compression method"
 msgstr ""
 
-#: app/models/task.py:750
+#: app/models/task.py:761
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "Jungties klaida: %(error)s"
 
-#: app/models/task.py:830
+#: app/models/task.py:841
 msgid "Cannot restart a task that has no processing node"
 msgstr "Negalima iš naujo paleisti užduoties, kuri neturi apdorojimo mazgo"
 
-#: app/models/task.py:1042
+#: app/models/task.py:1054
 msgid "Done!"
 msgstr "Atlikta!"
 
@@ -1968,8 +1982,8 @@ msgid ""
 msgstr ""
 "Šios reikšmės gali būti priklausomos nuo virtualizacijos aplinkos, kurioje "
 "veikia aplikacija, nebūtinai reikšmės iš jūsų mašinos. Instrukcijas, kaip "
-"pakeisti šias reikšmes Docker nustatymuose rasite %(win_hyperv_link)s, %"
-"(win_wsl2_link)s, and %(mac_link)s."
+"pakeisti šias reikšmes Docker nustatymuose rasite %(win_hyperv_link)s, "
+"%(win_wsl2_link)s, and %(mac_link)s."
 
 #: coreplugins/diagnostic/templates/diagnostic.html:47
 #: coreplugins/diagnostic/templates/diagnostic.html:82
