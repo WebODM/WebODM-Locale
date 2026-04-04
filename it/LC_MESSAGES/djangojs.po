@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-03 20:31+0000\n"
-"PO-Revision-Date: 2026-03-07 02:09+0000\n"
+"PO-Revision-Date: 2026-04-05 16:09+0000\n"
 "Last-Translator: \"Luca P.\" <madeinupa@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/webodm/react-ui/"
 "it/>\n"
@@ -326,7 +326,7 @@ msgstr "Piedi"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Pollici"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -1127,93 +1127,73 @@ msgstr ""
 "predefinito è %(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:239
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
-msgstr ""
-"Non riesco a caricare il file. Controlla la connessione ad internet e "
-"riprova."
+msgstr "Upload fallito. Controlla la connessione e riprova."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:260
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "Impossibile caricare i permessi."
+msgstr "Impossibile caricare i supporti."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:277
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "Sei sicuro di voler cancellare \"%(preset)s\"?"
+msgstr "Sei sicuro di voler cancellare \"%(filename)s\"?"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:307
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "Impossibile cancellare l'attività."
+msgstr "Impossibile eliminare il file."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:345
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "Non posso completare l'operazione."
+msgstr "Impossibile aggiornare la descrizione."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:360
-#, fuzzy
-#| msgid "Video Input"
 msgid "Video"
-msgstr "Ingresso video"
+msgstr "Video"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:361
 msgid "Panorama"
-msgstr ""
+msgstr "Panorama"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:362
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:390
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "Carica un File"
+msgstr "Carica Files"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:392
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
 msgstr ""
+"Nella mappa verranno visualizzati foto georeferenziate, panorami e video."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "Finalizzando... attendere"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:422
 msgid "No media files."
-msgstr ""
+msgstr "Nessun file multimediale."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:434
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "Vista da destra"
+msgstr "Vista Griglia"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:441
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "Vista da sinistra"
+msgstr "Vista Lista"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:505
 #: app/static/app/js/components/Map.jsx:522
 #: app/static/app/js/components/TaskListItem.jsx:846
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:547
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "Utente"
+msgstr "Nome file"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:548
 #: coreplugins/annotate/public/Popup.jsx:681
@@ -3380,14 +3360,12 @@ msgid "Base Surface"
 msgstr "Superficie base"
 
 #: coreplugins/annotate/public/Popup.jsx:765
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
-msgstr "mostra in 3D"
+msgstr "Mostra 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:779
 msgid "3D view error"
-msgstr ""
+msgstr "Errore vista 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:789
 msgid "No images found at this location"
@@ -3442,19 +3420,15 @@ msgstr "Esporta in CSV"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "Base"
 
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "Backup"
+msgstr "Torna indietro"
 
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "Backup"
+msgstr "Indietro"
 
 #: coreplugins/annotate/public/markers.js:6
 msgid "Blue"
