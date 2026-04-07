@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-03 20:31+0000\n"
-"PO-Revision-Date: 2026-03-05 19:42+0000\n"
-"Last-Translator: Nico Ninov <weblate@nicomputer.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/webodm/webodm/de/"
-">\n"
+"PO-Revision-Date: 2026-04-08 06:42+0000\n"
+"Last-Translator: David Powell <david.powell@alpinfra.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/webodm/webodm/de/>"
+"\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -145,16 +145,13 @@ msgstr ""
 "relativen Ertragspotenzial bei Raps."
 
 #: app/api/formulas.py:22
-#, fuzzy
-#| msgid ""
-#| "Normalized Difference Vegetation Index shows the amount of green "
-#| "vegetation."
 msgid ""
 "Normalized Difference Red Edge Index shows the amount of green vegetation of "
 "permanent or later stage crops."
 msgstr ""
-"Der normalisierte Differenzvegetationsindex zeigt die Menge an grüner "
-"Vegetation."
+"Der Normalized Difference Red Edge Index (NDRI) zeigt den Anteil grüner "
+"Vegetation bei Dauerkulturen oder Kulturpflanzen im späteren "
+"Wachstumsstatium an."
 
 #: app/api/formulas.py:27
 #, fuzzy
@@ -225,6 +222,8 @@ msgstr ""
 msgid ""
 "Green Ratio Vegetation Index is sensitive to photosynthetic rates in forests."
 msgstr ""
+"Der Green Ratio Vegetaion Index (GRVI) eignet sich zur Visualisierung von "
+"Photosyntheseraten in Wäldern"
 
 #: app/api/formulas.py:77
 msgid ""
@@ -292,7 +291,7 @@ msgstr "Keine Dateien geladen"
 
 #: app/api/media.py:153
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "Maximale Dateigröße überschritten"
 
 #: app/api/projects.py:130
 msgid "Cannot duplicate project"
@@ -379,8 +378,6 @@ msgid "Textured model must be a valid GLB file"
 msgstr ""
 
 #: app/api/tasks.py:950
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "No assets uploaded"
 msgstr "Keine Dateien geladen"
 
@@ -398,15 +395,15 @@ msgstr ""
 
 #: app/api/tiler.py:425
 msgid "Invalid boundaries"
-msgstr ""
+msgstr "Ungültige Grenzen"
 
 #: app/api/tiler.py:501 app/api/tiler.py:629
 msgid "Not a valid color_map value"
-msgstr ""
+msgstr "Kein gültiger color_map-Wert"
 
 #: app/api/tiler.py:509
 msgid "Invalid rescale value"
-msgstr ""
+msgstr "Ungültiger Skalierungswert"
 
 #: app/api/tiler.py:531
 msgid "Invalid hillshade value"
