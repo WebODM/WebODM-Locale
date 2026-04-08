@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-03 20:31+0000\n"
-"PO-Revision-Date: 2026-03-05 19:43+0000\n"
-"Last-Translator: Gonzalo Bulnes Guilpain <gon.bulnes@fastmail.com>\n"
+"PO-Revision-Date: 2026-04-08 19:11+0000\n"
+"Last-Translator: Piero Toffanin <pt@masseranolabs.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/webodm/react-ui/"
 "fr/>\n"
 "Language: fr\n"
@@ -106,7 +106,7 @@ msgstr "Afficher les caméras"
 #: app/static/app/js/ModelView.jsx:149
 #: app/static/app/js/components/ManageMediaDialog.jsx:549
 msgid "Size"
-msgstr ""
+msgstr "Taille"
 
 #: app/static/app/js/ModelView.jsx:886
 msgid "Loading textured model..."
