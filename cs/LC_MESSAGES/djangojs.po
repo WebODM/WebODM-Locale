@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-03 20:31+0000\n"
-"PO-Revision-Date: 2026-03-09 07:09+0000\n"
+"PO-Revision-Date: 2026-04-09 17:55+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/webodm/react-ui/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/webodm/react-ui/"
+"cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -326,7 +326,7 @@ msgstr "Stopy"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Palce"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -1108,92 +1108,72 @@ msgstr ""
 "je %(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:239
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
-msgstr ""
-"Nelze nahrát soubor. Zkontrolujte připojení k internetu a zkuste to znovu."
+msgstr "Nahrávání se nezdařilo. Zkontrolujte připojení a zkuste to znovu."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:260
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "Nelze načíst oprávnění."
+msgstr "Nelze načíst médium."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:277
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "Opravdu chcete odstranit \"%(preset)s\"?"
+msgstr "Opravdu chcete smazat soubor %(filename)s?"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:307
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "Nelze odstranit úlohu."
+msgstr "Nelze smazat soubor."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:345
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "Nelze dokončit operaci."
+msgstr "Popis nelze aktualizovat."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:360
-#, fuzzy
-#| msgid "Video Input"
 msgid "Video"
-msgstr "Vstup videa"
+msgstr "Video"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:361
 msgid "Panorama"
-msgstr ""
+msgstr "Panorama"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:362
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:390
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "Nahrát soubor"
+msgstr "Nahrát soubory"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:392
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
-msgstr ""
+msgstr "Na mapě se zobrazí georeferencované fotografie, panoramata a videa."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "Dokončování... čekejte prosím"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:422
 msgid "No media files."
-msgstr ""
+msgstr "Žádné mediální soubory."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:434
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "Pohled zprava"
+msgstr "Zobrazení mřížky"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:441
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "Pohled zleva"
+msgstr "Zobrazení seznamu"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:505
 #: app/static/app/js/components/Map.jsx:522
 #: app/static/app/js/components/TaskListItem.jsx:846
 msgid "Media"
-msgstr ""
+msgstr "Média"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:547
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "Uživatelské jméno"
+msgstr "Název souboru"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:548
 #: coreplugins/annotate/public/Popup.jsx:681
@@ -3323,14 +3303,12 @@ msgid "Base Surface"
 msgstr "Základní povrch"
 
 #: coreplugins/annotate/public/Popup.jsx:765
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
-msgstr "zobrazit ve 3D"
+msgstr "Zobrazit 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:779
 msgid "3D view error"
-msgstr ""
+msgstr "chyba 3D zobrazení"
 
 #: coreplugins/annotate/public/Popup.jsx:789
 msgid "No images found at this location"
@@ -3385,19 +3363,15 @@ msgstr "Exportovat do CSV"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "Podklad"
 
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "Žáloha"
+msgstr "Zpět"
 
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "Žáloha"
+msgstr "Zpět"
 
 #: coreplugins/annotate/public/markers.js:6
 msgid "Blue"
