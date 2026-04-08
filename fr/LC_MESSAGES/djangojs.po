@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-03 20:31+0000\n"
-"PO-Revision-Date: 2026-04-08 19:11+0000\n"
+"PO-Revision-Date: 2026-04-08 19:49+0000\n"
 "Last-Translator: Piero Toffanin <pt@masseranolabs.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/webodm/react-ui/"
 "fr/>\n"
@@ -188,7 +188,7 @@ msgstr "Satellite ESRI"
 
 #: app/static/app/js/classes/Basemaps.js:26
 msgid "OpenStreetMap"
-msgstr ""
+msgstr "OpenStreetMap"
 
 #: app/static/app/js/classes/Gcp.js:18
 #, fuzzy, python-format
@@ -345,7 +345,7 @@ msgstr ""
 #: app/static/app/js/components/ExportAssetPanel.jsx:214
 #: coreplugins/measure/public/app.jsx:40
 msgid "Meters"
-msgstr ""
+msgstr "Mètres"
 
 #: app/static/app/js/classes/Units.js:64 coreplugins/measure/public/app.jsx:38
 msgid "Kilometers"
