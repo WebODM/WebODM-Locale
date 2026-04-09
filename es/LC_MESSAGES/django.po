@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-03 20:31+0000\n"
-"PO-Revision-Date: 2026-03-05 19:36+0000\n"
-"Last-Translator: Darío Hereñú <magallania@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/es/"
-">\n"
+"PO-Revision-Date: 2026-04-09 17:55+0000\n"
+"Last-Translator: Paulo Cesar Coronado-Sanchez <paulocoronado@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/"
+"es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -197,12 +197,12 @@ msgstr ""
 msgid ""
 "Burn Area Index hightlights burned land in the red to near-infrared spectrum."
 msgstr ""
-"El Índice de Área BAI Quemada destaca la tierra quemada en el espectro del "
-"rojo al infrarrojo cercano."
+"El Índice de Áreas Quemadas resalta las tierras quemadas en el espectro que "
+"va del rojo al infrarrojo cercano."
 
 #: app/api/formulas.py:63
 msgid "Green Leaf Index shows greens leaves and stems."
-msgstr "El Índice de Hoja Verde GLI muestra las hojas y tallos verdes."
+msgstr "El Índice de Hoja Verde muestra las hojas y tallos verdes."
 
 #: app/api/formulas.py:68
 msgid ""
@@ -306,7 +306,7 @@ msgstr "Sin archivos cargados"
 
 #: app/api/media.py:153
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "El archivo supera el tamaño máximo permitido"
 
 #: app/api/projects.py:130
 msgid "Cannot duplicate project"
@@ -359,42 +359,36 @@ msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "URL no válida. ¿Quisiste decir %(hint)s?"
 
 #: app/api/tasks.py:812 app/api/tasks.py:815
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid uuid"
-msgstr "Acción no válida"
+msgstr "uuid no válido"
 
 #: app/api/tasks.py:836 app/api/tasks.py:844
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type"
-msgstr "Archivo zip no valido"
+msgstr "Tipo de archivo no valido"
 
 #: app/api/tasks.py:868
 msgid "Some parameters are not integers"
-msgstr ""
+msgstr "Algunos parámetros no son números enteros"
 
 #: app/api/tasks.py:927 app/api/tasks.py:932
 msgid "GeoTIFF must have a valid CRS"
-msgstr ""
+msgstr "El archivo GeoTIFF debe tener un SCR válido"
 
 #: app/api/tasks.py:934
 msgid "Elevation model must have at most 2 band"
-msgstr ""
+msgstr "El modelo de elevación debe tener como máximo 2 bandas"
 
 #: app/api/tasks.py:940
 msgid "Point cloud must be a valid LAZ/LAS file"
-msgstr ""
+msgstr "La nube de puntos debe ser un archivo LAZ/LAS válido"
 
 #: app/api/tasks.py:946
 msgid "Textured model must be a valid GLB file"
-msgstr ""
+msgstr "El modelo texturizado debe ser un archivo GLB válido"
 
 #: app/api/tasks.py:950
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "No assets uploaded"
-msgstr "Sin archivos cargados"
+msgstr "Sin objetos cargados"
 
 #: app/api/tiler.py:364
 msgid "Invalid boundaries parameter"
@@ -453,10 +447,9 @@ msgid "Invalid EPSG code: %(value)s"
 msgstr "Código EPSG no válido: %(value)s"
 
 #: app/api/tiler.py:647 app/api/tiler.py:649
-#, fuzzy, python-format
-#| msgid "Invalid EPSG code: %(value)s"
+#, python-format
 msgid "Invalid PROJ string: %(value)s"
-msgstr "Código EPSG no válido: %(value)s"
+msgstr "Cadena PROJ no válida: %(value)s"
 
 #: app/api/tiler.py:652
 msgid "Both formula and bands parameters are required"
@@ -603,11 +596,11 @@ msgstr "Cuota"
 
 #: app/models/profile.py:16
 msgid "Cluster Id this user is assigned to"
-msgstr "ID de clúster al que está asignado este usuario"
+msgstr "Id del clúster al que está asignado este usuario"
 
 #: app/models/profile.py:16
 msgid "Cluster Id"
-msgstr "Cluster ID"
+msgstr "Clúster Id"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -666,7 +659,7 @@ msgstr "Identificador publico del proyecto"
 
 #: app/models/project.py:35 app/models/redirect.py:7
 msgid "Public Id"
-msgstr "ID publico"
+msgstr "Id publico"
 
 #: app/models/project.py:109 app/models/task.py:478
 #, python-format
@@ -683,11 +676,11 @@ msgstr "Proyectos"
 
 #: app/models/redirect.py:6
 msgid "Project Id"
-msgstr "Proyecto ID"
+msgstr "Id del Proyecto"
 
 #: app/models/redirect.py:8
 msgid "Task Id"
-msgstr "Tarea ID"
+msgstr "Id de la Tarea"
 
 #: app/models/redirect.py:9
 msgid "The person associated with this redirect"
@@ -972,12 +965,12 @@ msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "Código EPSG del conjunto de datos (si está georreferenciado)"
 
 #: app/models/task.py:285
-#, fuzzy
-#| msgid "EPSG code of the dataset (if georeferenced)"
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
-msgstr "Código EPSG del conjunto de datos (si está georreferenciado)"
+msgstr ""
+"Definición WKT del conjunto de datos (si está georreferenciado y no se "
+"dispone del código EPSG)"
 
 #: app/models/task.py:286
 msgid "Task tags"
@@ -1016,14 +1009,12 @@ msgid "Crop Polygon"
 msgstr "Poligono de recorte"
 
 #: app/models/task.py:291
-#, fuzzy
-#| msgid "Number of images associated with this task"
 msgid "List of media files associated with this task"
-msgstr "Número de imágenes asociadas a esta tarea"
+msgstr "Lista de archivos multimedia asociados a esta tarea"
 
 #: app/models/task.py:291
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: app/models/task.py:295
 msgid "Task"
@@ -1800,7 +1791,7 @@ msgstr ""
 
 #: app/templates/app/welcome.html:224
 msgid "Uh oh! Could you please check the errors below?"
-msgstr "¡UH oh! ¿Podrías comprobar los errores a continuación?"
+msgstr "¡Uh oh! ¿Podrías comprobar los errores a continuación?"
 
 #: app/templates/app/welcome.html:228
 msgid ""
@@ -1918,6 +1909,8 @@ msgstr "Un complemento de ejemplo para el desarrollo"
 #: app/translations/plugin_manifest_autogenerated.py:23
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
+"Un complemento para añadir un botón que permita hacer una captura de "
+"pantalla del mapa o del modelo 3D."
 
 #: app/views/app.py:57
 msgid "First Project"
@@ -2088,7 +2081,7 @@ msgstr "Hola Mundo"
 
 #: coreplugins/lightning/plugin.py:25 coreplugins/lightning/plugin.py:39
 msgid "Lightning"
-msgstr "Lightning"
+msgstr "Lightning (rayos)"
 
 #: coreplugins/objdetect/api.py:58
 msgid "No orthophoto is available."
