@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-03 20:31+0000\n"
-"PO-Revision-Date: 2026-04-09 17:55+0000\n"
-"Last-Translator: Paulo Cesar Coronado-Sanchez <paulocoronado@gmail.com>\n"
+"PO-Revision-Date: 2026-04-17 01:09+0000\n"
+"Last-Translator: Mario Alberto Luna Pavo <pic.rpas@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -326,7 +326,7 @@ msgstr "Pies"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Pulgadas"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -438,40 +438,36 @@ msgid "Permissions"
 msgstr "Permisos"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:21
-#, fuzzy
-#| msgid "Start Processing"
 msgid "Input & Preprocessing"
-msgstr "Comenzar a procesar"
+msgstr "Entrada y Preprocesamiento"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:24
-#, fuzzy
-#| msgid "Camera Animation"
 msgid "Camera Configuration"
-msgstr "Animación de cámara"
+msgstr "Configuración de la cámara"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:25
 msgid "Masking"
-msgstr ""
+msgstr "Enmascaramiento"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Multispectral"
-msgstr ""
+msgstr "Multiespectral"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Video Input"
-msgstr ""
+msgstr "Entrada de video"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:32
 msgid "Bounds & Cropping"
-msgstr ""
+msgstr "Límites y Recorte"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:35
 msgid "Boundary"
-msgstr ""
+msgstr "Límite"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:40
 msgid "Coordinate Reference System"
-msgstr ""
+msgstr "Sistema de Referencia de Coordenadas"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:43
 #: app/static/app/js/components/EditTaskForm.jsx:625
@@ -480,115 +476,91 @@ msgstr "Opciones"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:51
 msgid "Feature Extraction"
-msgstr ""
+msgstr "Extracción de características"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:52
 msgid "Feature Matching"
-msgstr ""
+msgstr "Emparejamiento de características"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:53
-#, fuzzy
-#| msgid "Reconstructed Points:"
 msgid "Reconstruction"
-msgstr "Puntos reconstruidos:"
+msgstr "Reconstrucción"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:62
-#, fuzzy
-#| msgid "Elevation"
 msgid "Generation"
-msgstr "Elevación"
+msgstr "Generación"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:63
-#, fuzzy
-#| msgid "Filter"
 msgid "Filtering"
-msgstr "Filtrar"
+msgstr "Filtro"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:64
-#, fuzzy
-#| msgid "Processing"
 msgid "Post-Processing"
-msgstr "Procesando"
+msgstr "Post-procesamiento"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:72
 msgid "Mesh Generation"
-msgstr ""
+msgstr "Generación de malla"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:80
-#, fuzzy
-#| msgid "Texturing"
 msgid "Texture Options"
-msgstr "Texturizando"
+msgstr "Opciones de textura"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:85
 msgid "Digital Elevation Models"
-msgstr ""
+msgstr "Modelos Digitales de Elevación"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:88
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Outputs"
-msgstr "Resultados de la tarea:"
+msgstr "Productos de salida"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:89
 msgid "Resolution & Sampling"
-msgstr ""
+msgstr "Resolución y Muestreo"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:90
-#, fuzzy
-#| msgid "Classification filter"
 msgid "Ground Classification (SMRF)"
-msgstr "Filtro de clasificación"
+msgstr "Clasificación del Terreno (SMRF-Filtro Morfológico Simple)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:98
-#, fuzzy
-#| msgid "Orthophoto Cutline"
 msgid "Orthophoto Options"
-msgstr "Línea de corte de ortofoto"
+msgstr "Opciones de Ortofoto"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:103
-#, fuzzy
-#| msgid "Miles"
 msgid "Tiles"
-msgstr "Millas"
+msgstr "Teselas"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:106
-#, fuzzy
-#| msgid "Options"
 msgid "Tiles Options"
-msgstr "Opciones"
+msgstr "Opciones de Teselas"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:111
 msgid "System & Pipeline Control"
-msgstr ""
+msgstr "Control del sistema y del flujo de trabajo"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:114
 msgid "Performance"
-msgstr ""
+msgstr "Rendimiento"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:115
-#, fuzzy
-#| msgid "Helicopter control"
 msgid "Pipeline Control"
-msgstr "Control de helicóptero"
+msgstr "Control del flujo de trabajo"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:120
 msgid "Split/Merge"
-msgstr ""
+msgstr "Dividir/Fusionar"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:123
 msgid "Splitting"
-msgstr ""
+msgstr "División"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:124
 msgid "Merging"
-msgstr ""
+msgstr "Fusión"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:470
-#, fuzzy
-#| msgid "Other settings"
 msgid "Other Options"
-msgstr "Otros ajustes"
+msgstr "Otras Opciones"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:507
 #: app/static/app/js/components/EditTaskForm.jsx:571
@@ -613,23 +585,23 @@ msgstr "Buscar"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:524
 msgid "Flat View"
-msgstr ""
+msgstr "Vista 2D"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:524
 msgid "Grouped View"
-msgstr ""
+msgstr "Vista agrupada"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:528
 msgid "Expand"
-msgstr ""
+msgstr "Expandir"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:528
 msgid "Collapse"
-msgstr ""
+msgstr "Contraer"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:538
 msgid "Search options..."
-msgstr ""
+msgstr "Buscar opciones..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -941,46 +913,42 @@ msgid "Download Image"
 msgstr "Descargar imagen"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:114
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid ""
 "Upload failed after multiple retries. Please check your connection and try "
 "again."
 msgstr ""
-"No se pudo cargar el archivo. Verifique su conexión a internet y vuelva a "
-"intentarlo."
+"La carga falló tras varios intentos. Por favor, compruebe su conexión e "
+"inténtelo de nuevo."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:206
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Failed to complete upload. Try again later."
-msgstr "No se puede recuperar la estimación. Inténtelo de nuevo más tarde."
+msgstr "Error al completar la carga. Inténtelo de nuevo más tarde."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:216
 msgid "Select at least one file to upload."
-msgstr ""
+msgstr "Seleccione al menos un archivo para cargar."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:223
 msgid "A textured model requires also a point cloud to be properly displayed."
 msgstr ""
+"Un modelo con textura también requiere una nube de puntos para mostrarse "
+"correctamente."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:247
 msgid "Failed to initialize upload. Try again later."
-msgstr ""
+msgstr "Error al inicializar la carga. Inténtelo de nuevo más tarde."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:286
-#, fuzzy
-#| msgid "Import Existing Assets"
 msgid "Import External Data"
-msgstr "Importar los objetos existentes"
+msgstr "Importar Datos Externos"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:287
 msgid "Select files. At least one file is required."
-msgstr ""
+msgstr "Seleccionar archivos. Se requiere al menos un archivo."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:307
 msgid "Remove"
-msgstr ""
+msgstr "Quitar"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
@@ -988,10 +956,8 @@ msgid "Cancel Upload"
 msgstr "Cancelar carga"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:333
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload"
-msgstr "Cargar un archivo"
+msgstr "Cargar"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
@@ -1158,91 +1124,74 @@ msgstr ""
 "¡MaxFileSize por defecto es %(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:239
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
-msgstr ""
-"No se pudo cargar el archivo. Verifique su conexión a internet y vuelva a "
-"intentarlo."
+msgstr "La carga falló. Compruebe su conexión e inténtelo de nuevo."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:260
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "No se pudo cargar los permisos."
+msgstr "No se puede cargar el contenido multimedia."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:277
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "¿Está seguro que quiere eliminar \"%(preset)s\"?"
+msgstr "¿Está seguro que quiere eliminar %(filename)s ?"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:307
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "No se puede eliminar la tarea."
+msgstr "No se puede eliminar el archivo."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:345
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "No se pudo completar la operación."
+msgstr "No se puede actualizar la descripción."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:360
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:361
 msgid "Panorama"
-msgstr ""
+msgstr "Panorámica"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:362
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:390
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "Cargar un archivo"
+msgstr "Cargar archivos"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:392
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
 msgstr ""
+"Las fotos georreferenciadas, los panoramas y los videos se mostrarán en el "
+"mapa."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "Finalizando... por favor espere"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:422
 msgid "No media files."
-msgstr ""
+msgstr "No hay archivos multimedia."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:434
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "Vista derecha"
+msgstr "Vista de cuadrícula"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:441
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "Vista izquierda"
+msgstr "Vista de lista"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:505
 #: app/static/app/js/components/Map.jsx:522
 #: app/static/app/js/components/TaskListItem.jsx:846
 msgid "Media"
-msgstr "Media"
+msgstr "Multimedia"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:547
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "Nombre de Usuario"
+msgstr "Nombre de archivo"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:548
 #: coreplugins/annotate/public/Popup.jsx:681
@@ -1252,18 +1201,18 @@ msgstr "Descripción"
 #: app/static/app/js/components/Map.jsx:759
 #: app/static/app/js/components/MapPreview.jsx:89
 msgid "Enter a tile URL template. Valid coordinates are:"
-msgstr "Ingrese una plantilla de URL de mosaico. Las coordenadas válidas son:"
+msgstr "Ingrese una plantilla de URL de teselas. Las coordenadas válidas son:"
 
 #: app/static/app/js/components/Map.jsx:760
 #: app/static/app/js/components/MapPreview.jsx:90
 #, python-brace-format
 msgid "{z}, {x}, {y} for Z/X/Y tile scheme"
-msgstr "{z}, {x}, {y} para el esquema de mosaico Z/X/Y"
+msgstr "{z}, {x}, {y} para el esquema de teselas Z/X/Y"
 
 #: app/static/app/js/components/Map.jsx:761
 #: app/static/app/js/components/MapPreview.jsx:91
 msgid "{-y} for flipped TMS-style Y coordinates"
-msgstr "{-y} para coordenadas Y estilo TMS invertidas"
+msgstr "{-y} para coordenadas Y invertidas de estilo TMS"
 
 #: app/static/app/js/components/Map.jsx:763
 #: app/static/app/js/components/MapPreview.jsx:93
@@ -1513,14 +1462,12 @@ msgid "Select Images and GCP"
 msgstr "Seleccionar imágenes y GCP"
 
 #: app/static/app/js/components/ProjectListItem.jsx:723
-#, fuzzy
-#| msgid "Import Assets or Backups"
 msgid "Assets / Backups"
-msgstr "Importar activos o copias de seguridad"
+msgstr "Activos / Copias de seguridad"
 
 #: app/static/app/js/components/ProjectListItem.jsx:724
 msgid "External Data"
-msgstr ""
+msgstr "Datos externos"
 
 #: app/static/app/js/components/ProjectListItem.jsx:756
 #, python-format
@@ -1757,13 +1704,11 @@ msgstr "¿Seguro que quiere reiniciar esta tarea?"
 
 #: app/static/app/js/components/TaskListItem.jsx:601
 msgid "Have all images been uploaded?"
-msgstr ""
+msgstr "¿Se han cargado todas las imágenes?"
 
 #: app/static/app/js/components/TaskListItem.jsx:602
-#, fuzzy
-#| msgid "Cannot restart task."
 msgid "Cannot start processing task."
-msgstr "No se puede reiniciar la tarea."
+msgstr "No se puede iniciar la tarea de procesamiento."
 
 #: app/static/app/js/components/TaskListItem.jsx:660
 msgid "Task ID:"
@@ -1771,7 +1716,7 @@ msgstr "ID de tarea:"
 
 #: app/static/app/js/components/TaskListItem.jsx:661
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copiar al portapapeles"
 
 #: app/static/app/js/components/TaskListItem.jsx:664
 msgid "Created on:"
@@ -1803,16 +1748,12 @@ msgid "Area:"
 msgstr "Área:"
 
 #: app/static/app/js/components/TaskListItem.jsx:688
-#, fuzzy
-#| msgid "Point"
 msgid "Points:"
-msgstr "Punto"
+msgstr "Puntos:"
 
 #: app/static/app/js/components/TaskListItem.jsx:693
-#, fuzzy
-#| msgid "Georeferencing"
 msgid "Georeferencing:"
-msgstr "Georeferenciando"
+msgstr "Georreferenciación:"
 
 #: app/static/app/js/components/TaskListItem.jsx:703
 msgid "Disk Usage:"
@@ -1885,10 +1826,8 @@ msgid "Set a processing node"
 msgstr "Establecer un nodo de procesamiento"
 
 #: app/static/app/js/components/TaskListItem.jsx:802
-#, fuzzy
-#| msgid "Waiting for a node..."
 msgid "Waiting to start processing..."
-msgstr "Esperando un nodo..."
+msgstr "Esperando para iniciar el procesamiento..."
 
 #: app/static/app/js/components/TaskListItem.jsx:852
 msgid "Move"
@@ -2267,7 +2206,7 @@ msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:35
 msgid "Displays version number and exits. "
-msgstr "Muestra el número de versión y sale. "
+msgstr "Muestra el número de versión y finaliza. "
 
 #: app/static/app/js/translations/odm_autogenerated.js:36
 #, python-format
@@ -3306,30 +3245,24 @@ msgstr "Tiempo GPS"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:92
 #: coreplugins/annotate/public/Toolbox.jsx:977
-#, fuzzy
-#| msgid "Annotations"
 msgid "Annotations Report"
-msgstr "Anotaciones"
+msgstr "Informe de anotaciones"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:100
 msgid "Prepared by:"
-msgstr ""
+msgstr "Preparado por:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:106
-#, fuzzy
-#| msgid "Username"
 msgid "Enter name"
-msgstr "Nombre de Usuario"
+msgstr "Ingrese el nombre"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:110
 msgid "Notes:"
-msgstr ""
+msgstr "Notas:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:117
-#, fuzzy
-#| msgid "Description (optional)"
 msgid "Additional notes (optional)"
-msgstr "Descripción (opcional)"
+msgstr "Notas adicionales (opcional)"
 
 #: coreplugins/annotate/public/Popup.jsx:211
 #: coreplugins/annotate/public/Popup.jsx:243
@@ -3422,14 +3355,12 @@ msgid "Base Surface"
 msgstr "Superficie de la base"
 
 #: coreplugins/annotate/public/Popup.jsx:765
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
-msgstr "mostrar en 3D"
+msgstr "Mostrar en 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:779
 msgid "3D view error"
-msgstr ""
+msgstr "Error de la vista 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:789
 msgid "No images found at this location"
@@ -3475,32 +3406,24 @@ msgid "Import GeoJSON"
 msgstr "Importar GeoJSON"
 
 #: coreplugins/annotate/public/Toolbox.jsx:966
-#, fuzzy
-#| msgid "Annotations"
 msgid "Export Annotations"
-msgstr "Anotaciones"
+msgstr "Exportar anotaciones"
 
 #: coreplugins/annotate/public/Toolbox.jsx:979
-#, fuzzy
-#| msgid "Export to GeoJSON"
 msgid "Export to CSV"
-msgstr "Exportar a GeoJSON"
+msgstr "Exportar a CSV"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "Base"
 
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "Copia de seguridad"
+msgstr "Regresar"
 
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "Copia de seguridad"
+msgstr "Atrás"
 
 #: coreplugins/annotate/public/markers.js:6
 msgid "Blue"
