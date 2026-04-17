@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-03 20:31+0000\n"
+"POT-Creation-Date: 2026-04-17 18:02+0000\n"
 "PO-Revision-Date: 2026-03-10 21:09+0000\n"
 "Last-Translator: Koncz Gergely <teng1024@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -335,11 +335,11 @@ msgid "Cannot create task, you need at least 2 images"
 msgstr "Nem lehet feladatot létrehozni, ehez legalább 2 képre van szükség"
 
 #: app/api/tasks.py:515 app/api/tasks.py:519 app/api/tasks.py:660
-#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1002
+#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1005
 msgid "Asset does not exist"
 msgstr "Az eszköz nem létezik"
 
-#: app/api/tasks.py:699 app/api/tasks.py:914
+#: app/api/tasks.py:699 app/api/tasks.py:917
 msgid "Imported Task"
 msgstr "Importált feladat"
 
@@ -362,33 +362,39 @@ msgstr "Érvénytelen URL. Ezt akartad: %(hint)s ?"
 msgid "Invalid uuid"
 msgstr "Érvénytelen cselekvés uuid"
 
-#: app/api/tasks.py:836 app/api/tasks.py:844
+#: app/api/tasks.py:836
 msgid "Invalid file type"
 msgstr "Érvénytelen zip fájltípus"
 
-#: app/api/tasks.py:868
+#: app/api/tasks.py:847
+#, fuzzy
+#| msgid "Invalid file type"
+msgid "Invalid file type (extension mismatch)"
+msgstr "Érvénytelen zip fájltípus"
+
+#: app/api/tasks.py:871
 msgid "Some parameters are not integers"
 msgstr "Néhány paraméter nem egész szám"
 
-#: app/api/tasks.py:927 app/api/tasks.py:932
+#: app/api/tasks.py:930 app/api/tasks.py:935
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 "A GeoTIFF-nek érvényes koordináta-referencia rendszerrel (CRS) kell "
 "rendelkeznie"
 
-#: app/api/tasks.py:934
+#: app/api/tasks.py:937
 msgid "Elevation model must have at most 2 band"
 msgstr "A magassági modellnek legfeljebb 2 sávval (band-del) kell rendelkeznie"
 
-#: app/api/tasks.py:940
+#: app/api/tasks.py:943
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr "A pontfelhőnek érvényes LAZ/LAS fájlnak kell lennie"
 
-#: app/api/tasks.py:946
+#: app/api/tasks.py:949
 msgid "Textured model must be a valid GLB file"
 msgstr "A texturált modellnek érvényes GLB fájlnak kell lennie"
 
-#: app/api/tasks.py:950
+#: app/api/tasks.py:953
 msgid "No assets uploaded"
 msgstr "Nincs fájl feltöltve"
 

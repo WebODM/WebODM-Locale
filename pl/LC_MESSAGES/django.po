@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-03 20:31+0000\n"
+"POT-Creation-Date: 2026-04-17 18:02+0000\n"
 "PO-Revision-Date: 2026-03-18 15:10+0000\n"
 "Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/webodm/pl/"
@@ -339,11 +339,11 @@ msgid "Cannot create task, you need at least 2 images"
 msgstr "Nie można utworzyć zadania, potrzebne są co najmniej dwa zdjęcia"
 
 #: app/api/tasks.py:515 app/api/tasks.py:519 app/api/tasks.py:660
-#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1002
+#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1005
 msgid "Asset does not exist"
 msgstr "Zasób nie istnieje"
 
-#: app/api/tasks.py:699 app/api/tasks.py:914
+#: app/api/tasks.py:699 app/api/tasks.py:917
 msgid "Imported Task"
 msgstr "Zaimportowane zadanie"
 
@@ -364,31 +364,37 @@ msgstr "Nieprawidłowy adres URL. Czy chodziło o %(hint)s?"
 msgid "Invalid uuid"
 msgstr "Nieprawidłowy UUID"
 
-#: app/api/tasks.py:836 app/api/tasks.py:844
+#: app/api/tasks.py:836
 msgid "Invalid file type"
 msgstr "Nieprawidłowy typ pliku"
 
-#: app/api/tasks.py:868
+#: app/api/tasks.py:847
+#, fuzzy
+#| msgid "Invalid file type"
+msgid "Invalid file type (extension mismatch)"
+msgstr "Nieprawidłowy typ pliku"
+
+#: app/api/tasks.py:871
 msgid "Some parameters are not integers"
 msgstr "Niektóre parametry nie są liczbą całkowitą"
 
-#: app/api/tasks.py:927 app/api/tasks.py:932
+#: app/api/tasks.py:930 app/api/tasks.py:935
 msgid "GeoTIFF must have a valid CRS"
 msgstr "GeoTIFF musi zawierać prawidłową definicję układu współrzędnych (CRS)"
 
-#: app/api/tasks.py:934
+#: app/api/tasks.py:937
 msgid "Elevation model must have at most 2 band"
 msgstr "Model wysokościowy powinien zawierać co najmiej 2 kanały"
 
-#: app/api/tasks.py:940
+#: app/api/tasks.py:943
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr "Chmura punktów musi być poprawnym pikiem LAZ/LAS"
 
-#: app/api/tasks.py:946
+#: app/api/tasks.py:949
 msgid "Textured model must be a valid GLB file"
 msgstr "Model teksturowany musi być poprawnym plikiem GLB"
 
-#: app/api/tasks.py:950
+#: app/api/tasks.py:953
 msgid "No assets uploaded"
 msgstr "Nie załadowano żadnych zbiorów"
 

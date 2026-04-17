@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-03 20:31+0000\n"
+"POT-Creation-Date: 2026-04-17 18:02+0000\n"
 "PO-Revision-Date: 2026-03-07 02:09+0000\n"
 "Last-Translator: NtskwK <natsukawa247@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -300,11 +300,11 @@ msgid "Cannot create task, you need at least 2 images"
 msgstr "无法创建任务，您至少需要2个图像"
 
 #: app/api/tasks.py:515 app/api/tasks.py:519 app/api/tasks.py:660
-#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1002
+#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1005
 msgid "Asset does not exist"
 msgstr "资源不存在"
 
-#: app/api/tasks.py:699 app/api/tasks.py:914
+#: app/api/tasks.py:699 app/api/tasks.py:917
 msgid "Imported Task"
 msgstr "导入的任务"
 
@@ -325,31 +325,37 @@ msgstr "无效的URL。你指的是 %(hint)s 吗？"
 msgid "Invalid uuid"
 msgstr "无效的uuid"
 
-#: app/api/tasks.py:836 app/api/tasks.py:844
+#: app/api/tasks.py:836
 msgid "Invalid file type"
 msgstr "无效的文件类型"
 
-#: app/api/tasks.py:868
+#: app/api/tasks.py:847
+#, fuzzy
+#| msgid "Invalid file type"
+msgid "Invalid file type (extension mismatch)"
+msgstr "无效的文件类型"
+
+#: app/api/tasks.py:871
 msgid "Some parameters are not integers"
 msgstr "有些参数不是int类型"
 
-#: app/api/tasks.py:927 app/api/tasks.py:932
+#: app/api/tasks.py:930 app/api/tasks.py:935
 msgid "GeoTIFF must have a valid CRS"
 msgstr "GeoTIFF必须具有有效的坐标参考系（CRS）"
 
-#: app/api/tasks.py:934
+#: app/api/tasks.py:937
 msgid "Elevation model must have at most 2 band"
 msgstr "高程模型最多只能有2个波段（band）"
 
-#: app/api/tasks.py:940
+#: app/api/tasks.py:943
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr "点云必须是一个有效的LAZ/LAS文件"
 
-#: app/api/tasks.py:946
+#: app/api/tasks.py:949
 msgid "Textured model must be a valid GLB file"
 msgstr "纹理模型必须是有效的GLB文件"
 
-#: app/api/tasks.py:950
+#: app/api/tasks.py:953
 msgid "No assets uploaded"
 msgstr "没有上传资产"
 

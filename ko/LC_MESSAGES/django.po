@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-03 20:31+0000\n"
+"POT-Creation-Date: 2026-04-17 18:02+0000\n"
 "PO-Revision-Date: 2026-03-05 19:39+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/webodm/webodm/ko/"
@@ -330,11 +330,11 @@ msgid "Cannot create task, you need at least 2 images"
 msgstr "작업을 생성할 수 없습니다, 최소 2장 이상의 이미지가 필요합니다"
 
 #: app/api/tasks.py:515 app/api/tasks.py:519 app/api/tasks.py:660
-#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1002
+#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1005
 msgid "Asset does not exist"
 msgstr "애셋이 존재하지 않습니다"
 
-#: app/api/tasks.py:699 app/api/tasks.py:914
+#: app/api/tasks.py:699 app/api/tasks.py:917
 msgid "Imported Task"
 msgstr "불러온 작업"
 
@@ -358,33 +358,39 @@ msgstr ""
 msgid "Invalid uuid"
 msgstr "잘못된 작업"
 
-#: app/api/tasks.py:836 app/api/tasks.py:844
+#: app/api/tasks.py:836
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid file type"
 msgstr "잘못된 zip 파일"
 
-#: app/api/tasks.py:868
+#: app/api/tasks.py:847
+#, fuzzy
+#| msgid "Invalid zip file"
+msgid "Invalid file type (extension mismatch)"
+msgstr "잘못된 zip 파일"
+
+#: app/api/tasks.py:871
 msgid "Some parameters are not integers"
 msgstr ""
 
-#: app/api/tasks.py:927 app/api/tasks.py:932
+#: app/api/tasks.py:930 app/api/tasks.py:935
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:934
+#: app/api/tasks.py:937
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:940
+#: app/api/tasks.py:943
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:946
+#: app/api/tasks.py:949
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:950
+#: app/api/tasks.py:953
 #, fuzzy
 #| msgid "No files uploaded"
 msgid "No assets uploaded"

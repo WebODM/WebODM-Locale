@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-03 20:31+0000\n"
+"POT-Creation-Date: 2026-04-17 18:02+0000\n"
 "PO-Revision-Date: 2026-04-08 06:42+0000\n"
 "Last-Translator: Александр Ващенко <sascha93rus@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/webodm/webodm/"
-"ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/webodm/webodm/ru/"
+">\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -342,11 +342,11 @@ msgid "Cannot create task, you need at least 2 images"
 msgstr "Невозможно создать задачу, требуется минимум 2 изображения"
 
 #: app/api/tasks.py:515 app/api/tasks.py:519 app/api/tasks.py:660
-#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1002
+#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1005
 msgid "Asset does not exist"
 msgstr "Набор данных отсутствует"
 
-#: app/api/tasks.py:699 app/api/tasks.py:914
+#: app/api/tasks.py:699 app/api/tasks.py:917
 msgid "Imported Task"
 msgstr "Импортированная задача"
 
@@ -369,31 +369,37 @@ msgstr "Неверный URL. Вы имели в виду %(hint)s?"
 msgid "Invalid uuid"
 msgstr "Недопустимое действие"
 
-#: app/api/tasks.py:836 app/api/tasks.py:844
+#: app/api/tasks.py:836
 msgid "Invalid file type"
 msgstr "Недопустимый тип файла"
 
-#: app/api/tasks.py:868
+#: app/api/tasks.py:847
+#, fuzzy
+#| msgid "Invalid file type"
+msgid "Invalid file type (extension mismatch)"
+msgstr "Недопустимый тип файла"
+
+#: app/api/tasks.py:871
 msgid "Some parameters are not integers"
 msgstr "Некоторые параметры не являются целыми числами"
 
-#: app/api/tasks.py:927 app/api/tasks.py:932
+#: app/api/tasks.py:930 app/api/tasks.py:935
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:934
+#: app/api/tasks.py:937
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:940
+#: app/api/tasks.py:943
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:946
+#: app/api/tasks.py:949
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:950
+#: app/api/tasks.py:953
 #, fuzzy
 #| msgid "No files uploaded"
 msgid "No assets uploaded"
