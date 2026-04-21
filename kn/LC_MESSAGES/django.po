@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 18:02+0000\n"
+"POT-Creation-Date: 2026-04-21 18:37+0000\n"
 "PO-Revision-Date: 2026-03-05 19:51+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Kannada <https://hosted.weblate.org/projects/webodm/webodm/kn/"
@@ -572,6 +572,14 @@ msgstr ""
 
 #: app/models/profile.py:16
 msgid "Cluster Id"
+msgstr ""
+
+#: app/models/profile.py:17
+msgid "OIDC Subject used for SSO"
+msgstr ""
+
+#: app/models/profile.py:17
+msgid "OIDC Subject"
 msgstr ""
 
 #: app/models/project.py:27
@@ -1711,22 +1719,22 @@ msgstr ""
 msgid "Create Account"
 msgstr ""
 
-#: app/templatetags/settings.py:57
+#: app/templatetags/settings.py:66
 #, python-format
 msgid "in %(num)s days"
 msgstr ""
 
-#: app/templatetags/settings.py:59
+#: app/templatetags/settings.py:68
 #, python-format
 msgid "in %(num)s hours"
 msgstr ""
 
-#: app/templatetags/settings.py:61
+#: app/templatetags/settings.py:70
 #, python-format
 msgid "in %(num)s minutes"
 msgstr ""
 
-#: app/templatetags/settings.py:63
+#: app/templatetags/settings.py:72
 msgid "very soon"
 msgstr ""
 
@@ -1842,6 +1850,31 @@ msgstr ""
 
 #: app/views/dev.py:75
 msgid "Invalid action"
+msgstr ""
+
+#: app/views/oidc.py:52 app/views/oidc.py:82
+msgid "Invalid SSO provider. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
+#: app/views/oidc.py:142 app/views/oidc.py:149
+msgid "SSO login failed."
+msgstr ""
+
+#: app/views/oidc.py:93
+msgid "Invalid SSO state. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:98
+msgid "Missing SSO authorization code."
+msgstr ""
+
+#: app/views/oidc.py:161
+msgid "Cannot create user. A username already exists with the same e-mail."
+msgstr ""
+
+#: app/views/oidc.py:165
+msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 
 #: coreplugins/align-service/plugin.py:56

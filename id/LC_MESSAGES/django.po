@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 18:02+0000\n"
+"POT-Creation-Date: 2026-04-21 18:37+0000\n"
 "PO-Revision-Date: 2026-03-09 07:09+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -603,6 +603,16 @@ msgstr "Id klaster yang ditetapkan untuk pengguna ini"
 #: app/models/profile.py:16
 msgid "Cluster Id"
 msgstr "Id Klaster"
+
+#: app/models/profile.py:17
+msgid "OIDC Subject used for SSO"
+msgstr ""
+
+#: app/models/profile.py:17
+#, fuzzy
+#| msgid "Objects"
+msgid "OIDC Subject"
+msgstr "Objek"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -1809,22 +1819,22 @@ msgstr ""
 msgid "Create Account"
 msgstr "Buat Akun"
 
-#: app/templatetags/settings.py:57
+#: app/templatetags/settings.py:66
 #, python-format
 msgid "in %(num)s days"
 msgstr "dalam %(num)s hari"
 
-#: app/templatetags/settings.py:59
+#: app/templatetags/settings.py:68
 #, python-format
 msgid "in %(num)s hours"
 msgstr "dalam %(num)s jam"
 
-#: app/templatetags/settings.py:61
+#: app/templatetags/settings.py:70
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "dalam %(num)s menit"
 
-#: app/templatetags/settings.py:63
+#: app/templatetags/settings.py:72
 msgid "very soon"
 msgstr "segera"
 
@@ -1947,6 +1957,31 @@ msgstr "File terjemahan dimuat ulang!"
 #: app/views/dev.py:75
 msgid "Invalid action"
 msgstr "Tindakan tidak valid"
+
+#: app/views/oidc.py:52 app/views/oidc.py:82
+msgid "Invalid SSO provider. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
+#: app/views/oidc.py:142 app/views/oidc.py:149
+msgid "SSO login failed."
+msgstr ""
+
+#: app/views/oidc.py:93
+msgid "Invalid SSO state. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:98
+msgid "Missing SSO authorization code."
+msgstr ""
+
+#: app/views/oidc.py:161
+msgid "Cannot create user. A username already exists with the same e-mail."
+msgstr ""
+
+#: app/views/oidc.py:165
+msgid "This account is disabled. Please contact an administrator."
+msgstr ""
 
 #: coreplugins/align-service/plugin.py:56
 msgid "Align Generator"

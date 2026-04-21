@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 18:02+0000\n"
+"POT-Creation-Date: 2026-04-21 18:37+0000\n"
 "PO-Revision-Date: 2026-03-07 02:09+0000\n"
 "Last-Translator: NtskwK <natsukawa247@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -560,6 +560,16 @@ msgstr "分配给该用户的集群Id"
 #: app/models/profile.py:16
 msgid "Cluster Id"
 msgstr "集群ID"
+
+#: app/models/profile.py:17
+msgid "OIDC Subject used for SSO"
+msgstr ""
+
+#: app/models/profile.py:17
+#, fuzzy
+#| msgid "Objects"
+msgid "OIDC Subject"
+msgstr "对象"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -1708,22 +1718,22 @@ msgstr "在我们开始之前，我们需要为你创建一个管理员账户：
 msgid "Create Account"
 msgstr "创建帐户"
 
-#: app/templatetags/settings.py:57
+#: app/templatetags/settings.py:66
 #, python-format
 msgid "in %(num)s days"
 msgstr "%(num)s 天"
 
-#: app/templatetags/settings.py:59
+#: app/templatetags/settings.py:68
 #, python-format
 msgid "in %(num)s hours"
 msgstr "%(num)s 小时"
 
-#: app/templatetags/settings.py:61
+#: app/templatetags/settings.py:70
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "%(num)s 分钟"
 
-#: app/templatetags/settings.py:63
+#: app/templatetags/settings.py:72
 msgid "very soon"
 msgstr "很快"
 
@@ -1841,6 +1851,31 @@ msgstr "翻译文件重新加载！"
 #: app/views/dev.py:75
 msgid "Invalid action"
 msgstr "无效动作"
+
+#: app/views/oidc.py:52 app/views/oidc.py:82
+msgid "Invalid SSO provider. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
+#: app/views/oidc.py:142 app/views/oidc.py:149
+msgid "SSO login failed."
+msgstr ""
+
+#: app/views/oidc.py:93
+msgid "Invalid SSO state. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:98
+msgid "Missing SSO authorization code."
+msgstr ""
+
+#: app/views/oidc.py:161
+msgid "Cannot create user. A username already exists with the same e-mail."
+msgstr ""
+
+#: app/views/oidc.py:165
+msgid "This account is disabled. Please contact an administrator."
+msgstr ""
 
 #: coreplugins/align-service/plugin.py:56
 msgid "Align Generator"

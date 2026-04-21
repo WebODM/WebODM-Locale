@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 18:02+0000\n"
+"POT-Creation-Date: 2026-04-21 18:37+0000\n"
 "PO-Revision-Date: 2026-04-20 09:09+0000\n"
 "Last-Translator: \"Luca P.\" <madeinupa@gmail.com>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/"
-"it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/it/"
+">\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -605,6 +605,16 @@ msgstr "Cluster Id a cui questo utente è assegnato"
 #: app/models/profile.py:16
 msgid "Cluster Id"
 msgstr "Cluster Id"
+
+#: app/models/profile.py:17
+msgid "OIDC Subject used for SSO"
+msgstr ""
+
+#: app/models/profile.py:17
+#, fuzzy
+#| msgid "Objects"
+msgid "OIDC Subject"
+msgstr "Oggetti"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -1808,22 +1818,22 @@ msgstr "Prima di iniziare, dobbiamo creare un account amministratore per te:"
 msgid "Create Account"
 msgstr "Crea Account"
 
-#: app/templatetags/settings.py:57
+#: app/templatetags/settings.py:66
 #, python-format
 msgid "in %(num)s days"
 msgstr "in %(num)s giorni"
 
-#: app/templatetags/settings.py:59
+#: app/templatetags/settings.py:68
 #, python-format
 msgid "in %(num)s hours"
 msgstr "in %(num)s ore"
 
-#: app/templatetags/settings.py:61
+#: app/templatetags/settings.py:70
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "in %(num)s minuti"
 
-#: app/templatetags/settings.py:63
+#: app/templatetags/settings.py:72
 msgid "very soon"
 msgstr "molto presto"
 
@@ -1950,6 +1960,31 @@ msgstr "File di traduzione ricaricati!"
 msgid "Invalid action"
 msgstr "Azione non valida"
 
+#: app/views/oidc.py:52 app/views/oidc.py:82
+msgid "Invalid SSO provider. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
+#: app/views/oidc.py:142 app/views/oidc.py:149
+msgid "SSO login failed."
+msgstr ""
+
+#: app/views/oidc.py:93
+msgid "Invalid SSO state. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:98
+msgid "Missing SSO authorization code."
+msgstr ""
+
+#: app/views/oidc.py:161
+msgid "Cannot create user. A username already exists with the same e-mail."
+msgstr ""
+
+#: app/views/oidc.py:165
+msgid "This account is disabled. Please contact an administrator."
+msgstr ""
+
 #: coreplugins/align-service/plugin.py:56
 msgid "Align Generator"
 msgstr "Generatore di allineamento"
@@ -2060,8 +2095,8 @@ msgid ""
 msgstr ""
 "Questi valori potrebbero essere relativi all'ambiente di virtualizzazione "
 "nel quale sta operando l'applicazione, non rappresentando necessariamente i "
-"valori della tua macchina. Controlla le istruzioni per %(win_hyperv_link)s, %"
-"(win_wsl2_link)s e %(mac_link)s per cambiare questi valori nelle "
+"valori della tua macchina. Controlla le istruzioni per %(win_hyperv_link)s, "
+"%(win_wsl2_link)s e %(mac_link)s per cambiare questi valori nelle "
 "impostazioni di Docker."
 
 #: coreplugins/diagnostic/templates/diagnostic.html:47
