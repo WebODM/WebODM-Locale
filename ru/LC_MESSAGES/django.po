@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 18:37+0000\n"
+"POT-Creation-Date: 2026-04-22 14:29+0000\n"
 "PO-Revision-Date: 2026-04-08 06:42+0000\n"
 "Last-Translator: Александр Ващенко <sascha93rus@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/webodm/webodm/ru/"
@@ -313,15 +313,21 @@ msgstr "Нет загруженных файлов"
 msgid "File exceeds maximum allowed size"
 msgstr "Размер файла превышает максимально допустимый"
 
-#: app/api/projects.py:130
+#: app/api/projects.py:136
 msgid "Cannot duplicate project"
 msgstr "Невозможно продублировать проект"
 
-#: app/api/projects.py:198
+#: app/api/projects.py:232
 msgid "Invalid user in permissions list"
 msgstr "Недопустимый пользователь в списке разрешений"
 
-#: app/api/projects.py:200
+#: app/api/projects.py:234
+#, fuzzy
+#| msgid "Invalid user in permissions list"
+msgid "Invalid group in permissions list"
+msgstr "Недопустимый пользователь в списке разрешений"
+
+#: app/api/projects.py:236
 msgid "Invalid permissions"
 msgstr "Недопустимые разрешения"
 
@@ -1978,7 +1984,7 @@ msgid "Invalid SSO provider. Please try again."
 msgstr ""
 
 #: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
-#: app/views/oidc.py:142 app/views/oidc.py:149
+#: app/views/oidc.py:142 app/views/oidc.py:149 app/views/oidc.py:166
 msgid "SSO login failed."
 msgstr ""
 
@@ -1990,11 +1996,11 @@ msgstr ""
 msgid "Missing SSO authorization code."
 msgstr ""
 
-#: app/views/oidc.py:161
+#: app/views/oidc.py:178
 msgid "Cannot create user. A username already exists with the same e-mail."
 msgstr ""
 
-#: app/views/oidc.py:165
+#: app/views/oidc.py:182
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 

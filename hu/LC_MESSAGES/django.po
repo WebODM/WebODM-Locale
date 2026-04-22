@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 18:37+0000\n"
+"POT-Creation-Date: 2026-04-22 14:29+0000\n"
 "PO-Revision-Date: 2026-03-10 21:09+0000\n"
 "Last-Translator: Koncz Gergely <teng1024@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -304,15 +304,21 @@ msgstr "Nincs feltöltött fájl"
 msgid "File exceeds maximum allowed size"
 msgstr ""
 
-#: app/api/projects.py:130
+#: app/api/projects.py:136
 msgid "Cannot duplicate project"
 msgstr "A projekt nem duplikálható"
 
-#: app/api/projects.py:198
+#: app/api/projects.py:232
 msgid "Invalid user in permissions list"
 msgstr "Érvénytelen felhasználó az engedélyezési listán"
 
-#: app/api/projects.py:200
+#: app/api/projects.py:234
+#, fuzzy
+#| msgid "Invalid user in permissions list"
+msgid "Invalid group in permissions list"
+msgstr "Érvénytelen felhasználó az engedélyezési listán"
+
+#: app/api/projects.py:236
 msgid "Invalid permissions"
 msgstr "Érvénytelen engedélyek (nincs jogosultságod)"
 
@@ -1970,7 +1976,7 @@ msgid "Invalid SSO provider. Please try again."
 msgstr ""
 
 #: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
-#: app/views/oidc.py:142 app/views/oidc.py:149
+#: app/views/oidc.py:142 app/views/oidc.py:149 app/views/oidc.py:166
 msgid "SSO login failed."
 msgstr ""
 
@@ -1982,11 +1988,11 @@ msgstr ""
 msgid "Missing SSO authorization code."
 msgstr ""
 
-#: app/views/oidc.py:161
+#: app/views/oidc.py:178
 msgid "Cannot create user. A username already exists with the same e-mail."
 msgstr ""
 
-#: app/views/oidc.py:165
+#: app/views/oidc.py:182
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 
