@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-22 14:29+0000\n"
+"POT-Creation-Date: 2026-04-23 16:49+0000\n"
 "PO-Revision-Date: 2026-04-08 06:42+0000\n"
 "Last-Translator: Александр Ващенко <sascha93rus@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/webodm/webodm/ru/"
@@ -20,39 +20,39 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:86
+#: app/admin.py:87
 msgid "Enter custom CSS"
 msgstr "Введите свой CSS"
 
-#: app/admin.py:87 app/models/theme.py:40
+#: app/admin.py:88 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:90
+#: app/admin.py:91
 msgid "HTML that will be displayed above site header"
 msgstr "HTML код, который будет показан выше \"шапки\" сайта"
 
-#: app/admin.py:91 app/models/theme.py:41
+#: app/admin.py:92 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (перед заголовком)"
 
-#: app/admin.py:94
+#: app/admin.py:95
 msgid "HTML that will be displayed after site header"
 msgstr "HTML код, который будет показан под \"шапкой\" сайта"
 
-#: app/admin.py:95 app/models/theme.py:42
+#: app/admin.py:96 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (после заголовка)"
 
-#: app/admin.py:98
+#: app/admin.py:99
 msgid "HTML that will be displayed after the body tag"
 msgstr "HTML, который будет отображаться после тега body"
 
-#: app/admin.py:99 app/models/theme.py:43
+#: app/admin.py:100 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (после тега body)"
 
-#: app/admin.py:103
+#: app/admin.py:104
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -61,73 +61,73 @@ msgstr ""
 "HTML, который будет показан в футере. Вы также можете использовать "
 "специальные теги по типу {ORGANIZATION} и {YEAR}."
 
-#: app/admin.py:104 app/models/theme.py:44
+#: app/admin.py:105 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (нижний колонтитул)"
 
-#: app/admin.py:139 app/models/project.py:29
+#: app/admin.py:160 app/models/project.py:29
 msgid "Description"
 msgstr "Описание"
 
-#: app/admin.py:145
+#: app/admin.py:166
 msgid "Version"
 msgstr "Версия"
 
-#: app/admin.py:151
+#: app/admin.py:172
 msgid "Author"
 msgstr "Автор"
 
-#: app/admin.py:183
+#: app/admin.py:204
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Требуется перезагрузка. Пожалуйста, перезапустите WebODM, чтобы активировать "
 "%(plugin)s"
 
-#: app/admin.py:186
+#: app/admin.py:207
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Невозможно активировать плагин %(plugin)s: %(message)s"
 
-#: app/admin.py:195
+#: app/admin.py:216
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Требуется перезагрузка. Пожалуйста, перезапустите WebODM, чтобы полностью "
 "отключить %(plugin)s"
 
-#: app/admin.py:198
+#: app/admin.py:219
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "Невозможно выключить плагин %(plugin)s: %(message)s"
 
-#: app/admin.py:207
+#: app/admin.py:228
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Невозможно удалить плагин %(plugin)s: %(message)s"
 
-#: app/admin.py:255
+#: app/admin.py:276
 msgid "Plugin added successfully"
 msgstr "Плагин успешно добавлен"
 
-#: app/admin.py:257
+#: app/admin.py:278
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Невозможно удалить плагин: %(message)s"
 
-#: app/admin.py:263
+#: app/admin.py:284
 msgid "You need to upload a zip file"
 msgstr "Необходимо загрузить .zip файл"
 
-#: app/admin.py:277
+#: app/admin.py:298
 msgid "Disable"
 msgstr "Отключить"
 
-#: app/admin.py:280
+#: app/admin.py:301
 msgid "Enable"
 msgstr "Включить"
 
-#: app/admin.py:285
+#: app/admin.py:306
 msgid "Actions"
 msgstr "Действия"
 
@@ -490,6 +490,61 @@ msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 "Невозможно использовать epsg для набора данных без географической привязки"
 
+#: app/models/basemap.py:13
+msgid "Type"
+msgstr ""
+
+#: app/models/basemap.py:14
+msgid "URL"
+msgstr ""
+
+#: app/models/basemap.py:15 app/templates/app/processing_node.html:39
+#: nodeodm/models.py:33
+msgid "Label"
+msgstr "Метка"
+
+#: app/models/basemap.py:16
+msgid "Attribution"
+msgstr ""
+
+#: app/models/basemap.py:19
+msgid "Max zoom"
+msgstr ""
+
+#: app/models/basemap.py:22
+msgid "Min zoom"
+msgstr ""
+
+#: app/models/basemap.py:23
+msgid "Subdomains"
+msgstr ""
+
+#: app/models/basemap.py:24
+msgid "Layers"
+msgstr ""
+
+#: app/models/basemap.py:25
+msgid "Styles"
+msgstr ""
+
+#: app/models/basemap.py:30
+msgid "Format"
+msgstr ""
+
+#: app/models/basemap.py:31
+#, fuzzy
+#| msgid "Button Default"
+msgid "Default"
+msgstr "Кнопка по умолчанию"
+
+#: app/models/basemap.py:34
+msgid "Basemap"
+msgstr ""
+
+#: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
+msgid "Basemaps"
+msgstr ""
+
 #: app/models/plugin.py:5
 msgid "Plugin name"
 msgstr "Название плагина"
@@ -766,7 +821,7 @@ msgstr "Тема"
 msgid "Active theme"
 msgstr "Активная тема"
 
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:125
+#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
 msgid "Application"
 msgstr "Приложение"
 
@@ -813,7 +868,7 @@ msgid ""
 msgstr ""
 "Узел обработки, назначенный для этой задачи (или null, если узел не назначен)"
 
-#: app/models/task.py:248 app/views/app.py:138 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Узел обработки"
 
@@ -1666,7 +1721,7 @@ msgstr ""
 "%(link_start)s GCP-файл %(link_end)s необязателен, но может повысить "
 "точность геопривязки"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:134
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Инструменты разработчика"
@@ -1749,7 +1804,7 @@ msgstr "Группы"
 msgid "Brand"
 msgstr "Бренд"
 
-#: app/templates/app/logged_in_base.html:138 app/views/app.py:128
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
 msgid "About"
 msgstr "О программе"
 
@@ -1780,10 +1835,6 @@ msgstr "Количество очередей"
 #: app/templates/app/processing_node.html:35
 msgid "Max Images Limit"
 msgstr "Максимальный лимит изображений"
-
-#: app/templates/app/processing_node.html:39 nodeodm/models.py:33
-msgid "Label"
-msgstr "Метка"
 
 #: app/templates/app/processing_node.html:43 nodeodm/models.py:27
 msgid "Last Refreshed"
@@ -1954,16 +2005,16 @@ msgstr "Первый проект"
 msgid "Map"
 msgstr "Карта"
 
-#: app/views/app.py:105
+#: app/views/app.py:106
 msgid "3D Model Display"
 msgstr "Отображение 3D-модели"
 
-#: app/views/app.py:134
+#: app/views/app.py:135
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s, похоже, находится не в сети."
 
-#: app/views/app.py:172
+#: app/views/app.py:173
 msgid "Welcome"
 msgstr "Добро пожаловать"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-22 14:29+0000\n"
+"POT-Creation-Date: 2026-04-23 16:49+0000\n"
 "PO-Revision-Date: 2026-03-05 19:42+0000\n"
 "Last-Translator: 快乐的老鼠宝宝 <laoshubaby@protonmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
@@ -19,39 +19,39 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:86
+#: app/admin.py:87
 msgid "Enter custom CSS"
 msgstr "輸入自訂CSS"
 
-#: app/admin.py:87 app/models/theme.py:40
+#: app/admin.py:88 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:90
+#: app/admin.py:91
 msgid "HTML that will be displayed above site header"
 msgstr "網站標題以上顯示的HTML"
 
-#: app/admin.py:91 app/models/theme.py:41
+#: app/admin.py:92 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (在標題之前)"
 
-#: app/admin.py:94
+#: app/admin.py:95
 msgid "HTML that will be displayed after site header"
 msgstr "網站標題之後顯示的HTML"
 
-#: app/admin.py:95 app/models/theme.py:42
+#: app/admin.py:96 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (在標題之後)"
 
-#: app/admin.py:98
+#: app/admin.py:99
 msgid "HTML that will be displayed after the body tag"
 msgstr "顯示網頁內文的HTML"
 
-#: app/admin.py:99 app/models/theme.py:43
+#: app/admin.py:100 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (內文標籤之後)"
 
-#: app/admin.py:103
+#: app/admin.py:104
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -59,69 +59,69 @@ msgid ""
 msgstr ""
 "在網頁註腳中顯示的HTML。 您還可以使用特殊標籤，例如{ORGANIZATION}和{YEAR}。"
 
-#: app/admin.py:104 app/models/theme.py:44
+#: app/admin.py:105 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (網頁註腳)"
 
-#: app/admin.py:139 app/models/project.py:29
+#: app/admin.py:160 app/models/project.py:29
 msgid "Description"
 msgstr "描述"
 
-#: app/admin.py:145
+#: app/admin.py:166
 msgid "Version"
 msgstr "版本"
 
-#: app/admin.py:151
+#: app/admin.py:172
 msgid "Author"
 msgstr "作者"
 
-#: app/admin.py:183
+#: app/admin.py:204
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr "需要重新啟動。請重新啟動WebODM來啟用擴充功能%(plugin)s"
 
-#: app/admin.py:186
+#: app/admin.py:207
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "無法啟動擴充功能 %(plugin)s: %(message)s"
 
-#: app/admin.py:195
+#: app/admin.py:216
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr "需要重新啟動。請重新啟動WebODM來停用擴充功能 %(plugin)s"
 
-#: app/admin.py:198
+#: app/admin.py:219
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "無法停用擴充功能 %(plugin)s: %(message)s"
 
-#: app/admin.py:207
+#: app/admin.py:228
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "無法刪除擴充功能 %(plugin)s: %(message)s"
 
-#: app/admin.py:255
+#: app/admin.py:276
 msgid "Plugin added successfully"
 msgstr "已成功新增擴充功能"
 
-#: app/admin.py:257
+#: app/admin.py:278
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "無法載入擴充功能: %(message)s"
 
-#: app/admin.py:263
+#: app/admin.py:284
 msgid "You need to upload a zip file"
 msgstr "你需要上傳一個zip文件"
 
-#: app/admin.py:277
+#: app/admin.py:298
 msgid "Disable"
 msgstr "停用"
 
-#: app/admin.py:280
+#: app/admin.py:301
 msgid "Enable"
 msgstr "啟用"
 
-#: app/admin.py:285
+#: app/admin.py:306
 msgid "Actions"
 msgstr "動作"
 
@@ -449,6 +449,61 @@ msgstr "無效的陰影地形值：%(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "無法在非地理參考的資料集中使用 EPSG"
 
+#: app/models/basemap.py:13
+msgid "Type"
+msgstr ""
+
+#: app/models/basemap.py:14
+msgid "URL"
+msgstr ""
+
+#: app/models/basemap.py:15 app/templates/app/processing_node.html:39
+#: nodeodm/models.py:33
+msgid "Label"
+msgstr "標籤"
+
+#: app/models/basemap.py:16
+msgid "Attribution"
+msgstr ""
+
+#: app/models/basemap.py:19
+msgid "Max zoom"
+msgstr ""
+
+#: app/models/basemap.py:22
+msgid "Min zoom"
+msgstr ""
+
+#: app/models/basemap.py:23
+msgid "Subdomains"
+msgstr ""
+
+#: app/models/basemap.py:24
+msgid "Layers"
+msgstr ""
+
+#: app/models/basemap.py:25
+msgid "Styles"
+msgstr ""
+
+#: app/models/basemap.py:30
+msgid "Format"
+msgstr ""
+
+#: app/models/basemap.py:31
+#, fuzzy
+#| msgid "Button Default"
+msgid "Default"
+msgstr "預設按鈕"
+
+#: app/models/basemap.py:34
+msgid "Basemap"
+msgstr ""
+
+#: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
+msgid "Basemaps"
+msgstr ""
+
 #: app/models/plugin.py:5
 msgid "Plugin name"
 msgstr "外掛名稱"
@@ -723,7 +778,7 @@ msgstr "主題"
 msgid "Active theme"
 msgstr "使用中的主題"
 
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:125
+#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
 msgid "Application"
 msgstr "應用程式"
 
@@ -767,7 +822,7 @@ msgid ""
 "associated yet)"
 msgstr "指派給此任務的處理節點（若尚未關聯則為 null）"
 
-#: app/models/task.py:248 app/views/app.py:138 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "處理節點"
 
@@ -1584,7 +1639,7 @@ msgid ""
 msgstr ""
 "%(link_start)sGCP 檔案%(link_end)s 是選用的，但可以提高地理參考的精確度"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:134
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "開發者工具"
@@ -1667,7 +1722,7 @@ msgstr "群組"
 msgid "Brand"
 msgstr "品牌"
 
-#: app/templates/app/logged_in_base.html:138 app/views/app.py:128
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
 msgid "About"
 msgstr "關於"
 
@@ -1698,10 +1753,6 @@ msgstr "佇列數"
 #: app/templates/app/processing_node.html:35
 msgid "Max Images Limit"
 msgstr "最大影像數限制"
-
-#: app/templates/app/processing_node.html:39 nodeodm/models.py:33
-msgid "Label"
-msgstr "標籤"
 
 #: app/templates/app/processing_node.html:43 nodeodm/models.py:27
 msgid "Last Refreshed"
@@ -1859,16 +1910,16 @@ msgstr "第一個專案"
 msgid "Map"
 msgstr "地圖"
 
-#: app/views/app.py:105
+#: app/views/app.py:106
 msgid "3D Model Display"
 msgstr "3D 模型顯示"
 
-#: app/views/app.py:134
+#: app/views/app.py:135
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s 似乎已離線。"
 
-#: app/views/app.py:172
+#: app/views/app.py:173
 msgid "Welcome"
 msgstr "歡迎"
 

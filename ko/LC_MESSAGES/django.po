@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-22 14:29+0000\n"
+"POT-Creation-Date: 2026-04-23 16:49+0000\n"
 "PO-Revision-Date: 2026-03-05 19:39+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/webodm/webodm/ko/"
@@ -19,39 +19,39 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:86
+#: app/admin.py:87
 msgid "Enter custom CSS"
 msgstr "사용자 정의 CSS를 입력"
 
-#: app/admin.py:87 app/models/theme.py:40
+#: app/admin.py:88 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:90
+#: app/admin.py:91
 msgid "HTML that will be displayed above site header"
 msgstr "사이트 헤더 상단에 표시될 HTML"
 
-#: app/admin.py:91 app/models/theme.py:41
+#: app/admin.py:92 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (머릿글 이전)"
 
-#: app/admin.py:94
+#: app/admin.py:95
 msgid "HTML that will be displayed after site header"
 msgstr "사이트 머릿글 다음에 표시될 HTML"
 
-#: app/admin.py:95 app/models/theme.py:42
+#: app/admin.py:96 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (머릿글 다음)"
 
-#: app/admin.py:98
+#: app/admin.py:99
 msgid "HTML that will be displayed after the body tag"
 msgstr "Body 태그 다음에 표시 될 HTML"
 
-#: app/admin.py:99 app/models/theme.py:43
+#: app/admin.py:100 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (body 다음)"
 
-#: app/admin.py:103
+#: app/admin.py:104
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -60,72 +60,72 @@ msgstr ""
 "바닥글에 표시 될 HTML. {ORGANIZATION} 과 {YEAR} 등 특수 태그를 사용할 수도 있"
 "습니다."
 
-#: app/admin.py:104 app/models/theme.py:44
+#: app/admin.py:105 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (바닥글)"
 
-#: app/admin.py:139 app/models/project.py:29
+#: app/admin.py:160 app/models/project.py:29
 msgid "Description"
 msgstr "설명"
 
-#: app/admin.py:145
+#: app/admin.py:166
 msgid "Version"
 msgstr "버전"
 
-#: app/admin.py:151
+#: app/admin.py:172
 msgid "Author"
 msgstr "작성자"
 
-#: app/admin.py:183
+#: app/admin.py:204
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "다시 시작해야 합니다. %(plugin)s를 활성화하려면 WebODM을 다시 시작하십시오"
 
-#: app/admin.py:186
+#: app/admin.py:207
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "플러그인 %(plugin)s를 활성화할 수 없음: %(message)s"
 
-#: app/admin.py:195
+#: app/admin.py:216
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "다시 시작해야 합니다. %(plugin)s를 완전히 비활성화하려면 WebODM을 다시 시작하"
 "십시오"
 
-#: app/admin.py:198
+#: app/admin.py:219
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "플러그인 %(plugin)s를 비활성화할 수 없음: %(message)s"
 
-#: app/admin.py:207
+#: app/admin.py:228
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "플러그인 %(plugin)s를 삭제할 수 없습니다: %(message)s"
 
-#: app/admin.py:255
+#: app/admin.py:276
 msgid "Plugin added successfully"
 msgstr "플러그인이 성공적으로 추가되었습니다"
 
-#: app/admin.py:257
+#: app/admin.py:278
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "플러그인을 불러올 수 없습니다: %(message)s"
 
-#: app/admin.py:263
+#: app/admin.py:284
 msgid "You need to upload a zip file"
 msgstr "Zip 파일을 올려야 합니다"
 
-#: app/admin.py:277
+#: app/admin.py:298
 msgid "Disable"
 msgstr "비활성화"
 
-#: app/admin.py:280
+#: app/admin.py:301
 msgid "Enable"
 msgstr "활성화"
 
-#: app/admin.py:285
+#: app/admin.py:306
 msgid "Actions"
 msgstr "행동"
 
@@ -481,6 +481,61 @@ msgstr "잘못된 힐쉐이드 값: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "지리 참조되지 않은 데이터 세트에서 epsg를 사용할 수 없습니다"
 
+#: app/models/basemap.py:13
+msgid "Type"
+msgstr ""
+
+#: app/models/basemap.py:14
+msgid "URL"
+msgstr ""
+
+#: app/models/basemap.py:15 app/templates/app/processing_node.html:39
+#: nodeodm/models.py:33
+msgid "Label"
+msgstr "레이블"
+
+#: app/models/basemap.py:16
+msgid "Attribution"
+msgstr ""
+
+#: app/models/basemap.py:19
+msgid "Max zoom"
+msgstr ""
+
+#: app/models/basemap.py:22
+msgid "Min zoom"
+msgstr ""
+
+#: app/models/basemap.py:23
+msgid "Subdomains"
+msgstr ""
+
+#: app/models/basemap.py:24
+msgid "Layers"
+msgstr ""
+
+#: app/models/basemap.py:25
+msgid "Styles"
+msgstr ""
+
+#: app/models/basemap.py:30
+msgid "Format"
+msgstr ""
+
+#: app/models/basemap.py:31
+#, fuzzy
+#| msgid "Button Default"
+msgid "Default"
+msgstr "버튼 기본값"
+
+#: app/models/basemap.py:34
+msgid "Basemap"
+msgstr ""
+
+#: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
+msgid "Basemaps"
+msgstr ""
+
 #: app/models/plugin.py:5
 msgid "Plugin name"
 msgstr "플러그인 이름"
@@ -767,7 +822,7 @@ msgstr "테마"
 msgid "Active theme"
 msgstr "활성 테마"
 
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:125
+#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
 msgid "Application"
 msgstr "응용프로그램"
 
@@ -813,7 +868,7 @@ msgid ""
 msgstr ""
 "이 작업에 할당 된 처리 노드 (또는이 작업이 아직 연결되지 않은 경우 null)"
 
-#: app/models/task.py:248 app/views/app.py:138 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "프로세싱 노드"
 
@@ -1655,7 +1710,7 @@ msgstr ""
 "%(link_start)sGCP 파일%(link_end)s는 선택 사항이지만 지리 참조 정확도를 높일 "
 "수 있습니다"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:134
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "개발자 도구"
@@ -1738,7 +1793,7 @@ msgstr "그룹"
 msgid "Brand"
 msgstr "브랜드"
 
-#: app/templates/app/logged_in_base.html:138 app/views/app.py:128
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
 msgid "About"
 msgstr "소개"
 
@@ -1769,10 +1824,6 @@ msgstr "대기열 개수"
 #: app/templates/app/processing_node.html:35
 msgid "Max Images Limit"
 msgstr "최대 이미지 개수 제한"
-
-#: app/templates/app/processing_node.html:39 nodeodm/models.py:33
-msgid "Label"
-msgstr "레이블"
 
 #: app/templates/app/processing_node.html:43 nodeodm/models.py:27
 msgid "Last Refreshed"
@@ -1936,16 +1987,16 @@ msgstr "첫 번째 프로젝트"
 msgid "Map"
 msgstr "지도"
 
-#: app/views/app.py:105
+#: app/views/app.py:106
 msgid "3D Model Display"
 msgstr "3D 모델 표시"
 
-#: app/views/app.py:134
+#: app/views/app.py:135
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s 는 오프라인인 것 같음."
 
-#: app/views/app.py:172
+#: app/views/app.py:173
 msgid "Welcome"
 msgstr "환영 합니다"
 

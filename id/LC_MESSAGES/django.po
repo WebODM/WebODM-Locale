@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-22 14:29+0000\n"
+"POT-Creation-Date: 2026-04-23 16:49+0000\n"
 "PO-Revision-Date: 2026-03-09 07:09+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -19,39 +19,39 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:86
+#: app/admin.py:87
 msgid "Enter custom CSS"
 msgstr "Masukkan CSS kustom"
 
-#: app/admin.py:87 app/models/theme.py:40
+#: app/admin.py:88 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:90
+#: app/admin.py:91
 msgid "HTML that will be displayed above site header"
 msgstr "HTML yang akan ditampilkan di atas header situs"
 
-#: app/admin.py:91 app/models/theme.py:41
+#: app/admin.py:92 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (sebelum header)"
 
-#: app/admin.py:94
+#: app/admin.py:95
 msgid "HTML that will be displayed after site header"
 msgstr "HTML yang akan ditampilkan setelah header situs"
 
-#: app/admin.py:95 app/models/theme.py:42
+#: app/admin.py:96 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (setelah header)"
 
-#: app/admin.py:98
+#: app/admin.py:99
 msgid "HTML that will be displayed after the body tag"
 msgstr "HTML yang akan ditampilkan setelah tag body"
 
-#: app/admin.py:99 app/models/theme.py:43
+#: app/admin.py:100 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (setelah body)"
 
-#: app/admin.py:103
+#: app/admin.py:104
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -60,71 +60,71 @@ msgstr ""
 "HTML yang akan ditampilkan di footer. Anda juga dapat menggunakan tag khusus "
 "seperti {ORGANIZATION} dan {YEAR}."
 
-#: app/admin.py:104 app/models/theme.py:44
+#: app/admin.py:105 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (footer)"
 
-#: app/admin.py:139 app/models/project.py:29
+#: app/admin.py:160 app/models/project.py:29
 msgid "Description"
 msgstr "Deskripsi"
 
-#: app/admin.py:145
+#: app/admin.py:166
 msgid "Version"
 msgstr "Versi"
 
-#: app/admin.py:151
+#: app/admin.py:172
 msgid "Author"
 msgstr "Pembuat"
 
-#: app/admin.py:183
+#: app/admin.py:204
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr "Diperlukan restart. Mulai ulang WebODM untuk mengaktifkan %(plugin)s"
 
-#: app/admin.py:186
+#: app/admin.py:207
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Tidak dapat mengaktifkan plugin %(plugin)s: %(message)s"
 
-#: app/admin.py:195
+#: app/admin.py:216
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Restart diperlukan. Silahkan restart WebODM untuk sepenuhnya menonaktifkan "
 "%(plugin)s"
 
-#: app/admin.py:198
+#: app/admin.py:219
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "Tidak dapat menonaktifkan plugin %(plugin)s: %(message)s"
 
-#: app/admin.py:207
+#: app/admin.py:228
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Tidak dapat menghapus plugin %(plugin)s: %(message)s"
 
-#: app/admin.py:255
+#: app/admin.py:276
 msgid "Plugin added successfully"
 msgstr "Plugin berhasil ditambahkan"
 
-#: app/admin.py:257
+#: app/admin.py:278
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Tidak dapat memuat plugin: %(message)s"
 
-#: app/admin.py:263
+#: app/admin.py:284
 msgid "You need to upload a zip file"
 msgstr "Anda perlu mengunggah file zip"
 
-#: app/admin.py:277
+#: app/admin.py:298
 msgid "Disable"
 msgstr "Nonaktifkan"
 
-#: app/admin.py:280
+#: app/admin.py:301
 msgid "Enable"
 msgstr "Aktifkan"
 
-#: app/admin.py:285
+#: app/admin.py:306
 msgid "Actions"
 msgstr "Tindakan"
 
@@ -479,6 +479,61 @@ msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 "Tidak dapat menggunakan epsg pada dataset yang tidak memiliki georeferensi"
 
+#: app/models/basemap.py:13
+msgid "Type"
+msgstr ""
+
+#: app/models/basemap.py:14
+msgid "URL"
+msgstr ""
+
+#: app/models/basemap.py:15 app/templates/app/processing_node.html:39
+#: nodeodm/models.py:33
+msgid "Label"
+msgstr "Label"
+
+#: app/models/basemap.py:16
+msgid "Attribution"
+msgstr ""
+
+#: app/models/basemap.py:19
+msgid "Max zoom"
+msgstr ""
+
+#: app/models/basemap.py:22
+msgid "Min zoom"
+msgstr ""
+
+#: app/models/basemap.py:23
+msgid "Subdomains"
+msgstr ""
+
+#: app/models/basemap.py:24
+msgid "Layers"
+msgstr ""
+
+#: app/models/basemap.py:25
+msgid "Styles"
+msgstr ""
+
+#: app/models/basemap.py:30
+msgid "Format"
+msgstr ""
+
+#: app/models/basemap.py:31
+#, fuzzy
+#| msgid "Button Default"
+msgid "Default"
+msgstr "Tombol Default"
+
+#: app/models/basemap.py:34
+msgid "Basemap"
+msgstr ""
+
+#: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
+msgid "Basemaps"
+msgstr ""
+
 #: app/models/plugin.py:5
 msgid "Plugin name"
 msgstr "Nama plugin"
@@ -752,7 +807,7 @@ msgstr "Tema"
 msgid "Active theme"
 msgstr "Tema aktif"
 
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:125
+#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
 msgid "Application"
 msgstr "Aplikasi"
 
@@ -800,7 +855,7 @@ msgstr ""
 "Node pemrosesan yang ditetapkan untuk tugas ini (atau null jika tugas ini "
 "belum dikaitkan)"
 
-#: app/models/task.py:248 app/views/app.py:138 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Node Pemrosesan"
 
@@ -1654,7 +1709,7 @@ msgstr ""
 "%(link_start)sFile GCP%(link_end)s bersifat opsional, tetapi dapat "
 "meningkatkan akurasi georeferensi"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:134
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Alat Pengembang"
@@ -1738,7 +1793,7 @@ msgstr "Grup"
 msgid "Brand"
 msgstr "Merek"
 
-#: app/templates/app/logged_in_base.html:138 app/views/app.py:128
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
 msgid "About"
 msgstr "Tentang"
 
@@ -1769,10 +1824,6 @@ msgstr "Jumlah Antrean"
 #: app/templates/app/processing_node.html:35
 msgid "Max Images Limit"
 msgstr "Batas Maksimum Gambar"
-
-#: app/templates/app/processing_node.html:39 nodeodm/models.py:33
-msgid "Label"
-msgstr "Label"
 
 #: app/templates/app/processing_node.html:43 nodeodm/models.py:27
 msgid "Last Refreshed"
@@ -1939,16 +1990,16 @@ msgstr "Proyek Pertama"
 msgid "Map"
 msgstr "Peta"
 
-#: app/views/app.py:105
+#: app/views/app.py:106
 msgid "3D Model Display"
 msgstr "Tampilan Model 3D"
 
-#: app/views/app.py:134
+#: app/views/app.py:135
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s tampaknya sedang offline."
 
-#: app/views/app.py:172
+#: app/views/app.py:173
 msgid "Welcome"
 msgstr "Selamat datang"
 

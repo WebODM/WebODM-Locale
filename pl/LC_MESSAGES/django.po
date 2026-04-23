@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-22 14:29+0000\n"
+"POT-Creation-Date: 2026-04-23 16:49+0000\n"
 "PO-Revision-Date: 2026-03-18 15:10+0000\n"
 "Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/webodm/pl/"
@@ -20,39 +20,39 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:86
+#: app/admin.py:87
 msgid "Enter custom CSS"
 msgstr "Wprowadź własny CSS"
 
-#: app/admin.py:87 app/models/theme.py:40
+#: app/admin.py:88 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:90
+#: app/admin.py:91
 msgid "HTML that will be displayed above site header"
 msgstr "HTML który będzie wyświetlany ponad nagłówkiem strony"
 
-#: app/admin.py:91 app/models/theme.py:41
+#: app/admin.py:92 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (przed nagłówkiem)"
 
-#: app/admin.py:94
+#: app/admin.py:95
 msgid "HTML that will be displayed after site header"
 msgstr "HTML który będzie wyświetlany pod nagłówkiem strony"
 
-#: app/admin.py:95 app/models/theme.py:42
+#: app/admin.py:96 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (za nagłówkiem)"
 
-#: app/admin.py:98
+#: app/admin.py:99
 msgid "HTML that will be displayed after the body tag"
 msgstr "HTML który będzie wyświetlany po znaczniku body"
 
-#: app/admin.py:99 app/models/theme.py:43
+#: app/admin.py:100 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (za body)"
 
-#: app/admin.py:103
+#: app/admin.py:104
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -61,73 +61,73 @@ msgstr ""
 "HTML który będzie wyświetlany w stopce. Możesz użyć specjalnych tagów takich "
 "jak {ORGANIZATION} i {YEAR}."
 
-#: app/admin.py:104 app/models/theme.py:44
+#: app/admin.py:105 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (stopka)"
 
-#: app/admin.py:139 app/models/project.py:29
+#: app/admin.py:160 app/models/project.py:29
 msgid "Description"
 msgstr "Opis"
 
-#: app/admin.py:145
+#: app/admin.py:166
 msgid "Version"
 msgstr "Wersja"
 
-#: app/admin.py:151
+#: app/admin.py:172
 msgid "Author"
 msgstr "Autor"
 
-#: app/admin.py:183
+#: app/admin.py:204
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Wymagane jest ponowne uruchomienie. Uruchom ponownie WebODM, aby włączyć "
 "%(plugin)s"
 
-#: app/admin.py:186
+#: app/admin.py:207
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Nie można włączyć wtyczki %(plugin)s: %(message)s"
 
-#: app/admin.py:195
+#: app/admin.py:216
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Wymagane jest ponowne uruchomienie. Uruchom ponownie WebODM, aby całkowicie "
 "wyłączyć %(plugin)s"
 
-#: app/admin.py:198
+#: app/admin.py:219
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "Nie można wyłączyć wtyczki%(plugin)s: %(message)s"
 
-#: app/admin.py:207
+#: app/admin.py:228
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Nie można usunąć wtyczki %(plugin)s: %(message)s"
 
-#: app/admin.py:255
+#: app/admin.py:276
 msgid "Plugin added successfully"
 msgstr "Wtyczka dodana pomyślnie"
 
-#: app/admin.py:257
+#: app/admin.py:278
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Nie można załadować wtyczki: %(message)s"
 
-#: app/admin.py:263
+#: app/admin.py:284
 msgid "You need to upload a zip file"
 msgstr "Musisz przesłać plik zip"
 
-#: app/admin.py:277
+#: app/admin.py:298
 msgid "Disable"
 msgstr "Wyłącz"
 
-#: app/admin.py:280
+#: app/admin.py:301
 msgid "Enable"
 msgstr "Włącz"
 
-#: app/admin.py:285
+#: app/admin.py:306
 msgid "Actions"
 msgstr "Akcje"
 
@@ -483,6 +483,61 @@ msgstr "Nieprawidłowa wartość zacienienia: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Nie można używać EPSG w zbiorze danych bez georeferencji"
 
+#: app/models/basemap.py:13
+msgid "Type"
+msgstr ""
+
+#: app/models/basemap.py:14
+msgid "URL"
+msgstr ""
+
+#: app/models/basemap.py:15 app/templates/app/processing_node.html:39
+#: nodeodm/models.py:33
+msgid "Label"
+msgstr "Etykieta"
+
+#: app/models/basemap.py:16
+msgid "Attribution"
+msgstr ""
+
+#: app/models/basemap.py:19
+msgid "Max zoom"
+msgstr ""
+
+#: app/models/basemap.py:22
+msgid "Min zoom"
+msgstr ""
+
+#: app/models/basemap.py:23
+msgid "Subdomains"
+msgstr ""
+
+#: app/models/basemap.py:24
+msgid "Layers"
+msgstr ""
+
+#: app/models/basemap.py:25
+msgid "Styles"
+msgstr ""
+
+#: app/models/basemap.py:30
+msgid "Format"
+msgstr ""
+
+#: app/models/basemap.py:31
+#, fuzzy
+#| msgid "Button Default"
+msgid "Default"
+msgstr "Domyślny przycisk"
+
+#: app/models/basemap.py:34
+msgid "Basemap"
+msgstr ""
+
+#: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
+msgid "Basemaps"
+msgstr ""
+
 #: app/models/plugin.py:5
 msgid "Plugin name"
 msgstr "Nazwa wtyczki"
@@ -760,7 +815,7 @@ msgstr "Motyw"
 msgid "Active theme"
 msgstr "Motyw aktywny"
 
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:125
+#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
 msgid "Application"
 msgstr "Aplikacja"
 
@@ -808,7 +863,7 @@ msgstr ""
 "Węzeł przetwarzania przypisany do tego zadania (lub null, jeśli to zadanie "
 "nie zostało jeszcze skojarzone)"
 
-#: app/models/task.py:248 app/views/app.py:138 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Węzeł przetwarzania"
 
@@ -1663,7 +1718,7 @@ msgstr ""
 "Plik %(link_start)s GCP %(link_end)s jest opcjonalny, ale może zwiększyć "
 "dokładność georeferencji"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:134
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Narzędzia programistyczne"
@@ -1747,7 +1802,7 @@ msgstr "Grupy"
 msgid "Brand"
 msgstr "Marka"
 
-#: app/templates/app/logged_in_base.html:138 app/views/app.py:128
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
 msgid "About"
 msgstr "Opis"
 
@@ -1778,10 +1833,6 @@ msgstr "Liczba kolejki"
 #: app/templates/app/processing_node.html:35
 msgid "Max Images Limit"
 msgstr "Maksymalny limit obrazów"
-
-#: app/templates/app/processing_node.html:39 nodeodm/models.py:33
-msgid "Label"
-msgstr "Etykieta"
 
 #: app/templates/app/processing_node.html:43 nodeodm/models.py:27
 msgid "Last Refreshed"
@@ -1947,16 +1998,16 @@ msgstr "Pierwszy projekt"
 msgid "Map"
 msgstr "Mapa"
 
-#: app/views/app.py:105
+#: app/views/app.py:106
 msgid "3D Model Display"
 msgstr "Wyświetlanie modelu 3D"
 
-#: app/views/app.py:134
+#: app/views/app.py:135
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s wygląda na offline."
 
-#: app/views/app.py:172
+#: app/views/app.py:173
 msgid "Welcome"
 msgstr "Witamy"
 
