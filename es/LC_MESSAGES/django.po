@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 16:49+0000\n"
-"PO-Revision-Date: 2026-04-17 01:09+0000\n"
-"Last-Translator: Mario Alberto Luna Pavo <pic.rpas@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/es/"
-">\n"
+"PO-Revision-Date: 2026-04-28 01:09+0000\n"
+"Last-Translator: Hernan Borcano <hernan.borcano@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/"
+"es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -317,10 +317,8 @@ msgid "Invalid user in permissions list"
 msgstr "Usuario inválido en la lista de permisos"
 
 #: app/api/projects.py:234
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "Usuario inválido en la lista de permisos"
+msgstr "Grupo inválido en la lista de permisos"
 
 #: app/api/projects.py:236
 msgid "Invalid permissions"
@@ -373,10 +371,8 @@ msgid "Invalid file type"
 msgstr "Tipo de archivo no valido"
 
 #: app/api/tasks.py:847
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid file type (extension mismatch)"
-msgstr "Tipo de archivo no valido"
+msgstr "Tipo de archivo no valido (Extension incorrecta)"
 
 #: app/api/tasks.py:871
 msgid "Some parameters are not integers"
@@ -483,11 +479,11 @@ msgstr "No se puede usar epsg en un conjunto de datos no georreferenciado"
 
 #: app/models/basemap.py:13
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: app/models/basemap.py:14
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:15 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:33
@@ -496,45 +492,43 @@ msgstr "Etiqueta"
 
 #: app/models/basemap.py:16
 msgid "Attribution"
-msgstr ""
+msgstr "Atribución"
 
 #: app/models/basemap.py:19
 msgid "Max zoom"
-msgstr ""
+msgstr "Zoom Max"
 
 #: app/models/basemap.py:22
 msgid "Min zoom"
-msgstr ""
+msgstr "Zoom Min"
 
 #: app/models/basemap.py:23
 msgid "Subdomains"
-msgstr ""
+msgstr "Subdominios"
 
 #: app/models/basemap.py:24
 msgid "Layers"
-msgstr ""
+msgstr "Capas"
 
 #: app/models/basemap.py:25
 msgid "Styles"
-msgstr ""
+msgstr "Estilos"
 
 #: app/models/basemap.py:30
 msgid "Format"
-msgstr ""
+msgstr "Formato"
 
 #: app/models/basemap.py:31
-#, fuzzy
-#| msgid "Button Default"
 msgid "Default"
-msgstr "Botón por defecto"
+msgstr "Por Defecto"
 
 #: app/models/basemap.py:34
 msgid "Basemap"
-msgstr ""
+msgstr "Mapa base"
 
 #: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "Mapas base"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -671,13 +665,11 @@ msgstr "Clúster Id"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
-msgstr ""
+msgstr "Usuario OIDC usado para SSO"
 
 #: app/models/profile.py:17
-#, fuzzy
-#| msgid "Objects"
 msgid "OIDC Subject"
-msgstr "Objetos"
+msgstr "Usuario OIDC"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -2020,28 +2012,28 @@ msgstr "Acción no válida"
 
 #: app/views/oidc.py:52 app/views/oidc.py:82
 msgid "Invalid SSO provider. Please try again."
-msgstr ""
+msgstr "Proveedor SSO inválido. Por favor intente de nuevo."
 
 #: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
 #: app/views/oidc.py:142 app/views/oidc.py:149 app/views/oidc.py:166
 msgid "SSO login failed."
-msgstr ""
+msgstr "Login SSO Falló."
 
 #: app/views/oidc.py:93
 msgid "Invalid SSO state. Please try again."
-msgstr ""
+msgstr "estado inválido SSO. Por favor intente de nuevo."
 
 #: app/views/oidc.py:98
 msgid "Missing SSO authorization code."
-msgstr ""
+msgstr "codigo de autorización SSO perdido."
 
 #: app/views/oidc.py:178
 msgid "Cannot create user. A username already exists with the same e-mail."
-msgstr ""
+msgstr "No se puede crear usuario. Ya existe un usuario con el mismo e-mail."
 
 #: app/views/oidc.py:182
 msgid "This account is disabled. Please contact an administrator."
-msgstr ""
+msgstr "Esta cuenta esta deshabilitada. Por favor contacte al administrador."
 
 #: coreplugins/align-service/plugin.py:56
 msgid "Align Generator"
