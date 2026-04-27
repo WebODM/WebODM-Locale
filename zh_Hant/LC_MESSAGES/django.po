@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 16:49+0000\n"
-"PO-Revision-Date: 2026-03-05 19:42+0000\n"
-"Last-Translator: 快乐的老鼠宝宝 <laoshubaby@protonmail.com>\n"
+"PO-Revision-Date: 2026-04-28 01:09+0000\n"
+"Last-Translator: protonchang <protonmo@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/webodm/webodm/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: app/admin.py:87
 msgid "Enter custom CSS"
@@ -1958,7 +1958,7 @@ msgstr ""
 
 #: app/views/oidc.py:182
 msgid "This account is disabled. Please contact an administrator."
-msgstr ""
+msgstr "此帳號已被停用，請聯絡您的系統管理員。"
 
 #: coreplugins/align-service/plugin.py:56
 msgid "Align Generator"
