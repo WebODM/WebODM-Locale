@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 16:49+0000\n"
-"PO-Revision-Date: 2026-04-20 09:09+0000\n"
+"PO-Revision-Date: 2026-04-29 07:09+0000\n"
 "Last-Translator: \"Luca P.\" <madeinupa@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/webodm/react-ui/"
 "it/>\n"
@@ -418,10 +418,8 @@ msgid "No Access"
 msgstr "Nessun accesso"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Grouped View"
 msgid "Group name"
-msgstr "Vista raggruppata"
+msgstr "Nome gruppo"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -432,16 +430,12 @@ msgid "Permissions"
 msgstr "Permessi"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "Aggiungi tag"
+msgstr "Aggiungi utente"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "Aggiungi Progetto"
+msgstr "Aggiungi gruppo"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:21
 msgid "Input & Preprocessing"
@@ -1020,7 +1014,7 @@ msgstr "Importa"
 #: app/static/app/js/components/LayersControl.jsx:38
 #: app/static/app/js/components/LayersControlPanel.jsx:116
 msgid "Layers"
-msgstr "Livelli"
+msgstr "Layers"
 
 #: app/static/app/js/components/LayersControlAnnotations.jsx:61
 #: app/static/app/js/components/LayersControlAnnotations.jsx:134
@@ -1213,10 +1207,8 @@ msgid "{z}, {x}, {y} for Z/X/Y tile scheme"
 msgstr "{z}, {x}, {y} per lo schema di tile Z/X/Y"
 
 #: app/static/app/js/components/Map.jsx:777
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
 msgid "{−y} for flipped TMS-style Y coordinates"
-msgstr "{-y} per le coordinate Y capovolte stile TMS"
+msgstr "{−y} per coordinate Y invertite stile TMS"
 
 #: app/static/app/js/components/Map.jsx:779
 msgid "Example:"
