@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 16:49+0000\n"
-"PO-Revision-Date: 2026-03-07 02:09+0000\n"
+"PO-Revision-Date: 2026-04-29 07:09+0000\n"
 "Last-Translator: NtskwK <natsukawa247@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/webodm/react-ui/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -314,7 +314,7 @@ msgstr "英尺"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "英寸"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -418,10 +418,8 @@ msgid "No Access"
 msgstr "没有访问"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Grouped View"
 msgid "Group name"
-msgstr "分组视图"
+msgstr "分组名称"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -432,16 +430,12 @@ msgid "Permissions"
 msgstr "权限"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "添加标签"
+msgstr "添加用户"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "新建工程"
+msgstr "新建分组"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:21
 msgid "Input & Preprocessing"
@@ -1101,91 +1095,72 @@ msgid ""
 msgstr "无法上传%(filename)s, 文件最大限制为%(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:239
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
-msgstr "无法上传文件。请检查您的网络连接，然后再试一次。"
+msgstr "上传失败。请检查您的连接，然后再试一次。"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:260
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "无法加载权限。"
+msgstr "无法加载媒体。"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:277
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "你确定要删除\"%(preset)s\"吗？"
+msgstr "你确定要删除 %(filename) 吗？"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:307
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "无法删除任务。"
+msgstr "无法删除文件。"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:345
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "无法完成操作。"
+msgstr "无法更新描述。"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:360
-#, fuzzy
-#| msgid "Video Input"
 msgid "Video"
-msgstr "视频输入"
+msgstr "视频"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:361
 msgid "Panorama"
-msgstr ""
+msgstr "全景图"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:362
 msgid "Photo"
-msgstr ""
+msgstr "照片"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:390
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
 msgstr "上传文件"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:392
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
-msgstr ""
+msgstr "地理参考照片、全景图和视频将显示在地图上。"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "确定……请等待"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:422
 msgid "No media files."
-msgstr ""
+msgstr "没有媒体文件。"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:434
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "右视图"
+msgstr "网格视图"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:441
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "左视图"
+msgstr "列表视图"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:505
 #: app/static/app/js/components/Map.jsx:524
 #: app/static/app/js/components/TaskListItem.jsx:846
 msgid "Media"
-msgstr ""
+msgstr "媒体"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:547
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "用户名"
+msgstr "文件名"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:548
 #: coreplugins/annotate/public/Popup.jsx:681
@@ -1202,8 +1177,6 @@ msgid "{z}, {x}, {y} for Z/X/Y tile scheme"
 msgstr "{z} ，{x}，{y}的z/x/y瓦片方案"
 
 #: app/static/app/js/components/Map.jsx:777
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
 msgid "{−y} for flipped TMS-style Y coordinates"
 msgstr "{-y}用于翻转的TMS样式的Y坐标"
 
@@ -1601,18 +1574,13 @@ msgid "this page"
 msgstr "本页"
 
 #: app/static/app/js/components/TaskListItem.jsx:312
-#, fuzzy
-#| msgid ""
-#| "The processing node is missing a program necessary to complete the task. "
-#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
-#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
 "This might indicate a corrupted installation. If you built ODM, please check "
 "that all programs built without errors."
 msgstr ""
-"处理节点缺少完成该任务所必需的程序。这可能表明安装已损坏。如果您构建了"
-"OpenDroneMap，请检查所有程序构建时没有错误。"
+"处理节点缺少完成该任务所必需的程序。这可能表明安装已损坏。如果您构建了ODM，请"
+"检查所有程序构建时没有错误。"
 
 #: app/static/app/js/components/TaskListItem.jsx:353
 #, python-format
@@ -1884,18 +1852,14 @@ msgstr ""
 "%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
+#, python-format
 msgid ""
 "When processing multispectral datasets, automatically align the images for "
 "each band. If the images have been postprocessed and are already aligned, "
 "use this option. Default: %(default)s"
 msgstr ""
-"在处理多光谱数据集时，ODM将自动对齐每个波段的图像。如果图像已经过后处理并且已"
-"经对齐，则使用此选项。默认值:%(default)s"
+"在处理多光谱数据集时，自动对齐每个波段的图像。如果图像已经过后处理并且已经对"
+"齐，则使用此选项。默认值:%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
@@ -3165,14 +3129,12 @@ msgid "Base Surface"
 msgstr "基准面"
 
 #: coreplugins/annotate/public/Popup.jsx:765
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
 msgstr "3D显示"
 
 #: coreplugins/annotate/public/Popup.jsx:779
 msgid "3D view error"
-msgstr ""
+msgstr "3D 视图错误"
 
 #: coreplugins/annotate/public/Popup.jsx:789
 msgid "No images found at this location"
@@ -3227,19 +3189,15 @@ msgstr "导出csv"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "基准"
 
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "备份"
+msgstr "返回"
 
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "备份"
+msgstr "向后"
 
 #: coreplugins/annotate/public/markers.js:6
 msgid "Blue"
