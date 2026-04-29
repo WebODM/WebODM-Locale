@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 16:49+0000\n"
-"PO-Revision-Date: 2026-03-07 02:09+0000\n"
+"PO-Revision-Date: 2026-04-29 07:09+0000\n"
 "Last-Translator: NtskwK <natsukawa247@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/webodm/webodm/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 
 #: app/admin.py:87
 msgid "Enter custom CSS"
@@ -269,7 +269,7 @@ msgstr "没有文件可上传"
 
 #: app/api/media.py:153
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "文件超过允许的最大大小"
 
 #: app/api/projects.py:136
 msgid "Cannot duplicate project"
@@ -280,10 +280,8 @@ msgid "Invalid user in permissions list"
 msgstr "权限列表中的用户无效"
 
 #: app/api/projects.py:234
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "权限列表中的用户无效"
+msgstr "权限列表中的无效组"
 
 #: app/api/projects.py:236
 msgid "Invalid permissions"
@@ -336,10 +334,8 @@ msgid "Invalid file type"
 msgstr "无效的文件类型"
 
 #: app/api/tasks.py:847
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid file type (extension mismatch)"
-msgstr "无效的文件类型"
+msgstr "无效的文件类型 （扩展名不匹配）"
 
 #: app/api/tasks.py:871
 msgid "Some parameters are not integers"
@@ -442,11 +438,11 @@ msgstr "不能在非地理坐标的数据集上使用epsg"
 
 #: app/models/basemap.py:13
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: app/models/basemap.py:14
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:15 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:33
@@ -455,45 +451,43 @@ msgstr "标签"
 
 #: app/models/basemap.py:16
 msgid "Attribution"
-msgstr ""
+msgstr "特征"
 
 #: app/models/basemap.py:19
 msgid "Max zoom"
-msgstr ""
+msgstr "最大空间"
 
 #: app/models/basemap.py:22
 msgid "Min zoom"
-msgstr ""
+msgstr "最小空间"
 
 #: app/models/basemap.py:23
 msgid "Subdomains"
-msgstr ""
+msgstr "子域"
 
 #: app/models/basemap.py:24
 msgid "Layers"
-msgstr ""
+msgstr "图层"
 
 #: app/models/basemap.py:25
 msgid "Styles"
-msgstr ""
+msgstr "样式"
 
 #: app/models/basemap.py:30
 msgid "Format"
-msgstr ""
+msgstr "格式"
 
 #: app/models/basemap.py:31
-#, fuzzy
-#| msgid "Button Default"
 msgid "Default"
-msgstr "默认按钮"
+msgstr "默认"
 
 #: app/models/basemap.py:34
 msgid "Basemap"
-msgstr ""
+msgstr "底图"
 
 #: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "底图"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -624,13 +618,11 @@ msgstr "集群ID"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
-msgstr ""
+msgstr "用于单点登录（SSO）的 OIDC 主体唯一标识"
 
 #: app/models/profile.py:17
-#, fuzzy
-#| msgid "Objects"
 msgid "OIDC Subject"
-msgstr "对象"
+msgstr "OIDC 主体唯一标识"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -1016,14 +1008,12 @@ msgid "Crop Polygon"
 msgstr "裁剪多边形"
 
 #: app/models/task.py:291
-#, fuzzy
-#| msgid "Number of images associated with this task"
 msgid "List of media files associated with this task"
-msgstr "与此任务关联的图像数"
+msgstr "与此任务关联的媒体文件列表"
 
 #: app/models/task.py:291
 msgid "Media"
-msgstr ""
+msgstr "媒体"
 
 #: app/models/task.py:295
 msgid "Task"
@@ -1911,28 +1901,28 @@ msgstr "无效动作"
 
 #: app/views/oidc.py:52 app/views/oidc.py:82
 msgid "Invalid SSO provider. Please try again."
-msgstr ""
+msgstr "无效的SSO提供程序。请重试。"
 
 #: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
 #: app/views/oidc.py:142 app/views/oidc.py:149 app/views/oidc.py:166
 msgid "SSO login failed."
-msgstr ""
+msgstr "SSO登录失败。"
 
 #: app/views/oidc.py:93
 msgid "Invalid SSO state. Please try again."
-msgstr ""
+msgstr "无效的SSO状态。请重试。"
 
 #: app/views/oidc.py:98
 msgid "Missing SSO authorization code."
-msgstr ""
+msgstr "缺少SSO授权码。"
 
 #: app/views/oidc.py:178
 msgid "Cannot create user. A username already exists with the same e-mail."
-msgstr ""
+msgstr "无法创建用户。已存在使用相同邮箱的用户。"
 
 #: app/views/oidc.py:182
 msgid "This account is disabled. Please contact an administrator."
-msgstr ""
+msgstr "该帐户已禁用。请联系管理员。"
 
 #: coreplugins/align-service/plugin.py:56
 msgid "Align Generator"
