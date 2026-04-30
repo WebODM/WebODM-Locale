@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 16:49+0000\n"
-"PO-Revision-Date: 2026-03-18 15:10+0000\n"
+"PO-Revision-Date: 2026-04-30 18:09+0000\n"
 "Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -315,7 +315,7 @@ msgstr "Stopy"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Cale"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -419,10 +419,8 @@ msgid "No Access"
 msgstr "Brak dostępu"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Grouped View"
 msgid "Group name"
-msgstr "Widok pogrupowany"
+msgstr "Nazwa grupy"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -433,16 +431,12 @@ msgid "Permissions"
 msgstr "Uprawnienia"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "Dodaj tagi"
+msgstr "Dodaj użytkownika"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "Dodaj projekt"
+msgstr "Dodaj grupę"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:21
 msgid "Input & Preprocessing"
@@ -702,7 +696,7 @@ msgstr "Ustawienia własne"
 #: app/static/app/js/components/EditTaskForm.jsx:239
 #: app/static/app/js/components/EditTaskForm.jsx:391
 msgid "Default"
-msgstr "Domyślne"
+msgstr "Domyślny"
 
 #: app/static/app/js/components/EditTaskForm.jsx:476
 msgid "My Preset"
@@ -1125,93 +1119,72 @@ msgstr ""
 "rozmiar pliku to %(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:239
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
-msgstr ""
-"Nie można przesłać pliku. Sprawdź swoje połączenie internetowe i spróbuj "
-"ponownie."
+msgstr "Nie udało się przesłać. Sprawdź swoje połączenie i spróbuj ponownie."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:260
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "Nie można wczytać uprawnień."
+msgstr "Nie można wczytać mediów."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:277
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "Jesteś pewien, że chcesz usunąć \"%(preset)s\"?"
+msgstr "Jesteś pewien, że chcesz usunąć %(filename)s?"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:307
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "Nie można usunąć zadania."
+msgstr "Nie można usunąć pliku."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:345
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "Nie można dokończyć operacji."
+msgstr "Nie można zaktualizować opisu."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:360
-#, fuzzy
-#| msgid "Video Input"
 msgid "Video"
-msgstr "Wejście wideo"
+msgstr "Wideo"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:361
 msgid "Panorama"
-msgstr ""
+msgstr "Panorama"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:362
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:390
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "Prześlij plik"
+msgstr "Prześlij pliki"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:392
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
-msgstr ""
+msgstr "Zdjęcia z lokalizacją, panoramy i wideo będą wyświetlane na mapie."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "Kończenie... proszę czekać"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:422
 msgid "No media files."
-msgstr ""
+msgstr "Brak plików mediów."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:434
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "Widok z prawej"
+msgstr "Widok siatki"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:441
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "Widok z lewej"
+msgstr "Widok listy"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:505
 #: app/static/app/js/components/Map.jsx:524
 #: app/static/app/js/components/TaskListItem.jsx:846
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:547
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "Nazwa użytkownika"
+msgstr "Nazwa pliku"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:548
 #: coreplugins/annotate/public/Popup.jsx:681
@@ -1228,10 +1201,8 @@ msgid "{z}, {x}, {y} for Z/X/Y tile scheme"
 msgstr "{z}, {x}, {y} dla schematu kafli Z / X / Y"
 
 #: app/static/app/js/components/Map.jsx:777
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
 msgid "{−y} for flipped TMS-style Y coordinates"
-msgstr "{-y} dla odwróconych współrzędnych Y w stylu TMS"
+msgstr "{−y} dla odwróconych współrzędnych Y w stylu TMS"
 
 #: app/static/app/js/components/Map.jsx:779
 msgid "Example:"
@@ -1640,19 +1611,14 @@ msgid "this page"
 msgstr "ta strona"
 
 #: app/static/app/js/components/TaskListItem.jsx:312
-#, fuzzy
-#| msgid ""
-#| "The processing node is missing a program necessary to complete the task. "
-#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
-#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
 "This might indicate a corrupted installation. If you built ODM, please check "
 "that all programs built without errors."
 msgstr ""
 "W węźle przetwarzającym brakuje programu niezbędnego do wykonania zadania. "
-"Może to wskazywać na uszkodzoną instalację. Jeśli zbudowałeś OpenDroneMap, "
-"sprawdź, czy wszystkie programy zostały zainstalowane bez błędów."
+"Może to wskazywać na uszkodzoną instalację. Jeśli zbudowałeś ODM, sprawdź, "
+"czy wszystkie programy zostały zainstalowane bez błędów."
 
 #: app/static/app/js/components/TaskListItem.jsx:353
 #, python-format
@@ -1938,18 +1904,14 @@ msgstr ""
 "GeoJSON. Domyślny: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
+#, python-format
 msgid ""
 "When processing multispectral datasets, automatically align the images for "
 "each band. If the images have been postprocessed and are already aligned, "
 "use this option. Default: %(default)s"
 msgstr ""
-"Podczas przetwarzania wielospektralnych zestawów danych ODM automatycznie "
-"wyrówna obrazy dla każdego pasma. Jeśli obrazy zostały poddane obróbce "
+"Podczas przetwarzania wielospektralnych zestawów danych nastąpi automatyczne "
+"wyrównane obrazu dla każdego pasma. Jeśli obrazy zostały poddane obróbce "
 "końcowej i są już wyrównane, użyj tej opcji. Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:9
@@ -3338,14 +3300,12 @@ msgid "Base Surface"
 msgstr "Powierzchnia bazowa"
 
 #: coreplugins/annotate/public/Popup.jsx:765
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
-msgstr "pokaż w 3D"
+msgstr "Widok 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:779
 msgid "3D view error"
-msgstr ""
+msgstr "Błąd widoku 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:789
 msgid "No images found at this location"
@@ -3400,19 +3360,15 @@ msgstr "Eksportuj do CSV"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "Baza"
 
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "Kopia zapasowa"
+msgstr "Cofnij"
 
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "Kopia zapasowa"
+msgstr "Powrót"
 
 #: coreplugins/annotate/public/markers.js:6
 msgid "Blue"
