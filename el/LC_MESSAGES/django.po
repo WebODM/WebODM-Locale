@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 16:49+0000\n"
+"POT-Creation-Date: 2026-04-30 20:22+0000\n"
 "PO-Revision-Date: 2026-03-05 19:39+0000\n"
 "Last-Translator: Christos Kanotidis <christoskanotidis@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/webodm/webodm/el/"
@@ -877,7 +877,7 @@ msgstr ""
 "Κόμβος επεξεργασίας που έχει ανατεθεί σε αυτήν την εργασία (ή μηδέν εάν η "
 "εργασία δεν έχει συσχετιστεί ακόμη)"
 
-#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:140 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Κόμβος επεξεργασίας"
 
@@ -1824,7 +1824,7 @@ msgstr "Ομάδες"
 msgid "Brand"
 msgstr "Επωνυμία"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:130
 msgid "About"
 msgstr "Περί"
 
@@ -2024,20 +2024,20 @@ msgstr ""
 msgid "First Project"
 msgstr "Πρώτο έργο"
 
-#: app/views/app.py:72
+#: app/views/app.py:73
 msgid "Map"
 msgstr "Χάρτης"
 
-#: app/views/app.py:106
+#: app/views/app.py:107
 msgid "3D Model Display"
 msgstr "Οθόνη Μοντέλου 3D"
 
-#: app/views/app.py:135
+#: app/views/app.py:136
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "Ο κόμβος %(node)s φαίνεται να είναι εκτός σύνδεσης."
 
-#: app/views/app.py:173
+#: app/views/app.py:174
 msgid "Welcome"
 msgstr "Καλώς ήρθατε"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 16:49+0000\n"
+"POT-Creation-Date: 2026-04-30 20:22+0000\n"
 "PO-Revision-Date: 2026-03-05 19:51+0000\n"
 "Last-Translator: Carlos Grohmann <carlos.grohmann@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
@@ -866,7 +866,7 @@ msgstr ""
 "Nó de processamento designado para esta tarefa (ou nulo se esta tarefa ainda "
 "não foi associada)"
 
-#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:140 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Nó de processamento"
 
@@ -1798,7 +1798,7 @@ msgstr "Grupos"
 msgid "Brand"
 msgstr "Marca"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:130
 msgid "About"
 msgstr "Sobre"
 
@@ -1989,20 +1989,20 @@ msgstr ""
 msgid "First Project"
 msgstr "Primeiro projeto"
 
-#: app/views/app.py:72
+#: app/views/app.py:73
 msgid "Map"
 msgstr "Mapa"
 
-#: app/views/app.py:106
+#: app/views/app.py:107
 msgid "3D Model Display"
 msgstr "Exibe o modelo 3D"
 
-#: app/views/app.py:135
+#: app/views/app.py:136
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s parece estar off-line."
 
-#: app/views/app.py:173
+#: app/views/app.py:174
 msgid "Welcome"
 msgstr "Bem-vindo"
 

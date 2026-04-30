@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 16:49+0000\n"
+"POT-Creation-Date: 2026-04-30 20:22+0000\n"
 "PO-Revision-Date: 2026-04-08 19:11+0000\n"
 "Last-Translator: Piero Toffanin <pt@masseranolabs.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/webodm/webodm/fr/"
@@ -877,7 +877,7 @@ msgstr ""
 "Nœud de traitement assigné à cette tâche (ou défini à null si la tâche n'a "
 "pas encore été associée)"
 
-#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:140 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Nœud de traitement"
 
@@ -1841,7 +1841,7 @@ msgstr "Groupes"
 msgid "Brand"
 msgstr "Marque"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:130
 msgid "About"
 msgstr "À propos"
 
@@ -2028,20 +2028,20 @@ msgstr ""
 msgid "First Project"
 msgstr "Premier projet"
 
-#: app/views/app.py:72
+#: app/views/app.py:73
 msgid "Map"
 msgstr "Carte"
 
-#: app/views/app.py:106
+#: app/views/app.py:107
 msgid "3D Model Display"
 msgstr "Affichage du modèle 3D"
 
-#: app/views/app.py:135
+#: app/views/app.py:136
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr ""
 
-#: app/views/app.py:173
+#: app/views/app.py:174
 msgid "Welcome"
 msgstr "Bienvenue"
 

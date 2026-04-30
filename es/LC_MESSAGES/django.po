@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 16:49+0000\n"
+"POT-Creation-Date: 2026-04-30 20:22+0000\n"
 "PO-Revision-Date: 2026-04-28 01:09+0000\n"
 "Last-Translator: Hernan Borcano <hernan.borcano@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/"
-"es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/es/"
+">\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -852,7 +852,7 @@ msgstr ""
 "Nodo de procesamiento asignado a esta tarea (o nulo si esta tarea aún no se "
 "ha asociado)"
 
-#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:140 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Nodo de procesamiento"
 
@@ -1785,7 +1785,7 @@ msgstr "Grupos"
 msgid "Brand"
 msgstr "Marca"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:130
 msgid "About"
 msgstr "Acerca de"
 
@@ -1981,20 +1981,20 @@ msgstr ""
 msgid "First Project"
 msgstr "Primer Proyecto"
 
-#: app/views/app.py:72
+#: app/views/app.py:73
 msgid "Map"
 msgstr "Mapa"
 
-#: app/views/app.py:106
+#: app/views/app.py:107
 msgid "3D Model Display"
 msgstr "Pantalla de Modelo 3D"
 
-#: app/views/app.py:135
+#: app/views/app.py:136
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s parece(n) esta(r) desconectado(s)."
 
-#: app/views/app.py:173
+#: app/views/app.py:174
 msgid "Welcome"
 msgstr "Bienvenido"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-23 16:49+0000\n"
+"POT-Creation-Date: 2026-04-30 20:22+0000\n"
 "PO-Revision-Date: 2026-04-08 06:42+0000\n"
 "Last-Translator: Александр Ващенко <sascha93rus@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/webodm/webodm/ru/"
@@ -868,7 +868,7 @@ msgid ""
 msgstr ""
 "Узел обработки, назначенный для этой задачи (или null, если узел не назначен)"
 
-#: app/models/task.py:248 app/views/app.py:139 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:140 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Узел обработки"
 
@@ -1804,7 +1804,7 @@ msgstr "Группы"
 msgid "Brand"
 msgstr "Бренд"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:129
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:130
 msgid "About"
 msgstr "О программе"
 
@@ -2001,20 +2001,20 @@ msgstr "Плагин для добавления кнопки для созда�
 msgid "First Project"
 msgstr "Первый проект"
 
-#: app/views/app.py:72
+#: app/views/app.py:73
 msgid "Map"
 msgstr "Карта"
 
-#: app/views/app.py:106
+#: app/views/app.py:107
 msgid "3D Model Display"
 msgstr "Отображение 3D-модели"
 
-#: app/views/app.py:135
+#: app/views/app.py:136
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s, похоже, находится не в сети."
 
-#: app/views/app.py:173
+#: app/views/app.py:174
 msgid "Welcome"
 msgstr "Добро пожаловать"
 
