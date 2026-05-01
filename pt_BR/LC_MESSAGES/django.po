@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-30 20:41+0000\n"
-"PO-Revision-Date: 2026-03-05 19:51+0000\n"
-"Last-Translator: Carlos Grohmann <carlos.grohmann@gmail.com>\n"
+"PO-Revision-Date: 2026-05-02 05:09+0000\n"
+"Last-Translator: Hely Sousa <irvision.bsb@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "webodm/webodm/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: app/admin.py:87
 msgid "Enter custom CSS"
@@ -306,7 +306,7 @@ msgstr "Nenhum arquivo carregado"
 
 #: app/api/media.py:153
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "O arquivo excede o tamanho máximo permitido"
 
 #: app/api/projects.py:136
 msgid "Cannot duplicate project"
@@ -317,10 +317,8 @@ msgid "Invalid user in permissions list"
 msgstr "Usuário inválido na lista de permissões"
 
 #: app/api/projects.py:234
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "Usuário inválido na lista de permissões"
+msgstr "Grupo inválido na lista de permissões"
 
 #: app/api/projects.py:236
 msgid "Invalid permissions"
@@ -366,48 +364,40 @@ msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "Link inválido. Você quis dizer %(hint)s ?"
 
 #: app/api/tasks.py:812 app/api/tasks.py:815
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid uuid"
-msgstr "Ação Inválida"
+msgstr "UUID inválido"
 
 #: app/api/tasks.py:836
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type"
-msgstr "Arquivo zip inválido"
+msgstr "Tipo do arquivo inválido"
 
 #: app/api/tasks.py:847
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type (extension mismatch)"
-msgstr "Arquivo zip inválido"
+msgstr "Tipo do arquivo inválido (extensão incompatível)"
 
 #: app/api/tasks.py:871
 msgid "Some parameters are not integers"
-msgstr ""
+msgstr "Alguns parâmetros não são inteiros"
 
 #: app/api/tasks.py:930 app/api/tasks.py:935
 msgid "GeoTIFF must have a valid CRS"
-msgstr ""
+msgstr "GeoTIFF deve ter um CRS válido"
 
 #: app/api/tasks.py:937
 msgid "Elevation model must have at most 2 band"
-msgstr ""
+msgstr "O modelo de elevação deve ter no máximo 2 bandas"
 
 #: app/api/tasks.py:943
 msgid "Point cloud must be a valid LAZ/LAS file"
-msgstr ""
+msgstr "A nuvem de pontos deve ser um arquivo LAZ/LAS válido"
 
 #: app/api/tasks.py:949
 msgid "Textured model must be a valid GLB file"
-msgstr ""
+msgstr "O modelo texturizado deve ser um arquivo GLB válido"
 
 #: app/api/tasks.py:953
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "No assets uploaded"
-msgstr "Nenhum arquivo carregado"
+msgstr "Nenhum arquivo foi carregado"
 
 #: app/api/tiler.py:364
 msgid "Invalid boundaries parameter"
@@ -466,10 +456,9 @@ msgid "Invalid EPSG code: %(value)s"
 msgstr "Código EPSG inválido: %(value)s"
 
 #: app/api/tiler.py:647 app/api/tiler.py:649
-#, fuzzy, python-format
-#| msgid "Invalid EPSG code: %(value)s"
+#, python-format
 msgid "Invalid PROJ string: %(value)s"
-msgstr "Código EPSG inválido: %(value)s"
+msgstr "Cadeia de caracteres PROJ inválida: %(value)s"
 
 #: app/api/tiler.py:652
 msgid "Both formula and bands parameters are required"
@@ -491,11 +480,11 @@ msgstr "Não é possível usar epsg no conjunto de dados não georreferenciado"
 
 #: app/models/basemap.py:13
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: app/models/basemap.py:14
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:15 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:33
@@ -504,45 +493,43 @@ msgstr "Rótulo"
 
 #: app/models/basemap.py:16
 msgid "Attribution"
-msgstr ""
+msgstr "Atribuição"
 
 #: app/models/basemap.py:19
 msgid "Max zoom"
-msgstr ""
+msgstr "Zoom máximo"
 
 #: app/models/basemap.py:22
 msgid "Min zoom"
-msgstr ""
+msgstr "Zoom mínimo"
 
 #: app/models/basemap.py:23
 msgid "Subdomains"
-msgstr ""
+msgstr "Subdomínio"
 
 #: app/models/basemap.py:24
 msgid "Layers"
-msgstr ""
+msgstr "Camadas"
 
 #: app/models/basemap.py:25
 msgid "Styles"
-msgstr ""
+msgstr "Estilos"
 
 #: app/models/basemap.py:30
 msgid "Format"
-msgstr ""
+msgstr "Formato"
 
 #: app/models/basemap.py:31
-#, fuzzy
-#| msgid "Button Default"
 msgid "Default"
-msgstr "Botão padrão"
+msgstr "Padrão"
 
 #: app/models/basemap.py:34
 msgid "Basemap"
-msgstr ""
+msgstr "Mapa base"
 
 #: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "Mapas base"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
