@@ -1108,7 +1108,7 @@ msgstr "无法加载媒体。"
 #: app/static/app/js/components/ManageMediaDialog.jsx:288
 #, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "你确定要删除 %(filename) 吗？"
+msgstr "你确定要删除 %(filename)s 吗？"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:318
 msgid "Cannot delete file."
