@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-30 20:41+0000\n"
-"PO-Revision-Date: 2026-03-09 07:09+0000\n"
+"PO-Revision-Date: 2026-05-04 03:09+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/webodm/webodm/"
 "id/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: app/admin.py:87
 msgid "Enter custom CSS"
@@ -303,7 +303,7 @@ msgstr "Tidak ada file yang diunggah"
 
 #: app/api/media.py:153
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "File melebihi ukuran maksimum yang diizinkan"
 
 #: app/api/projects.py:136
 msgid "Cannot duplicate project"
@@ -314,10 +314,8 @@ msgid "Invalid user in permissions list"
 msgstr "Pengguna tidak valid dalam daftar izin"
 
 #: app/api/projects.py:234
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "Pengguna tidak valid dalam daftar izin"
+msgstr "Grup tidak valid dalam daftar izin"
 
 #: app/api/projects.py:236
 msgid "Invalid permissions"
@@ -370,10 +368,8 @@ msgid "Invalid file type"
 msgstr "Jenis file tidak valid"
 
 #: app/api/tasks.py:847
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid file type (extension mismatch)"
-msgstr "Jenis file tidak valid"
+msgstr "Jenis file tidak valid (ketidakcocokan ekstensi)"
 
 #: app/api/tasks.py:871
 msgid "Some parameters are not integers"
@@ -481,11 +477,11 @@ msgstr ""
 
 #: app/models/basemap.py:13
 msgid "Type"
-msgstr ""
+msgstr "Jenis"
 
 #: app/models/basemap.py:14
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:15 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:33
@@ -494,45 +490,43 @@ msgstr "Label"
 
 #: app/models/basemap.py:16
 msgid "Attribution"
-msgstr ""
+msgstr "Atribusi"
 
 #: app/models/basemap.py:19
 msgid "Max zoom"
-msgstr ""
+msgstr "Zoom maksimum"
 
 #: app/models/basemap.py:22
 msgid "Min zoom"
-msgstr ""
+msgstr "Zoom minimum"
 
 #: app/models/basemap.py:23
 msgid "Subdomains"
-msgstr ""
+msgstr "Subdomain"
 
 #: app/models/basemap.py:24
 msgid "Layers"
-msgstr ""
+msgstr "Lapisan"
 
 #: app/models/basemap.py:25
 msgid "Styles"
-msgstr ""
+msgstr "Gaya"
 
 #: app/models/basemap.py:30
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #: app/models/basemap.py:31
-#, fuzzy
-#| msgid "Button Default"
 msgid "Default"
-msgstr "Tombol Default"
+msgstr "Bawaan"
 
 #: app/models/basemap.py:34
 msgid "Basemap"
-msgstr ""
+msgstr "Peta dasar"
 
 #: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "Peta-peta dasar"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -667,13 +661,11 @@ msgstr "Id Klaster"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
-msgstr ""
+msgstr "Subjek OIDC yang digunakan untuk SSO"
 
 #: app/models/profile.py:17
-#, fuzzy
-#| msgid "Objects"
 msgid "OIDC Subject"
-msgstr "Objek"
+msgstr "Subjek OIDC"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -1081,14 +1073,12 @@ msgid "Crop Polygon"
 msgstr "Poligon Crop"
 
 #: app/models/task.py:291
-#, fuzzy
-#| msgid "Number of images associated with this task"
 msgid "List of media files associated with this task"
-msgstr "Jumlah gambar yang terkait dengan tugas ini"
+msgstr "Daftar file media yang terkait dengan tugas ini"
 
 #: app/models/task.py:291
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: app/models/task.py:295
 msgid "Task"
@@ -2017,28 +2007,29 @@ msgstr "Tindakan tidak valid"
 
 #: app/views/oidc.py:52 app/views/oidc.py:82
 msgid "Invalid SSO provider. Please try again."
-msgstr ""
+msgstr "Penyedia SSO tidak valid. Silakan coba lagi."
 
 #: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
 #: app/views/oidc.py:142 app/views/oidc.py:149 app/views/oidc.py:166
 msgid "SSO login failed."
-msgstr ""
+msgstr "Login SSO gagal."
 
 #: app/views/oidc.py:93
 msgid "Invalid SSO state. Please try again."
-msgstr ""
+msgstr "Status SSO tidak valid. Silakan coba lagi."
 
 #: app/views/oidc.py:98
 msgid "Missing SSO authorization code."
-msgstr ""
+msgstr "Kode otorisasi SSO tidak ditemukan."
 
 #: app/views/oidc.py:178
 msgid "Cannot create user. A username already exists with the same e-mail."
 msgstr ""
+"Tidak dapat membuat pengguna. Nama pengguna dengan surel yang sama sudah ada."
 
 #: app/views/oidc.py:182
 msgid "This account is disabled. Please contact an administrator."
-msgstr ""
+msgstr "Akun ini dinonaktifkan. Harap hubungi administrator."
 
 #: coreplugins/align-service/plugin.py:56
 msgid "Align Generator"
