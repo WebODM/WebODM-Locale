@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-30 20:41+0000\n"
-"PO-Revision-Date: 2026-04-29 07:09+0000\n"
+"PO-Revision-Date: 2026-05-04 03:09+0000\n"
 "Last-Translator: NtskwK <natsukawa247@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/webodm/react-ui/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1-dev\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -1452,10 +1452,12 @@ msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
+"检测到连接不稳定。如果上传卡住了，请按下面的按钮以启用稳定模式。然后，您需要"
+"重新启动上传。"
 
 #: app/static/app/js/components/ProjectListItem.jsx:871
 msgid "Enable Stable Mode"
-msgstr ""
+msgstr "启用稳定模式"
 
 #: app/static/app/js/components/ShareButton.jsx:73
 msgid "Share"
