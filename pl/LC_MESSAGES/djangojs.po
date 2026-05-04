@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-30 20:41+0000\n"
-"PO-Revision-Date: 2026-04-30 18:09+0000\n"
+"PO-Revision-Date: 2026-05-05 07:09+0000\n"
 "Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "pl/>\n"
@@ -1484,10 +1484,13 @@ msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
+"Wykryto niestabilne połączenie sieciowe. Jeśli wgrywanie zatrzyma się, "
+"naciśnij poniższy przycisk by włączyć tryb stabilny. Wówczas będziesz musiał "
+"ponownie podjąć próbę wgrania danych."
 
 #: app/static/app/js/components/ProjectListItem.jsx:871
 msgid "Enable Stable Mode"
-msgstr ""
+msgstr "Włącz tryb stabilny"
 
 #: app/static/app/js/components/ShareButton.jsx:73
 msgid "Share"
