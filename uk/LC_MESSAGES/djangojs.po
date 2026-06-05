@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-05 17:15+0000\n"
 "PO-Revision-Date: 2026-06-05 06:31+0000\n"
-"Last-Translator: Михайло Пустовіт <m.pustovit@gmail.com>\n"
+"Last-Translator: Liudmyla Dzhuma <ldzhuma@sfa.org.ua>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/webodm/react-"
 "ui/uk/>\n"
 "Language: uk\n"
@@ -2660,7 +2660,7 @@ msgstr "Вимірювання"
 
 #: coreplugins/measure/public/app.jsx:20
 msgid "Measure"
-msgstr "Виміряти"
+msgstr "Вимірювати"
 
 #: coreplugins/measure/public/app.jsx:21
 msgid "Create a new measurement"
