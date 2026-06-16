@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-30 20:41+0000\n"
+"POT-Creation-Date: 2026-06-16 18:59+0000\n"
 "PO-Revision-Date: 2026-03-05 19:56+0000\n"
 "Last-Translator: robin lieftink <robinlieftink1@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/webodm/react-ui/nl/"
@@ -37,15 +37,15 @@ msgstr "Verlaat schermvullende modus"
 msgid "Download To File"
 msgstr "Download bestand"
 
-#: app/static/app/js/Dashboard.jsx:36
+#: app/static/app/js/Dashboard.jsx:38
 msgid "Name field is required"
 msgstr "Vul een naam in"
 
-#: app/static/app/js/Dashboard.jsx:78
+#: app/static/app/js/Dashboard.jsx:81
 msgid "Add Project"
 msgstr "Project toevoegen"
 
-#: app/static/app/js/Dashboard.jsx:114
+#: app/static/app/js/Dashboard.jsx:117
 msgid "Your changes will be lost. Are you sure you want to leave?"
 msgstr ""
 "Wijzigingen zullen verloren gaan. Weet je zeker dat je dit scherm wilt "
@@ -82,6 +82,10 @@ msgstr "Oppervlakte Model"
 msgid "Terrain Model"
 msgstr "Terrein Model"
 
+#: app/static/app/js/MapView.jsx:155
+msgid "A map is not available for this task or project."
+msgstr ""
+
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
 msgstr "Kan initieel camera venster niet instellen"
@@ -104,12 +108,71 @@ msgstr "Toon Camerastandpunten"
 
 #: app/static/app/js/ModelView.jsx:149
 #: app/static/app/js/components/ManageMediaDialog.jsx:560
+#: coreplugins/lightning/public/ShareDialog.jsx:336
 msgid "Size"
 msgstr ""
 
 #: app/static/app/js/ModelView.jsx:890
 msgid "Loading textured model..."
 msgstr "Textured model laden..."
+
+#: app/static/app/js/Toaster.jsx:14
+#, fuzzy
+#| msgid "Processing"
+msgid "Processed"
+msgstr "Verwerken"
+
+#: app/static/app/js/Toaster.jsx:15
+#, fuzzy
+#| msgid "Share"
+msgid "Shared"
+msgstr "Deel"
+
+#: app/static/app/js/Toaster.jsx:16
+#, fuzzy
+#| msgid "Export"
+msgid "Exported"
+msgstr "Exporteer"
+
+#: app/static/app/js/Toaster.jsx:19 app/static/app/js/classes/StatusCodes.js:15
+msgid "Processing"
+msgstr "Verwerken"
+
+#: app/static/app/js/Toaster.jsx:20
+#, fuzzy
+#| msgid "Share"
+msgid "Sharing"
+msgstr "Deel"
+
+#: app/static/app/js/Toaster.jsx:21
+#, fuzzy
+#| msgid "Exporting..."
+msgid "Exporting"
+msgstr "Exporteren..."
+
+#: app/static/app/js/Toaster.jsx:234
+#: coreplugins/lightning/public/ShareDialog.jsx:259
+#, fuzzy
+#| msgid "Task Output:"
+msgid "Task"
+msgstr "Taak Opbrengst:"
+
+#: app/static/app/js/Toaster.jsx:259
+#, fuzzy
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to cancel the tasks?"
+msgstr "Weet je zeker dat je wil annuleren?"
+
+#: app/static/app/js/Toaster.jsx:308
+#: app/static/app/js/components/ErrorMessage.jsx:34
+#: app/static/app/js/components/ImportExternalPanel.jsx:283
+#: app/static/app/js/components/ManageMediaDialog.jsx:599
+#: app/static/app/js/components/NewTaskPanel.jsx:247
+#: app/static/app/js/components/NewTaskPanel.jsx:254
+#: app/static/app/js/components/ProjectListItem.jsx:874
+#: app/static/app/js/components/ProjectListItem.jsx:887
+msgid "Close"
+msgstr "Sluit"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -174,6 +237,7 @@ msgid "Quality Report"
 msgstr "Kwaliteitsrapport"
 
 #: app/static/app/js/classes/AssetDownloads.js:67
+#: coreplugins/lightning/public/ShareDialog.jsx:328
 msgid "All Assets"
 msgstr "Alle middelen"
 
@@ -197,7 +261,7 @@ msgid "Canceling..."
 msgstr "Annuleren..."
 
 #: app/static/app/js/classes/PendingActions.js:15
-#: app/static/app/js/components/FormDialog.jsx:175
+#: app/static/app/js/components/FormDialog.jsx:177
 msgid "Deleting..."
 msgstr "Verwijderen..."
 
@@ -256,8 +320,8 @@ msgid "DEM"
 msgstr "Digitaal hoogtemodel"
 
 #: app/static/app/js/classes/PipelineSteps.js:52
-#: app/static/app/js/components/TaskListItem.jsx:549
-#: app/static/app/js/components/TaskListItem.jsx:551
+#: app/static/app/js/components/TaskListItem.jsx:554
+#: app/static/app/js/components/TaskListItem.jsx:556
 msgid "Report"
 msgstr "Verslag"
 
@@ -276,10 +340,6 @@ msgstr "Ja"
 #: app/static/app/js/classes/StatusCodes.js:11
 msgid "Queued"
 msgstr "Wachtrij"
-
-#: app/static/app/js/classes/StatusCodes.js:15
-msgid "Processing"
-msgstr "Verwerken"
 
 #: app/static/app/js/classes/StatusCodes.js:19
 msgid "Failed"
@@ -624,7 +684,7 @@ msgstr "Pas Taak-opties aan"
 #: app/static/app/js/components/EditPresetDialog.jsx:514
 #: app/static/app/js/components/EditProjectDialog.jsx:169
 #: app/static/app/js/components/EditTaskForm.jsx:656
-#: app/static/app/js/components/Paginator.jsx:28
+#: app/static/app/js/components/Paginator.jsx:29
 #: app/static/app/js/components/ProjectListItem.jsx:62
 #: coreplugins/annotate/public/Popup.jsx:632
 #: coreplugins/annotate/public/Popup.jsx:639
@@ -633,7 +693,7 @@ msgid "Name"
 msgstr "Naam"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:521
-#: app/static/app/js/components/Paginator.jsx:121
+#: app/static/app/js/components/Paginator.jsx:123
 msgid "Search"
 msgstr "Zoek"
 
@@ -671,21 +731,21 @@ msgstr "Project aan het creëren..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:125
 #: app/static/app/js/components/EditProjectDialog.jsx:131
-#: app/static/app/js/components/TaskListItem.jsx:233
-#: app/static/app/js/components/TaskListItem.jsx:241
+#: app/static/app/js/components/TaskListItem.jsx:235
+#: app/static/app/js/components/TaskListItem.jsx:243
 msgid "Cannot complete operation."
 msgstr "Kan operaties niet afronden."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:153
 #: app/static/app/js/components/EditTaskForm.jsx:604
-#: app/static/app/js/components/Paginator.jsx:31
+#: app/static/app/js/components/Paginator.jsx:32
 #: app/static/app/js/components/ProjectListItem.jsx:65
 msgid "Tags"
 msgstr "Trefwoorden"
 
 #: app/static/app/js/components/EditProjectDialog.jsx:165
 #: app/static/app/js/components/EditTaskForm.jsx:585
-#: app/static/app/js/components/TaskListItem.jsx:853
+#: app/static/app/js/components/TaskListItem.jsx:855
 msgid "Duplicate"
 msgstr "Dupliceren"
 
@@ -787,9 +847,9 @@ msgstr "Probeer opnieuw"
 #: app/static/app/js/components/EditTaskForm.jsx:572
 #: app/static/app/js/components/EditTaskForm.jsx:579
 #: app/static/app/js/components/ManageMediaDialog.jsx:496
-#: app/static/app/js/components/ProjectListItem.jsx:851
-#: app/static/app/js/components/TaskListItem.jsx:592
-#: app/static/app/js/components/TaskListItem.jsx:840
+#: app/static/app/js/components/ProjectListItem.jsx:858
+#: app/static/app/js/components/TaskListItem.jsx:597
+#: app/static/app/js/components/TaskListItem.jsx:842
 #: coreplugins/annotate/public/Popup.jsx:682
 #: coreplugins/editshortlinks/public/SLControls.jsx:162
 msgid "Edit"
@@ -804,22 +864,22 @@ msgid "Save"
 msgstr "Opslaan"
 
 #: app/static/app/js/components/EditTaskForm.jsx:593
-#: app/static/app/js/components/FormDialog.jsx:178
+#: app/static/app/js/components/FormDialog.jsx:180
 #: app/static/app/js/components/LayersControlAnnotations.jsx:73
 #: app/static/app/js/components/LayersControlAnnotations.jsx:151
 #: app/static/app/js/components/ManageMediaDialog.jsx:544
 #: app/static/app/js/components/ManageMediaDialog.jsx:582
 #: app/static/app/js/components/MapPreview.jsx:194
-#: app/static/app/js/components/ProjectListItem.jsx:857
-#: app/static/app/js/components/TaskListItem.jsx:558
-#: app/static/app/js/components/TaskListItem.jsx:870
+#: app/static/app/js/components/ProjectListItem.jsx:864
+#: app/static/app/js/components/TaskListItem.jsx:563
+#: app/static/app/js/components/TaskListItem.jsx:872
 #: coreplugins/annotate/public/Popup.jsx:825
 #: coreplugins/measure/public/app.jsx:35
 msgid "Delete"
 msgstr "Verwijderen"
 
 #: app/static/app/js/components/EditTaskForm.jsx:615
-#: coreplugins/lightning/public/Dashboard.jsx:153
+#: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Processing Node"
 msgstr "Verwerking node"
 
@@ -834,12 +894,12 @@ msgid "Could not update task information. Please try again."
 msgstr "Kan taakinformatie niet updaten. Probeer opnieuw."
 
 #: app/static/app/js/components/EditTaskPanel.jsx:75
-#: app/static/app/js/components/FormDialog.jsx:205
+#: app/static/app/js/components/FormDialog.jsx:207
 #: app/static/app/js/components/ManageMediaDialog.jsx:421
 #: app/static/app/js/components/NewTaskPanel.jsx:266
 #: app/static/app/js/components/NewTaskPanel.jsx:351
-#: app/static/app/js/components/TaskListItem.jsx:568
-#: app/static/app/js/components/TaskListItem.jsx:835
+#: app/static/app/js/components/TaskListItem.jsx:573
+#: app/static/app/js/components/TaskListItem.jsx:837
 #: coreplugins/measure/public/app.jsx:34
 msgid "Cancel"
 msgstr "Annuleren"
@@ -847,16 +907,6 @@ msgstr "Annuleren"
 #: app/static/app/js/components/EditTaskPanel.jsx:79
 msgid "Saving..."
 msgstr "Opslaan..."
-
-#: app/static/app/js/components/ErrorMessage.jsx:29
-#: app/static/app/js/components/ImportExternalPanel.jsx:283
-#: app/static/app/js/components/ManageMediaDialog.jsx:599
-#: app/static/app/js/components/NewTaskPanel.jsx:247
-#: app/static/app/js/components/NewTaskPanel.jsx:254
-#: app/static/app/js/components/ProjectListItem.jsx:867
-#: app/static/app/js/components/ProjectListItem.jsx:880
-msgid "Close"
-msgstr "Sluit"
 
 #: app/static/app/js/components/ExportAssetDialog.jsx:40
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:93
@@ -875,7 +925,7 @@ msgid "Invalid JSON response: %(error)s"
 msgstr "Ongeldige JSON respons: %(error)s"
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:234
-#: app/static/app/js/components/TaskListItem.jsx:698
+#: app/static/app/js/components/TaskListItem.jsx:703
 msgid "CRS:"
 msgstr ""
 
@@ -920,12 +970,12 @@ msgstr "Opslaan…"
 msgid "Are you sure?"
 msgstr "Weet je het zeker?"
 
-#: app/static/app/js/components/FormDialog.jsx:136
+#: app/static/app/js/components/FormDialog.jsx:138
 msgid "Could not apply changes"
 msgstr "Kan geen veranderingen doorvoeren"
 
-#: app/static/app/js/components/FormDialog.jsx:157
-#: app/static/app/js/components/ProjectListItem.jsx:547
+#: app/static/app/js/components/FormDialog.jsx:159
+#: app/static/app/js/components/ProjectListItem.jsx:552
 msgid "Could not delete item"
 msgstr "Kan item niet verwijderen"
 
@@ -1071,7 +1121,7 @@ msgid "Import From URL"
 msgstr "Importeer vanaf URL"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:191
-#: app/static/app/js/components/ProjectListItem.jsx:761
+#: app/static/app/js/components/ProjectListItem.jsx:768
 msgid "Import"
 msgstr "Importeer"
 
@@ -1165,13 +1215,13 @@ msgid "Loading…"
 msgstr "Laden…"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:301
+#: app/static/app/js/components/ProjectListItem.jsx:305
 #, python-format
 msgid "%(filename)s is not a valid file"
 msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:174
-#: app/static/app/js/components/ProjectListItem.jsx:330
+#: app/static/app/js/components/ProjectListItem.jsx:334
 #, python-format
 msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
 msgstr ""
@@ -1179,7 +1229,7 @@ msgstr ""
 "pogingen (%(max_retries)s)"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:186
-#: app/static/app/js/components/ProjectListItem.jsx:342
+#: app/static/app/js/components/ProjectListItem.jsx:346
 #, fuzzy, python-format
 #| msgid ""
 #| "Cannot upload %(filename)s, File too Large! Default MaxFileSize is "
@@ -1267,7 +1317,7 @@ msgstr "Linkeraanzicht"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:516
 #: app/static/app/js/components/Map.jsx:528
-#: app/static/app/js/components/TaskListItem.jsx:846
+#: app/static/app/js/components/TaskListItem.jsx:848
 msgid "Media"
 msgstr ""
 
@@ -1385,7 +1435,7 @@ msgid "Move Task"
 msgstr "Verplaats Taak"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:10
-#: app/static/app/js/components/ProjectListItem.jsx:730
+#: app/static/app/js/components/ProjectListItem.jsx:737
 msgid "Save Changes"
 msgstr "Sla aanpassingen op"
 
@@ -1400,6 +1450,7 @@ msgid "Could not load projects list: %(error)s"
 msgstr "Kan projectlijst niet laden: %(error)s"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:88
+#: coreplugins/lightning/public/ShareDialog.jsx:306
 msgid "Project"
 msgstr "Project"
 
@@ -1451,7 +1502,7 @@ msgstr ""
 "op deze processing node."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:293
-#: app/static/app/js/components/TaskListItem.jsx:468
+#: app/static/app/js/components/TaskListItem.jsx:470
 msgid "Alignment"
 msgstr ""
 
@@ -1468,31 +1519,31 @@ msgid "Review"
 msgstr "Overzicht"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:355
-#: app/static/app/js/components/TaskListItem.jsx:600
+#: app/static/app/js/components/TaskListItem.jsx:605
 msgid "Start Processing"
 msgstr "Start verwerken"
 
-#: app/static/app/js/components/Paginator.jsx:25
+#: app/static/app/js/components/Paginator.jsx:26
 #: app/static/app/js/components/ProjectListItem.jsx:59
 msgid "Created on"
 msgstr "Aangemaakt op"
 
-#: app/static/app/js/components/Paginator.jsx:34
+#: app/static/app/js/components/Paginator.jsx:35
 msgid "Owner"
 msgstr "Eigenaar"
 
-#: app/static/app/js/components/Paginator.jsx:127
+#: app/static/app/js/components/Paginator.jsx:129
 #, fuzzy
 #| msgid "Search names or #tags"
 msgid "Search names, #tags or @user"
 msgstr "Zoek op woorden of #tags"
 
-#: app/static/app/js/components/Paginator.jsx:138
-#: app/static/app/js/components/ProjectListItem.jsx:836
+#: app/static/app/js/components/Paginator.jsx:140
+#: app/static/app/js/components/ProjectListItem.jsx:843
 msgid "Sort"
 msgstr "Sorteer"
 
-#: app/static/app/js/components/Paginator.jsx:145
+#: app/static/app/js/components/Paginator.jsx:147
 msgid "Search results for:"
 msgstr "Zoekresultaten voor:"
 
@@ -1517,7 +1568,7 @@ msgid "Reset to default"
 msgstr "Reset naar standaard"
 
 #: app/static/app/js/components/ProjectListItem.jsx:197
-#: app/static/app/js/components/ProjectListItem.jsx:520
+#: app/static/app/js/components/ProjectListItem.jsx:525
 msgid "Cannot create new task. Please try again later."
 msgstr "Kan geen nieuwe taak creëren. Probeer het later opnieuw."
 
@@ -1530,12 +1581,12 @@ msgstr ""
 "%(count)s bestanden kunnen niet worden geüpload. Alleen afbeeldingen (.jpg, ."
 "tif, .png) en GCP bestanden (.txt) kunnen worden geüpload. Probeer opnieuw."
 
-#: app/static/app/js/components/ProjectListItem.jsx:516
+#: app/static/app/js/components/ProjectListItem.jsx:521
 #, python-format
 msgid "Cannot create new task. Invalid response from server: %(error)s"
 msgstr "Kan geen nieuwe taak creëren. Ongeldige respons van server: %(error)s"
 
-#: app/static/app/js/components/ProjectListItem.jsx:717
+#: app/static/app/js/components/ProjectListItem.jsx:723
 msgid ""
 "All tasks, images and models associated with this project will be "
 "permanently deleted. Are you sure you want to continue?"
@@ -1543,7 +1594,7 @@ msgstr ""
 "Alle taken, afbeeldingen en modellen in dit project worden permanent "
 "verwijderd. Weet je zeker dat je wil doorgaan?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:718
+#: app/static/app/js/components/ProjectListItem.jsx:724
 msgid ""
 "This project was shared with you. It will not be deleted, but simply hidden "
 "from your dashboard. Continue?"
@@ -1551,54 +1602,58 @@ msgstr ""
 "Dit project is gedeeld met je. Deze wordt niet verwijderd, maar simpelweg "
 "verborgen van je dashboard. Doorgaan?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:729
+#: app/static/app/js/components/ProjectListItem.jsx:736
 msgid "Edit Project"
 msgstr "Bewerk Project"
 
-#: app/static/app/js/components/ProjectListItem.jsx:731
+#: app/static/app/js/components/ProjectListItem.jsx:738
 msgid "Saving changes..."
 msgstr "Aanpassingen opslaan..."
 
-#: app/static/app/js/components/ProjectListItem.jsx:756
+#: app/static/app/js/components/ProjectListItem.jsx:763
 msgid "Select Images and GCP"
 msgstr "Selecteer afbeeldingen en GCP"
 
-#: app/static/app/js/components/ProjectListItem.jsx:764
+#: app/static/app/js/components/ProjectListItem.jsx:771
 msgid "Assets / Backups"
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:765
+#: app/static/app/js/components/ProjectListItem.jsx:772
 msgid "External Data"
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:797
+#: app/static/app/js/components/ProjectListItem.jsx:804
 #, python-format
 msgid "%(count)s Tasks"
 msgstr "%(count)s Taken"
 
-#: app/static/app/js/components/ProjectListItem.jsx:810
+#: app/static/app/js/components/ProjectListItem.jsx:817
 msgid "Filter"
 msgstr "Filter"
 
-#: app/static/app/js/components/ProjectListItem.jsx:830
+#: app/static/app/js/components/ProjectListItem.jsx:837
 msgid "Clear"
 msgstr "Opschonen"
 
-#: app/static/app/js/components/ProjectListItem.jsx:845
+#: app/static/app/js/components/ProjectListItem.jsx:852
 msgid "View Map"
 msgstr "Bekijk kaart"
 
-#: app/static/app/js/components/ProjectListItem.jsx:868
+#: app/static/app/js/components/ProjectListItem.jsx:875
 msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:871
+#: app/static/app/js/components/ProjectListItem.jsx:878
 msgid "Enable Stable Mode"
 msgstr ""
 
-#: app/static/app/js/components/ShareButton.jsx:73
+#: app/static/app/js/components/ShareButton.jsx:72
+#: app/static/app/js/components/ShareButton.jsx:74
+#: coreplugins/lightning/public/ShareButton.jsx:47
+#: coreplugins/lightning/public/ShareDialog.jsx:321
+#: coreplugins/lightning/public/ShareDialog.jsx:391
 msgid "Share"
 msgstr "Deel"
 
@@ -1622,6 +1677,7 @@ msgid "QR"
 msgstr "QR"
 
 #: app/static/app/js/components/SharePopup.jsx:209
+#: coreplugins/lightning/public/Dashboard.jsx:187
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
@@ -1685,12 +1741,12 @@ msgid "Try again"
 msgstr "Probeer opnieuw"
 
 #: app/static/app/js/components/TaskList.jsx:153
-#: app/static/app/js/components/TaskListItem.jsx:494
+#: app/static/app/js/components/TaskListItem.jsx:502
 #, python-format
 msgid "Task #%(number)s"
 msgstr "Taken #%(number)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:302
+#: app/static/app/js/components/TaskListItem.jsx:304
 #, python-format
 msgid ""
 "It looks like there might be one of the following problems: %(problems)s You "
@@ -1699,32 +1755,32 @@ msgstr ""
 "Het lijkt op een van de volgende problemen: %(problems)s Je kunt meer lezen "
 "over oefeningen voor het nemen van goede afbeeldingen op %(link)s."
 
-#: app/static/app/js/components/TaskListItem.jsx:303
+#: app/static/app/js/components/TaskListItem.jsx:305
 msgid "Not enough images"
 msgstr "Niet genoeg aantal afbeeldingen"
 
-#: app/static/app/js/components/TaskListItem.jsx:304
+#: app/static/app/js/components/TaskListItem.jsx:306
 msgid "Not enough overlap between images"
 msgstr "Niet genoeg overlap tussen afbeeldingen"
 
-#: app/static/app/js/components/TaskListItem.jsx:305
+#: app/static/app/js/components/TaskListItem.jsx:307
 msgid "Images might be too blurry (common with phone cameras)"
 msgstr ""
 "Sommige afbeeldingen zijn wellicht te wazig (gebruikelijk met smartphone "
 "camera's)"
 
-#: app/static/app/js/components/TaskListItem.jsx:306
+#: app/static/app/js/components/TaskListItem.jsx:308
 msgid ""
 "The min-num-features task option is set too low, try increasing it by 25%"
 msgstr ""
 "De min-num-features taak optie is te laag gezet, probeer deze te verhogen "
 "met 25%"
 
-#: app/static/app/js/components/TaskListItem.jsx:307
+#: app/static/app/js/components/TaskListItem.jsx:309
 msgid "here"
 msgstr "Hier"
 
-#: app/static/app/js/components/TaskListItem.jsx:310
+#: app/static/app/js/components/TaskListItem.jsx:312
 #, python-format
 msgid ""
 "It looks like this computer might be too old. WebODM requires a computer "
@@ -1737,11 +1793,11 @@ msgstr ""
 "ondersteund. Je kunt nog steeds WebODM gebruiken als je deze compiled in een "
 "eigen docker image. Zie %(link)s voor meer informatie."
 
-#: app/static/app/js/components/TaskListItem.jsx:310
+#: app/static/app/js/components/TaskListItem.jsx:312
 msgid "this page"
 msgstr "Deze pagina"
 
-#: app/static/app/js/components/TaskListItem.jsx:312
+#: app/static/app/js/components/TaskListItem.jsx:314
 #, fuzzy
 #| msgid ""
 #| "The processing node is missing a program necessary to complete the task. "
@@ -1757,53 +1813,53 @@ msgstr ""
 "zelf hebt geïnstalleerd, controleer dat alle benodigde programma's zonder "
 "fout zijn geïnstalleerd."
 
-#: app/static/app/js/components/TaskListItem.jsx:353
+#: app/static/app/js/components/TaskListItem.jsx:355
 #, python-format
 msgid "From %(stage)s"
 msgstr "Van %(stage)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:365
+#: app/static/app/js/components/TaskListItem.jsx:367
 msgid "Resume Processing"
 msgstr "Hervat verwerking"
 
-#: app/static/app/js/components/TaskListItem.jsx:381
+#: app/static/app/js/components/TaskListItem.jsx:383
 msgid "Cannot restart task."
 msgstr "Kan taak niet opnieuw starten."
 
-#: app/static/app/js/components/TaskListItem.jsx:423
+#: app/static/app/js/components/TaskListItem.jsx:425
 msgid "Cannot restart task from (stage)s."
 msgstr "Kan taak niet herstarten vanaf (stage)s."
 
-#: app/static/app/js/components/TaskListItem.jsx:472
+#: app/static/app/js/components/TaskListItem.jsx:474
 msgid "GPS"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:475
+#: app/static/app/js/components/TaskListItem.jsx:477
 #, fuzzy
 #| msgid "(GCPs)"
 msgid "GCP"
 msgstr "(GCPs)"
 
-#: app/static/app/js/components/TaskListItem.jsx:498
+#: app/static/app/js/components/TaskListItem.jsx:506
 msgid "Sending images to processing node"
 msgstr "Afbeeldingen worden naar verwerkingsnode gestuurd"
 
-#: app/static/app/js/components/TaskListItem.jsx:500
+#: app/static/app/js/components/TaskListItem.jsx:508
 msgid "Waiting for a node..."
 msgstr "Wachtende op een node..."
 
-#: app/static/app/js/components/TaskListItem.jsx:532
+#: app/static/app/js/components/TaskListItem.jsx:539
 msgid "Map"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:543
+#: app/static/app/js/components/TaskListItem.jsx:548
 #, fuzzy
 #| msgid "View 3D Model"
 msgid "3D Model"
 msgstr "Bekijk 3D Model"
 
-#: app/static/app/js/components/TaskListItem.jsx:559
-#: app/static/app/js/components/TaskListItem.jsx:871
+#: app/static/app/js/components/TaskListItem.jsx:564
+#: app/static/app/js/components/TaskListItem.jsx:873
 msgid ""
 "All information related to this task, including images, maps and models will "
 "be deleted. Continue?"
@@ -1811,126 +1867,116 @@ msgstr ""
 "Alle informatie aangaande deze taak, inclusief afbeeldingen, kaarten en "
 "modellen worden verwijderd. Wil je doorgaan?"
 
-#: app/static/app/js/components/TaskListItem.jsx:560
-#: app/static/app/js/components/TaskListItem.jsx:872
+#: app/static/app/js/components/TaskListItem.jsx:565
+#: app/static/app/js/components/TaskListItem.jsx:874
 msgid "Cannot delete task."
 msgstr "Kan taak niet verwijderen."
 
-#: app/static/app/js/components/TaskListItem.jsx:568
-#: app/static/app/js/components/TaskListItem.jsx:835
+#: app/static/app/js/components/TaskListItem.jsx:573
+#: app/static/app/js/components/TaskListItem.jsx:837
 msgid "Cannot cancel task."
 msgstr "Kan taak niet annuleren."
 
-#: app/static/app/js/components/TaskListItem.jsx:585
+#: app/static/app/js/components/TaskListItem.jsx:590
 msgid "Restart"
 msgstr "Herstarten"
 
-#: app/static/app/js/components/TaskListItem.jsx:585
+#: app/static/app/js/components/TaskListItem.jsx:590
 #, fuzzy
 #| msgid "Are you sure you want to delete \"%(preset)s\"?"
 msgid "Are you sure you want to restart this task?"
 msgstr "Weet je zeker dat je \"%(preset)s\" wil verwijderen?"
 
-#: app/static/app/js/components/TaskListItem.jsx:601
+#: app/static/app/js/components/TaskListItem.jsx:606
 msgid "Have all images been uploaded?"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:602
+#: app/static/app/js/components/TaskListItem.jsx:607
 #, fuzzy
 #| msgid "Cannot restart task."
 msgid "Cannot start processing task."
 msgstr "Kan taak niet opnieuw starten."
 
-#: app/static/app/js/components/TaskListItem.jsx:660
+#: app/static/app/js/components/TaskListItem.jsx:665
 #, fuzzy
 #| msgid "Task Output:"
 msgid "Task ID:"
 msgstr "Taak Opbrengst:"
 
-#: app/static/app/js/components/TaskListItem.jsx:661
+#: app/static/app/js/components/TaskListItem.jsx:666
 msgid "Copy to clipboard"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:664
+#: app/static/app/js/components/TaskListItem.jsx:669
 msgid "Created on:"
 msgstr "Gecreëerd op:"
 
-#: app/static/app/js/components/TaskListItem.jsx:668
+#: app/static/app/js/components/TaskListItem.jsx:673
 msgid "Processing Node:"
 msgstr "Verwerking Node:"
 
-#: app/static/app/js/components/TaskListItem.jsx:669
+#: app/static/app/js/components/TaskListItem.jsx:674
 msgid "auto"
 msgstr "automatisch"
 
-#: app/static/app/js/components/TaskListItem.jsx:669
+#: app/static/app/js/components/TaskListItem.jsx:674
 msgid "manual"
 msgstr "handmatig"
 
-#: app/static/app/js/components/TaskListItem.jsx:673
+#: app/static/app/js/components/TaskListItem.jsx:678
 msgid "Options:"
 msgstr "Opties:"
 
-#: app/static/app/js/components/TaskListItem.jsx:678
+#: app/static/app/js/components/TaskListItem.jsx:683
 msgid "Average GSD:"
 msgstr "Gemiddelde GSD:"
 
-#: app/static/app/js/components/TaskListItem.jsx:683
+#: app/static/app/js/components/TaskListItem.jsx:688
 #: coreplugins/measure/public/MeasurePopup.jsx:186
 msgid "Area:"
 msgstr "Oppervlakte:"
 
-#: app/static/app/js/components/TaskListItem.jsx:688
+#: app/static/app/js/components/TaskListItem.jsx:693
 #, fuzzy
 #| msgid "Point size"
 msgid "Points:"
 msgstr "Puntgrootte"
 
-#: app/static/app/js/components/TaskListItem.jsx:693
+#: app/static/app/js/components/TaskListItem.jsx:698
 #, fuzzy
 #| msgid "Georeferencing"
 msgid "Georeferencing:"
 msgstr "Geografische uitlijning"
 
-#: app/static/app/js/components/TaskListItem.jsx:703
+#: app/static/app/js/components/TaskListItem.jsx:708
 msgid "Disk Usage:"
 msgstr "Schijf gebruik:"
 
-#: app/static/app/js/components/TaskListItem.jsx:707
+#: app/static/app/js/components/TaskListItem.jsx:712
 msgid "Task Output:"
 msgstr "Taak Opbrengst:"
 
-#: app/static/app/js/components/TaskListItem.jsx:709
+#: app/static/app/js/components/TaskListItem.jsx:714
 msgid "On"
 msgstr "Aan"
 
-#: app/static/app/js/components/TaskListItem.jsx:710
+#: app/static/app/js/components/TaskListItem.jsx:715
 msgid "Off"
 msgstr "Uit"
 
-#: app/static/app/js/components/TaskListItem.jsx:719
+#: app/static/app/js/components/TaskListItem.jsx:724
 msgid "Thumbnail"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:737
-msgid ""
-"An orthophoto could not be generated. To generate one, make sure GPS "
-"information is embedded in the EXIF tags of your images, or use a Ground "
-"Control Points (GCP) file."
-msgstr ""
-"Er kon geen orthofoto worden gegenereerd. Om deze te genereren, zorg dat de "
-"GPS informatie in de EXIF tags van je afbeeldingen zit, of gebruik een "
-"Ground Control Points (GCP) bestand."
-
-#: app/static/app/js/components/TaskListItem.jsx:740
+#: app/static/app/js/components/TaskListItem.jsx:742
 msgid "enough RAM allocated"
 msgstr "Genoeg RAM toegewezen"
 
-#: app/static/app/js/components/TaskListItem.jsx:740
+#: app/static/app/js/components/TaskListItem.jsx:742
 msgid "cloud processing node"
 msgstr "Cloud verwerking node"
 
-#: app/static/app/js/components/TaskListItem.jsx:740
+#: app/static/app/js/components/TaskListItem.jsx:742
 #, python-format
 msgid ""
 "It looks like your processing node ran out of memory. If you are using "
@@ -1945,7 +1991,7 @@ msgstr ""
 "afbeeldingen, verklein de afbeeldingen of reduceer de max-concurrency "
 "parameter van de taak opties. Je kunt ook kijken naar %(cloudlink)s."
 
-#: app/static/app/js/components/TaskListItem.jsx:747
+#: app/static/app/js/components/TaskListItem.jsx:749
 #, python-format
 msgid ""
 "\"Process exited with code 1\" means that part of the processing failed. "
@@ -1957,34 +2003,34 @@ msgstr ""
 "soms kan het worden opgelost door parameters te tweaken vien de Taak Opties. "
 "Bekijk de documentatie op: %(link)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:797
+#: app/static/app/js/components/TaskListItem.jsx:799
 msgid "Set a processing node"
 msgstr "Kies een verwerking node"
 
-#: app/static/app/js/components/TaskListItem.jsx:802
+#: app/static/app/js/components/TaskListItem.jsx:804
 #, fuzzy
 #| msgid "Waiting for a node..."
 msgid "Waiting to start processing..."
 msgstr "Wachtende op een node..."
 
-#: app/static/app/js/components/TaskListItem.jsx:852
+#: app/static/app/js/components/TaskListItem.jsx:854
 msgid "Move"
 msgstr "Verplaats"
 
-#: app/static/app/js/components/TaskListItem.jsx:864
+#: app/static/app/js/components/TaskListItem.jsx:866
 #, fuzzy
 #| msgid "Compass"
 msgid "Compact"
 msgstr "Kompas"
 
-#: app/static/app/js/components/TaskListItem.jsx:865
+#: app/static/app/js/components/TaskListItem.jsx:867
 msgid ""
 "Compacting will free disk space by permanently deleting the original images "
 "used for processing. It will no longer be possible to restart the task. Maps "
 "and models will remain in place. Continue?"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:866
+#: app/static/app/js/components/TaskListItem.jsx:868
 #, fuzzy
 #| msgid "Cannot cancel task."
 msgid "Cannot compact task."
@@ -2008,48 +2054,46 @@ msgstr "%(count)s bestanden succesvol geupload"
 #: app/static/app/js/translations/odm_autogenerated.js:3
 #, python-format
 msgid ""
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgstr ""
+"Exporteer de geogerefereerde puntenwolk in CSV formaat. Standaard: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:4
+#, python-format
+msgid ""
 "Geometric estimates improve the accuracy of the point cloud by computing "
 "geometrically consistent depthmaps but may not be usable in larger datasets. "
 "This flag disables geometric estimates. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:4
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
 msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:6
 #, python-format
 msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
 msgstr ""
-"Octree-diepte gebruikt bij de mesh-reconstructie, vergroot om meer "
-"hoekpunten te krijgen, aanbevolen waarden zijn 8-12. Standaard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgid ""
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
 msgstr ""
+"Sla creëren van orthofoto over. Dit scheelt tijd als je alleen 3D resultaten "
+"of DEMs nodig hebt. Standaard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
 #, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
 msgstr ""
-"DSM/DTM resolutie in cm / pixel. Deze waarde wordt bepaald door de ground "
-"sampling distance (GSD) schatting. Standaard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
@@ -2061,367 +2105,10 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:10
 #, python-format
 msgid ""
-"Run local bundle adjustment for every image added to the reconstruction and "
-"a global adjustment every 100 images. Speeds up reconstruction for very "
-"large datasets. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-#, python-format
-msgid ""
-"Choose what to merge in the merge step in a split dataset. By default all "
-"available outputs are merged. Options: %(choices)s. Default: %(default)s"
-msgstr ""
-"Kies wat u wilt samenvoegen in de samenvoegstap in een gesplitste "
-"gegevensset. Standaard worden alle beschikbare uitgangen samengevoegd. "
-"Opties: %(choices)s. Standaard: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
-"Computes an euclidean raster map for each DEM. The map reports the distance "
-"from each cell to the nearest NODATA value (before any hole filling takes "
-"place). This can be useful to isolate the areas that have been filled. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:14
-#, python-format
-msgid ""
-"Set the radiometric calibration to perform on images. When processing "
-"multispectral and thermal images you should set this option to obtain "
-"reflectance/temperature values (otherwise you will get digital number "
-"values). [camera] applies black level, vignetting, row gradient gain/"
-"exposure compensation (if appropriate EXIF tags are found) and computes "
-"absolute temperature values. [camera+sun] is experimental, applies all the "
-"corrections of [camera], plus compensates for spectral radiance registered "
-"via a downwelling light sensor (DLS) taking in consideration the angle of "
-"the sun. Can be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:15
-#, python-format
-msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:16
-#, python-format
-msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:17
-#, python-format
-msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:18
-#, python-format
-msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate.Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:19
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:20
-#, python-format
-msgid ""
-"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
-"altitude value of the GPS EXIF data. This does not change the value of any "
-"GCPs. This can be useful for example when adjusting from ellipsoidal to "
-"orthometric height. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
-#, python-format
-msgid ""
-"Radius of the overlap between submodels in meters. After grouping images "
-"into clusters, images that are closer than this radius to a cluster are "
-"added to the cluster. This is done to ensure that neighboring submodels "
-"overlap. All imagesneed GPS information. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
-"relative to the default behavior if set to true. Ordinarily, GSD estimates "
-"are used to cap the maximum resolution of image outputs and resizes images "
-"when necessary, resulting in faster processing and lower memory usage. Since "
-"GSD is an estimate, sometimes ignoring it can result in slightly better "
-"image output quality. Never set --ignore-gsd to true unless you are positive "
-"you need it, and even then: do not use it. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:25
-#, python-format
-msgid ""
-"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
-"a progressive morphological filter. Check the --dem* parameters for finer "
-"tuning. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:26
-#, python-format
-msgid ""
-"Simple Morphological Filter window radius parameter (meters). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:27
-#, python-format
-msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:28
-#, python-format
-msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
-#, python-format
-msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
-"mosaics with multiple overlapping orthophotos. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
-#, python-format
-msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:34
-#, python-format
-msgid ""
-"The maximum output resolution of extracted video frames in pixels. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:35
-#, python-format
-msgid ""
-"Perform image matching with the nearest N images based on image filename "
-"order. Can speed up processing of sequential images, such as those extracted "
-"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
-"disable. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:36
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:37
-#, python-format
-msgid ""
 "Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:38
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:39
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:40
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr ""
-"Gebruik geen GPU-versnelling, zelfs als dit beschikbaar is. Standaard: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:41
-#, python-format
-msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:42
-#, python-format
-msgid ""
-"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
-"outputs should be automatically aligned to. Experimental. Default: "
-"%(default)s"
-msgstr ""
-"Pad naar een GeoTIFF DEM of een LAS/LAZ puntenwolk waar de reconstructie "
-"output aan wordt uitgelijnd. Experimenteel. Standaard: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:43
-#, python-format
-msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:44
-#, python-format
-msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
-"images are taken with a rolling shutter camera. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:45
-#, python-format
-msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:46
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-"Gebruik deze instelling als je een GCP bestand hebt maar de EXIF informatie "
-"uit de afbeeldingen wil gebruiken voor het georefereren. Standaard: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:47
-msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:48
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:50
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
-msgstr ""
-"Exporteer de geogerefereerde puntenwolk in CSV formaat. Standaard: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr ""
-"Sla creëren van orthofoto over. Dit scheelt tijd als je alleen 3D resultaten "
-"of DEMs nodig hebt. Standaard: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:53
-msgid "Copy output results to this folder after processing."
-msgstr "Kopieer verwerkte resultaten naar deze map na verwerking."
-
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
+#: app/static/app/js/translations/odm_autogenerated.js:11
 #, python-format
 msgid ""
 "Delete heavy intermediate files to optimize disk space usage. This affects "
@@ -2435,196 +2122,7 @@ msgstr ""
 "op machines die niet over voldoende schijfruimte beschikken. Standaard: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:56
-#, python-format
-msgid ""
-"Decimate the points before generating the DEM. 1 is no decimation (full "
-"quality). 100 decimates ~99%% of the points. Useful for speeding up "
-"generation of DEM results in very large datasets. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
-msgstr ""
-"Zet deze parameter aan als je een Google Earth (KMZ) orthofoto wil "
-"genereren. Standaard: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"When processing multispectral datasets, automatically align the images for "
-"each band. If the images have been postprocessed and are already aligned, "
-"use this option. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-#, python-format
-msgid ""
-"Perform image matching with the nearest images based on GPS exif data. Set "
-"to 0 to match by triangulation. Default: %(default)s"
-msgstr ""
-"Voer afbeeldingsmatching uit met de dichtstbijzijnde afbeeldingen op basis "
-"van GPS exif-gegevens. Stel in op 0 om te matchen via triangulatie. "
-"Standaard: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, python-format
-msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Set point cloud quality. Higher quality generates better, denser point "
-"clouds, but requires more memory and takes longer. Each step up in quality "
-"increases processing time roughly by a factor of 4x.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-#, python-format
-msgid ""
-"Build orthophoto overviews for faster display in programs such as QGIS. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:66
-#, python-format
-msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:67
-#, python-format
-msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:68
-#, python-format
-msgid ""
-"Path to the file containing the ground control points used for "
-"georeferencing. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2]Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:72
-#, python-format
-msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:73
-msgid "show this help message and exit"
-msgstr "Toon deze help boodschap en sluit af"
-
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid ""
-"Skips dense reconstruction and 3D model generation. It generates an "
-"orthophoto directly from the sparse reconstruction. If you just need an "
-"orthophoto and do not need a full 3D model, turn on this option. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
-#, python-format
-msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
-#, python-format
-msgid ""
-"Set a value in meters for the GPS Dilution of Precision (DOP) information "
-"for all images. If your images are tagged with high precision GPS "
-"information (RTK), this value will be automatically set accordingly. You can "
-"use this option to manually set it in case the reconstruction fails. "
-"Lowering this option can sometimes help control bowling-effects over large "
-"areas. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:78
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:79
-#, python-format
-msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:80
+#: app/static/app/js/translations/odm_autogenerated.js:12
 #, python-format
 msgid ""
 "Choose the structure from motion algorithm. For aerial datasets, if camera "
@@ -2634,7 +2132,40 @@ msgid ""
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:81
+#: app/static/app/js/translations/odm_autogenerated.js:13
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust.Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:15
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:16
+#, python-format
+msgid ""
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:17
 #, python-format
 msgid ""
 "Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
@@ -2642,22 +2173,227 @@ msgid ""
 "finer tuning. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:82
+#: app/static/app/js/translations/odm_autogenerated.js:18
 #, python-format
 msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
 msgstr ""
-"URL naar een ClusterODM-instantie voor het parallel distribueren van een "
-"split-merge-workflow op meerdere knooppunten. Standaard: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:83
+#: app/static/app/js/translations/odm_autogenerated.js:19
 #, python-format
 msgid ""
 "Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:84
+#: app/static/app/js/translations/odm_autogenerated.js:20
+msgid "Copy output results to this folder after processing."
+msgstr "Kopieer verwerkte resultaten naar deze map na verwerking."
+
+#: app/static/app/js/translations/odm_autogenerated.js:21
+#, python-format
+msgid ""
+"Set point cloud quality. Higher quality generates better, denser point "
+"clouds, but requires more memory and takes longer. Each step up in quality "
+"increases processing time roughly by a factor of 4x.Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:22
+#, python-format
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:23
+#, python-format
+msgid ""
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:24
+msgid "Displays version number and exits. "
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:25
+#, python-format
+msgid ""
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:26
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:27
+#, python-format
+msgid ""
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:28
+#, python-format
+msgid ""
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:29
+#, python-format
+msgid ""
+"Perform image matching with the nearest images based on GPS exif data. Set "
+"to 0 to match by triangulation. Default: %(default)s"
+msgstr ""
+"Voer afbeeldingsmatching uit met de dichtstbijzijnde afbeeldingen op basis "
+"van GPS exif-gegevens. Stel in op 0 om te matchen via triangulatie. "
+"Standaard: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:30
+#, python-format
+msgid ""
+"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
+"relative to the default behavior if set to true. Ordinarily, GSD estimates "
+"are used to cap the maximum resolution of image outputs and resizes images "
+"when necessary, resulting in faster processing and lower memory usage. Since "
+"GSD is an estimate, sometimes ignoring it can result in slightly better "
+"image output quality. Never set --ignore-gsd to true unless you are positive "
+"you need it, and even then: do not use it. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:31
+#, python-format
+msgid ""
+"Run local bundle adjustment for every image added to the reconstruction and "
+"a global adjustment every 100 images. Speeds up reconstruction for very "
+"large datasets. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
+#, python-format
+msgid ""
+"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
+"outputs should be automatically aligned to. Experimental. Default: "
+"%(default)s"
+msgstr ""
+"Pad naar een GeoTIFF DEM of een LAS/LAZ puntenwolk waar de reconstructie "
+"output aan wordt uitgelijnd. Experimenteel. Standaard: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:33
+#, python-format
+msgid ""
+"Set a value in meters for the GPS Dilution of Precision (DOP) information "
+"for all images. If your images are tagged with high precision GPS "
+"information (RTK), this value can be lowered. Lowering this option can "
+"sometimes help control bowling-effects over large areas. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:34
+#, python-format
+msgid ""
+"Octree depth used in the mesh reconstruction, increase to get more vertices, "
+"recommended values are 8-12. Default: %(default)s"
+msgstr ""
+"Octree-diepte gebruikt bij de mesh-reconstructie, vergroot om meer "
+"hoekpunten te krijgen, aanbevolen waarden zijn 8-12. Standaard: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:35
+#, python-format
+msgid ""
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
+msgstr ""
+"Gebruik deze instelling als je een GCP bestand hebt maar de EXIF informatie "
+"uit de afbeeldingen wil gebruiken voor het georefereren. Standaard: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:36
+#, python-format
+msgid ""
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:37
+msgid "show this help message and exit"
+msgstr "Toon deze help boodschap en sluit af"
+
+#: app/static/app/js/translations/odm_autogenerated.js:38
+#, python-format
+msgid ""
+"Path to the file containing the ground control points used for "
+"georeferencing. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
+"[extra2]Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:39
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:40
+#, python-format
+msgid ""
+"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
+"a progressive morphological filter. Check the --dem* parameters for finer "
+"tuning. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:41
+#, python-format
+msgid ""
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:42
+#, python-format
+msgid ""
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:43
+#, python-format
+msgid ""
+"Decimate the points before generating the DEM. 1 is no decimation (full "
+"quality). 100 decimates ~99%% of the points. Useful for speeding up "
+"generation of DEM results in very large datasets. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, python-format
+msgid ""
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:45
+#, python-format
+msgid ""
+"Name of dataset (i.e subfolder name within project folder). Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:46
 #, python-format
 msgid ""
 "Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
@@ -2666,15 +2402,175 @@ msgstr ""
 "Creëer Cloud-Optimized GeoTIFFs in plaats van normale GeoTIFFs. Standaard: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:85
+#: app/static/app/js/translations/odm_autogenerated.js:47
 #, python-format
 msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"Simple Morphological Filter elevation threshold parameter (meters). Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:86
+#: app/static/app/js/translations/odm_autogenerated.js:48
+#, python-format
+msgid ""
+"Generates a polygon around the cropping area that cuts the orthophoto around "
+"the edges of features. This polygon can be useful for stitching seamless "
+"mosaics with multiple overlapping orthophotos. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:49
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:50
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+"Zet deze parameter aan als je een Google Earth (KMZ) orthofoto wil "
+"genereren. Standaard: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:51
+#, python-format
+msgid ""
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
+msgstr ""
+"DSM/DTM resolutie in cm / pixel. Deze waarde wordt bepaald door de ground "
+"sampling distance (GSD) schatting. Standaard: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:52
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:53
+#, python-format
+msgid ""
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Choose what to merge in the merge step in a split dataset. By default all "
+"available outputs are merged. Options: %(choices)s. Default: %(default)s"
+msgstr ""
+"Kies wat u wilt samenvoegen in de samenvoegstap in een gesplitste "
+"gegevensset. Standaard worden alle beschikbare uitgangen samengevoegd. "
+"Opties: %(choices)s. Standaard: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
+#, python-format
+msgid ""
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:57
+#, python-format
+msgid ""
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:58
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr ""
+"Gebruik geen GPU-versnelling, zelfs als dit beschikbaar is. Standaard: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"Turn off camera parameter optimization during bundle adjustment. This can be "
+"sometimes useful for improving results that exhibit doming/bowling or when "
+"images are taken with a rolling shutter camera. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, python-format
+msgid ""
+"Set the radiometric calibration to perform on images. When processing "
+"multispectral and thermal images you should set this option to obtain "
+"reflectance/temperature values (otherwise you will get digital number "
+"values). [camera] applies black level, vignetting, row gradient gain/"
+"exposure compensation (if appropriate EXIF tags are found) and computes "
+"absolute temperature values. [camera+sun] is experimental, applies all the "
+"corrections of [camera], plus compensates for spectral radiance registered "
+"via a downwelling light sensor (DLS) taking in consideration the angle of "
+"the sun. Can be one of: %(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:63
+#, python-format
+msgid ""
+"Skips dense reconstruction and 3D model generation. It generates an "
+"orthophoto directly from the sparse reconstruction. If you just need an "
+"orthophoto and do not need a full 3D model, turn on this option. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:64
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:65
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:66
+msgid ""
+"Permanently delete all previous results and rerun the processing pipeline."
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
 #, python-format
 msgid ""
 "Specify the distance between camera shot locations and the outer edge of the "
@@ -2682,14 +2578,155 @@ msgid ""
 "automatically choose a value. Default: %(default)s"
 msgstr ""
 
+#: app/static/app/js/translations/odm_autogenerated.js:70
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Simple Morphological Filter window radius parameter (meters). Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid ""
+"Build orthophoto overviews for faster display in programs such as QGIS. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid ""
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
+msgstr ""
+"URL naar een ClusterODM-instantie voor het parallel distribueren van een "
+"split-merge-workflow op meerdere knooppunten. Standaard: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+#, python-format
+msgid ""
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
+msgid ""
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:79
+#, python-format
+msgid ""
+"Perform image matching with the nearest N images based on image filename "
+"order. Can speed up processing of sequential images, such as those extracted "
+"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"disable. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:80
+#, python-format
+msgid ""
+"The maximum output resolution of extracted video frames in pixels. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:81
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:82
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:83
+#, python-format
+msgid ""
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:84
+#, python-format
+msgid ""
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:85
+#, python-format
+msgid ""
+"Simple Morphological Filter slope parameter (rise over run). Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:86
+#, python-format
+msgid ""
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
+msgstr ""
+
 #: app/static/app/js/translations/odm_autogenerated.js:87
 #, python-format
 msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"%(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid ""
+"Computes an euclidean raster map for each DEM. The map reports the distance "
+"from each cell to the nearest NODATA value (before any hole filling takes "
+"place). This can be useful to isolate the areas that have been filled. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
 #, python-format
 msgid ""
 "Number of steps used to fill areas with gaps. Set to 0 to disable gap "
@@ -2699,33 +2736,40 @@ msgid ""
 "then merged using nearest neighbor interpolation. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:89
-msgid "Displays version number and exits. "
-msgstr ""
-
 #: app/static/app/js/translations/odm_autogenerated.js:90
 #, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgid ""
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
+"%(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgid ""
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:92
 #, python-format
 msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:93
 #, python-format
 msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
@@ -3351,6 +3395,11 @@ msgstr ""
 msgid "Gray"
 msgstr ""
 
+#: coreplugins/contours/public/Contours.jsx:37
+#: coreplugins/contours/public/ContoursPanel.jsx:429
+msgid "Contours"
+msgstr "Contouren"
+
 #: coreplugins/contours/public/ContoursPanel.jsx:74
 msgid ""
 "No DSM or DTM is available. To export contours, make sure to process a task "
@@ -3406,10 +3455,6 @@ msgstr "Voorvertoning"
 msgid "Export"
 msgstr "Exporteer"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:429
-msgid "Contours"
-msgstr "Contouren"
-
 #: coreplugins/editshortlinks/public/SLControls.jsx:154
 #: coreplugins/shortlinks/public/SLCheckbox.jsx:69
 msgid "Short Link"
@@ -3423,92 +3468,25 @@ msgstr ""
 msgid "Delete Short Link"
 msgstr "Verwijder shortlink"
 
-#: coreplugins/lightning/public/CostEstimateItem.jsx:103
-msgid "Cannot retrieve estimate. Try again later."
+#: coreplugins/lightning/public/CloudLogin.jsx:44
+#: coreplugins/lightning/public/CloudLogin.jsx:47
+#: coreplugins/lightning/public/ShareDialog.jsx:116
+#, fuzzy
+#| msgid "Invalid response from server: %(error)s"
+msgid "Invalid response. Try again later."
+msgstr "Ongeldige respons van server: %(error)s"
+
+#: coreplugins/lightning/public/CloudLogin.jsx:78
+msgid "Invalid password. Do you need to reset it?"
 msgstr ""
 
-#: coreplugins/lightning/public/CostEstimateItem.jsx:106
-msgid "Cannot retrieve estimate. Check parameters or try again later."
-msgstr ""
-
-#: coreplugins/lightning/public/CostEstimateItem.jsx:139
-msgid "Credits Estimate"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:39
-msgid "Loading dashboard..."
-msgstr "Dashboard laden..."
-
-#: coreplugins/lightning/public/Dashboard.jsx:48
-msgid ""
-"Cannot load lightning dashboard. Are you running the latest version of "
-"WebODM?"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:52
-msgid ""
-"Cannot load lightning dashboard. Please make sure you are connected to the "
-"internet, or try again in an hour."
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:75
-msgid "Cannot sync nodes. Are you connected to the internet?"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:83
-msgid "Logging out…"
-msgstr "Uitloggen…"
-
-#: coreplugins/lightning/public/Dashboard.jsx:89
-#: coreplugins/lightning/public/Dashboard.jsx:94
-msgid "Cannot logout:"
-msgstr "Kan niet uitloggen:"
-
-#: coreplugins/lightning/public/Dashboard.jsx:115
-msgid "credits"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:117
-msgid "Unlimited"
-msgstr "Ongelimiteerd"
-
-#: coreplugins/lightning/public/Dashboard.jsx:130
-msgid "Balance:"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:131
-msgid "Buy Credits"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:132
-msgid "Refresh Balance"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:135
-msgid "Hello,"
-msgstr "Hallo,"
-
-#: coreplugins/lightning/public/Dashboard.jsx:138
-msgid "Synced Nodes"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:146
-msgid "Resync"
-msgstr ""
-
-#: coreplugins/lightning/public/Dashboard.jsx:153
-msgid "Dashboard"
-msgstr "Dashboard"
-
-#: coreplugins/lightning/public/Dashboard.jsx:159
-msgid "Logout"
-msgstr ""
-
-#: coreplugins/lightning/public/Login.jsx:56
+#: coreplugins/lightning/public/CloudLogin.jsx:83
+#: coreplugins/lightning/public/Login.jsx:62
 msgid "Cannot login. Invalid response:"
 msgstr ""
 
-#: coreplugins/lightning/public/Login.jsx:60
+#: coreplugins/lightning/public/CloudLogin.jsx:86
+#: coreplugins/lightning/public/Login.jsx:66
 msgid ""
 "Cannot login. Please make sure you are connected to the internet, or try "
 "again in an hour."
@@ -3516,45 +3494,265 @@ msgstr ""
 "Kan niet inloggen. Controleer dat je bent verbonden met het internet of "
 "probeer het weer over één uur."
 
-#: coreplugins/lightning/public/Login.jsx:90
-msgid "E-mail Address"
-msgstr "E-mailadres"
+#: coreplugins/lightning/public/CloudLogin.jsx:106
+#, python-format
+msgid ""
+"Your Lightning cloud platform account is not active yet. To activate it, "
+"visit %(link)s and make sure you can access the cloud platform, then try "
+"again."
+msgstr ""
 
-#: coreplugins/lightning/public/Login.jsx:97
+#: coreplugins/lightning/public/CloudLogin.jsx:114
+msgid "Please confirm the password of your Lightning account to continue:"
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:118
+#: coreplugins/lightning/public/Login.jsx:103
 msgid "Password"
 msgstr "Paswoord"
 
-#: coreplugins/lightning/public/Login.jsx:104
+#: coreplugins/lightning/public/CloudLogin.jsx:119
+msgid "switch"
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:127
+#, fuzzy
+#| msgid "Forgot password?"
+msgid "Reset password"
+msgstr "Paswoord vergeten?"
+
+#: coreplugins/lightning/public/CloudLogin.jsx:133
+#, fuzzy
+#| msgid "Password"
+msgid "Confirm Password"
+msgstr "Paswoord"
+
+#: coreplugins/lightning/public/CostEstimateItem.jsx:105
+msgid "Cannot retrieve estimate. Try again later."
+msgstr ""
+
+#: coreplugins/lightning/public/CostEstimateItem.jsx:108
+msgid "Cannot retrieve estimate. Check parameters or try again later."
+msgstr ""
+
+#: coreplugins/lightning/public/CostEstimateItem.jsx:141
+msgid "Credits Estimate"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:43
+msgid "Loading dashboard..."
+msgstr "Dashboard laden..."
+
+#: coreplugins/lightning/public/Dashboard.jsx:61
+msgid ""
+"Cannot load lightning dashboard. Are you running the latest version of "
+"WebODM?"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:65
+msgid ""
+"Cannot load lightning dashboard. Please make sure you are connected to the "
+"internet, or try again in an hour."
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:91
+msgid "Cannot sync nodes. Are you connected to the internet?"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:99
+msgid "Logging out…"
+msgstr "Uitloggen…"
+
+#: coreplugins/lightning/public/Dashboard.jsx:105
+#: coreplugins/lightning/public/Dashboard.jsx:110
+msgid "Cannot logout:"
+msgstr "Kan niet uitloggen:"
+
+#: coreplugins/lightning/public/Dashboard.jsx:146
+msgid "credits"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:148
+msgid "Unlimited"
+msgstr "Ongelimiteerd"
+
+#: coreplugins/lightning/public/Dashboard.jsx:161
+msgid "Balance:"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:162
+msgid "Buy Credits"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:163
+msgid "Refresh Balance"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:166
+msgid "Hello,"
+msgstr "Hallo,"
+
+#: coreplugins/lightning/public/Dashboard.jsx:171
+msgid "Synced Nodes"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:179
+msgid "Resync"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:185
+msgid "Share Buttons"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:187
+#, fuzzy
+#| msgid "Enabled"
+msgid "Disabled"
+msgstr "Ingeschakeld"
+
+#: coreplugins/lightning/public/Dashboard.jsx:189
+msgid "Toggle"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:198
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: coreplugins/lightning/public/Dashboard.jsx:204
+msgid "Logout"
+msgstr ""
+
+#: coreplugins/lightning/public/Login.jsx:96
+msgid "E-mail Address"
+msgstr "E-mailadres"
+
+#: coreplugins/lightning/public/Login.jsx:110
 msgid "Don't have an account?"
 msgstr "Nog geen account?"
 
-#: coreplugins/lightning/public/Login.jsx:105
+#: coreplugins/lightning/public/Login.jsx:111
 msgid "Forgot password?"
 msgstr "Paswoord vergeten?"
 
-#: coreplugins/lightning/public/Login.jsx:110
+#: coreplugins/lightning/public/Login.jsx:116
 msgid "Login and Sync"
 msgstr "Login en Synchroniseer"
 
-#: coreplugins/lightning/public/app.jsx:39
+#: coreplugins/lightning/public/ShareDialog.jsx:119
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot communicate with Lightning's cloud platform. Try again later."
+msgstr "Kan geen nieuwe taak creëren. Probeer het later opnieuw."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:150
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot calculate size. Try again later."
+msgstr "Kan geen nieuwe taak creëren. Probeer het later opnieuw."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:193
+msgid "Service not available. Try again later."
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:196
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot verify credentials. Try again later."
+msgstr "Kan geen nieuwe taak creëren. Probeer het later opnieuw."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:263
+#, fuzzy
+#| msgid "Invalid JSON response: %(error)s"
+msgid "Invalid response"
+msgstr "Ongeldige JSON respons: %(error)s"
+
+#: coreplugins/lightning/public/ShareDialog.jsx:266
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot share. Please try again in a bit."
+msgstr "Kan geen nieuwe taak creëren. Probeer het later opnieuw."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:278
+msgid "Checking your credentials..."
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:287
+#, fuzzy
+#| msgid "Creating project..."
+msgid "Retrieving your projects..."
+msgstr "Project aan het creëren..."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:301
+msgid ""
+"Your Lightning account does not have permanent cloud storage. You can still "
+"share, but data will be deleted shortly after upload."
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:313
+#, fuzzy
+#| msgid "Created on"
+msgid "Create New"
+msgstr "Aangemaakt op"
+
+#: coreplugins/lightning/public/ShareDialog.jsx:329
+msgid "All Assets + Original Images"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:330
+msgid "Only"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:342
+msgid "Size exceeds available storage quota"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:355
+msgid "Select All"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:359
+msgid "Deselect All"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:389
+#, fuzzy
+#| msgid "Lightning Network"
+msgid "Share with Lightning"
+msgstr "Lightning Netwerk"
+
+#: coreplugins/lightning/public/ShareDialog.jsx:392
+#, fuzzy
+#| msgid "Saving..."
+msgid "Sharing..."
+msgstr "Opslaan..."
+
+#: coreplugins/lightning/public/app.jsx:42
 #, fuzzy
 #| msgid "Lightning Network"
 msgid "Lightning"
 msgstr "Lightning Netwerk"
 
-#: coreplugins/lightning/public/app.jsx:40
+#: coreplugins/lightning/public/app.jsx:43
 msgid ""
-"Lightning is a service that allows you to quickly process small and large "
-"datasets using high performance servers in the cloud."
+"Lightning is a cloud service built by WebODM developers that allows you to:"
 msgstr ""
-"Lightning is een dienst waarmee je snel kleine en grote datasets kunt "
-"verwerken middels krachtige servers in de cloud."
 
-#: coreplugins/lightning/public/app.jsx:41
+#: coreplugins/lightning/public/app.jsx:46
+#, python-format
+msgid ""
+"Quickly process datasets with high performance servers powered by the "
+"%(link)s photogrammetry engine"
+msgstr ""
+
+#: coreplugins/lightning/public/app.jsx:49
+msgid "Easily share public links to your datasets"
+msgstr ""
+
+#: coreplugins/lightning/public/app.jsx:51
 msgid "register"
 msgstr "registreer"
 
-#: coreplugins/lightning/public/app.jsx:42
+#: coreplugins/lightning/public/app.jsx:52
 #, python-format
 msgid ""
 "Below you can enter your %(link)s credentials to sync your account and "
@@ -3648,6 +3846,11 @@ msgstr "Vierkante mijl"
 msgid "Export Measurements"
 msgstr "Metingen exporteren"
 
+#: coreplugins/objdetect/public/ObjDetect.jsx:37
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:221
+msgid "Object Detection"
+msgstr ""
+
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:47
 msgid ""
 "No orthophoto is available. To use object detection you need an orthophoto."
@@ -3691,9 +3894,21 @@ msgstr ""
 msgid "Count:"
 msgstr ""
 
-#: coreplugins/objdetect/public/ObjDetectPanel.jsx:221
-msgid "Object Detection"
-msgstr ""
+#~ msgid ""
+#~ "An orthophoto could not be generated. To generate one, make sure GPS "
+#~ "information is embedded in the EXIF tags of your images, or use a Ground "
+#~ "Control Points (GCP) file."
+#~ msgstr ""
+#~ "Er kon geen orthofoto worden gegenereerd. Om deze te genereren, zorg dat "
+#~ "de GPS informatie in de EXIF tags van je afbeeldingen zit, of gebruik een "
+#~ "Ground Control Points (GCP) bestand."
+
+#~ msgid ""
+#~ "Lightning is a service that allows you to quickly process small and large "
+#~ "datasets using high performance servers in the cloud."
+#~ msgstr ""
+#~ "Lightning is een dienst waarmee je snel kleine en grote datasets kunt "
+#~ "verwerken middels krachtige servers in de cloud."
 
 #~ msgid "Google Maps Hybrid"
 #~ msgstr "Google Maps Hybrid"

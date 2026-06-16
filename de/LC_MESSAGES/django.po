@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-30 20:41+0000\n"
+"POT-Creation-Date: 2026-06-16 18:59+0000\n"
 "PO-Revision-Date: 2026-04-08 06:42+0000\n"
 "Last-Translator: David Powell <david.powell@alpinfra.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/webodm/webodm/de/"
@@ -19,39 +19,47 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:87
+#: app/admin.py:110
+msgid "Cannot restore default logo"
+msgstr ""
+
+#: app/admin.py:124
+msgid "Restore Default"
+msgstr ""
+
+#: app/admin.py:146
 msgid "Enter custom CSS"
 msgstr "Geben Sie benutzerdefiniertes CSS ein"
 
-#: app/admin.py:88 app/models/theme.py:40
+#: app/admin.py:147 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:91
+#: app/admin.py:150
 msgid "HTML that will be displayed above site header"
 msgstr "HTML, das über dem Site-Header angezeigt wird"
 
-#: app/admin.py:92 app/models/theme.py:41
+#: app/admin.py:151 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (vor dem Header/Kopfzeile)"
 
-#: app/admin.py:95
+#: app/admin.py:154
 msgid "HTML that will be displayed after site header"
 msgstr "HTML, das nach der Kopfzeile angezeigt wird"
 
-#: app/admin.py:96 app/models/theme.py:42
+#: app/admin.py:155 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (nach Kopfzeile)"
 
-#: app/admin.py:99
+#: app/admin.py:158
 msgid "HTML that will be displayed after the body tag"
 msgstr "HTML, das nach dem Body-Tag angezeigt wird"
 
-#: app/admin.py:100 app/models/theme.py:43
+#: app/admin.py:159 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (nach Body)"
 
-#: app/admin.py:104
+#: app/admin.py:163
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -60,72 +68,72 @@ msgstr ""
 "Sie können spezielle Tags wie {ORGANIZATION} und {YEAR} verwenden um diese "
 "in der Fußzeile der Website anzuzeigen."
 
-#: app/admin.py:105 app/models/theme.py:44
+#: app/admin.py:164 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (Fußzeile)"
 
-#: app/admin.py:160 app/models/project.py:29
+#: app/admin.py:224 app/models/project.py:29
 msgid "Description"
 msgstr "Beschreibung"
 
-#: app/admin.py:166
+#: app/admin.py:230
 msgid "Version"
 msgstr "Version"
 
-#: app/admin.py:172
+#: app/admin.py:236
 msgid "Author"
 msgstr "Autor"
 
-#: app/admin.py:204
+#: app/admin.py:268
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Neustart erforderlich. Um %(plugin)s zu aktivieren, starten Sie WebOD neu"
 
-#: app/admin.py:207
+#: app/admin.py:271
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Plugin %(plugin)s kann nicht aktiviert werden: %(message)s"
 
-#: app/admin.py:216
+#: app/admin.py:280
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Neustart erforderlich. Starten Sie WebODM neu, um %(plugin)s vollständig zu "
 "deaktivieren"
 
-#: app/admin.py:219
+#: app/admin.py:283
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "Plugin %(plugin)s kann nicht deaktiviert werden: %(message)s"
 
-#: app/admin.py:228
+#: app/admin.py:292
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Plugin %(plugin)s kann nicht gelöscht werden: %(message)s"
 
-#: app/admin.py:276
+#: app/admin.py:340
 msgid "Plugin added successfully"
 msgstr "Plugin erfolgreich hinzugefügt"
 
-#: app/admin.py:278
+#: app/admin.py:342
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Plugin kann nicht geladen werden: %(message)s"
 
-#: app/admin.py:284
+#: app/admin.py:348
 msgid "You need to upload a zip file"
 msgstr "Sie müssen ein Zip-Archiv hochladen"
 
-#: app/admin.py:298
+#: app/admin.py:362
 msgid "Disable"
 msgstr "Deaktivieren"
 
-#: app/admin.py:301
+#: app/admin.py:365
 msgid "Enable"
 msgstr "Aktivieren"
 
-#: app/admin.py:306
+#: app/admin.py:370
 msgid "Actions"
 msgstr "Aktionen"
 
@@ -285,7 +293,23 @@ msgstr "Temperatur in Grad Celsius."
 msgid "Temperature in Centikelvin degrees."
 msgstr "Temperatur in Hundertstel Grad Kelvin."
 
-#: app/api/media.py:72 app/api/tasks.py:304
+#: app/api/jwt.py:35 app/api/jwt.py:44
+msgid "User account is disabled."
+msgstr ""
+
+#: app/api/jwt.py:40
+msgid "Cannot impersonate, user is not superuser."
+msgstr ""
+
+#: app/api/jwt.py:52 app/api/jwt.py:60
+msgid "Unable to log in with provided credentials."
+msgstr ""
+
+#: app/api/jwt.py:62
+msgid "Must include \"username\" and \"password\"."
+msgstr ""
+
+#: app/api/media.py:72 app/api/tasks.py:315
 msgid "No files uploaded"
 msgstr "Keine Dateien geladen"
 
@@ -293,101 +317,107 @@ msgstr "Keine Dateien geladen"
 msgid "File exceeds maximum allowed size"
 msgstr "Maximale Dateigröße überschritten"
 
-#: app/api/projects.py:136
+#: app/api/projects.py:129
 msgid "Cannot duplicate project"
 msgstr "Projekt kann nicht dupliziert werden"
 
-#: app/api/projects.py:232
+#: app/api/projects.py:225
 msgid "Invalid user in permissions list"
 msgstr ""
 
-#: app/api/projects.py:234
+#: app/api/projects.py:227
 #, fuzzy
 #| msgid "Invalid permissions"
 msgid "Invalid group in permissions list"
 msgstr "Ungültige Berechtigungen"
 
-#: app/api/projects.py:236
+#: app/api/projects.py:229
 msgid "Invalid permissions"
 msgstr "Ungültige Berechtigungen"
 
-#: app/api/tasks.py:282
+#: app/api/tasks.py:116
+#, fuzzy
+#| msgid "Cannot create task, you need at least 2 images"
+msgid "Cannot create task, processing node is not valid"
+msgstr "Man benötigt mindestens 2 Bilder"
+
+#: app/api/tasks.py:293
 msgid "You need to upload at least 1 file before commit"
 msgstr "Sie müssen mindestens eine Datei hochladen"
 
-#: app/api/tasks.py:360
+#: app/api/tasks.py:371
 msgid "Cannot duplicate task"
 msgstr "Aufgabe kann nicht dupliziert werden"
 
-#: app/api/tasks.py:374
+#: app/api/tasks.py:388
 #, fuzzy
 #| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, alignment task is not valid"
 msgstr "Man benötigt mindestens 2 Bilder"
 
-#: app/api/tasks.py:391
+#: app/api/tasks.py:405
 msgid "Cannot create task, you need at least 2 images"
 msgstr "Man benötigt mindestens 2 Bilder"
 
-#: app/api/tasks.py:515 app/api/tasks.py:519 app/api/tasks.py:660
-#: app/api/tasks.py:663 app/api/tasks.py:681 app/api/tasks.py:1005
+#: app/api/tasks.py:532 app/api/tasks.py:536 app/api/tasks.py:678
+#: app/api/tasks.py:681 app/api/tasks.py:699 app/api/tasks.py:1025
 msgid "Asset does not exist"
 msgstr "Asset existiert nicht"
 
-#: app/api/tasks.py:699 app/api/tasks.py:917
+#: app/api/tasks.py:717 app/api/tasks.py:937
 msgid "Imported Task"
 msgstr "Importierte Aufgabe"
 
-#: app/api/tasks.py:702 app/api/tasks.py:828
+#: app/api/tasks.py:721 app/api/tasks.py:848
 msgid "Cannot create task, you need to upload 1 file"
 msgstr ""
 "Aufgabe kann nicht erstellt werden, weil Sie mindestens eine Datei hochladen "
 "müssen"
 
-#: app/api/tasks.py:706
+#: app/api/tasks.py:725
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr ""
 "Aufgabe kann nicht erstellt werden. Geben Sie eine URL an oder laden Sie "
 "eine Datei hoch."
 
-#: app/api/tasks.py:708
+#: app/api/tasks.py:727
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr ""
 
-#: app/api/tasks.py:812 app/api/tasks.py:815
+#: app/api/tasks.py:832 app/api/tasks.py:835
 msgid "Invalid uuid"
 msgstr ""
 
-#: app/api/tasks.py:836
+#: app/api/tasks.py:856
 msgid "Invalid file type"
 msgstr ""
 
-#: app/api/tasks.py:847
+#: app/api/tasks.py:867
 msgid "Invalid file type (extension mismatch)"
 msgstr ""
 
-#: app/api/tasks.py:871
+#: app/api/tasks.py:891
 msgid "Some parameters are not integers"
 msgstr ""
 
-#: app/api/tasks.py:930 app/api/tasks.py:935
+#: app/api/tasks.py:950 app/api/tasks.py:955
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:937
+#: app/api/tasks.py:957
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:943
+#: app/api/tasks.py:963
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:949
+#: app/api/tasks.py:969
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:953
+#: app/api/tasks.py:973
 msgid "No assets uploaded"
 msgstr "Keine Dateien geladen"
 
@@ -468,56 +498,56 @@ msgstr ""
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 
-#: app/models/basemap.py:13
+#: app/models/basemap.py:14
 msgid "Type"
 msgstr ""
 
-#: app/models/basemap.py:14
+#: app/models/basemap.py:15
 msgid "URL"
 msgstr ""
 
-#: app/models/basemap.py:15 app/templates/app/processing_node.html:39
+#: app/models/basemap.py:16 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:33
 msgid "Label"
 msgstr "Label"
 
-#: app/models/basemap.py:16
+#: app/models/basemap.py:17
 msgid "Attribution"
 msgstr ""
 
-#: app/models/basemap.py:19
+#: app/models/basemap.py:20
 msgid "Max zoom"
 msgstr ""
 
-#: app/models/basemap.py:22
+#: app/models/basemap.py:23
 msgid "Min zoom"
 msgstr ""
 
-#: app/models/basemap.py:23
+#: app/models/basemap.py:24
 msgid "Subdomains"
 msgstr ""
 
-#: app/models/basemap.py:24
+#: app/models/basemap.py:25
 msgid "Layers"
 msgstr ""
 
-#: app/models/basemap.py:25
+#: app/models/basemap.py:26
 msgid "Styles"
 msgstr ""
 
-#: app/models/basemap.py:30
+#: app/models/basemap.py:31
 msgid "Format"
 msgstr ""
 
-#: app/models/basemap.py:31
+#: app/models/basemap.py:32
 msgid "Default"
 msgstr ""
 
-#: app/models/basemap.py:34
+#: app/models/basemap.py:35
 msgid "Basemap"
 msgstr ""
 
-#: app/models/basemap.py:35 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
 msgstr ""
 
@@ -526,7 +556,7 @@ msgid "Plugin name"
 msgstr "Plugin-Name"
 
 #: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:246 app/models/theme.py:18
+#: app/models/task.py:247 app/models/theme.py:18
 msgid "Name"
 msgstr "Name"
 
@@ -604,15 +634,15 @@ msgstr ""
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 
-#: app/models/preset.py:11 app/models/task.py:252
+#: app/models/preset.py:11 app/models/task.py:253
 msgid "Options"
 msgstr "Optionen"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:260
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:261
 msgid "Creation date"
 msgstr "Erstellungsdatum"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:260
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:261
 msgid "Created at"
 msgstr "Erzeugt am"
 
@@ -687,7 +717,7 @@ msgstr "Löschen"
 msgid "Project tags"
 msgstr "Projekt-Tags"
 
-#: app/models/project.py:32 app/models/task.py:286
+#: app/models/project.py:32 app/models/task.py:287
 msgid "Tags"
 msgstr "Tags"
 
@@ -695,7 +725,7 @@ msgstr "Tags"
 msgid "A flag indicating whether this project is available to the public"
 msgstr ""
 
-#: app/models/project.py:33 app/models/task.py:263
+#: app/models/project.py:33 app/models/task.py:264
 msgid "Public"
 msgstr ""
 
@@ -703,7 +733,7 @@ msgstr ""
 msgid "A flag indicating whether this public project can be edited"
 msgstr ""
 
-#: app/models/project.py:34 app/models/task.py:264
+#: app/models/project.py:34 app/models/task.py:265
 msgid "Public Edit"
 msgstr ""
 
@@ -717,16 +747,16 @@ msgstr "Ausführliche Beschreibung des Projekts"
 msgid "Public Id"
 msgstr ""
 
-#: app/models/project.py:109 app/models/task.py:478
+#: app/models/project.py:108 app/models/task.py:479
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "Kopie von %(task)s"
 
-#: app/models/project.py:142 app/models/task.py:245
+#: app/models/project.py:141 app/models/task.py:246
 msgid "Project"
 msgstr "Projekt"
 
-#: app/models/project.py:143 coreplugins/projects-charts/templates/index.html:7
+#: app/models/project.py:142 coreplugins/projects-charts/templates/index.html:7
 msgid "Projects"
 msgstr "Projekte"
 
@@ -805,294 +835,294 @@ msgstr "Anwendung"
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: app/models/task.py:242
+#: app/models/task.py:243
 msgid "Id"
 msgstr "Id"
 
-#: app/models/task.py:244
+#: app/models/task.py:245
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr ""
 
-#: app/models/task.py:244
+#: app/models/task.py:245
 msgid "UUID"
 msgstr "UUID"
 
-#: app/models/task.py:245
+#: app/models/task.py:246
 msgid "Project that this task belongs to"
 msgstr "Projekt, zu dem diese Aufgabe gehört"
 
-#: app/models/task.py:246
+#: app/models/task.py:247
 msgid "A label for the task"
 msgstr ""
 
-#: app/models/task.py:247
+#: app/models/task.py:248
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
 msgstr ""
 
-#: app/models/task.py:247
+#: app/models/task.py:248
 msgid "Processing Time"
 msgstr ""
 
-#: app/models/task.py:248
+#: app/models/task.py:249
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
 msgstr ""
 
-#: app/models/task.py:248 app/views/app.py:140 nodeodm/models.py:37
+#: app/models/task.py:249 app/views/app.py:140 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Verarbeitungsknoten"
 
-#: app/models/task.py:249
+#: app/models/task.py:250
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
 msgstr ""
 
-#: app/models/task.py:249
+#: app/models/task.py:250
 msgid "Auto Processing Node"
 msgstr ""
 
-#: app/models/task.py:250
+#: app/models/task.py:251
 msgid "Current status of the task"
 msgstr ""
 
-#: app/models/task.py:250
+#: app/models/task.py:251
 msgid "Status"
 msgstr ""
 
-#: app/models/task.py:251
+#: app/models/task.py:252
 msgid "The last processing error received"
 msgstr ""
 
-#: app/models/task.py:251
+#: app/models/task.py:252
 msgid "Last Error"
 msgstr ""
 
-#: app/models/task.py:252
+#: app/models/task.py:253
 msgid "Options that are being used to process this task"
 msgstr ""
 
-#: app/models/task.py:253
+#: app/models/task.py:254
 msgid "List of available assets to download"
 msgstr ""
 
-#: app/models/task.py:253
+#: app/models/task.py:254
 msgid "Available Assets"
 msgstr ""
 
-#: app/models/task.py:255
+#: app/models/task.py:256
 msgid "Extent of the orthophoto"
 msgstr ""
 
-#: app/models/task.py:255
+#: app/models/task.py:256
 msgid "Orthophoto Extent"
 msgstr ""
 
-#: app/models/task.py:256
+#: app/models/task.py:257
 msgid "Extent of the DSM"
 msgstr ""
 
-#: app/models/task.py:256
+#: app/models/task.py:257
 msgid "DSM Extent"
 msgstr ""
 
-#: app/models/task.py:257
+#: app/models/task.py:258
 msgid "Extent of the DTM"
 msgstr ""
 
-#: app/models/task.py:257
+#: app/models/task.py:258
 msgid "DTM Extent"
 msgstr ""
 
-#: app/models/task.py:261
+#: app/models/task.py:262
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
 msgstr ""
 
-#: app/models/task.py:261
+#: app/models/task.py:262
 msgid "Pending Action"
 msgstr ""
 
-#: app/models/task.py:263
+#: app/models/task.py:264
 msgid "A flag indicating whether this task is available to the public"
 msgstr ""
 
-#: app/models/task.py:264
+#: app/models/task.py:265
 msgid "A flag indicating whether this public task can be edited"
 msgstr ""
 
-#: app/models/task.py:266
+#: app/models/task.py:267
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
 "processing."
 msgstr ""
 
-#: app/models/task.py:266
+#: app/models/task.py:267
 msgid "Resize To"
 msgstr ""
 
-#: app/models/task.py:269
+#: app/models/task.py:270
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
 msgstr ""
 
-#: app/models/task.py:270
+#: app/models/task.py:271
 msgid "Upload Progress"
 msgstr ""
 
-#: app/models/task.py:273
+#: app/models/task.py:274
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr ""
 
-#: app/models/task.py:274
+#: app/models/task.py:275
 msgid "Resize Progress"
 msgstr ""
 
-#: app/models/task.py:277
+#: app/models/task.py:278
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr ""
 
-#: app/models/task.py:278
+#: app/models/task.py:279
 msgid "Running Progress"
 msgstr ""
 
-#: app/models/task.py:280
+#: app/models/task.py:281
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr ""
 
-#: app/models/task.py:280
+#: app/models/task.py:281
 msgid "Import URL"
 msgstr ""
 
-#: app/models/task.py:281
+#: app/models/task.py:282
 msgid "Number of images associated with this task"
 msgstr ""
 
-#: app/models/task.py:281
+#: app/models/task.py:282
 msgid "Images Count"
 msgstr ""
 
-#: app/models/task.py:282
+#: app/models/task.py:283
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
 msgstr ""
 
-#: app/models/task.py:282
+#: app/models/task.py:283
 msgid "Partial"
 msgstr ""
 
-#: app/models/task.py:283
+#: app/models/task.py:284
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
 msgstr ""
 
-#: app/models/task.py:283
+#: app/models/task.py:284
 msgid "Potree Scene"
 msgstr ""
 
-#: app/models/task.py:284
+#: app/models/task.py:285
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr ""
 
-#: app/models/task.py:285
+#: app/models/task.py:286
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
 msgstr ""
 
-#: app/models/task.py:286
+#: app/models/task.py:287
 #, fuzzy
 #| msgid "Task"
 msgid "Task tags"
 msgstr "Aufgabe"
 
-#: app/models/task.py:287
+#: app/models/task.py:288
 msgid "List of orthophoto bands"
 msgstr ""
 
-#: app/models/task.py:287
+#: app/models/task.py:288
 msgid "Orthophoto Bands"
 msgstr ""
 
-#: app/models/task.py:288
+#: app/models/task.py:289
 msgid "Size of the task on disk in megabytes"
 msgstr ""
 
-#: app/models/task.py:288
+#: app/models/task.py:289
 msgid "Size"
 msgstr ""
 
-#: app/models/task.py:289
+#: app/models/task.py:290
 msgid "A flag indicating whether this task was compacted"
 msgstr ""
 
-#: app/models/task.py:289
+#: app/models/task.py:290
 msgid "Compact"
 msgstr ""
 
-#: app/models/task.py:290
+#: app/models/task.py:291
 msgid "Polygon defining the crop area of this task"
 msgstr ""
 
-#: app/models/task.py:290
+#: app/models/task.py:291
 msgid "Crop Polygon"
 msgstr ""
 
-#: app/models/task.py:291
+#: app/models/task.py:292
 #, fuzzy
 #| msgid "The person who owns this preset"
 msgid "List of media files associated with this task"
 msgstr "Die Person, die diese Voreinstellung besitzt"
 
-#: app/models/task.py:291
+#: app/models/task.py:292
 msgid "Media"
 msgstr ""
 
-#: app/models/task.py:295
+#: app/models/task.py:296
 msgid "Task"
 msgstr "Aufgabe"
 
-#: app/models/task.py:296
+#: app/models/task.py:297
 msgid "Tasks"
 msgstr ""
 
-#: app/models/task.py:307
+#: app/models/task.py:308
 msgid "unnamed"
 msgstr ""
 
-#: app/models/task.py:610
+#: app/models/task.py:611
 msgid "Importing assets..."
 msgstr ""
 
-#: app/models/task.py:665 app/models/task.py:943
+#: app/models/task.py:666 app/models/task.py:945
 msgid "Invalid zip file"
 msgstr ""
 
-#: app/models/task.py:667
+#: app/models/task.py:668
 msgid "Unsupported compression method"
 msgstr ""
 
-#: app/models/task.py:761
+#: app/models/task.py:763
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr ""
 
-#: app/models/task.py:841
+#: app/models/task.py:843
 msgid "Cannot restart a task that has no processing node"
 msgstr ""
 
-#: app/models/task.py:1054
+#: app/models/task.py:1059
 msgid "Done!"
 msgstr ""
 
@@ -2003,7 +2033,7 @@ msgstr ""
 msgid "No DTM layer is available."
 msgstr ""
 
-#: coreplugins/diagnostic/plugin.py:36
+#: coreplugins/diagnostic/plugin.py:66
 msgid "Diagnostic"
 msgstr "Diagnose"
 
@@ -2099,7 +2129,7 @@ msgstr ""
 msgid "Hello World"
 msgstr ""
 
-#: coreplugins/lightning/plugin.py:25 coreplugins/lightning/plugin.py:39
+#: coreplugins/lightning/plugin.py:28
 #, fuzzy
 #| msgid "Lightning Network"
 msgid "Lightning"
