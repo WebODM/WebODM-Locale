@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-16 18:59+0000\n"
-"PO-Revision-Date: 2026-05-07 08:11+0000\n"
+"PO-Revision-Date: 2026-06-18 16:01+0000\n"
 "Last-Translator: \"Luca P.\" <madeinupa@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/webodm/react-ui/"
 "it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17.1\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -82,7 +82,7 @@ msgstr "Modello del terreno"
 
 #: app/static/app/js/MapView.jsx:155
 msgid "A map is not available for this task or project."
-msgstr ""
+msgstr "Una mappa non è disponibile per questa attività o progetto."
 
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
@@ -115,14 +115,10 @@ msgid "Loading textured model..."
 msgstr "Caricamento modello con texture..."
 
 #: app/static/app/js/Toaster.jsx:14
-#, fuzzy
-#| msgid "Processing"
 msgid "Processed"
-msgstr "Elaborazione"
+msgstr "Elaborato"
 
 #: app/static/app/js/Toaster.jsx:15
-#, fuzzy
-#| msgid "Share"
 msgid "Shared"
 msgstr "Condividi"
 
@@ -143,17 +139,13 @@ msgid "Sharing"
 msgstr "Condividi"
 
 #: app/static/app/js/Toaster.jsx:21
-#, fuzzy
-#| msgid "Exporting..."
 msgid "Exporting"
-msgstr "Esportazione..."
+msgstr "Esportazione"
 
 #: app/static/app/js/Toaster.jsx:234
 #: coreplugins/lightning/public/ShareDialog.jsx:259
-#, fuzzy
-#| msgid "Task ID:"
 msgid "Task"
-msgstr "ID Attività:"
+msgstr "Attività"
 
 #: app/static/app/js/Toaster.jsx:259
 #, fuzzy
@@ -3587,7 +3579,7 @@ msgstr "Completamento caricamento fallito. Riprovare più tardi."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:78
 msgid "Invalid password. Do you need to reset it?"
-msgstr ""
+msgstr "Password non valida. Devi resettarla?"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:83
 #: coreplugins/lightning/public/Login.jsx:62
@@ -3610,10 +3602,14 @@ msgid ""
 "visit %(link)s and make sure you can access the cloud platform, then try "
 "again."
 msgstr ""
+"Il tuo account su piattaforma cloud Lightning non è ancora attivo. Per "
+"attivarlo, visita %(link)s e assicurarti di poter accedere alla piattaforma "
+"cloud, quindi riprova."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:114
 msgid "Please confirm the password of your Lightning account to continue:"
 msgstr ""
+"Si prega di confermare la password del tuo account Lightning per continuare:"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:118
 #: coreplugins/lightning/public/Login.jsx:103
@@ -3625,10 +3621,8 @@ msgid "switch"
 msgstr ""
 
 #: coreplugins/lightning/public/CloudLogin.jsx:127
-#, fuzzy
-#| msgid "Forgot password?"
 msgid "Reset password"
-msgstr "Password dimenticata?"
+msgstr "Reset Password"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:133
 #, fuzzy
@@ -3812,7 +3806,7 @@ msgstr "Creato il"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:329
 msgid "All Assets + Original Images"
-msgstr ""
+msgstr "Tutti gli Asset + Immagini originali"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:330
 msgid "Only"
@@ -3830,7 +3824,7 @@ msgstr "Seleziona"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:359
 msgid "Deselect All"
-msgstr ""
+msgstr "Deseleziona tutto"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:389
 #, fuzzy
@@ -3852,6 +3846,8 @@ msgstr "Lightning"
 msgid ""
 "Lightning is a cloud service built by WebODM developers that allows you to:"
 msgstr ""
+"Lightning è un servizio cloud realizzato dagli sviluppatori WebODM che ti "
+"permette di:"
 
 #: coreplugins/lightning/public/app.jsx:46
 #, python-format
@@ -3859,10 +3855,12 @@ msgid ""
 "Quickly process datasets with high performance servers powered by the "
 "%(link)s photogrammetry engine"
 msgstr ""
+"Elaborare rapidamente set di dati con server ad alte prestazioni basati sul "
+"motore di fotogrammetria %(link)s"
 
 #: coreplugins/lightning/public/app.jsx:49
 msgid "Easily share public links to your datasets"
-msgstr ""
+msgstr "Condividi facilmente link pubblici ai tuoi dataset"
 
 #: coreplugins/lightning/public/app.jsx:51
 msgid "register"
