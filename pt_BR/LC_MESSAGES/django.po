@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-16 18:59+0000\n"
-"PO-Revision-Date: 2026-05-02 05:09+0000\n"
-"Last-Translator: Hely Sousa <irvision.bsb@gmail.com>\n"
+"PO-Revision-Date: 2026-06-21 09:01+0000\n"
+"Last-Translator: Iolaus Pasanisi <iolauspasanisi@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "webodm/webodm/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,17 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17.1\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #: app/admin.py:110
 msgid "Cannot restore default logo"
-msgstr ""
+msgstr "Impossível Restaurar Logo Padrão"
 
 #: app/admin.py:124
-#, fuzzy
-#| msgid "Button Default"
 msgid "Restore Default"
-msgstr "Botão padrão"
+msgstr "Restaurar Padrão"
 
 #: app/admin.py:146
 msgid "Enter custom CSS"
@@ -312,7 +310,7 @@ msgstr "Temperatura térmica em graus Centi Kelvin."
 
 #: app/api/jwt.py:35 app/api/jwt.py:44
 msgid "User account is disabled."
-msgstr ""
+msgstr "A Conta do Usuário está Desabilitada."
 
 #: app/api/jwt.py:40
 msgid "Cannot impersonate, user is not superuser."
@@ -353,10 +351,8 @@ msgid "Invalid permissions"
 msgstr "Permissões inválidas"
 
 #: app/api/tasks.py:116
-#, fuzzy
-#| msgid "Cannot create task, alignment task is not valid"
 msgid "Cannot create task, processing node is not valid"
-msgstr "Não é possível criar a tarefa. Tarefa de alinhamento não é válida"
+msgstr "Não é possível criar tarefa, o nó de processamento não é válido"
 
 #: app/api/tasks.py:293
 msgid "You need to upload at least 1 file before commit"
@@ -1069,12 +1065,12 @@ msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "Código EPSG do conjunto de dados (se georreferenciado)"
 
 #: app/models/task.py:286
-#, fuzzy
-#| msgid "EPSG code of the dataset (if georeferenced)"
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
-msgstr "Código EPSG do conjunto de dados (se georreferenciado)"
+msgstr ""
+"Definição WKT do conjunto de dados (se georeferenciado e código EPSG não "
+"está disponível)"
 
 #: app/models/task.py:287
 msgid "Task tags"
