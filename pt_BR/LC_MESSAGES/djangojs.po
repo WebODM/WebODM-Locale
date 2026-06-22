@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-16 18:59+0000\n"
-"PO-Revision-Date: 2026-03-05 19:49+0000\n"
-"Last-Translator: Geraldo Pmj <geraldo.pmj@gmail.com>\n"
+"PO-Revision-Date: 2026-06-23 13:01+0000\n"
+"Last-Translator: Matheus Rocha Pereira <matheusrp11@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "webodm/react-ui/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -82,7 +82,7 @@ msgstr "Modelo de Terreno"
 
 #: app/static/app/js/MapView.jsx:155
 msgid "A map is not available for this task or project."
-msgstr ""
+msgstr "O mapa não está disponível para esta tarefa ou projeto."
 
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
@@ -115,51 +115,37 @@ msgid "Loading textured model..."
 msgstr "Carregando modelo texturizado..."
 
 #: app/static/app/js/Toaster.jsx:14
-#, fuzzy
-#| msgid "Processing"
 msgid "Processed"
-msgstr "Processamento"
+msgstr "Processado"
 
 #: app/static/app/js/Toaster.jsx:15
-#, fuzzy
-#| msgid "Share"
 msgid "Shared"
-msgstr "Compartilhar"
+msgstr "Compartilhado"
 
 #: app/static/app/js/Toaster.jsx:16
-#, fuzzy
-#| msgid "Export"
 msgid "Exported"
-msgstr "Exportar"
+msgstr "Exportado"
 
 #: app/static/app/js/Toaster.jsx:19 app/static/app/js/classes/StatusCodes.js:15
 msgid "Processing"
 msgstr "Processamento"
 
 #: app/static/app/js/Toaster.jsx:20
-#, fuzzy
-#| msgid "Share"
 msgid "Sharing"
-msgstr "Compartilhar"
+msgstr "Compartilhando"
 
 #: app/static/app/js/Toaster.jsx:21
-#, fuzzy
-#| msgid "Exporting..."
 msgid "Exporting"
-msgstr "Exportando..."
+msgstr "Exportando"
 
 #: app/static/app/js/Toaster.jsx:234
 #: coreplugins/lightning/public/ShareDialog.jsx:259
-#, fuzzy
-#| msgid "Task ID:"
 msgid "Task"
-msgstr "ID da tarefa:"
+msgstr "Tarefa"
 
 #: app/static/app/js/Toaster.jsx:259
-#, fuzzy
-#| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to cancel the tasks?"
-msgstr "Você tem certeza que deseja cancelar?"
+msgstr "Você tem certeza que deseja cancelar esta tarefa?"
 
 #: app/static/app/js/Toaster.jsx:308
 #: app/static/app/js/components/ErrorMessage.jsx:34
@@ -374,7 +360,7 @@ msgstr "Pés"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Polegadas"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -478,10 +464,8 @@ msgid "No Access"
 msgstr "Sem acesso"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Username"
 msgid "Group name"
-msgstr "Nome de usuário"
+msgstr "Nome do grupo"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -492,52 +476,44 @@ msgid "Permissions"
 msgstr "Permissões"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "Adicionar Tags (marcações)"
+msgstr "Adicionar usuário"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "Adicionar projeto"
+msgstr "Adicionar grupo"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:21
-#, fuzzy
-#| msgid "Start Processing"
 msgid "Input & Preprocessing"
-msgstr "Iniciar o processamento"
+msgstr "Entrada e pré-processamento"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:24
-#, fuzzy
-#| msgid "Camera Animation"
 msgid "Camera Configuration"
-msgstr "Animação de câmera"
+msgstr "Configuração da câmera"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:25
 msgid "Masking"
-msgstr ""
+msgstr "Mascaramento"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Multispectral"
-msgstr ""
+msgstr "Multiespectral"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Video Input"
-msgstr ""
+msgstr "Entrada de vídeo"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:32
 msgid "Bounds & Cropping"
-msgstr ""
+msgstr "Limites e Recorte"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:35
 msgid "Boundary"
-msgstr ""
+msgstr "Limite"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:40
 msgid "Coordinate Reference System"
-msgstr ""
+msgstr "Sistema de Referência de Coordenadas (SRC)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:43
 #: app/static/app/js/components/EditTaskForm.jsx:625
@@ -546,115 +522,91 @@ msgstr "Opções"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:51
 msgid "Feature Extraction"
-msgstr ""
+msgstr "Extração de características"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:52
 msgid "Feature Matching"
-msgstr ""
+msgstr "Correspondência de características"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:53
-#, fuzzy
-#| msgid "Reconstructed Points:"
 msgid "Reconstruction"
-msgstr "Pontos reconstruídos:"
+msgstr "Reconstrução"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:62
-#, fuzzy
-#| msgid "Elevation"
 msgid "Generation"
-msgstr "Elevação"
+msgstr "Geração"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:63
-#, fuzzy
-#| msgid "Filter"
 msgid "Filtering"
-msgstr "Filtro"
+msgstr "Filtragem"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:64
-#, fuzzy
-#| msgid "Processing"
 msgid "Post-Processing"
-msgstr "Processamento"
+msgstr "Pós-processamento"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:72
 msgid "Mesh Generation"
-msgstr ""
+msgstr "Geração de malha"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:80
-#, fuzzy
-#| msgid "Texturing"
 msgid "Texture Options"
-msgstr "Texturizando"
+msgstr "Opções de textura"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:85
 msgid "Digital Elevation Models"
-msgstr ""
+msgstr "Modelo de Elevação Digital (MDE)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:88
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Outputs"
-msgstr "Resultados da tarefa:"
+msgstr "Resultados"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:89
 msgid "Resolution & Sampling"
-msgstr ""
+msgstr "Resolução e Amostragem"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:90
-#, fuzzy
-#| msgid "Classification filter"
 msgid "Ground Classification (SMRF)"
-msgstr "Filtro de classificação"
+msgstr "Classificação do solo (SMRF)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:98
-#, fuzzy
-#| msgid "Orthophoto Cutline"
 msgid "Orthophoto Options"
-msgstr "Legenda da ortofoto"
+msgstr "Opções de ortofoto"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:103
-#, fuzzy
-#| msgid "Miles"
 msgid "Tiles"
-msgstr "Milhas"
+msgstr "Grade"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:106
-#, fuzzy
-#| msgid "Options"
 msgid "Tiles Options"
-msgstr "Opções"
+msgstr "Opções de grade"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:111
 msgid "System & Pipeline Control"
-msgstr ""
+msgstr "Controle de Sistemas e Pipeline"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:114
 msgid "Performance"
-msgstr ""
+msgstr "Desempenho"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:115
-#, fuzzy
-#| msgid "Helicopter control"
 msgid "Pipeline Control"
-msgstr "Controle do helicóptero"
+msgstr "Controle da Pipeline"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:120
 msgid "Split/Merge"
-msgstr ""
+msgstr "Corte/Junção"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:123
 msgid "Splitting"
-msgstr ""
+msgstr "Divisão"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:124
 msgid "Merging"
-msgstr ""
+msgstr "Fusão"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:470
-#, fuzzy
-#| msgid "Other settings"
 msgid "Other Options"
-msgstr "Outras configurações"
+msgstr "Outras opções"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:507
 #: app/static/app/js/components/EditTaskForm.jsx:571
@@ -679,23 +631,23 @@ msgstr "Pesquisar"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:524
 msgid "Flat View"
-msgstr ""
+msgstr "Vista plana"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:524
 msgid "Grouped View"
-msgstr ""
+msgstr "Vista agrupada"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:528
 msgid "Expand"
-msgstr ""
+msgstr "Expandir"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:528
 msgid "Collapse"
-msgstr ""
+msgstr "Colapsar"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:538
 msgid "Search options..."
-msgstr ""
+msgstr "Opções de busca..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -998,46 +950,42 @@ msgid "Download Image"
 msgstr "Baixar imagem"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:114
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid ""
 "Upload failed after multiple retries. Please check your connection and try "
 "again."
 msgstr ""
-"Não é possível fazer upload do arquivo. Verifique sua conexão com a Internet "
-"e tente novamente."
+"O envio falhou após várias tentativas. Verifique sua conexão e tente "
+"novamente."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:206
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Failed to complete upload. Try again later."
-msgstr "Não é possível recuperar estimativa. Tente mais tarde."
+msgstr "Falha no envio. Tente novamente mais tarde."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:216
 msgid "Select at least one file to upload."
-msgstr ""
+msgstr "Selecione pelo menos um arquivo para enviar."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:223
 msgid "A textured model requires also a point cloud to be properly displayed."
 msgstr ""
+"Um modelo texturizado também requer uma nuvem de pontos para ser exibido "
+"corretamente."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:247
 msgid "Failed to initialize upload. Try again later."
-msgstr ""
+msgstr "Falha ao inicializar o envio. Tente novamente mais tarde."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:286
-#, fuzzy
-#| msgid "Import Existing Assets"
 msgid "Import External Data"
-msgstr "Importar recursos existentes"
+msgstr "Importar recursos externos"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:287
 msgid "Select files. At least one file is required."
-msgstr ""
+msgstr "Selecione os arquivos. É necessário selecionar pelo menos um."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:307
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
@@ -1045,10 +993,8 @@ msgid "Cancel Upload"
 msgstr "Cancelar envio"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:333
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload"
-msgstr "Enviar um arquivo"
+msgstr "Enviar"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
@@ -1214,91 +1160,72 @@ msgstr ""
 "máximo do arquivo é %(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:247
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
-msgstr ""
-"Não é possível fazer upload do arquivo. Verifique sua conexão com a Internet "
-"e tente novamente."
+msgstr "O envio falhou. Verifique sua conexão e tente novamente."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:271
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "Não é possível carregar permissões."
+msgstr "Não é possível carregar a imagem."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:288
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "Tem certeza de que deseja excluir \"%(preset)s\"?"
+msgstr "Tem certeza de que deseja excluir %(filename)s ?"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:318
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "Não é possível excluir tarefa."
+msgstr "Não foi possível excluir o arquivo."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:356
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "Não é possível concluir a operação."
+msgstr "Não é possível enviar a descrição."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:371
 msgid "Video"
-msgstr ""
+msgstr "Vídeo"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:372
 msgid "Panorama"
-msgstr ""
+msgstr "Panorama"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:373
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "Enviar um arquivo"
+msgstr "Enviar arquivos"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:403
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
-msgstr ""
+msgstr "Fotos, panoramas e vídeos georreferenciados serão exibidos no mapa."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:412
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "Finalizando... aguarde"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:433
 msgid "No media files."
-msgstr ""
+msgstr "Nenhum arquivo de mídia."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:445
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "Vista direita"
+msgstr "Vista em grade"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:452
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "Vista esquerda"
+msgstr "Vista em lista"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:516
 #: app/static/app/js/components/Map.jsx:528
 #: app/static/app/js/components/TaskListItem.jsx:848
 msgid "Media"
-msgstr ""
+msgstr "Imagens"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:558
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "Nome de usuário"
+msgstr "Arquivo"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:559
 #: coreplugins/annotate/public/Popup.jsx:681
@@ -1318,10 +1245,8 @@ msgstr "{z}, {x}, {y} para esquema de mosaico Z/X/Y"
 
 #: app/static/app/js/components/Map.jsx:781
 #: app/static/app/js/components/MapPreview.jsx:116
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
 msgid "{−y} for flipped TMS-style Y coordinates"
-msgstr "{-y} para coordenada Y invertida de estilo TMS"
+msgstr "{−y} para coordenada Y invertida de estilo TMS"
 
 #: app/static/app/js/components/Map.jsx:783
 #: app/static/app/js/components/MapPreview.jsx:118
@@ -1574,14 +1499,12 @@ msgid "Select Images and GCP"
 msgstr "Selecionar imagens e Ponto de Controle"
 
 #: app/static/app/js/components/ProjectListItem.jsx:771
-#, fuzzy
-#| msgid "Import Assets or Backups"
 msgid "Assets / Backups"
-msgstr "Importar arquivos ou Backups"
+msgstr "Arquivos / Cópias de segurança"
 
 #: app/static/app/js/components/ProjectListItem.jsx:772
 msgid "External Data"
-msgstr ""
+msgstr "Dados externos"
 
 #: app/static/app/js/components/ProjectListItem.jsx:804
 #, python-format
@@ -1605,10 +1528,12 @@ msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
+"Conexão instável detectada. Se o upload travar, pressione o botão abaixo "
+"para ativar o modo estável. Em seguida, você precisará reiniciar o upload."
 
 #: app/static/app/js/components/ProjectListItem.jsx:878
 msgid "Enable Stable Mode"
-msgstr ""
+msgstr "Ativar o Modo Estável"
 
 #: app/static/app/js/components/ShareButton.jsx:72
 #: app/static/app/js/components/ShareButton.jsx:74
@@ -1756,11 +1681,6 @@ msgid "this page"
 msgstr "esta página"
 
 #: app/static/app/js/components/TaskListItem.jsx:314
-#, fuzzy
-#| msgid ""
-#| "The processing node is missing a program necessary to complete the task. "
-#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
-#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
 "This might indicate a corrupted installation. If you built ODM, please check "
@@ -1768,7 +1688,8 @@ msgid ""
 msgstr ""
 "O nó de processamento está sem um programa necessário para concluir a "
 "tarefa. Isso pode indicar uma instalação corrompida. Se você compilou o "
-"OpenDroneMap, verifique se todos os programas foram compilados sem erros."
+"OpenDroneMap (ODM), verifique se todos os programas foram compilados sem "
+"erros."
 
 #: app/static/app/js/components/TaskListItem.jsx:355
 #, python-format
@@ -1840,13 +1761,11 @@ msgstr "Tem certeza de que deseja reiniciar esta tarefa?"
 
 #: app/static/app/js/components/TaskListItem.jsx:606
 msgid "Have all images been uploaded?"
-msgstr ""
+msgstr "Todas as imagens foram carregadas?"
 
 #: app/static/app/js/components/TaskListItem.jsx:607
-#, fuzzy
-#| msgid "Cannot restart task."
 msgid "Cannot start processing task."
-msgstr "Não é possível reiniciar a tarefa."
+msgstr "Não é possível iniciar a tarefa."
 
 #: app/static/app/js/components/TaskListItem.jsx:665
 msgid "Task ID:"
@@ -1854,7 +1773,7 @@ msgstr "ID da tarefa:"
 
 #: app/static/app/js/components/TaskListItem.jsx:666
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copiar para área de transferência"
 
 #: app/static/app/js/components/TaskListItem.jsx:669
 msgid "Created on:"
@@ -1886,16 +1805,12 @@ msgid "Area:"
 msgstr "Área:"
 
 #: app/static/app/js/components/TaskListItem.jsx:693
-#, fuzzy
-#| msgid "Point"
 msgid "Points:"
-msgstr "Ponto"
+msgstr "Pontos:"
 
 #: app/static/app/js/components/TaskListItem.jsx:698
-#, fuzzy
-#| msgid "Georeferencing"
 msgid "Georeferencing:"
-msgstr "Georeferenciando"
+msgstr "Georeferenciando:"
 
 #: app/static/app/js/components/TaskListItem.jsx:708
 msgid "Disk Usage:"
@@ -1956,10 +1871,8 @@ msgid "Set a processing node"
 msgstr "Defina um nó de processamento"
 
 #: app/static/app/js/components/TaskListItem.jsx:804
-#, fuzzy
-#| msgid "Waiting for a node..."
 msgid "Waiting to start processing..."
-msgstr "Esperando por um nó..."
+msgstr "Aguardando o início do processamento..."
 
 #: app/static/app/js/components/TaskListItem.jsx:854
 msgid "Move"
@@ -2317,27 +2230,18 @@ msgstr ""
 "%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:33
-#, fuzzy, python-format
-#| msgid ""
-#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
-#| "for all images. If your images are tagged with high precision GPS "
-#| "information (RTK), this value will be automatically set accordingly. You "
-#| "can use this option to manually set it in case the reconstruction fails. "
-#| "Lowering this option can sometimes help control bowling-effects over "
-#| "large areas. Default: %(default)s"
+#, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
 "for all images. If your images are tagged with high precision GPS "
 "information (RTK), this value can be lowered. Lowering this option can "
 "sometimes help control bowling-effects over large areas. Default: %(default)s"
 msgstr ""
-"Defina um valor em metros para as informações de diluição de precisão do GPS "
-"(Dilution of Precision - DOP) para todas as imagens. Se suas imagens "
-"estiverem marcadas com informações de GPS de alta precisão (RTK), esse valor "
-"será definido automaticamente de acordo. Você pode usar esta opção para "
-"configurá-lo manualmente no caso de falha na reconstrução. Reduzir esta "
-"opção pode às vezes ajudar a controlar os efeitos do domeamento em grandes "
-"áreas. Padrão: %(default)s"
+"Defina um valor em metros para a Diluição da Precisão (DOP) do GPS para "
+"todas as imagens. Se suas imagens estiverem marcadas com informações de GPS "
+"de alta precisão (RTK), esse valor pode ser reduzido. Diminuir essa opção "
+"pode ajudar a controlar o efeito de distorção em grandes áreas. Padrão: %"
+"(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:34
 #, python-format
@@ -2435,19 +2339,15 @@ msgstr ""
 "conjuntos de dados muito grandes. Padrão: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:44
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
+#, python-format
 msgid ""
 "When processing multispectral datasets, automatically align the images for "
 "each band. If the images have been postprocessed and are already aligned, "
 "use this option. Default: %(default)s"
 msgstr ""
-"Ao processar conjuntos de dados multiespectrais, o ODM alinhará "
-"automaticamente as imagens para cada banda. Se as imagens foram processadas "
-"e já estão alinhadas, use esta opção. Padrão: %(default)s"
+"Ao processar conjuntos de dados multiespectrais, alinhe automaticamente as "
+"imagens para cada banda. Se as imagens já tiverem sido pós-processadas e "
+"estiverem alinhadas, use esta opção. Padrão: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
@@ -3346,30 +3246,24 @@ msgstr "Tempo do GPS"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:92
 #: coreplugins/annotate/public/Toolbox.jsx:977
-#, fuzzy
-#| msgid "Annotations"
 msgid "Annotations Report"
-msgstr "Anotações"
+msgstr "Relatório de anotações"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:100
 msgid "Prepared by:"
-msgstr ""
+msgstr "Preparado por:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:106
-#, fuzzy
-#| msgid "Username"
 msgid "Enter name"
-msgstr "Nome de usuário"
+msgstr "Entre com o nome"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:110
 msgid "Notes:"
-msgstr ""
+msgstr "Notas:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:117
-#, fuzzy
-#| msgid "Description (optional)"
 msgid "Additional notes (optional)"
-msgstr "Descrição (opcional)"
+msgstr "Notas adicionais (opcional)"
 
 #: coreplugins/annotate/public/Popup.jsx:211
 #: coreplugins/annotate/public/Popup.jsx:243
@@ -3462,14 +3356,12 @@ msgid "Base Surface"
 msgstr "Superfície base"
 
 #: coreplugins/annotate/public/Popup.jsx:765
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
-msgstr "exibir em 3D"
+msgstr "Exibir em 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:779
 msgid "3D view error"
-msgstr ""
+msgstr "Erro na visualização 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:789
 msgid "No images found at this location"
@@ -3515,32 +3407,24 @@ msgid "Import GeoJSON"
 msgstr "Importar GeoJSON"
 
 #: coreplugins/annotate/public/Toolbox.jsx:966
-#, fuzzy
-#| msgid "Annotations"
 msgid "Export Annotations"
-msgstr "Anotações"
+msgstr "Exportar anotações"
 
 #: coreplugins/annotate/public/Toolbox.jsx:979
-#, fuzzy
-#| msgid "Export to GeoJSON"
 msgid "Export to CSV"
-msgstr "Exportar para GeoJSON"
+msgstr "Exportar para CSV"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "Base"
 
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "Backup"
+msgstr "Voltar"
 
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "Backup"
+msgstr "Voltar"
 
 #: coreplugins/annotate/public/markers.js:6
 msgid "Blue"
@@ -3648,14 +3532,12 @@ msgstr "Apaga link curto"
 #: coreplugins/lightning/public/CloudLogin.jsx:44
 #: coreplugins/lightning/public/CloudLogin.jsx:47
 #: coreplugins/lightning/public/ShareDialog.jsx:116
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Invalid response. Try again later."
-msgstr "Não é possível recuperar estimativa. Tente mais tarde."
+msgstr "Resposta inválida. Tente novamente mais tarde."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:78
 msgid "Invalid password. Do you need to reset it?"
-msgstr ""
+msgstr "Senha inválida. Deseja redefini-la?"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:83
 #: coreplugins/lightning/public/Login.jsx:62
@@ -3678,10 +3560,13 @@ msgid ""
 "visit %(link)s and make sure you can access the cloud platform, then try "
 "again."
 msgstr ""
+"Sua conta da plataforma Lightning Cloud ainda não está ativa. Para ativá-la, "
+"visite %(link)s e verifique se você consegue acessar a plataforma na nuvem. "
+"Em seguida, tente novamente."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:114
 msgid "Please confirm the password of your Lightning account to continue:"
-msgstr ""
+msgstr "Por favor, confirme a senha da sua conta Lightning para continuar:"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:118
 #: coreplugins/lightning/public/Login.jsx:103
@@ -3690,19 +3575,15 @@ msgstr "Senha"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:119
 msgid "switch"
-msgstr ""
+msgstr "trocar"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:127
-#, fuzzy
-#| msgid "Forgot password?"
 msgid "Reset password"
-msgstr "Esqueceu a senha?"
+msgstr "Redefinir senha"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:133
-#, fuzzy
-#| msgid "Password"
 msgid "Confirm Password"
-msgstr "Senha"
+msgstr "Confirmar senha"
 
 #: coreplugins/lightning/public/CostEstimateItem.jsx:105
 msgid "Cannot retrieve estimate. Try again later."
@@ -3785,17 +3666,15 @@ msgstr "Ressincronizar"
 
 #: coreplugins/lightning/public/Dashboard.jsx:185
 msgid "Share Buttons"
-msgstr ""
+msgstr "Botões de compartilhamento"
 
 #: coreplugins/lightning/public/Dashboard.jsx:187
-#, fuzzy
-#| msgid "Enabled"
 msgid "Disabled"
-msgstr "Ativado"
+msgstr "Desativado"
 
 #: coreplugins/lightning/public/Dashboard.jsx:189
 msgid "Toggle"
-msgstr ""
+msgstr "Alternar"
 
 #: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Dashboard"
@@ -3822,107 +3701,89 @@ msgid "Login and Sync"
 msgstr "Login e sincronização"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:119
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot communicate with Lightning's cloud platform. Try again later."
 msgstr ""
-"Não é possível criar uma nova tarefa. Por favor, tente novamente mais tarde."
+"Não foi possível comunicar com a plataforma de nuvem do Lightning. Tente "
+"novamente mais tarde."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:150
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot calculate size. Try again later."
-msgstr "Não é possível recuperar estimativa. Tente mais tarde."
+msgstr "Não foi possível calcular o tamanho. Tente novamente mais tarde."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:193
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Service not available. Try again later."
-msgstr "Não é possível recuperar estimativa. Tente mais tarde."
+msgstr "Serviço indisponível. Tente novamente mais tarde."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:196
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot verify credentials. Try again later."
-msgstr "Não é possível recuperar estimativa. Tente mais tarde."
+msgstr "Não foi possível verificar as credenciais. Tente novamente mais tarde."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:263
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid response"
-msgstr "Resposta inválida: %(error)s"
+msgstr "Resposta inválida"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:266
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot share. Please try again in a bit."
-msgstr ""
-"Não é possível criar uma nova tarefa. Por favor, tente novamente mais tarde."
+msgstr "Não foi possível compartilhar. Tente novamente em instantes."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:278
 msgid "Checking your credentials..."
-msgstr ""
+msgstr "Verificando suas credenciais..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:287
-#, fuzzy
-#| msgid "Creating project..."
 msgid "Retrieving your projects..."
-msgstr "Criando projeto..."
+msgstr "Recuperando seus projetos..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:301
 msgid ""
 "Your Lightning account does not have permanent cloud storage. You can still "
 "share, but data will be deleted shortly after upload."
 msgstr ""
+"Sua conta Lightning não possui armazenamento permanente na nuvem. Você ainda "
+"pode compartilhar, mas os dados serão excluídos logo após o upload."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:313
-#, fuzzy
-#| msgid "Created on"
 msgid "Create New"
-msgstr "Criado em"
+msgstr "Criar novo"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:329
 msgid "All Assets + Original Images"
-msgstr ""
+msgstr "Todos os arquivos + imagens originais"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:330
 msgid "Only"
-msgstr ""
+msgstr "Apenas"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:342
 msgid "Size exceeds available storage quota"
-msgstr ""
+msgstr "O tamanho excede o armazenamento disponível"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:355
-#, fuzzy
-#| msgid "Select"
 msgid "Select All"
-msgstr "Selecionar"
+msgstr "Selecionar todos"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:359
 msgid "Deselect All"
-msgstr ""
+msgstr "Desselecionar todos"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:389
-#, fuzzy
-#| msgid "Lightning"
 msgid "Share with Lightning"
-msgstr "Lightning"
+msgstr "Compartilhar com o Lightning"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:392
-#, fuzzy
-#| msgid "Saving..."
 msgid "Sharing..."
-msgstr "Salvando..."
+msgstr "Compartilhando..."
 
 #: coreplugins/lightning/public/app.jsx:42
 msgid "Lightning"
-msgstr "Lightning"
+msgstr "Lightning (Cloud)"
 
 #: coreplugins/lightning/public/app.jsx:43
 msgid ""
 "Lightning is a cloud service built by WebODM developers that allows you to:"
 msgstr ""
+"O Lightning é um serviço em nuvem desenvolvido pelos criadores do WebODM que "
+"permite:"
 
 #: coreplugins/lightning/public/app.jsx:46
 #, python-format
@@ -3930,10 +3791,12 @@ msgid ""
 "Quickly process datasets with high performance servers powered by the "
 "%(link)s photogrammetry engine"
 msgstr ""
+"Processe conjuntos de dados rapidamente com servidores de alto desempenho "
+"equipados com o mecanismo de fotogrametria %(link)s"
 
 #: coreplugins/lightning/public/app.jsx:49
 msgid "Easily share public links to your datasets"
-msgstr ""
+msgstr "Compartilhe facilmente links públicos para seus conjuntos de dados"
 
 #: coreplugins/lightning/public/app.jsx:51
 msgid "register"
