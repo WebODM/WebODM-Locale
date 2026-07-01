@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-16 18:59+0000\n"
-"PO-Revision-Date: 2026-04-09 17:55+0000\n"
+"PO-Revision-Date: 2026-07-02 19:01+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/webodm/react-ui/cs/"
-">\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/webodm/react-ui/"
+"cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.7.1.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -82,7 +82,7 @@ msgstr "Model terénu"
 
 #: app/static/app/js/MapView.jsx:155
 msgid "A map is not available for this task or project."
-msgstr ""
+msgstr "Mapa není k dispozici pro tento úkol nebo projekt."
 
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
@@ -115,51 +115,37 @@ msgid "Loading textured model..."
 msgstr "Načítání texturovaného modelu..."
 
 #: app/static/app/js/Toaster.jsx:14
-#, fuzzy
-#| msgid "Processing"
 msgid "Processed"
-msgstr "Zpracování"
+msgstr "Zpracováno"
 
 #: app/static/app/js/Toaster.jsx:15
-#, fuzzy
-#| msgid "Share"
 msgid "Shared"
-msgstr "Sdílet"
+msgstr "Sdíleno"
 
 #: app/static/app/js/Toaster.jsx:16
-#, fuzzy
-#| msgid "Export"
 msgid "Exported"
-msgstr "Export"
+msgstr "Exportováno"
 
 #: app/static/app/js/Toaster.jsx:19 app/static/app/js/classes/StatusCodes.js:15
 msgid "Processing"
 msgstr "Zpracování"
 
 #: app/static/app/js/Toaster.jsx:20
-#, fuzzy
-#| msgid "Share"
 msgid "Sharing"
-msgstr "Sdílet"
+msgstr "Sdílení"
 
 #: app/static/app/js/Toaster.jsx:21
-#, fuzzy
-#| msgid "Exporting..."
 msgid "Exporting"
-msgstr "Exportování..."
+msgstr "Exportování"
 
 #: app/static/app/js/Toaster.jsx:234
 #: coreplugins/lightning/public/ShareDialog.jsx:259
-#, fuzzy
-#| msgid "Task ID:"
 msgid "Task"
-msgstr "Task ID:"
+msgstr "Úkol"
 
 #: app/static/app/js/Toaster.jsx:259
-#, fuzzy
-#| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to cancel the tasks?"
-msgstr "Určitě to chcete zrušit?"
+msgstr "Opravdu chcete zrušit úkoly?"
 
 #: app/static/app/js/Toaster.jsx:308
 #: app/static/app/js/components/ErrorMessage.jsx:34
@@ -478,10 +464,8 @@ msgid "No Access"
 msgstr "Bez přístupu"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Grouped View"
 msgid "Group name"
-msgstr "Seskupené zobrazení"
+msgstr "Název skupiny"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -492,16 +476,12 @@ msgid "Permissions"
 msgstr "Oprávnění"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "Přidat štítky"
+msgstr "Přidat uživatele"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "Přidat Projekt"
+msgstr "Přidat skupinu"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:21
 msgid "Input & Preprocessing"
@@ -1250,10 +1230,8 @@ msgstr "{z}, {x}, {y} pro schéma dlaždic Z/X/Y"
 
 #: app/static/app/js/components/Map.jsx:781
 #: app/static/app/js/components/MapPreview.jsx:116
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
 msgid "{−y} for flipped TMS-style Y coordinates"
-msgstr "{-y} pro převrácené souřadnice Y ve stylu TMS"
+msgstr "{−y} pro převrácené souřadnice Y ve stylu TMS"
 
 #: app/static/app/js/components/Map.jsx:783
 #: app/static/app/js/components/MapPreview.jsx:118
@@ -1529,10 +1507,13 @@ msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
+"Zjištěno nestabilní připojení. Pokud se nahrávání zasekne, stiskněte "
+"tlačítko níže pro aktivaci stabilního režimu. Poté budete muset nahrávání "
+"restartovat."
 
 #: app/static/app/js/components/ProjectListItem.jsx:878
 msgid "Enable Stable Mode"
-msgstr ""
+msgstr "Povolit stabilní režim"
 
 #: app/static/app/js/components/ShareButton.jsx:72
 #: app/static/app/js/components/ShareButton.jsx:74
@@ -1679,19 +1660,14 @@ msgid "this page"
 msgstr "na této straně"
 
 #: app/static/app/js/components/TaskListItem.jsx:314
-#, fuzzy
-#| msgid ""
-#| "The processing node is missing a program necessary to complete the task. "
-#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
-#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
 "This might indicate a corrupted installation. If you built ODM, please check "
 "that all programs built without errors."
 msgstr ""
-"Ve zpracovatelském uzlu chybí program potřebný k dokončení úlohy. To může "
-"znamenat poškozenou instalaci. Pokud jste sestavili OpenDroneMap, "
-"zkontrolujte, zda se všechny programy sestavily bez chyb."
+"V uzlu pro zpracování chybí program potřebný k dokončení úlohy. To může "
+"znamenat poškozenou instalaci. Pokud jste sestavili ODM, zkontrolujte "
+"prosím, zda všechny programy proběhly bez chyb."
 
 #: app/static/app/js/components/TaskListItem.jsx:355
 #, python-format
@@ -2228,26 +2204,17 @@ msgstr ""
 "hodnota: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:33
-#, fuzzy, python-format
-#| msgid ""
-#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
-#| "for all images. If your images are tagged with high precision GPS "
-#| "information (RTK), this value will be automatically set accordingly. You "
-#| "can use this option to manually set it in case the reconstruction fails. "
-#| "Lowering this option can sometimes help control bowling-effects over "
-#| "large areas. Default: %(default)s"
+#, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
 "for all images. If your images are tagged with high precision GPS "
 "information (RTK), this value can be lowered. Lowering this option can "
 "sometimes help control bowling-effects over large areas. Default: %(default)s"
 msgstr ""
-"Nastavení hodnoty v metrech pro informace o zředění přesnosti GPS (DOP) pro "
-"všechny snímky. Pokud jsou snímky označeny informacemi GPS s vysokou "
-"přesností (RTK), bude tato hodnota nastavena automaticky. Pomocí této "
-"možnosti ji můžete nastavit ručně v případě, že rekonstrukce selže. Snížení "
-"této možnosti může někdy pomoci kontrolovat bowling-efekty na velkých "
-"plochách. Výchozí hodnota: %(default)s"
+"Nastavte hodnotu v metrech pro informace o zředění přesnosti GPS (DOP) pro "
+"všechny snímky. Pokud jsou vaše snímky označeny informacemi GPS s vysokou "
+"přesností (RTK), lze tuto hodnotu snížit. Snížení této možnosti může někdy "
+"pomoci kontrolovat efekty bowlingu na velkých plochách. Výchozí: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:34
 #, python-format
@@ -2346,19 +2313,15 @@ msgstr ""
 "výsledků DEM ve velmi rozsáhlých souborech dat. Výchozí hodnota: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:44
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
+#, python-format
 msgid ""
 "When processing multispectral datasets, automatically align the images for "
 "each band. If the images have been postprocessed and are already aligned, "
 "use this option. Default: %(default)s"
 msgstr ""
-"Při zpracování multispektrálních datových sad ODM automaticky zarovná snímky "
-"pro každé pásmo. Pokud byly snímky dodatečně zpracovány a jsou již "
-"vyrovnány, použijte tuto možnost. Výchozí hodnota: %(default)s"
+"Při zpracování multispektrálních datových sad automaticky zarovnat snímky "
+"pro každé pásmo. Pokud byly snímky následně zpracovány a jsou již zarovnány, "
+"použijte tuto možnost. Výchozí: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
@@ -3537,14 +3500,12 @@ msgstr "Smazat krátký odkaz"
 #: coreplugins/lightning/public/CloudLogin.jsx:44
 #: coreplugins/lightning/public/CloudLogin.jsx:47
 #: coreplugins/lightning/public/ShareDialog.jsx:116
-#, fuzzy
-#| msgid "Failed to complete upload. Try again later."
 msgid "Invalid response. Try again later."
-msgstr "Nahrávání se nezdařilo. Zkuste to znovu později."
+msgstr "Neplatná odpověď. Zkuste to znovu později."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:78
 msgid "Invalid password. Do you need to reset it?"
-msgstr ""
+msgstr "Neplatné heslo. Potřebujete ho resetovat?"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:83
 #: coreplugins/lightning/public/Login.jsx:62
@@ -3567,10 +3528,13 @@ msgid ""
 "visit %(link)s and make sure you can access the cloud platform, then try "
 "again."
 msgstr ""
+"Váš účet na cloudové platformě Lightning ještě není aktivní. Chcete-li jej "
+"aktivovat, navštivte %(link)s a ujistěte se, že máte přístup ke cloudové "
+"platformě, a poté to zkuste znovu."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:114
 msgid "Please confirm the password of your Lightning account to continue:"
-msgstr ""
+msgstr "Pro pokračování prosím potvrďte heslo k vašemu Lightning účtu:"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:118
 #: coreplugins/lightning/public/Login.jsx:103
@@ -3579,19 +3543,15 @@ msgstr "Heslo"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:119
 msgid "switch"
-msgstr ""
+msgstr "přepnout"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:127
-#, fuzzy
-#| msgid "Forgot password?"
 msgid "Reset password"
-msgstr "Zapomenuté heslo?"
+msgstr "Obnovit heslo"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:133
-#, fuzzy
-#| msgid "Password"
 msgid "Confirm Password"
-msgstr "Heslo"
+msgstr "Potvrdit heslo"
 
 #: coreplugins/lightning/public/CostEstimateItem.jsx:105
 msgid "Cannot retrieve estimate. Try again later."
@@ -3671,17 +3631,15 @@ msgstr "Znovu synchronizovat"
 
 #: coreplugins/lightning/public/Dashboard.jsx:185
 msgid "Share Buttons"
-msgstr ""
+msgstr "Tlačítka pro sdílení"
 
 #: coreplugins/lightning/public/Dashboard.jsx:187
-#, fuzzy
-#| msgid "Enabled"
 msgid "Disabled"
-msgstr "Povoleno"
+msgstr "Zakázáno"
 
 #: coreplugins/lightning/public/Dashboard.jsx:189
 msgid "Toggle"
-msgstr ""
+msgstr "Přepnout"
 
 #: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Dashboard"
@@ -3708,96 +3666,77 @@ msgid "Login and Sync"
 msgstr "Přihlásit se a synchronizovat"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:119
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot communicate with Lightning's cloud platform. Try again later."
-msgstr "Nelze vytvořit novou úlohu. Zkuste to prosím později."
+msgstr ""
+"Nelze komunikovat s cloudovou platformou Lightning. Zkuste to znovu později."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:150
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot calculate size. Try again later."
-msgstr "Nelze načíst odhad. Zkuste to později."
+msgstr "Nelze vypočítat velikost. Zkuste to znovu později."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:193
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Service not available. Try again later."
-msgstr "Nelze načíst odhad. Zkuste to později."
+msgstr "Služba není k dispozici. Zkuste to znovu později."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:196
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot verify credentials. Try again later."
-msgstr "Nelze načíst odhad. Zkuste to později."
+msgstr "Nelze ověřit přihlašovací údaje. Zkuste to znovu později."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:263
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid response"
-msgstr "Neplatná odpověď: %(error)s"
+msgstr "Neplatná odpověď"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:266
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot share. Please try again in a bit."
-msgstr "Nelze vytvořit novou úlohu. Zkuste to prosím později."
+msgstr "Nelze sdílet. Zkuste to znovu za chvíli."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:278
 msgid "Checking your credentials..."
-msgstr ""
+msgstr "Kontrola vašich přihlašovacích údajů..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:287
-#, fuzzy
-#| msgid "Creating project..."
 msgid "Retrieving your projects..."
-msgstr "Vytváření projektu..."
+msgstr "Načítání vašich projektů..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:301
 msgid ""
 "Your Lightning account does not have permanent cloud storage. You can still "
 "share, but data will be deleted shortly after upload."
 msgstr ""
+"Váš účet Lightning nemá trvalé cloudové úložiště. Můžete stále sdílet, ale "
+"data budou krátce po nahrání smazána."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:313
-#, fuzzy
-#| msgid "Created on"
 msgid "Create New"
-msgstr "Vytvořeno v"
+msgstr "Vytvořit nový"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:329
 msgid "All Assets + Original Images"
-msgstr ""
+msgstr "Všechny datové zdroje + originální obrázky"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:330
 msgid "Only"
-msgstr ""
+msgstr "Pouze"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:342
 msgid "Size exceeds available storage quota"
-msgstr ""
+msgstr "Velikost překračuje dostupnou kvótu úložiště"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:355
-#, fuzzy
-#| msgid "Select"
 msgid "Select All"
-msgstr "Vybrat"
+msgstr "Vybrat vše"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:359
 msgid "Deselect All"
-msgstr ""
+msgstr "Zrušit výběr všeho"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:389
-#, fuzzy
-#| msgid "Lightning"
 msgid "Share with Lightning"
-msgstr "Lightning"
+msgstr "Sdílet s Lightning"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:392
-#, fuzzy
-#| msgid "Saving..."
 msgid "Sharing..."
-msgstr "Ukládání..."
+msgstr "Sdílení..."
 
 #: coreplugins/lightning/public/app.jsx:42
 msgid "Lightning"
@@ -3807,6 +3746,7 @@ msgstr "Lightning"
 msgid ""
 "Lightning is a cloud service built by WebODM developers that allows you to:"
 msgstr ""
+"Lightning je cloudová služba vytvořená vývojáři WebODM, která vám umožňuje:"
 
 #: coreplugins/lightning/public/app.jsx:46
 #, python-format
@@ -3814,10 +3754,12 @@ msgid ""
 "Quickly process datasets with high performance servers powered by the "
 "%(link)s photogrammetry engine"
 msgstr ""
+"Rychle zpracovávat datové sady s vysoce výkonnými servery poháněnými "
+"fotogrammetrickým enginem %(link)s"
 
 #: coreplugins/lightning/public/app.jsx:49
 msgid "Easily share public links to your datasets"
-msgstr ""
+msgstr "Snadno sdílet veřejné odkazy na vaše datové sady"
 
 #: coreplugins/lightning/public/app.jsx:51
 msgid "register"
