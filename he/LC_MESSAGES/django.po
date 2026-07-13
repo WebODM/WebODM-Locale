@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-29 23:42+0000\n"
-"PO-Revision-Date: 2026-03-05 19:38+0000\n"
-"Last-Translator: בנימין זיידמן <4140276@gmail.com>\n"
+"PO-Revision-Date: 2026-07-14 11:03+0000\n"
+"Last-Translator: \"I.G DRONE\" <israelgokh@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/webodm/webodm/he/>"
 "\n"
 "Language: he\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 #: app/admin.py:62
 msgid "Enter custom CSS"
@@ -26,7 +26,7 @@ msgstr "הזן CSS מותאם אישית"
 
 #: app/admin.py:63 app/models/theme.py:38
 msgid "CSS"
-msgstr ""
+msgstr "CSS גיליונות סגנון מדורגים."
 
 #: app/admin.py:66
 msgid "HTML that will be displayed above site header"
