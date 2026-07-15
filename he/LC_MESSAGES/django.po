@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-29 23:42+0000\n"
-"PO-Revision-Date: 2026-07-14 11:03+0000\n"
+"PO-Revision-Date: 2026-07-16 09:01+0000\n"
 "Last-Translator: \"I.G DRONE\" <israelgokh@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/webodm/webodm/he/>"
 "\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: app/admin.py:62
 msgid "Enter custom CSS"
-msgstr "הזן CSS מותאם אישית"
+msgstr "הזן CSS מותאם אישיתEnter custom CSS → הזן קוד CSS מותאם אישית."
 
 #: app/admin.py:63 app/models/theme.py:38
 msgid "CSS"
@@ -30,15 +30,15 @@ msgstr "CSS גיליונות סגנון מדורגים."
 
 #: app/admin.py:66
 msgid "HTML that will be displayed above site header"
-msgstr ""
+msgstr "⁩⁨⁧‮קוד HTML שיוצג מעל כותרת האתר"
 
 #: app/admin.py:67 app/models/theme.py:39
 msgid "HTML (before header)"
-msgstr ""
+msgstr "קוד HTML (לפני כותרת האתר)"
 
 #: app/admin.py:70
 msgid "HTML that will be displayed after site header"
-msgstr ""
+msgstr "קוד HTML שיופיע לאחר כותרת האתר"
 
 #: app/admin.py:71 app/models/theme.py:40
 msgid "HTML (after header)"
@@ -58,6 +58,8 @@ msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
 "such as {ORGANIZATION} and {YEAR}."
 msgstr ""
+"קוד HTML שיוצג בכותרת התחתונה (Footer) של האתר. ניתן גם להשתמש בתגים מיוחדים "
+"כגון ‎{ORGANIZATION}‎ ו־‎{YEAR}‎."
 
 #: app/admin.py:80 app/models/theme.py:42
 msgid "HTML (footer)"
@@ -65,11 +67,11 @@ msgstr ""
 
 #: app/admin.py:112 app/models/project.py:25
 msgid "Description"
-msgstr ""
+msgstr "תיאור"
 
 #: app/admin.py:118
 msgid "Version"
-msgstr ""
+msgstr "גרסה"
 
 #: app/admin.py:124
 msgid "Author"
@@ -78,12 +80,12 @@ msgstr ""
 #: app/admin.py:156
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
-msgstr ""
+msgstr "נדרשת הפעלה מחדש. אנא הפעל מחדש את WebODM כדי להפעיל את %(plugin)s"
 
 #: app/admin.py:159
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
-msgstr ""
+msgstr "לא ניתן להפעיל את התוסף %(plugin)s: %(message)s"
 
 #: app/admin.py:168
 #, python-format
@@ -102,7 +104,7 @@ msgstr ""
 
 #: app/admin.py:228
 msgid "Plugin added successfully"
-msgstr ""
+msgstr "התוסף נוסף בהצלחה"
 
 #: app/admin.py:230
 #, python-format
@@ -115,7 +117,7 @@ msgstr ""
 
 #: app/admin.py:250
 msgid "Disable"
-msgstr ""
+msgstr "השבת"
 
 #: app/admin.py:253
 msgid "Enable"
@@ -128,7 +130,7 @@ msgstr ""
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
 "Normalized Difference Vegetation Index shows the amount of green vegetation."
-msgstr ""
+msgstr "מדד ההפרש המנורמל של הצמחייה (NDVI) מציג את כמות הצמחייה הירוקה"
 
 #: app/api/formulas.py:17
 msgid ""
@@ -146,27 +148,35 @@ msgstr ""
 msgid ""
 "Normalized Difference Water Index shows the amount of water content in water "
 "bodies."
-msgstr ""
+msgstr "מדד ההפרש המנורמל של מים (NDWI) מציג את כמות תכולת המים בגופי מים"
 
 #: app/api/formulas.py:37
 msgid ""
 "Enhanced Normalized Difference Vegetation Index is like NDVI, but uses Blue "
 "and Green bands instead of only Red to isolate plant health."
 msgstr ""
+"מדד ההפרש המנורמל המשופר של הצמחייה (ENDVI) דומה ל־NDVI, אך משתמש בערוצי "
+"הכחול והירוק במקום רק בערוץ האדום, כדי לבודד את מצב בריאות הצמחייה"
 
 #: app/api/formulas.py:41
 msgid ""
 "Visible NDVI is an un-normalized index for RGB sensors using constants "
 "derived from citrus, grape, and sugarcane crop data."
 msgstr ""
+"NDVI נראה לעין הוא מדד שאינו מנורמל עבור חיישני RGB, המשתמש בקבועים שנגזרו "
+"מנתוני גידולים של הדרים, ענבים וקנה סוכר"
 
 #: app/api/formulas.py:45
 msgid "Visual Atmospheric Resistance Index shows the areas of vegetation."
 msgstr ""
+"‏‏‬מדד ההתנגדות האטמוספרית החזותי (Visual Atmospheric Resistance Index) מציג את "
+"אזורי הצמחייה"
 
 #: app/api/formulas.py:50
 msgid "Modified Photochemical Reflectance Index"
 msgstr ""
+"⁩⁨מדד ההחזרה הפוטוכימית המשונה (Modified Photochemical Reflectance Index – "
+"MPRI)"
 
 #: app/api/formulas.py:55
 msgid ""
