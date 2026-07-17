@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-29 23:42+0000\n"
-"PO-Revision-Date: 2026-07-16 09:01+0000\n"
+"PO-Revision-Date: 2026-07-18 08:01+0000\n"
 "Last-Translator: \"I.G DRONE\" <israelgokh@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/webodm/webodm/he/>"
 "\n"
@@ -42,15 +42,15 @@ msgstr "קוד HTML שיופיע לאחר כותרת האתר"
 
 #: app/admin.py:71 app/models/theme.py:40
 msgid "HTML (after header)"
-msgstr ""
+msgstr "HTML (אחרי כותרת)"
 
 #: app/admin.py:74
 msgid "HTML that will be displayed after the body tag"
-msgstr ""
+msgstr "HTML שיוצג לאחר תגית הגוף"
 
 #: app/admin.py:75 app/models/theme.py:41
 msgid "HTML (after body)"
-msgstr ""
+msgstr "HTML (אחרי גוף הטקסט)"
 
 #: app/admin.py:79
 #, python-brace-format
@@ -63,7 +63,7 @@ msgstr ""
 
 #: app/admin.py:80 app/models/theme.py:42
 msgid "HTML (footer)"
-msgstr ""
+msgstr "HTML (כותרת תחתונה)"
 
 #: app/admin.py:112 app/models/project.py:25
 msgid "Description"
@@ -75,7 +75,7 @@ msgstr "גרסה"
 
 #: app/admin.py:124
 msgid "Author"
-msgstr ""
+msgstr "מְחַבֵּר"
 
 #: app/admin.py:156
 #, python-format
@@ -91,16 +91,17 @@ msgstr "לא ניתן להפעיל את התוסף %(plugin)s: %(message)s"
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
+"נדרשת הפעלה מחדש. אנא הפעל מחדש את WebODM כדי להשבית לחלוטין את %(plugin)s"
 
 #: app/admin.py:171
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
-msgstr ""
+msgstr "לא ניתן להשבית את התוסף %(plugin)s: %(message)s"
 
 #: app/admin.py:180
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
-msgstr ""
+msgstr "לא ניתן למחוק את התוסף %(plugin)s: %(message)s"
 
 #: app/admin.py:228
 msgid "Plugin added successfully"
@@ -109,11 +110,11 @@ msgstr "התוסף נוסף בהצלחה"
 #: app/admin.py:230
 #, python-format
 msgid "Cannot load plugin: %(message)s"
-msgstr ""
+msgstr "לא ניתן לטעון את התוסף: %(message)s"
 
 #: app/admin.py:236
 msgid "You need to upload a zip file"
-msgstr ""
+msgstr "אתה צריך להעלות קובץ zip"
 
 #: app/admin.py:250
 msgid "Disable"
@@ -125,7 +126,7 @@ msgstr "לְאַפשֵׁר"
 
 #: app/admin.py:258
 msgid "Actions"
-msgstr ""
+msgstr "פעולות"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -137,12 +138,16 @@ msgid ""
 "Normalized difference yellowness index (NDYI), best model variability in "
 "relative yield potential in Canola."
 msgstr ""
+"מדד צהובות מנורמל (NDYI), שונות המודל הטובה ביותר בפוטנציאל התשואה היחסי "
+"בקנולה."
 
 #: app/api/formulas.py:22
 msgid ""
 "Normalized Difference Red Edge Index shows the amount of green vegetation of "
 "permanent or later stage crops."
 msgstr ""
+"מדד הקצה האדום של ההפרש המנורמל מציג את כמות הצמחייה הירוקה של גידולים "
+"קבועים או בשלב מאוחר יותר."
 
 #: app/api/formulas.py:27
 msgid ""
@@ -183,6 +188,8 @@ msgid ""
 "Excess Green Index (derived from only the RGB bands) emphasizes the "
 "greenness of leafy crops such as potatoes."
 msgstr ""
+"מדד ירוק עודף (נגזר רק מפסי RGB) מדגיש את הירוקות של גידולים עליים כמו תפוחי "
+"אדמה."
 
 #: app/api/formulas.py:59
 msgid ""
@@ -193,17 +200,19 @@ msgstr ""
 #: app/api/formulas.py:63
 msgid ""
 "Burn Area Index hightlights burned land in the red to near-infrared spectrum."
-msgstr ""
+msgstr "מדד שטח השריפה מדגיש אדמה שרופה בספקטרום האדום עד קרוב לאינפרא אדום."
 
 #: app/api/formulas.py:67
 msgid "Green Leaf Index shows greens leaves and stems."
-msgstr ""
+msgstr "אינדקס העלים הירוקים מציג עלים וגבעולים ירוקים."
 
 #: app/api/formulas.py:72
 msgid ""
 "Green Normalized Difference Vegetation Index is similar to NDVI, but "
 "measures the green spectrum instead of red."
 msgstr ""
+"מדד הצמחייה המנורמל של ירוק דומה ל-NDVI, אך מודד את הספקטרום הירוק במקום "
+"האדום."
 
 #: app/api/formulas.py:77
 msgid ""
