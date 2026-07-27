@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-16 18:59+0000\n"
-"PO-Revision-Date: 2026-07-16 09:01+0000\n"
+"PO-Revision-Date: 2026-07-28 09:01+0000\n"
 "Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "pl/>\n"
@@ -1416,7 +1416,7 @@ msgstr "Właściciel"
 
 #: app/static/app/js/components/Paginator.jsx:129
 msgid "Search names, #tags or @user"
-msgstr "Wyszukaj nazwy, #tagi lub @użytkowników"
+msgstr "Nazwa, #tag lub @użytkownik"
 
 #: app/static/app/js/components/Paginator.jsx:140
 #: app/static/app/js/components/ProjectListItem.jsx:843
