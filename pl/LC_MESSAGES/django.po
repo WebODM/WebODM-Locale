@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-16 18:59+0000\n"
+"POT-Creation-Date: 2026-08-07 18:15+0000\n"
 "PO-Revision-Date: 2026-07-03 20:01+0000\n"
 "Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/webodm/webodm/pl/>"
-"\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/webodm/webodm/pl/"
+">\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -336,6 +336,45 @@ msgstr "Nie załadowano żadnych plików"
 msgid "File exceeds maximum allowed size"
 msgstr "Plik przekraca maksymalną dozwoloną wielkość"
 
+#: app/api/overlays.py:38
+msgid "Invalid overlay ID"
+msgstr ""
+
+#: app/api/overlays.py:82 app/api/overlays.py:234
+msgid "Missing file"
+msgstr ""
+
+#: app/api/overlays.py:85 app/api/overlays.py:242
+#, python-format
+msgid "%(file)s is bigger than %(size)s MB."
+msgstr ""
+
+#: app/api/overlays.py:93 app/api/overlays.py:169
+msgid "Invalid overlay metadata"
+msgstr ""
+
+#: app/api/overlays.py:104 app/api/overlays.py:185
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid GeoJSON"
+msgstr "Nieprawidłowe działanie"
+
+#: app/api/overlays.py:240
+#, python-format
+msgid "Not a DXF or zipped shapefile: %(file)s"
+msgstr ""
+
+#: app/api/overlays.py:251 app/api/overlays.py:253
+#, fuzzy
+#| msgid "Invalid EPSG code: %(value)s"
+msgid "Invalid EPSG code"
+msgstr "Nieprawidłowy kod EPSG: %(value)s"
+
+#: app/api/overlays.py:280 app/api/overlays.py:287
+#, python-format
+msgid "Cannot convert %(file)s: %(reason)s"
+msgstr ""
+
 #: app/api/projects.py:129
 msgid "Cannot duplicate project"
 msgstr "Nie można powielić projektu"
@@ -634,6 +673,7 @@ msgid "The person who owns this preset"
 msgstr "Osoba, która jest właścicielem tego ustawienia wstępnego"
 
 #: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
+#: coreplugins/task-manager/templates/index.html:37
 msgid "Owner"
 msgstr "Właściciel"
 
@@ -763,12 +803,13 @@ msgstr "Identyfikator publiczny projektu"
 msgid "Public Id"
 msgstr "Publiczny identyfikator"
 
-#: app/models/project.py:108 app/models/task.py:479
+#: app/models/project.py:108 app/models/task.py:485
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "Kopia %(task)s"
 
 #: app/models/project.py:141 app/models/task.py:246
+#: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "Projekt"
 
@@ -905,7 +946,7 @@ msgstr "Automatyczny węzeł przetwarzania"
 msgid "Current status of the task"
 msgstr "Aktualny stan zadania"
 
-#: app/models/task.py:251
+#: app/models/task.py:251 coreplugins/task-manager/templates/index.html:39
 msgid "Status"
 msgstr "Stan"
 
@@ -1093,7 +1134,7 @@ msgstr "Pasma ortofotografii"
 msgid "Size of the task on disk in megabytes"
 msgstr "Rozmiar zadania na dysku w megabajtach"
 
-#: app/models/task.py:289
+#: app/models/task.py:289 coreplugins/task-manager/templates/index.html:41
 msgid "Size"
 msgstr "Rozmiar"
 
@@ -1121,7 +1162,7 @@ msgstr "Lista plików mediów skojarzonych z tym zadaniem"
 msgid "Media"
 msgstr "Media"
 
-#: app/models/task.py:296
+#: app/models/task.py:296 coreplugins/task-manager/templates/index.html:38
 msgid "Task"
 msgstr "Zadanie"
 
@@ -1133,28 +1174,28 @@ msgstr "Zadania"
 msgid "unnamed"
 msgstr "Nienazwany"
 
-#: app/models/task.py:611
+#: app/models/task.py:617
 msgid "Importing assets..."
 msgstr "Importowanie zasobów ..."
 
-#: app/models/task.py:666 app/models/task.py:945
+#: app/models/task.py:672 app/models/task.py:951
 msgid "Invalid zip file"
 msgstr "Nieprawidłowy plik zip"
 
-#: app/models/task.py:668
+#: app/models/task.py:674
 msgid "Unsupported compression method"
 msgstr "Niewspierana metoda kompresji"
 
-#: app/models/task.py:763
+#: app/models/task.py:769
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "Błąd połączenia: %(error)s"
 
-#: app/models/task.py:843
+#: app/models/task.py:849
 msgid "Cannot restart a task that has no processing node"
 msgstr "Nie można zrestartować zadania, które nie ma węzła przetwarzania"
 
-#: app/models/task.py:1059
+#: app/models/task.py:1072
 msgid "Done!"
 msgstr "Gotowe!"
 
@@ -1904,22 +1945,22 @@ msgstr "Zanim zaczniemy, musimy utworzyć dla Ciebie konto administratora:"
 msgid "Create Account"
 msgstr "Utwórz konto"
 
-#: app/templatetags/settings.py:66
+#: app/templatetags/settings.py:70
 #, python-format
 msgid "in %(num)s days"
 msgstr "w %(num)s dni"
 
-#: app/templatetags/settings.py:68
+#: app/templatetags/settings.py:72
 #, python-format
 msgid "in %(num)s hours"
 msgstr "w %(num)s godziny"
 
-#: app/templatetags/settings.py:70
+#: app/templatetags/settings.py:74
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "w %(num)s minuty"
 
-#: app/templatetags/settings.py:72
+#: app/templatetags/settings.py:76
 msgid "very soon"
 msgstr "bardzo niedługo"
 
@@ -2010,6 +2051,10 @@ msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 "Wtyczka dodająca przycisk generujący zrzut ekranowy z mapą lub modelem 3D."
 
+#: app/translations/plugin_manifest_autogenerated.py:24
+msgid "Monitor project storage to quickly compact or delete tasks."
+msgstr ""
+
 #: app/views/app.py:57
 msgid "First Project"
 msgstr "Pierwszy projekt"
@@ -2043,30 +2088,30 @@ msgstr "Pliki tłumaczeń zostały załadowane ponownie!"
 msgid "Invalid action"
 msgstr "Nieprawidłowe działanie"
 
-#: app/views/oidc.py:52 app/views/oidc.py:82
+#: app/views/oidc.py:53 app/views/oidc.py:90
 msgid "Invalid SSO provider. Please try again."
 msgstr "Nieprawidłowy dostawca SSO. Spróbuj ponownie."
 
-#: app/views/oidc.py:87 app/views/oidc.py:120 app/views/oidc.py:126
-#: app/views/oidc.py:142 app/views/oidc.py:149 app/views/oidc.py:166
+#: app/views/oidc.py:95 app/views/oidc.py:128 app/views/oidc.py:134
+#: app/views/oidc.py:150 app/views/oidc.py:157 app/views/oidc.py:174
 msgid "SSO login failed."
 msgstr "Logowanie za pomocą SSO nie powiodło się."
 
-#: app/views/oidc.py:93
+#: app/views/oidc.py:101
 msgid "Invalid SSO state. Please try again."
 msgstr "Nieprawidłowy stan SSO. Spróbuj ponownie."
 
-#: app/views/oidc.py:98
+#: app/views/oidc.py:106
 msgid "Missing SSO authorization code."
 msgstr "Brakuje kodu autoryzacyjnego SSO."
 
-#: app/views/oidc.py:178
+#: app/views/oidc.py:186
 msgid "Cannot create user. A username already exists with the same e-mail."
 msgstr ""
 "Nie udało się założyć użytkownika. Nazwa użytkownika o tym samym e-mailu "
 "jest już w użyciu."
 
-#: app/views/oidc.py:182
+#: app/views/oidc.py:190
 msgid "This account is disabled. Please contact an administrator."
 msgstr "Te konto jest wyłączone. Proszę o kontakt z administratorem."
 
@@ -2078,7 +2123,7 @@ msgstr "Generator wyrównania obrazów"
 msgid "Align file from task image"
 msgstr "Plik wyrównania na podstawie zadania przetwarzania obrazów"
 
-#: coreplugins/annotate/api.py:49 coreplugins/annotate/dist/annotate/api.py:49
+#: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
 #: coreplugins/measure/api.py:21
 msgid ""
 "No surface model available. From the Dashboard, select this task, press "
@@ -2089,12 +2134,34 @@ msgstr ""
 "opcjach upewnij się że zaznaczono \"dsm\", a następnie wybierz Restart -> Od "
 "DEM."
 
-#: coreplugins/annotate/api.py:72 coreplugins/annotate/dist/annotate/api.py:72
+#: coreplugins/annotate/api.py:63 coreplugins/annotate/dist/annotate/api.py:63
+#, fuzzy
+#| msgid ""
+#| "No surface model available. From the Dashboard, select this task, press "
+#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
+#| "From DEM."
+msgid ""
+"No terrain model available. From the Dashboard, select this task, press "
+"Edit, from the options make sure to check \"dtm\", then press Restart --> "
+"From DEM."
+msgstr ""
+"Brak modelu pokrycia terenu. Z kokpitu wybierz to zadanie, wybierz Edytuj, w "
+"opcjach upewnij się że zaznaczono \"dsm\", a następnie wybierz Restart -> Od "
+"DEM."
+
+#: coreplugins/annotate/api.py:65 coreplugins/annotate/dist/annotate/api.py:65
+#, fuzzy
+#| msgid "Invalid file type"
+msgid "Invalid surface model"
+msgstr "Nieprawidłowy typ pliku"
+
+#: coreplugins/annotate/api.py:91 coreplugins/annotate/dist/annotate/api.py:91
 msgid "A digital surface model is required to compute elevation values."
 msgstr ""
 "Do obliczenia wartości wysokości wymagany jest cyfrowy model powierzchni."
 
-#: coreplugins/annotate/api.py:90 coreplugins/annotate/dist/annotate/api.py:90
+#: coreplugins/annotate/api.py:125
+#: coreplugins/annotate/dist/annotate/api.py:125
 msgid "An orthophoto is required to compute temperature values."
 msgstr "Do obliczenia wartości temperatury wymagana jest ortofotomapa."
 
@@ -2234,6 +2301,38 @@ msgstr "Projekty miesiącami"
 msgid "Tasks by month"
 msgstr "Zadania miesiącami"
 
+#: coreplugins/task-manager/plugin.py:30 coreplugins/task-manager/plugin.py:36
+#: coreplugins/task-manager/templates/index.html:8
+#, fuzzy
+#| msgid "Task tags"
+msgid "Task Manager"
+msgstr "Znaczniki zadania (tagi)"
+
+#: coreplugins/task-manager/templates/index.html:10
+msgid ""
+"Track disk usage across projects: compact tasks to clear temporary files, or "
+"delete them permanently."
+msgstr ""
+
+#: coreplugins/task-manager/templates/index.html:18
+#, fuzzy
+#| msgid "Last Refreshed"
+msgid "Refresh"
+msgstr "Ostatnio odświeżane"
+
+#: coreplugins/task-manager/templates/index.html:21
+#, fuzzy
+#| msgctxt "Megabytes of storage space"
+#| msgid "Total"
+msgid "Total size:"
+msgstr "Łącznie"
+
+#: coreplugins/task-manager/templates/index.html:40
+#, fuzzy
+#| msgid "Image"
+msgid "Images"
+msgstr "Obraz"
+
 #: coreplugins/tasknotification/plugin.py:84
 msgid "Task Notification"
 msgstr "Powiadomienie o zadaniu"
@@ -2365,9 +2464,6 @@ msgstr "Silnik używany przez węzeł."
 
 #~ msgid "File uploaded by a user"
 #~ msgstr "Plik przesłany przez użytkownika"
-
-#~ msgid "Image"
-#~ msgstr "Obraz"
 
 #~ msgid "Image Upload"
 #~ msgstr "Przesyłanie obrazu"
