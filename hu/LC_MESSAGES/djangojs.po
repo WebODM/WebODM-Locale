@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-07 18:15+0000\n"
-"PO-Revision-Date: 2026-03-10 21:09+0000\n"
-"Last-Translator: Koncz Gergely <teng1024@gmail.com>\n"
+"PO-Revision-Date: 2026-08-15 22:29+0000\n"
+"Last-Translator: Faludi Zoltán <zoltan@faludi.info>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/webodm/react-"
 "ui/hu/>\n"
 "Language: hu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -82,7 +82,7 @@ msgstr "Terepmodell"
 
 #: app/static/app/js/MapView.jsx:155
 msgid "A map is not available for this task or project."
-msgstr ""
+msgstr "Ehhez a feladathoz vagy projekthez nem áll rendelkezésre térkép."
 
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
@@ -231,10 +231,9 @@ msgid "Gray"
 msgstr "Szürke"
 
 #: app/static/app/js/classes/OverlayLayer.js:14
-#, fuzzy, python-format
-#| msgid "%(file)s is bigger than 5 MB."
+#, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr "A %(file)s nagyobb, mint 5 MB."
+msgstr "%(file)s mérete nagyobb, mint %(size)s MB."
 
 #: app/static/app/js/classes/OverlayLayer.js:23
 #, python-format
@@ -355,7 +354,7 @@ msgstr "Láb"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Hüvelyk"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -1158,7 +1157,7 @@ msgstr "Kihúzott"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:57
 msgid "Change color"
-msgstr ""
+msgstr "Szín módosítás"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:206
 #, fuzzy
@@ -1181,7 +1180,7 @@ msgstr "Mentés…"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:294
 msgid "Overlays"
-msgstr ""
+msgstr "Fedvények"
 
 #: app/static/app/js/components/LayersControlPanel.jsx:42
 #: app/static/app/js/components/NewTaskPanel.jsx:353
@@ -1254,11 +1253,11 @@ msgstr "Video Bemenet"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:372
 msgid "Panorama"
-msgstr ""
+msgstr "Panoráma"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:373
 msgid "Photo"
-msgstr ""
+msgstr "Fénykép"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
 #, fuzzy
@@ -1295,7 +1294,7 @@ msgstr "Baloldali nézet"
 #: app/static/app/js/components/Map.jsx:534
 #: app/static/app/js/components/TaskListItem.jsx:848
 msgid "Media"
-msgstr ""
+msgstr "Média"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:558
 #, fuzzy
