@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-07 18:15+0000\n"
-"PO-Revision-Date: 2026-07-03 20:01+0000\n"
-"Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/webodm/webodm/pl/"
-">\n"
+"PO-Revision-Date: 2026-08-18 15:48+0000\n"
+"Last-Translator: GospoGied <student_pwr@poczta.fm>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/webodm/webodm/pl/>"
+"\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.7.1.dev0\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: app/admin.py:110
 msgid "Cannot restore default logo"
@@ -142,7 +142,9 @@ msgstr "Akcje"
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
 "Normalized Difference Vegetation Index shows the amount of green vegetation."
-msgstr "Indeks NDVI pokazuje ilość zielonej roślinności."
+msgstr ""
+"Znormalizowany Wskaźnik Różnicy Roślinności pokazuje ilość zielonej "
+"roślinności."
 
 #: app/api/formulas.py:17
 msgid ""
@@ -157,17 +159,16 @@ msgid ""
 "Normalized Difference Red Edge Index shows the amount of green vegetation of "
 "permanent or later stage crops."
 msgstr ""
-"Normalized Difference Red Edge Index (znormalizowany różnicowy wskaźnik "
-"czerwonej krawędzi) (NDRE) pokazuje ilość zielonej roślinności w uprawach "
-"trwałych lub w późniejszym stadium wegetacji."
+"Znormalizowany Różnicowy Wskaźnik Czerwonej Krawędzi pokazuje ilość zielonej "
+"roślinności w uprawach trwałych lub w późniejszym stadium wegetacji."
 
 #: app/api/formulas.py:27
 msgid ""
 "Normalized Difference Water Index shows the amount of water content in water "
 "bodies."
 msgstr ""
-"Znormalizowany wskaźnik różnicowy wilgotności (NDWI) wskazuje zawartość wody "
-"w roślinach i powierzchni ziemi."
+"Znormalizowany wskaźnik różnicowy wilgotności wskazuje zawartość wody w "
+"roślinach i powierzchni ziemi."
 
 #: app/api/formulas.py:37
 msgid ""
@@ -193,7 +194,7 @@ msgstr "Visual Atmospheric Resistance Index wskazuje obszary wegetacji."
 
 #: app/api/formulas.py:50
 msgid "Modified Photochemical Reflectance Index"
-msgstr "Zmodyfikowany współczynnik odbicia fotochemicznego (MPRI)"
+msgstr "Zmodyfikowany współczynnik odbicia fotochemicznego"
 
 #: app/api/formulas.py:55
 msgid ""
@@ -300,9 +301,8 @@ msgid ""
 "Atmospherically Resistant Vegetation Index. Useful when working with imagery "
 "for regions with high atmospheric aerosol content."
 msgstr ""
-"Wskaźnik roślinności odporny na warunki atmosferyczne (ARVI). Przydatne "
-"podczas pracy ze zdjęciami regionów o dużej zawartości aerozolu "
-"atmosferycznego."
+"Wskaźnik roślinności odporny na warunki atmosferyczne. Przydatne podczas "
+"pracy ze zdjęciami regionów o dużej zawartości aerozolu atmosferycznego."
 
 #: app/api/formulas.py:116
 msgid "Temperature in Celsius degrees."
@@ -338,42 +338,38 @@ msgstr "Plik przekraca maksymalną dozwoloną wielkość"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "Nieprawidłowy ID nakładki"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "Brakujący plik"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "%(file)s są większe niż %(size)s MB."
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "Nieprawidłowe metadane nakładki"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid GeoJSON"
-msgstr "Nieprawidłowe działanie"
+msgstr "Nieprawidłowy GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "Nie DXF lub zipowany plik shape: %(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "Nieprawidłowy kod EPSG: %(value)s"
+msgstr "Nieprawidłowy kod EPSG"
 
 #: app/api/overlays.py:280 app/api/overlays.py:287
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "Nie można konwertować %(file)s: %(reason)s"
 
 #: app/api/projects.py:129
 msgid "Cannot duplicate project"
@@ -435,7 +431,7 @@ msgstr "Nieprawidłowy adres URL. Czy chodziło o %(hint)s?"
 
 #: app/api/tasks.py:832 app/api/tasks.py:835
 msgid "Invalid uuid"
-msgstr "Nieprawidłowy UUID"
+msgstr "Nieprawidłowy uuid"
 
 #: app/api/tasks.py:856
 msgid "Invalid file type"
@@ -546,7 +542,7 @@ msgstr "Nieprawidłowa wartość zacienienia: %(value)s"
 
 #: app/api/tiler.py:694
 msgid "Cannot use epsg on non-georeferenced dataset"
-msgstr "Nie można używać EPSG w zbiorze danych bez georeferencji"
+msgstr "Nie można używać epsg w zbiorze danych bez georeferencji"
 
 #: app/models/basemap.py:14
 msgid "Type"
@@ -729,11 +725,11 @@ msgstr "Przydział"
 
 #: app/models/profile.py:16
 msgid "Cluster Id this user is assigned to"
-msgstr "ID klastra, do którego jest przypisany ten użytkownik"
+msgstr "Id klastra, do którego jest przypisany ten użytkownik"
 
 #: app/models/profile.py:16
 msgid "Cluster Id"
-msgstr "ID klastra"
+msgstr "Id klastra"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
@@ -819,11 +815,11 @@ msgstr "Projekty"
 
 #: app/models/redirect.py:6
 msgid "Project Id"
-msgstr "ID Projektu"
+msgstr "Id Projektu"
 
 #: app/models/redirect.py:8
 msgid "Task Id"
-msgstr "ID Zadania"
+msgstr "Id zadania"
 
 #: app/models/redirect.py:9
 msgid "The person associated with this redirect"
@@ -1099,7 +1095,7 @@ msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
 msgstr ""
-"Serializowane informacje o scenie POTREE używane do zapisywania/wczytywania "
+"Serializowane informacje o scenie potree używane do zapisywania/wczytywania "
 "pomiarów i kąta widzenia kamery"
 
 #: app/models/task.py:284
@@ -2054,6 +2050,8 @@ msgstr ""
 #: app/translations/plugin_manifest_autogenerated.py:24
 msgid "Monitor project storage to quickly compact or delete tasks."
 msgstr ""
+"Monitoruj przechowywanie projektów, aby szybko kompresować lub usuwać "
+"zadania."
 
 #: app/views/app.py:57
 msgid "First Project"
@@ -2135,25 +2133,17 @@ msgstr ""
 "DEM."
 
 #: coreplugins/annotate/api.py:63 coreplugins/annotate/dist/annotate/api.py:63
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"Brak modelu pokrycia terenu. Z kokpitu wybierz to zadanie, wybierz Edytuj, w "
-"opcjach upewnij się że zaznaczono \"dsm\", a następnie wybierz Restart -> Od "
-"DEM."
+"Brak modelu terenu. Z kokpitu wybierz to zadanie, wybierz Edytuj, w opcjach "
+"upewnij się że zaznaczono \"dsm\", a następnie wybierz Restart -> Od DEM."
 
 #: coreplugins/annotate/api.py:65 coreplugins/annotate/dist/annotate/api.py:65
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid surface model"
-msgstr "Nieprawidłowy typ pliku"
+msgstr "Nieprawidłowy model powierzchni"
 
 #: coreplugins/annotate/api.py:91 coreplugins/annotate/dist/annotate/api.py:91
 msgid "A digital surface model is required to compute elevation values."
@@ -2303,35 +2293,28 @@ msgstr "Zadania miesiącami"
 
 #: coreplugins/task-manager/plugin.py:30 coreplugins/task-manager/plugin.py:36
 #: coreplugins/task-manager/templates/index.html:8
-#, fuzzy
-#| msgid "Task tags"
 msgid "Task Manager"
-msgstr "Znaczniki zadania (tagi)"
+msgstr "Menadżer zadań"
 
 #: coreplugins/task-manager/templates/index.html:10
 msgid ""
 "Track disk usage across projects: compact tasks to clear temporary files, or "
 "delete them permanently."
 msgstr ""
+"Śledź wykorzystanie dysku w różnych projektach: kompaktuj zadania czyszcząc "
+"pliki tymczasowe lub trwale je usuwając."
 
 #: coreplugins/task-manager/templates/index.html:18
-#, fuzzy
-#| msgid "Last Refreshed"
 msgid "Refresh"
-msgstr "Ostatnio odświeżane"
+msgstr "Odśwież"
 
 #: coreplugins/task-manager/templates/index.html:21
-#, fuzzy
-#| msgctxt "Megabytes of storage space"
-#| msgid "Total"
 msgid "Total size:"
-msgstr "Łącznie"
+msgstr "Łączny rozmiar:"
 
 #: coreplugins/task-manager/templates/index.html:40
-#, fuzzy
-#| msgid "Image"
 msgid "Images"
-msgstr "Obraz"
+msgstr "Obrazy"
 
 #: coreplugins/tasknotification/plugin.py:84
 msgid "Task Notification"
