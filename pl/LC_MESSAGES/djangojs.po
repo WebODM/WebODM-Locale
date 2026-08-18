@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-07 18:15+0000\n"
-"PO-Revision-Date: 2026-07-28 09:01+0000\n"
-"Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
+"PO-Revision-Date: 2026-08-18 15:48+0000\n"
+"Last-Translator: GospoGied <student_pwr@poczta.fm>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "pl/>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.8.dev0\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -164,7 +164,7 @@ msgstr "Parametry kamery"
 
 #: app/static/app/js/classes/AssetDownloads.js:60
 msgid "Camera Shots"
-msgstr "Lokalizacje punktowe zdjęć (GeoJSON)"
+msgstr "Zdjęcia z kamery"
 
 #: app/static/app/js/classes/AssetDownloads.js:61
 #: app/static/app/js/components/Map.jsx:670
@@ -230,10 +230,9 @@ msgid "Gray"
 msgstr "Szary"
 
 #: app/static/app/js/classes/OverlayLayer.js:14
-#, fuzzy, python-format
-#| msgid "%(file)s is bigger than 5 MB."
+#, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr "%(file)s Pliki są większe niż 5 MB."
+msgstr "%(file)s są większe niż %(size)s MB."
 
 #: app/static/app/js/classes/OverlayLayer.js:23
 #, python-format
@@ -507,7 +506,7 @@ msgstr "Granica"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:40
 msgid "Coordinate Reference System"
-msgstr "Układ odniesień przestrzennych (CRS)"
+msgstr "Układ współrzędnych"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:43
 #: app/static/app/js/components/EditTaskForm.jsx:625
@@ -548,7 +547,7 @@ msgstr "Parametry teksturowania"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:85
 msgid "Digital Elevation Models"
-msgstr "Numeryczne Modele Terenu (NMT/DEM)"
+msgstr "Numeryczne Modele Terenu"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:88
 msgid "Outputs"
@@ -1138,13 +1137,11 @@ msgstr "Wytłaczane"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:57
 msgid "Change color"
-msgstr ""
+msgstr "Zmień kolor"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:206
-#, fuzzy
-#| msgid "Moving..."
 msgid "Converting..."
-msgstr "Przenoszenie..."
+msgstr "Konwertowanie..."
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:216
 #: app/static/app/js/components/Map.jsx:1722
@@ -1154,14 +1151,12 @@ msgid "Opacity"
 msgstr "Przezroczystość"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:218
-#, fuzzy
-#| msgid "Saving…"
 msgid "Syncing…"
-msgstr "Zapisywanie…"
+msgstr "Synchronizowanie…"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:294
 msgid "Overlays"
-msgstr ""
+msgstr "Nakładki"
 
 #: app/static/app/js/components/LayersControlPanel.jsx:42
 #: app/static/app/js/components/NewTaskPanel.jsx:353
@@ -1289,10 +1284,8 @@ msgid "Example:"
 msgstr "Przykład:"
 
 #: app/static/app/js/components/Map.jsx:873
-#, fuzzy
-#| msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
 msgid "Add a GeoJSON (.json), ShapeFile (.zip) or AutoCAD (.dxf) overlay"
-msgstr "Dodaj tymczasową nakładkę GeoJSON (.json) lub ShapeFile (.zip)"
+msgstr "Dodaj nakładkę GeoJSON (.json), ShapeFile (.zip) lub AutoCAD (.dxf)"
 
 #: app/static/app/js/components/Map.jsx:934
 msgid "Cannot set cropping area. Check your internet connection."
@@ -1310,32 +1303,29 @@ msgstr "Błąd: nie można załadować listy zasobów."
 
 #: app/static/app/js/components/Map.jsx:1134
 msgid "Cannot import overlay: no task is loaded."
-msgstr ""
+msgstr "Nie można zaimportować nakładki: nie załadowano żadnego zadania."
 
 #: app/static/app/js/components/Map.jsx:1222
 #: app/static/app/js/components/Map.jsx:1255
 #: app/static/app/js/components/Map.jsx:1273
 #, python-format
 msgid "Cannot save overlay %(name)s"
-msgstr ""
+msgstr "Nie można zapisać nakładki %(name)s"
 
 #: app/static/app/js/components/Map.jsx:1288
 #: app/static/app/js/components/Map.jsx:1328
 msgid "Overlay"
-msgstr ""
+msgstr "Nakładka"
 
 #: app/static/app/js/components/Map.jsx:1380
-#, fuzzy
-#| msgid "Invalid response"
 msgid "Invalid EPSG code"
-msgstr "Nieprawidłowa odpowiedź"
+msgstr "Nieprawidłowy kod EPSG"
 
 #: app/static/app/js/components/Map.jsx:1448
 #: app/static/app/js/components/Map.jsx:1457
-#, fuzzy, python-format
-#| msgid "Cannot delete file."
+#, python-format
 msgid "Cannot convert %(file)s"
-msgstr "Nie można usunąć pliku."
+msgstr "Nie można konwertować plików %(file)s"
 
 #: app/static/app/js/components/Map.jsx:1726
 #: app/static/app/js/components/NewTaskPanel.jsx:296
@@ -1344,10 +1334,8 @@ msgid "Loading..."
 msgstr "Wczytywanie..."
 
 #: app/static/app/js/components/Map.jsx:1732
-#, fuzzy
-#| msgid "Import"
 msgid "Import DXF"
-msgstr "Import"
+msgstr "Importuj DXF"
 
 #: app/static/app/js/components/MapPreview.jsx:172
 msgid "Set Reconstruction Area (optional)"
@@ -2217,13 +2205,7 @@ msgstr ""
 "spowalnia również przetwarzanie. Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:24
-#, fuzzy, python-format
-#| msgid ""
-#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
-#| "for all images. If your images are tagged with high precision GPS "
-#| "information (RTK), this value can be lowered. Lowering this option can "
-#| "sometimes help control bowling-effects over large areas. Default: "
-#| "%(default)s"
+#, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
 "for all images. If your images are tagged with high precision GPS "
@@ -2234,9 +2216,10 @@ msgid ""
 msgstr ""
 "Ustawić wartość w metrach dla informacji GPS Dilution of Precision (DOP) dla "
 "wszystkich obrazów. Jeśli obrazy są oznaczone informacjami GPS o wysokiej "
-"precyzji (RTK), ta wartość może być obniżona. Obniżenie wartości tego "
-"parametru może czasami pomóc w kontrolowaniu efektu \"bowlingu\" (efekt "
-"miski) na dużych obszarach. Domyślnie: %(default)s"
+"precyzji (RTK), ta wartość zostanie automatycznie ustawiona. Możesz użyć tej "
+"opcji, aby ręcznie ustawić ją w przypadku niepowodzenia rekonstrukcji. "
+"Obniżenie wartości tego parametru może czasami pomóc w kontrolowaniu efektu "
+"\"bowlingu\" (efekt miski) na dużych obszarach. Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:25
 #, python-format
@@ -2290,17 +2273,14 @@ msgstr ""
 "domyślna: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Set the units of the PDF report. By default the vertical units of the "
 "coordinate reference system are used. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"Ustaw kompresję użytą do ortofotomapy. Może być jednym z: %(choices)s. "
-"Domyślnie: %(default)s"
+"Ustaw jednostki raportu PDF. Domyślnie używane są jednostki pionowe układu "
+"współrzędnych. Może być jednym z: %(choices)s. Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:31
 #, python-format
@@ -2644,12 +2624,7 @@ msgstr ""
 "Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:65
-#, fuzzy, python-format
-#| msgid ""
-#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
-#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
-#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
-#| "one of: %(choices)s. Default: %(default)s"
+#, python-format
 msgid ""
 "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
 "Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
@@ -2660,8 +2635,9 @@ msgstr ""
 "Algorytm dopasowujący, szybka biblioteka dla przybliżonych najbliższych "
 "sąsiadów (FLANM) lub worek słów (BOW). FLANN jest wolniejszy, ale bardziej "
 "stabilny. BOW jest szybszy, ale czasami może przegapić ważne dopasowania. "
-"BRUTE FORCE jest bardzo wolny ale najsolidniejszy. Może być jednym z: "
-"%(choices)s. Domyślnie: %(default)s"
+"BRUTE FORCE jest bardzo wolny ale najsolidniejszy. HAMMING jest znacznie "
+"szybszy w przypadku dużych zbiorów danych, ale wymaga GPU. Może być jednym "
+"z: %(choices)s. Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:66
 #, python-format
@@ -2789,20 +2765,15 @@ msgstr ""
 "%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:77
-#, fuzzy, python-format
-#| msgid ""
-#| "Skips dense reconstruction and 3D model generation. It generates an "
-#| "orthophoto directly from the sparse reconstruction. If you just need an "
-#| "orthophoto and do not need a full 3D model, turn on this option. Default: "
-#| "%(default)s"
+#, python-format
 msgid ""
 "Skips dense reconstruction and 3D model generation. It generates an "
 "orthophoto directly from the sparse reconstruction. On flat terrain with no "
 "objects/structures, turn this on to save time. Default: %(default)s"
 msgstr ""
 "Pomija gęstą rekonstrukcję i generowanie modeli 3D. Generuje ortofotomapy "
-"bezpośrednio z rzadkiej rekonstrukcji. Jeśli potrzebujesz tylko ortofotomapy "
-"i nie potrzebujesz pełnego modelu 3D, włącz tę opcję. Domyślnie: %(default)s"
+"bezpośrednio z rzadkiej rekonstrukcji. Na płaskim terenie bez obiektów/"
+"struktur włącz tę opcję, aby zaoszczędzić czas. Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:78
 #, python-format
@@ -2949,13 +2920,7 @@ msgstr ""
 "Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:91
-#, fuzzy, python-format
-#| msgid ""
-#| "Choose the structure from motion algorithm. For aerial datasets, if "
-#| "camera GPS positions and angles are available, triangulation can generate "
-#| "better results. For planar scenes captured at fixed altitude with nadir-"
-#| "only images, planar can be much faster. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Choose the structure from motion algorithm. For aerial datasets, if camera "
 "GPS positions and angles are available, triangulation can be faster. Planar "
@@ -2963,10 +2928,9 @@ msgid ""
 "%(choices)s. Default: %(default)s"
 msgstr ""
 "Wybierz strukturę z algorytmu ruchu. W przypadku zbiorów danych lotniczych, "
-"jeśli dostępne są pozycje i kąty GPS kamery, triangulacja może generować "
-"lepsze wyniki. W przypadku scen planarnych zarejestrowanych na stałej "
-"wysokości z obrazami zawierającymi tylko nadir, planar może być znacznie "
-"szybszy. Może być jednym z: %(choices)s. Domyślnie: %(default)s"
+"jeśli dostępne są pozycje i kąty GPS kamery, triangulacja może być szybsza. "
+"Tryb planarny jest przestarzały i zostanie usunięty w przyszłej wersji. Może "
+"być jednym z: %(choices)s. Domyślnie: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:92
 msgid ""
@@ -3409,10 +3373,8 @@ msgid "Invalid response: %(error)s"
 msgstr "Nieprawidłowa odpowiedź: %(error)s"
 
 #: coreplugins/annotate/public/Popup.jsx:274
-#, fuzzy
-#| msgid "Coordinates"
 msgid "Invalid coordinates"
-msgstr "Koordynaty"
+msgstr "Nieprawidłowe koordynaty"
 
 #: coreplugins/annotate/public/Popup.jsx:767
 #: coreplugins/measure/public/MeasurePopup.jsx:178
@@ -3465,7 +3427,7 @@ msgstr "Koordynaty"
 
 #: coreplugins/annotate/public/Popup.jsx:865
 msgid "Elevation"
-msgstr "Wysokość n.p.m."
+msgstr "Wysokość n.p.m"
 
 #: coreplugins/annotate/public/Popup.jsx:874
 msgid "Temperature"
@@ -3487,10 +3449,8 @@ msgid "Fill"
 msgstr "Wypełnij"
 
 #: coreplugins/annotate/public/Popup.jsx:914
-#, fuzzy
-#| msgid "Base Surface"
 msgid "Surface"
-msgstr "Powierzchnia bazowa"
+msgstr "Powierzchnia"
 
 #: coreplugins/annotate/public/Popup.jsx:917
 msgid "DSM"
@@ -3509,10 +3469,8 @@ msgid "Show 3D"
 msgstr "Widok 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:938
-#, fuzzy
-#| msgid "Custom"
 msgid "Custom Z"
-msgstr "Ustawienia własne"
+msgstr "Własne Z"
 
 #: coreplugins/annotate/public/Popup.jsx:960
 msgid "3D view error"
