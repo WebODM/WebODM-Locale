@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-07 18:15+0000\n"
+"POT-Creation-Date: 2026-09-04 19:07+0000\n"
 "PO-Revision-Date: 2026-05-04 03:09+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/webodm/react-"
@@ -92,25 +92,57 @@ msgstr "Tidak dapat mengatur tampilan kamera awal"
 msgid "set initial camera view"
 msgstr "atur tampilan kamera awal"
 
-#: app/static/app/js/ModelView.jsx:93 app/static/app/js/components/Map.jsx:598
+#: app/static/app/js/ModelView.jsx:89 app/static/app/js/components/Map.jsx:598
 msgid "Cameras"
 msgstr "Kamera"
 
-#: app/static/app/js/ModelView.jsx:106
-msgid "Show Model"
-msgstr "Tampilkan Model"
-
-#: app/static/app/js/ModelView.jsx:146
+#: app/static/app/js/ModelView.jsx:114
 msgid "Show Cameras"
 msgstr "Tampilkan Kamera"
 
-#: app/static/app/js/ModelView.jsx:149
+#: app/static/app/js/ModelView.jsx:117
 #: app/static/app/js/components/ManageMediaDialog.jsx:560
 #: coreplugins/lightning/public/ShareDialog.jsx:336
 msgid "Size"
 msgstr "Ukuran"
 
-#: app/static/app/js/ModelView.jsx:890
+#: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
+#, fuzzy
+#| msgid "Cannot load media."
+msgid "Cannot load splats renderer"
+msgstr "Tidak dapat memuat media."
+
+#: app/static/app/js/ModelView.jsx:818
+msgid ""
+"Could not load splats. This task doesn't seem to have a valid splats file."
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:925
+#: app/static/app/js/classes/AssetDownloads.js:54
+#: app/static/app/js/components/EditPresetDialog.jsx:59
+#: app/static/app/js/components/ImportExternalPanel.jsx:15
+msgid "Point Cloud"
+msgstr "Point Cloud"
+
+#: app/static/app/js/ModelView.jsx:932
+#: app/static/app/js/classes/AssetDownloads.js:56
+#: app/static/app/js/components/ImportExternalPanel.jsx:16
+msgid "Textured Model"
+msgstr "Model Bertekstur"
+
+#: app/static/app/js/ModelView.jsx:939
+#: app/static/app/js/classes/AssetDownloads.js:63
+#: app/static/app/js/components/TaskListItem.jsx:866
+msgid "Splats"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:981
+#, fuzzy
+#| msgid "Loading..."
+msgid "Loading splats..."
+msgstr "Memuat..."
+
+#: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
 msgstr "Memuat model bertekstur..."
 
@@ -134,20 +166,9 @@ msgstr "Model Medan (Tiles)"
 msgid "Surface Model (Tiles)"
 msgstr "Model Permukan (Tiles)"
 
-#: app/static/app/js/classes/AssetDownloads.js:54
-#: app/static/app/js/components/EditPresetDialog.jsx:59
-#: app/static/app/js/components/ImportExternalPanel.jsx:15
-msgid "Point Cloud"
-msgstr "Point Cloud"
-
 #: app/static/app/js/classes/AssetDownloads.js:55
 msgid "Point Cloud (3D Tiles)"
 msgstr "Titik Awan (3D Tiles)"
-
-#: app/static/app/js/classes/AssetDownloads.js:56
-#: app/static/app/js/components/ImportExternalPanel.jsx:16
-msgid "Textured Model"
-msgstr "Model Bertekstur"
 
 #: app/static/app/js/classes/AssetDownloads.js:57
 msgid "Textured Model (3D Tiles)"
@@ -174,7 +195,7 @@ msgstr "Titik Kontrol Darat"
 msgid "Quality Report"
 msgstr "Laporan Kualitas"
 
-#: app/static/app/js/classes/AssetDownloads.js:67
+#: app/static/app/js/classes/AssetDownloads.js:66
 #: coreplugins/lightning/public/ShareDialog.jsx:328
 msgid "All Assets"
 msgstr "Semua Aset"
@@ -302,8 +323,8 @@ msgid "DEM"
 msgstr "DEM"
 
 #: app/static/app/js/classes/PipelineSteps.js:52
-#: app/static/app/js/components/TaskListItem.jsx:554
-#: app/static/app/js/components/TaskListItem.jsx:556
+#: app/static/app/js/components/TaskListItem.jsx:571
+#: app/static/app/js/components/TaskListItem.jsx:573
 msgid "Report"
 msgstr "Laporan"
 
@@ -510,6 +531,7 @@ msgstr "Sistem Referensi Koordinat"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:43
 #: app/static/app/js/components/EditTaskForm.jsx:625
+#: app/static/app/js/components/SplatsDialog.jsx:454
 msgid "Options"
 msgstr "Opsi"
 
@@ -656,8 +678,8 @@ msgstr "Membuat proyek..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:125
 #: app/static/app/js/components/EditProjectDialog.jsx:131
-#: app/static/app/js/components/TaskListItem.jsx:235
-#: app/static/app/js/components/TaskListItem.jsx:243
+#: app/static/app/js/components/TaskListItem.jsx:237
+#: app/static/app/js/components/TaskListItem.jsx:245
 msgid "Cannot complete operation."
 msgstr "Tidak dapat menyelesaikan operasi."
 
@@ -670,7 +692,7 @@ msgstr "Tag"
 
 #: app/static/app/js/components/EditProjectDialog.jsx:165
 #: app/static/app/js/components/EditTaskForm.jsx:585
-#: app/static/app/js/components/TaskListItem.jsx:855
+#: app/static/app/js/components/TaskListItem.jsx:873
 msgid "Duplicate"
 msgstr "Duplikat"
 
@@ -772,8 +794,8 @@ msgstr "Coba lagi"
 #: app/static/app/js/components/EditTaskForm.jsx:579
 #: app/static/app/js/components/ManageMediaDialog.jsx:496
 #: app/static/app/js/components/ProjectListItem.jsx:866
-#: app/static/app/js/components/TaskListItem.jsx:597
-#: app/static/app/js/components/TaskListItem.jsx:842
+#: app/static/app/js/components/TaskListItem.jsx:614
+#: app/static/app/js/components/TaskListItem.jsx:859
 #: coreplugins/annotate/public/Popup.jsx:829
 #: coreplugins/editshortlinks/public/SLControls.jsx:162
 msgid "Edit"
@@ -797,8 +819,8 @@ msgstr "Simpan"
 #: app/static/app/js/components/ManageMediaDialog.jsx:582
 #: app/static/app/js/components/MapPreview.jsx:194
 #: app/static/app/js/components/ProjectListItem.jsx:872
-#: app/static/app/js/components/TaskListItem.jsx:563
-#: app/static/app/js/components/TaskListItem.jsx:872
+#: app/static/app/js/components/TaskListItem.jsx:580
+#: app/static/app/js/components/TaskListItem.jsx:890
 #: coreplugins/annotate/public/Popup.jsx:1006
 #: coreplugins/measure/public/app.jsx:35
 msgid "Delete"
@@ -822,8 +844,9 @@ msgstr "Tidak dapat memperbarui informasi tugas. Silakan coba lagi."
 #: app/static/app/js/components/ManageMediaDialog.jsx:421
 #: app/static/app/js/components/NewTaskPanel.jsx:266
 #: app/static/app/js/components/NewTaskPanel.jsx:351
-#: app/static/app/js/components/TaskListItem.jsx:573
-#: app/static/app/js/components/TaskListItem.jsx:837
+#: app/static/app/js/components/SplatsDialog.jsx:536
+#: app/static/app/js/components/TaskListItem.jsx:590
+#: app/static/app/js/components/TaskListItem.jsx:854
 #: coreplugins/measure/public/app.jsx:34
 msgid "Cancel"
 msgstr "Batal"
@@ -839,7 +862,8 @@ msgstr "Menyimpan..."
 #: app/static/app/js/components/NewTaskPanel.jsx:254
 #: app/static/app/js/components/ProjectListItem.jsx:882
 #: app/static/app/js/components/ProjectListItem.jsx:895
-#: app/static/app/js/components/Toaster.jsx:314
+#: app/static/app/js/components/SplatsDialog.jsx:580
+#: app/static/app/js/components/Toaster.jsx:317
 msgid "Close"
 msgstr "Tutup"
 
@@ -858,7 +882,7 @@ msgid "Invalid JSON response: %(error)s"
 msgstr "Respons JSON tidak valid: %(error)s"
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:234
-#: app/static/app/js/components/TaskListItem.jsx:703
+#: app/static/app/js/components/TaskListItem.jsx:720
 msgid "CRS:"
 msgstr "CRS:"
 
@@ -1164,12 +1188,14 @@ msgstr "Memuat…"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:153
 #: app/static/app/js/components/ProjectListItem.jsx:306
+#: app/static/app/js/components/SplatsDialog.jsx:178
 #, python-format
 msgid "%(filename)s is not a valid file"
 msgstr "%(filename)s bukan berkas yang valid"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:174
 #: app/static/app/js/components/ProjectListItem.jsx:335
+#: app/static/app/js/components/SplatsDialog.jsx:195
 #, python-format
 msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
 msgstr ""
@@ -1178,6 +1204,7 @@ msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:186
 #: app/static/app/js/components/ProjectListItem.jsx:347
+#: app/static/app/js/components/SplatsDialog.jsx:202
 #, python-format
 msgid ""
 "Cannot upload %(filename)s, file is too large! Default MaxFileSize is "
@@ -1187,6 +1214,7 @@ msgstr ""
 "adalah %(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:247
+#: app/static/app/js/components/SplatsDialog.jsx:235
 msgid "Upload failed. Check your connection and try again."
 msgstr "Unggahan gagal. Periksa koneksi Anda dan coba lagi."
 
@@ -1230,6 +1258,7 @@ msgstr ""
 "Foto, panorama, dan video yang telah georeferensi akan ditampilkan pada peta."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:412
+#: app/static/app/js/components/SplatsDialog.jsx:527
 msgid "Finalizing... please wait"
 msgstr "Menyelesaikan... harap tunggu"
 
@@ -1247,7 +1276,7 @@ msgstr "Tampilan daftar"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:516
 #: app/static/app/js/components/Map.jsx:534
-#: app/static/app/js/components/TaskListItem.jsx:848
+#: app/static/app/js/components/TaskListItem.jsx:865
 msgid "Media"
 msgstr "Media"
 
@@ -1443,15 +1472,17 @@ msgstr ""
 "node pemrosesan ini."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:293
-#: app/static/app/js/components/TaskListItem.jsx:470
+#: app/static/app/js/components/TaskListItem.jsx:487
 msgid "Alignment"
 msgstr "Perataan"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:309
+#: app/static/app/js/components/SplatsDialog.jsx:461
 msgid "Resize Images"
 msgstr "Ubah Ukuran Gambar"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:333
+#: app/static/app/js/components/SplatsDialog.jsx:484
 msgid "px"
 msgstr "pks"
 
@@ -1460,7 +1491,7 @@ msgid "Review"
 msgstr "Ulasan"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:355
-#: app/static/app/js/components/TaskListItem.jsx:605
+#: app/static/app/js/components/TaskListItem.jsx:622
 msgid "Start Processing"
 msgstr "Mulai Memproses"
 
@@ -1659,6 +1690,122 @@ msgstr "Menurun"
 msgid "Ascending"
 msgstr "Meningkat"
 
+#: app/static/app/js/components/SplatsDialog.jsx:137
+msgid "Please upload a single file."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:330
+#: coreplugins/annotate/public/Popup.jsx:248
+#: coreplugins/annotate/public/Popup.jsx:281
+#: coreplugins/annotate/public/Popup.jsx:313
+#: coreplugins/annotate/public/Popup.jsx:366
+#: coreplugins/annotate/public/Popup.jsx:407
+#: coreplugins/annotate/public/Popup.jsx:565
+#: coreplugins/measure/public/MeasurePopup.jsx:146
+#, python-format
+msgid "Invalid response: %(error)s"
+msgstr "Respons tidak valid: %(error)s"
+
+#: app/static/app/js/components/SplatsDialog.jsx:333
+#, fuzzy
+#| msgid "Cannot start processing task."
+msgid "Cannot export training data."
+msgstr "Tidak dapat memulai tugas pemrosesan."
+
+#: app/static/app/js/components/SplatsDialog.jsx:338
+#, fuzzy
+#| msgid "Are you sure you want to delete this?"
+msgid "Are you sure you want to delete the splats model?"
+msgstr "Apakah Anda yakin ingin menghapus ini?"
+
+#: app/static/app/js/components/SplatsDialog.jsx:352
+#, fuzzy
+#| msgid "Cannot delete file."
+msgid "Cannot delete splats model."
+msgstr "Tidak dapat menghapus file."
+
+#: app/static/app/js/components/SplatsDialog.jsx:389
+msgid ""
+"This task is missing camera information. Training data cannot be downloaded."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:394
+msgid ""
+"This task is missing a point cloud. The training data will include an empty "
+"point cloud. Some training software might not work properly without one. "
+"Uploading a splats model requires a point cloud."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:399
+msgid ""
+"This task is missing camera information and a point cloud. No splats can be "
+"downloaded or uploaded."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:404
+msgid ""
+"The images for this task are not available, so they will not be part of the "
+"download. After extracting the .zip file, copy the original images into the "
+"\"images\" folder before training."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:409
+msgid ""
+"Most images in this dataset are nadir. Splats typically require obliques and/"
+"or orbits for good results."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:421
+msgid "A splats model has been added."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:424
+#, fuzzy
+#| msgid "show in 3D"
+msgid "View in 3D"
+msgstr "tampilkan di 3D"
+
+#: app/static/app/js/components/SplatsDialog.jsx:428
+#, fuzzy
+#| msgid "Upload"
+msgid "Upload New"
+msgstr "Unggah"
+
+#: app/static/app/js/components/SplatsDialog.jsx:452
+#, fuzzy
+#| msgid "Downloading…"
+msgid "Downloading..."
+msgstr "Mengunduh…"
+
+#: app/static/app/js/components/SplatsDialog.jsx:452
+#, fuzzy
+#| msgid "Download Image"
+msgid "Download Training Data"
+msgstr "Unduh Gambar"
+
+#: app/static/app/js/components/SplatsDialog.jsx:497
+#, python-format
+msgid "Train a model using %(link_start)s compatible software %(link_end)s"
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:507
+msgid "You don't have permission to upload a splats model to this task."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:516
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload Splats Model"
+msgstr "Unggah Berkas"
+
+#: app/static/app/js/components/SplatsDialog.jsx:560
+msgid "Gaussian Splats"
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:566
+msgid "Processing splats model... this might take a bit"
+msgstr ""
+
 #: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
 msgstr "3D"
@@ -1682,12 +1829,12 @@ msgid "Try again"
 msgstr "Coba lagi"
 
 #: app/static/app/js/components/TaskList.jsx:153
-#: app/static/app/js/components/TaskListItem.jsx:502
+#: app/static/app/js/components/TaskListItem.jsx:519
 #, python-format
 msgid "Task #%(number)s"
 msgstr "Tugas #%(number)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:304
+#: app/static/app/js/components/TaskListItem.jsx:321
 #, python-format
 msgid ""
 "It looks like there might be one of the following problems: %(problems)s You "
@@ -1697,30 +1844,30 @@ msgstr ""
 "dapat membaca lebih lanjut tentang praktik terbaik untuk mengambil gambar "
 "yang baik di %(link)s."
 
-#: app/static/app/js/components/TaskListItem.jsx:305
+#: app/static/app/js/components/TaskListItem.jsx:322
 msgid "Not enough images"
 msgstr "Tidak cukup gambar"
 
-#: app/static/app/js/components/TaskListItem.jsx:306
+#: app/static/app/js/components/TaskListItem.jsx:323
 msgid "Not enough overlap between images"
 msgstr "Tumpang tindih antar gambar tidak cukup"
 
-#: app/static/app/js/components/TaskListItem.jsx:307
+#: app/static/app/js/components/TaskListItem.jsx:324
 msgid "Images might be too blurry (common with phone cameras)"
 msgstr "Gambar mungkin terlalu buram (umum pada kamera ponsel)"
 
-#: app/static/app/js/components/TaskListItem.jsx:308
+#: app/static/app/js/components/TaskListItem.jsx:325
 msgid ""
 "The min-num-features task option is set too low, try increasing it by 25%"
 msgstr ""
 "Opsi tugas min-num-features diatur terlalu rendah, coba tingkatkan sebesar "
 "25%"
 
-#: app/static/app/js/components/TaskListItem.jsx:309
+#: app/static/app/js/components/TaskListItem.jsx:326
 msgid "here"
 msgstr "di sini"
 
-#: app/static/app/js/components/TaskListItem.jsx:312
+#: app/static/app/js/components/TaskListItem.jsx:329
 #, python-format
 msgid ""
 "It looks like this computer might be too old. WebODM requires a computer "
@@ -1734,11 +1881,11 @@ msgstr ""
 "membuat sendiri image docker-nya. Lihat %(link)s untuk informasi lebih "
 "lanjut."
 
-#: app/static/app/js/components/TaskListItem.jsx:312
+#: app/static/app/js/components/TaskListItem.jsx:329
 msgid "this page"
 msgstr "halaman ini"
 
-#: app/static/app/js/components/TaskListItem.jsx:314
+#: app/static/app/js/components/TaskListItem.jsx:331
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
 "This might indicate a corrupted installation. If you built ODM, please check "
@@ -1748,49 +1895,49 @@ msgstr ""
 "tugas. Ini mungkin mengindikasikan instalasi yang rusak. Jika Anda membangun "
 "ODM, harap periksa bahwa semua program berhasil dibangun tanpa kesalahan."
 
-#: app/static/app/js/components/TaskListItem.jsx:355
+#: app/static/app/js/components/TaskListItem.jsx:372
 #, python-format
 msgid "From %(stage)s"
 msgstr "Dari %(stage)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:367
+#: app/static/app/js/components/TaskListItem.jsx:384
 msgid "Resume Processing"
 msgstr "Lanjutkan Pemrosesan"
 
-#: app/static/app/js/components/TaskListItem.jsx:383
+#: app/static/app/js/components/TaskListItem.jsx:400
 msgid "Cannot restart task."
 msgstr "Tidak dapat memulai ulang tugas."
 
-#: app/static/app/js/components/TaskListItem.jsx:425
+#: app/static/app/js/components/TaskListItem.jsx:442
 msgid "Cannot restart task from (stage)s."
 msgstr "Tidak dapat memulai ulang tugas dari (stage)s."
 
-#: app/static/app/js/components/TaskListItem.jsx:474
+#: app/static/app/js/components/TaskListItem.jsx:491
 msgid "GPS"
 msgstr "GPS"
 
-#: app/static/app/js/components/TaskListItem.jsx:477
+#: app/static/app/js/components/TaskListItem.jsx:494
 msgid "GCP"
 msgstr "GCP"
 
-#: app/static/app/js/components/TaskListItem.jsx:506
+#: app/static/app/js/components/TaskListItem.jsx:523
 msgid "Sending images to processing node"
 msgstr "Mengirim gambar ke node pemrosesan"
 
-#: app/static/app/js/components/TaskListItem.jsx:508
+#: app/static/app/js/components/TaskListItem.jsx:525
 msgid "Waiting for a node..."
 msgstr "Menunggu node..."
 
-#: app/static/app/js/components/TaskListItem.jsx:539
+#: app/static/app/js/components/TaskListItem.jsx:556
 msgid "Map"
 msgstr "Peta"
 
-#: app/static/app/js/components/TaskListItem.jsx:548
+#: app/static/app/js/components/TaskListItem.jsx:565
 msgid "3D Model"
 msgstr "Model 3D"
 
-#: app/static/app/js/components/TaskListItem.jsx:564
-#: app/static/app/js/components/TaskListItem.jsx:873
+#: app/static/app/js/components/TaskListItem.jsx:581
+#: app/static/app/js/components/TaskListItem.jsx:891
 msgid ""
 "All information related to this task, including images, maps and models will "
 "be deleted. Continue?"
@@ -1798,106 +1945,106 @@ msgstr ""
 "Semua informasi yang terkait dengan tugas ini, termasuk gambar, peta, dan "
 "model akan dihapus. Lanjutkan?"
 
-#: app/static/app/js/components/TaskListItem.jsx:565
-#: app/static/app/js/components/TaskListItem.jsx:874
+#: app/static/app/js/components/TaskListItem.jsx:582
+#: app/static/app/js/components/TaskListItem.jsx:892
 msgid "Cannot delete task."
 msgstr "Tidak dapat menghapus tugas."
 
-#: app/static/app/js/components/TaskListItem.jsx:573
-#: app/static/app/js/components/TaskListItem.jsx:837
+#: app/static/app/js/components/TaskListItem.jsx:590
+#: app/static/app/js/components/TaskListItem.jsx:854
 msgid "Cannot cancel task."
 msgstr "Tidak dapat membatalkan tugas."
 
-#: app/static/app/js/components/TaskListItem.jsx:590
+#: app/static/app/js/components/TaskListItem.jsx:607
 msgid "Restart"
 msgstr "Mulai ulang"
 
-#: app/static/app/js/components/TaskListItem.jsx:590
+#: app/static/app/js/components/TaskListItem.jsx:607
 msgid "Are you sure you want to restart this task?"
 msgstr "Apakah Anda yakin ingin memulai ulang tugas ini?"
 
-#: app/static/app/js/components/TaskListItem.jsx:606
+#: app/static/app/js/components/TaskListItem.jsx:623
 msgid "Have all images been uploaded?"
 msgstr "Apakah semua gambar sudah diunggah?"
 
-#: app/static/app/js/components/TaskListItem.jsx:607
+#: app/static/app/js/components/TaskListItem.jsx:624
 msgid "Cannot start processing task."
 msgstr "Tidak dapat memulai tugas pemrosesan."
 
-#: app/static/app/js/components/TaskListItem.jsx:665
+#: app/static/app/js/components/TaskListItem.jsx:682
 msgid "Task ID:"
 msgstr "ID Tugas:"
 
-#: app/static/app/js/components/TaskListItem.jsx:666
+#: app/static/app/js/components/TaskListItem.jsx:683
 msgid "Copy to clipboard"
 msgstr "Salin ke papan klip"
 
-#: app/static/app/js/components/TaskListItem.jsx:669
+#: app/static/app/js/components/TaskListItem.jsx:686
 msgid "Created on:"
 msgstr "Dibuat pada:"
 
-#: app/static/app/js/components/TaskListItem.jsx:673
+#: app/static/app/js/components/TaskListItem.jsx:690
 msgid "Processing Node:"
 msgstr "Node Pemrosesan:"
 
-#: app/static/app/js/components/TaskListItem.jsx:674
+#: app/static/app/js/components/TaskListItem.jsx:691
 msgid "auto"
 msgstr "otomatis"
 
-#: app/static/app/js/components/TaskListItem.jsx:674
+#: app/static/app/js/components/TaskListItem.jsx:691
 msgid "manual"
 msgstr "manual"
 
-#: app/static/app/js/components/TaskListItem.jsx:678
+#: app/static/app/js/components/TaskListItem.jsx:695
 msgid "Options:"
 msgstr "Opsi:"
 
-#: app/static/app/js/components/TaskListItem.jsx:683
+#: app/static/app/js/components/TaskListItem.jsx:700
 msgid "Average GSD:"
 msgstr "Rata-rata GSD:"
 
-#: app/static/app/js/components/TaskListItem.jsx:688
+#: app/static/app/js/components/TaskListItem.jsx:705
 #: coreplugins/measure/public/MeasurePopup.jsx:186
 msgid "Area:"
 msgstr "Luas:"
 
-#: app/static/app/js/components/TaskListItem.jsx:693
+#: app/static/app/js/components/TaskListItem.jsx:710
 msgid "Points:"
 msgstr "Titik:"
 
-#: app/static/app/js/components/TaskListItem.jsx:698
+#: app/static/app/js/components/TaskListItem.jsx:715
 msgid "Georeferencing:"
 msgstr "Georeferensi:"
 
-#: app/static/app/js/components/TaskListItem.jsx:708
+#: app/static/app/js/components/TaskListItem.jsx:725
 msgid "Disk Usage:"
 msgstr "Penggunaan Disk:"
 
-#: app/static/app/js/components/TaskListItem.jsx:712
+#: app/static/app/js/components/TaskListItem.jsx:729
 msgid "Task Output:"
 msgstr "Keluaran Tugas:"
 
-#: app/static/app/js/components/TaskListItem.jsx:714
+#: app/static/app/js/components/TaskListItem.jsx:731
 msgid "On"
 msgstr "Nyala"
 
-#: app/static/app/js/components/TaskListItem.jsx:715
+#: app/static/app/js/components/TaskListItem.jsx:732
 msgid "Off"
 msgstr "Mati"
 
-#: app/static/app/js/components/TaskListItem.jsx:724
+#: app/static/app/js/components/TaskListItem.jsx:741
 msgid "Thumbnail"
 msgstr "Gambar Mini"
 
-#: app/static/app/js/components/TaskListItem.jsx:742
+#: app/static/app/js/components/TaskListItem.jsx:759
 msgid "enough RAM allocated"
 msgstr "cukup RAM dialokasikan"
 
-#: app/static/app/js/components/TaskListItem.jsx:742
+#: app/static/app/js/components/TaskListItem.jsx:759
 msgid "cloud processing node"
 msgstr "node pemrosesan cloud"
 
-#: app/static/app/js/components/TaskListItem.jsx:742
+#: app/static/app/js/components/TaskListItem.jsx:759
 #, python-format
 msgid ""
 "It looks like your processing node ran out of memory. If you are using "
@@ -1912,7 +2059,7 @@ msgstr ""
 "ukuran gambar, atau kurangi parameter max-concurrency dari opsi tugas. Anda "
 "juga dapat mencoba menggunakan %(cloudlink)s."
 
-#: app/static/app/js/components/TaskListItem.jsx:749
+#: app/static/app/js/components/TaskListItem.jsx:766
 #, python-format
 msgid ""
 "\"Process exited with code 1\" means that part of the processing failed. "
@@ -1923,23 +2070,23 @@ msgstr ""
 "kadang ini disebabkan oleh dataset, terkadang dapat diatasi dengan "
 "menyesuaikan Opsi Tugas. Periksa dokumentasi di %(link)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:799
+#: app/static/app/js/components/TaskListItem.jsx:816
 msgid "Set a processing node"
 msgstr "Atur node pemrosesan"
 
-#: app/static/app/js/components/TaskListItem.jsx:804
+#: app/static/app/js/components/TaskListItem.jsx:821
 msgid "Waiting to start processing..."
 msgstr "Menunggu untuk memulai pemrosesan..."
 
-#: app/static/app/js/components/TaskListItem.jsx:854
+#: app/static/app/js/components/TaskListItem.jsx:872
 msgid "Move"
 msgstr "Pindah"
 
-#: app/static/app/js/components/TaskListItem.jsx:866
+#: app/static/app/js/components/TaskListItem.jsx:884
 msgid "Compact"
 msgstr "Kompak"
 
-#: app/static/app/js/components/TaskListItem.jsx:867
+#: app/static/app/js/components/TaskListItem.jsx:885
 msgid ""
 "Compacting will free disk space by permanently deleting the original images "
 "used for processing. It will no longer be possible to restart the task. Maps "
@@ -1949,7 +2096,7 @@ msgstr ""
 "gambar asli yang digunakan untuk pemrosesan. Tugas tidak akan dapat dimulai "
 "ulang. Peta dan model akan tetap tersedia. Lanjutkan?"
 
-#: app/static/app/js/components/TaskListItem.jsx:868
+#: app/static/app/js/components/TaskListItem.jsx:886
 msgid "Cannot compact task."
 msgstr "Tidak dapat memadatkan tugas."
 
@@ -1983,14 +2130,14 @@ msgstr "Bagikan"
 msgid "Exporting"
 msgstr "Mengekspor..."
 
-#: app/static/app/js/components/Toaster.jsx:240
+#: app/static/app/js/components/Toaster.jsx:243
 #: coreplugins/lightning/public/ShareDialog.jsx:259
 #, fuzzy
 #| msgid "Task ID:"
 msgid "Task"
 msgstr "ID Tugas:"
 
-#: app/static/app/js/components/Toaster.jsx:265
+#: app/static/app/js/components/Toaster.jsx:268
 #, fuzzy
 #| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to cancel the tasks?"
@@ -2014,58 +2161,55 @@ msgstr "%(count)s berkas berhasil diunggah"
 #: app/static/app/js/translations/odm_autogenerated.js:3
 #, python-format
 msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
 msgstr ""
-"Jalur ke berkas geolokasi gambar yang berisi koordinat pusat kamera yang "
-"digunakan untuk georeferensi. Jika Anda tidak memiliki nilai yaw/pitch/roll, "
-"Anda dapat mengaturnya ke 0. Berkas harus menggunakan format berikut: EPSG:"
-"de> atau <+proj definition>image_name geo_x geo_y geo_z [yaw (derajat)] "
-"[pitch (derajat)] [roll (derajat)] [akurasi horizontal (meter)] [akurasi "
-"vertikal (meter)] Bawaan: %(default)s"
+"Atur jenis proyeksi kamera. Secara manual menyetel bisa membantu memperkecil "
+"distorsi geometrik. Secara baku aplikasi akan mencoba menentukan jenis lensa "
+"dari metadata gambar. Bisa dari: %(choices)s. Baku: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
 #, python-format
 msgid ""
-"Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
 msgstr ""
-"Perkiraan geometris meningkatkan akurasi awan titik dengan menghitung peta "
-"kedalaman yang konsisten secara geometris, tetapi mungkin tidak dapat "
-"digunakan pada dataset besar. Flag ini menonaktifkan perkiraan geometris. "
+"Jumlah maksimum proses yang digunakan dalam berbagai langkah. Kebutuhan "
+"memori puncak sekitar 1GB per thread dan resolusi gambar 2 megapiksel. "
 "Bawaan: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
 msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
 msgstr ""
-"Atur parameter ini jika Anda ingin menghasilkan rendering Google Earth (KMZ) "
-"dari orthofoto. Bawaan: %(default)s"
+"Atur parameter ini jika Anda ingin menghasilkan render PNG dari orthofoto. "
+"Bawaan: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:6
 #, python-format
 msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
 msgstr ""
-"Klasifikasikan keluaran awan titik. Anda dapat mengontrol perilaku opsi ini "
-"dengan menyesuaikan parameter --dem-*. Bawaan: %(default)s"
+"URL ke instans ClusterODM untuk mendistribusikan alur kerja split-merge di "
+"beberapa node secara paralel. Bawaan: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
 msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
+"%(default)s"
 msgstr ""
-"Pilih algoritma untuk mengekstrak titik kunci dan menghitung deskriptor. "
-"Dapat berupa salah satu dari: %(choices)s. Bawaan: %(default)s"
+"Rata-rata jumlah gambar per submodel. Saat membagi dataset besar menjadi "
+"submodel lebih kecil, gambar dikelompokkan ke dalam kluster. Nilai ini "
+"mengatur jumlah rata-rata gambar dalam setiap kluster. Bawaan: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
 #, python-format
@@ -2079,322 +2223,13 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
 msgid ""
-"Run local bundle adjustment for every image added to the reconstruction and "
-"a global adjustment every 100 images. Speeds up reconstruction for very "
-"large datasets. Default: %(default)s"
-msgstr ""
-"Jalankan penyesuaian bundel lokal untuk setiap gambar yang ditambahkan ke "
-"rekonstruksi dan penyesuaian global setiap 100 gambar. Mempercepat "
-"rekonstruksi untuk dataset yang sangat besar. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:10
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
-"Default: %(default)s"
-msgstr ""
-"Ekspor awan titik bereferensi geografis dalam format Entwine Point Tile "
-"(EPT). Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
-"simple morphological filter. Check the --dem* and --smrf* parameters for "
-"finer tuning. Default: %(default)s"
-msgstr ""
-"Gunakan tag ini untuk membuat DTM (Model Permukaan Tanah Digital, hanya "
-"permukaan tanah) menggunakan filter morfologis sederhana. Periksa parameter "
-"--dem* dan --smrf* untuk penyesuaian yang lebih detail. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-#, python-format
-msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate.Default: %(default)s"
-msgstr ""
-"Resolusi orthofoto dalam cm/piksel. Perlu diketahui bahwa nilai ini dibatasi "
-"oleh perkiraan jarak sampling tanah (GSD). Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
-msgstr ""
-"Lewatkan pembuatan model 3D lengkap. Ini bisa menghemat waktu jika Anda "
-"hanya memerlukan hasil 2D. Baku: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:14
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr ""
-"Hasilkan model bertekstur Binary glTF (GLB) dalam satu berkas. Bawaan:  "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:15
-#, python-format
-msgid ""
-"Delete heavy intermediate files to optimize disk space usage. This affects "
-"the ability to restart the pipeline from an intermediate stage, but allows "
-"datasets to be processed on machines that don't have sufficient disk space "
-"available. Default: %(default)s"
-msgstr ""
-"Hapus berkas sementara berukuran besar untuk mengoptimalkan penggunaan ruang "
-"disk. Ini akan memengaruhi kemampuan untuk memulai ulang alur dari tahap "
-"tengah, tetapi memungkinkan dataset diproses di mesin dengan ruang disk "
-"terbatas. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:16
-#, python-format
-msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
-msgstr ""
-"URL ke instans ClusterODM untuk mendistribusikan alur kerja split-merge di "
-"beberapa node secara paralel. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:17
-#, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr "Hasilkan keluaran OGC 3D Tiles. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:18
-#, python-format
-msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
-msgstr ""
-"Jalur ke berkas grup gambar yang mengatur bagaimana gambar harus dibagi "
-"menjadi beberapa grup. Berkas harus menggunakan format berikut: image_name "
-"group_name. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:19
-#, python-format
-msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
-msgstr ""
-"Lewati penyelarasan submodel dalam split-merge. Berguna jika GPS cukup "
-"akurat pada dataset yang sangat besar. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:20
-#, python-format
-msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
-msgstr ""
-"Hasilkan OBJ yang memiliki satu material dan satu berkas tekstur tunggal "
-"alih-alih beberapa. Bawaan:  %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"Parameter kemiringan Filter Morfologis Sederhana (kenaikan dibanding jarak). "
-"Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr "Jumlah maksimum simpul pada mesh keluaran. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-"Jumlah minimum fitur yang diekstraksi per gambar. Lebih banyak fitur dapat "
-"membantu menemukan lebih banyak kecocokan antar gambar, memungkinkan "
-"rekonstruksi area dengan sedikit tumpang tindih atau fitur terbatas. Namun, "
-"lebih banyak fitur juga memperlambat pemrosesan. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, fuzzy, python-format
-#| msgid ""
-#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
-#| "for all images. If your images are tagged with high precision GPS "
-#| "information (RTK), this value will be automatically set accordingly. You "
-#| "can use this option to manually set it in case the reconstruction fails. "
-#| "Lowering this option can sometimes help control bowling-effects over "
-#| "large areas. Default: %(default)s"
-msgid ""
-"Set a value in meters for the GPS Dilution of Precision (DOP) information "
-"for all images. If your images are tagged with high precision GPS "
-"information (RTK), this value will be automatically set accordingly. You can "
-"use this option to manually set it in case the reconstruction fails. "
-"Lowering this option can sometimes help control bowling-effects over large "
-"areas. Default: %(default)s"
-msgstr ""
-"Tetapkan nilai dalam meter untuk informasi Dilusi Presisi (DOP) GPS di semua "
-"gambar. Jika gambar Anda diberi tag dengan informasi GPS presisi tinggi "
-"(RTK), nilai ini akan otomatis diatur. Anda dapat menggunakan opsi ini untuk "
-"mengaturnya secara manual jika rekonstruksi gagal. Menurunkan nilai ini "
-"kadang membantu mengontrol efek lengkungan pada area luas. Bawaan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:25
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"Jalankan ulang hanya tahap ini lalu berhenti. Dapat berupa salah satu dari: "
+"Jalankan ulang pemrosesan dari tahap ini. Dapat berupa salah satu dari: "
 "%(choices)s. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:26
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-"Gunakan jala 3D penuh untuk menghitung orthofoto alih-alih jala 2.5D. Opsi "
-"ini sedikit lebih cepat dan memberikan hasil serupa di area datar. Bawaan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:27
-#, python-format
-msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
-msgstr ""
-"Kedalaman oktree yang digunakan dalam rekonstruksi mesh, tingkatkan untuk "
-"mendapatkan lebih banyak simpul, nilai yang disarankan adalah 8–12. Bawaan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:28
-#, python-format
-msgid ""
-"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
-"altitude value of the GPS EXIF data. This does not change the value of any "
-"GCPs. This can be useful for example when adjusting from ellipsoidal to "
-"orthometric height. Default: %(default)s"
-msgstr ""
-"Tetapkan offset GPS dalam meter untuk sumbu vertikal (Z) dengan "
-"menambahkannya ke nilai ketinggian data EXIF GPS. Ini tidak mengubah nilai "
-"GCP mana pun. Berguna, misalnya, untuk menyesuaikan dari tinggi elipsoidal "
-"ke tinggi ortometrik. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
-"%(default)s"
-msgstr ""
-"Buat GeoTIFF Teroptimasi Cloud alih-alih GeoTIFF biasa. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
-msgid ""
-"Set the units of the PDF report. By default the vertical units of the "
-"coordinate reference system are used. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"Tetapkan kompresi yang digunakan untuk orthofoto. Dapat berupa salah satu "
-"dari: %(choices)s. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
-msgstr ""
-"Pertahankan bidang dalam mesh yang tidak terlihat di kamera mana pun. "
-"Bawaan:  %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
-"%(default)s"
-msgstr ""
-"Aktifkan koreksi rolling shutter. Jika kamera memiliki rolling shutter dan "
-"gambar diambil saat bergerak, Anda dapat mengaktifkan opsi ini untuk "
-"meningkatkan akurasi hasil. Lihat juga --rolling-shutter-readout. Bawaan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr "Jangan gunakan akselerasi GPU, meskipun tersedia. Baku: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:34
-#, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
-msgstr ""
-"Resolusi DSM/DTM dalam cm/piksel. Perlu diketahui bahwa nilai ini dibatasi "
-"oleh perkiraan jarak sampling tanah (GSD). Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:35
-#, python-format
-msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
-msgstr ""
-"Jangan mencoba menggabungkan rekonstruksi parsial. Ini dapat terjadi jika "
-"gambar tidak memiliki tumpang tindih yang cukup atau terisolasi. Bawaan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:36
-#, python-format
-msgid ""
-"When processing multispectral datasets, automatically align the images for "
-"each band. If the images have been postprocessed and are already aligned, "
-"use this option. Default: %(default)s"
-msgstr ""
-"Saat memproses kumpulan data multispektral, secara otomatis selaraskan "
-"gambar untuk setiap pita. Gunakan opsi ini jika gambar telah diproses "
-"pascaproduksi dan sudah selaras. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:37
-#, python-format
-msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
-msgstr ""
-"Gunakan data EXIF GPS gambar untuk rekonstruksi, bahkan jika ada GCP. Opsi "
-"ini berguna jika Anda memiliki pengukuran GPS dengan presisi tinggi. Jika "
-"tidak ada GCP, opsi ini tidak berpengaruh. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:38
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr ""
-"Lewati pembuatan orthofoto. Ini dapat menghemat waktu jika Anda hanya "
-"memerlukan hasil 3D atau DEM. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:39
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
-msgstr ""
-"Hitung masker gambar secara otomatis menggunakan AI untuk menghapus langit. "
-"Eksperimental. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:40
-msgid "Copy output results to this folder after processing."
-msgstr "Salin hasil keluaran ke folder ini setelah pemrosesan."
-
-#: app/static/app/js/translations/odm_autogenerated.js:41
+#: app/static/app/js/translations/odm_autogenerated.js:10
 #, python-format
 msgid ""
 "When processing multispectral datasets, you can specify the name of the "
@@ -2405,7 +2240,46 @@ msgstr ""
 "yang akan digunakan untuk rekonstruksi. Disarankan untuk memilih pita dengan "
 "detail tajam dan fokus. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:42
+#: app/static/app/js/translations/odm_autogenerated.js:11
+#, python-format
+msgid ""
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
+msgstr ""
+"Saat memproses kumpulan data multispektral, secara otomatis selaraskan "
+"gambar untuk setiap pita. Gunakan opsi ini jika gambar telah diproses "
+"pascaproduksi dan sudah selaras. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:12
+#, python-format
+msgid ""
+"Octree depth used in the mesh reconstruction, increase to get more vertices, "
+"recommended values are 8-12. Default: %(default)s"
+msgstr ""
+"Kedalaman oktree yang digunakan dalam rekonstruksi mesh, tingkatkan untuk "
+"mendapatkan lebih banyak simpul, nilai yang disarankan adalah 8–12. Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:13
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"Akhiri pemrosesan pada tahap ini. Dapat berupa salah satu dari: %(choices)s. "
+"Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
+msgstr ""
+"Resolusi orthofoto dalam cm/piksel. Perlu diketahui bahwa nilai ini dibatasi "
+"oleh perkiraan jarak sampling tanah (GSD). Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:15
 #, python-format
 msgid ""
 "Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
@@ -2416,370 +2290,7 @@ msgstr ""
 "menggunakan filter morfologis progresif. Periksa parameter --dem* untuk "
 "penyesuaian lebih detail. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:43
-#, python-format
-msgid ""
-"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
-"filling. Starting with a radius equal to the output resolution, N different "
-"DEMs are generated with progressively bigger radius using the inverse "
-"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
-"then merged using nearest neighbor interpolation. Default: %(default)s"
-msgstr ""
-"Jumlah langkah yang digunakan untuk mengisi area dengan celah. Atur ke 0 "
-"untuk menonaktifkan pengisian celah. Dimulai dengan radius yang sama dengan "
-"resolusi keluaran, N DEM berbeda dibuat dengan radius yang semakin besar "
-"menggunakan algoritma pembobotan jarak terbalik (IDW) dan digabungkan. Celah "
-"yang tersisa kemudian digabung menggunakan interpolasi tetangga terdekat. "
-"Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:44
-#, python-format
-msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
-msgstr ""
-"Nama dataset (misalnya nama subfolder di dalam folder proyek). Bawaan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:45
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
-msgstr ""
-"Ekspor awan titik bereferensi geografis dalam format CSV. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:46
-#, python-format
-msgid ""
-"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
-"outputs should be automatically aligned to. Experimental. Default: "
-"%(default)s"
-msgstr ""
-"Jalur ke GeoTIFF DEM atau awan titik LAS/LAZ yang menjadi acuan untuk "
-"penyelarasan otomatis hasil rekonstruksi. Eksperimental. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:47
-#, python-format
-msgid ""
-"Build orthophoto overviews for faster display in programs such as QGIS. "
-"Default: %(default)s"
-msgstr ""
-"Bangun pratinjau orthofoto agar lebih cepat ditampilkan di program seperti "
-"QGIS. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:48
-#, python-format
-msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
-"%(default)s"
-msgstr ""
-"Pangkas hasil keluaran gambar secara otomatis dengan membuat buffer halus di "
-"sekitar batas dataset, diperkecil sebesar N meter. Gunakan 0 untuk "
-"menonaktifkan pemangkasan. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-#, python-format
-msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
-"%(default)s"
-msgstr ""
-"Rata-rata jumlah gambar per submodel. Saat membagi dataset besar menjadi "
-"submodel lebih kecil, gambar dikelompokkan ke dalam kluster. Nilai ini "
-"mengatur jumlah rata-rata gambar dalam setiap kluster. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:50
-#, python-format
-msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
-msgstr ""
-"Menyaring awan titik dengan mempertahankan hanya satu titik di sekitar "
-"radius N (dalam meter). Ini berguna untuk membatasi resolusi keluaran awan "
-"titik dan menghapus titik duplikat. Atur ke 0 untuk menonaktifkan sampling. "
-"Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
-msgstr ""
-"Lewatkan pembuatan laporan PDF. Ini bisa menghemat waktu jika Anda tidak "
-"membutuhkan laporan. Baku: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-"Hasilkan ubin statis untuk orthofoto dan DEM yang cocok untuk penampil "
-"seperti Leaflet atau OpenLayers. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:53
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
-msgstr ""
-"Atur parameter ini jika Anda ingin menghasilkan render PNG dari orthofoto. "
-"Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Perform image matching with the nearest N images based on image filename "
-"order. Can speed up processing of sequential images, such as those extracted "
-"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
-"disable. Default: %(default)s"
-msgstr ""
-"Lakukan pencocokan gambar dengan N gambar terdekat berdasarkan urutan nama "
-"berkas. Dapat mempercepat pemrosesan gambar berurutan, seperti yang "
-"diekstrak dari video. Diterapkan hanya pada dataset tanpa georeferensi. Atur "
-"ke 0 untuk menonaktifkan. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
-msgid "show this help message and exit"
-msgstr "tampilkan pesan bantuan ini dan keluar"
-
-#: app/static/app/js/translations/odm_autogenerated.js:56
-#, python-format
-msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"Atur jenis proyeksi kamera. Secara manual menyetel bisa membantu memperkecil "
-"distorsi geometrik. Secara baku aplikasi akan mencoba menentukan jenis lensa "
-"dari metadata gambar. Bisa dari: %(choices)s. Baku: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-"Gunakan tanda ini jika Anda memiliki berkas TKD tetapi ingin menggunakan "
-"informasi EXIF untuk referensi geo. Baku: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
-msgstr ""
-"Jalur ke folder proyek. Folder proyek Anda harus berisi subfolder untuk "
-"setiap dataset. Setiap dataset harus berisi folder \"images\"."
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"Specify the distance between camera shot locations and the outer edge of the "
-"boundary when computing the boundary with --auto-boundary. Set to 0 to "
-"automatically choose a value. Default: %(default)s"
-msgstr ""
-"Tentukan jarak antara lokasi pengambilan gambar kamera dan tepi luar batas "
-"ketika menghitung batas dengan --auto-boundary. Atur ke 0 untuk memilih "
-"nilai secara otomatis. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
-msgstr ""
-"Atur batas secara otomatis menggunakan lokasi pengambilan gambar untuk "
-"membatasi area rekonstruksi. Ini dapat membantu menghapus artefak latar "
-"belakang yang jauh (langit, lanskap latar belakang, dll). Lihat juga --"
-"boundary. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-#, python-format
-msgid ""
-"Perform image matching with the nearest images based on GPS exif data. Set "
-"to 0 to match by triangulation. Default: %(default)s"
-msgstr ""
-"Lakukan pencocokan gambar dengan gambar terdekat berdasarkan data EXIF GPS. "
-"Atur ke 0 untuk mencocokkan berdasarkan triangulasi. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
-msgstr ""
-"Hitung masker gambar secara otomatis menggunakan AI untuk menghapus latar "
-"belakang. Eksperimental. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
-msgstr ""
-"Jumlah maksimum frame yang akan diekstrak dari berkas video untuk diproses. "
-"Atur ke 0 untuk tanpa batasan. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-#, python-format
-msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"Atur kualitas ekstraksi fitur. Kualitas yang lebih tinggi menghasilkan fitur "
-"yang lebih baik, tetapi memerlukan lebih banyak memori dan waktu lebih lama. "
-"Dapat berupa salah satu dari: %(choices)s. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
-#, fuzzy, python-format
-#| msgid ""
-#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
-#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
-#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
-#| "one of: %(choices)s. Default: %(default)s"
-msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
-"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"Algoritma pencocokan, Fast Library for Approximate Nearest Neighbors atau "
-"Bag of Words. FLANN lebih lambat, tetapi lebih stabil. BOW lebih cepat, "
-"tetapi terkadang melewatkan kecocokan yang valid. BRUTEFORCE sangat lambat "
-"tapi kuat. Dapat berupa salah satu dari: %(choices)s. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:66
-#, python-format
-msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
-"%(default)s"
-msgstr ""
-"Jumlah maksimum proses yang digunakan dalam berbagai langkah. Kebutuhan "
-"memori puncak sekitar 1GB per thread dan resolusi gambar 2 megapiksel. "
-"Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:67
-#, python-format
-msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"Akhiri pemrosesan pada tahap ini. Dapat berupa salah satu dari: %(choices)s. "
-"Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:68
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
-msgstr ""
-"Parameter skalar elevasi Filter Morfologis Sederhana. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
-msgstr ""
-"Simpan awan titik yang memiliki referensi geografis dalam format Cloud "
-"Optimized Point Cloud (COPC). Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Choose what to merge in the merge step in a split dataset. By default all "
-"available outputs are merged. Options: %(choices)s. Default: %(default)s"
-msgstr ""
-"Pilih apa yang akan digabungkan pada langkah penggabungan dalam dataset "
-"terpisah. Secara default, semua keluaran yang tersedia digabungkan. Opsi: "
-"%(choices)s. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
-"%(default)s"
-msgstr ""
-"Menyaring awan titik dengan menghapus titik yang menyimpang lebih dari N "
-"deviasi standar dari rata-rata lokal. Atur ke 0 untuk menonaktifkan "
-"penyaringan. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:72
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-"Ekspor awan titik bereferensi geografis dalam format LAS. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:73
-#, python-format
-msgid ""
-"Path to the file containing the ground control points used for "
-"georeferencing. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2]Default: %(default)s"
-msgstr ""
-"Jalur ke berkas yang berisi titik kontrol tanah yang digunakan untuk "
-"georeferensi. Berkas harus menggunakan format berikut: EPSG:de> atau <+proj "
-"definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2] Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid ""
-"Computes an euclidean raster map for each DEM. The map reports the distance "
-"from each cell to the nearest NODATA value (before any hole filling takes "
-"place). This can be useful to isolate the areas that have been filled. "
-"Default: %(default)s"
-msgstr ""
-"Menghitung peta raster euclidean untuk setiap DEM. Peta melaporkan jarak "
-"dari setiap sel ke nilai NODATA terdekat (sebelum pengisian lubang "
-"dilakukan). Ini berguna untuk mengisolasi area yang telah diisi. Bawaan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid ""
-"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
-"relative to the default behavior if set to true. Ordinarily, GSD estimates "
-"are used to cap the maximum resolution of image outputs and resizes images "
-"when necessary, resulting in faster processing and lower memory usage. Since "
-"GSD is an estimate, sometimes ignoring it can result in slightly better "
-"image output quality. Never set --ignore-gsd to true unless you are positive "
-"you need it, and even then: do not use it. Default: %(default)s"
-msgstr ""
-"Abaikan Ground Sampling Distance (GSD). Jika disetel ke true, ini merupakan "
-"perubahan yang membutuhkan banyak memori dan prosesor dibandingkan perilaku "
-"default. Biasanya, perkiraan GSD digunakan untuk membatasi resolusi maksimum "
-"dari keluaran gambar dan mengubah ukuran gambar sesuai kebutuhan, "
-"menghasilkan pemrosesan yang lebih cepat serta penggunaan memori yang lebih "
-"efisien. Karena GSD hanya perkiraan, terkadang mengabaikannya dapat "
-"memberikan kualitas gambar sedikit lebih baik. Jangan pernah mengatur --"
-"ignore-gsd ke true kecuali Anda benar-benar membutuhkannya, dan bahkan dalam "
-"kasus itu: sebaiknya jangan digunakan. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
-#, python-format
-msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
-"images are taken with a rolling shutter camera. Default: %(default)s"
-msgstr ""
-"Nonaktifkan optimisasi parameter kamera selama penyesuaian bundel. Ini "
-"kadang-kadang berguna untuk meningkatkan hasil yang menunjukkan efek "
-"melengkung atau ketika gambar diambil dengan kamera rolling shutter. Bawaan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
+#: app/static/app/js/translations/odm_autogenerated.js:16
 #, fuzzy, python-format
 #| msgid ""
 #| "Skips dense reconstruction and 3D model generation. It generates an "
@@ -2795,7 +2306,119 @@ msgstr ""
 "langsung dari rekonstruksi jarang. Jika Anda hanya memerlukan orthofoto dan "
 "tidak membutuhkan model 3D penuh, aktifkan opsi ini. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:78
+#: app/static/app/js/translations/odm_autogenerated.js:17
+msgid ""
+"Permanently delete all previous results and rerun the processing pipeline."
+msgstr ""
+"Hapus secara permanen semua hasil sebelumnya dan jalankan ulang alur "
+"pemrosesan."
+
+#: app/static/app/js/translations/odm_autogenerated.js:18
+#, python-format
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
+msgstr ""
+"Gunakan data EXIF GPS gambar untuk rekonstruksi, bahkan jika ada GCP. Opsi "
+"ini berguna jika Anda memiliki pengukuran GPS dengan presisi tinggi. Jika "
+"tidak ada GCP, opsi ini tidak berpengaruh. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:19
+#, python-format
+msgid ""
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
+msgstr ""
+"Tetapkan offset GPS dalam meter untuk sumbu vertikal (Z) dengan "
+"menambahkannya ke nilai ketinggian data EXIF GPS. Ini tidak mengubah nilai "
+"GCP mana pun. Berguna, misalnya, untuk menyesuaikan dari tinggi elipsoidal "
+"ke tinggi ortometrik. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:20
+#, python-format
+msgid ""
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
+msgstr ""
+"Gunakan tanda ini jika Anda memiliki berkas TKD tetapi ingin menggunakan "
+"informasi EXIF untuk referensi geo. Baku: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:21
+#, python-format
+msgid ""
+"Perform image matching with the nearest images based on GPS exif data. Set "
+"to 0 to match by triangulation. Default: %(default)s"
+msgstr ""
+"Lakukan pencocokan gambar dengan gambar terdekat berdasarkan data EXIF GPS. "
+"Atur ke 0 untuk mencocokkan berdasarkan triangulasi. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:22
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"%(default)s"
+msgstr ""
+"Pangkas hasil keluaran gambar secara otomatis dengan membuat buffer halus di "
+"sekitar batas dataset, diperkecil sebesar N meter. Gunakan 0 untuk "
+"menonaktifkan pemangkasan. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:23
+#, python-format
+msgid ""
+"Delete heavy intermediate files to optimize disk space usage. This affects "
+"the ability to restart the pipeline from an intermediate stage, but allows "
+"datasets to be processed on machines that don't have sufficient disk space "
+"available. Default: %(default)s"
+msgstr ""
+"Hapus berkas sementara berukuran besar untuk mengoptimalkan penggunaan ruang "
+"disk. Ini akan memengaruhi kemampuan untuk memulai ulang alur dari tahap "
+"tengah, tetapi memungkinkan dataset diproses di mesin dengan ruang disk "
+"terbatas. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:24
+#, python-format
+msgid ""
+"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
+"filling. Starting with a radius equal to the output resolution, N different "
+"DEMs are generated with progressively bigger radius using the inverse "
+"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
+"then merged using nearest neighbor interpolation. Default: %(default)s"
+msgstr ""
+"Jumlah langkah yang digunakan untuk mengisi area dengan celah. Atur ke 0 "
+"untuk menonaktifkan pengisian celah. Dimulai dengan radius yang sama dengan "
+"resolusi keluaran, N DEM berbeda dibuat dengan radius yang semakin besar "
+"menggunakan algoritma pembobotan jarak terbalik (IDW) dan digabungkan. Celah "
+"yang tersisa kemudian digabung menggunakan interpolasi tetangga terdekat. "
+"Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:25
+#, python-format
+msgid ""
+"Computes an euclidean raster map for each DEM. The map reports the distance "
+"from each cell to the nearest NODATA value (before any hole filling takes "
+"place). This can be useful to isolate the areas that have been filled. "
+"Default: %(default)s"
+msgstr ""
+"Menghitung peta raster euclidean untuk setiap DEM. Peta melaporkan jarak "
+"dari setiap sel ke nilai NODATA terdekat (sebelum pengisian lubang "
+"dilakukan). Ini berguna untuk mengisolasi area yang telah diisi. Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:26
+#, python-format
+msgid ""
+"Choose what to merge in the merge step in a split dataset. By default all "
+"available outputs are merged. Options: %(choices)s. Default: %(default)s"
+msgstr ""
+"Pilih apa yang akan digabungkan pada langkah penggabungan dalam dataset "
+"terpisah. Secara default, semua keluaran yang tersedia digabungkan. Opsi: "
+"%(choices)s. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:27
 #, python-format
 msgid ""
 "Set the radiometric calibration to perform on images. When processing "
@@ -2819,49 +2442,187 @@ msgstr ""
 "sudut matahari. Dapat berupa salah satu dari: %(choices)s. Bawaan: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:79
+#: app/static/app/js/translations/odm_autogenerated.js:28
 #, python-format
 msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
-"mosaics with multiple overlapping orthophotos. Default: %(default)s"
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
 msgstr ""
-"Menghasilkan poligon di sekitar area pemangkasan yang memotong orthofoto di "
-"sepanjang tepi fitur. Poligon ini dapat berguna untuk menjahit mosaik mulus "
-"dengan beberapa orthofoto yang saling tumpang tindih. Bawaan: %(default)s"
+"Lewati normalisasi warna di semua gambar. Berguna saat memproses data "
+"radiometrik. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:80
+#: app/static/app/js/translations/odm_autogenerated.js:29
 #, python-format
 msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
+"Perform image matching with the nearest N images based on image filename "
+"order. Can speed up processing of sequential images, such as those extracted "
+"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"disable. Default: %(default)s"
 msgstr ""
-"Gunakan parameter kamera yang dihitung dari dataset lain alih-alih "
-"menghitungnya kembali. Dapat ditentukan sebagai jalur ke berkas cameras.json "
-"atau string JSON yang mewakili konten berkas cameras.json. Bawaan: "
-"%(default)s"
+"Lakukan pencocokan gambar dengan N gambar terdekat berdasarkan urutan nama "
+"berkas. Dapat mempercepat pemrosesan gambar berurutan, seperti yang "
+"diekstrak dari video. Diterapkan hanya pada dataset tanpa georeferensi. Atur "
+"ke 0 untuk menonaktifkan. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:81
+#: app/static/app/js/translations/odm_autogenerated.js:30
 #, python-format
-msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
-"%(default)s"
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
 msgstr ""
-"Parameter ambang elevasi Filter Morfologis Sederhana (meter). Bawaan: "
+"Atur parameter ini jika Anda menginginkan GeoTIFF bergaris. Bawaan: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:82
+#: app/static/app/js/translations/odm_autogenerated.js:31
 #, python-format
 msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
+msgstr ""
+"Jalur ke berkas geolokasi gambar yang berisi koordinat pusat kamera yang "
+"digunakan untuk georeferensi. Jika Anda tidak memiliki nilai yaw/pitch/roll, "
+"Anda dapat mengaturnya ke 0. Berkas harus menggunakan format berikut: EPSG:"
+"de> atau <+proj definition>image_name geo_x geo_y geo_z [yaw (derajat)] "
+"[pitch (derajat)] [roll (derajat)] [akurasi horizontal (meter)] [akurasi "
+"vertikal (meter)] Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
 "Default: %(default)s"
 msgstr ""
-"Tetapkan kompresi yang digunakan untuk orthofoto. Dapat berupa salah satu "
-"dari: %(choices)s. Bawaan: %(default)s"
+"Ekspor awan titik bereferensi geografis dalam format Entwine Point Tile "
+"(EPT). Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:83
+#: app/static/app/js/translations/odm_autogenerated.js:33
+#, python-format
+msgid ""
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+"Lewati penyelarasan submodel dalam split-merge. Berguna jika GPS cukup "
+"akurat pada dataset yang sangat besar. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:34
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"Jalankan ulang hanya tahap ini lalu berhenti. Dapat berupa salah satu dari: "
+"%(choices)s. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:35
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+"Poligon GeoJSON yang membatasi area rekonstruksi. Dapat ditentukan sebagai "
+"jalur ke berkas GeoJSON atau sebagai string JSON yang mewakili isi berkas "
+"GeoJSON. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:36
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+"Atur parameter ini jika Anda ingin menghasilkan rendering Google Earth (KMZ) "
+"dari orthofoto. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:37
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+"Buat GeoTIFF Teroptimasi Cloud alih-alih GeoTIFF biasa. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:38
+#, python-format
+msgid ""
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
+msgstr ""
+"Jumlah maksimum frame yang akan diekstrak dari berkas video untuk diproses. "
+"Atur ke 0 untuk tanpa batasan. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:39
+#, python-format
+msgid ""
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
+msgstr ""
+"Lewatkan pembuatan laporan PDF. Ini bisa menghemat waktu jika Anda tidak "
+"membutuhkan laporan. Baku: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:40
+#, python-format
+msgid ""
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
+msgstr ""
+"Lewati pembuatan orthofoto. Ini dapat menghemat waktu jika Anda hanya "
+"memerlukan hasil 3D atau DEM. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:41
+#, python-format
+msgid ""
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
+"%(default)s"
+msgstr ""
+"Menyaring awan titik dengan mempertahankan hanya satu titik di sekitar "
+"radius N (dalam meter). Ini berguna untuk membatasi resolusi keluaran awan "
+"titik dan menghapus titik duplikat. Atur ke 0 untuk menonaktifkan sampling. "
+"Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:42
+#, python-format
+msgid ""
+"Name of dataset (i.e subfolder name within project folder). Default: "
+"%(default)s"
+msgstr ""
+"Nama dataset (misalnya nama subfolder di dalam folder proyek). Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:43
+#, python-format
+msgid ""
+"Run local bundle adjustment for every image added to the reconstruction and "
+"a global adjustment every 100 images. Speeds up reconstruction for very "
+"large datasets. Default: %(default)s"
+msgstr ""
+"Jalankan penyesuaian bundel lokal untuk setiap gambar yang ditambahkan ke "
+"rekonstruksi dan penyesuaian global setiap 100 gambar. Mempercepat "
+"rekonstruksi untuk dataset yang sangat besar. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, fuzzy, python-format
+#| msgid ""
+#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
+#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
+#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
+#| "one of: %(choices)s. Default: %(default)s"
+msgid ""
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
+"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"Algoritma pencocokan, Fast Library for Approximate Nearest Neighbors atau "
+"Bag of Words. FLANN lebih lambat, tetapi lebih stabil. BOW lebih cepat, "
+"tetapi terkadang melewatkan kecocokan yang valid. BRUTEFORCE sangat lambat "
+"tapi kuat. Dapat berupa salah satu dari: %(choices)s. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
 msgid ""
 "Set point cloud quality. Higher quality generates better, denser point "
@@ -2875,72 +2636,43 @@ msgstr ""
 "pemrosesan kira-kira 4x lipat. Dapat berupa salah satu dari: %(choices)s. "
 "Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:84
+#: app/static/app/js/translations/odm_autogenerated.js:46
 #, python-format
 msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
 msgstr ""
-"Lewati normalisasi warna di semua gambar. Berguna saat memproses data "
-"radiometrik. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:85
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
-msgstr ""
-"Atur parameter ini jika Anda menginginkan GeoTIFF bergaris. Bawaan: "
+"Hasilkan model bertekstur Binary glTF (GLB) dalam satu berkas. Bawaan:  "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:86
+#: app/static/app/js/translations/odm_autogenerated.js:47
 #, python-format
 msgid ""
-"Simple Morphological Filter window radius parameter (meters). Default: "
-"%(default)s"
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
 msgstr ""
-"Parameter radius jendela Filter Morfologis Sederhana (meter). Bawaan: "
-"%(default)s"
+"Ekspor awan titik bereferensi geografis dalam format LAS. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:87
+#: app/static/app/js/translations/odm_autogenerated.js:48
 #, python-format
 msgid ""
-"Radius of the overlap between submodels in meters. After grouping images "
-"into clusters, images that are closer than this radius to a cluster are "
-"added to the cluster. This is done to ensure that neighboring submodels "
-"overlap. All imagesneed GPS information. Default: %(default)s"
+"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
+"relative to the default behavior if set to true. Ordinarily, GSD estimates "
+"are used to cap the maximum resolution of image outputs and resizes images "
+"when necessary, resulting in faster processing and lower memory usage. Since "
+"GSD is an estimate, sometimes ignoring it can result in slightly better "
+"image output quality. Never set --ignore-gsd to true unless you are positive "
+"you need it, and even then: do not use it. Default: %(default)s"
 msgstr ""
-"Radius tumpang tindih antara submodel dalam meter. Setelah mengelompokkan "
-"gambar menjadi kluster, gambar yang lebih dekat dari radius ini ke suatu "
-"kluster akan ditambahkan ke kluster tersebut. Ini dilakukan untuk memastikan "
-"submodel yang berdekatan saling tumpang tindih. Semua gambar memerlukan "
-"informasi GPS. Bawaan: %(default)s"
+"Abaikan Ground Sampling Distance (GSD). Jika disetel ke true, ini merupakan "
+"perubahan yang membutuhkan banyak memori dan prosesor dibandingkan perilaku "
+"default. Biasanya, perkiraan GSD digunakan untuk membatasi resolusi maksimum "
+"dari keluaran gambar dan mengubah ukuran gambar sesuai kebutuhan, "
+"menghasilkan pemrosesan yang lebih cepat serta penggunaan memori yang lebih "
+"efisien. Karena GSD hanya perkiraan, terkadang mengabaikannya dapat "
+"memberikan kualitas gambar sedikit lebih baik. Jangan pernah mengatur --"
+"ignore-gsd ke true kecuali Anda benar-benar membutuhkannya, dan bahkan dalam "
+"kasus itu: sebaiknya jangan digunakan. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:88
-msgid "Displays version number and exits. "
-msgstr "Tampilkan nomor versi dan keluar. "
-
-#: app/static/app/js/translations/odm_autogenerated.js:89
-#, python-format
-msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
-msgstr ""
-"Ganti waktu pembacaan rolling shutter untuk sensor kamera Anda (dalam "
-"milidetik), alih-alih menggunakan basis data pembacaan rolling shutter. "
-"Perhatikan bahwa tidak semua kamera ada dalam basis data. Atur ke 0 untuk "
-"menggunakan nilai dari basis data. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:90
-#, python-format
-msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"Jalankan ulang pemrosesan dari tahap ini. Dapat berupa salah satu dari: "
-"%(choices)s. Bawaan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:91
+#: app/static/app/js/translations/odm_autogenerated.js:49
 #, fuzzy, python-format
 #| msgid ""
 #| "Choose the structure from motion algorithm. For aerial datasets, if "
@@ -2960,25 +2692,329 @@ msgstr ""
 "saja, planar dapat jauh lebih cepat. Dapat berupa salah satu dari: "
 "%(choices)s. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:92
-msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
-msgstr ""
-"Hapus secara permanen semua hasil sebelumnya dan jalankan ulang alur "
-"pemrosesan."
+#: app/static/app/js/translations/odm_autogenerated.js:50
+msgid "Displays version number and exits. "
+msgstr "Tampilkan nomor versi dan keluar. "
 
-#: app/static/app/js/translations/odm_autogenerated.js:93
+#: app/static/app/js/translations/odm_autogenerated.js:51
 #, python-format
 msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
 msgstr ""
-"Poligon GeoJSON yang membatasi area rekonstruksi. Dapat ditentukan sebagai "
-"jalur ke berkas GeoJSON atau sebagai string JSON yang mewakili isi berkas "
-"GeoJSON. Bawaan: %(default)s"
+"Atur batas secara otomatis menggunakan lokasi pengambilan gambar untuk "
+"membatasi area rekonstruksi. Ini dapat membantu menghapus artefak latar "
+"belakang yang jauh (langit, lanskap latar belakang, dll). Lihat juga --"
+"boundary. Bawaan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:94
+#: app/static/app/js/translations/odm_autogenerated.js:52
+#, python-format
+msgid ""
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
+msgstr ""
+"Perkiraan geometris meningkatkan akurasi awan titik dengan menghitung peta "
+"kedalaman yang konsisten secara geometris, tetapi mungkin tidak dapat "
+"digunakan pada dataset besar. Flag ini menonaktifkan perkiraan geometris. "
+"Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:53
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+"Hitung masker gambar secara otomatis menggunakan AI untuk menghapus langit. "
+"Eksperimental. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+"Gunakan jala 3D penuh untuk menghitung orthofoto alih-alih jala 2.5D. Opsi "
+"ini sedikit lebih cepat dan memberikan hasil serupa di area datar. Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+"Lewatkan pembuatan model 3D lengkap. Ini bisa menghemat waktu jika Anda "
+"hanya memerlukan hasil 2D. Baku: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr "Jumlah maksimum simpul pada mesh keluaran. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:57
+#, python-format
+msgid ""
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+"Hasilkan OBJ yang memiliki satu material dan satu berkas tekstur tunggal "
+"alih-alih beberapa. Bawaan:  %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:58
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation threshold parameter (meters). Default: "
+"%(default)s"
+msgstr ""
+"Parameter ambang elevasi Filter Morfologis Sederhana (meter). Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
+msgstr ""
+"Pertahankan bidang dalam mesh yang tidak terlihat di kamera mana pun. "
+"Bawaan:  %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
+#, python-format
+msgid ""
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"%(default)s"
+msgstr ""
+"Menyaring awan titik dengan menghapus titik yang menyimpang lebih dari N "
+"deviasi standar dari rata-rata lokal. Atur ke 0 untuk menonaktifkan "
+"penyaringan. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
+msgid ""
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
+msgstr ""
+"Jumlah minimum fitur yang diekstraksi per gambar. Lebih banyak fitur dapat "
+"membantu menemukan lebih banyak kecocokan antar gambar, memungkinkan "
+"rekonstruksi area dengan sedikit tumpang tindih atau fitur terbatas. Namun, "
+"lebih banyak fitur juga memperlambat pemrosesan. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, python-format
+msgid ""
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
+msgstr ""
+"Simpan awan titik yang memiliki referensi geografis dalam format Cloud "
+"Optimized Point Cloud (COPC). Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:63
+#, python-format
+msgid ""
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
+msgstr ""
+"Radius tumpang tindih antara submodel dalam meter. Setelah mengelompokkan "
+"gambar menjadi kluster, gambar yang lebih dekat dari radius ini ke suatu "
+"kluster akan ditambahkan ke kluster tersebut. Ini dilakukan untuk memastikan "
+"submodel yang berdekatan saling tumpang tindih. Semua gambar memerlukan "
+"informasi GPS. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:64
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+"Hasilkan ubin statis untuk orthofoto dan DEM yang cocok untuk penampil "
+"seperti Leaflet atau OpenLayers. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:65
+#, python-format
+msgid ""
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
+msgstr ""
+"Pilih algoritma untuk mengekstrak titik kunci dan menghitung deskriptor. "
+"Dapat berupa salah satu dari: %(choices)s. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:66
+#, python-format
+msgid ""
+"Turn off camera parameter optimization during bundle adjustment. This can be "
+"sometimes useful for improving results that exhibit doming/bowling or when "
+"images are taken with a rolling shutter camera. Default: %(default)s"
+msgstr ""
+"Nonaktifkan optimisasi parameter kamera selama penyesuaian bundel. Ini "
+"kadang-kadang berguna untuk meningkatkan hasil yang menunjukkan efek "
+"melengkung atau ketika gambar diambil dengan kamera rolling shutter. Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Simple Morphological Filter slope parameter (rise over run). Default: "
+"%(default)s"
+msgstr ""
+"Parameter kemiringan Filter Morfologis Sederhana (kenaikan dibanding jarak). "
+"Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid ""
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"Tetapkan kompresi yang digunakan untuk orthofoto. Dapat berupa salah satu "
+"dari: %(choices)s. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
+#, python-format
+msgid ""
+"Specify the distance between camera shot locations and the outer edge of the "
+"boundary when computing the boundary with --auto-boundary. Set to 0 to "
+"automatically choose a value. Default: %(default)s"
+msgstr ""
+"Tentukan jarak antara lokasi pengambilan gambar kamera dan tepi luar batas "
+"ketika menghitung batas dengan --auto-boundary. Atur ke 0 untuk memilih "
+"nilai secara otomatis. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:70
+msgid ""
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
+msgstr ""
+"Jalur ke folder proyek. Folder proyek Anda harus berisi subfolder untuk "
+"setiap dataset. Setiap dataset harus berisi folder \"images\"."
+
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
+"outputs should be automatically aligned to. Experimental. Default: "
+"%(default)s"
+msgstr ""
+"Jalur ke GeoTIFF DEM atau awan titik LAS/LAZ yang menjadi acuan untuk "
+"penyelarasan otomatis hasil rekonstruksi. Eksperimental. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
+msgstr ""
+"Resolusi DSM/DTM dalam cm/piksel. Perlu diketahui bahwa nilai ini dibatasi "
+"oleh perkiraan jarak sampling tanah (GSD). Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
+msgstr ""
+"Gunakan parameter kamera yang dihitung dari dataset lain alih-alih "
+"menghitungnya kembali. Dapat ditentukan sebagai jalur ke berkas cameras.json "
+"atau string JSON yang mewakili konten berkas cameras.json. Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgstr ""
+"Parameter skalar elevasi Filter Morfologis Sederhana. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid ""
+"Generates a polygon around the cropping area that cuts the orthophoto around "
+"the edges of features. This polygon can be useful for stitching seamless "
+"mosaics with multiple overlapping orthophotos. Default: %(default)s"
+msgstr ""
+"Menghasilkan poligon di sekitar area pemangkasan yang memotong orthofoto di "
+"sepanjang tepi fitur. Poligon ini dapat berguna untuk menjahit mosaik mulus "
+"dengan beberapa orthofoto yang saling tumpang tindih. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+"Jangan mencoba menggabungkan rekonstruksi parsial. Ini dapat terjadi jika "
+"gambar tidak memiliki tumpang tindih yang cukup atau terisolasi. Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgstr ""
+"Ekspor awan titik bereferensi geografis dalam format CSV. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
+#, python-format
+msgid ""
+"Simple Morphological Filter window radius parameter (meters). Default: "
+"%(default)s"
+msgstr ""
+"Parameter radius jendela Filter Morfologis Sederhana (meter). Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:79
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+"Hitung masker gambar secara otomatis menggunakan AI untuk menghapus latar "
+"belakang. Eksperimental. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:80
+msgid "Copy output results to this folder after processing."
+msgstr "Salin hasil keluaran ke folder ini setelah pemrosesan."
+
+#: app/static/app/js/translations/odm_autogenerated.js:81
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"Atur kualitas ekstraksi fitur. Kualitas yang lebih tinggi menghasilkan fitur "
+"yang lebih baik, tetapi memerlukan lebih banyak memori dan waktu lebih lama. "
+"Dapat berupa salah satu dari: %(choices)s. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:82
+#, python-format
+msgid ""
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
+msgstr ""
+"Klasifikasikan keluaran awan titik. Anda dapat mengontrol perilaku opsi ini "
+"dengan menyesuaikan parameter --dem-*. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:83
+#, python-format
+msgid ""
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
+msgstr ""
+"Jalur ke berkas grup gambar yang mengatur bagaimana gambar harus dibagi "
+"menjadi beberapa grup. Berkas harus menggunakan format berikut: image_name "
+"group_name. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:84
 #, python-format
 msgid ""
 "Decimate the points before generating the DEM. 1 is no decimation (full "
@@ -2989,6 +3025,108 @@ msgstr ""
 "pengurangan (kualitas penuh). Nilai 100 mengurangi sekitar 99%% titik. "
 "Berguna untuk mempercepat pembuatan hasil DEM pada dataset yang sangat "
 "besar. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:85
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr "Jangan gunakan akselerasi GPU, meskipun tersedia. Baku: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:86
+#, python-format
+msgid ""
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
+"%(default)s"
+msgstr ""
+"Aktifkan koreksi rolling shutter. Jika kamera memiliki rolling shutter dan "
+"gambar diambil saat bergerak, Anda dapat mengaktifkan opsi ini untuk "
+"meningkatkan akurasi hasil. Lihat juga --rolling-shutter-readout. Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:87
+#, python-format
+msgid ""
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
+msgstr ""
+"Ganti waktu pembacaan rolling shutter untuk sensor kamera Anda (dalam "
+"milidetik), alih-alih menggunakan basis data pembacaan rolling shutter. "
+"Perhatikan bahwa tidak semua kamera ada dalam basis data. Atur ke 0 untuk "
+"menggunakan nilai dari basis data. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid ""
+"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
+"simple morphological filter. Check the --dem* and --smrf* parameters for "
+"finer tuning. Default: %(default)s"
+msgstr ""
+"Gunakan tag ini untuk membuat DTM (Model Permukaan Tanah Digital, hanya "
+"permukaan tanah) menggunakan filter morfologis sederhana. Periksa parameter "
+"--dem* dan --smrf* untuk penyesuaian yang lebih detail. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
+msgid "show this help message and exit"
+msgstr "tampilkan pesan bantuan ini dan keluar"
+
+#: app/static/app/js/translations/odm_autogenerated.js:90
+#, fuzzy, python-format
+#| msgid ""
+#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
+#| "for all images. If your images are tagged with high precision GPS "
+#| "information (RTK), this value will be automatically set accordingly. You "
+#| "can use this option to manually set it in case the reconstruction fails. "
+#| "Lowering this option can sometimes help control bowling-effects over "
+#| "large areas. Default: %(default)s"
+msgid ""
+"Set a value in meters for the GPS Dilution of Precision (DOP) information "
+"for all images. If your images are tagged with high precision GPS "
+"information (RTK), this value will be automatically set accordingly. You can "
+"use this option to manually set it in case the reconstruction fails. "
+"Lowering this option can sometimes help control bowling-effects over large "
+"areas. Default: %(default)s"
+msgstr ""
+"Tetapkan nilai dalam meter untuk informasi Dilusi Presisi (DOP) GPS di semua "
+"gambar. Jika gambar Anda diberi tag dengan informasi GPS presisi tinggi "
+"(RTK), nilai ini akan otomatis diatur. Anda dapat menggunakan opsi ini untuk "
+"mengaturnya secara manual jika rekonstruksi gagal. Menurunkan nilai ini "
+"kadang membantu mengontrol efek lengkungan pada area luas. Bawaan: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:91
+#, python-format
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr "Hasilkan keluaran OGC 3D Tiles. Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:92
+#, python-format
+msgid ""
+"Path to the file containing the ground control points used for "
+"georeferencing. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
+"[extra2]Default: %(default)s"
+msgstr ""
+"Jalur ke berkas yang berisi titik kontrol tanah yang digunakan untuk "
+"georeferensi. Berkas harus menggunakan format berikut: EPSG:de> atau <+proj "
+"definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
+"[extra2] Bawaan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:93
+#, fuzzy, python-format
+#| msgid ""
+#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+#| "Default: %(default)s"
+msgid ""
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"Tetapkan kompresi yang digunakan untuk orthofoto. Dapat berupa salah satu "
+"dari: %(choices)s. Bawaan: %(default)s"
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
 msgid "Compute volume, area and length measurements on Leaflet"
@@ -3387,17 +3525,6 @@ msgstr "Catatan:"
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:117
 msgid "Additional notes (optional)"
 msgstr "Catatan tambahan (opsional)"
-
-#: coreplugins/annotate/public/Popup.jsx:248
-#: coreplugins/annotate/public/Popup.jsx:281
-#: coreplugins/annotate/public/Popup.jsx:313
-#: coreplugins/annotate/public/Popup.jsx:366
-#: coreplugins/annotate/public/Popup.jsx:407
-#: coreplugins/annotate/public/Popup.jsx:565
-#: coreplugins/measure/public/MeasurePopup.jsx:146
-#, python-format
-msgid "Invalid response: %(error)s"
-msgstr "Respons tidak valid: %(error)s"
 
 #: coreplugins/annotate/public/Popup.jsx:274
 #, fuzzy
@@ -4082,6 +4209,17 @@ msgstr "Deteksi"
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:204
 msgid "Count:"
 msgstr "Jumlah:"
+
+#~ msgid "Show Model"
+#~ msgstr "Tampilkan Model"
+
+#, python-format
+#~ msgid ""
+#~ "Build orthophoto overviews for faster display in programs such as QGIS. "
+#~ "Default: %(default)s"
+#~ msgstr ""
+#~ "Bangun pratinjau orthofoto agar lebih cepat ditampilkan di program "
+#~ "seperti QGIS. Bawaan: %(default)s"
 
 #, python-format
 #~ msgid "Not a proper zipped shapefile: %(file)s"
