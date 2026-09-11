@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-04 19:07+0000\n"
-"PO-Revision-Date: 2026-08-18 15:48+0000\n"
-"Last-Translator: GospoGied <student_pwr@poczta.fm>\n"
+"PO-Revision-Date: 2026-09-11 10:57+0000\n"
+"Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "pl/>\n"
 "Language: pl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -108,15 +108,15 @@ msgid "Size"
 msgstr "Rozmiar"
 
 #: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
-#, fuzzy
-#| msgid "Cannot load media."
 msgid "Cannot load splats renderer"
-msgstr "Nie można wczytać mediów."
+msgstr "Nie udało się wczytać renderera dla modelu splats"
 
 #: app/static/app/js/ModelView.jsx:818
 msgid ""
 "Could not load splats. This task doesn't seem to have a valid splats file."
 msgstr ""
+"Nie można wczytać splats. Wygląda na to, że w zadaniu brak kompatybilnego "
+"pliku splats."
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
@@ -135,13 +135,11 @@ msgstr "Model teksturowany"
 #: app/static/app/js/classes/AssetDownloads.js:63
 #: app/static/app/js/components/TaskListItem.jsx:866
 msgid "Splats"
-msgstr ""
+msgstr "Splats"
 
 #: app/static/app/js/ModelView.jsx:981
-#, fuzzy
-#| msgid "Loading..."
 msgid "Loading splats..."
-msgstr "Wczytywanie..."
+msgstr "Wczytywanie splats..."
 
 #: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
@@ -1689,7 +1687,7 @@ msgstr "Rosnąco"
 
 #: app/static/app/js/components/SplatsDialog.jsx:137
 msgid "Please upload a single file."
-msgstr ""
+msgstr "Proszę wgrać pojedynczy plik."
 
 #: app/static/app/js/components/SplatsDialog.jsx:330
 #: coreplugins/annotate/public/Popup.jsx:248
@@ -1704,27 +1702,22 @@ msgid "Invalid response: %(error)s"
 msgstr "Nieprawidłowa odpowiedź: %(error)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:333
-#, fuzzy
-#| msgid "Cannot start processing task."
 msgid "Cannot export training data."
-msgstr "Nie można uruchomić zadania przetwarzającego."
+msgstr "Nie udało się eksportować danych uczących."
 
 #: app/static/app/js/components/SplatsDialog.jsx:338
-#, fuzzy
-#| msgid "Are you sure you want to delete this?"
 msgid "Are you sure you want to delete the splats model?"
-msgstr "Jesteś pewien, że chcesz to usunąć?"
+msgstr "Jesteś pewien, że chcesz to usunąć model splats?"
 
 #: app/static/app/js/components/SplatsDialog.jsx:352
-#, fuzzy
-#| msgid "Cannot delete file."
 msgid "Cannot delete splats model."
-msgstr "Nie można usunąć pliku."
+msgstr "Nie można usunąć modelu splats."
 
 #: app/static/app/js/components/SplatsDialog.jsx:389
 msgid ""
 "This task is missing camera information. Training data cannot be downloaded."
 msgstr ""
+"W zadaniu brakuje informacji o kamerze. Dane trenowania nie mogą być pobrane."
 
 #: app/static/app/js/components/SplatsDialog.jsx:394
 msgid ""
@@ -1732,12 +1725,17 @@ msgid ""
 "point cloud. Some training software might not work properly without one. "
 "Uploading a splats model requires a point cloud."
 msgstr ""
+"W tym zadaniu brakuje chmury punktów. Zbiór uczący będzie zawierał pustą "
+"chmurę punktów. Niektóre oprogramowanie uczące może nie działać poprawnie. "
+"Wgranie modelu splats wymaga chmury punktów."
 
 #: app/static/app/js/components/SplatsDialog.jsx:399
 msgid ""
 "This task is missing camera information and a point cloud. No splats can be "
 "downloaded or uploaded."
 msgstr ""
+"W tym zadaniu brakuje informacji o kamerze i chmury punktów. Nie da się "
+"wgrać ani pobrać żadnego modelu splats."
 
 #: app/static/app/js/components/SplatsDialog.jsx:404
 msgid ""
@@ -1745,63 +1743,61 @@ msgid ""
 "download. After extracting the .zip file, copy the original images into the "
 "\"images\" folder before training."
 msgstr ""
+"W tym zadaniu brakuje zdjęć, więc nie znajdą się w zbiorze do pobrania. Po "
+"rozpakowaniu pliku ZIP, skopiuj oryginalne obrazy źródłowe do katalogu "
+"\"images\" zanim rozpoczniesz uczenie."
 
 #: app/static/app/js/components/SplatsDialog.jsx:409
 msgid ""
 "Most images in this dataset are nadir. Splats typically require obliques and/"
 "or orbits for good results."
 msgstr ""
+"Większość obrazów w tym zbiorze danych są wykonane w nadirze (rzut pionowy). "
+"Splats zazwyczaj wymagają zdjęć ukośnych i/lub orbitalnych."
 
 #: app/static/app/js/components/SplatsDialog.jsx:421
 msgid "A splats model has been added."
-msgstr ""
+msgstr "Model splats został dodany."
 
 #: app/static/app/js/components/SplatsDialog.jsx:424
-#, fuzzy
-#| msgid "show in 3D"
 msgid "View in 3D"
-msgstr "pokaż w 3D"
+msgstr "Pokaż w 3D"
 
 #: app/static/app/js/components/SplatsDialog.jsx:428
-#, fuzzy
-#| msgid "Upload"
 msgid "Upload New"
-msgstr "Prześlij"
+msgstr "Prześlij Nowy"
 
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Downloading…"
 msgid "Downloading..."
 msgstr "Pobieranie…"
 
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Download Image"
 msgid "Download Training Data"
-msgstr "Pobierz obraz"
+msgstr "Pobierz Dane Uczące"
 
 #: app/static/app/js/components/SplatsDialog.jsx:497
 #, python-format
 msgid "Train a model using %(link_start)s compatible software %(link_end)s"
 msgstr ""
+"Wytrenuj model używając %(link_start)s kompatybilnego oprogramowania%"
+"(link_end)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:507
 msgid "You don't have permission to upload a splats model to this task."
 msgstr ""
+"Nie masz wystarczających uprawnień by wgrać model splats do tego zadania."
 
 #: app/static/app/js/components/SplatsDialog.jsx:516
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Splats Model"
-msgstr "Prześlij plik"
+msgstr "Prześlij Model Splats"
 
 #: app/static/app/js/components/SplatsDialog.jsx:560
 msgid "Gaussian Splats"
-msgstr ""
+msgstr "Gaussian Splats"
 
 #: app/static/app/js/components/SplatsDialog.jsx:566
 msgid "Processing splats model... this might take a bit"
-msgstr ""
+msgstr "Przetwarzanie modelu splats... więc może to zająć trochę czasu"
 
 #: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
