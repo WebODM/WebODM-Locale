@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-04 19:07+0000\n"
-"PO-Revision-Date: 2026-09-03 17:51+0000\n"
+"PO-Revision-Date: 2026-09-16 19:51+0000\n"
 "Last-Translator: \"Luca P.\" <madeinupa@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/webodm/react-ui/"
 "it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -116,6 +116,7 @@ msgstr "Impossibile caricare i supporti."
 msgid ""
 "Could not load splats. This task doesn't seem to have a valid splats file."
 msgstr ""
+"Splats non caricati. Questa attività non sembra avere file splats validi."
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
@@ -134,7 +135,7 @@ msgstr "Modello con texture"
 #: app/static/app/js/classes/AssetDownloads.js:63
 #: app/static/app/js/components/TaskListItem.jsx:866
 msgid "Splats"
-msgstr ""
+msgstr "Splats"
 
 #: app/static/app/js/ModelView.jsx:981
 #, fuzzy
@@ -1697,7 +1698,7 @@ msgstr "Ascendente"
 
 #: app/static/app/js/components/SplatsDialog.jsx:137
 msgid "Please upload a single file."
-msgstr ""
+msgstr "Caricare un singolo file."
 
 #: app/static/app/js/components/SplatsDialog.jsx:330
 #: coreplugins/annotate/public/Popup.jsx:248
@@ -1733,6 +1734,8 @@ msgstr "Impossibile eliminare il file."
 msgid ""
 "This task is missing camera information. Training data cannot be downloaded."
 msgstr ""
+"Informazioni fotocamera mancanti in questa attività. Impossibile caricare "
+"dati di training."
 
 #: app/static/app/js/components/SplatsDialog.jsx:394
 msgid ""
@@ -1740,6 +1743,9 @@ msgid ""
 "point cloud. Some training software might not work properly without one. "
 "Uploading a splats model requires a point cloud."
 msgstr ""
+"Point cloud mancante in questa attività. I dati di training includeranno un "
+"point cloud vuoto. Alcuni programmi di training potrebbero non funzionare "
+"correttamente senza. Caricare un modello splats richiede una point cloud."
 
 #: app/static/app/js/components/SplatsDialog.jsx:399
 msgid ""
