@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-04 19:07+0000\n"
+"POT-Creation-Date: 2026-10-09 17:27+0000\n"
 "PO-Revision-Date: 2026-05-04 03:09+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -367,24 +367,24 @@ msgstr ""
 msgid "Invalid EPSG code"
 msgstr "Kode EPSG tidak valid: %(value)s"
 
-#: app/api/overlays.py:280 app/api/overlays.py:287
+#: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr ""
 
-#: app/api/projects.py:129
+#: app/api/projects.py:147
 msgid "Cannot duplicate project"
 msgstr "Tidak dapat menduplikasi proyek"
 
-#: app/api/projects.py:225
+#: app/api/projects.py:243
 msgid "Invalid user in permissions list"
 msgstr "Pengguna tidak valid dalam daftar izin"
 
-#: app/api/projects.py:227
+#: app/api/projects.py:245
 msgid "Invalid group in permissions list"
 msgstr "Grup tidak valid dalam daftar izin"
 
-#: app/api/projects.py:229
+#: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr "Izin tidak valid"
 
@@ -648,7 +648,7 @@ msgid "Plugin name"
 msgstr "Nama plugin"
 
 #: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:249 app/models/theme.py:18
+#: app/models/task.py:248 app/models/theme.py:18
 msgid "Name"
 msgstr "Nama"
 
@@ -727,15 +727,15 @@ msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 "Opsi yang mendefinisikan preset ini (formatnya sama seperti pada opsi Tugas)."
 
-#: app/models/preset.py:11 app/models/task.py:255
+#: app/models/preset.py:11 app/models/task.py:254
 msgid "Options"
 msgstr "Opsi"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:263
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
 msgid "Creation date"
 msgstr "Tanggal pembuatan"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:263
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
 msgid "Created at"
 msgstr "Dibuat pada"
 
@@ -813,7 +813,7 @@ msgstr "Sedang dihapus"
 msgid "Project tags"
 msgstr "Tag proyek"
 
-#: app/models/project.py:32 app/models/task.py:289
+#: app/models/project.py:32 app/models/task.py:288
 msgid "Tags"
 msgstr "Tag"
 
@@ -821,7 +821,7 @@ msgstr "Tag"
 msgid "A flag indicating whether this project is available to the public"
 msgstr "Penanda yang menunjukkan apakah proyek ini tersedia untuk publik"
 
-#: app/models/project.py:33 app/models/task.py:266
+#: app/models/project.py:33 app/models/task.py:265
 msgid "Public"
 msgstr "Publik"
 
@@ -829,7 +829,7 @@ msgstr "Publik"
 msgid "A flag indicating whether this public project can be edited"
 msgstr "Penanda yang menunjukkan apakah proyek publik ini dapat diedit"
 
-#: app/models/project.py:34 app/models/task.py:267
+#: app/models/project.py:34 app/models/task.py:266
 msgid "Public Edit"
 msgstr "Edit Publik"
 
@@ -841,12 +841,12 @@ msgstr "Pengenal publik proyek"
 msgid "Public Id"
 msgstr "Id Publik"
 
-#: app/models/project.py:108 app/models/task.py:487
+#: app/models/project.py:108 app/models/task.py:486
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "Salinan dari %(task)s"
 
-#: app/models/project.py:141 app/models/task.py:248
+#: app/models/project.py:141 app/models/task.py:247
 #: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "Proyek"
@@ -924,27 +924,27 @@ msgstr "Aplikasi"
 msgid "Settings"
 msgstr "Pengaturan"
 
-#: app/models/task.py:245
+#: app/models/task.py:244
 msgid "Id"
 msgstr "Id"
 
-#: app/models/task.py:247
+#: app/models/task.py:246
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr "Pengenal tugas (sebagaimana dikembalikan oleh API NodeODM)"
 
-#: app/models/task.py:247
+#: app/models/task.py:246
 msgid "UUID"
 msgstr "UUID"
 
-#: app/models/task.py:248
+#: app/models/task.py:247
 msgid "Project that this task belongs to"
 msgstr "Proyek tempat tugas ini berada"
 
-#: app/models/task.py:249
+#: app/models/task.py:248
 msgid "A label for the task"
 msgstr "Label untuk tugas"
 
-#: app/models/task.py:250
+#: app/models/task.py:249
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
@@ -952,11 +952,11 @@ msgstr ""
 "Jumlah milidetik yang telah berlalu sejak awal tugas ini (-1 menunjukkan "
 "bahwa tidak ada informasi yang tersedia)"
 
-#: app/models/task.py:250
+#: app/models/task.py:249
 msgid "Processing Time"
 msgstr "Waktu Pemrosesan"
 
-#: app/models/task.py:251
+#: app/models/task.py:250
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
@@ -964,11 +964,11 @@ msgstr ""
 "Node pemrosesan yang ditetapkan untuk tugas ini (atau null jika tugas ini "
 "belum dikaitkan)"
 
-#: app/models/task.py:251 app/views/app.py:142 nodeodm/models.py:37
+#: app/models/task.py:250 app/views/app.py:149 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "Node Pemrosesan"
 
-#: app/models/task.py:252
+#: app/models/task.py:251
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
@@ -976,63 +976,63 @@ msgstr ""
 "Penanda yang menunjukkan apakah tugas ini harus secara otomatis ditetapkan "
 "ke node pemrosesan"
 
-#: app/models/task.py:252
+#: app/models/task.py:251
 msgid "Auto Processing Node"
 msgstr "Node Pemrosesan Otomatis"
 
-#: app/models/task.py:253
+#: app/models/task.py:252
 msgid "Current status of the task"
 msgstr "Status tugas saat ini"
 
-#: app/models/task.py:253 coreplugins/task-manager/templates/index.html:39
+#: app/models/task.py:252 coreplugins/task-manager/templates/index.html:39
 msgid "Status"
 msgstr "Status"
 
-#: app/models/task.py:254
+#: app/models/task.py:253
 msgid "The last processing error received"
 msgstr "Kesalahan pemrosesan terakhir yang diterima"
 
-#: app/models/task.py:254
+#: app/models/task.py:253
 msgid "Last Error"
 msgstr "Kesalahan Terakhir"
 
-#: app/models/task.py:255
+#: app/models/task.py:254
 msgid "Options that are being used to process this task"
 msgstr "Opsi yang sedang digunakan untuk memproses tugas ini"
 
-#: app/models/task.py:256
+#: app/models/task.py:255
 msgid "List of available assets to download"
 msgstr "Daftar aset yang tersedia untuk diunduh"
 
-#: app/models/task.py:256
+#: app/models/task.py:255
 msgid "Available Assets"
 msgstr "Aset Tersedia"
 
-#: app/models/task.py:258
+#: app/models/task.py:257
 msgid "Extent of the orthophoto"
 msgstr "Cakupan orthophoto"
 
-#: app/models/task.py:258
+#: app/models/task.py:257
 msgid "Orthophoto Extent"
 msgstr "Cakupan Orthophoto"
 
-#: app/models/task.py:259
+#: app/models/task.py:258
 msgid "Extent of the DSM"
 msgstr "Cakupan DSM"
 
-#: app/models/task.py:259
+#: app/models/task.py:258
 msgid "DSM Extent"
 msgstr "Cakupan DSM"
 
-#: app/models/task.py:260
+#: app/models/task.py:259
 msgid "Extent of the DTM"
 msgstr "Cakupan DTM"
 
-#: app/models/task.py:260
+#: app/models/task.py:259
 msgid "DTM Extent"
 msgstr "Cakupan DTM"
 
-#: app/models/task.py:264
+#: app/models/task.py:263
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
@@ -1040,19 +1040,19 @@ msgstr ""
 "Tindakan yang diminta untuk dilakukan pada tugas. Tindakan yang dipilih akan "
 "dilakukan oleh worker pada iterasi berikutnya."
 
-#: app/models/task.py:264
+#: app/models/task.py:263
 msgid "Pending Action"
 msgstr "Tindakan Tertunda"
 
-#: app/models/task.py:266
+#: app/models/task.py:265
 msgid "A flag indicating whether this task is available to the public"
 msgstr "Penanda yang menunjukkan apakah tugas ini tersedia untuk publik"
 
-#: app/models/task.py:267
+#: app/models/task.py:266
 msgid "A flag indicating whether this public task can be edited"
 msgstr "Penanda yang menunjukkan apakah tugas publik ini dapat diedit"
 
-#: app/models/task.py:269
+#: app/models/task.py:268
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
@@ -1062,11 +1062,11 @@ msgstr ""
 "telah / akan diubah ukurannya ke ukuran yang ditentukan di sini sebelum "
 "pemrosesan."
 
-#: app/models/task.py:269
+#: app/models/task.py:268
 msgid "Resize To"
 msgstr "Ubah Ukuran Menjadi"
 
-#: app/models/task.py:272
+#: app/models/task.py:271
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
@@ -1074,22 +1074,22 @@ msgstr ""
 "Nilai antara 0 dan 1 yang menunjukkan progres pengunggahan file tugas ini ke "
 "node pemrosesan"
 
-#: app/models/task.py:273
+#: app/models/task.py:272
 msgid "Upload Progress"
 msgstr "Progres Unggah"
 
-#: app/models/task.py:276
+#: app/models/task.py:275
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr ""
 "Nilai antara 0 dan 1 yang menunjukkan progres pengubahan ukuran gambar tugas "
 "ini"
 
-#: app/models/task.py:277
+#: app/models/task.py:276
 msgid "Resize Progress"
 msgstr "Progres Ubah Ukuran"
 
-#: app/models/task.py:280
+#: app/models/task.py:279
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
@@ -1097,27 +1097,27 @@ msgstr ""
 "Nilai antara 0 dan 1 yang menunjukkan progres berjalan (perkiraan) dari "
 "tugas ini"
 
-#: app/models/task.py:281
+#: app/models/task.py:280
 msgid "Running Progress"
 msgstr "Progres Berjalan"
 
-#: app/models/task.py:283
+#: app/models/task.py:282
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr "URL asal impor tugas ini (hanya untuk tugas yang diimpor)"
 
-#: app/models/task.py:283
+#: app/models/task.py:282
 msgid "Import URL"
 msgstr "URL Impor"
 
-#: app/models/task.py:284
+#: app/models/task.py:283
 msgid "Number of images associated with this task"
 msgstr "Jumlah gambar yang terkait dengan tugas ini"
 
-#: app/models/task.py:284
+#: app/models/task.py:283
 msgid "Images Count"
 msgstr "Jumlah Gambar"
 
-#: app/models/task.py:285
+#: app/models/task.py:284
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
@@ -1125,11 +1125,11 @@ msgstr ""
 "Penanda yang menunjukkan apakah tugas ini saat ini sedang menunggu informasi "
 "atau file untuk diunggah sebelum dipertimbangkan untuk diproses."
 
-#: app/models/task.py:285
+#: app/models/task.py:284
 msgid "Partial"
 msgstr "Parsial"
 
-#: app/models/task.py:286
+#: app/models/task.py:285
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
@@ -1137,15 +1137,15 @@ msgstr ""
 "Informasi scene potree yang diserialkan yang digunakan untuk menyimpan/"
 "memuat pengukuran dan sudut pandang kamera"
 
-#: app/models/task.py:286
+#: app/models/task.py:285
 msgid "Potree Scene"
 msgstr "Scene Potree"
 
-#: app/models/task.py:287
+#: app/models/task.py:286
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "Kode EPSG dari dataset (jika memiliki georeferensi)"
 
-#: app/models/task.py:288
+#: app/models/task.py:287
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
@@ -1153,84 +1153,84 @@ msgstr ""
 "Definisi WKT dari dataset (jika memiliki georeferensi dan kode EPSG tidak "
 "tersedia)"
 
-#: app/models/task.py:289
+#: app/models/task.py:288
 msgid "Task tags"
 msgstr "Tag tugas"
 
-#: app/models/task.py:290
+#: app/models/task.py:289
 msgid "List of orthophoto bands"
 msgstr "Daftar band orthophoto"
 
-#: app/models/task.py:290
+#: app/models/task.py:289
 msgid "Orthophoto Bands"
 msgstr "Band Orthophoto"
 
-#: app/models/task.py:291
+#: app/models/task.py:290
 msgid "Size of the task on disk in megabytes"
 msgstr "Ukuran tugas di disk dalam megabita"
 
-#: app/models/task.py:291 coreplugins/task-manager/templates/index.html:41
+#: app/models/task.py:290 coreplugins/task-manager/templates/index.html:41
 msgid "Size"
 msgstr "Ukuran"
 
-#: app/models/task.py:292
+#: app/models/task.py:291
 msgid "A flag indicating whether this task was compacted"
 msgstr "Penanda yang menunjukkan apakah tugas ini dipadatkan"
 
-#: app/models/task.py:292
+#: app/models/task.py:291
 msgid "Compact"
 msgstr "Kompak"
 
-#: app/models/task.py:293
+#: app/models/task.py:292
 msgid "Polygon defining the crop area of this task"
 msgstr "Poligon yang mendefinisikan area crop dari tugas ini"
 
-#: app/models/task.py:293
+#: app/models/task.py:292
 msgid "Crop Polygon"
 msgstr "Poligon Crop"
 
-#: app/models/task.py:294
+#: app/models/task.py:293
 msgid "List of media files associated with this task"
 msgstr "Daftar file media yang terkait dengan tugas ini"
 
-#: app/models/task.py:294
+#: app/models/task.py:293
 msgid "Media"
 msgstr "Media"
 
-#: app/models/task.py:298 coreplugins/task-manager/templates/index.html:38
+#: app/models/task.py:297 coreplugins/task-manager/templates/index.html:38
 msgid "Task"
 msgstr "Tugas"
 
-#: app/models/task.py:299
+#: app/models/task.py:298
 msgid "Tasks"
 msgstr "Tugas-tugas"
 
-#: app/models/task.py:310
+#: app/models/task.py:309
 msgid "unnamed"
 msgstr "tanpa nama"
 
-#: app/models/task.py:619
+#: app/models/task.py:618
 msgid "Importing assets..."
 msgstr "Mengimpor aset..."
 
-#: app/models/task.py:674 app/models/task.py:953
+#: app/models/task.py:673 app/models/task.py:952
 msgid "Invalid zip file"
 msgstr "File zip tidak valid"
 
-#: app/models/task.py:676
+#: app/models/task.py:675
 msgid "Unsupported compression method"
 msgstr "Metode kompresi tidak didukung"
 
-#: app/models/task.py:771
+#: app/models/task.py:770
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "Kesalahan koneksi: %(error)s"
 
-#: app/models/task.py:851
+#: app/models/task.py:850
 msgid "Cannot restart a task that has no processing node"
 msgstr "Tidak dapat memulai ulang tugas yang tidak memiliki node pemrosesan"
 
-#: app/models/task.py:1056
+#: app/models/task.py:1055
 msgid "Done!"
 msgstr "Selesai!"
 
@@ -1872,7 +1872,7 @@ msgstr "%(used)s dari %(total)s telah digunakan"
 msgid "Logout"
 msgstr "Keluar"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:59
+#: app/templates/app/logged_in_base.html:57 app/views/app.py:60
 msgid "Dashboard"
 msgstr "Dasbor"
 
@@ -1900,7 +1900,7 @@ msgstr "Grup"
 msgid "Brand"
 msgstr "Merek"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:132
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:133
 msgid "About"
 msgstr "Tentang"
 
@@ -2093,24 +2093,31 @@ msgstr ""
 msgid "Monitor project storage to quickly compact or delete tasks."
 msgstr ""
 
-#: app/views/app.py:57
+#: app/views/app.py:58
 msgid "First Project"
 msgstr "Proyek Pertama"
 
-#: app/views/app.py:73
+#: app/views/app.py:74
 msgid "Map"
 msgstr "Peta"
 
-#: app/views/app.py:107
+#: app/views/app.py:108
 msgid "3D Model Display"
 msgstr "Tampilan Model 3D"
 
-#: app/views/app.py:138
+#: app/views/app.py:141
+#, python-format
+msgid ""
+"%(node)s is deprecated might stop working in a future version. See the "
+"%(link_start)s migration guide %(link_end)s to upgrade."
+msgstr ""
+
+#: app/views/app.py:145
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s tampaknya sedang offline."
 
-#: app/views/app.py:176
+#: app/views/app.py:183
 msgid "Welcome"
 msgstr "Selamat datang"
 

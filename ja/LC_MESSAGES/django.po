@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-04 19:07+0000\n"
+"POT-Creation-Date: 2026-10-09 17:27+0000\n"
 "PO-Revision-Date: 2026-03-05 19:42+0000\n"
 "Last-Translator: Kunihiro Yukawa <mx.vaio@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -356,26 +356,26 @@ msgstr ""
 msgid "Invalid EPSG code"
 msgstr "無効な EPSG コード: %(value)s"
 
-#: app/api/overlays.py:280 app/api/overlays.py:287
+#: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr ""
 
-#: app/api/projects.py:129
+#: app/api/projects.py:147
 msgid "Cannot duplicate project"
 msgstr "プロジェクトを複製できません"
 
-#: app/api/projects.py:225
+#: app/api/projects.py:243
 msgid "Invalid user in permissions list"
 msgstr "権限リストの無効なユーザー"
 
-#: app/api/projects.py:227
+#: app/api/projects.py:245
 #, fuzzy
 #| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
 msgstr "権限リストの無効なユーザー"
 
-#: app/api/projects.py:229
+#: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr "無効な権限"
 
@@ -657,7 +657,7 @@ msgid "Plugin name"
 msgstr "プラグイン名"
 
 #: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:249 app/models/theme.py:18
+#: app/models/task.py:248 app/models/theme.py:18
 msgid "Name"
 msgstr "名称"
 
@@ -735,15 +735,15 @@ msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 "このプリセットを定義するオプション(タスクオプションと同様のフォーマット)。"
 
-#: app/models/preset.py:11 app/models/task.py:255
+#: app/models/preset.py:11 app/models/task.py:254
 msgid "Options"
 msgstr "設定"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:263
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
 msgid "Creation date"
 msgstr "作成日"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:263
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
 msgid "Created at"
 msgstr "作成者"
 
@@ -824,7 +824,7 @@ msgstr "削除しています"
 msgid "Project tags"
 msgstr "プロジェクト"
 
-#: app/models/project.py:32 app/models/task.py:289
+#: app/models/project.py:32 app/models/task.py:288
 msgid "Tags"
 msgstr ""
 
@@ -834,7 +834,7 @@ msgstr ""
 msgid "A flag indicating whether this project is available to the public"
 msgstr "このタスクが公開可能か示すフラグ"
 
-#: app/models/project.py:33 app/models/task.py:266
+#: app/models/project.py:33 app/models/task.py:265
 msgid "Public"
 msgstr "公開"
 
@@ -844,7 +844,7 @@ msgstr "公開"
 msgid "A flag indicating whether this public project can be edited"
 msgstr "このタスクが公開可能か示すフラグ"
 
-#: app/models/project.py:34 app/models/task.py:267
+#: app/models/project.py:34 app/models/task.py:266
 #, fuzzy
 #| msgid "Public"
 msgid "Public Edit"
@@ -862,12 +862,12 @@ msgstr "プロジェクトのより詳細な説明"
 msgid "Public Id"
 msgstr "公開"
 
-#: app/models/project.py:108 app/models/task.py:487
+#: app/models/project.py:108 app/models/task.py:486
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "%(task)sをコピー"
 
-#: app/models/project.py:141 app/models/task.py:248
+#: app/models/project.py:141 app/models/task.py:247
 #: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "プロジェクト"
@@ -951,37 +951,37 @@ msgstr "アプリケーション"
 msgid "Settings"
 msgstr "設定"
 
-#: app/models/task.py:245
+#: app/models/task.py:244
 msgid "Id"
 msgstr "ID"
 
-#: app/models/task.py:247
+#: app/models/task.py:246
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr "タスクの識別子 (NodeODM APIの戻り値と同様)"
 
-#: app/models/task.py:247
+#: app/models/task.py:246
 msgid "UUID"
 msgstr "UUID"
 
-#: app/models/task.py:248
+#: app/models/task.py:247
 msgid "Project that this task belongs to"
 msgstr "このタスクが属するプロジェクト"
 
-#: app/models/task.py:249
+#: app/models/task.py:248
 msgid "A label for the task"
 msgstr "タスクのラベル"
 
-#: app/models/task.py:250
+#: app/models/task.py:249
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
 msgstr "タスク開始から経過したミリ秒 (-1 は利用可能な情報が無いことを示します)"
 
-#: app/models/task.py:250
+#: app/models/task.py:249
 msgid "Processing Time"
 msgstr "処理時間"
 
-#: app/models/task.py:251
+#: app/models/task.py:250
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
@@ -989,77 +989,77 @@ msgstr ""
 "このタスクに割り当てられたプロセシングノード（このタスクがまだ関連付けられて"
 "いない場合はnull）"
 
-#: app/models/task.py:251 app/views/app.py:142 nodeodm/models.py:37
+#: app/models/task.py:250 app/views/app.py:149 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr "処理中のノード"
 
-#: app/models/task.py:252
+#: app/models/task.py:251
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
 msgstr "このタスクをプロセシングノードに自動で割り当てる必要があるか示すフラグ"
 
-#: app/models/task.py:252
+#: app/models/task.py:251
 msgid "Auto Processing Node"
 msgstr "自動処理中のノード"
 
-#: app/models/task.py:253
+#: app/models/task.py:252
 msgid "Current status of the task"
 msgstr "タスクの現在の状態"
 
-#: app/models/task.py:253 coreplugins/task-manager/templates/index.html:39
+#: app/models/task.py:252 coreplugins/task-manager/templates/index.html:39
 msgid "Status"
 msgstr "状態"
 
-#: app/models/task.py:254
+#: app/models/task.py:253
 msgid "The last processing error received"
 msgstr "最後に受け取った処理エラー"
 
-#: app/models/task.py:254
+#: app/models/task.py:253
 msgid "Last Error"
 msgstr "最新のエラー"
 
-#: app/models/task.py:255
+#: app/models/task.py:254
 msgid "Options that are being used to process this task"
 msgstr "このタスク処理に使われているオプション"
 
-#: app/models/task.py:256
+#: app/models/task.py:255
 msgid "List of available assets to download"
 msgstr "ダウンロード可能なアセットのリスト"
 
-#: app/models/task.py:256
+#: app/models/task.py:255
 msgid "Available Assets"
 msgstr "使用可能なアセット"
 
-#: app/models/task.py:258
+#: app/models/task.py:257
 msgid "Extent of the orthophoto"
 msgstr "オルソフォトの範囲"
 
-#: app/models/task.py:258
+#: app/models/task.py:257
 msgid "Orthophoto Extent"
 msgstr "オルソフォト範囲"
 
-#: app/models/task.py:259
+#: app/models/task.py:258
 #, fuzzy
 #| msgid "Extent of the orthophoto"
 msgid "Extent of the DSM"
 msgstr "オルソフォトの範囲"
 
-#: app/models/task.py:259
+#: app/models/task.py:258
 msgid "DSM Extent"
 msgstr "DSM(数値表層モデル)範囲"
 
-#: app/models/task.py:260
+#: app/models/task.py:259
 #, fuzzy
 #| msgid "Extent of the orthophoto"
 msgid "Extent of the DTM"
 msgstr "オルソフォトの範囲"
 
-#: app/models/task.py:260
+#: app/models/task.py:259
 msgid "DTM Extent"
 msgstr "DTM(数値地形モデル)範囲"
 
-#: app/models/task.py:264
+#: app/models/task.py:263
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
@@ -1067,21 +1067,21 @@ msgstr ""
 "このタスクで実行をリクエストされたアクション。選択されたアクションは次回反復"
 "時に実行されます。"
 
-#: app/models/task.py:264
+#: app/models/task.py:263
 msgid "Pending Action"
 msgstr "保留中の動作"
 
-#: app/models/task.py:266
+#: app/models/task.py:265
 msgid "A flag indicating whether this task is available to the public"
 msgstr "このタスクが公開可能か示すフラグ"
 
-#: app/models/task.py:267
+#: app/models/task.py:266
 #, fuzzy
 #| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this public task can be edited"
 msgstr "このタスクが公開可能か示すフラグ"
 
-#: app/models/task.py:269
+#: app/models/task.py:268
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
@@ -1090,11 +1090,11 @@ msgstr ""
 "-1とは違う値を設定した時に、このタスクの画像は処理開始前にここで指定したサイ"
 "ズにリサイズされました / されます。"
 
-#: app/models/task.py:269
+#: app/models/task.py:268
 msgid "Resize To"
 msgstr "リサイズ"
 
-#: app/models/task.py:272
+#: app/models/task.py:271
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
@@ -1102,46 +1102,46 @@ msgstr ""
 "0から1の値はタスクファイルのプロセシングノードへのアップロード進捗状況を示し"
 "ます"
 
-#: app/models/task.py:273
+#: app/models/task.py:272
 msgid "Upload Progress"
 msgstr "アップロード進行状況:"
 
-#: app/models/task.py:276
+#: app/models/task.py:275
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr "タスク画像のリサイズ進行状況を示す0から1の値"
 
-#: app/models/task.py:277
+#: app/models/task.py:276
 msgid "Resize Progress"
 msgstr "リサイズ進行状況"
 
-#: app/models/task.py:280
+#: app/models/task.py:279
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr "このタスクの進行状況（予想）を示す0から1の値"
 
-#: app/models/task.py:281
+#: app/models/task.py:280
 msgid "Running Progress"
 msgstr "実行中の処理"
 
-#: app/models/task.py:283
+#: app/models/task.py:282
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr "このタスクのインポート元のURL（インポートのみ）"
 
-#: app/models/task.py:283
+#: app/models/task.py:282
 msgid "Import URL"
 msgstr "URLインポート"
 
-#: app/models/task.py:284
+#: app/models/task.py:283
 msgid "Number of images associated with this task"
 msgstr "このタスクに関連する画像の数"
 
-#: app/models/task.py:284
+#: app/models/task.py:283
 msgid "Images Count"
 msgstr "画像のカウント数"
 
-#: app/models/task.py:285
+#: app/models/task.py:284
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
@@ -1149,26 +1149,26 @@ msgstr ""
 "このタスクが処理実行前に情報またはファイルのアップロードを現在待機中であるか"
 "表示するフラグ."
 
-#: app/models/task.py:285
+#: app/models/task.py:284
 msgid "Partial"
 msgstr "部分"
 
-#: app/models/task.py:286
+#: app/models/task.py:285
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
 msgstr ""
 "測定結果やカメラビュー角度の保存/読込に使用される連続したpotree sceneの情報"
 
-#: app/models/task.py:286
+#: app/models/task.py:285
 msgid "Potree Scene"
 msgstr "Potreeシーン"
 
-#: app/models/task.py:287
+#: app/models/task.py:286
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "データセットのEPSGコード（地理参照されている場合）"
 
-#: app/models/task.py:288
+#: app/models/task.py:287
 #, fuzzy
 #| msgid "EPSG code of the dataset (if georeferenced)"
 msgid ""
@@ -1176,94 +1176,94 @@ msgid ""
 "available)"
 msgstr "データセットのEPSGコード（地理参照されている場合）"
 
-#: app/models/task.py:289
+#: app/models/task.py:288
 #, fuzzy
 #| msgid "Tasks"
 msgid "Task tags"
 msgstr "タスク"
 
-#: app/models/task.py:290
+#: app/models/task.py:289
 #, fuzzy
 #| msgid "Extent of the orthophoto"
 msgid "List of orthophoto bands"
 msgstr "オルソフォトの範囲"
 
-#: app/models/task.py:290
+#: app/models/task.py:289
 #, fuzzy
 #| msgid "Orthophoto Extent"
 msgid "Orthophoto Bands"
 msgstr "オルソフォト範囲"
 
-#: app/models/task.py:291
+#: app/models/task.py:290
 msgid "Size of the task on disk in megabytes"
 msgstr ""
 
-#: app/models/task.py:291 coreplugins/task-manager/templates/index.html:41
+#: app/models/task.py:290 coreplugins/task-manager/templates/index.html:41
 msgid "Size"
 msgstr ""
 
-#: app/models/task.py:292
+#: app/models/task.py:291
 #, fuzzy
 #| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this task was compacted"
 msgstr "このタスクが公開可能か示すフラグ"
 
-#: app/models/task.py:292
+#: app/models/task.py:291
 msgid "Compact"
 msgstr ""
 
-#: app/models/task.py:293
+#: app/models/task.py:292
 msgid "Polygon defining the crop area of this task"
 msgstr ""
 
-#: app/models/task.py:293
+#: app/models/task.py:292
 msgid "Crop Polygon"
 msgstr ""
 
-#: app/models/task.py:294
+#: app/models/task.py:293
 #, fuzzy
 #| msgid "Number of images associated with this task"
 msgid "List of media files associated with this task"
 msgstr "このタスクに関連する画像の数"
 
-#: app/models/task.py:294
+#: app/models/task.py:293
 msgid "Media"
 msgstr ""
 
-#: app/models/task.py:298 coreplugins/task-manager/templates/index.html:38
+#: app/models/task.py:297 coreplugins/task-manager/templates/index.html:38
 msgid "Task"
 msgstr "タスク"
 
-#: app/models/task.py:299
+#: app/models/task.py:298
 msgid "Tasks"
 msgstr "タスク"
 
-#: app/models/task.py:310
+#: app/models/task.py:309
 msgid "unnamed"
 msgstr "名称未設定"
 
-#: app/models/task.py:619
+#: app/models/task.py:618
 msgid "Importing assets..."
 msgstr "アセットをインポート中..."
 
-#: app/models/task.py:674 app/models/task.py:953
+#: app/models/task.py:673 app/models/task.py:952
 msgid "Invalid zip file"
 msgstr "無効なzipファイル"
 
-#: app/models/task.py:676
+#: app/models/task.py:675
 msgid "Unsupported compression method"
 msgstr ""
 
-#: app/models/task.py:771
+#: app/models/task.py:770
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "接続エラー：%(error)s"
 
-#: app/models/task.py:851
+#: app/models/task.py:850
 msgid "Cannot restart a task that has no processing node"
 msgstr "処理中のノードがないので再始動できませんでした"
 
-#: app/models/task.py:1056
+#: app/models/task.py:1055
 msgid "Done!"
 msgstr "完了！"
 
@@ -1897,7 +1897,7 @@ msgstr ""
 msgid "Logout"
 msgstr "ログアウト"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:59
+#: app/templates/app/logged_in_base.html:57 app/views/app.py:60
 msgid "Dashboard"
 msgstr "ダッシュボード"
 
@@ -1925,7 +1925,7 @@ msgstr "グループ"
 msgid "Brand"
 msgstr "ブランド"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:132
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:133
 msgid "About"
 msgstr "OsmAnd Maps & Navigationについて"
 
@@ -2110,24 +2110,31 @@ msgstr ""
 msgid "Monitor project storage to quickly compact or delete tasks."
 msgstr ""
 
-#: app/views/app.py:57
+#: app/views/app.py:58
 msgid "First Project"
 msgstr "最初のプロジェクト"
 
-#: app/views/app.py:73
+#: app/views/app.py:74
 msgid "Map"
 msgstr "マップ"
 
-#: app/views/app.py:107
+#: app/views/app.py:108
 msgid "3D Model Display"
 msgstr "3Dモデル表示"
 
-#: app/views/app.py:138
+#: app/views/app.py:141
+#, python-format
+msgid ""
+"%(node)s is deprecated might stop working in a future version. See the "
+"%(link_start)s migration guide %(link_end)s to upgrade."
+msgstr ""
+
+#: app/views/app.py:145
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr ""
 
-#: app/views/app.py:176
+#: app/views/app.py:183
 msgid "Welcome"
 msgstr "ようこそ"
 

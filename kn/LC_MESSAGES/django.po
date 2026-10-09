@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-04 19:07+0000\n"
+"POT-Creation-Date: 2026-10-09 17:27+0000\n"
 "PO-Revision-Date: 2026-03-05 19:51+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Kannada <https://hosted.weblate.org/projects/webodm/webodm/kn/"
@@ -333,24 +333,24 @@ msgstr ""
 msgid "Invalid EPSG code"
 msgstr ""
 
-#: app/api/overlays.py:280 app/api/overlays.py:287
+#: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr ""
 
-#: app/api/projects.py:129
+#: app/api/projects.py:147
 msgid "Cannot duplicate project"
 msgstr ""
 
-#: app/api/projects.py:225
+#: app/api/projects.py:243
 msgid "Invalid user in permissions list"
 msgstr ""
 
-#: app/api/projects.py:227
+#: app/api/projects.py:245
 msgid "Invalid group in permissions list"
 msgstr ""
 
-#: app/api/projects.py:229
+#: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr ""
 
@@ -610,7 +610,7 @@ msgid "Plugin name"
 msgstr "ಪ್ಲಗಿನ್ ಹೆಸರು"
 
 #: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:249 app/models/theme.py:18
+#: app/models/task.py:248 app/models/theme.py:18
 msgid "Name"
 msgstr "ಹೆಸರು"
 
@@ -687,15 +687,15 @@ msgstr ""
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 
-#: app/models/preset.py:11 app/models/task.py:255
+#: app/models/preset.py:11 app/models/task.py:254
 msgid "Options"
 msgstr "ಆಯ್ಕೆಗಳು"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:263
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
 msgid "Creation date"
 msgstr "ಸೃಷ್ಟಿ ದಿನಾಂಕ"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:263
+#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
 msgid "Created at"
 msgstr ""
 
@@ -770,7 +770,7 @@ msgstr "ಅಳಿಸಲಾಗುತ್ತಿದೆ"
 msgid "Project tags"
 msgstr "ಯೋಜನೆಗಳು"
 
-#: app/models/project.py:32 app/models/task.py:289
+#: app/models/project.py:32 app/models/task.py:288
 msgid "Tags"
 msgstr ""
 
@@ -778,7 +778,7 @@ msgstr ""
 msgid "A flag indicating whether this project is available to the public"
 msgstr ""
 
-#: app/models/project.py:33 app/models/task.py:266
+#: app/models/project.py:33 app/models/task.py:265
 msgid "Public"
 msgstr "ಸಾರ್ವಜನಿಕ"
 
@@ -786,7 +786,7 @@ msgstr "ಸಾರ್ವಜನಿಕ"
 msgid "A flag indicating whether this public project can be edited"
 msgstr ""
 
-#: app/models/project.py:34 app/models/task.py:267
+#: app/models/project.py:34 app/models/task.py:266
 #, fuzzy
 #| msgid "Public"
 msgid "Public Edit"
@@ -802,12 +802,12 @@ msgstr ""
 msgid "Public Id"
 msgstr "ಸಾರ್ವಜನಿಕ"
 
-#: app/models/project.py:108 app/models/task.py:487
+#: app/models/project.py:108 app/models/task.py:486
 #, python-format
 msgid "Copy of %(task)s"
 msgstr ""
 
-#: app/models/project.py:141 app/models/task.py:248
+#: app/models/project.py:141 app/models/task.py:247
 #: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "ಯೋಜನೆ"
@@ -889,292 +889,292 @@ msgstr "ಅಪ್ಲಿಕೇಶನ್"
 msgid "Settings"
 msgstr ""
 
-#: app/models/task.py:245
+#: app/models/task.py:244
 msgid "Id"
 msgstr "ಐಡಿ"
 
-#: app/models/task.py:247
+#: app/models/task.py:246
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr ""
 
-#: app/models/task.py:247
+#: app/models/task.py:246
 msgid "UUID"
 msgstr ""
 
-#: app/models/task.py:248
+#: app/models/task.py:247
 msgid "Project that this task belongs to"
 msgstr ""
 
-#: app/models/task.py:249
+#: app/models/task.py:248
 msgid "A label for the task"
 msgstr ""
 
-#: app/models/task.py:250
+#: app/models/task.py:249
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
 msgstr ""
 
-#: app/models/task.py:250
+#: app/models/task.py:249
 msgid "Processing Time"
 msgstr ""
 
-#: app/models/task.py:251
+#: app/models/task.py:250
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
 msgstr ""
 
-#: app/models/task.py:251 app/views/app.py:142 nodeodm/models.py:37
+#: app/models/task.py:250 app/views/app.py:149 nodeodm/models.py:37
 msgid "Processing Node"
 msgstr ""
 
-#: app/models/task.py:252
+#: app/models/task.py:251
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
 msgstr ""
 
-#: app/models/task.py:252
+#: app/models/task.py:251
 msgid "Auto Processing Node"
 msgstr ""
 
-#: app/models/task.py:253
+#: app/models/task.py:252
 msgid "Current status of the task"
 msgstr ""
 
-#: app/models/task.py:253 coreplugins/task-manager/templates/index.html:39
+#: app/models/task.py:252 coreplugins/task-manager/templates/index.html:39
 msgid "Status"
 msgstr ""
 
-#: app/models/task.py:254
+#: app/models/task.py:253
 msgid "The last processing error received"
 msgstr ""
 
-#: app/models/task.py:254
+#: app/models/task.py:253
 msgid "Last Error"
 msgstr "ಹಿಂದಿನ ತಪ್ಪು"
 
-#: app/models/task.py:255
+#: app/models/task.py:254
 msgid "Options that are being used to process this task"
 msgstr ""
 
-#: app/models/task.py:256
+#: app/models/task.py:255
 msgid "List of available assets to download"
 msgstr ""
 
-#: app/models/task.py:256
+#: app/models/task.py:255
 msgid "Available Assets"
 msgstr ""
 
-#: app/models/task.py:258
+#: app/models/task.py:257
 msgid "Extent of the orthophoto"
 msgstr ""
 
-#: app/models/task.py:258
+#: app/models/task.py:257
 msgid "Orthophoto Extent"
 msgstr ""
 
-#: app/models/task.py:259
+#: app/models/task.py:258
 msgid "Extent of the DSM"
 msgstr ""
 
-#: app/models/task.py:259
+#: app/models/task.py:258
 msgid "DSM Extent"
 msgstr ""
 
-#: app/models/task.py:260
+#: app/models/task.py:259
 msgid "Extent of the DTM"
 msgstr ""
 
-#: app/models/task.py:260
+#: app/models/task.py:259
 msgid "DTM Extent"
 msgstr ""
 
-#: app/models/task.py:264
+#: app/models/task.py:263
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
 msgstr ""
 
-#: app/models/task.py:264
+#: app/models/task.py:263
 msgid "Pending Action"
 msgstr "ಬಾಕಿ ಉಳಿದಿರುವ ಕ್ರಮಗಳು"
 
-#: app/models/task.py:266
+#: app/models/task.py:265
 msgid "A flag indicating whether this task is available to the public"
 msgstr ""
 
-#: app/models/task.py:267
+#: app/models/task.py:266
 msgid "A flag indicating whether this public task can be edited"
 msgstr ""
 
-#: app/models/task.py:269
+#: app/models/task.py:268
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
 "processing."
 msgstr ""
 
-#: app/models/task.py:269
+#: app/models/task.py:268
 msgid "Resize To"
 msgstr ""
 
-#: app/models/task.py:272
+#: app/models/task.py:271
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
 msgstr ""
 
-#: app/models/task.py:273
+#: app/models/task.py:272
 msgid "Upload Progress"
 msgstr ""
 
-#: app/models/task.py:276
+#: app/models/task.py:275
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr ""
 
-#: app/models/task.py:277
+#: app/models/task.py:276
 msgid "Resize Progress"
 msgstr ""
 
-#: app/models/task.py:280
+#: app/models/task.py:279
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr ""
 
-#: app/models/task.py:281
+#: app/models/task.py:280
 msgid "Running Progress"
 msgstr ""
 
-#: app/models/task.py:283
+#: app/models/task.py:282
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr ""
 
-#: app/models/task.py:283
+#: app/models/task.py:282
 msgid "Import URL"
 msgstr ""
 
-#: app/models/task.py:284
+#: app/models/task.py:283
 msgid "Number of images associated with this task"
 msgstr ""
 
-#: app/models/task.py:284
+#: app/models/task.py:283
 msgid "Images Count"
 msgstr ""
 
-#: app/models/task.py:285
+#: app/models/task.py:284
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
 msgstr ""
 
-#: app/models/task.py:285
+#: app/models/task.py:284
 msgid "Partial"
 msgstr ""
 
-#: app/models/task.py:286
+#: app/models/task.py:285
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
 msgstr ""
 
-#: app/models/task.py:286
+#: app/models/task.py:285
 msgid "Potree Scene"
 msgstr ""
 
-#: app/models/task.py:287
+#: app/models/task.py:286
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr ""
 
-#: app/models/task.py:288
+#: app/models/task.py:287
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
 msgstr ""
 
-#: app/models/task.py:289
+#: app/models/task.py:288
 #, fuzzy
 #| msgid "Tasks"
 msgid "Task tags"
 msgstr "ಕಾರ್ಯಗಳು"
 
-#: app/models/task.py:290
+#: app/models/task.py:289
 msgid "List of orthophoto bands"
 msgstr ""
 
-#: app/models/task.py:290
+#: app/models/task.py:289
 msgid "Orthophoto Bands"
 msgstr ""
 
-#: app/models/task.py:291
+#: app/models/task.py:290
 msgid "Size of the task on disk in megabytes"
 msgstr ""
 
-#: app/models/task.py:291 coreplugins/task-manager/templates/index.html:41
+#: app/models/task.py:290 coreplugins/task-manager/templates/index.html:41
 msgid "Size"
 msgstr ""
 
-#: app/models/task.py:292
+#: app/models/task.py:291
 msgid "A flag indicating whether this task was compacted"
 msgstr ""
 
-#: app/models/task.py:292
+#: app/models/task.py:291
 msgid "Compact"
 msgstr ""
 
-#: app/models/task.py:293
+#: app/models/task.py:292
 msgid "Polygon defining the crop area of this task"
 msgstr ""
 
-#: app/models/task.py:293
+#: app/models/task.py:292
 msgid "Crop Polygon"
 msgstr ""
 
-#: app/models/task.py:294
+#: app/models/task.py:293
 msgid "List of media files associated with this task"
 msgstr ""
 
-#: app/models/task.py:294
+#: app/models/task.py:293
 msgid "Media"
 msgstr ""
 
-#: app/models/task.py:298 coreplugins/task-manager/templates/index.html:38
+#: app/models/task.py:297 coreplugins/task-manager/templates/index.html:38
 msgid "Task"
 msgstr "ಕಾರ್ಯ"
 
-#: app/models/task.py:299
+#: app/models/task.py:298
 msgid "Tasks"
 msgstr "ಕಾರ್ಯಗಳು"
 
-#: app/models/task.py:310
+#: app/models/task.py:309
 msgid "unnamed"
 msgstr ""
 
-#: app/models/task.py:619
+#: app/models/task.py:618
 msgid "Importing assets..."
 msgstr ""
 
-#: app/models/task.py:674 app/models/task.py:953
+#: app/models/task.py:673 app/models/task.py:952
 msgid "Invalid zip file"
 msgstr ""
 
-#: app/models/task.py:676
+#: app/models/task.py:675
 msgid "Unsupported compression method"
 msgstr ""
 
-#: app/models/task.py:771
+#: app/models/task.py:770
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr ""
 
-#: app/models/task.py:851
+#: app/models/task.py:850
 msgid "Cannot restart a task that has no processing node"
 msgstr ""
 
-#: app/models/task.py:1056
+#: app/models/task.py:1055
 msgid "Done!"
 msgstr ""
 
@@ -1770,7 +1770,7 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:59
+#: app/templates/app/logged_in_base.html:57 app/views/app.py:60
 msgid "Dashboard"
 msgstr ""
 
@@ -1798,7 +1798,7 @@ msgstr ""
 msgid "Brand"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:132
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:133
 msgid "About"
 msgstr ""
 
@@ -1979,24 +1979,31 @@ msgstr ""
 msgid "Monitor project storage to quickly compact or delete tasks."
 msgstr ""
 
-#: app/views/app.py:57
+#: app/views/app.py:58
 msgid "First Project"
 msgstr ""
 
-#: app/views/app.py:73
+#: app/views/app.py:74
 msgid "Map"
 msgstr ""
 
-#: app/views/app.py:107
+#: app/views/app.py:108
 msgid "3D Model Display"
 msgstr ""
 
-#: app/views/app.py:138
+#: app/views/app.py:141
+#, python-format
+msgid ""
+"%(node)s is deprecated might stop working in a future version. See the "
+"%(link_start)s migration guide %(link_end)s to upgrade."
+msgstr ""
+
+#: app/views/app.py:145
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr ""
 
-#: app/views/app.py:176
+#: app/views/app.py:183
 msgid "Welcome"
 msgstr ""
 
