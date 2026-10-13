@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-09 17:27+0000\n"
+"POT-Creation-Date: 2026-10-13 22:29+0000\n"
 "PO-Revision-Date: 2026-06-23 13:01+0000\n"
 "Last-Translator: Matheus Rocha Pereira <matheusrp11@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/es/"
@@ -19,47 +19,47 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2026.7.dev0\n"
 
-#: app/admin.py:110
+#: app/admin.py:112
 msgid "Cannot restore default logo"
 msgstr "No se puede restaurar el logotipo predeterminado"
 
-#: app/admin.py:124
+#: app/admin.py:126
 msgid "Restore Default"
 msgstr "Restaurar valores predeterminados"
 
-#: app/admin.py:146
+#: app/admin.py:148
 msgid "Enter custom CSS"
 msgstr "Ingrese CSS personalizado"
 
-#: app/admin.py:147 app/models/theme.py:40
+#: app/admin.py:149 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:150
+#: app/admin.py:152
 msgid "HTML that will be displayed above site header"
 msgstr "HTML que se mostrará sobre el encabezado del sitio"
 
-#: app/admin.py:151 app/models/theme.py:41
+#: app/admin.py:153 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (antes del encabezado)"
 
-#: app/admin.py:154
+#: app/admin.py:156
 msgid "HTML that will be displayed after site header"
 msgstr "HTML que se mostrará después del encabezado del sitio"
 
-#: app/admin.py:155 app/models/theme.py:42
+#: app/admin.py:157 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (después del encabezado)"
 
-#: app/admin.py:158
+#: app/admin.py:160
 msgid "HTML that will be displayed after the body tag"
 msgstr "HTML que se mostrará después de la etiqueta del cuerpo"
 
-#: app/admin.py:159 app/models/theme.py:43
+#: app/admin.py:161 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (Después del cuerpo)"
 
-#: app/admin.py:163
+#: app/admin.py:165
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -68,72 +68,81 @@ msgstr ""
 "HTML que se mostrará en el pie de página. También puedes utilizar etiquetas "
 "especiales como {ORGANIZATION} y {YEAR}."
 
-#: app/admin.py:164 app/models/theme.py:44
+#: app/admin.py:166 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (pie de página)"
 
-#: app/admin.py:224 app/models/project.py:29
+#: app/admin.py:226 app/models/project.py:29
 msgid "Description"
 msgstr "Descripción"
 
-#: app/admin.py:230
+#: app/admin.py:232
 msgid "Version"
 msgstr "Versión"
 
-#: app/admin.py:236
+#: app/admin.py:238
 msgid "Author"
 msgstr "Autor"
 
-#: app/admin.py:268
+#: app/admin.py:280
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Se requiere reinicio. Por favor, reinicie WebODM para habilitar %(plugin)s"
 
-#: app/admin.py:271
+#: app/admin.py:283
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "No se puede habilitar el complemento %(plugin)s: %(message)s"
 
-#: app/admin.py:280
+#: app/admin.py:292
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Se requiere reinicio. Por favor reinicie WebODM para deshabilitar "
 "completamente %(plugin)s"
 
-#: app/admin.py:283
+#: app/admin.py:295
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "No se puede deshabilitar el complemento %(plugin)s: %(message)s"
 
-#: app/admin.py:292
+#: app/admin.py:304
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "No se puede eliminar el complemento %(plugin)s: %(message)s"
 
-#: app/admin.py:340
-msgid "Plugin added successfully"
+#: app/admin.py:380
+#, python-format
+msgid ""
+"Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
+"changes."
+msgstr ""
+
+#: app/admin.py:382
+#, fuzzy, python-format
+#| msgid "Plugin added successfully"
+msgid "%(plugin)s installed successfully"
 msgstr "Complemento agregado exitosamente"
 
-#: app/admin.py:342
+#: app/admin.py:386
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "No se puede cargar el complemento: %(message)s"
 
-#: app/admin.py:348
+#: app/admin.py:395
 msgid "You need to upload a zip file"
 msgstr "Necesita cargar un archivo zip"
 
-#: app/admin.py:362
+#: app/admin.py:414
 msgid "Disable"
 msgstr "Desactivar"
 
-#: app/admin.py:365
+#: app/admin.py:417
 msgid "Enable"
 msgstr "Activar"
 
-#: app/admin.py:370
+#: app/admin.py:422
 msgid "Actions"
 msgstr "Acciones"
 
@@ -711,7 +720,6 @@ msgid "The person who owns this preset"
 msgstr "La persona que posee esta preconfiguración"
 
 #: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
-#: coreplugins/task-manager/templates/index.html:37
 msgid "Owner"
 msgstr "Propietario"
 
@@ -846,11 +854,10 @@ msgid "Copy of %(task)s"
 msgstr "Copia de %(task)s"
 
 #: app/models/project.py:141 app/models/task.py:247
-#: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "Proyecto"
 
-#: app/models/project.py:142 coreplugins/projects-charts/templates/index.html:7
+#: app/models/project.py:142
 msgid "Projects"
 msgstr "Proyectos"
 
@@ -983,7 +990,7 @@ msgstr "Nodo de Procesamiento Automático"
 msgid "Current status of the task"
 msgstr "Estado actual de la tarea"
 
-#: app/models/task.py:252 coreplugins/task-manager/templates/index.html:39
+#: app/models/task.py:252
 msgid "Status"
 msgstr "Estado"
 
@@ -1168,7 +1175,7 @@ msgstr "Bandas de ortofotos"
 msgid "Size of the task on disk in megabytes"
 msgstr "Tamaño de la tarea en el disco en megabytes"
 
-#: app/models/task.py:290 coreplugins/task-manager/templates/index.html:41
+#: app/models/task.py:290
 msgid "Size"
 msgstr "Tamaño"
 
@@ -1196,7 +1203,7 @@ msgstr "Lista de archivos multimedia asociados a esta tarea"
 msgid "Media"
 msgstr "Multimedia"
 
-#: app/models/task.py:297 coreplugins/task-manager/templates/index.html:38
+#: app/models/task.py:297
 msgid "Task"
 msgstr "Tarea"
 
@@ -1500,11 +1507,11 @@ msgstr "Ver en el sitio"
 msgid "Filter"
 msgstr "Filtrar"
 
-#: app/templates/app/admin/change_list_plugin.html:24
+#: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
 msgstr "Cargar complemento (.zip)"
 
-#: app/templates/app/admin/change_list_plugin.html:28
+#: app/templates/app/admin/change_list_plugin.html:33
 msgid "Manage Plugins"
 msgstr "Administrar complementos"
 
@@ -1999,98 +2006,49 @@ msgid "very soon"
 msgstr "muy pronto"
 
 #: app/translations/plugin_manifest_autogenerated.py:4
-msgid "Upload and tile ODM assets with Cesium ion."
-msgstr "Cargue y agrupe los activos de ODM con Cesium ion."
-
-#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Compute, preview and export contours from DEMs"
 msgstr "Calcular, previsualizar y exportar contornos desde DEMs"
 
-#: app/translations/plugin_manifest_autogenerated.py:6
+#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Display program version, memory and disk space usage statistics"
 msgstr ""
 "Muestra la versión del programa, la memoria y las estadísticas de uso del "
 "espacio en disco"
 
-#: app/translations/plugin_manifest_autogenerated.py:7
-msgid "Integrate WebODM with DroneDB: import images and share results"
-msgstr "Integre WebODM con DroneDB: importe imágenes y comparta resultados"
-
-#: app/translations/plugin_manifest_autogenerated.py:8
-msgid "Create editable short links when sharing task URLs"
-msgstr "Crear enlaces cortos editables al compartir las URL de las tareas"
-
-#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:6
 msgid "Add a fullscreen button to the 2D map view"
 msgstr "Agregar un botón de pantalla completa a la vista de mapa 2D"
 
-#: app/translations/plugin_manifest_autogenerated.py:10
+#: app/translations/plugin_manifest_autogenerated.py:7
 msgid "Process in the cloud with webodm.net"
 msgstr "Procesar en la nube con webodm.net"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:8
 msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Calcule las medidas de volumen, área y longitud en el Leaflet"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
-msgid ""
-"A plugin to add a button for quickly opening OpenStreetMap's iD editor and "
-"setup a TMS basemap."
-msgstr ""
-"Un complemento para agregar un botón para abrir rápidamente el editor iD de "
-"OpenStreetMap y configurar un mapa base TMS."
-
-#: app/translations/plugin_manifest_autogenerated.py:13
-#: app/translations/plugin_manifest_autogenerated.py:17
+#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Un complemento para crear archivos GCP a partir de imágenes"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
-msgid "A plugin to show charts of projects and tasks"
-msgstr "Un plugin para mostrar los gráficos de los proyectos y las tareas"
-
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Create short links when sharing task URLs"
-msgstr "Cree enlaces cortos al compartir URL de tareas"
-
-#: app/translations/plugin_manifest_autogenerated.py:16
-msgid ""
-"Get notified when a task has finished processing, has been removed or has "
-"failed"
-msgstr ""
-"Recibe una notificación cuando una tarea haya terminado de procesarse, se "
-"haya eliminado o haya fallado"
-
-#: app/translations/plugin_manifest_autogenerated.py:18
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Anota y mide en mapas 2D con facilidad"
 
-#: app/translations/plugin_manifest_autogenerated.py:19
-msgid "Add a GPS location button to the 2D map view"
-msgstr "Añadir un botón de localización GPS a la vista de mapa 2D"
-
-#: app/translations/plugin_manifest_autogenerated.py:20
-msgid "Plugin to get align from external service for WebODM"
-msgstr ""
-"Plugin para obtener la alineación desde un servicio externo para WebODM"
-
-#: app/translations/plugin_manifest_autogenerated.py:21
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "Detect objects using AI in orthophotos"
 msgstr "Detectar objetos en ortofotos utilizando IA"
 
-#: app/translations/plugin_manifest_autogenerated.py:22
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "An example plugin for development"
 msgstr "Un complemento de ejemplo para el desarrollo"
 
-#: app/translations/plugin_manifest_autogenerated.py:23
+#: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 "Un complemento para añadir un botón que permita hacer una captura de "
 "pantalla del mapa o del modelo 3D."
-
-#: app/translations/plugin_manifest_autogenerated.py:24
-msgid "Monitor project storage to quickly compact or delete tasks."
-msgstr ""
 
 #: app/views/app.py:58
 msgid "First Project"
@@ -2157,14 +2115,6 @@ msgstr "No se puede crear usuario. Ya existe un usuario con el mismo e-mail."
 msgid "This account is disabled. Please contact an administrator."
 msgstr "Esta cuenta esta deshabilitada. Por favor contacte al administrador."
 
-#: coreplugins/align-service/plugin.py:56
-msgid "Align Generator"
-msgstr "Generador de alineación"
-
-#: coreplugins/align-service/templates/index.html:5
-msgid "Align file from task image"
-msgstr "Alinear archivo de imagen de la tarea"
-
 #: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
 #: coreplugins/measure/api.py:21
 msgid ""
@@ -2207,10 +2157,6 @@ msgstr ""
 msgid "An orthophoto is required to compute temperature values."
 msgstr ""
 "Se necesita una ortofotografía para calcular los valores de temperatura."
-
-#: coreplugins/cesiumion/api_views.py:159
-msgid "No matching enum type."
-msgstr "Sin tipo de enumeración coincidente."
 
 #: coreplugins/contours/api.py:122
 msgid "No DSM layer is available."
@@ -2297,18 +2243,6 @@ msgstr ""
 msgid "Disk Space"
 msgstr "Espacio en Disco"
 
-#: coreplugins/editshortlinks/api.py:59
-msgid ""
-"Short URLs can only include letters, numbers, underscore and dash characters "
-"(A-Z, 0-9, _, -)."
-msgstr ""
-"Las URLs cortas sólo pueden incluir letras, números, guiones bajos y guiones "
-"(A-Z, 0-9, _, -)."
-
-#: coreplugins/editshortlinks/api.py:63
-msgid "This short URL is already taken."
-msgstr "Esta URL corta ya está ocupada."
-
 #: coreplugins/hello-world/plugin.py:10
 msgid "Hello World"
 msgstr "Hola Mundo"
@@ -2324,66 +2258,6 @@ msgstr "No hay ninguna ortofoto disponible."
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"
 msgstr "Interfaz GCP"
-
-#: coreplugins/projects-charts/plugin.py:55
-msgid "Charts"
-msgstr "Gráficos"
-
-#: coreplugins/projects-charts/templates/index.html:11
-msgid "Year"
-msgstr "Año"
-
-#: coreplugins/projects-charts/templates/index.html:23
-msgid "Next"
-msgstr "Siguiente"
-
-#: coreplugins/projects-charts/templates/index.html:69
-msgid "Projects by month"
-msgstr "Proyectos mensuales"
-
-#: coreplugins/projects-charts/templates/index.html:111
-msgid "Tasks by month"
-msgstr "Tareas mensuales"
-
-#: coreplugins/task-manager/plugin.py:30 coreplugins/task-manager/plugin.py:36
-#: coreplugins/task-manager/templates/index.html:8
-#, fuzzy
-#| msgid "Task tags"
-msgid "Task Manager"
-msgstr "Etiquetas de las tareas"
-
-#: coreplugins/task-manager/templates/index.html:10
-msgid ""
-"Track disk usage across projects: compact tasks to clear temporary files, or "
-"delete them permanently."
-msgstr ""
-
-#: coreplugins/task-manager/templates/index.html:18
-#, fuzzy
-#| msgid "Last Refreshed"
-msgid "Refresh"
-msgstr "Última actualización"
-
-#: coreplugins/task-manager/templates/index.html:21
-#, fuzzy
-#| msgctxt "Megabytes of storage space"
-#| msgid "Total"
-msgid "Total size:"
-msgstr "Total"
-
-#: coreplugins/task-manager/templates/index.html:40
-#, fuzzy
-#| msgid "Image"
-msgid "Images"
-msgstr "Imagen"
-
-#: coreplugins/tasknotification/plugin.py:84
-msgid "Task Notification"
-msgstr "Notificación de las tareas"
-
-#: coreplugins/tasknotification/templates/index.html:5
-msgid "Tasks Notification"
-msgstr "Notificación de tareas"
 
 #: nodeodm/apps.py:8
 msgid "Node Management"
@@ -2465,6 +2339,103 @@ msgstr ""
 #: nodeodm/models.py:34
 msgid "Engine used by the node."
 msgstr "Motor utilizado por el nodo."
+
+#~ msgid "Upload and tile ODM assets with Cesium ion."
+#~ msgstr "Cargue y agrupe los activos de ODM con Cesium ion."
+
+#~ msgid "Integrate WebODM with DroneDB: import images and share results"
+#~ msgstr "Integre WebODM con DroneDB: importe imágenes y comparta resultados"
+
+#~ msgid "Create editable short links when sharing task URLs"
+#~ msgstr "Crear enlaces cortos editables al compartir las URL de las tareas"
+
+#~ msgid ""
+#~ "A plugin to add a button for quickly opening OpenStreetMap's iD editor "
+#~ "and setup a TMS basemap."
+#~ msgstr ""
+#~ "Un complemento para agregar un botón para abrir rápidamente el editor iD "
+#~ "de OpenStreetMap y configurar un mapa base TMS."
+
+#~ msgid "A plugin to show charts of projects and tasks"
+#~ msgstr "Un plugin para mostrar los gráficos de los proyectos y las tareas"
+
+#~ msgid "Create short links when sharing task URLs"
+#~ msgstr "Cree enlaces cortos al compartir URL de tareas"
+
+#~ msgid ""
+#~ "Get notified when a task has finished processing, has been removed or has "
+#~ "failed"
+#~ msgstr ""
+#~ "Recibe una notificación cuando una tarea haya terminado de procesarse, se "
+#~ "haya eliminado o haya fallado"
+
+#~ msgid "Add a GPS location button to the 2D map view"
+#~ msgstr "Añadir un botón de localización GPS a la vista de mapa 2D"
+
+#~ msgid "Plugin to get align from external service for WebODM"
+#~ msgstr ""
+#~ "Plugin para obtener la alineación desde un servicio externo para WebODM"
+
+#~ msgid "Align Generator"
+#~ msgstr "Generador de alineación"
+
+#~ msgid "Align file from task image"
+#~ msgstr "Alinear archivo de imagen de la tarea"
+
+#~ msgid "No matching enum type."
+#~ msgstr "Sin tipo de enumeración coincidente."
+
+#~ msgid ""
+#~ "Short URLs can only include letters, numbers, underscore and dash "
+#~ "characters (A-Z, 0-9, _, -)."
+#~ msgstr ""
+#~ "Las URLs cortas sólo pueden incluir letras, números, guiones bajos y "
+#~ "guiones (A-Z, 0-9, _, -)."
+
+#~ msgid "This short URL is already taken."
+#~ msgstr "Esta URL corta ya está ocupada."
+
+#~ msgid "Charts"
+#~ msgstr "Gráficos"
+
+#~ msgid "Year"
+#~ msgstr "Año"
+
+#~ msgid "Next"
+#~ msgstr "Siguiente"
+
+#~ msgid "Projects by month"
+#~ msgstr "Proyectos mensuales"
+
+#~ msgid "Tasks by month"
+#~ msgstr "Tareas mensuales"
+
+#, fuzzy
+#~| msgid "Task tags"
+#~ msgid "Task Manager"
+#~ msgstr "Etiquetas de las tareas"
+
+#, fuzzy
+#~| msgid "Last Refreshed"
+#~ msgid "Refresh"
+#~ msgstr "Última actualización"
+
+#, fuzzy
+#~| msgctxt "Megabytes of storage space"
+#~| msgid "Total"
+#~ msgid "Total size:"
+#~ msgstr "Total"
+
+#, fuzzy
+#~| msgid "Image"
+#~ msgid "Images"
+#~ msgstr "Imagen"
+
+#~ msgid "Task Notification"
+#~ msgstr "Notificación de las tareas"
+
+#~ msgid "Tasks Notification"
+#~ msgstr "Notificación de tareas"
 
 #~ msgid "Import images from external sources directly"
 #~ msgstr "Importar imágenes directamente de fuentes externas"

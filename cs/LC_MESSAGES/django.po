@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-09 17:27+0000\n"
+"POT-Creation-Date: 2026-10-13 22:29+0000\n"
 "PO-Revision-Date: 2026-08-17 08:51+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/webodm/webodm/cs/"
@@ -19,47 +19,47 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "X-Generator: Weblate 2026.9.dev0\n"
 
-#: app/admin.py:110
+#: app/admin.py:112
 msgid "Cannot restore default logo"
 msgstr "Nelze obnovit výchozí logo"
 
-#: app/admin.py:124
+#: app/admin.py:126
 msgid "Restore Default"
 msgstr "Obnovit výchozí nastavení"
 
-#: app/admin.py:146
+#: app/admin.py:148
 msgid "Enter custom CSS"
 msgstr "Zadejte vlastní CSS"
 
-#: app/admin.py:147 app/models/theme.py:40
+#: app/admin.py:149 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:150
+#: app/admin.py:152
 msgid "HTML that will be displayed above site header"
 msgstr "HTML, které se zobrazí nad záhlavím webu"
 
-#: app/admin.py:151 app/models/theme.py:41
+#: app/admin.py:153 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (před záhlavím)"
 
-#: app/admin.py:154
+#: app/admin.py:156
 msgid "HTML that will be displayed after site header"
 msgstr "HTML, které se zobrazí za záhlavím webu"
 
-#: app/admin.py:155 app/models/theme.py:42
+#: app/admin.py:157 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (za záhlavím)"
 
-#: app/admin.py:158
+#: app/admin.py:160
 msgid "HTML that will be displayed after the body tag"
 msgstr "HTML, které se zobrazí za značkou body"
 
-#: app/admin.py:159 app/models/theme.py:43
+#: app/admin.py:161 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (za body)"
 
-#: app/admin.py:163
+#: app/admin.py:165
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -68,71 +68,80 @@ msgstr ""
 "HTML, které se zobrazí v zápatí. Můžete také použít speciální značky, "
 "například {ORGANIZATION} a {YEAR}."
 
-#: app/admin.py:164 app/models/theme.py:44
+#: app/admin.py:166 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (zápatí)"
 
-#: app/admin.py:224 app/models/project.py:29
+#: app/admin.py:226 app/models/project.py:29
 msgid "Description"
 msgstr "Popis"
 
-#: app/admin.py:230
+#: app/admin.py:232
 msgid "Version"
 msgstr "Verze"
 
-#: app/admin.py:236
+#: app/admin.py:238
 msgid "Author"
 msgstr "Autor"
 
-#: app/admin.py:268
+#: app/admin.py:280
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Nutný restart. Restartujte prosím WebODM, abyste mohli povolit %(plugin)s"
 
-#: app/admin.py:271
+#: app/admin.py:283
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Nelze povolit zásuvný modul %(plugin)s: %(message)s"
 
-#: app/admin.py:280
+#: app/admin.py:292
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Nutný restart. Restartujte prosím WebODM, abyste zcela zakázali %(plugin)s"
 
-#: app/admin.py:283
+#: app/admin.py:295
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "Nelze zakázat zásuvný modul %(plugin)s: %(message)s"
 
-#: app/admin.py:292
+#: app/admin.py:304
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Nelze odstranit zásuvný modul %(plugin)s: %(message)s"
 
-#: app/admin.py:340
-msgid "Plugin added successfully"
+#: app/admin.py:380
+#, python-format
+msgid ""
+"Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
+"changes."
+msgstr ""
+
+#: app/admin.py:382
+#, fuzzy, python-format
+#| msgid "Plugin added successfully"
+msgid "%(plugin)s installed successfully"
 msgstr "Plugin byl úspěšně přidán"
 
-#: app/admin.py:342
+#: app/admin.py:386
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Nelze načíst zásuvný modul: %(message)s"
 
-#: app/admin.py:348
+#: app/admin.py:395
 msgid "You need to upload a zip file"
 msgstr "Musíte nahrát soubor zip"
 
-#: app/admin.py:362
+#: app/admin.py:414
 msgid "Disable"
 msgstr "Vypnout"
 
-#: app/admin.py:365
+#: app/admin.py:417
 msgid "Enable"
 msgstr "Zapnout"
 
-#: app/admin.py:370
+#: app/admin.py:422
 msgid "Actions"
 msgstr "Akce"
 
@@ -700,7 +709,6 @@ msgid "The person who owns this preset"
 msgstr "Osoba, která vlastní tuto předvolbu"
 
 #: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
-#: coreplugins/task-manager/templates/index.html:37
 msgid "Owner"
 msgstr "Vlastník"
 
@@ -833,11 +841,10 @@ msgid "Copy of %(task)s"
 msgstr "Kopie %(task)s"
 
 #: app/models/project.py:141 app/models/task.py:247
-#: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "Projekt"
 
-#: app/models/project.py:142 coreplugins/projects-charts/templates/index.html:7
+#: app/models/project.py:142
 msgid "Projects"
 msgstr "Projekty"
 
@@ -970,7 +977,7 @@ msgstr "Uzel automatického zpracování"
 msgid "Current status of the task"
 msgstr "Aktuální stav úkolu"
 
-#: app/models/task.py:252 coreplugins/task-manager/templates/index.html:39
+#: app/models/task.py:252
 msgid "Status"
 msgstr "Status"
 
@@ -1151,7 +1158,7 @@ msgstr "Pásma ortofotomapy"
 msgid "Size of the task on disk in megabytes"
 msgstr "Velikost úlohy na disku v megabajtech"
 
-#: app/models/task.py:290 coreplugins/task-manager/templates/index.html:41
+#: app/models/task.py:290
 msgid "Size"
 msgstr "Velikost"
 
@@ -1179,7 +1186,7 @@ msgstr "Seznam mediálních souborů spojených s touto úlohou"
 msgid "Media"
 msgstr "Média"
 
-#: app/models/task.py:297 coreplugins/task-manager/templates/index.html:38
+#: app/models/task.py:297
 msgid "Task"
 msgstr "Úkol"
 
@@ -1481,11 +1488,11 @@ msgstr "Zobrazení na webu"
 msgid "Filter"
 msgstr "Filtr"
 
-#: app/templates/app/admin/change_list_plugin.html:24
+#: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
 msgstr "Načíst plugin (.zip)"
 
-#: app/templates/app/admin/change_list_plugin.html:28
+#: app/templates/app/admin/change_list_plugin.html:33
 msgid "Manage Plugins"
 msgstr "Správa pluginů"
 
@@ -1977,93 +1984,45 @@ msgid "very soon"
 msgstr "již brzy"
 
 #: app/translations/plugin_manifest_autogenerated.py:4
-msgid "Upload and tile ODM assets with Cesium ion."
-msgstr "Nahrávání a dlaždicové vykreslení assetů ODM s Cesium ion."
-
-#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Compute, preview and export contours from DEMs"
 msgstr "Výpočet, náhled a export obrysů z DEM"
 
-#: app/translations/plugin_manifest_autogenerated.py:6
+#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Display program version, memory and disk space usage statistics"
 msgstr "Zobrazení statistik verze programu, využití paměti a místa na disku"
 
-#: app/translations/plugin_manifest_autogenerated.py:7
-msgid "Integrate WebODM with DroneDB: import images and share results"
-msgstr "Integrace WebODM s DroneDB: import snímků a sdílení výsledků"
-
-#: app/translations/plugin_manifest_autogenerated.py:8
-msgid "Create editable short links when sharing task URLs"
-msgstr "Vytváření upravitelných krátkých odkazů při sdílení URL úloh"
-
-#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:6
 msgid "Add a fullscreen button to the 2D map view"
 msgstr "Přidání tlačítka pro zobrazení na celou obrazovku do zobrazení 2D mapy"
 
-#: app/translations/plugin_manifest_autogenerated.py:10
+#: app/translations/plugin_manifest_autogenerated.py:7
 msgid "Process in the cloud with webodm.net"
 msgstr "Zpracování v cloudu pomocí webodm.net"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:8
 msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Výpočet objemu, plochy a délky na Leaflet"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
-msgid ""
-"A plugin to add a button for quickly opening OpenStreetMap's iD editor and "
-"setup a TMS basemap."
-msgstr ""
-"Zásuvný modul pro přidání tlačítka pro rychlé otevření iD editoru "
-"OpenStreetMap a nastavení podkladu TMS."
-
-#: app/translations/plugin_manifest_autogenerated.py:13
-#: app/translations/plugin_manifest_autogenerated.py:17
+#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Zásuvný modul pro vytváření souborů GCP z obrázků"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
-msgid "A plugin to show charts of projects and tasks"
-msgstr "Zásuvný modul pro zobrazení grafů projektů a úkolů"
-
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Create short links when sharing task URLs"
-msgstr "Vytváření krátkých odkazů při sdílení URL úloh"
-
-#: app/translations/plugin_manifest_autogenerated.py:16
-msgid ""
-"Get notified when a task has finished processing, has been removed or has "
-"failed"
-msgstr ""
-"Získání upozornění na dokončení zpracování úlohy, její odstranění nebo "
-"selhání"
-
-#: app/translations/plugin_manifest_autogenerated.py:18
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Snadné vytváření poznámek a měření na 2D mapách"
 
-#: app/translations/plugin_manifest_autogenerated.py:19
-msgid "Add a GPS location button to the 2D map view"
-msgstr "Přidat tlačítko polohy GPS do zobrazení mapy 2D"
-
-#: app/translations/plugin_manifest_autogenerated.py:20
-msgid "Plugin to get align from external service for WebODM"
-msgstr "Zásuvný modul pro získání sladění z externí služby pro WebODM"
-
-#: app/translations/plugin_manifest_autogenerated.py:21
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "Detect objects using AI in orthophotos"
 msgstr "Detekce objektů pomocí AI na ortofotomapách"
 
-#: app/translations/plugin_manifest_autogenerated.py:22
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "An example plugin for development"
 msgstr "Příklad pluginu pro vývoj"
 
-#: app/translations/plugin_manifest_autogenerated.py:23
+#: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr "Plugin pro přidání tlačítka pro fotografování mapy nebo 3D modelu."
-
-#: app/translations/plugin_manifest_autogenerated.py:24
-msgid "Monitor project storage to quickly compact or delete tasks."
-msgstr ""
 
 #: app/views/app.py:58
 msgid "First Project"
@@ -2131,14 +2090,6 @@ msgstr ""
 msgid "This account is disabled. Please contact an administrator."
 msgstr "Tento účet je deaktivován. Kontaktujte prosím administrátora."
 
-#: coreplugins/align-service/plugin.py:56
-msgid "Align Generator"
-msgstr "Generátor sladění"
-
-#: coreplugins/align-service/templates/index.html:5
-msgid "Align file from task image"
-msgstr "Sladit soubor z obrázku úlohy"
-
 #: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
 #: coreplugins/measure/api.py:21
 msgid ""
@@ -2179,10 +2130,6 @@ msgstr "K výpočtu hodnot nadmořské výšky je zapotřebí digitální model 
 #: coreplugins/annotate/dist/annotate/api.py:125
 msgid "An orthophoto is required to compute temperature values."
 msgstr "K výpočtu hodnot teploty je zapotřebí ortofoto."
-
-#: coreplugins/cesiumion/api_views.py:159
-msgid "No matching enum type."
-msgstr "Žádný odpovídající typ enum."
 
 #: coreplugins/contours/api.py:122
 msgid "No DSM layer is available."
@@ -2269,18 +2216,6 @@ msgstr ""
 msgid "Disk Space"
 msgstr "Místo na disku"
 
-#: coreplugins/editshortlinks/api.py:59
-msgid ""
-"Short URLs can only include letters, numbers, underscore and dash characters "
-"(A-Z, 0-9, _, -)."
-msgstr ""
-"Krátké adresy URL mohou obsahovat pouze písmena, číslice, podtržítka a "
-"pomlčky (A-Z, 0-9, _, -)."
-
-#: coreplugins/editshortlinks/api.py:63
-msgid "This short URL is already taken."
-msgstr "Tato krátká adresa URL je již obsazena."
-
 #: coreplugins/hello-world/plugin.py:10
 msgid "Hello World"
 msgstr "Ahoj světe"
@@ -2296,66 +2231,6 @@ msgstr "Ortofotomapa není k dispozici."
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"
 msgstr "Rozhraní GCP"
-
-#: coreplugins/projects-charts/plugin.py:55
-msgid "Charts"
-msgstr "Grafy"
-
-#: coreplugins/projects-charts/templates/index.html:11
-msgid "Year"
-msgstr "Rok"
-
-#: coreplugins/projects-charts/templates/index.html:23
-msgid "Next"
-msgstr "Další"
-
-#: coreplugins/projects-charts/templates/index.html:69
-msgid "Projects by month"
-msgstr "Projekty podle měsíců"
-
-#: coreplugins/projects-charts/templates/index.html:111
-msgid "Tasks by month"
-msgstr "Úlohy podle měsíců"
-
-#: coreplugins/task-manager/plugin.py:30 coreplugins/task-manager/plugin.py:36
-#: coreplugins/task-manager/templates/index.html:8
-#, fuzzy
-#| msgid "Task tags"
-msgid "Task Manager"
-msgstr "Štítky úkolů"
-
-#: coreplugins/task-manager/templates/index.html:10
-msgid ""
-"Track disk usage across projects: compact tasks to clear temporary files, or "
-"delete them permanently."
-msgstr ""
-
-#: coreplugins/task-manager/templates/index.html:18
-#, fuzzy
-#| msgid "Last Refreshed"
-msgid "Refresh"
-msgstr "Poslední aktualizace"
-
-#: coreplugins/task-manager/templates/index.html:21
-#, fuzzy
-#| msgctxt "Megabytes of storage space"
-#| msgid "Total"
-msgid "Total size:"
-msgstr "Celkem"
-
-#: coreplugins/task-manager/templates/index.html:40
-#, fuzzy
-#| msgid "Image"
-msgid "Images"
-msgstr "Obrázek"
-
-#: coreplugins/tasknotification/plugin.py:84
-msgid "Task Notification"
-msgstr "Oznámení o úkolu"
-
-#: coreplugins/tasknotification/templates/index.html:5
-msgid "Tasks Notification"
-msgstr "Oznamování Úloh"
 
 #: nodeodm/apps.py:8
 msgid "Node Management"
@@ -2436,6 +2311,102 @@ msgstr ""
 #: nodeodm/models.py:34
 msgid "Engine used by the node."
 msgstr "Engine používaný uzlem."
+
+#~ msgid "Upload and tile ODM assets with Cesium ion."
+#~ msgstr "Nahrávání a dlaždicové vykreslení assetů ODM s Cesium ion."
+
+#~ msgid "Integrate WebODM with DroneDB: import images and share results"
+#~ msgstr "Integrace WebODM s DroneDB: import snímků a sdílení výsledků"
+
+#~ msgid "Create editable short links when sharing task URLs"
+#~ msgstr "Vytváření upravitelných krátkých odkazů při sdílení URL úloh"
+
+#~ msgid ""
+#~ "A plugin to add a button for quickly opening OpenStreetMap's iD editor "
+#~ "and setup a TMS basemap."
+#~ msgstr ""
+#~ "Zásuvný modul pro přidání tlačítka pro rychlé otevření iD editoru "
+#~ "OpenStreetMap a nastavení podkladu TMS."
+
+#~ msgid "A plugin to show charts of projects and tasks"
+#~ msgstr "Zásuvný modul pro zobrazení grafů projektů a úkolů"
+
+#~ msgid "Create short links when sharing task URLs"
+#~ msgstr "Vytváření krátkých odkazů při sdílení URL úloh"
+
+#~ msgid ""
+#~ "Get notified when a task has finished processing, has been removed or has "
+#~ "failed"
+#~ msgstr ""
+#~ "Získání upozornění na dokončení zpracování úlohy, její odstranění nebo "
+#~ "selhání"
+
+#~ msgid "Add a GPS location button to the 2D map view"
+#~ msgstr "Přidat tlačítko polohy GPS do zobrazení mapy 2D"
+
+#~ msgid "Plugin to get align from external service for WebODM"
+#~ msgstr "Zásuvný modul pro získání sladění z externí služby pro WebODM"
+
+#~ msgid "Align Generator"
+#~ msgstr "Generátor sladění"
+
+#~ msgid "Align file from task image"
+#~ msgstr "Sladit soubor z obrázku úlohy"
+
+#~ msgid "No matching enum type."
+#~ msgstr "Žádný odpovídající typ enum."
+
+#~ msgid ""
+#~ "Short URLs can only include letters, numbers, underscore and dash "
+#~ "characters (A-Z, 0-9, _, -)."
+#~ msgstr ""
+#~ "Krátké adresy URL mohou obsahovat pouze písmena, číslice, podtržítka a "
+#~ "pomlčky (A-Z, 0-9, _, -)."
+
+#~ msgid "This short URL is already taken."
+#~ msgstr "Tato krátká adresa URL je již obsazena."
+
+#~ msgid "Charts"
+#~ msgstr "Grafy"
+
+#~ msgid "Year"
+#~ msgstr "Rok"
+
+#~ msgid "Next"
+#~ msgstr "Další"
+
+#~ msgid "Projects by month"
+#~ msgstr "Projekty podle měsíců"
+
+#~ msgid "Tasks by month"
+#~ msgstr "Úlohy podle měsíců"
+
+#, fuzzy
+#~| msgid "Task tags"
+#~ msgid "Task Manager"
+#~ msgstr "Štítky úkolů"
+
+#, fuzzy
+#~| msgid "Last Refreshed"
+#~ msgid "Refresh"
+#~ msgstr "Poslední aktualizace"
+
+#, fuzzy
+#~| msgctxt "Megabytes of storage space"
+#~| msgid "Total"
+#~ msgid "Total size:"
+#~ msgstr "Celkem"
+
+#, fuzzy
+#~| msgid "Image"
+#~ msgid "Images"
+#~ msgstr "Obrázek"
+
+#~ msgid "Task Notification"
+#~ msgstr "Oznámení o úkolu"
+
+#~ msgid "Tasks Notification"
+#~ msgstr "Oznamování Úloh"
 
 #~ msgid "Import images from external sources directly"
 #~ msgstr "Přímý import obrázků z externích zdrojů"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-09 17:27+0000\n"
+"POT-Creation-Date: 2026-10-13 22:29+0000\n"
 "PO-Revision-Date: 2026-03-05 19:39+0000\n"
 "Last-Translator: Christos Kanotidis <christoskanotidis@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/webodm/webodm/el/"
@@ -19,49 +19,49 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:110
+#: app/admin.py:112
 msgid "Cannot restore default logo"
 msgstr ""
 
-#: app/admin.py:124
+#: app/admin.py:126
 #, fuzzy
 #| msgid "Button Default"
 msgid "Restore Default"
 msgstr "Προεπιλογή Κουμπιού"
 
-#: app/admin.py:146
+#: app/admin.py:148
 msgid "Enter custom CSS"
 msgstr "Εισάγετε προσαρμοσμένο CSS"
 
-#: app/admin.py:147 app/models/theme.py:40
+#: app/admin.py:149 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:150
+#: app/admin.py:152
 msgid "HTML that will be displayed above site header"
 msgstr "HTML που θα εμφανίζεται πάνω από την επικεφαλίδα του ιστότοπου"
 
-#: app/admin.py:151 app/models/theme.py:41
+#: app/admin.py:153 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (πριν την επικεφαλίδα)"
 
-#: app/admin.py:154
+#: app/admin.py:156
 msgid "HTML that will be displayed after site header"
 msgstr "HTML που θα εμφανιστεί μετά την επικεφαλίδα του ιστότοπου"
 
-#: app/admin.py:155 app/models/theme.py:42
+#: app/admin.py:157 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (μετά την επικεφαλίδα)"
 
-#: app/admin.py:158
+#: app/admin.py:160
 msgid "HTML that will be displayed after the body tag"
 msgstr "HTML που θα εμφανιστεί μετά το body tag"
 
-#: app/admin.py:159 app/models/theme.py:43
+#: app/admin.py:161 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (μετά το body)"
 
-#: app/admin.py:163
+#: app/admin.py:165
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -70,74 +70,83 @@ msgstr ""
 "HTML που θα εμφανίζεται στο υποσέλιδο. Μπορείτε επίσης να χρησιμοποιήσετε "
 "τις ειδικές ετικέτες όπως {ORGANIZATION} και {YEAR}."
 
-#: app/admin.py:164 app/models/theme.py:44
+#: app/admin.py:166 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML - (footer)"
 
-#: app/admin.py:224 app/models/project.py:29
+#: app/admin.py:226 app/models/project.py:29
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: app/admin.py:230
+#: app/admin.py:232
 msgid "Version"
 msgstr "Έκδοση"
 
-#: app/admin.py:236
+#: app/admin.py:238
 msgid "Author"
 msgstr "Συντάκτης"
 
-#: app/admin.py:268
+#: app/admin.py:280
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Απαιτείται επανεκκίνηση. Παρακαλούμε κάντε επανεκκίνηση του WebODM για να "
 "ενεργοποιήσετε το %(plugin)s"
 
-#: app/admin.py:271
+#: app/admin.py:283
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Δεν είναι δυνατή η ενεργοποίηση του πρόσθετου %(plugin)s: %(message)s"
 
-#: app/admin.py:280
+#: app/admin.py:292
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Απαιτείται επανεκκίνηση. Παρακαλούμε κάντε επανεκκίνηση του WebODM για να "
 "απενεργοποιήσετε πλήρως το %(plugin)s"
 
-#: app/admin.py:283
+#: app/admin.py:295
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr ""
 "Δεν είναι δυνατή η απενεργοποίηση του πρόσθετου %(plugin)s: %(message)s"
 
-#: app/admin.py:292
+#: app/admin.py:304
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Δεν είναι δυνατή η διαγραφή του πρόσθετου %(plugin)s: %(message)s"
 
-#: app/admin.py:340
-msgid "Plugin added successfully"
+#: app/admin.py:380
+#, python-format
+msgid ""
+"Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
+"changes."
+msgstr ""
+
+#: app/admin.py:382
+#, fuzzy, python-format
+#| msgid "Plugin added successfully"
+msgid "%(plugin)s installed successfully"
 msgstr "Το πρόσθετο προστέθηκε με επιτυχία"
 
-#: app/admin.py:342
+#: app/admin.py:386
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Δεν μπορεί να φορτώσει το πρόσθετο: %(message)s"
 
-#: app/admin.py:348
+#: app/admin.py:395
 msgid "You need to upload a zip file"
 msgstr "Πρέπει να ανεβάσετε ένα αρχείο zip"
 
-#: app/admin.py:362
+#: app/admin.py:414
 msgid "Disable"
 msgstr "Απενεργοποίηση"
 
-#: app/admin.py:365
+#: app/admin.py:417
 msgid "Enable"
 msgstr "Ενεργοποίηση"
 
-#: app/admin.py:370
+#: app/admin.py:422
 msgid "Actions"
 msgstr "Ενέργειες"
 
@@ -738,7 +747,6 @@ msgid "The person who owns this preset"
 msgstr "Το άτομο που κατέχει αυτή την προεπιλογή"
 
 #: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
-#: coreplugins/task-manager/templates/index.html:37
 msgid "Owner"
 msgstr "Ιδιοκτήτης"
 
@@ -877,11 +885,10 @@ msgid "Copy of %(task)s"
 msgstr "Αντίγραφο του/των %(task)s"
 
 #: app/models/project.py:141 app/models/task.py:247
-#: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "Έργο"
 
-#: app/models/project.py:142 coreplugins/projects-charts/templates/index.html:7
+#: app/models/project.py:142
 msgid "Projects"
 msgstr "Έργα"
 
@@ -1014,7 +1021,7 @@ msgstr "Κόμβος αυτόματης επεξεργασίας"
 msgid "Current status of the task"
 msgstr "Τρέχουσα κατάσταση εργασίας"
 
-#: app/models/task.py:252 coreplugins/task-manager/templates/index.html:39
+#: app/models/task.py:252
 msgid "Status"
 msgstr "Κατάσταση"
 
@@ -1202,7 +1209,7 @@ msgstr "Ορθοφωτογραφικές ζώνες"
 msgid "Size of the task on disk in megabytes"
 msgstr "Μέγεθος της εργασίας στο δίσκο σε megabytes"
 
-#: app/models/task.py:290 coreplugins/task-manager/templates/index.html:41
+#: app/models/task.py:290
 msgid "Size"
 msgstr "Μέγεθος"
 
@@ -1232,7 +1239,7 @@ msgstr "Αριθμός εικόνων που σχετίζονται με αυτ�
 msgid "Media"
 msgstr ""
 
-#: app/models/task.py:297 coreplugins/task-manager/templates/index.html:38
+#: app/models/task.py:297
 msgid "Task"
 msgstr "Εργασία"
 
@@ -1540,11 +1547,11 @@ msgstr "Προβολή στον ιστότοπο"
 msgid "Filter"
 msgstr "Φίλτρο"
 
-#: app/templates/app/admin/change_list_plugin.html:24
+#: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
 msgstr "Φόρτωση πρόσθετου (.zip)"
 
-#: app/templates/app/admin/change_list_plugin.html:28
+#: app/templates/app/admin/change_list_plugin.html:33
 msgid "Manage Plugins"
 msgstr "Διαχείριση Πρόσθετων"
 
@@ -2045,100 +2052,47 @@ msgid "very soon"
 msgstr "πολύ σύντομα"
 
 #: app/translations/plugin_manifest_autogenerated.py:4
-msgid "Upload and tile ODM assets with Cesium ion."
-msgstr "Μεταφόρτωση και πλακίδια στοιχείων ODM με ιόντα καισίου."
-
-#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Compute, preview and export contours from DEMs"
 msgstr "Υπολογισμός, προεπισκόπηση και εξαγωγή περιγραμμάτων από DEMs"
 
-#: app/translations/plugin_manifest_autogenerated.py:6
+#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Display program version, memory and disk space usage statistics"
 msgstr ""
 "Εμφάνιση στατιστικών στοιχείων για την έκδοση του προγράμματος, τη μνήμη και "
 "τη χρήση του χώρου στο δίσκο"
 
-#: app/translations/plugin_manifest_autogenerated.py:7
-msgid "Integrate WebODM with DroneDB: import images and share results"
-msgstr ""
-"Ενσωμάτωση του WebODM με το DroneDB: εισαγωγή εικόνων και κοινή χρήση "
-"αποτελεσμάτων"
-
-#: app/translations/plugin_manifest_autogenerated.py:8
-msgid "Create editable short links when sharing task URLs"
-msgstr ""
-"Δημιουργία επεξεργάσιμων σύντομων συνδέσμων κατά την κοινή χρήση διευθύνσεων "
-"URL εργασιών"
-
-#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:6
 msgid "Add a fullscreen button to the 2D map view"
 msgstr "Προσθήκη ενός κουμπιού πλήρους οθόνης στην προβολή χάρτη 2D"
 
-#: app/translations/plugin_manifest_autogenerated.py:10
+#: app/translations/plugin_manifest_autogenerated.py:7
 msgid "Process in the cloud with webodm.net"
 msgstr "Επεξεργασία στο cloud με το webodm.net"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:8
 msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Υπολογίστε μετρήσεις όγκου, εμβαδού και μήκους στο Leaflet"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
-msgid ""
-"A plugin to add a button for quickly opening OpenStreetMap's iD editor and "
-"setup a TMS basemap."
-msgstr ""
-"Ένα πρόσθετο για την προσθήκη ενός κουμπιού για το γρήγορο άνοιγμα του "
-"εργαλείου επεξεργασίας iD του OpenStreetMap και τη ρύθμιση ενός βασικού "
-"χάρτη TMS."
-
-#: app/translations/plugin_manifest_autogenerated.py:13
-#: app/translations/plugin_manifest_autogenerated.py:17
+#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Ένα πρόσθετο για τη δημιουργία αρχείων GCP από εικόνες"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
-msgid "A plugin to show charts of projects and tasks"
-msgstr "Ένα πρόσθετο για την εμφάνιση διαγραμμάτων έργων και εργασιών"
-
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Create short links when sharing task URLs"
-msgstr "Δημιουργία σύντομων συνδέσμων κατά την κοινή χρήση URL εργασιών"
-
-#: app/translations/plugin_manifest_autogenerated.py:16
-msgid ""
-"Get notified when a task has finished processing, has been removed or has "
-"failed"
-msgstr ""
-"Λάβετε ειδοποίηση όταν μια εργασία έχει ολοκληρώσει την επεξεργασία, έχει "
-"αφαιρεθεί ή έχει αποτύχει"
-
-#: app/translations/plugin_manifest_autogenerated.py:18
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Σχολιάστε και μετρήστε εύκολα σε δισδιάστατους χάρτες"
 
-#: app/translations/plugin_manifest_autogenerated.py:19
-msgid "Add a GPS location button to the 2D map view"
-msgstr "Προσθήκη κουμπιού τοποθεσίας GPS στην προβολή χάρτη 2D"
-
-#: app/translations/plugin_manifest_autogenerated.py:20
-msgid "Plugin to get align from external service for WebODM"
-msgstr "Πρόσθετο για λήψη ευθυγράμμισης από εξωτερική υπηρεσία για WebODM"
-
-#: app/translations/plugin_manifest_autogenerated.py:21
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "Detect objects using AI in orthophotos"
 msgstr ""
 "Εντοπισμός αντικειμένων χρησιμοποιώντας Τεχνητή Νοημοσύνη σε ορθοφωτογραφίες"
 
-#: app/translations/plugin_manifest_autogenerated.py:22
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "An example plugin for development"
 msgstr "Ένα παράδειγμα πρόσθετου για ανάπτυξη"
 
-#: app/translations/plugin_manifest_autogenerated.py:23
+#: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:24
-msgid "Monitor project storage to quickly compact or delete tasks."
 msgstr ""
 
 #: app/views/app.py:58
@@ -2206,14 +2160,6 @@ msgstr ""
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 
-#: coreplugins/align-service/plugin.py:56
-msgid "Align Generator"
-msgstr "Γεννήτρια Ευθυγράμμισης"
-
-#: coreplugins/align-service/templates/index.html:5
-msgid "Align file from task image"
-msgstr "Ευθυγράμμιση αρχείου από εικόνα εργασίας"
-
 #: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
 #: coreplugins/measure/api.py:21
 msgid ""
@@ -2255,10 +2201,6 @@ msgstr ""
 #: coreplugins/annotate/dist/annotate/api.py:125
 msgid "An orthophoto is required to compute temperature values."
 msgstr "Απαιτείται ορθοφωτογραφία για τον υπολογισμό των τιμών."
-
-#: coreplugins/cesiumion/api_views.py:159
-msgid "No matching enum type."
-msgstr "Δεν υπάρχει αντίστοιχος τύπος αρίθμησης."
 
 #: coreplugins/contours/api.py:122
 msgid "No DSM layer is available."
@@ -2345,18 +2287,6 @@ msgstr ""
 msgid "Disk Space"
 msgstr "Χώρος στον δίσκο"
 
-#: coreplugins/editshortlinks/api.py:59
-msgid ""
-"Short URLs can only include letters, numbers, underscore and dash characters "
-"(A-Z, 0-9, _, -)."
-msgstr ""
-"Οι σύντομες διευθύνσεις URL μπορούν να περιλαμβάνουν μόνο γράμματα, "
-"αριθμούς, υπογράμμιση και παύλες (A-Z, 0-9, _, -)."
-
-#: coreplugins/editshortlinks/api.py:63
-msgid "This short URL is already taken."
-msgstr "Αυτή η σύντομη διεύθυνση URL είναι ήδη κατειλημμένη."
-
 #: coreplugins/hello-world/plugin.py:10
 msgid "Hello World"
 msgstr "Γεια σου κόσμε"
@@ -2372,66 +2302,6 @@ msgstr "Δεν υπάρχει διαθέσιμη ορθοφωτογραφία."
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"
 msgstr "Διεπαφή GCP"
-
-#: coreplugins/projects-charts/plugin.py:55
-msgid "Charts"
-msgstr "Γραφήματα"
-
-#: coreplugins/projects-charts/templates/index.html:11
-msgid "Year"
-msgstr "Έτος"
-
-#: coreplugins/projects-charts/templates/index.html:23
-msgid "Next"
-msgstr "Επόμενο"
-
-#: coreplugins/projects-charts/templates/index.html:69
-msgid "Projects by month"
-msgstr "Έργα ανά μήνα"
-
-#: coreplugins/projects-charts/templates/index.html:111
-msgid "Tasks by month"
-msgstr "Εργασίες ανά μήνα"
-
-#: coreplugins/task-manager/plugin.py:30 coreplugins/task-manager/plugin.py:36
-#: coreplugins/task-manager/templates/index.html:8
-#, fuzzy
-#| msgid "Task tags"
-msgid "Task Manager"
-msgstr "Ετικέτες εργασιών"
-
-#: coreplugins/task-manager/templates/index.html:10
-msgid ""
-"Track disk usage across projects: compact tasks to clear temporary files, or "
-"delete them permanently."
-msgstr ""
-
-#: coreplugins/task-manager/templates/index.html:18
-#, fuzzy
-#| msgid "Last Refreshed"
-msgid "Refresh"
-msgstr "Τελευταία ενημέρωση"
-
-#: coreplugins/task-manager/templates/index.html:21
-#, fuzzy
-#| msgctxt "Megabytes of storage space"
-#| msgid "Total"
-msgid "Total size:"
-msgstr "Συνολικά"
-
-#: coreplugins/task-manager/templates/index.html:40
-#, fuzzy
-#| msgid "Max Images"
-msgid "Images"
-msgstr "Μέγιστος Αριθμός Εικόνων"
-
-#: coreplugins/tasknotification/plugin.py:84
-msgid "Task Notification"
-msgstr "Ειδοποίηση εργασίας"
-
-#: coreplugins/tasknotification/templates/index.html:5
-msgid "Tasks Notification"
-msgstr "Ειδοποίηση εργασιών"
 
 #: nodeodm/apps.py:8
 msgid "Node Management"
@@ -2516,6 +2386,107 @@ msgstr ""
 #: nodeodm/models.py:34
 msgid "Engine used by the node."
 msgstr "Μηχανή που χρησιμοποιείται από τον κόμβο."
+
+#~ msgid "Upload and tile ODM assets with Cesium ion."
+#~ msgstr "Μεταφόρτωση και πλακίδια στοιχείων ODM με ιόντα καισίου."
+
+#~ msgid "Integrate WebODM with DroneDB: import images and share results"
+#~ msgstr ""
+#~ "Ενσωμάτωση του WebODM με το DroneDB: εισαγωγή εικόνων και κοινή χρήση "
+#~ "αποτελεσμάτων"
+
+#~ msgid "Create editable short links when sharing task URLs"
+#~ msgstr ""
+#~ "Δημιουργία επεξεργάσιμων σύντομων συνδέσμων κατά την κοινή χρήση "
+#~ "διευθύνσεων URL εργασιών"
+
+#~ msgid ""
+#~ "A plugin to add a button for quickly opening OpenStreetMap's iD editor "
+#~ "and setup a TMS basemap."
+#~ msgstr ""
+#~ "Ένα πρόσθετο για την προσθήκη ενός κουμπιού για το γρήγορο άνοιγμα του "
+#~ "εργαλείου επεξεργασίας iD του OpenStreetMap και τη ρύθμιση ενός βασικού "
+#~ "χάρτη TMS."
+
+#~ msgid "A plugin to show charts of projects and tasks"
+#~ msgstr "Ένα πρόσθετο για την εμφάνιση διαγραμμάτων έργων και εργασιών"
+
+#~ msgid "Create short links when sharing task URLs"
+#~ msgstr "Δημιουργία σύντομων συνδέσμων κατά την κοινή χρήση URL εργασιών"
+
+#~ msgid ""
+#~ "Get notified when a task has finished processing, has been removed or has "
+#~ "failed"
+#~ msgstr ""
+#~ "Λάβετε ειδοποίηση όταν μια εργασία έχει ολοκληρώσει την επεξεργασία, έχει "
+#~ "αφαιρεθεί ή έχει αποτύχει"
+
+#~ msgid "Add a GPS location button to the 2D map view"
+#~ msgstr "Προσθήκη κουμπιού τοποθεσίας GPS στην προβολή χάρτη 2D"
+
+#~ msgid "Plugin to get align from external service for WebODM"
+#~ msgstr "Πρόσθετο για λήψη ευθυγράμμισης από εξωτερική υπηρεσία για WebODM"
+
+#~ msgid "Align Generator"
+#~ msgstr "Γεννήτρια Ευθυγράμμισης"
+
+#~ msgid "Align file from task image"
+#~ msgstr "Ευθυγράμμιση αρχείου από εικόνα εργασίας"
+
+#~ msgid "No matching enum type."
+#~ msgstr "Δεν υπάρχει αντίστοιχος τύπος αρίθμησης."
+
+#~ msgid ""
+#~ "Short URLs can only include letters, numbers, underscore and dash "
+#~ "characters (A-Z, 0-9, _, -)."
+#~ msgstr ""
+#~ "Οι σύντομες διευθύνσεις URL μπορούν να περιλαμβάνουν μόνο γράμματα, "
+#~ "αριθμούς, υπογράμμιση και παύλες (A-Z, 0-9, _, -)."
+
+#~ msgid "This short URL is already taken."
+#~ msgstr "Αυτή η σύντομη διεύθυνση URL είναι ήδη κατειλημμένη."
+
+#~ msgid "Charts"
+#~ msgstr "Γραφήματα"
+
+#~ msgid "Year"
+#~ msgstr "Έτος"
+
+#~ msgid "Next"
+#~ msgstr "Επόμενο"
+
+#~ msgid "Projects by month"
+#~ msgstr "Έργα ανά μήνα"
+
+#~ msgid "Tasks by month"
+#~ msgstr "Εργασίες ανά μήνα"
+
+#, fuzzy
+#~| msgid "Task tags"
+#~ msgid "Task Manager"
+#~ msgstr "Ετικέτες εργασιών"
+
+#, fuzzy
+#~| msgid "Last Refreshed"
+#~ msgid "Refresh"
+#~ msgstr "Τελευταία ενημέρωση"
+
+#, fuzzy
+#~| msgctxt "Megabytes of storage space"
+#~| msgid "Total"
+#~ msgid "Total size:"
+#~ msgstr "Συνολικά"
+
+#, fuzzy
+#~| msgid "Max Images"
+#~ msgid "Images"
+#~ msgstr "Μέγιστος Αριθμός Εικόνων"
+
+#~ msgid "Task Notification"
+#~ msgstr "Ειδοποίηση εργασίας"
+
+#~ msgid "Tasks Notification"
+#~ msgstr "Ειδοποίηση εργασιών"
 
 #~ msgid "Import images from external sources directly"
 #~ msgstr "Εισαγωγή εικόνων από εξωτερικές πηγές άμεσα"

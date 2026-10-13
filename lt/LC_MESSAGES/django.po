@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-09 17:27+0000\n"
+"POT-Creation-Date: 2026-10-13 22:29+0000\n"
 "PO-Revision-Date: 2026-03-05 19:50+0000\n"
 "Last-Translator: Paul <paulius@infoera.lt>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -20,49 +20,49 @@ msgstr ""
 "(n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:110
+#: app/admin.py:112
 msgid "Cannot restore default logo"
 msgstr ""
 
-#: app/admin.py:124
+#: app/admin.py:126
 #, fuzzy
 #| msgid "Button Default"
 msgid "Restore Default"
 msgstr "Mygtukas numatytasis"
 
-#: app/admin.py:146
+#: app/admin.py:148
 msgid "Enter custom CSS"
 msgstr "Įveskite savo CSS"
 
-#: app/admin.py:147 app/models/theme.py:40
+#: app/admin.py:149 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:150
+#: app/admin.py:152
 msgid "HTML that will be displayed above site header"
 msgstr "Virš svetainės antraštės rodomas HTML"
 
-#: app/admin.py:151 app/models/theme.py:41
+#: app/admin.py:153 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (iki antraštės)"
 
-#: app/admin.py:154
+#: app/admin.py:156
 msgid "HTML that will be displayed after site header"
 msgstr "Po svetainės antraštės rodomas HTML"
 
-#: app/admin.py:155 app/models/theme.py:42
+#: app/admin.py:157 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (po antraštės)"
 
-#: app/admin.py:158
+#: app/admin.py:160
 msgid "HTML that will be displayed after the body tag"
 msgstr "Po body žymos rodomas HTML"
 
-#: app/admin.py:159 app/models/theme.py:43
+#: app/admin.py:161 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (po body)"
 
-#: app/admin.py:163
+#: app/admin.py:165
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -71,73 +71,82 @@ msgstr ""
 "Poraštėje rodomas HTML. Taipogi galite naudoti specialias žymas, tokias kaip "
 "{ORGANIZATION} ir {YEAR}."
 
-#: app/admin.py:164 app/models/theme.py:44
+#: app/admin.py:166 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (poraštė)"
 
-#: app/admin.py:224 app/models/project.py:29
+#: app/admin.py:226 app/models/project.py:29
 msgid "Description"
 msgstr "Aprašymas"
 
-#: app/admin.py:230
+#: app/admin.py:232
 msgid "Version"
 msgstr "Versija"
 
-#: app/admin.py:236
+#: app/admin.py:238
 msgid "Author"
 msgstr "Autorius"
 
-#: app/admin.py:268
+#: app/admin.py:280
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Reikia paleisti iš naujo. Prašome iš naujo paleisti WebODM, kad įjungtumėte "
 "%(plugin)s"
 
-#: app/admin.py:271
+#: app/admin.py:283
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Nepavyksta įjungti priedo %(plugin)s: %(message)s"
 
-#: app/admin.py:280
+#: app/admin.py:292
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Reikia paleisti iš naujo. Prašome iš naujo paleisti WebODM, kad pilnai "
 "įjungtumėte %(plugin)s"
 
-#: app/admin.py:283
+#: app/admin.py:295
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "Nepavyksta išjungti priedo %(plugin)s: %(message)s"
 
-#: app/admin.py:292
+#: app/admin.py:304
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Nepavyksta ištrinti priedo %(plugin)s: %(message)s"
 
-#: app/admin.py:340
-msgid "Plugin added successfully"
+#: app/admin.py:380
+#, python-format
+msgid ""
+"Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
+"changes."
+msgstr ""
+
+#: app/admin.py:382
+#, fuzzy, python-format
+#| msgid "Plugin added successfully"
+msgid "%(plugin)s installed successfully"
 msgstr "Priedas sėkmingai pridėtas"
 
-#: app/admin.py:342
+#: app/admin.py:386
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Nepavyksta įkelti priedo: %(message)s"
 
-#: app/admin.py:348
+#: app/admin.py:395
 msgid "You need to upload a zip file"
 msgstr "Jums reikia įkelti zip failą"
 
-#: app/admin.py:362
+#: app/admin.py:414
 msgid "Disable"
 msgstr "Išjungti"
 
-#: app/admin.py:365
+#: app/admin.py:417
 msgid "Enable"
 msgstr "Įgalinti"
 
-#: app/admin.py:370
+#: app/admin.py:422
 msgid "Actions"
 msgstr "Veiksmai"
 
@@ -695,7 +704,6 @@ msgid "The person who owns this preset"
 msgstr ""
 
 #: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
-#: coreplugins/task-manager/templates/index.html:37
 msgid "Owner"
 msgstr "Savininkas"
 
@@ -837,11 +845,10 @@ msgid "Copy of %(task)s"
 msgstr "%(task)s kopija"
 
 #: app/models/project.py:141 app/models/task.py:247
-#: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "Projektas"
 
-#: app/models/project.py:142 coreplugins/projects-charts/templates/index.html:7
+#: app/models/project.py:142
 msgid "Projects"
 msgstr "Projektai"
 
@@ -978,7 +985,7 @@ msgstr "Automatinis apdorojimo mazgas"
 msgid "Current status of the task"
 msgstr "Dabartinė užduoties būsena"
 
-#: app/models/task.py:252 coreplugins/task-manager/templates/index.html:39
+#: app/models/task.py:252
 msgid "Status"
 msgstr "Būsena"
 
@@ -1159,7 +1166,7 @@ msgstr "Ortofoto juostos"
 msgid "Size of the task on disk in megabytes"
 msgstr "Užduoties dydis diske megabaitais"
 
-#: app/models/task.py:290 coreplugins/task-manager/templates/index.html:41
+#: app/models/task.py:290
 msgid "Size"
 msgstr "Dydis"
 
@@ -1191,7 +1198,7 @@ msgstr "Su šia užduotimi susijusių nuotraukų skaičius"
 msgid "Media"
 msgstr ""
 
-#: app/models/task.py:297 coreplugins/task-manager/templates/index.html:38
+#: app/models/task.py:297
 msgid "Task"
 msgstr "Užduotis"
 
@@ -1486,11 +1493,11 @@ msgstr "Žiūrėti svetainėje"
 msgid "Filter"
 msgstr "Filtras"
 
-#: app/templates/app/admin/change_list_plugin.html:24
+#: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
 msgstr ""
 
-#: app/templates/app/admin/change_list_plugin.html:28
+#: app/templates/app/admin/change_list_plugin.html:33
 msgid "Manage Plugins"
 msgstr "Tvarkyti priedus"
 
@@ -1950,88 +1957,44 @@ msgid "very soon"
 msgstr ""
 
 #: app/translations/plugin_manifest_autogenerated.py:4
-msgid "Upload and tile ODM assets with Cesium ion."
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Compute, preview and export contours from DEMs"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:6
+#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Display program version, memory and disk space usage statistics"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:7
-msgid "Integrate WebODM with DroneDB: import images and share results"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:8
-msgid "Create editable short links when sharing task URLs"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:6
 msgid "Add a fullscreen button to the 2D map view"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:10
+#: app/translations/plugin_manifest_autogenerated.py:7
 msgid "Process in the cloud with webodm.net"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:8
 msgid "Compute volume, area and length measurements on Leaflet"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:12
-msgid ""
-"A plugin to add a button for quickly opening OpenStreetMap's iD editor and "
-"setup a TMS basemap."
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:13
-#: app/translations/plugin_manifest_autogenerated.py:17
+#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:14
-msgid "A plugin to show charts of projects and tasks"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Create short links when sharing task URLs"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:16
-msgid ""
-"Get notified when a task has finished processing, has been removed or has "
-"failed"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:18
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Annotate and measure on 2D maps with ease"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:19
-msgid "Add a GPS location button to the 2D map view"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:20
-msgid "Plugin to get align from external service for WebODM"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:21
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "Detect objects using AI in orthophotos"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:22
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "An example plugin for development"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:23
+#: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:24
-msgid "Monitor project storage to quickly compact or delete tasks."
 msgstr ""
 
 #: app/views/app.py:58
@@ -2099,14 +2062,6 @@ msgstr ""
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 
-#: coreplugins/align-service/plugin.py:56
-msgid "Align Generator"
-msgstr ""
-
-#: coreplugins/align-service/templates/index.html:5
-msgid "Align file from task image"
-msgstr ""
-
 #: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
 #: coreplugins/measure/api.py:21
 msgid ""
@@ -2135,10 +2090,6 @@ msgstr ""
 #: coreplugins/annotate/api.py:125
 #: coreplugins/annotate/dist/annotate/api.py:125
 msgid "An orthophoto is required to compute temperature values."
-msgstr ""
-
-#: coreplugins/cesiumion/api_views.py:159
-msgid "No matching enum type."
 msgstr ""
 
 #: coreplugins/contours/api.py:122
@@ -2226,16 +2177,6 @@ msgstr ""
 msgid "Disk Space"
 msgstr "Disko vieta"
 
-#: coreplugins/editshortlinks/api.py:59
-msgid ""
-"Short URLs can only include letters, numbers, underscore and dash characters "
-"(A-Z, 0-9, _, -)."
-msgstr ""
-
-#: coreplugins/editshortlinks/api.py:63
-msgid "This short URL is already taken."
-msgstr ""
-
 #: coreplugins/hello-world/plugin.py:10
 msgid "Hello World"
 msgstr ""
@@ -2252,66 +2193,6 @@ msgstr ""
 
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"
-msgstr ""
-
-#: coreplugins/projects-charts/plugin.py:55
-msgid "Charts"
-msgstr ""
-
-#: coreplugins/projects-charts/templates/index.html:11
-msgid "Year"
-msgstr ""
-
-#: coreplugins/projects-charts/templates/index.html:23
-msgid "Next"
-msgstr ""
-
-#: coreplugins/projects-charts/templates/index.html:69
-#, fuzzy
-#| msgid "Projects"
-msgid "Projects by month"
-msgstr "Projektai"
-
-#: coreplugins/projects-charts/templates/index.html:111
-msgid "Tasks by month"
-msgstr ""
-
-#: coreplugins/task-manager/plugin.py:30 coreplugins/task-manager/plugin.py:36
-#: coreplugins/task-manager/templates/index.html:8
-#, fuzzy
-#| msgid "Task tags"
-msgid "Task Manager"
-msgstr "Užduoties žymos"
-
-#: coreplugins/task-manager/templates/index.html:10
-msgid ""
-"Track disk usage across projects: compact tasks to clear temporary files, or "
-"delete them permanently."
-msgstr ""
-
-#: coreplugins/task-manager/templates/index.html:18
-msgid "Refresh"
-msgstr ""
-
-#: coreplugins/task-manager/templates/index.html:21
-#, fuzzy
-#| msgctxt "Megabytes of storage space"
-#| msgid "Total"
-msgid "Total size:"
-msgstr "Iš viso"
-
-#: coreplugins/task-manager/templates/index.html:40
-#, fuzzy
-#| msgid "Images Count"
-msgid "Images"
-msgstr "Nuotraukų skaičius"
-
-#: coreplugins/tasknotification/plugin.py:84
-msgid "Task Notification"
-msgstr ""
-
-#: coreplugins/tasknotification/templates/index.html:5
-msgid "Tasks Notification"
 msgstr ""
 
 #: nodeodm/apps.py:8
@@ -2383,6 +2264,27 @@ msgstr ""
 #: nodeodm/models.py:34
 msgid "Engine used by the node."
 msgstr "node naudojamas variklis."
+
+#, fuzzy
+#~| msgid "Projects"
+#~ msgid "Projects by month"
+#~ msgstr "Projektai"
+
+#, fuzzy
+#~| msgid "Task tags"
+#~ msgid "Task Manager"
+#~ msgstr "Užduoties žymos"
+
+#, fuzzy
+#~| msgctxt "Megabytes of storage space"
+#~| msgid "Total"
+#~ msgid "Total size:"
+#~ msgstr "Iš viso"
+
+#, fuzzy
+#~| msgid "Images Count"
+#~ msgid "Images"
+#~ msgstr "Nuotraukų skaičius"
 
 #, python-format
 #~ msgid ""

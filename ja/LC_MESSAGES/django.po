@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-09 17:27+0000\n"
+"POT-Creation-Date: 2026-10-13 22:29+0000\n"
 "PO-Revision-Date: 2026-03-05 19:42+0000\n"
 "Last-Translator: Kunihiro Yukawa <mx.vaio@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -19,49 +19,49 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:110
+#: app/admin.py:112
 msgid "Cannot restore default logo"
 msgstr ""
 
-#: app/admin.py:124
+#: app/admin.py:126
 #, fuzzy
 #| msgid "Button Default"
 msgid "Restore Default"
 msgstr "初期設定ボタン"
 
-#: app/admin.py:146
+#: app/admin.py:148
 msgid "Enter custom CSS"
 msgstr "カスタムスタイルシートを入力"
 
-#: app/admin.py:147 app/models/theme.py:40
+#: app/admin.py:149 app/models/theme.py:40
 msgid "CSS"
 msgstr "スタイルシート"
 
-#: app/admin.py:150
+#: app/admin.py:152
 msgid "HTML that will be displayed above site header"
 msgstr "サイトのヘッダー上部に表示されるHTML"
 
-#: app/admin.py:151 app/models/theme.py:41
+#: app/admin.py:153 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (ヘッダー前)"
 
-#: app/admin.py:154
+#: app/admin.py:156
 msgid "HTML that will be displayed after site header"
 msgstr "サイトのヘッダー後に表示されるHTML"
 
-#: app/admin.py:155 app/models/theme.py:42
+#: app/admin.py:157 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (ヘッダー後)"
 
-#: app/admin.py:158
+#: app/admin.py:160
 msgid "HTML that will be displayed after the body tag"
 msgstr "bodyタグの後に表示されるHTML"
 
-#: app/admin.py:159 app/models/theme.py:43
+#: app/admin.py:161 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (body後)"
 
-#: app/admin.py:163
+#: app/admin.py:165
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -70,72 +70,81 @@ msgstr ""
 "フッターに表示されるHTML。{ORGANIZATION} や {YEAR}のような特別なタグも使用可"
 "能です。"
 
-#: app/admin.py:164 app/models/theme.py:44
+#: app/admin.py:166 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (フッター)"
 
-#: app/admin.py:224 app/models/project.py:29
+#: app/admin.py:226 app/models/project.py:29
 msgid "Description"
 msgstr "説明"
 
-#: app/admin.py:230
+#: app/admin.py:232
 msgid "Version"
 msgstr "バージョン"
 
-#: app/admin.py:236
+#: app/admin.py:238
 msgid "Author"
 msgstr "作者"
 
-#: app/admin.py:268
+#: app/admin.py:280
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "再起動が必要です。%(plugin)sを有効にするためにWebODMを再起動してください"
 
-#: app/admin.py:271
+#: app/admin.py:283
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "%(plugin)sプラグインを有効化できません: %(message)s"
 
-#: app/admin.py:280
+#: app/admin.py:292
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "再起動が必要です。%(plugin)sプラグインを完全に無効化するためにWebODMを再起動"
 "してください"
 
-#: app/admin.py:283
+#: app/admin.py:295
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "%(plugin)sプラグインを無効化できません: %(message)s"
 
-#: app/admin.py:292
+#: app/admin.py:304
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "%(plugin)sプラグインを削除できません: %(message)s"
 
-#: app/admin.py:340
-msgid "Plugin added successfully"
+#: app/admin.py:380
+#, python-format
+msgid ""
+"Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
+"changes."
+msgstr ""
+
+#: app/admin.py:382
+#, fuzzy, python-format
+#| msgid "Plugin added successfully"
+msgid "%(plugin)s installed successfully"
 msgstr "プラグインの追加に成功"
 
-#: app/admin.py:342
+#: app/admin.py:386
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "プラグインを読み込めません: %(message)s"
 
-#: app/admin.py:348
+#: app/admin.py:395
 msgid "You need to upload a zip file"
 msgstr "zipファイルのアップロードが必要です"
 
-#: app/admin.py:362
+#: app/admin.py:414
 msgid "Disable"
 msgstr "無効"
 
-#: app/admin.py:365
+#: app/admin.py:417
 msgid "Enable"
 msgstr "有効"
 
-#: app/admin.py:370
+#: app/admin.py:422
 msgid "Actions"
 msgstr "行動"
 
@@ -722,7 +731,6 @@ msgid "The person who owns this preset"
 msgstr "このプリセットを所有する者"
 
 #: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
-#: coreplugins/task-manager/templates/index.html:37
 msgid "Owner"
 msgstr "所有者"
 
@@ -868,11 +876,10 @@ msgid "Copy of %(task)s"
 msgstr "%(task)sをコピー"
 
 #: app/models/project.py:141 app/models/task.py:247
-#: coreplugins/task-manager/templates/index.html:36
 msgid "Project"
 msgstr "プロジェクト"
 
-#: app/models/project.py:142 coreplugins/projects-charts/templates/index.html:7
+#: app/models/project.py:142
 msgid "Projects"
 msgstr "プロジェクト"
 
@@ -1007,7 +1014,7 @@ msgstr "自動処理中のノード"
 msgid "Current status of the task"
 msgstr "タスクの現在の状態"
 
-#: app/models/task.py:252 coreplugins/task-manager/templates/index.html:39
+#: app/models/task.py:252
 msgid "Status"
 msgstr "状態"
 
@@ -1198,7 +1205,7 @@ msgstr "オルソフォト範囲"
 msgid "Size of the task on disk in megabytes"
 msgstr ""
 
-#: app/models/task.py:290 coreplugins/task-manager/templates/index.html:41
+#: app/models/task.py:290
 msgid "Size"
 msgstr ""
 
@@ -1230,7 +1237,7 @@ msgstr "このタスクに関連する画像の数"
 msgid "Media"
 msgstr ""
 
-#: app/models/task.py:297 coreplugins/task-manager/templates/index.html:38
+#: app/models/task.py:297
 msgid "Task"
 msgstr "タスク"
 
@@ -1532,11 +1539,11 @@ msgstr "サイト内の表示"
 msgid "Filter"
 msgstr "フィルタ"
 
-#: app/templates/app/admin/change_list_plugin.html:24
+#: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
 msgstr "プラグインを読み込み （.zip）"
 
-#: app/templates/app/admin/change_list_plugin.html:28
+#: app/templates/app/admin/change_list_plugin.html:33
 msgid "Manage Plugins"
 msgstr "プラグインの管理"
 
@@ -2022,92 +2029,44 @@ msgid "very soon"
 msgstr ""
 
 #: app/translations/plugin_manifest_autogenerated.py:4
-msgid "Upload and tile ODM assets with Cesium ion."
-msgstr "Cesium ion でODM アセットをアップロードおよびタイル化。"
-
-#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Compute, preview and export contours from DEMs"
 msgstr "DEMから等高線を計算、プレビュー、エクスポート"
 
-#: app/translations/plugin_manifest_autogenerated.py:6
+#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Display program version, memory and disk space usage statistics"
 msgstr "プログラムのバージョン、メモリ、ディスク使用量の統計を表示"
 
-#: app/translations/plugin_manifest_autogenerated.py:7
-msgid "Integrate WebODM with DroneDB: import images and share results"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:8
-msgid "Create editable short links when sharing task URLs"
-msgstr "タスクURLの共有時に編集可能なショートリンクを作成"
-
-#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:6
 msgid "Add a fullscreen button to the 2D map view"
 msgstr "2Dマップ表示にフルスクリーンボタンを追加"
 
-#: app/translations/plugin_manifest_autogenerated.py:10
+#: app/translations/plugin_manifest_autogenerated.py:7
 msgid "Process in the cloud with webodm.net"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:8
 msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "リーフレットの体積、面積、長さの測定値を計算する"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
-msgid ""
-"A plugin to add a button for quickly opening OpenStreetMap's iD editor and "
-"setup a TMS basemap."
-msgstr ""
-"OpenStreetMapのiDエディタを素早く開き、TMSベースマップを設定するためのボタン"
-"を追加するプラグインです。"
-
-#: app/translations/plugin_manifest_autogenerated.py:13
-#: app/translations/plugin_manifest_autogenerated.py:17
+#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "画像からGCPファイルを作るためのプラグイン"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
-msgid "A plugin to show charts of projects and tasks"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Create short links when sharing task URLs"
-msgstr "タスク URL の共有時にショートリンクを作成する"
-
-#: app/translations/plugin_manifest_autogenerated.py:16
-msgid ""
-"Get notified when a task has finished processing, has been removed or has "
-"failed"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:18
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Annotate and measure on 2D maps with ease"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:19
-#, fuzzy
-#| msgid "Add a fullscreen button to the 2D map view"
-msgid "Add a GPS location button to the 2D map view"
-msgstr "2Dマップ表示にフルスクリーンボタンを追加"
-
-#: app/translations/plugin_manifest_autogenerated.py:20
-msgid "Plugin to get align from external service for WebODM"
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:21
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "Detect objects using AI in orthophotos"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:22
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "An example plugin for development"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:23
+#: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
-msgstr ""
-
-#: app/translations/plugin_manifest_autogenerated.py:24
-msgid "Monitor project storage to quickly compact or delete tasks."
 msgstr ""
 
 #: app/views/app.py:58
@@ -2175,16 +2134,6 @@ msgstr ""
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 
-#: coreplugins/align-service/plugin.py:56
-msgid "Align Generator"
-msgstr ""
-
-#: coreplugins/align-service/templates/index.html:5
-#, fuzzy
-#| msgid "A plugin to create GCP files from images"
-msgid "Align file from task image"
-msgstr "画像からGCPファイルを作るためのプラグイン"
-
 #: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
 #: coreplugins/measure/api.py:21
 msgid ""
@@ -2225,10 +2174,6 @@ msgstr ""
 #: coreplugins/annotate/dist/annotate/api.py:125
 msgid "An orthophoto is required to compute temperature values."
 msgstr ""
-
-#: coreplugins/cesiumion/api_views.py:159
-msgid "No matching enum type."
-msgstr "一致する列挙型がありません。"
 
 #: coreplugins/contours/api.py:122
 msgid "No DSM layer is available."
@@ -2320,18 +2265,6 @@ msgstr ""
 msgid "Disk Space"
 msgstr "ディスク容量"
 
-#: coreplugins/editshortlinks/api.py:59
-msgid ""
-"Short URLs can only include letters, numbers, underscore and dash characters "
-"(A-Z, 0-9, _, -)."
-msgstr ""
-"ショートURLには、アルファベット、数字、アンダースコア、ダッシュ文字（A-Z、"
-"0-9、_、-）のみが使用できます。"
-
-#: coreplugins/editshortlinks/api.py:63
-msgid "This short URL is already taken."
-msgstr "このショートURLはすでに使用されています。"
-
 #: coreplugins/hello-world/plugin.py:10
 msgid "Hello World"
 msgstr ""
@@ -2351,68 +2284,6 @@ msgstr "使用可能なDSMレイヤがありません。"
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"
 msgstr "GCP インターフェイス"
-
-#: coreplugins/projects-charts/plugin.py:55
-msgid "Charts"
-msgstr ""
-
-#: coreplugins/projects-charts/templates/index.html:11
-msgid "Year"
-msgstr ""
-
-#: coreplugins/projects-charts/templates/index.html:23
-msgid "Next"
-msgstr ""
-
-#: coreplugins/projects-charts/templates/index.html:69
-#, fuzzy
-#| msgid "Projects"
-msgid "Projects by month"
-msgstr "プロジェクト"
-
-#: coreplugins/projects-charts/templates/index.html:111
-msgid "Tasks by month"
-msgstr ""
-
-#: coreplugins/task-manager/plugin.py:30 coreplugins/task-manager/plugin.py:36
-#: coreplugins/task-manager/templates/index.html:8
-#, fuzzy
-#| msgid "Tasks"
-msgid "Task Manager"
-msgstr "タスク"
-
-#: coreplugins/task-manager/templates/index.html:10
-msgid ""
-"Track disk usage across projects: compact tasks to clear temporary files, or "
-"delete them permanently."
-msgstr ""
-
-#: coreplugins/task-manager/templates/index.html:18
-#, fuzzy
-#| msgid "Last Refreshed"
-msgid "Refresh"
-msgstr "最終更新"
-
-#: coreplugins/task-manager/templates/index.html:21
-#, fuzzy
-#| msgctxt "Megabytes of storage space"
-#| msgid "Total"
-msgid "Total size:"
-msgstr "容量"
-
-#: coreplugins/task-manager/templates/index.html:40
-#, fuzzy
-#| msgid "Image"
-msgid "Images"
-msgstr "画像"
-
-#: coreplugins/tasknotification/plugin.py:84
-msgid "Task Notification"
-msgstr ""
-
-#: coreplugins/tasknotification/templates/index.html:5
-msgid "Tasks Notification"
-msgstr ""
 
 #: nodeodm/apps.py:8
 msgid "Node Management"
@@ -2491,6 +2362,71 @@ msgstr ""
 #: nodeodm/models.py:34
 msgid "Engine used by the node."
 msgstr "ノードが使用するエンジン."
+
+#~ msgid "Upload and tile ODM assets with Cesium ion."
+#~ msgstr "Cesium ion でODM アセットをアップロードおよびタイル化。"
+
+#~ msgid "Create editable short links when sharing task URLs"
+#~ msgstr "タスクURLの共有時に編集可能なショートリンクを作成"
+
+#~ msgid ""
+#~ "A plugin to add a button for quickly opening OpenStreetMap's iD editor "
+#~ "and setup a TMS basemap."
+#~ msgstr ""
+#~ "OpenStreetMapのiDエディタを素早く開き、TMSベースマップを設定するためのボタ"
+#~ "ンを追加するプラグインです。"
+
+#~ msgid "Create short links when sharing task URLs"
+#~ msgstr "タスク URL の共有時にショートリンクを作成する"
+
+#, fuzzy
+#~| msgid "Add a fullscreen button to the 2D map view"
+#~ msgid "Add a GPS location button to the 2D map view"
+#~ msgstr "2Dマップ表示にフルスクリーンボタンを追加"
+
+#, fuzzy
+#~| msgid "A plugin to create GCP files from images"
+#~ msgid "Align file from task image"
+#~ msgstr "画像からGCPファイルを作るためのプラグイン"
+
+#~ msgid "No matching enum type."
+#~ msgstr "一致する列挙型がありません。"
+
+#~ msgid ""
+#~ "Short URLs can only include letters, numbers, underscore and dash "
+#~ "characters (A-Z, 0-9, _, -)."
+#~ msgstr ""
+#~ "ショートURLには、アルファベット、数字、アンダースコア、ダッシュ文字（A-Z、"
+#~ "0-9、_、-）のみが使用できます。"
+
+#~ msgid "This short URL is already taken."
+#~ msgstr "このショートURLはすでに使用されています。"
+
+#, fuzzy
+#~| msgid "Projects"
+#~ msgid "Projects by month"
+#~ msgstr "プロジェクト"
+
+#, fuzzy
+#~| msgid "Tasks"
+#~ msgid "Task Manager"
+#~ msgstr "タスク"
+
+#, fuzzy
+#~| msgid "Last Refreshed"
+#~ msgid "Refresh"
+#~ msgstr "最終更新"
+
+#, fuzzy
+#~| msgctxt "Megabytes of storage space"
+#~| msgid "Total"
+#~ msgid "Total size:"
+#~ msgstr "容量"
+
+#, fuzzy
+#~| msgid "Image"
+#~ msgid "Images"
+#~ msgstr "画像"
 
 #~ msgid "Import images from external sources directly"
 #~ msgstr "外部ソースから直接画像をインポート"
