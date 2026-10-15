@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-13 22:29+0000\n"
-"PO-Revision-Date: 2026-09-16 19:51+0000\n"
-"Last-Translator: \"Luca P.\" <madeinupa@gmail.com>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/it/"
-">\n"
+"PO-Revision-Date: 2026-10-16 23:59+0000\n"
+"Last-Translator: \"Luca P.\" <upa@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/"
+"it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: app/admin.py:112
 msgid "Cannot restore default logo"
@@ -117,12 +117,13 @@ msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
+"Plugin %(plugin)s aggiornato con successo. Riavviare WebODM per applicare le "
+"modifiche."
 
 #: app/admin.py:382
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "Plugin aggiunto con successo"
+msgstr "%(plugin)s installato con successo"
 
 #: app/admin.py:386
 #, python-format
@@ -2057,6 +2058,8 @@ msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
+"%(node)s è deprecato potrebbe non funzionare in una versione futura. Vedere "
+"la %(link_start)s guida alla migrazione %(link_end)s per aggiornarlo."
 
 #: app/views/app.py:145
 #, python-format
