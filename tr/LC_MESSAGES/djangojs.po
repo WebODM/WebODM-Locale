@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-13 22:29+0000\n"
-"PO-Revision-Date: 2026-04-03 10:09+0000\n"
-"Last-Translator: Coşkun ERTUĞRUL <coskunertugrul@gmail.com>\n"
+"PO-Revision-Date: 2026-10-28 10:41+0000\n"
+"Last-Translator: Erdem <gnserdem13@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "tr/>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -371,10 +371,9 @@ msgid "Gray"
 msgstr "Gri"
 
 #: app/static/app/js/classes/OverlayLayer.js:14
-#, fuzzy, python-format
-#| msgid "%(file)s is bigger than 5 MB."
+#, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr "%(file)s 5 MB'den büyük."
+msgstr "%(file)s, %(size)s MB'den daha büyüktür."
 
 #: app/static/app/js/classes/OverlayLayer.js:23
 #, python-format
@@ -912,7 +911,7 @@ msgstr "Müşteri"
 #: app/static/app/js/components/EditTaskForm.jsx:239
 #: app/static/app/js/components/EditTaskForm.jsx:391
 msgid "Default"
-msgstr "Ön ayarlar"
+msgstr "Varsayılan"
 
 #: app/static/app/js/components/EditTaskForm.jsx:476
 msgid "My Preset"
@@ -1524,10 +1523,8 @@ msgid "Overlay"
 msgstr ""
 
 #: app/static/app/js/components/Map.jsx:1388
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid EPSG code"
-msgstr "Geçersiz yanıt: %(error)s"
+msgstr "Geçersiz EPSG kodu"
 
 #: app/static/app/js/components/Map.jsx:1456
 #: app/static/app/js/components/Map.jsx:1465
@@ -1569,7 +1566,7 @@ msgstr "Nokta Konumu"
 #: app/static/app/js/components/MapPreview.jsx:454
 #, python-format
 msgid "For performance reasons, only %(num)s images are plotted"
-msgstr "Performans nedenleriyle, yalnızca %(num)s görüntü çizilecektir."
+msgstr "Performans nedenleriyle, yalnızca %(num)s görüntü çizilecektir"
 
 #: app/static/app/js/components/MapPreview.jsx:465
 #, fuzzy
