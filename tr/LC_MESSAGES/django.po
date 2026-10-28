@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-13 22:29+0000\n"
-"PO-Revision-Date: 2026-10-28 10:41+0000\n"
+"PO-Revision-Date: 2026-10-29 10:51+0000\n"
 "Last-Translator: Erdem <gnserdem13@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/webodm/"
 "tr/>\n"
@@ -378,7 +378,7 @@ msgstr "Geçersiz EPSG kodu"
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "Dönüştürülemiyor %(file): %(reason)"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -389,25 +389,21 @@ msgid "Invalid user in permissions list"
 msgstr "İzinler listesinde geçersiz kullanıcı"
 
 #: app/api/projects.py:245
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "İzinler listesinde geçersiz kullanıcı"
+msgstr "İzin listesinde geçersiz grup"
 
 #: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr "Geçersiz izin"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid hillshade value"
 msgid "Invalid image size"
-msgstr "Geçersiz tepe gölgesi değeri"
+msgstr "Geçersiz resim boyutu"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "Görevde %(asset) eksik"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
@@ -458,20 +454,16 @@ msgid "Cannot create task, processing node is not valid"
 msgstr "Görev oluşturulamıyor, en az 2 resme ihtiyacınız var"
 
 #: app/api/tasks.py:293
-#, fuzzy
-#| msgid "You need to upload at least 2 images before commit"
 msgid "You need to upload at least 1 file before commit"
-msgstr "Kaydetmeden önce en az 2 resim yüklemelisiniz"
+msgstr "Kaydetmeden önce en az 1 dosya yüklemelisiniz"
 
 #: app/api/tasks.py:371
 msgid "Cannot duplicate task"
 msgstr "Görev çoğaltılamıyor"
 
 #: app/api/tasks.py:388
-#, fuzzy
-#| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, alignment task is not valid"
-msgstr "Görev oluşturulamıyor, en az 2 resme ihtiyacınız var"
+msgstr "Görev oluşturulamıyor, hizalama görevi geçerli değil"
 
 #: app/api/tasks.py:405
 msgid "Cannot create task, you need at least 2 images"
@@ -492,45 +484,39 @@ msgstr "Görev oluşturulamıyor, bir URL belirtin veya 1 dosya yükleyin."
 #: app/api/tasks.py:793
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
-msgstr ""
+msgstr "Geçersiz URL. %(hint) mi demek istediniz?"
 
 #: app/api/tasks.py:898 app/api/tasks.py:901
-#, fuzzy
-#| msgid "Invalid boundaries"
 msgid "Invalid uuid"
-msgstr "Geçersiz sınır"
+msgstr "Geçersiz kimlik tanımlayıcısı"
 
 #: app/api/tasks.py:933
-#, fuzzy
-#| msgid "Invalid hillshade value"
 msgid "Invalid file type (extension mismatch)"
-msgstr "Geçersiz tepe gölgesi değeri"
+msgstr "Geçersiz dosya türü (uzantı uyuşmazlığı)"
 
 #: app/api/tasks.py:957
 msgid "Some parameters are not integers"
-msgstr ""
+msgstr "Bazı parametreler tam sayı değil"
 
 #: app/api/tasks.py:1016 app/api/tasks.py:1021
 msgid "GeoTIFF must have a valid CRS"
-msgstr ""
+msgstr "GeoTIFF'in geçerli bir CRS'ye sahip olması gerekir"
 
 #: app/api/tasks.py:1023
 msgid "Elevation model must have at most 2 band"
-msgstr ""
+msgstr "Yükseklik modeli en fazla 2 bant içermelidir"
 
 #: app/api/tasks.py:1029
 msgid "Point cloud must be a valid LAZ/LAS file"
-msgstr ""
+msgstr "Nokta bulutu geçerli bir LAZ/LAS dosyası olmalıdır"
 
 #: app/api/tasks.py:1035
 msgid "Textured model must be a valid GLB file"
-msgstr ""
+msgstr "Doku modeli geçerli bir GLB dosyası olmalıdır"
 
 #: app/api/tasks.py:1039
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "No assets uploaded"
-msgstr "Dosya yüklenmedi"
+msgstr "Hiçbir dosya yüklenmedi"
 
 #: app/api/tiler.py:364
 msgid "Invalid boundaries parameter"
@@ -578,10 +564,9 @@ msgid "Unsupported format: %(value)s"
 msgstr "Desteklenmeyen biçim: %(value)s"
 
 #: app/api/tiler.py:634
-#, fuzzy, python-format
-#| msgid "Invalid rescale value: %(value)s"
+#, python-format
 msgid "Invalid resample value: %(value)s"
-msgstr "Geçersiz yeniden ölçeklendirme değeri: %(value)s"
+msgstr "Geçersiz yeniden örnekleme değeri: %(value)"
 
 #: app/api/tiler.py:640
 #, python-format
@@ -589,10 +574,9 @@ msgid "Invalid EPSG code: %(value)s"
 msgstr "Geçersiz EPSG kodu: %(value)s"
 
 #: app/api/tiler.py:646 app/api/tiler.py:648
-#, fuzzy, python-format
-#| msgid "Invalid EPSG code: %(value)s"
+#, python-format
 msgid "Invalid PROJ string: %(value)s"
-msgstr "Geçersiz EPSG kodu: %(value)s"
+msgstr "Geçersiz PROJ dizesi: %(value)"
 
 #: app/api/tiler.py:651
 msgid "Both formula and bands parameters are required"
@@ -614,32 +598,32 @@ msgstr "Jeoreferanssız veri kümesinde epsg kullanılamıyor"
 
 #: app/models/basemap.py:14
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
 #: app/models/basemap.py:15
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:33
 msgid "Label"
-msgstr ""
+msgstr "Katman"
 
 #: app/models/basemap.py:17
 msgid "Attribution"
-msgstr ""
+msgstr "Atıf"
 
 #: app/models/basemap.py:20
 msgid "Max zoom"
-msgstr ""
+msgstr "En büyük yakınlaştırma"
 
 #: app/models/basemap.py:23
 msgid "Min zoom"
-msgstr ""
+msgstr "En küçük yakınlaştırma"
 
 #: app/models/basemap.py:24
 msgid "Subdomains"
-msgstr ""
+msgstr "Alt Alan Adları"
 
 #: app/models/basemap.py:25
 msgid "Layers"
@@ -647,11 +631,11 @@ msgstr "Katmanlar"
 
 #: app/models/basemap.py:26
 msgid "Styles"
-msgstr ""
+msgstr "Stiller"
 
 #: app/models/basemap.py:31
 msgid "Format"
-msgstr ""
+msgstr "Biçim"
 
 #: app/models/basemap.py:32
 msgid "Default"
@@ -659,11 +643,11 @@ msgstr "Varsayılan"
 
 #: app/models/basemap.py:35
 msgid "Basemap"
-msgstr ""
+msgstr "Temel Harita"
 
 #: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "Temel Haritalar"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -789,19 +773,20 @@ msgstr "Kota"
 
 #: app/models/profile.py:16
 msgid "Cluster Id this user is assigned to"
-msgstr ""
+msgstr "Bu kullanıcının atandığı küme kimliği"
 
 #: app/models/profile.py:16
 msgid "Cluster Id"
-msgstr ""
+msgstr "Küme Kimliği"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
 msgstr ""
+"Tek Oturum Açma için kullanılan Açık Kimlik Bağlantısı kullanıcı kimliği"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject"
-msgstr ""
+msgstr "Açık Kimlik Bağlantısı Kullanıcı Kimliği"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -827,13 +812,11 @@ msgstr ""
 
 #: app/models/project.py:31
 msgid "Deleting"
-msgstr ""
+msgstr "Siliniyor"
 
 #: app/models/project.py:32
-#, fuzzy
-#| msgid "Project"
 msgid "Project tags"
-msgstr "Proje"
+msgstr "Proje etiketleri"
 
 #: app/models/project.py:32 app/models/task.py:288
 msgid "Tags"
@@ -841,34 +824,32 @@ msgstr "Etiketler"
 
 #: app/models/project.py:33
 msgid "A flag indicating whether this project is available to the public"
-msgstr ""
+msgstr "Bu projenin halka açık olup olmadığını gösteren bir işaret"
 
 #: app/models/project.py:33 app/models/task.py:265
 msgid "Public"
-msgstr ""
+msgstr "Herkese Açık"
 
 #: app/models/project.py:34
 msgid "A flag indicating whether this public project can be edited"
-msgstr ""
+msgstr "Bu kamu projesinin düzenlenebilir olup olmadığını gösteren bir işaret"
 
 #: app/models/project.py:34 app/models/task.py:266
 msgid "Public Edit"
-msgstr ""
+msgstr "Herkese Açık Düzenleme"
 
 #: app/models/project.py:35 app/models/redirect.py:7
-#, fuzzy
-#| msgid "More in-depth description of the project"
 msgid "Public identifier of the project"
-msgstr "Proje hakkında daha ayrıntılı açıklama"
+msgstr "Projenin herkese açık tanımlayıcısı"
 
 #: app/models/project.py:35 app/models/redirect.py:7
 msgid "Public Id"
-msgstr ""
+msgstr "Herkese Açık Kimlik"
 
 #: app/models/project.py:108 app/models/task.py:486
 #, python-format
 msgid "Copy of %(task)s"
-msgstr ""
+msgstr "%(task) kopyası"
 
 #: app/models/project.py:141 app/models/task.py:247
 msgid "Project"
@@ -876,118 +857,116 @@ msgstr "Proje"
 
 #: app/models/project.py:142
 msgid "Projects"
-msgstr ""
+msgstr "Projeler"
 
 #: app/models/redirect.py:6
-#, fuzzy
-#| msgid "Project"
 msgid "Project Id"
-msgstr "Proje"
+msgstr "Proje Kimliği"
 
 #: app/models/redirect.py:8
-#, fuzzy
-#| msgid "Task"
 msgid "Task Id"
-msgstr "Görev"
+msgstr "Görev Kimliği"
 
 #: app/models/redirect.py:9
-#, fuzzy
-#| msgid "The person who owns this preset"
 msgid "The person associated with this redirect"
-msgstr "Bu ön ayarın sahibi olan kişi"
+msgstr "Bu yönlendirmeyle ilişkili kişi"
 
 #: app/models/redirect.py:23
 msgid "Redirect"
-msgstr ""
+msgstr "Yönlendirme"
 
 #: app/models/redirect.py:24
 msgid "Redirects"
-msgstr ""
+msgstr "Yönlendirmeler"
 
 #: app/models/setting.py:20
 msgid "The name of your application"
-msgstr ""
+msgstr "Uygulamanızın adı"
 
 #: app/models/setting.py:20
 msgid "App name"
-msgstr ""
+msgstr "Uygulama adı"
 
 #: app/models/setting.py:21
 msgid "A 512x512 logo of your application (.png or .jpeg)"
-msgstr ""
+msgstr "512x512 boyutlarındaki uygulama logosu (.png veya .jpeg)"
 
 #: app/models/setting.py:21
 msgid "App logo"
-msgstr ""
+msgstr "Uygulama logosu"
 
 #: app/models/setting.py:31
 msgid "The name of your organization"
-msgstr ""
+msgstr "Kuruluşunuzun adı"
 
 #: app/models/setting.py:31
 msgid "Organization name"
-msgstr ""
+msgstr "Organizasyon adı"
 
 #: app/models/setting.py:32
 msgid "The website URL of your organization"
-msgstr ""
+msgstr "Kuruluşunuzun web sitesi URL'i"
 
 #: app/models/setting.py:32
 msgid "Organization website"
-msgstr ""
+msgstr "Organizasyon web sitesi"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
 #: app/templates/app/logged_in_base.html:119
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: app/models/setting.py:34
 msgid "Active theme"
-msgstr ""
+msgstr "Aktif tema"
 
 #: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
 msgid "Application"
-msgstr ""
+msgstr "Uygulama"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
-msgstr ""
+msgstr "Ayarlar"
 
 #: app/models/task.py:244
 msgid "Id"
-msgstr ""
+msgstr "Kimlik"
 
 #: app/models/task.py:246
 msgid "Identifier of the task (as returned by NodeODM API)"
-msgstr ""
+msgstr "Görevin tanımlayıcısı (NodeODM API'si tarafından döndürülen değer)"
 
 #: app/models/task.py:246
 msgid "UUID"
-msgstr ""
+msgstr "Benzersiz Kimlik"
 
 #: app/models/task.py:247
 msgid "Project that this task belongs to"
-msgstr ""
+msgstr "Bu görevin ait olduğu proje"
 
 #: app/models/task.py:248
 msgid "A label for the task"
-msgstr ""
+msgstr "Görev için bir etiket"
 
 #: app/models/task.py:249
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
 msgstr ""
+"Bu görevin başlangıcından bu yana geçen milisaniye sayısı (-1, bilgi "
+"bulunmadığını gösterir)"
 
 #: app/models/task.py:249
 msgid "Processing Time"
-msgstr ""
+msgstr "İşlem Süresi"
 
 #: app/models/task.py:250
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
 msgstr ""
+"Bu göreve atanmış işlem düğümü (görev henüz bir işlem düğümüyle "
+"ilişkilendirilmemişse boş değer)"
 
 #: app/models/task.py:250 app/views/app.py:149 nodeodm/models.py:37
 msgid "Processing Node"
@@ -998,46 +977,48 @@ msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
 msgstr ""
+"Bu göreve otomatik olarak bir işlem düğümü atanıp atanmayacağını belirten "
+"işaret"
 
 #: app/models/task.py:251
 msgid "Auto Processing Node"
-msgstr ""
+msgstr "Otomatik İşlem Düğümü"
 
 #: app/models/task.py:252
 msgid "Current status of the task"
-msgstr ""
+msgstr "Görevin Mevcut Durumu"
 
 #: app/models/task.py:252
 msgid "Status"
-msgstr ""
+msgstr "Durum"
 
 #: app/models/task.py:253
 msgid "The last processing error received"
-msgstr ""
+msgstr "Alınan son işlem hatası"
 
 #: app/models/task.py:253
 msgid "Last Error"
-msgstr ""
+msgstr "Son Hata"
 
 #: app/models/task.py:254
 msgid "Options that are being used to process this task"
-msgstr ""
+msgstr "Bu görevi işlemek için kullanılan seçenekler"
 
 #: app/models/task.py:255
 msgid "List of available assets to download"
-msgstr ""
+msgstr "İndirilebilecek mevcut varlıkların listesi"
 
 #: app/models/task.py:255
 msgid "Available Assets"
-msgstr ""
+msgstr "Mevcut Varlıklar"
 
 #: app/models/task.py:257
 msgid "Extent of the orthophoto"
-msgstr ""
+msgstr "Ortofotonun kapladığı alan"
 
 #: app/models/task.py:257
 msgid "Orthophoto Extent"
-msgstr ""
+msgstr "Ortofoto Alanı"
 
 #: app/models/task.py:258
 msgid "Extent of the DSM"
@@ -1187,7 +1168,7 @@ msgstr ""
 
 #: app/models/task.py:291
 msgid "Compact"
-msgstr ""
+msgstr "Sıkıştırılmış"
 
 #: app/models/task.py:292
 msgid "Polygon defining the crop area of this task"
@@ -1282,11 +1263,11 @@ msgstr ""
 
 #: app/models/theme.py:26
 msgid "Default button color."
-msgstr ""
+msgstr "Varsayılan düğme rengi."
 
 #: app/models/theme.py:26
 msgid "Button Default"
-msgstr ""
+msgstr "Düğme Varsayılanı"
 
 #: app/models/theme.py:27
 msgid "Delete button color."
