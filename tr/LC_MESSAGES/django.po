@@ -8,24 +8,24 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-13 22:29+0000\n"
-"PO-Revision-Date: 2026-04-03 10:09+0000\n"
-"Last-Translator: Coşkun ERTUĞRUL <coskunertugrul@gmail.com>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/webodm/tr/"
-">\n"
+"PO-Revision-Date: 2026-10-28 10:41+0000\n"
+"Last-Translator: Erdem <gnserdem13@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/webodm/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: app/admin.py:112
 msgid "Cannot restore default logo"
-msgstr ""
+msgstr "Varsayılan logo geri yüklenemiyor"
 
 #: app/admin.py:126
 msgid "Restore Default"
-msgstr ""
+msgstr "Varsayılan ayarları geri yükle"
 
 #: app/admin.py:148
 msgid "Enter custom CSS"
@@ -119,12 +119,13 @@ msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
+"Eklenti %(plugin)s başarıyla güncellendi. Değişikliklerin geçerli olması "
+"için lütfen WebODM'yi yeniden başlatın."
 
 #: app/admin.py:382
 #, fuzzy, python-format
-#| msgid "Plugin added successfully"
 msgid "%(plugin)s installed successfully"
-msgstr "Eklenti başarıyla eklendi"
+msgstr "%(plugin) başarıyla yüklendi"
 
 #: app/admin.py:386
 #, python-format
@@ -163,27 +164,19 @@ msgstr ""
 "potansiyelindeki en iyi model değişkenliği."
 
 #: app/api/formulas.py:22
-#, fuzzy
-#| msgid ""
-#| "Normalized Difference Vegetation Index shows the amount of green "
-#| "vegetation."
 msgid ""
 "Normalized Difference Red Edge Index shows the amount of green vegetation of "
 "permanent or later stage crops."
 msgstr ""
-"Normalleştirilmiş Bitki Örtüsü İndeksi yeşil bitki örtüsünün miktarını "
-"gösterir."
+"Normalleştirilmiş Fark Kırmızı Kenar İndeksi, kalıcı veya daha sonraki aşama "
+"mahsullerinin yeşil bitki örtüsünün miktarını gösterir."
 
 #: app/api/formulas.py:27
-#, fuzzy
-#| msgid ""
-#| "Normalized Difference Vegetation Index shows the amount of green "
-#| "vegetation."
 msgid ""
 "Normalized Difference Water Index shows the amount of water content in water "
 "bodies."
 msgstr ""
-"Normalleştirilmiş Bitki Örtüsü İndeksi yeşil bitki örtüsünün miktarını "
+"Normalleştirilmiş Fark Su İndeksi, su kütlelerindeki su içeriğinin miktarını "
 "gösterir."
 
 #: app/api/formulas.py:37
@@ -328,19 +321,21 @@ msgstr "Centikelvin derece cinsinden sıcaklık."
 
 #: app/api/jwt.py:35 app/api/jwt.py:44
 msgid "User account is disabled."
-msgstr ""
+msgstr "Kullanıcı hesabı devre dışı bırakıldı."
 
 #: app/api/jwt.py:40
 msgid "Cannot impersonate, user is not superuser."
 msgstr ""
+"Bu işlem gerçekleştirilemiyor. Kullanıcının süper kullanıcı (yönetici) "
+"yetkisi bulunmuyor."
 
 #: app/api/jwt.py:52 app/api/jwt.py:60
 msgid "Unable to log in with provided credentials."
-msgstr ""
+msgstr "Verilen kimlik bilgileriyle giriş yapılamadı."
 
 #: app/api/jwt.py:62
 msgid "Must include \"username\" and \"password\"."
-msgstr ""
+msgstr "\"Kullanıcı adı\" ve \"parola\" mutlaka belirtilmelidir."
 
 #: app/api/media.py:72 app/api/tasks.py:315
 msgid "No files uploaded"
@@ -348,39 +343,37 @@ msgstr "Dosya yüklenmedi"
 
 #: app/api/media.py:153 app/api/splats.py:139
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "Dosya izin verilen maksimum boyutu aşıyor"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "Geçersiz katman kimliği"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "Eksik dosya"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "%(file)s, %(size)s MB'den daha büyüktür."
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "Geçersiz katman meta verileri"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
 msgid "Invalid GeoJSON"
-msgstr ""
+msgstr "Geçersiz GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "DXF veya sıkıştırılmış shapefile değil: %(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "Geçersiz EPSG kodu: %(value)s"
+msgstr "Geçersiz EPSG kodu"
 
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
@@ -650,7 +643,7 @@ msgstr ""
 
 #: app/models/basemap.py:25
 msgid "Layers"
-msgstr ""
+msgstr "Katmanlar"
 
 #: app/models/basemap.py:26
 msgid "Styles"
@@ -662,7 +655,7 @@ msgstr ""
 
 #: app/models/basemap.py:32
 msgid "Default"
-msgstr ""
+msgstr "Varsayılan"
 
 #: app/models/basemap.py:35
 msgid "Basemap"
