@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-13 22:29+0000\n"
-"PO-Revision-Date: 2026-09-11 10:57+0000\n"
-"Last-Translator: Marcin Sołoguba <marsol@o2.pl>\n"
+"PO-Revision-Date: 2026-10-31 07:51+0000\n"
+"Last-Translator: Marcin Sołoguba <czalaviek@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/webodm/react-ui/"
 "pl/>\n"
 "Language: pl\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.10.dev0\n"
+"X-Generator: Weblate 2026.11.dev0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -147,55 +148,52 @@ msgstr "Ładowanie modelu teksturowanego..."
 
 #: app/static/app/js/PluginBrowser.jsx:57
 msgid "Installed"
-msgstr ""
+msgstr "Zainstalowane"
 
 #: app/static/app/js/PluginBrowser.jsx:61
 #, python-format
 msgid "Requires WebODM %(version)s"
-msgstr ""
+msgstr "Wymaga WebODM w wersji %(version)s"
 
 #: app/static/app/js/PluginBrowser.jsx:65
 msgid "Update"
-msgstr ""
+msgstr "Aktualizacja"
 
 #: app/static/app/js/PluginBrowser.jsx:69
 msgid "Install"
-msgstr ""
+msgstr "Zainstaluj"
 
 #: app/static/app/js/PluginBrowser.jsx:80
-#, fuzzy
-#| msgid "Imperial"
 msgid "Experimental"
-msgstr "Imperialne"
+msgstr "Eksperymentalne"
 
 #: app/static/app/js/PluginBrowser.jsx:81
-#, fuzzy
-#| msgid "Duplicate"
 msgid "Deprecated"
-msgstr "Duplikuj"
+msgstr "Przestarzałe"
 
 #: app/static/app/js/PluginBrowser.jsx:82
 #, python-format
 msgid "by %(author)s"
-msgstr ""
+msgstr "przez %(author)s"
 
 #: app/static/app/js/PluginBrowser.jsx:159
 msgid "The plugin repository returned an error:"
-msgstr ""
+msgstr "Repozytorium wtyczek zwróciło błąd:"
 
 #: app/static/app/js/PluginBrowser.jsx:161
 #: app/static/app/js/PluginBrowser.jsx:167
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid ""
 "The plugin repository returned an invalid response. Please try again later."
-msgstr "Nie można utworzyć zadania. Proszę spróbować później."
+msgstr ""
+"Repozytorium wtyczek zwróciło błędną odpowiedź. Proszę spróbować później."
 
 #: app/static/app/js/PluginBrowser.jsx:164
 msgid ""
 "Cannot connect to the plugin repository. Check that this server has internet "
 "access and that the connection is not blocked by a firewall or proxy."
 msgstr ""
+"Nie da się połączyć z repozytorium wtyczek. Sprawdź czy serwer ma połączenie "
+"z internetem, albo czy jest ono blokowane przez firewall lub proxy."
 
 #: app/static/app/js/PluginBrowser.jsx:187
 #: app/static/app/js/components/SplatsDialog.jsx:452
@@ -204,7 +202,7 @@ msgstr "Pobieranie…"
 
 #: app/static/app/js/PluginBrowser.jsx:191
 msgid "The plugin repository returned an error while downloading the plugin:"
-msgstr ""
+msgstr "Repozytorium wtyczek zwróciło błąd podczas pobieranie wtyczki:"
 
 #: app/static/app/js/PluginBrowser.jsx:193
 #: app/static/app/js/PluginBrowser.jsx:196
@@ -212,27 +210,29 @@ msgid ""
 "Cannot download the plugin. The connection to the plugin repository failed "
 "or was interrupted."
 msgstr ""
+"Nie udało się pobrać wtyczki. Połączenie do repozytorium wtyczki nie "
+"powiodło się lub zostało przerwane."
 
 #: app/static/app/js/PluginBrowser.jsx:199
-#, fuzzy
-#| msgid "Restarting..."
 msgid "Installing..."
-msgstr "Restartowanie..."
+msgstr "Instalowanie..."
 
 #: app/static/app/js/PluginBrowser.jsx:215
 #: app/static/app/js/PluginBrowser.jsx:217
 msgid "WebODM could not install the plugin:"
-msgstr ""
+msgstr "WebODM nie mógł zainstalować wtyczki:"
 
 #: app/static/app/js/PluginBrowser.jsx:220
 msgid ""
 "Cannot send the plugin to WebODM. The connection was interrupted or the "
 "server is not responding."
 msgstr ""
+"Nie udało się przesłać wtyczki do WebODM. Połączenie zostało przerwane lub "
+"serwer nie odpowiada."
 
 #: app/static/app/js/PluginBrowser.jsx:253
 msgid "No plugins found."
-msgstr ""
+msgstr "Nie znaleziono wtyczek."
 
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
@@ -250,13 +250,11 @@ msgstr "Zamknij"
 #: app/static/app/js/PluginBrowser.jsx:277
 #: app/static/app/js/PluginBrowser.jsx:325
 msgid "Install Plugins"
-msgstr ""
+msgstr "Zainstaluj wtyczki"
 
 #: app/static/app/js/PluginBrowser.jsx:287
-#, fuzzy
-#| msgid "Search options..."
 msgid "Search plugins"
-msgstr "Parametry wyszukiwania..."
+msgstr "Szukaj wtyczek"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -1605,10 +1603,8 @@ msgid "Sort"
 msgstr "Sortuj"
 
 #: app/static/app/js/components/Paginator.jsx:157
-#, fuzzy
-#| msgid "this page"
 msgid "Items per page"
-msgstr "ta strona"
+msgstr "Pozycji na stronie"
 
 #: app/static/app/js/components/Paginator.jsx:172
 msgid "Search results for:"
