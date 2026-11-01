@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
 msgid ""
 msgstr ""
@@ -10,15 +10,15 @@ msgstr ""
 "POT-Creation-Date: 2026-10-13 22:29+0000\n"
 "PO-Revision-Date: 2026-04-08 06:42+0000\n"
 "Last-Translator: Александр Ващенко <sascha93rus@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/webodm/react-ui/"
-"ru/>\n"
 "Language: ru\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/webodm/react-"
+"ui/ru/>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.17-dev\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
 
 #: app/static/app/js/Console.jsx:152
 #, python-format
@@ -83,7 +83,7 @@ msgstr "Цифровая модель рельефа"
 
 #: app/static/app/js/MapView.jsx:155
 msgid "A map is not available for this task or project."
-msgstr ""
+msgstr "Для этой задачи или проекта недоступна карта"
 
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
@@ -107,16 +107,16 @@ msgstr "Показать камеры"
 msgid "Size"
 msgstr "Размер"
 
+# | msgid "Cannot load permissions."
 #: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load splats renderer"
-msgstr "Не удается загрузить разрешения."
+msgstr "Не удалось загрузить модуль визуализации Gaussian Splats."
 
 #: app/static/app/js/ModelView.jsx:818
-msgid ""
-"Could not load splats. This task doesn't seem to have a valid splats file."
+msgid "Could not load splats. This task doesn't seem to have a valid splats file."
 msgstr ""
+"Не удалось загрузить splats. Похоже, что для этого задания отсутствует "
+"корректный файл splats"
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
@@ -135,13 +135,12 @@ msgstr "Текстурированная модель"
 #: app/static/app/js/classes/AssetDownloads.js:63
 #: app/static/app/js/components/TaskListItem.jsx:866
 msgid "Splats"
-msgstr ""
+msgstr "Гауссовы сплаты"
 
+# | msgid "Loading..."
 #: app/static/app/js/ModelView.jsx:981
-#, fuzzy
-#| msgid "Loading..."
 msgid "Loading splats..."
-msgstr "Загрузка..."
+msgstr "Загрузка гауссовых сплатов..."
 
 #: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
@@ -149,94 +148,92 @@ msgstr "Загрузка текстурированной модели..."
 
 #: app/static/app/js/PluginBrowser.jsx:57
 msgid "Installed"
-msgstr ""
+msgstr "Установлен"
 
 #: app/static/app/js/PluginBrowser.jsx:61
 #, python-format
 msgid "Requires WebODM %(version)s"
-msgstr ""
+msgstr "Требуется версия WebODM %(version)s"
 
 #: app/static/app/js/PluginBrowser.jsx:65
 msgid "Update"
-msgstr ""
+msgstr "Обновить"
 
 #: app/static/app/js/PluginBrowser.jsx:69
 msgid "Install"
-msgstr ""
+msgstr "Установить"
 
+# | msgid "Imperial"
 #: app/static/app/js/PluginBrowser.jsx:80
-#, fuzzy
-#| msgid "Imperial"
 msgid "Experimental"
-msgstr "Имперская"
+msgstr "Экспериментальный"
 
+# | msgid "Duplicate"
 #: app/static/app/js/PluginBrowser.jsx:81
-#, fuzzy
-#| msgid "Duplicate"
 msgid "Deprecated"
-msgstr "Дублировать"
+msgstr "Устаревший"
 
 #: app/static/app/js/PluginBrowser.jsx:82
 #, python-format
 msgid "by %(author)s"
-msgstr ""
+msgstr "Автор %(author)s"
 
 #: app/static/app/js/PluginBrowser.jsx:159
 msgid "The plugin repository returned an error:"
-msgstr ""
+msgstr "Репозиторий плагинов вернул ошибку:"
 
-#: app/static/app/js/PluginBrowser.jsx:161
-#: app/static/app/js/PluginBrowser.jsx:167
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
-msgid ""
-"The plugin repository returned an invalid response. Please try again later."
-msgstr "Невозможно создать новую задачу. Пожалуйста, повторите еще раз."
+# | msgid "Cannot create new task. Please try again later."
+#: app/static/app/js/PluginBrowser.jsx:161 app/static/app/js/PluginBrowser.jsx:167
+msgid "The plugin repository returned an invalid response. Please try again later."
+msgstr "Репозиторий плагинов вернул некорректный ответ. Повторите попытку позже."
 
 #: app/static/app/js/PluginBrowser.jsx:164
 msgid ""
-"Cannot connect to the plugin repository. Check that this server has internet "
-"access and that the connection is not blocked by a firewall or proxy."
+"Cannot connect to the plugin repository. Check that this server has internet"
+" access and that the connection is not blocked by a firewall or proxy."
 msgstr ""
+"Не удалось подключиться к репозиторию плагинов. Проверьте, что сервер имеет "
+"доступ к интернету и соединение не блокируется брандмауэром или "
+"прокси-сервером."
 
+# | msgid "Downloading…"
 #: app/static/app/js/PluginBrowser.jsx:187
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Downloading…"
 msgid "Downloading..."
-msgstr "Загрузка…"
+msgstr "Загрузка..."
 
 #: app/static/app/js/PluginBrowser.jsx:191
 msgid "The plugin repository returned an error while downloading the plugin:"
-msgstr ""
+msgstr "Репозиторий плагинов вернул ошибку при загрузке плагина:"
 
-#: app/static/app/js/PluginBrowser.jsx:193
-#: app/static/app/js/PluginBrowser.jsx:196
+#: app/static/app/js/PluginBrowser.jsx:193 app/static/app/js/PluginBrowser.jsx:196
 msgid ""
 "Cannot download the plugin. The connection to the plugin repository failed "
 "or was interrupted."
 msgstr ""
+"Не удалось скачать плагин. Соединение с репозиторием плагинов не удалось "
+"установить или оно было прервано."
 
+# | msgid "Restarting..."
 #: app/static/app/js/PluginBrowser.jsx:199
-#, fuzzy
-#| msgid "Restarting..."
 msgid "Installing..."
-msgstr "Перезапуск..."
+msgstr "Установка..."
 
-#: app/static/app/js/PluginBrowser.jsx:215
-#: app/static/app/js/PluginBrowser.jsx:217
+#: app/static/app/js/PluginBrowser.jsx:215 app/static/app/js/PluginBrowser.jsx:217
 msgid "WebODM could not install the plugin:"
-msgstr ""
+msgstr "WebODM не удалось установить плагин:"
 
 #: app/static/app/js/PluginBrowser.jsx:220
 msgid ""
 "Cannot send the plugin to WebODM. The connection was interrupted or the "
 "server is not responding."
 msgstr ""
+"Не удалось передать плагин в WebODM. Соединение было прервано или сервер не "
+"отвечает."
 
 #: app/static/app/js/PluginBrowser.jsx:253
 msgid "No plugins found."
-msgstr ""
+msgstr "Плагины не найдены."
 
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
@@ -251,16 +248,14 @@ msgstr ""
 msgid "Close"
 msgstr "Закрыть"
 
-#: app/static/app/js/PluginBrowser.jsx:277
-#: app/static/app/js/PluginBrowser.jsx:325
+#: app/static/app/js/PluginBrowser.jsx:277 app/static/app/js/PluginBrowser.jsx:325
 msgid "Install Plugins"
-msgstr ""
+msgstr "Установка плагинов"
 
+# | msgid "Search"
 #: app/static/app/js/PluginBrowser.jsx:287
-#, fuzzy
-#| msgid "Search"
 msgid "Search plugins"
-msgstr "Поиск"
+msgstr "Поиск плагинов"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -365,11 +360,11 @@ msgstr "Оранжевый"
 msgid "Gray"
 msgstr "Серый"
 
+# | msgid "%(file)s is bigger than 5 MB."
 #: app/static/app/js/classes/OverlayLayer.js:14
-#, fuzzy, python-format
-#| msgid "%(file)s is bigger than 5 MB."
+#, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr "%(file)s больше чем 5 МБ."
+msgstr "Размер файла %(file)s превышает %(size)s МБ."
 
 #: app/static/app/js/classes/OverlayLayer.js:23
 #, python-format
@@ -490,7 +485,7 @@ msgstr "Футы"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Дюймы"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -527,8 +522,7 @@ msgstr "Квадратных метров"
 msgid "Square Kilometers"
 msgstr "Квадратные километры"
 
-#: app/static/app/js/classes/Units.js:120
-#: app/static/app/js/classes/Units.js:127
+#: app/static/app/js/classes/Units.js:120 app/static/app/js/classes/Units.js:127
 msgid "Square Miles"
 msgstr "Квадратных миль"
 
@@ -536,8 +530,7 @@ msgstr "Квадратных миль"
 msgid "Cubic Meters"
 msgstr "Кубические метры"
 
-#: app/static/app/js/classes/Units.js:141
-#: app/static/app/js/classes/Units.js:148
+#: app/static/app/js/classes/Units.js:141 app/static/app/js/classes/Units.js:148
 msgid "Cubic Yards"
 msgstr "Кубические ярды"
 
@@ -593,11 +586,10 @@ msgstr "Читать"
 msgid "No Access"
 msgstr "Нет доступа"
 
+# | msgid "Enter name"
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Enter name"
 msgid "Group name"
-msgstr "Введите имя"
+msgstr "Название группы"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -607,17 +599,15 @@ msgstr "Имя пользователя"
 msgid "Permissions"
 msgstr "Разрешения"
 
+# | msgid "Add tags"
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "Добавить теги"
+msgstr "Добавить пользователя"
 
+# | msgid "Add Project"
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "Добавить проект"
+msgstr "Добавить группу"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:21
 msgid "Input & Preprocessing"
@@ -629,15 +619,15 @@ msgstr "Конфигурация камеры"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:25
 msgid "Masking"
-msgstr ""
+msgstr "Маскирование"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Multispectral"
-msgstr ""
+msgstr "Мультиспектральная съёмка"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Video Input"
-msgstr ""
+msgstr "Входное видео"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:32
 msgid "Bounds & Cropping"
@@ -645,11 +635,11 @@ msgstr "Границы и обрезка"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:35
 msgid "Boundary"
-msgstr ""
+msgstr "Граница"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:40
 msgid "Coordinate Reference System"
-msgstr ""
+msgstr "Система координат (CRS)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:43
 #: app/static/app/js/components/EditTaskForm.jsx:625
@@ -659,21 +649,20 @@ msgstr "Опции"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:51
 msgid "Feature Extraction"
-msgstr ""
+msgstr "Выделение ключевых точек"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:52
 msgid "Feature Matching"
-msgstr ""
+msgstr "Сопоставление ключевых точек"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:53
 msgid "Reconstruction"
 msgstr "Реконструкция"
 
+# | msgid "Elevation"
 #: app/static/app/js/components/EditPresetDialog.jsx:62
-#, fuzzy
-#| msgid "Elevation"
 msgid "Generation"
-msgstr "Высота"
+msgstr "Создание"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:63
 msgid "Filtering"
@@ -685,65 +674,58 @@ msgstr "Постобработка"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:72
 msgid "Mesh Generation"
-msgstr ""
+msgstr "Создание полигональной сетки"
 
+# | msgid "Texturing"
 #: app/static/app/js/components/EditPresetDialog.jsx:80
-#, fuzzy
-#| msgid "Texturing"
 msgid "Texture Options"
-msgstr "Текстурирование"
+msgstr "Параметры текстурирования"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:85
 msgid "Digital Elevation Models"
 msgstr "Цифровые модели рельефа"
 
+# | msgid "Task Output:"
 #: app/static/app/js/components/EditPresetDialog.jsx:88
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Outputs"
-msgstr "Вывод выполнения задачи:"
+msgstr "Выходные данные"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:89
 msgid "Resolution & Sampling"
 msgstr "Разрешение и выборка"
 
+# | msgid "Classification filter"
 #: app/static/app/js/components/EditPresetDialog.jsx:90
-#, fuzzy
-#| msgid "Classification filter"
 msgid "Ground Classification (SMRF)"
-msgstr "Классификационный фильтр"
+msgstr "Классификация точек земли (SMRF)"
 
+# | msgid "Orthophoto Cutline"
 #: app/static/app/js/components/EditPresetDialog.jsx:98
-#, fuzzy
-#| msgid "Orthophoto Cutline"
 msgid "Orthophoto Options"
-msgstr "Линия разреза ортофото"
+msgstr "Параметры ортофотоплана"
 
+# | msgid "Miles"
 #: app/static/app/js/components/EditPresetDialog.jsx:103
-#, fuzzy
-#| msgid "Miles"
 msgid "Tiles"
-msgstr "Мили"
+msgstr "Тайлы"
 
+# | msgid "Options"
 #: app/static/app/js/components/EditPresetDialog.jsx:106
-#, fuzzy
-#| msgid "Options"
 msgid "Tiles Options"
-msgstr "Опции"
+msgstr "Параметры тайлов"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:111
 msgid "System & Pipeline Control"
-msgstr ""
+msgstr "Система и управление обработкой"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:114
 msgid "Performance"
-msgstr ""
+msgstr "Производительность"
 
+# | msgid "Helicopter control"
 #: app/static/app/js/components/EditPresetDialog.jsx:115
-#, fuzzy
-#| msgid "Helicopter control"
 msgid "Pipeline Control"
-msgstr "Управление вертолетом"
+msgstr "Управление этапами обработки"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:120
 msgid "Split/Merge"
@@ -751,17 +733,16 @@ msgstr "Разделение/слияние"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:123
 msgid "Splitting"
-msgstr ""
+msgstr "Разделение"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:124
 msgid "Merging"
-msgstr ""
+msgstr "Объединение"
 
+# | msgid "Other settings"
 #: app/static/app/js/components/EditPresetDialog.jsx:471
-#, fuzzy
-#| msgid "Other settings"
 msgid "Other Options"
-msgstr "Другие настройки"
+msgstr "Другие параметры"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:508
 #: app/static/app/js/components/EditTaskForm.jsx:571
@@ -786,23 +767,23 @@ msgstr "Поиск"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:525
 msgid "Flat View"
-msgstr ""
+msgstr "Общий список"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:525
 msgid "Grouped View"
-msgstr ""
+msgstr "Группировка по категориям"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:529
 msgid "Expand"
-msgstr ""
+msgstr "Развернуть"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:529
 msgid "Collapse"
-msgstr ""
+msgstr "Свернуть"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:539
 msgid "Search options..."
-msgstr ""
+msgstr "Поиск параметров..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -846,8 +827,7 @@ msgid "Description (optional)"
 msgstr "Описание (необязательно)"
 
 #: app/static/app/js/components/EditTaskForm.jsx:115
-msgid ""
-"Could not load list of processing nodes. Are you connected to the internet?"
+msgid "Could not load list of processing nodes. Are you connected to the internet?"
 msgstr ""
 "Невозможно загрузить список узлов обработки. Вы уверены, что подключены к "
 "интернету?"
@@ -866,15 +846,15 @@ msgid ""
 "granted the current user sufficient permissions to view the processing node "
 "(by going to Administration -- Processing Nodes -- Select Node -- Object "
 "Permissions -- Add User/Group and check CAN VIEW PROCESSING NODE). If you "
-"are bringing a node back online, it will take about 30 seconds for WebODM to "
-"recognize it."
+"are bringing a node back online, it will take about 30 seconds for WebODM to"
+" recognize it."
 msgstr ""
 "Убедитесь, что хотя бы один узел доступен для обработки и что вы "
 "предоставили текущему пользователю достаточные права для просмотра "
 "узла(ядра) обработки (зайдите в панель Администрирование -- Обрабатывающие "
-"узлы(ядра) -- Выбрать узел обработки -- Полномочия -- Добавить пользователя/"
-"группу и выберете РАЗРЕШАЕТСЯ ВИДЕТЬ ЯДРО). Если вы запустите ядро, то у вас "
-"займет примерно 30 секунд, чтобы оно распозналось."
+"узлы(ядра) -- Выбрать узел обработки -- Полномочия -- Добавить "
+"пользователя/группу и выберете РАЗРЕШАЕТСЯ ВИДЕТЬ ЯДРО). Если вы запустите "
+"ядро, то у вас займет примерно 30 секунд, чтобы оно распозналось."
 
 #: app/static/app/js/components/EditTaskForm.jsx:223
 msgid "Could not load list of presets. Are you connected to the internet?"
@@ -913,8 +893,8 @@ msgstr "Не удалось дублировать пресет. Пожалуй�
 
 #: app/static/app/js/components/EditTaskForm.jsx:508
 msgid ""
-"System presets can only be removed by a staff member from the Administration "
-"panel."
+"System presets can only be removed by a staff member from the Administration"
+" panel."
 msgstr ""
 "Системные пресеты могут быть удалены только пользователем с достаточным "
 "количество прав из панели Администрирования."
@@ -1112,7 +1092,7 @@ msgstr "Не удалось завершить загрузку. Попробу�
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:216
 msgid "Select at least one file to upload."
-msgstr ""
+msgstr "Выберите хотя бы один файл для загрузки."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:223
 msgid "A textured model requires also a point cloud to be properly displayed."
@@ -1124,30 +1104,28 @@ msgstr ""
 msgid "Failed to initialize upload. Try again later."
 msgstr "Не удалось инициализировать загрузку. Попробуйте еще раз позже."
 
+# | msgid "Import Existing Assets"
 #: app/static/app/js/components/ImportExternalPanel.jsx:286
-#, fuzzy
-#| msgid "Import Existing Assets"
 msgid "Import External Data"
-msgstr "Импортировать существующие наборы"
+msgstr "Импорт внешних данных"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:287
 msgid "Select files. At least one file is required."
-msgstr ""
+msgstr "Выберите файлы. Требуется хотя бы один файл."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:307
 msgid "Remove"
-msgstr ""
+msgstr "Удалить"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
 msgid "Cancel Upload"
 msgstr "Отменить загрузку"
 
+# | msgid "Upload a File"
 #: app/static/app/js/components/ImportExternalPanel.jsx:333
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload"
-msgstr "Загрузить файл"
+msgstr "Загрузить"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
@@ -1280,13 +1258,12 @@ msgstr "Выдавленный"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:57
 msgid "Change color"
-msgstr ""
+msgstr "Изменить цвет"
 
+# | msgid "Moving..."
 #: app/static/app/js/components/LayersControlOverlays.jsx:206
-#, fuzzy
-#| msgid "Moving..."
 msgid "Converting..."
-msgstr "Перемещение..."
+msgstr "Преобразование..."
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:216
 #: app/static/app/js/components/Map.jsx:1730
@@ -1295,15 +1272,14 @@ msgstr "Перемещение..."
 msgid "Opacity"
 msgstr "Непрозрачность"
 
+# | msgid "Saving…"
 #: app/static/app/js/components/LayersControlOverlays.jsx:218
-#, fuzzy
-#| msgid "Saving…"
 msgid "Syncing…"
-msgstr "Сохранение…"
+msgstr "Синхронизация…"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:294
 msgid "Overlays"
-msgstr ""
+msgstr "Наложенные слои"
 
 #: app/static/app/js/components/LayersControlPanel.jsx:42
 #: app/static/app/js/components/NewTaskPanel.jsx:353
@@ -1336,19 +1312,18 @@ msgid ""
 "Cannot upload %(filename)s, file is too large! Default MaxFileSize is "
 "%(maxFileSize)s MB!"
 msgstr ""
-"Не удается загрузить %(filename)s, файл слишком большой! Максимальный размер "
-"файла – %(maxFileSize)s MB!"
+"Не удается загрузить %(filename)s, файл слишком большой! Максимальный размер"
+" файла – %(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:247
 #: app/static/app/js/components/SplatsDialog.jsx:235
 msgid "Upload failed. Check your connection and try again."
 msgstr "Ошибка загрузки. Проверьте подключение и повторите попытку."
 
+# | msgid "Cannot load permissions."
 #: app/static/app/js/components/ManageMediaDialog.jsx:271
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "Не удается загрузить разрешения."
+msgstr "Не удалось загрузить медиафайлы."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:288
 #, python-format
@@ -1359,11 +1334,10 @@ msgstr "Вы уверены, что хотите удалить %(filename)s?"
 msgid "Cannot delete file."
 msgstr "Не удалось удалить файл."
 
+# | msgid "Cannot complete operation."
 #: app/static/app/js/components/ManageMediaDialog.jsx:356
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "Не удается завершить операцию."
+msgstr "Не удалось обновить описание."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:371
 msgid "Video"
@@ -1377,15 +1351,13 @@ msgstr "Панорама"
 msgid "Photo"
 msgstr "Фото"
 
+# | msgid "Upload a File"
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "Загрузить файл"
+msgstr "Загрузить файлы"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:403
-msgid ""
-"Georeferenced photos, panoramas and videos will be displayed on the map."
+msgid "Georeferenced photos, panoramas and videos will be displayed on the map."
 msgstr ""
 "На карте будут отображаться фотографии, панорамы и видео с географической "
 "привязкой."
@@ -1397,25 +1369,23 @@ msgstr "Завершение... пожалуйста, подождите"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:433
 msgid "No media files."
-msgstr ""
+msgstr "Медиафайлы отсутствуют."
 
+# | msgid "Righ view"
 #: app/static/app/js/components/ManageMediaDialog.jsx:445
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "Вид справа"
+msgstr "Вид сеткой"
 
+# | msgid "Left view"
 #: app/static/app/js/components/ManageMediaDialog.jsx:452
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "Вид слева"
+msgstr "Вид списком"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:516
 #: app/static/app/js/components/Map.jsx:542
 #: app/static/app/js/components/TaskListItem.jsx:865
 msgid "Media"
-msgstr ""
+msgstr "Медиафайлы"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:558
 msgid "Filename"
@@ -1437,23 +1407,22 @@ msgstr "Укажите ссылку на образец с мозайкой (п�
 msgid "{z}, {x}, {y} for Z/X/Y tile scheme"
 msgstr "{z}, {x}, {y} для Z/X/Y схемы мозайки"
 
+# | msgid "{-y} for flipped TMS-style Y coordinates"
 #: app/static/app/js/components/Map.jsx:795
 #: app/static/app/js/components/MapPreview.jsx:116
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
+#, python-brace-format
 msgid "{−y} for flipped TMS-style Y coordinates"
-msgstr "{-y} для перевернутых координат Y в стиле TMS"
+msgstr "{−y} для инвертированной координаты Y в схеме TMS"
 
 #: app/static/app/js/components/Map.jsx:797
 #: app/static/app/js/components/MapPreview.jsx:118
 msgid "Example:"
 msgstr "Пример:"
 
+# | msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
 #: app/static/app/js/components/Map.jsx:881
-#, fuzzy
-#| msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
 msgid "Add a GeoJSON (.json), ShapeFile (.zip) or AutoCAD (.dxf) overlay"
-msgstr "Добавить временное наложение GeoJSON (.json) или ShapeFile (.zip)"
+msgstr "Добавить слой GeoJSON (.json), Shapefile (.zip) или AutoCAD (.dxf)"
 
 #: app/static/app/js/components/Map.jsx:942
 msgid "Cannot set cropping area. Check your internet connection."
@@ -1469,32 +1438,31 @@ msgstr "Ошибка: невозможно загрузить данные."
 
 #: app/static/app/js/components/Map.jsx:1142
 msgid "Cannot import overlay: no task is loaded."
-msgstr ""
+msgstr "Не удалось импортировать слой: задание не загружено."
 
 #: app/static/app/js/components/Map.jsx:1230
 #: app/static/app/js/components/Map.jsx:1263
 #: app/static/app/js/components/Map.jsx:1281
 #, python-format
 msgid "Cannot save overlay %(name)s"
-msgstr ""
+msgstr "Не удалось сохранить слой %(name)s"
 
 #: app/static/app/js/components/Map.jsx:1296
 #: app/static/app/js/components/Map.jsx:1336
 msgid "Overlay"
-msgstr ""
+msgstr "Наложенный слой"
 
+# | msgid "Invalid response: %(error)s"
 #: app/static/app/js/components/Map.jsx:1388
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid EPSG code"
-msgstr "Неверный ответ: %(error)s"
+msgstr "Некорректный код EPSG"
 
+# | msgid "Cannot delete file."
 #: app/static/app/js/components/Map.jsx:1456
 #: app/static/app/js/components/Map.jsx:1465
-#, fuzzy, python-format
-#| msgid "Cannot delete file."
+#, python-format
 msgid "Cannot convert %(file)s"
-msgstr "Не удалось удалить файл."
+msgstr "Не удалось преобразовать файл %(file)s"
 
 #: app/static/app/js/components/Map.jsx:1734
 #: app/static/app/js/components/NewTaskPanel.jsx:296
@@ -1502,11 +1470,10 @@ msgstr "Не удалось удалить файл."
 msgid "Loading..."
 msgstr "Загрузка..."
 
+# | msgid "Import"
 #: app/static/app/js/components/Map.jsx:1740
-#, fuzzy
-#| msgid "Import"
 msgid "Import DXF"
-msgstr "Импортировать"
+msgstr "Импорт DXF"
 
 #: app/static/app/js/components/MapPreview.jsx:172
 msgid "Set Reconstruction Area (optional)"
@@ -1660,11 +1627,10 @@ msgstr "Поиск по именам, #тегам или @пользовател
 msgid "Sort"
 msgstr "Сортировать"
 
+# | msgid "this page"
 #: app/static/app/js/components/Paginator.jsx:157
-#, fuzzy
-#| msgid "this page"
 msgid "Items per page"
-msgstr "эта страница"
+msgstr "Элементов на странице"
 
 #: app/static/app/js/components/Paginator.jsx:172
 msgid "Search results for:"
@@ -1695,11 +1661,11 @@ msgstr "Невозможно создать новую задачу. Пожал�
 #: app/static/app/js/components/ProjectListItem.jsx:224
 #, python-format
 msgid ""
-"%(count)s files cannot be uploaded. As a reminder, only images (.jpg, .tif, ."
-"png) and GCP files (.txt) can be uploaded. Try again."
+"%(count)s files cannot be uploaded. As a reminder, only images (.jpg, .tif, "
+".png) and GCP files (.txt) can be uploaded. Try again."
 msgstr ""
-"%(count)s файлов не могут быть загружены. Напоминаем, что только изображения "
-"(.jpg, .tif, .png) и контрольные точки (.txt) могут быть загружены. "
+"%(count)s файлов не могут быть загружены. Напоминаем, что только изображения"
+" (.jpg, .tif, .png) и контрольные точки (.txt) могут быть загружены. "
 "Повторите еще раз."
 
 #: app/static/app/js/components/ProjectListItem.jsx:529
@@ -1720,8 +1686,8 @@ msgid ""
 "This project was shared with you. It will not be deleted, but simply hidden "
 "from your dashboard. Continue?"
 msgstr ""
-"Вам поделились этим проектом. Он не будет удален, а просто скроется из вашей "
-"панели инструментов. Продолжить?"
+"Вам поделились этим проектом. Он не будет удален, а просто скроется из вашей"
+" панели инструментов. Продолжить?"
 
 #: app/static/app/js/components/ProjectListItem.jsx:744
 msgid "Edit Project"
@@ -1735,15 +1701,14 @@ msgstr "Сохранение изменений..."
 msgid "Select Images and GCP"
 msgstr "Выбрать изображения и контрольные точки"
 
+# | msgid "Import Assets or Backups"
 #: app/static/app/js/components/ProjectListItem.jsx:779
-#, fuzzy
-#| msgid "Import Assets or Backups"
 msgid "Assets / Backups"
-msgstr "Импортировать объекты или резервные копии"
+msgstr "Ресурсы / Резервные копии"
 
 #: app/static/app/js/components/ProjectListItem.jsx:780
 msgid "External Data"
-msgstr ""
+msgstr "Внешние данные"
 
 #: app/static/app/js/components/ProjectListItem.jsx:812
 #, python-format
@@ -1767,10 +1732,13 @@ msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
+"Обнаружено нестабильное соединение. Если загрузка зависнет, нажмите кнопку "
+"ниже, чтобы включить стабильный режим. После этого потребуется начать "
+"загрузку заново."
 
 #: app/static/app/js/components/ProjectListItem.jsx:886
 msgid "Enable Stable Mode"
-msgstr ""
+msgstr "Включить стабильный режим"
 
 #: app/static/app/js/components/ShareButton.jsx:72
 #: app/static/app/js/components/ShareButton.jsx:74
@@ -1782,8 +1750,7 @@ msgstr "Поделиться"
 
 #: app/static/app/js/components/SharePopup.jsx:108
 msgid "An error occurred. Check your connection and permissions."
-msgstr ""
-"Обнаружена ошибка. Проверьте интернет соединение и полномочия пользователя."
+msgstr "Обнаружена ошибка. Проверьте интернет соединение и полномочия пользователя."
 
 #: app/static/app/js/components/SharePopup.jsx:180
 msgid "Share This Task"
@@ -1813,8 +1780,8 @@ msgstr "Отклонить"
 #: app/static/app/js/components/SharePopup.jsx:232
 #, python-format
 msgid ""
-"The link below is accessible only within your local network. To share a link "
-"with others online, use a %(service)s"
+"The link below is accessible only within your local network. To share a link"
+" with others online, use a %(service)s"
 msgstr ""
 "Ссылка, приведенная ниже, доступна только в вашей локальной сети. Чтобы "
 "поделиться ссылкой с другими пользователями в Интернете, используйте "
@@ -1842,7 +1809,7 @@ msgstr "По возрастанию"
 
 #: app/static/app/js/components/SplatsDialog.jsx:137
 msgid "Please upload a single file."
-msgstr ""
+msgstr "Загрузите только один файл."
 
 #: app/static/app/js/components/SplatsDialog.jsx:330
 #: coreplugins/annotate/public/Popup.jsx:248
@@ -1856,28 +1823,24 @@ msgstr ""
 msgid "Invalid response: %(error)s"
 msgstr "Неверный ответ: %(error)s"
 
+# | msgid "Cannot start processing task."
 #: app/static/app/js/components/SplatsDialog.jsx:333
-#, fuzzy
-#| msgid "Cannot start processing task."
 msgid "Cannot export training data."
-msgstr "Не удается запустить задачу обработки."
+msgstr "Не удалось экспортировать обучающие данные."
 
+# | msgid "Are you sure you want to delete this?"
 #: app/static/app/js/components/SplatsDialog.jsx:338
-#, fuzzy
-#| msgid "Are you sure you want to delete this?"
 msgid "Are you sure you want to delete the splats model?"
-msgstr "Вы уверены, что хотите это удалить?"
+msgstr "Вы уверены, что хотите удалить модель Gaussian Splats?"
 
+# | msgid "Cannot delete file."
 #: app/static/app/js/components/SplatsDialog.jsx:352
-#, fuzzy
-#| msgid "Cannot delete file."
 msgid "Cannot delete splats model."
-msgstr "Не удалось удалить файл."
+msgstr "Не удалось удалить модель Gaussian Splats."
 
 #: app/static/app/js/components/SplatsDialog.jsx:389
-msgid ""
-"This task is missing camera information. Training data cannot be downloaded."
-msgstr ""
+msgid "This task is missing camera information. Training data cannot be downloaded."
+msgstr "В задании отсутствуют данные о камере. Скачать обучающие данные невозможно."
 
 #: app/static/app/js/components/SplatsDialog.jsx:394
 msgid ""
@@ -1885,12 +1848,17 @@ msgid ""
 "point cloud. Some training software might not work properly without one. "
 "Uploading a splats model requires a point cloud."
 msgstr ""
+"В задании отсутствует облако точек. В обучающие данные будет включено пустое"
+" облако точек. Некоторые программы обучения могут работать некорректно без "
+"облака точек. Для загрузки модели Gaussian Splats необходимо облако точек."
 
 #: app/static/app/js/components/SplatsDialog.jsx:399
 msgid ""
 "This task is missing camera information and a point cloud. No splats can be "
 "downloaded or uploaded."
 msgstr ""
+"В задании отсутствуют данные о камере и облако точек. Скачать или загрузить "
+"гауссовы сплаты невозможно."
 
 #: app/static/app/js/components/SplatsDialog.jsx:404
 msgid ""
@@ -1898,57 +1866,60 @@ msgid ""
 "download. After extracting the .zip file, copy the original images into the "
 "\"images\" folder before training."
 msgstr ""
+"Исходные изображения задания недоступны и не войдут в архив. После "
+"распаковки ZIP-файла скопируйте оригинальные изображения в папку «images» "
+"перед обучением."
 
 #: app/static/app/js/components/SplatsDialog.jsx:409
 msgid ""
-"Most images in this dataset are nadir. Splats typically require obliques and/"
-"or orbits for good results."
+"Most images in this dataset are nadir. Splats typically require obliques "
+"and/or orbits for good results."
 msgstr ""
+"Большинство снимков в наборе сделаны в надир. Для качественной модели "
+"Gaussian Splats обычно необходимы наклонные и/или круговые снимки."
 
 #: app/static/app/js/components/SplatsDialog.jsx:421
 msgid "A splats model has been added."
-msgstr ""
+msgstr "Модель Gaussian Splats добавлена."
 
+# | msgid "show in 3D"
 #: app/static/app/js/components/SplatsDialog.jsx:424
-#, fuzzy
-#| msgid "show in 3D"
 msgid "View in 3D"
-msgstr "показать в 3D"
+msgstr "Просмотреть в 3D"
 
+# | msgid "Upload a File"
 #: app/static/app/js/components/SplatsDialog.jsx:428
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload New"
-msgstr "Загрузить файл"
+msgstr "Загрузить новую"
 
+# | msgid "Download Image"
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Download Image"
 msgid "Download Training Data"
-msgstr "Скачать изображение"
+msgstr "Скачать обучающие данные"
 
 #: app/static/app/js/components/SplatsDialog.jsx:497
 #, python-format
 msgid "Train a model using %(link_start)s compatible software %(link_end)s"
 msgstr ""
+"Обучите модель с помощью %(link_start)s совместимого программного "
+"обеспечения %(link_end)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:507
 msgid "You don't have permission to upload a splats model to this task."
-msgstr ""
+msgstr "У вас нет прав на загрузку модели Gaussian Splats в это задание."
 
+# | msgid "Upload a File"
 #: app/static/app/js/components/SplatsDialog.jsx:516
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Splats Model"
-msgstr "Загрузить файл"
+msgstr "Загрузить модель Gaussian Splats"
 
 #: app/static/app/js/components/SplatsDialog.jsx:560
 msgid "Gaussian Splats"
-msgstr ""
+msgstr "Гауссовы сплаты (Gaussian Splats)"
 
 #: app/static/app/js/components/SplatsDialog.jsx:566
 msgid "Processing splats model... this might take a bit"
-msgstr ""
+msgstr "Обработка модели Gaussian Splats... Это может занять некоторое время."
 
 #: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
@@ -1981,8 +1952,8 @@ msgstr "Задача #%(number)s"
 #: app/static/app/js/components/TaskListItem.jsx:321
 #, python-format
 msgid ""
-"It looks like there might be one of the following problems: %(problems)s You "
-"can read more about best practices for capturing good images %(link)s."
+"It looks like there might be one of the following problems: %(problems)s You"
+" can read more about best practices for capturing good images %(link)s."
 msgstr ""
 "Возможно, возникли следующие проблемы: %(problems)s Вы можете найти больше "
 "информации о том, как делать фотографии хорошего качества, по ссылке "
@@ -2003,8 +1974,7 @@ msgstr ""
 "камерами)"
 
 #: app/static/app/js/components/TaskListItem.jsx:325
-msgid ""
-"The min-num-features task option is set too low, try increasing it by 25%"
+msgid "The min-num-features task option is set too low, try increasing it by 25%"
 msgstr ""
 "Параметр задачи min-num-features установлен слишком низко, попробуйте "
 "увеличить его на 25%"
@@ -2021,9 +1991,9 @@ msgid ""
 "support or higher. You can still run WebODM if you compile your own docker "
 "images. See %(link)s for more information."
 msgstr ""
-"Возможно, ваш компьютер слишком устарел. WebODM требуется компьютер с 64-"
-"разрядным ЦП с поддержкой наборов инструкций MMX, SSE, SSE2, SSE3 и SSSE3 "
-"или выше. Также вы можете запустить WebODM, если скомпилируете с помощью "
+"Возможно, ваш компьютер слишком устарел. WebODM требуется компьютер с "
+"64-разрядным ЦП с поддержкой наборов инструкций MMX, SSE, SSE2, SSE3 и SSSE3"
+" или выше. Также вы можете запустить WebODM, если скомпилируете с помощью "
 "докера ваши собственные изображения. Пройдите по ссылке %(link)s для "
 "получения более полной информации."
 
@@ -2031,21 +2001,19 @@ msgstr ""
 msgid "this page"
 msgstr "эта страница"
 
+# | msgid ""
+# | "The processing node is missing a program necessary to complete the task. "
+# | "This might indicate a corrupted installation. If you built OpenDroneMap, "
+# | "please check that all programs built without errors."
 #: app/static/app/js/components/TaskListItem.jsx:331
-#, fuzzy
-#| msgid ""
-#| "The processing node is missing a program necessary to complete the task. "
-#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
-#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
-"This might indicate a corrupted installation. If you built ODM, please check "
-"that all programs built without errors."
+"This might indicate a corrupted installation. If you built ODM, please check"
+" that all programs built without errors."
 msgstr ""
-"Узел обработки не может обнаружить программу для завершения задачи. "
-"Возможно, были допущены ошибки при установке. Если вы установили "
-"OpenDroneMap, пожалуйста, проверьте, чтобы все программы были установлены "
-"безошибочно."
+"На узле обработки отсутствует программа, необходимая для завершения задания."
+" Возможно, установка повреждена. Если вы собирали ODM самостоятельно, "
+"проверьте, что все компоненты собраны без ошибок."
 
 #: app/static/app/js/components/TaskListItem.jsx:372
 #, python-format
@@ -2062,7 +2030,7 @@ msgstr "Не удается перезапустить задачу."
 
 #: app/static/app/js/components/TaskListItem.jsx:442
 msgid "Cannot restart task from (stage)s."
-msgstr "Невозможно перезапустить задачу из %(stage)s."
+msgstr "Не удалось перезапустить задание с этапа (stage)s."
 
 #: app/static/app/js/components/TaskListItem.jsx:491
 msgid "GPS"
@@ -2091,8 +2059,8 @@ msgstr "3D-модель"
 #: app/static/app/js/components/TaskListItem.jsx:581
 #: app/static/app/js/components/TaskListItem.jsx:891
 msgid ""
-"All information related to this task, including images, maps and models will "
-"be deleted. Continue?"
+"All information related to this task, including images, maps and models will"
+" be deleted. Continue?"
 msgstr ""
 "Вся информация из задачи, включая изображения, карты и модели, будет "
 "удалена. Продолжить?"
@@ -2206,8 +2174,8 @@ msgid ""
 "from the task's options. You can also try to use a %(cloudlink)s."
 msgstr ""
 "Похоже, у вашего узла недостаточно памяти. Если вы используете docker, "
-"убедитесь, что виртуальное окружение имеет %(memlink)s. Также убедитесь, что "
-"у вас достаточно оперативной памяти, уменьшите количество изображений, "
+"убедитесь, что виртуальное окружение имеет %(memlink)s. Также убедитесь, что"
+" у вас достаточно оперативной памяти, уменьшите количество изображений, "
 "уменьшите размер или уменьшите параметр параллельной обработки в свойствах "
 "задачи. Также попробуйте использовать %(cloudlink)s."
 
@@ -2241,8 +2209,8 @@ msgstr "Сжатие"
 #: app/static/app/js/components/TaskListItem.jsx:885
 msgid ""
 "Compacting will free disk space by permanently deleting the original images "
-"used for processing. It will no longer be possible to restart the task. Maps "
-"and models will remain in place. Continue?"
+"used for processing. It will no longer be possible to restart the task. Maps"
+" and models will remain in place. Continue?"
 msgstr ""
 "Сжатие освободит место на диске, поскольку исходные изображения, "
 "использованные для обработки, будут удалены безвозвратно. Перезапустить "
@@ -2253,48 +2221,41 @@ msgstr ""
 msgid "Cannot compact task."
 msgstr "Не удалось сжать задачу."
 
+# | msgid "Processing"
 #: app/static/app/js/components/Toaster.jsx:14
-#, fuzzy
-#| msgid "Processing"
 msgid "Processed"
-msgstr "Обработка"
+msgstr "Обработано"
 
+# | msgid "Share"
 #: app/static/app/js/components/Toaster.jsx:15
-#, fuzzy
-#| msgid "Share"
 msgid "Shared"
-msgstr "Поделиться"
+msgstr "Опубликовано"
 
+# | msgid "Export"
 #: app/static/app/js/components/Toaster.jsx:16
-#, fuzzy
-#| msgid "Export"
 msgid "Exported"
+msgstr "Экспортировано"
+
+# | msgid "Share"
+#: app/static/app/js/components/Toaster.jsx:20
+msgid "Sharing"
+msgstr "Публикация"
+
+# | msgid "Exporting..."
+#: app/static/app/js/components/Toaster.jsx:21
+msgid "Exporting"
 msgstr "Экспорт"
 
-#: app/static/app/js/components/Toaster.jsx:20
-#, fuzzy
-#| msgid "Share"
-msgid "Sharing"
-msgstr "Поделиться"
-
-#: app/static/app/js/components/Toaster.jsx:21
-#, fuzzy
-#| msgid "Exporting..."
-msgid "Exporting"
-msgstr "Экспортование..."
-
+# | msgid "Task ID:"
 #: app/static/app/js/components/Toaster.jsx:243
 #: coreplugins/lightning/public/ShareDialog.jsx:259
-#, fuzzy
-#| msgid "Task ID:"
 msgid "Task"
-msgstr "ID задачи:"
+msgstr "Задание"
 
+# | msgid "Are you sure you want to cancel?"
 #: app/static/app/js/components/Toaster.jsx:268
-#, fuzzy
-#| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to cancel the tasks?"
-msgstr "Вы уверены, что хотите отменить задачу?"
+msgstr "Вы уверены, что хотите отменить задания?"
 
 #: app/static/app/js/components/UploadProgressBar.jsx:25
 #, python-format
@@ -2341,8 +2302,8 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:6
 #, python-format
 msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
+"Do not attempt to merge partial reconstructions. This can happen when images"
+" do not have sufficient overlap or are isolated. Default: %(default)s"
 msgstr ""
 "Не пытаться объединить частичные реконструкции. Это может произойти, когда "
 "изображения недостаточно перекрываются или изолированы друг от друга. По "
@@ -2351,15 +2312,15 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
 msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
+"Filters the point cloud by keeping only a single point around a radius N (in"
+" meters). This can be useful to limit the output resolution of the point "
 "cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
 "%(default)s"
 msgstr ""
 "Фильтрует облако точек, сохраняя только одну точку вокруг радиуса N (в "
 "метрах). Это может быть полезно для ограничения выходного разрешения облака "
-"точек и удаления повторяющихся точек. Установите значение 0, чтобы отключить "
-"выборку. Значение по умолчанию: %(default)s"
+"точек и удаления повторяющихся точек. Установите значение 0, чтобы отключить"
+" выборку. Значение по умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
 msgid "Copy output results to this folder after processing."
@@ -2371,22 +2332,22 @@ msgid ""
 "Set the radiometric calibration to perform on images. When processing "
 "multispectral and thermal images you should set this option to obtain "
 "reflectance/temperature values (otherwise you will get digital number "
-"values). [camera] applies black level, vignetting, row gradient gain/"
-"exposure compensation (if appropriate EXIF tags are found) and computes "
-"absolute temperature values. [camera+sun] is experimental, applies all the "
+"values). [camera] applies black level, vignetting, row gradient "
+"gain/exposure compensation (if appropriate EXIF tags are found) and computes"
+" absolute temperature values. [camera+sun] is experimental, applies all the "
 "corrections of [camera], plus compensates for spectral radiance registered "
 "via a downwelling light sensor (DLS) taking in consideration the angle of "
 "the sun. Can be one of: %(choices)s. Default: %(default)s"
 msgstr ""
 "Установить радиометрическую калибровку для применения на изображениях. При "
 "обработке многоспектральных и тепловых изображений вы должны установить эту "
-"опцию для получения значений коэффициента отражения/температуры (в противном "
-"случае вы получите значения цифровых чисел). [camera] применяет уровень "
+"опцию для получения значений коэффициента отражения/температуры (в противном"
+" случае вы получите значения цифровых чисел). [camera] применяет уровень "
 "черного, виньетирование, усиление градиента строк/компенсацию экспозиции "
 "(если найдены соответствующие теги EXIF) и вычисляет значения абсолютной "
-"температуры. [camera+sun] является экспериментальным, применяет все поправки "
-"[camera], а также компенсирует спектральное излучение, зарегистрированное с "
-"помощью датчика освещенности (DLS) с учетом угла солнца. Может быть одним "
+"температуры. [camera+sun] является экспериментальным, применяет все поправки"
+" [camera], а также компенсирует спектральное излучение, зарегистрированное с"
+" помощью датчика освещенности (DLS) с учетом угла солнца. Может быть одним "
 "из: %(choices)s. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:10
@@ -2417,8 +2378,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
+"geometric undistortion. By default the application tries to determine a lens"
+" type from the images metadata. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
 "Установить тип проекции камеры. Установка значения вручную может помочь "
@@ -2438,8 +2399,7 @@ msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:14
 #, python-format
-msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgid "Export the georeferenced point cloud in CSV format. Default: %(default)s"
 msgstr ""
 "Экспортирует облако точек с географической привязкой в формате CSV. По "
 "умолчанию: %(default)s"
@@ -2447,8 +2407,7 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:15
 #, python-format
 msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr ""
-"Максимальное количество вершин меша для вывода. По умолчанию: %(default)s"
+msgstr "Максимальное количество вершин меша для вывода. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:16
 #, python-format
@@ -2462,8 +2421,8 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:17
 #, python-format
 msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
+"Turn off camera parameter optimization during bundle adjustment. This can be"
+" sometimes useful for improving results that exhibit doming/bowling or when "
 "images are taken with a rolling shutter camera. Default: %(default)s"
 msgstr ""
 "Отключает оптимизацию параметров камеры во время настройки набора. Иногда "
@@ -2518,8 +2477,8 @@ msgid ""
 "Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
 "very large datasets. Default: %(default)s"
 msgstr ""
-"Пропустить выравнивание подмоделей при разделении-слиянии. Полезно, если GPS "
-"достаточно хорош на очень большом наборе данных. По умолчанию: %(default)s"
+"Пропустить выравнивание подмоделей при разделении-слиянии. Полезно, если GPS"
+" достаточно хорош на очень большом наборе данных. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:23
 #, python-format
@@ -2533,8 +2492,7 @@ msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:24
 #, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgid "Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
 msgstr ""
 "Параметр скалярной высоты простого морфологического фильтра (SMF). Значение "
 "по умолчанию: %(default)s"
@@ -2542,8 +2500,8 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:25
 #, python-format
 msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground"
+" sampling distance (GSD) estimate. Default: %(default)s"
 msgstr ""
 "Разрешение DSM/DTM в см/пиксель. Обратите внимание, что это значение "
 "ограничено параметром расстояния между центрами пикселей (GSD). Значение по "
@@ -2552,8 +2510,8 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:26
 #, python-format
 msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
+"Octree depth used in the mesh reconstruction, increase to get more vertices,"
+" recommended values are 8-12. Default: %(default)s"
 msgstr ""
 "Глубина октодерева, используемая при реконструкции сетки, увеличивается, "
 "чтобы получить больше вершин. Рекомендуемые значения – 8-12. По умолчанию: "
@@ -2572,19 +2530,19 @@ msgstr ""
 #, python-format
 msgid ""
 "Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can"
+" set them to 0. The file needs to use the following format: EPSG:<code> or "
 "<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
 "(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
 "(meters)]Default: %(default)s"
 msgstr ""
 "Путь к файлу геолокации изображения, содержащему координаты центра камеры, "
-"используемые для геопривязки. Если у вас нет значений для рысканья/тангажа/"
-"крена, вы можете установить их равными 0. Файл должен использовать следующий "
-"формат: EPSG:<код> или <+определение проекта>имя_изображения geo_x geo_y "
-"geo_z [рысканье (градусы)] [тангаж (градусы)] [крен (градусы)] "
-"[горизонтальная точность (метры)] [вертикальная точность (метры)] По "
-"умолчанию: %(default)s"
+"используемые для геопривязки. Если у вас нет значений для "
+"рысканья/тангажа/крена, вы можете установить их равными 0. Файл должен "
+"использовать следующий формат: EPSG:<код> или <+определение "
+"проекта>имя_изображения geo_x geo_y geo_z [рысканье (градусы)] [тангаж "
+"(градусы)] [крен (градусы)] [горизонтальная точность (метры)] [вертикальная "
+"точность (метры)] По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:29
 #, python-format
@@ -2602,15 +2560,15 @@ msgstr ""
 #, python-format
 msgid ""
 "Perform image matching with the nearest N images based on image filename "
-"order. Can speed up processing of sequential images, such as those extracted "
-"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"order. Can speed up processing of sequential images, such as those extracted"
+" from video. It is applied only on non-georeferenced datasets. Set to 0 to "
 "disable. Default: %(default)s"
 msgstr ""
 "Выполняет сопоставление изображений с ближайшими N изображениями на основе "
 "порядка имен файлов изображений. Может ускорить обработку последовательных "
 "изображений, например, извлеченных из видео. Применяется только к наборам "
-"данных без географической привязки. Установите значение 0 для отключения. По "
-"умолчанию: %(default)s"
+"данных без географической привязки. Установите значение 0 для отключения. По"
+" умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:31
 #, python-format
@@ -2624,12 +2582,12 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:32
 #, python-format
 msgid ""
-"Specify the distance between camera shot locations and the outer edge of the "
-"boundary when computing the boundary with --auto-boundary. Set to 0 to "
+"Specify the distance between camera shot locations and the outer edge of the"
+" boundary when computing the boundary with --auto-boundary. Set to 0 to "
 "automatically choose a value. Default: %(default)s"
 msgstr ""
-"Укажите расстояние между местами съемки с камеры и внешним краем границы при "
-"вычислении границы с помощью --auto-boundary. Установите значение 0, чтобы "
+"Укажите расстояние между местами съемки с камеры и внешним краем границы при"
+" вычислении границы с помощью --auto-boundary. Установите значение 0, чтобы "
 "автоматически выбрать значение. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:33
@@ -2653,58 +2611,55 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:35
 #, python-format
 msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"Filters the point cloud by removing points that deviate more than N standard"
+" deviations from the local mean. Set to 0 to disable filtering. Default: "
 "%(default)s"
 msgstr ""
 "Фильтрует облако точек, удаляя точки, которые отклоняются от локального "
-"среднего значения более чем на N стандартных отклонений. Установите значение "
-"0, чтобы отключить фильтрацию. Значение по умолчанию: %(default)s"
+"среднего значения более чем на N стандартных отклонений. Установите значение"
+" 0, чтобы отключить фильтрацию. Значение по умолчанию: %(default)s"
 
+# | msgid ""
+# | "Set a value in meters for the GPS Dilution of Precision (DOP) information "
+# | "for all images. If your images are tagged with high precision GPS "
+# | "information (RTK), this value will be automatically set accordingly. You "
+# | "can use this option to manually set it in case the reconstruction fails. "
+# | "Lowering this option can sometimes help control bowling-effects over "
+# | "large areas. Default: %(default)s"
 #: app/static/app/js/translations/odm_autogenerated.js:36
-#, fuzzy, python-format
-#| msgid ""
-#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
-#| "for all images. If your images are tagged with high precision GPS "
-#| "information (RTK), this value will be automatically set accordingly. You "
-#| "can use this option to manually set it in case the reconstruction fails. "
-#| "Lowering this option can sometimes help control bowling-effects over "
-#| "large areas. Default: %(default)s"
+#, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
 "for all images. If your images are tagged with high precision GPS "
-"information (RTK), this value will be automatically set accordingly. You can "
-"use this option to manually set it in case the reconstruction fails. "
+"information (RTK), this value will be automatically set accordingly. You can"
+" use this option to manually set it in case the reconstruction fails. "
 "Lowering this option can sometimes help control bowling-effects over large "
 "areas. Default: %(default)s"
 msgstr ""
-"Устанавливает значение в метрах для информации о снижении точности GPS (DOP) "
-"для всех изображений. Если ваши изображения имеют высокоточную информацию "
-"GPS (RTK), это значение будет автоматически установлено соответствующим "
-"образом. Вы можете использовать этот параметр, чтобы установить его вручную "
-"в случае сбоя реконструкции. Понижение этой опции иногда может помочь "
-"контролировать эффекты боулинга на больших площадях. Значение по умолчанию: "
-"%(default)s"
+"Задаёт значение показателя снижения точности GPS (DOP) в метрах для всех "
+"снимков. Если снимки содержат высокоточные GPS-данные (RTK), значение "
+"устанавливается автоматически. При ошибке реконструкции параметр можно "
+"задать вручную. Уменьшение значения иногда помогает снизить чашеобразную "
+"деформацию модели на больших территориях. По умолчанию: %(default)s"
 
+# | msgid ""
+# | "Choose the structure from motion algorithm. For aerial datasets, if "
+# | "camera GPS positions and angles are available, triangulation can generate "
+# | "better results. For planar scenes captured at fixed altitude with nadir-"
+# | "only images, planar can be much faster. Can be one of: %(choices)s. "
+# | "Default: %(default)s"
 #: app/static/app/js/translations/odm_autogenerated.js:37
-#, fuzzy, python-format
-#| msgid ""
-#| "Choose the structure from motion algorithm. For aerial datasets, if "
-#| "camera GPS positions and angles are available, triangulation can generate "
-#| "better results. For planar scenes captured at fixed altitude with nadir-"
-#| "only images, planar can be much faster. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Choose the structure from motion algorithm. For aerial datasets, if camera "
 "GPS positions and angles are available, triangulation can be faster. Planar "
 "is deprecated and will be removed in a future version. Can be one of: "
 "%(choices)s. Default: %(default)s"
 msgstr ""
-"Выбрать структуру на основе алгоритма движения. Для аэрофотоснимков, если "
-"доступны GPS-координаты и углы камеры, triangulation может дать лучшие "
-"результаты. Для плоских сцен, снятых на фиксированной высоте с "
-"использованием изображений только с надиром, planar может быть намного "
-"быстрее. Может быть одним из: %(choices)s. По умолчанию: %(default)s"
+"Выберите алгоритм Structure from Motion. Для аэрофотосъёмки при наличии "
+"GPS-координат и углов ориентации камер триангуляция может работать быстрее. "
+"Алгоритм planar устарел и будет удалён в будущей версии. Варианты: "
+"%(choices)s. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:38
 #, python-format
@@ -2737,8 +2692,8 @@ msgid ""
 msgstr ""
 "Переопределяет время считывания показаний подвижного затвора для датчика "
 "вашей камеры (в миллисекундах) вместо использования базы данных показаний "
-"подвижного затвора. Обратите внимание, что не все камеры присутствуют в базе "
-"данных. Установите значение 0, чтобы использовать значение базы данных. По "
+"подвижного затвора. Обратите внимание, что не все камеры присутствуют в базе"
+" данных. Установите значение 0, чтобы использовать значение базы данных. По "
 "умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:41
@@ -2757,8 +2712,7 @@ msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:42
 #, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgid "Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
 msgstr ""
 "Генерирует текстурированные модели из одного файла в двоичном формате glTF "
 "(GLB). По умолчанию: %(default)s"
@@ -2794,10 +2748,10 @@ msgid ""
 "Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
 "relative to the default behavior if set to true. Ordinarily, GSD estimates "
 "are used to cap the maximum resolution of image outputs and resizes images "
-"when necessary, resulting in faster processing and lower memory usage. Since "
-"GSD is an estimate, sometimes ignoring it can result in slightly better "
-"image output quality. Never set --ignore-gsd to true unless you are positive "
-"you need it, and even then: do not use it. Default: %(default)s"
+"when necessary, resulting in faster processing and lower memory usage. Since"
+" GSD is an estimate, sometimes ignoring it can result in slightly better "
+"image output quality. Never set --ignore-gsd to true unless you are positive"
+" you need it, and even then: do not use it. Default: %(default)s"
 msgstr ""
 "Игнорировать расстояние между пикселями на местности (GSD). Нехватка памяти "
 "и процессора изменяется относительно поведения по умолчанию, если "
@@ -2806,8 +2760,8 @@ msgstr ""
 "изображений при необходимости, что приводит к более быстрой обработке и "
 "меньшему использованию памяти. Поскольку GSD является приблизительным "
 "значением, иногда его игнорирование может привести к незначительному "
-"улучшению качества выходного изображения. Никогда не устанавливайте для --"
-"ignore-gsd значение true, если вы не уверены, что оно вам нужно, и даже "
+"улучшению качества выходного изображения. Никогда не устанавливайте для "
+"--ignore-gsd значение true, если вы не уверены, что оно вам нужно, и даже "
 "тогда: не используйте его. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:47
@@ -2816,8 +2770,8 @@ msgid ""
 "Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"Повторить только этот этап и остановиться. Может быть одним из: %(choices)s. "
-"По умолчанию: %(default)s"
+"Повторить только этот этап и остановиться. Может быть одним из: %(choices)s."
+" По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:48
 #, python-format
@@ -2833,24 +2787,24 @@ msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:49
 #, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
+msgid "Export the georeferenced point cloud in LAS format. Default: %(default)s"
 msgstr ""
 "Экспортировать облако точек с географической привязкой в формате LAS. По "
 "умолчанию: %(default)s"
 
+# | msgid ""
+# | "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+# | "Default: %(default)s"
 #: app/static/app/js/translations/odm_autogenerated.js:50
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Set the units of the PDF report. By default the vertical units of the "
 "coordinate reference system are used. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"Устанавливает сжатие, которое будет использоваться для ортофотоснимков. "
-"Может быть одним из: %(choices)s. По умолчанию: %(default)s"
+"Установить единицы измерения для PDF-отчёта. По умолчанию используются "
+"вертикальные единицы системы координат. Возможные значения: %(choices)s. По "
+"умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:51
 #, python-format
@@ -2878,12 +2832,11 @@ msgstr ""
 "Установка значения 0 отключает заполнение пробелов. Начиная с радиуса, "
 "равного выходному разрешению, алгоритм IDW (метод обратных взвешенных "
 "расстояний) создает N различных DEM с постепенно увеличивающимся радиусом и "
-"объединяет их вместе. Оставшиеся пробелы затем объединяются с использованием "
-"интерполяции методом ближайшего соседа. Значение по умолчанию: %(default)s"
+"объединяет их вместе. Оставшиеся пробелы затем объединяются с использованием"
+" интерполяции методом ближайшего соседа. Значение по умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:53
-msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
+msgid "Permanently delete all previous results and rerun the processing pipeline."
 msgstr ""
 "Окончательно удалить все предыдущие результаты и перезапустить конвейер "
 "обработки."
@@ -2918,13 +2871,13 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:57
 #, python-format
 msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
+"Generates a polygon around the cropping area that cuts the orthophoto around"
+" the edges of features. This polygon can be useful for stitching seamless "
 "mosaics with multiple overlapping orthophotos. Default: %(default)s"
 msgstr ""
 "Создает многоугольник вокруг области обрезки, который обрезает ортофото по "
-"краям объектов. Этот многоугольник может быть полезен для сшивания бесшовных "
-"мозаик с несколькими перекрывающимися ортофотокартами. По умолчанию: "
+"краям объектов. Этот многоугольник может быть полезен для сшивания бесшовных"
+" мозаик с несколькими перекрывающимися ортофотокартами. По умолчанию: "
 "%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:58
@@ -2934,9 +2887,9 @@ msgid ""
 "dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
 "%(default)s"
 msgstr ""
-"Автоматическое обрезание выходных изображений путем создания плавного буфера "
-"вокруг границ набора данных, уменьшенного на N метров. Используйте 0, чтобы "
-"отключить обрезку. По умолчанию: %(default)s"
+"Автоматическое обрезание выходных изображений путем создания плавного буфера"
+" вокруг границ набора данных, уменьшенного на N метров. Используйте 0, чтобы"
+" отключить обрезку. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:59
 #, python-format
@@ -2945,8 +2898,8 @@ msgid ""
 "available outputs are merged. Options: %(choices)s. Default: %(default)s"
 msgstr ""
 "Выберите, что нужно объединить в общий набор данных на этапе слияния. По "
-"умолчанию все доступные выходные данные объединяются. Опции: %(choices)s. По "
-"умолчанию: %(default)s"
+"умолчанию все доступные выходные данные объединяются. Опции: %(choices)s. По"
+" умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:60
 #, python-format
@@ -2969,8 +2922,8 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:62
 #, python-format
 msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
+"Minimum number of features to extract per image. More features can be useful"
+" for finding more matches between images, potentially allowing the "
 "reconstruction of areas with little overlap or insufficient features. More "
 "features also slow down processing. Default: %(default)s"
 msgstr ""
@@ -3006,8 +2959,8 @@ msgid ""
 "orthometric height. Default: %(default)s"
 msgstr ""
 "Задайте смещение GPS в метрах для вертикальной оси (Z), добавив его к "
-"значению высоты в данных GPS EXIF. Это не изменяет значения каких-либо точек "
-"пересечения координат. Это может быть полезно, например, при переходе от "
+"значению высоты в данных GPS EXIF. Это не изменяет значения каких-либо точек"
+" пересечения координат. Это может быть полезно, например, при переходе от "
 "эллипсоидальной к ортометрической высоте. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:66
@@ -3015,27 +2968,29 @@ msgstr ""
 msgid ""
 "Automatically set a boundary using camera shot locations to limit the area "
 "of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+"(sky, background landscapes, etc.). See also --boundary. Default: "
+"%(default)s"
 msgstr ""
 "Автоматически устанавливает границу, используя места съемки с камеры, чтобы "
 "ограничить область реконструкции. Это может помочь удалить далекие фоновые "
 "артефакты (небо, фоновые пейзажи и т.д.). Смотрите также --boundary. По "
 "умолчанию: %(default)s"
 
+# | msgid ""
+# | "When processing multispectral datasets, ODM will automatically align the "
+# | "images for each band. If the images have been postprocessed and are "
+# | "already aligned, use this option. Default: %(default)s"
 #: app/static/app/js/translations/odm_autogenerated.js:67
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
+#, python-format
 msgid ""
 "When processing multispectral datasets, automatically align the images for "
 "each band. If the images have been postprocessed and are already aligned, "
 "use this option. Default: %(default)s"
 msgstr ""
-"При обработке многоспектральных наборов данных ODM автоматически выравнивает "
-"изображения для каждой полосы. Если изображения были обработаны и уже "
-"выровнены, используйте этот параметр. По умолчанию: %(default)s"
+"Автоматически совмещать изображения каждого спектрального канала при "
+"обработке мультиспектральных данных. Используйте этот параметр, если "
+"изображения уже совмещены при предварительной обработке. По умолчанию: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:68
 #, python-format
@@ -3060,8 +3015,8 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:70
 #, python-format
 msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
+"Use this tag if you have a GCP File but want to use the EXIF information for"
+" georeferencing instead. Default: %(default)s"
 msgstr ""
 "Используйте этот параметр, если у вас есть файл GCP, но вместо этого вы "
 "хотите использовать информацию EXIF для геопривязки. По умолчанию: "
@@ -3072,18 +3027,17 @@ msgstr ""
 msgid ""
 "Path to the file containing the ground control points used for "
 "georeferencing. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2]Default: %(default)s"
+"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1]"
+" [extra2]Default: %(default)s"
 msgstr ""
 "Путь к файлу, содержащему наземные контрольные точки, используемые для "
 "геопривязки. Файл должен использовать следующий формат: EPSG:<code> или "
-"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2]По умолчанию: %(default)s"
+"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1]"
+" [extra2]По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:72
 #, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgid "Do not use GPU acceleration, even if it's available. Default: %(default)s"
 msgstr ""
 "Не использовать ускорение графического процессора, даже если оно доступно. "
 "По умолчанию: %(default)s"
@@ -3104,8 +3058,8 @@ msgid ""
 "option is a bit faster and provides similar results in planar areas. "
 "Default: %(default)s"
 msgstr ""
-"Использовать полную 3D-сетку для вычисления ортофото вместо сетки 2.5D. Этот "
-"вариант немного быстрее и обеспечивает аналогичные результаты в плоских "
+"Использовать полную 3D-сетку для вычисления ортофото вместо сетки 2.5D. Этот"
+" вариант немного быстрее и обеспечивает аналогичные результаты в плоских "
 "областях. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:75
@@ -3113,8 +3067,7 @@ msgstr ""
 msgid ""
 "End processing at this stage. Can be one of: %(choices)s. Default: "
 "%(default)s"
-msgstr ""
-"Конец обработки. Может быть один из: %(choices)s. По умолчанию: %(default)s"
+msgstr "Конец обработки. Может быть один из: %(choices)s. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:76
 #, python-format
@@ -3156,28 +3109,28 @@ msgstr ""
 "Максимальное выходное разрешение извлеченных видеокадров в пикселях. По "
 "умолчанию: %(default)s"
 
+# | msgid ""
+# | "Skips dense reconstruction and 3D model generation. It generates an "
+# | "orthophoto directly from the sparse reconstruction. If you just need an "
+# | "orthophoto and do not need a full 3D model, turn on this option. Default: "
+# | "%(default)s"
 #: app/static/app/js/translations/odm_autogenerated.js:80
-#, fuzzy, python-format
-#| msgid ""
-#| "Skips dense reconstruction and 3D model generation. It generates an "
-#| "orthophoto directly from the sparse reconstruction. If you just need an "
-#| "orthophoto and do not need a full 3D model, turn on this option. Default: "
-#| "%(default)s"
+#, python-format
 msgid ""
 "Skips dense reconstruction and 3D model generation. It generates an "
 "orthophoto directly from the sparse reconstruction. On flat terrain with no "
 "objects/structures, turn this on to save time. Default: %(default)s"
 msgstr ""
-"Пропустить плотную реконструкцию и генерацию 3D-модели. Создание ортофото "
-"непосредственно из разреженной реконструкции. Если вам просто нужна "
-"ортофотография и вам не нужна полная 3D-модель, включите эту опцию. По "
-"умолчанию: %(default)s"
+"Пропускает плотную реконструкцию и построение 3D-модели, создавая "
+"ортофотоплан непосредственно из разреженной реконструкции. Для ровной "
+"местности без объектов и сооружений включите параметр, чтобы сократить время"
+" обработки. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:81
 #, python-format
 msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of"
+" the orthophoto. Default: %(default)s"
 msgstr ""
 "Установите этот параметр, если вы хотите создать рендеринг ортофотоснимка в "
 "Google Earth (KMZ). По умолчанию: %(default)s"
@@ -3197,14 +3150,14 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:83
 #, python-format
 msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
+"Use images' GPS exif data for reconstruction, even if there are GCPs "
+"present.This flag is useful if you have high precision GPS measurements. If "
+"there are no GCPs, this flag does nothing. Default: %(default)s"
 msgstr ""
 "Использовать данные GPS exif изображений для реконструкции, даже если "
 "присутствуют GCPs. Этот параметр полезен, если у вас есть высокоточные "
-"измерения GPS. Если нет GCPs, этот параметр ничего не сделает. По умолчанию: "
-"%(default)s"
+"измерения GPS. Если нет GCPs, этот параметр ничего не сделает. По умолчанию:"
+" %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:84
 #, python-format
@@ -3219,27 +3172,26 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:85
 #, python-format
 msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
+"Choose the algorithm for extracting keypoints and computing descriptors. Can"
+" be one of: %(choices)s. Default: %(default)s"
 msgstr ""
 "Выберите алгоритм для извлечения ключевых точек и вычисления дескрипторов. "
 "Может быть одним из: %(choices)s. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:86
 #, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
+msgid "Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
 msgstr ""
 "Сохраняет сетчатые грани модели, которые не видны ни в одной камере. По "
 "умолчанию: %(default)s"
 
+# | msgid ""
+# | "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
+# | "of Words. FLANN is slower, but more stable. BOW is faster, but can "
+# | "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
+# | "one of: %(choices)s. Default: %(default)s"
 #: app/static/app/js/translations/odm_autogenerated.js:87
-#, fuzzy, python-format
-#| msgid ""
-#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
-#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
-#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
-#| "one of: %(choices)s. Default: %(default)s"
+#, python-format
 msgid ""
 "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
 "Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
@@ -3247,17 +3199,17 @@ msgid ""
 "faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
 "Default: %(default)s"
 msgstr ""
-"Алгоритм сопоставления, быстрая библиотека для приближенного поиска "
-"ближайших соседей или мешка слов (Bag of Words). FLANN медленнее, но более "
-"стабилен. BOW работает быстрее, но иногда может пропускать действительные "
-"совпадения. BRUTEFORCE работает очень медленно, но надежно. Может быть одним "
-"из: %(choices)s. По умолчанию: %(default)s"
+"Алгоритм сопоставления признаков: FLANN (поиск приближённых ближайших "
+"соседей) или BOW (мешок слов). FLANN медленнее, но стабильнее. BOW быстрее, "
+"но иногда пропускает корректные совпадения. BRUTEFORCE очень медленный, но "
+"надёжный. HAMMING значительно быстрее на больших наборах данных, однако "
+"требует GPU. Варианты: %(choices)s. По умолчанию: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:88
 #, python-format
 msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
-"%(default)s"
+"Simple Morphological Filter elevation threshold parameter (meters). Default:"
+" %(default)s"
 msgstr ""
 "Параметр порогового значения высоты простого морфологического фильтра (SMF) "
 "(в метрах). По умолчанию: %(default)s"
@@ -3266,8 +3218,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
+"geometrically consistent depthmaps but may not be usable in larger datasets."
+" This flag disables geometric estimates. Default: %(default)s"
 msgstr ""
 "Геометрические расчеты повышают точность облака точек за счет вычисления "
 "геометрически согласованных карт глубины, но могут быть непригодны для "
@@ -3310,8 +3262,8 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:93
 #, python-format
 msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers"
+" like Leaflet or OpenLayers. Default: %(default)s"
 msgstr ""
 "Создание статических плит ортофотоснимков и DEM, совместимых с такими "
 "средствами просмотра, как Leaflet или OpenLayers. По умолчанию: %(default)s"
@@ -3369,8 +3321,7 @@ msgstr "Прямой импорт изображений из внешних и�
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:15
 msgid "Detect changes between two different tasks in the same project."
-msgstr ""
-"Обнаруживает изменения между двумя разными задачами в одном и том же проекте."
+msgstr "Обнаруживает изменения между двумя разными задачами в одном и том же проекте."
 
 #: app/static/app/js/translations/potree_autogenerated.js:3
 msgid "Navigation"
@@ -3704,7 +3655,7 @@ msgstr "Отчет с аннотациями"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:100
 msgid "Prepared by:"
-msgstr ""
+msgstr "Подготовил:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:106
 msgid "Enter name"
@@ -3712,17 +3663,16 @@ msgstr "Введите имя"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:110
 msgid "Notes:"
-msgstr ""
+msgstr "Примечания:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:117
 msgid "Additional notes (optional)"
 msgstr "Дополнительные примечания (необязательно)"
 
+# | msgid "Coordinates"
 #: coreplugins/annotate/public/Popup.jsx:274
-#, fuzzy
-#| msgid "Coordinates"
 msgid "Invalid coordinates"
-msgstr "Координаты"
+msgstr "Некорректные координаты"
 
 #: coreplugins/annotate/public/Popup.jsx:767
 #: coreplugins/measure/public/MeasurePopup.jsx:178
@@ -3755,8 +3705,7 @@ msgid "Length"
 msgstr "Длина"
 
 #: coreplugins/annotate/public/Popup.jsx:784
-#: coreplugins/annotate/public/Popup.jsx:889
-#: coreplugins/measure/public/app.jsx:26
+#: coreplugins/annotate/public/Popup.jsx:889 coreplugins/measure/public/app.jsx:26
 msgid "Area"
 msgstr "Площадь"
 
@@ -3781,8 +3730,7 @@ msgstr "Высота"
 msgid "Temperature"
 msgstr "Температура"
 
-#: coreplugins/annotate/public/Popup.jsx:892
-#: coreplugins/measure/public/app.jsx:27
+#: coreplugins/annotate/public/Popup.jsx:892 coreplugins/measure/public/app.jsx:27
 msgid "Perimeter"
 msgstr "Периметр"
 
@@ -3796,11 +3744,10 @@ msgstr "Обрезать"
 msgid "Fill"
 msgstr "Заполнить"
 
+# | msgid "Base Surface"
 #: coreplugins/annotate/public/Popup.jsx:914
-#, fuzzy
-#| msgid "Base Surface"
 msgid "Surface"
-msgstr "Базовая Поверхность"
+msgstr "Поверхность"
 
 #: coreplugins/annotate/public/Popup.jsx:917
 msgid "DSM"
@@ -3818,15 +3765,14 @@ msgstr "Базовая Поверхность"
 msgid "Show 3D"
 msgstr "Показать 3D"
 
+# | msgid "Custom"
 #: coreplugins/annotate/public/Popup.jsx:938
-#, fuzzy
-#| msgid "Custom"
 msgid "Custom Z"
-msgstr "Пользовательский"
+msgstr "Пользовательская высота Z"
 
 #: coreplugins/annotate/public/Popup.jsx:960
 msgid "3D view error"
-msgstr ""
+msgstr "Ошибка 3D-просмотра"
 
 #: coreplugins/annotate/public/Popup.jsx:970
 msgid "No images found at this location"
@@ -3881,19 +3827,17 @@ msgstr "Экспорт в CSV"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "Основа"
 
+# | msgid "Backup"
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "Резервная копия"
+msgstr "Вернуться"
 
+# | msgid "Backup"
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "Резервная копия"
+msgstr "Назад"
 
 #: coreplugins/contours/public/Contours.jsx:37
 #: coreplugins/contours/public/ContoursPanel.jsx:429
@@ -3910,8 +3854,7 @@ msgstr ""
 
 #: coreplugins/contours/public/ContoursPanel.jsx:78
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:51
-msgid ""
-"Cannot retrieve information for task. Are you are connected to the internet?"
+msgid "Cannot retrieve information for task. Are you are connected to the internet?"
 msgstr "Не удается получить информацию о задаче. Вы подключены к Интернету?"
 
 #: coreplugins/contours/public/ContoursPanel.jsx:178
@@ -3955,17 +3898,16 @@ msgstr "Предпросмотр"
 msgid "Export"
 msgstr "Экспорт"
 
+# | msgid "Failed to complete upload. Try again later."
 #: coreplugins/lightning/public/CloudLogin.jsx:44
 #: coreplugins/lightning/public/CloudLogin.jsx:47
 #: coreplugins/lightning/public/ShareDialog.jsx:116
-#, fuzzy
-#| msgid "Failed to complete upload. Try again later."
 msgid "Invalid response. Try again later."
-msgstr "Не удалось завершить загрузку. Попробуйте еще раз позже."
+msgstr "Некорректный ответ сервера. Повторите попытку позже."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:78
 msgid "Invalid password. Do you need to reset it?"
-msgstr ""
+msgstr "Неверный пароль. Хотите сбросить его?"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:83
 #: coreplugins/lightning/public/Login.jsx:62
@@ -3988,10 +3930,13 @@ msgid ""
 "visit %(link)s and make sure you can access the cloud platform, then try "
 "again."
 msgstr ""
+"Ваша учётная запись облачной платформы Lightning ещё не активирована. Для "
+"активации перейдите по ссылке %(link)s, убедитесь, что у вас есть доступ к "
+"платформе, и повторите попытку."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:114
 msgid "Please confirm the password of your Lightning account to continue:"
-msgstr ""
+msgstr "Для продолжения подтвердите пароль учётной записи Lightning:"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:118
 #: coreplugins/lightning/public/Login.jsx:103
@@ -4000,19 +3945,17 @@ msgstr "Пароль"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:119
 msgid "switch"
-msgstr ""
+msgstr "переключить"
 
+# | msgid "Forgot password?"
 #: coreplugins/lightning/public/CloudLogin.jsx:127
-#, fuzzy
-#| msgid "Forgot password?"
 msgid "Reset password"
-msgstr "Забыли пароль?"
+msgstr "Сбросить пароль"
 
+# | msgid "Password"
 #: coreplugins/lightning/public/CloudLogin.jsx:133
-#, fuzzy
-#| msgid "Password"
 msgid "Confirm Password"
-msgstr "Пароль"
+msgstr "Подтвердите пароль"
 
 #: coreplugins/lightning/public/CostEstimateItem.jsx:113
 msgid "Cannot retrieve estimate. Try again later."
@@ -4020,8 +3963,7 @@ msgstr "Не удалось получить оценку. Попробуйте 
 
 #: coreplugins/lightning/public/CostEstimateItem.jsx:116
 msgid "Cannot retrieve estimate. Check parameters or try again later."
-msgstr ""
-"Не удается получить оценку. Проверьте параметры или повторите попытку позже."
+msgstr "Не удается получить оценку. Проверьте параметры или повторите попытку позже."
 
 #: coreplugins/lightning/public/CostEstimateItem.jsx:149
 msgid "Credits Estimate"
@@ -4044,8 +3986,8 @@ msgid ""
 "Cannot load lightning dashboard. Please make sure you are connected to the "
 "internet, or try again in an hour."
 msgstr ""
-"Не удалось загрузить панель управления lightning. Пожалуйста, убедитесь, что "
-"вы подключены к Интернету, или повторите попытку через час."
+"Не удалось загрузить панель управления lightning. Пожалуйста, убедитесь, что"
+" вы подключены к Интернету, или повторите попытку через час."
 
 #: coreplugins/lightning/public/Dashboard.jsx:91
 msgid "Cannot sync nodes. Are you connected to the internet?"
@@ -4094,17 +4036,16 @@ msgstr "Повторная синхронизация"
 
 #: coreplugins/lightning/public/Dashboard.jsx:185
 msgid "Share Buttons"
-msgstr ""
+msgstr "Кнопки публикации"
 
+# | msgid "Enabled"
 #: coreplugins/lightning/public/Dashboard.jsx:187
-#, fuzzy
-#| msgid "Enabled"
 msgid "Disabled"
-msgstr "Включено"
+msgstr "Отключено"
 
 #: coreplugins/lightning/public/Dashboard.jsx:189
 msgid "Toggle"
-msgstr ""
+msgstr "Переключить"
 
 #: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Dashboard"
@@ -4130,106 +4071,96 @@ msgstr "Забыли пароль?"
 msgid "Login and Sync"
 msgstr "Вход в систему и синхронизация"
 
+# | msgid "Cannot create new task. Please try again later."
 #: coreplugins/lightning/public/ShareDialog.jsx:119
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot communicate with Lightning's cloud platform. Try again later."
-msgstr "Невозможно создать новую задачу. Пожалуйста, повторите еще раз."
+msgstr "Нет связи с облачной платформой Lightning. Повторите попытку позже."
 
+# | msgid "Cannot retrieve estimate. Try again later."
 #: coreplugins/lightning/public/ShareDialog.jsx:150
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot calculate size. Try again later."
-msgstr "Не удалось получить оценку. Попробуйте еще раз позже."
+msgstr "Не удалось рассчитать размер. Повторите попытку позже."
 
+# | msgid "Cannot retrieve estimate. Try again later."
 #: coreplugins/lightning/public/ShareDialog.jsx:193
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Service not available. Try again later."
-msgstr "Не удалось получить оценку. Попробуйте еще раз позже."
+msgstr "Сервис недоступен. Повторите попытку позже."
 
+# | msgid "Cannot retrieve estimate. Try again later."
 #: coreplugins/lightning/public/ShareDialog.jsx:196
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot verify credentials. Try again later."
-msgstr "Не удалось получить оценку. Попробуйте еще раз позже."
+msgstr "Не удалось проверить учётные данные. Повторите попытку позже."
 
+# | msgid "Invalid response: %(error)s"
 #: coreplugins/lightning/public/ShareDialog.jsx:263
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid response"
-msgstr "Неверный ответ: %(error)s"
+msgstr "Некорректный ответ"
 
+# | msgid "Cannot create new task. Please try again later."
 #: coreplugins/lightning/public/ShareDialog.jsx:266
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot share. Please try again in a bit."
-msgstr "Невозможно создать новую задачу. Пожалуйста, повторите еще раз."
+msgstr "Не удалось опубликовать данные. Повторите попытку немного позже."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:278
 msgid "Checking your credentials..."
-msgstr ""
+msgstr "Проверка учётных данных..."
 
+# | msgid "Creating project..."
 #: coreplugins/lightning/public/ShareDialog.jsx:287
-#, fuzzy
-#| msgid "Creating project..."
 msgid "Retrieving your projects..."
-msgstr "Создание проекта..."
+msgstr "Получение списка проектов..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:301
 msgid ""
 "Your Lightning account does not have permanent cloud storage. You can still "
 "share, but data will be deleted shortly after upload."
 msgstr ""
+"Для вашей учётной записи Lightning недоступно постоянное облачное хранилище."
+" Вы можете опубликовать данные, но вскоре после загрузки они будут удалены."
 
+# | msgid "Created on"
 #: coreplugins/lightning/public/ShareDialog.jsx:313
-#, fuzzy
-#| msgid "Created on"
 msgid "Create New"
-msgstr "Создано"
+msgstr "Создать"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:329
 msgid "All Assets + Original Images"
-msgstr ""
+msgstr "Все ресурсы и исходные изображения"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:330
 msgid "Only"
-msgstr ""
+msgstr "Только"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:342
 msgid "Size exceeds available storage quota"
-msgstr ""
+msgstr "Размер превышает доступную квоту хранилища"
 
+# | msgid "Select"
 #: coreplugins/lightning/public/ShareDialog.jsx:355
-#, fuzzy
-#| msgid "Select"
 msgid "Select All"
-msgstr "Выбрать"
+msgstr "Выбрать всё"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:359
 msgid "Deselect All"
-msgstr ""
+msgstr "Снять выделение"
 
+# | msgid "Lightning"
 #: coreplugins/lightning/public/ShareDialog.jsx:389
-#, fuzzy
-#| msgid "Lightning"
 msgid "Share with Lightning"
-msgstr "Lightning"
+msgstr "Опубликовать через Lightning"
 
+# | msgid "Saving..."
 #: coreplugins/lightning/public/ShareDialog.jsx:392
-#, fuzzy
-#| msgid "Saving..."
 msgid "Sharing..."
-msgstr "Сохранение..."
+msgstr "Публикация..."
 
 #: coreplugins/lightning/public/app.jsx:42
 msgid "Lightning"
 msgstr "Lightning"
 
 #: coreplugins/lightning/public/app.jsx:43
-msgid ""
-"Lightning is a cloud service built by WebODM developers that allows you to:"
-msgstr ""
+msgid "Lightning is a cloud service built by WebODM developers that allows you to:"
+msgstr "Lightning — облачный сервис разработчиков WebODM, позволяющий:"
 
 #: coreplugins/lightning/public/app.jsx:46
 #, python-format
@@ -4237,10 +4168,12 @@ msgid ""
 "Quickly process datasets with high performance servers powered by the "
 "%(link)s photogrammetry engine"
 msgstr ""
+"Быстро обрабатывать наборы данных на высокопроизводительных серверах с "
+"фотограмметрическим движком %(link)s"
 
 #: coreplugins/lightning/public/app.jsx:49
 msgid "Easily share public links to your datasets"
-msgstr ""
+msgstr "Легко делиться публичными ссылками на наборы данных"
 
 #: coreplugins/lightning/public/app.jsx:51
 msgid "register"
@@ -4250,8 +4183,8 @@ msgstr "зарегистрироваться"
 #, python-format
 msgid ""
 "Below you can enter your %(link)s credentials to sync your account and "
-"automatically setup a new processing node. If you don't have an account, you "
-"can %(register)s for free."
+"automatically setup a new processing node. If you don't have an account, you"
+" can %(register)s for free."
 msgstr ""
 "Ниже вы можете ввести свои учетные данные %(link)s для синхронизации вашей "
 "учетной записи и автоматической настройки нового узла обработки. Если у вас "
@@ -4349,8 +4282,7 @@ msgid "Object Detection"
 msgstr "Обнаружение Объектов"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:47
-msgid ""
-"No orthophoto is available. To use object detection you need an orthophoto."
+msgid "No orthophoto is available. To use object detection you need an orthophoto."
 msgstr ""
 "Ортофото недоступно. Для использования функции обнаружения объектов вам "
 "потребуется ортофото."
@@ -4403,34 +4335,41 @@ msgstr "Количество:"
 #~ msgid "Show Model"
 #~ msgstr "Показать модель"
 
-#, python-format
 #~ msgid ""
-#~ "Build orthophoto overviews for faster display in programs such as QGIS. "
+#~ "Build orthophoto overviews for faster "
+#~ "display in programs such as QGIS. "
 #~ "Default: %(default)s"
 #~ msgstr ""
-#~ "Создавать обзоры ортофото для более быстрого просмотра в таких "
-#~ "программах, как QGIS. По умолчанию: %(default)s"
+#~ "Создавать обзоры ортофото для более "
+#~ "быстрого просмотра в таких программах, как"
+#~ " QGIS. По умолчанию: %(default)s"
 
-#, python-format
 #~ msgid "Not a proper zipped shapefile: %(file)s"
 #~ msgstr "Неправильно сжатый shapefile: %(file)s"
 
 #~ msgid ""
-#~ "An orthophoto could not be generated. To generate one, make sure GPS "
-#~ "information is embedded in the EXIF tags of your images, or use a Ground "
-#~ "Control Points (GCP) file."
+#~ "An orthophoto could not be generated. "
+#~ "To generate one, make sure GPS "
+#~ "information is embedded in the EXIF "
+#~ "tags of your images, or use a "
+#~ "Ground Control Points (GCP) file."
 #~ msgstr ""
-#~ "Ортофотоплан не сформирован. Чтобы создать его, убедитесь, что в "
-#~ "свойствах фотографий присутствуют метаданные о местоположении (GPS "
-#~ "координаты каждого снимка) или используйте файл с контрольными точками."
+#~ "Ортофотоплан не сформирован. Чтобы создать "
+#~ "его, убедитесь, что в свойствах фотографий"
+#~ " присутствуют метаданные о местоположении (GPS"
+#~ " координаты каждого снимка) или используйте"
+#~ " файл с контрольными точками."
 
 #~ msgid ""
-#~ "Lightning is a service that allows you to quickly process small and large "
-#~ "datasets using high performance servers in the cloud."
+#~ "Lightning is a service that allows "
+#~ "you to quickly process small and "
+#~ "large datasets using high performance "
+#~ "servers in the cloud."
 #~ msgstr ""
-#~ "Lightning - это сервис, который позволяет быстро обрабатывать малые и "
-#~ "большие наборы данных с использованием высокопроизводительных серверов в "
-#~ "облаке."
+#~ "Lightning - это сервис, который позволяет"
+#~ " быстро обрабатывать малые и большие "
+#~ "наборы данных с использованием "
+#~ "высокопроизводительных серверов в облаке."
 
 #~ msgid "Google Maps Hybrid"
 #~ msgstr "Google Карты Гибрид"
@@ -4441,16 +4380,20 @@ msgstr "Количество:"
 #~ msgid "OpenStreetMap"
 #~ msgstr "OpenStreetMap"
 
-#, python-format
 #~ msgid ""
-#~ "Perform ground rectification on the point cloud. This means that wrongly "
-#~ "classified ground points will be re-classified and gaps will be filled. "
-#~ "Useful for generating DTMs. Default: %(default)s"
-#~ msgstr ""
-#~ "Выполняет исправление заземления в облаке точек. Это означает, что "
-#~ "неправильно классифицированные наземные точки будут переклассифицированы, "
-#~ "а пробелы будут заполнены. Полезно для генерации DTM. По умолчанию: "
+#~ "Perform ground rectification on the point"
+#~ " cloud. This means that wrongly "
+#~ "classified ground points will be re-"
+#~ "classified and gaps will be filled. "
+#~ "Useful for generating DTMs. Default: "
 #~ "%(default)s"
+#~ msgstr ""
+#~ "Выполняет исправление заземления в облаке "
+#~ "точек. Это означает, что неправильно "
+#~ "классифицированные наземные точки будут "
+#~ "переклассифицированы, а пробелы будут заполнены."
+#~ " Полезно для генерации DTM. По "
+#~ "умолчанию: %(default)s"
 
 #~ msgid "Latitude"
 #~ msgstr "Широта"
@@ -4485,7 +4428,6 @@ msgstr "Количество:"
 #~ msgid "Elevation (m)"
 #~ msgstr "Высота (м)"
 
-#, python-format
 #~ msgid "Skip the blending of colors near seams. Default: %(default)s"
 #~ msgstr "Пропускает смешивание цветов вблизи швов. По умолчанию: %(default)s"
 
@@ -4498,97 +4440,123 @@ msgstr "Количество:"
 #~ msgid "Filter:"
 #~ msgstr "Фильтр:"
 
-#, python-format
 #~ msgid ""
-#~ "Reduce the memory usage needed for depthmap fusion by splitting large "
-#~ "scenes into tiles. Turn this on if your machine doesn't have much RAM and/"
-#~ "or you've set --pc-quality to high or ultra. Experimental. Default: "
-#~ "%(default)s"
+#~ "Reduce the memory usage needed for "
+#~ "depthmap fusion by splitting large scenes"
+#~ " into tiles. Turn this on if your"
+#~ " machine doesn't have much RAM and/or"
+#~ " you've set --pc-quality to high "
+#~ "or ultra. Experimental. Default: %(default)s"
 #~ msgstr ""
-#~ "Уменьшает использование памяти, необходимой для объединения карт глубины, "
-#~ "разбив большие сцены на плитки. Включите это, если на вашем компьютере "
-#~ "недостаточно оперативной памяти и/или вы установили --pc-quality на high "
-#~ "или ultra. Экспериментальный. По умолчанию: %(default)s"
+#~ "Уменьшает использование памяти, необходимой для"
+#~ " объединения карт глубины, разбив большие "
+#~ "сцены на плитки. Включите это, если "
+#~ "на вашем компьютере недостаточно оперативной "
+#~ "памяти и/или вы установили --pc-quality "
+#~ "на high или ultra. Экспериментальный. По"
+#~ " умолчанию: %(default)s"
 
 #~ msgid "open a topic"
 #~ msgstr "открыть тему"
 
-#, python-format
 #~ msgid ""
-#~ "\"Process exited with code 1\" means that part of the processing failed. "
-#~ "Sometimes it's a problem with the dataset, sometimes it can be solved by "
-#~ "tweaking the Task Options and sometimes it might be a bug! If you need "
-#~ "help, upload your images somewhere like %(link1)s or %(link2)s and "
-#~ "%(open_a_topic)s on our community forum, making sure to include a copy of "
-#~ "your task's output. Our awesome contributors will try to help you!"
+#~ "\"Process exited with code 1\" means "
+#~ "that part of the processing failed. "
+#~ "Sometimes it's a problem with the "
+#~ "dataset, sometimes it can be solved "
+#~ "by tweaking the Task Options and "
+#~ "sometimes it might be a bug! If "
+#~ "you need help, upload your images "
+#~ "somewhere like %(link1)s or %(link2)s and"
+#~ " %(open_a_topic)s on our community forum, "
+#~ "making sure to include a copy of "
+#~ "your task's output. Our awesome "
+#~ "contributors will try to help you!"
 #~ msgstr ""
-#~ "\"Process exited with code 1\" означает, что часть обработки дала сбой. "
-#~ "Иногда эта проблема связана с набором и можно попробовать решить ее "
-#~ "\"играясь\" с настройками задачи, или это может быть обыкновенный БАГ. "
-#~ "Если вам нужна помощь, то загрузите ваши изображения по ссылке %(link1)s "
-#~ "или %(link2)s и %(open_a_topic)s на наш форум сообщества, обязательно "
-#~ "приложив копию результата вашей задачи. Наши замечательные участники "
-#~ "форума постараются вам помочь!"
+#~ "\"Process exited with code 1\" означает,"
+#~ " что часть обработки дала сбой. Иногда"
+#~ " эта проблема связана с набором и "
+#~ "можно попробовать решить ее \"играясь\" с"
+#~ " настройками задачи, или это может быть"
+#~ " обыкновенный БАГ. Если вам нужна "
+#~ "помощь, то загрузите ваши изображения по"
+#~ " ссылке %(link1)s или %(link2)s и "
+#~ "%(open_a_topic)s на наш форум сообщества, "
+#~ "обязательно приложив копию результата вашей "
+#~ "задачи. Наши замечательные участники форума "
+#~ "постараются вам помочь!"
 
-#, python-format
 #~ msgid ""
-#~ "Legacy option (use --feature-quality instead). Resizes images by the "
-#~ "largest side for feature extraction purposes only. Set to -1 to disable. "
-#~ "This does not affect the final orthophoto resolution quality and will not "
-#~ "resize the original images. Default: %(default)s"
+#~ "Legacy option (use --feature-quality "
+#~ "instead). Resizes images by the largest "
+#~ "side for feature extraction purposes only."
+#~ " Set to -1 to disable. This does"
+#~ " not affect the final orthophoto "
+#~ "resolution quality and will not resize "
+#~ "the original images. Default: %(default)s"
 #~ msgstr ""
-#~ "Устаревший вариант (вместо этого используйте --feature-quality). Изменяет "
-#~ "размер изображений по наибольшей стороне только в целях извлечения "
-#~ "объектов. Установите значение -1 для отключения. Это не повлияет на "
-#~ "конечное качество разрешения ортофотоснимка и не изменит размер исходных "
-#~ "изображений. По умолчанию: %(default)s"
+#~ "Устаревший вариант (вместо этого используйте "
+#~ "--feature-quality). Изменяет размер изображений"
+#~ " по наибольшей стороне только в целях"
+#~ " извлечения объектов. Установите значение -1"
+#~ " для отключения. Это не повлияет на "
+#~ "конечное качество разрешения ортофотоснимка и "
+#~ "не изменит размер исходных изображений. По"
+#~ " умолчанию: %(default)s"
 
-#, python-format
 #~ msgid ""
-#~ "When texturing the 3D mesh, for each triangle, choose to prioritize "
-#~ "images with sharp features (gmi) or those that cover the largest area "
-#~ "(area). Default: %(default)s"
+#~ "When texturing the 3D mesh, for each"
+#~ " triangle, choose to prioritize images "
+#~ "with sharp features (gmi) or those "
+#~ "that cover the largest area (area). "
+#~ "Default: %(default)s"
 #~ msgstr ""
-#~ "При текстурировании 3D-сетки для каждого треугольника выберите приоритет "
-#~ "изображений с четкими чертами (gmi) или тех, которые охватывают "
-#~ "наибольшую площадь (area). По умолчанию: %(default)s"
+#~ "При текстурировании 3D-сетки для каждого "
+#~ "треугольника выберите приоритет изображений с "
+#~ "четкими чертами (gmi) или тех, которые "
+#~ "охватывают наибольшую площадь (area). По "
+#~ "умолчанию: %(default)s"
 
-#, python-format
 #~ msgid "Print additional messages to the console. Default: %(default)s"
-#~ msgstr ""
-#~ "Выводить дополнительные сообщения на консоль. По умолчанию: %(default)s"
+#~ msgstr "Выводить дополнительные сообщения на консоль. По умолчанию: %(default)s"
 
-#, python-format
 #~ msgid "Print debug messages. Default: %(default)s"
 #~ msgstr "Печать отладочных сообщений. По умолчанию: %(default)s"
 
-#, python-format
 #~ msgid ""
-#~ "Turn on gamma tone mapping or none for no tone mapping. Can be one of "
-#~ "%(choices)s. Default: %(default)s "
+#~ "Turn on gamma tone mapping or none"
+#~ " for no tone mapping. Can be one"
+#~ " of %(choices)s. Default: %(default)s "
 #~ msgstr ""
-#~ "Включает отображение гамма-тонов или отсутствие отображения тонов. Может "
-#~ "быть один из: %(choices)s. По умолчанию: %(default)s "
+#~ "Включает отображение гамма-тонов или отсутствие"
+#~ " отображения тонов. Может быть один из:"
+#~ " %(choices)s. По умолчанию: %(default)s "
 
-#, python-format
 #~ msgid ""
-#~ "Type of photometric outlier removal method. Can be one of: %(choices)s. "
-#~ "Default: %(default)s"
+#~ "Type of photometric outlier removal method."
+#~ " Can be one of: %(choices)s. Default:"
+#~ " %(default)s"
 #~ msgstr ""
-#~ "Тип способа устранения фотометрических отклонений. Это может быть одно из "
-#~ "следующих значений: %(choices)s. По умолчанию: %(default)s"
+#~ "Тип способа устранения фотометрических "
+#~ "отклонений. Это может быть одно из "
+#~ "следующих значений: %(choices)s. По умолчанию:"
+#~ " %(default)s"
 
-#, python-format
 #~ msgid ""
-#~ "Controls the density of the point cloud by setting the resolution of the "
-#~ "depthmap images. Higher values take longer to compute but produce denser "
-#~ "point clouds. Overrides the value calculated by --pc-quality.Default: "
-#~ "%(default)s"
+#~ "Controls the density of the point "
+#~ "cloud by setting the resolution of "
+#~ "the depthmap images. Higher values take "
+#~ "longer to compute but produce denser "
+#~ "point clouds. Overrides the value "
+#~ "calculated by --pc-quality.Default: %(default)s"
 #~ msgstr ""
-#~ "Управляет плотностью облака точек, устанавливая разрешение изображений "
-#~ "карты глубины. Вычисление более высоких значений занимает больше времени, "
-#~ "но при этом образуются более плотные облака точек. Переопределяет "
-#~ "значение, вычисленное с помощью --pc-quality. По умолчанию: %(default)s"
+#~ "Управляет плотностью облака точек, устанавливая"
+#~ " разрешение изображений карты глубины. "
+#~ "Вычисление более высоких значений занимает "
+#~ "больше времени, но при этом образуются "
+#~ "более плотные облака точек. Переопределяет "
+#~ "значение, вычисленное с помощью --pc-"
+#~ "quality. По умолчанию: %(default)s"
 
 #~ msgid "Orthophoto (GeoTIFF)"
 #~ msgstr "Ортофото (GeoTIFF)"
@@ -4613,3 +4581,4 @@ msgstr "Количество:"
 
 #~ msgid "Camera Shots (GeoJSON)"
 #~ msgstr "Снимки с камеры ( GeoJSON)"
+
