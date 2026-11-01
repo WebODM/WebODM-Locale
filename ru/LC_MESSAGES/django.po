@@ -22,13 +22,11 @@ msgstr ""
 
 #: app/admin.py:112
 msgid "Cannot restore default logo"
-msgstr ""
+msgstr "Не удалось восстановить логотип по умолчанию"
 
 #: app/admin.py:126
-#, fuzzy
-#| msgid "Button Default"
 msgid "Restore Default"
-msgstr "Кнопка по умолчанию"
+msgstr "Восстановить по умолчанию"
 
 #: app/admin.py:148
 msgid "Enter custom CSS"
@@ -121,18 +119,17 @@ msgstr "Невозможно удалить плагин %(plugin)s: %(message)s
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
-msgstr ""
+msgstr "Плагин %(plugin)s успешно обновлён. Перезапустите WebODM, чтобы применить изменения."
 
 #: app/admin.py:382
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "Плагин успешно добавлен"
+msgstr "Плагин %(plugin)s успешно установлен"
 
 #: app/admin.py:386
 #, python-format
 msgid "Cannot load plugin: %(message)s"
-msgstr "Невозможно удалить плагин: %(message)s"
+msgstr "Не удалось загрузить плагин: %(message)s"
 
 #: app/admin.py:395
 msgid "You need to upload a zip file"
@@ -326,21 +323,19 @@ msgstr "Температура в градусах Сантикельвина."
 
 #: app/api/jwt.py:35 app/api/jwt.py:44
 msgid "User account is disabled."
-msgstr ""
+msgstr "Учётная запись пользователя отключена."
 
 #: app/api/jwt.py:40
 msgid "Cannot impersonate, user is not superuser."
-msgstr ""
+msgstr "Невозможно войти от имени другого пользователя: отсутствуют права суперпользователя."
 
 #: app/api/jwt.py:52 app/api/jwt.py:60
 msgid "Unable to log in with provided credentials."
-msgstr ""
+msgstr "Не удалось войти с указанными учётными данными."
 
 #: app/api/jwt.py:62
-#, fuzzy
-#| msgid "Enter a username and password."
 msgid "Must include \"username\" and \"password\"."
-msgstr "Введите имя пользователя и пароль."
+msgstr "Необходимо указать «username» и «password»."
 
 #: app/api/media.py:72 app/api/tasks.py:315
 msgid "No files uploaded"
@@ -352,42 +347,38 @@ msgstr "Размер файла превышает максимально доп
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "Недопустимый идентификатор наложения"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "Файл отсутствует"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "Размер файла %(file)s превышает %(size)s МБ."
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "Недопустимые метаданные наложения"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid GeoJSON"
-msgstr "Недопустимое действие"
+msgstr "Некорректный GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "Файл %(file)s не является DXF или ZIP-архивом с Shapefile"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "Недопустимый код EPSG: %(value)s"
+msgstr "Недопустимый код EPSG"
 
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "Не удалось преобразовать %(file)s: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -398,55 +389,45 @@ msgid "Invalid user in permissions list"
 msgstr "Недопустимый пользователь в списке разрешений"
 
 #: app/api/projects.py:245
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "Недопустимый пользователь в списке разрешений"
+msgstr "Недопустимая группа в списке разрешений"
 
 #: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr "Недопустимые разрешения"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid image size"
-msgstr "Неверный zip файл"
+msgstr "Недопустимый размер изображения"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "В задаче отсутствует %(asset)s"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
-msgstr ""
+msgstr "Экспорт ещё не готов"
 
 #: app/api/splats.py:52
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid export"
-msgstr "Недопустимое действие"
+msgstr "Некорректные данные экспорта"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr ""
+msgstr "Срок действия экспорта истёк. Создайте новый экспорт."
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
-msgstr ""
+msgstr "Не удалось загрузить модель Gaussian Splats: в задаче отсутствует облако точек"
 
 #: app/api/splats.py:77
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "A single file must be uploaded"
-msgstr "Нет загруженных файлов"
+msgstr "Необходимо загрузить ровно один файл"
 
 #: app/api/splats.py:82
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid filename"
-msgstr "Недопустимый тип файла"
+msgstr "Недопустимое имя файла"
 
 #: app/api/splats.py:86 app/api/tasks.py:922
 msgid "Invalid file type"
@@ -459,10 +440,8 @@ msgid "Asset does not exist"
 msgstr "Набор данных отсутствует"
 
 #: app/api/tasks.py:116
-#, fuzzy
-#| msgid "Cannot create task, alignment task is not valid"
 msgid "Cannot create task, processing node is not valid"
-msgstr "Не удается создать задачу, задача выравнивания недействительна"
+msgstr "Не удалось создать задачу: указан некорректный узел обработки"
 
 #: app/api/tasks.py:293
 msgid "You need to upload at least 1 file before commit"
@@ -498,16 +477,12 @@ msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "Неверный URL. Вы имели в виду %(hint)s?"
 
 #: app/api/tasks.py:898 app/api/tasks.py:901
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid uuid"
-msgstr "Недопустимое действие"
+msgstr "Недопустимый UUID"
 
 #: app/api/tasks.py:933
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid file type (extension mismatch)"
-msgstr "Недопустимый тип файла"
+msgstr "Недопустимый тип файла (расширение не соответствует содержимому)"
 
 #: app/api/tasks.py:957
 msgid "Some parameters are not integers"
@@ -515,25 +490,23 @@ msgstr "Некоторые параметры не являются целыми
 
 #: app/api/tasks.py:1016 app/api/tasks.py:1021
 msgid "GeoTIFF must have a valid CRS"
-msgstr ""
+msgstr "GeoTIFF должен содержать корректную систему координат (CRS)"
 
 #: app/api/tasks.py:1023
 msgid "Elevation model must have at most 2 band"
-msgstr ""
+msgstr "Модель высот должна содержать не более двух каналов"
 
 #: app/api/tasks.py:1029
 msgid "Point cloud must be a valid LAZ/LAS file"
-msgstr ""
+msgstr "Облако точек должно быть корректным файлом LAZ или LAS"
 
 #: app/api/tasks.py:1035
 msgid "Textured model must be a valid GLB file"
-msgstr ""
+msgstr "Текстурированная модель должна быть корректным файлом GLB"
 
 #: app/api/tasks.py:1039
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "No assets uploaded"
-msgstr "Нет загруженных файлов"
+msgstr "Результирующие данные не загружены"
 
 #: app/api/tiler.py:364
 msgid "Invalid boundaries parameter"
@@ -616,11 +589,11 @@ msgstr ""
 
 #: app/models/basemap.py:14
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: app/models/basemap.py:15
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:33
@@ -629,45 +602,43 @@ msgstr "Метка"
 
 #: app/models/basemap.py:17
 msgid "Attribution"
-msgstr ""
+msgstr "Сведения об источнике"
 
 #: app/models/basemap.py:20
 msgid "Max zoom"
-msgstr ""
+msgstr "Максимальный масштаб"
 
 #: app/models/basemap.py:23
 msgid "Min zoom"
-msgstr ""
+msgstr "Минимальный масштаб"
 
 #: app/models/basemap.py:24
 msgid "Subdomains"
-msgstr ""
+msgstr "Поддомены"
 
 #: app/models/basemap.py:25
 msgid "Layers"
-msgstr ""
+msgstr "Слои"
 
 #: app/models/basemap.py:26
 msgid "Styles"
-msgstr ""
+msgstr "Стили"
 
 #: app/models/basemap.py:31
 msgid "Format"
-msgstr ""
+msgstr "Формат"
 
 #: app/models/basemap.py:32
-#, fuzzy
-#| msgid "Button Default"
 msgid "Default"
-msgstr "Кнопка по умолчанию"
+msgstr "По умолчанию"
 
 #: app/models/basemap.py:35
 msgid "Basemap"
-msgstr ""
+msgstr "Базовая карта"
 
 #: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "Базовые карты"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -804,13 +775,11 @@ msgstr "Идентификатор кластера"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
-msgstr ""
+msgstr "Идентификатор пользователя OIDC, используемый для единого входа (SSO)"
 
 #: app/models/profile.py:17
-#, fuzzy
-#| msgid "Objects"
 msgid "OIDC Subject"
-msgstr "Объекты"
+msgstr "Идентификатор субъекта OIDC"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -891,18 +860,16 @@ msgid "Task Id"
 msgstr "Id задачи"
 
 #: app/models/redirect.py:9
-#, fuzzy
-#| msgid "The person who owns this preset"
 msgid "The person associated with this redirect"
-msgstr "Пользователь, которому принадлежит этот пресет"
+msgstr "Пользователь, связанный с этим перенаправлением"
 
 #: app/models/redirect.py:23
 msgid "Redirect"
-msgstr ""
+msgstr "Перенаправление"
 
 #: app/models/redirect.py:24
 msgid "Redirects"
-msgstr ""
+msgstr "Перенаправления"
 
 #: app/models/setting.py:20
 msgid "The name of your application"
@@ -1038,27 +1005,27 @@ msgstr "Доступные наборы данных"
 
 #: app/models/task.py:257
 msgid "Extent of the orthophoto"
-msgstr "Масштаб ортофотоплана"
+msgstr "Границы охвата ортофотоплана"
 
 #: app/models/task.py:257
 msgid "Orthophoto Extent"
-msgstr "Масштаб ортофотоплана"
+msgstr "Границы ортофотоплана"
 
 #: app/models/task.py:258
 msgid "Extent of the DSM"
-msgstr "Охват DSM"
+msgstr "Границы охвата цифровой модели поверхности (DSM)"
 
 #: app/models/task.py:258
 msgid "DSM Extent"
-msgstr "Масштаб DSM"
+msgstr "Границы цифровой модели поверхности (DSM)"
 
 #: app/models/task.py:259
 msgid "Extent of the DTM"
-msgstr "Охват DTM"
+msgstr "Границы охвата цифровой модели рельефа (DTM)"
 
 #: app/models/task.py:259
 msgid "DTM Extent"
-msgstr "Масштаб DTM"
+msgstr "Границы цифровой модели рельефа (DTM)"
 
 #: app/models/task.py:263
 msgid ""
@@ -1136,7 +1103,7 @@ msgstr ""
 
 #: app/models/task.py:282
 msgid "Import URL"
-msgstr "Импортировать по ссылке"
+msgstr "URL импорта"
 
 #: app/models/task.py:283
 msgid "Number of images associated with this task"
@@ -1178,9 +1145,7 @@ msgstr "Код EPSG набора данных (при наличии геогр�
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
-msgstr ""
-"Определение набора данных в формате WKT (если географическая привязка и код "
-"EPSG недоступны)"
+msgstr "Описание системы координат в формате WKT (для данных с геопривязкой, если код EPSG недоступен)"
 
 #: app/models/task.py:288
 msgid "Task tags"
@@ -1224,7 +1189,7 @@ msgstr "Список медиафайлов, связанных с этой за
 
 #: app/models/task.py:293
 msgid "Media"
-msgstr ""
+msgstr "Медиафайлы"
 
 #: app/models/task.py:297
 msgid "Task"
@@ -2091,7 +2056,7 @@ msgstr "Отображение 3D-модели"
 msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
-msgstr ""
+msgstr "Узел %(node)s устарел и может перестать работать в будущих версиях. Для обновления см. %(link_start)sруководство по миграции%(link_end)s."
 
 #: app/views/app.py:145
 #, python-format
@@ -2116,28 +2081,28 @@ msgstr "Недопустимое действие"
 
 #: app/views/oidc.py:53 app/views/oidc.py:90
 msgid "Invalid SSO provider. Please try again."
-msgstr ""
+msgstr "Недопустимый провайдер SSO. Повторите попытку."
 
 #: app/views/oidc.py:95 app/views/oidc.py:128 app/views/oidc.py:134
 #: app/views/oidc.py:150 app/views/oidc.py:157 app/views/oidc.py:174
 msgid "SSO login failed."
-msgstr ""
+msgstr "Не удалось войти через SSO."
 
 #: app/views/oidc.py:101
 msgid "Invalid SSO state. Please try again."
-msgstr ""
+msgstr "Некорректное состояние SSO. Повторите попытку."
 
 #: app/views/oidc.py:106
 msgid "Missing SSO authorization code."
-msgstr ""
+msgstr "Отсутствует код авторизации SSO."
 
 #: app/views/oidc.py:186
 msgid "Cannot create user. A username already exists with the same e-mail."
-msgstr ""
+msgstr "Не удалось создать пользователя: учётная запись с таким адресом электронной почты уже существует."
 
 #: app/views/oidc.py:190
 msgid "This account is disabled. Please contact an administrator."
-msgstr ""
+msgstr "Эта учётная запись отключена. Обратитесь к администратору."
 
 #: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
 #: coreplugins/measure/api.py:21
@@ -2151,25 +2116,15 @@ msgstr ""
 "затем нажмите Перезагрузить --> Из DEM."
 
 #: coreplugins/annotate/api.py:63 coreplugins/annotate/dist/annotate/api.py:63
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
-msgstr ""
-"Модель поверхности недоступна. На панели управления выберите эту задачу, "
-"нажмите Редактировать, в настройках обязательно включите параметр \"dsm\", "
-"затем нажмите Перезагрузить --> Из DEM."
+msgstr "Цифровая модель рельефа (DTM) недоступна. На панели проектов выберите задачу, нажмите «Редактировать», включите параметр «dtm», затем выберите «Перезапустить → С этапа DEM»."
 
 #: coreplugins/annotate/api.py:65 coreplugins/annotate/dist/annotate/api.py:65
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid surface model"
-msgstr "Недопустимый тип файла"
+msgstr "Некорректная цифровая модель поверхности (DSM)"
 
 #: coreplugins/annotate/api.py:91 coreplugins/annotate/dist/annotate/api.py:91
 msgid "A digital surface model is required to compute elevation values."
