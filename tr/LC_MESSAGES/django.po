@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-13 22:29+0000\n"
+"POT-Creation-Date: 2026-11-02 21:01+0000\n"
 "PO-Revision-Date: 2026-11-01 08:51+0000\n"
 "Last-Translator: Erdem <gnserdem13@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/webodm/"
-"tr/>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/webodm/tr/"
+">\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,47 +19,47 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2026.11.dev0\n"
 
-#: app/admin.py:112
+#: app/admin.py:104
 msgid "Cannot restore default logo"
 msgstr "Varsayılan logo geri yüklenemiyor"
 
-#: app/admin.py:126
+#: app/admin.py:118
 msgid "Restore Default"
 msgstr "Varsayılan ayarları geri yükle"
 
-#: app/admin.py:148
+#: app/admin.py:140
 msgid "Enter custom CSS"
 msgstr "Özel CSS girin"
 
-#: app/admin.py:149 app/models/theme.py:40
+#: app/admin.py:141 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:152
+#: app/admin.py:144
 msgid "HTML that will be displayed above site header"
 msgstr "Site başlığının üzerinde görüntülenecek HTML"
 
-#: app/admin.py:153 app/models/theme.py:41
+#: app/admin.py:145 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (başlıktan önce)"
 
-#: app/admin.py:156
+#: app/admin.py:148
 msgid "HTML that will be displayed after site header"
 msgstr "Site başlığından sonra görüntülenecek HTML"
 
-#: app/admin.py:157 app/models/theme.py:42
+#: app/admin.py:149 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (başlıktan sonra)"
 
-#: app/admin.py:160
+#: app/admin.py:152
 msgid "HTML that will be displayed after the body tag"
 msgstr "Gövde etiketinden sonra görüntülenecek HTML"
 
-#: app/admin.py:161 app/models/theme.py:43
+#: app/admin.py:153 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (gövdeden sonra)"
 
-#: app/admin.py:165
+#: app/admin.py:157
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -68,52 +68,52 @@ msgstr ""
 "Altbilgide görüntülenecek HTML kodu. {ORGANIZATION} ve {YEAR} gibi özel "
 "etiketleri de kullanabilirsiniz."
 
-#: app/admin.py:166 app/models/theme.py:44
+#: app/admin.py:158 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (altbilgi)"
 
-#: app/admin.py:226 app/models/project.py:29
+#: app/admin.py:218 app/models/project.py:29
 msgid "Description"
 msgstr "Tanımlama"
 
-#: app/admin.py:232
+#: app/admin.py:224
 msgid "Version"
 msgstr "Sürüm"
 
-#: app/admin.py:238
+#: app/admin.py:230
 msgid "Author"
 msgstr "Yazar"
 
-#: app/admin.py:280
+#: app/admin.py:272
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Yeniden başlatma gerekli. Lütfen %(plugin)s aktifleştirmek için WebODM'i "
 "yeniden başlatın"
 
-#: app/admin.py:283
+#: app/admin.py:275
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Eklenti etkinleştirilemiyor %(plugin)s : %(message)s"
 
-#: app/admin.py:292
+#: app/admin.py:284
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Yeniden başlatma gerekli. Lütfen %(plugin)s tamamen devre dışı bırakmak için "
 "WebODM'i yeniden başlatın"
 
-#: app/admin.py:295
+#: app/admin.py:287
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "Eklenti devre dışı bırakılamıyor %(plugin)s: %(message)s"
 
-#: app/admin.py:304
+#: app/admin.py:296
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "%(plugin)s eklentisi silinemiyor: %(message)s"
 
-#: app/admin.py:380
+#: app/admin.py:372
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
@@ -122,31 +122,64 @@ msgstr ""
 "%(plugin)s eklentisi başarıyla güncellendi. Değişikliklerin uygulanması için "
 "lütfen WebODM'yi yeniden başlatın."
 
-#: app/admin.py:382
+#: app/admin.py:374
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "%(plugin)s başarıyla yüklendi"
 
-#: app/admin.py:386
+#: app/admin.py:378
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Eklenti yüklenemiyor: %(message)s"
 
-#: app/admin.py:395
+#: app/admin.py:387
 msgid "You need to upload a zip file"
 msgstr "Bir zip dosyası yüklemeniz gerekiyor"
 
-#: app/admin.py:414
+#: app/admin.py:406
 msgid "Disable"
 msgstr "Devre dışı bırak"
 
-#: app/admin.py:417
+#: app/admin.py:409
 msgid "Enable"
 msgstr "Etkinleştir"
 
-#: app/admin.py:422
+#: app/admin.py:414
 msgid "Actions"
 msgstr "Eylemler"
+
+#: app/api/authentication.py:43
+#, fuzzy
+#| msgid "Invalid export"
+msgid "Invalid payload."
+msgstr "Geçersiz Dışa Aktarma"
+
+#: app/api/authentication.py:47
+#, fuzzy
+#| msgid "Invalid filename"
+msgid "Invalid signature."
+msgstr "Geçersiz dosya adı"
+
+#: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
+msgid "User account is disabled."
+msgstr "Kullanıcı hesabı devre dışı bırakıldı."
+
+#: app/api/authentication.py:61
+msgid "Invalid Authorization header. No credentials provided."
+msgstr ""
+
+#: app/api/authentication.py:63
+msgid ""
+"Invalid Authorization header. Credentials string should not contain spaces."
+msgstr ""
+
+#: app/api/authentication.py:73 app/api/jwt.py:67
+msgid "Signature has expired."
+msgstr ""
+
+#: app/api/authentication.py:75 app/api/jwt.py:69
+msgid "Error decoding signature."
+msgstr ""
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -320,25 +353,29 @@ msgstr "Santigrat derece cinsinden sıcaklık."
 msgid "Temperature in Centikelvin degrees."
 msgstr "Centikelvin derece cinsinden sıcaklık."
 
-#: app/api/jwt.py:35 app/api/jwt.py:44
-msgid "User account is disabled."
-msgstr "Kullanıcı hesabı devre dışı bırakıldı."
-
-#: app/api/jwt.py:40
+#: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
 msgstr ""
 "Bu işlem gerçekleştirilemiyor. Kullanıcının süper kullanıcı (yönetici) "
 "yetkisi bulunmuyor."
 
-#: app/api/jwt.py:52 app/api/jwt.py:60
+#: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
 msgstr "Verilen kimlik bilgileriyle giriş yapılamadı."
 
-#: app/api/jwt.py:62
+#: app/api/jwt.py:57
 msgid "Must include \"username\" and \"password\"."
 msgstr "\"Kullanıcı adı\" ve \"parola\" mutlaka belirtilmelidir."
 
-#: app/api/media.py:72 app/api/tasks.py:315
+#: app/api/jwt.py:74
+msgid "orig_iat field is required."
+msgstr ""
+
+#: app/api/jwt.py:76
+msgid "Refresh has expired."
+msgstr ""
+
+#: app/api/media.py:72 app/api/tasks.py:323
 msgid "No files uploaded"
 msgstr "Dosya yüklenmedi"
 
@@ -416,7 +453,8 @@ msgstr "Geçersiz Dışa Aktarma"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr "Dışa aktarma bağlantısının süresi doldu, lütfen yeni bir tane oluşturun"
+msgstr ""
+"Dışa aktarma bağlantısının süresi doldu, lütfen yeni bir tane oluşturun"
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
@@ -430,160 +468,160 @@ msgstr "Yalnızca tek bir dosya yüklenmelidir"
 msgid "Invalid filename"
 msgstr "Geçersiz dosya adı"
 
-#: app/api/splats.py:86 app/api/tasks.py:922
+#: app/api/splats.py:86 app/api/tasks.py:928
 msgid "Invalid file type"
 msgstr "Geçersiz dosya tipi"
 
-#: app/api/splats.py:169 app/api/tasks.py:583 app/api/tasks.py:587
-#: app/api/tasks.py:729 app/api/tasks.py:732 app/api/tasks.py:765
-#: app/api/tasks.py:1091
+#: app/api/splats.py:169 app/api/tasks.py:591 app/api/tasks.py:595
+#: app/api/tasks.py:735 app/api/tasks.py:738 app/api/tasks.py:771
+#: app/api/tasks.py:1097
 msgid "Asset does not exist"
 msgstr "Varlık mevcut değil"
 
-#: app/api/tasks.py:116
+#: app/api/tasks.py:115
 msgid "Cannot create task, processing node is not valid"
 msgstr "Görev oluşturulamıyor, işlem düğümü geçerli değil"
 
-#: app/api/tasks.py:293
+#: app/api/tasks.py:301
 msgid "You need to upload at least 1 file before commit"
 msgstr "Kaydetmeden önce en az 1 dosya yüklemelisiniz"
 
-#: app/api/tasks.py:371
+#: app/api/tasks.py:379
 msgid "Cannot duplicate task"
 msgstr "Görev çoğaltılamıyor"
 
-#: app/api/tasks.py:388
+#: app/api/tasks.py:396
 msgid "Cannot create task, alignment task is not valid"
 msgstr "Görev oluşturulamıyor, hizalama görevi geçerli değil"
 
-#: app/api/tasks.py:405
+#: app/api/tasks.py:413
 msgid "Cannot create task, you need at least 2 images"
 msgstr "Görev oluşturulamıyor, en az 2 resme ihtiyacınız var"
 
-#: app/api/tasks.py:783 app/api/tasks.py:1003
+#: app/api/tasks.py:789 app/api/tasks.py:1009
 msgid "Imported Task"
 msgstr "İçe Aktarılan Görev"
 
-#: app/api/tasks.py:787 app/api/tasks.py:914
+#: app/api/tasks.py:793 app/api/tasks.py:920
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "Görev oluşturulamıyor, 1 dosya yüklemeniz gerekiyor"
 
-#: app/api/tasks.py:791
+#: app/api/tasks.py:797
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr "Görev oluşturulamıyor, bir URL belirtin veya 1 dosya yükleyin."
 
-#: app/api/tasks.py:793
+#: app/api/tasks.py:799
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "Geçersiz URL. %(hint)s mi demek istediniz?"
 
-#: app/api/tasks.py:898 app/api/tasks.py:901
+#: app/api/tasks.py:904 app/api/tasks.py:907
 msgid "Invalid uuid"
 msgstr "Geçersiz kimlik tanımlayıcısı"
 
-#: app/api/tasks.py:933
+#: app/api/tasks.py:939
 msgid "Invalid file type (extension mismatch)"
 msgstr "Geçersiz dosya türü (uzantı uyuşmazlığı)"
 
-#: app/api/tasks.py:957
+#: app/api/tasks.py:963
 msgid "Some parameters are not integers"
 msgstr "Bazı parametreler tam sayı değil"
 
-#: app/api/tasks.py:1016 app/api/tasks.py:1021
+#: app/api/tasks.py:1022 app/api/tasks.py:1027
 msgid "GeoTIFF must have a valid CRS"
 msgstr "GeoTIFF'in geçerli bir CRS'ye sahip olması gerekir"
 
-#: app/api/tasks.py:1023
+#: app/api/tasks.py:1029
 msgid "Elevation model must have at most 2 band"
 msgstr "Yükseklik modeli en fazla 2 bant içermelidir"
 
-#: app/api/tasks.py:1029
+#: app/api/tasks.py:1035
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr "Nokta bulutu geçerli bir LAZ/LAS dosyası olmalıdır"
 
-#: app/api/tasks.py:1035
+#: app/api/tasks.py:1041
 msgid "Textured model must be a valid GLB file"
 msgstr "Doku modeli geçerli bir GLB dosyası olmalıdır"
 
-#: app/api/tasks.py:1039
+#: app/api/tasks.py:1045
 msgid "No assets uploaded"
 msgstr "Hiçbir dosya yüklenmedi"
 
-#: app/api/tiler.py:364
+#: app/api/tiler.py:360
 msgid "Invalid boundaries parameter"
 msgstr "Geçersiz sınırlar parametresi"
 
-#: app/api/tiler.py:383
+#: app/api/tiler.py:379
 msgid "Invalid tile size parameter"
 msgstr "Geçersiz döşeme boyutu parametresi"
 
-#: app/api/tiler.py:414 app/api/tiler.py:494
+#: app/api/tiler.py:410 app/api/tiler.py:490
 msgid "Outside of bounds"
 msgstr "Sınır dışı"
 
-#: app/api/tiler.py:425
+#: app/api/tiler.py:421
 msgid "Invalid boundaries"
 msgstr "Geçersiz sınır"
 
-#: app/api/tiler.py:500 app/api/tiler.py:628
+#: app/api/tiler.py:496 app/api/tiler.py:624
 msgid "Not a valid color_map value"
 msgstr "Geçerli bir color_map değeri değil"
 
-#: app/api/tiler.py:508
+#: app/api/tiler.py:504
 msgid "Invalid rescale value"
 msgstr "Geçersiz yeniden ölçeklendirme değeri"
 
-#: app/api/tiler.py:530
+#: app/api/tiler.py:526
 msgid "Invalid hillshade value"
 msgstr "Geçersiz tepe gölgesi değeri"
 
-#: app/api/tiler.py:533
+#: app/api/tiler.py:529
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr ""
 "Yükseltisiz taramanın tepe gölgesi hesaplanamıyor (birden fazla bant bulundu)"
 
-#: app/api/tiler.py:557
+#: app/api/tiler.py:553
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
 "Döşeme işlenemiyor: yoğunluk görüntüsü sağlandı, ancak RGB verisi "
 "hesaplanmadı."
 
-#: app/api/tiler.py:613 app/api/tiler.py:615
+#: app/api/tiler.py:609 app/api/tiler.py:611
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr "Desteklenmeyen biçim: %(value)s"
 
-#: app/api/tiler.py:634
+#: app/api/tiler.py:630
 #, python-format
 msgid "Invalid resample value: %(value)s"
 msgstr "Geçersiz yeniden örnekleme değeri: %(value)s"
 
-#: app/api/tiler.py:640
+#: app/api/tiler.py:636
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr "Geçersiz EPSG kodu: %(value)s"
 
-#: app/api/tiler.py:646 app/api/tiler.py:648
+#: app/api/tiler.py:642 app/api/tiler.py:644
 #, python-format
 msgid "Invalid PROJ string: %(value)s"
 msgstr "Geçersiz PROJ dizesi: %(value)s"
 
-#: app/api/tiler.py:651
+#: app/api/tiler.py:647
 msgid "Both formula and bands parameters are required"
 msgstr "Hem formül hem de bant parametreleri gereklidir"
 
-#: app/api/tiler.py:674
+#: app/api/tiler.py:670
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr "Geçersiz yeniden ölçeklendirme değeri: %(value)s"
 
-#: app/api/tiler.py:682
+#: app/api/tiler.py:678
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr "Geçersiz tepe gölgesi değeri: %(value)s"
 
-#: app/api/tiler.py:693
+#: app/api/tiler.py:689
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Jeoreferanssız veri kümesinde epsg kullanılamıyor"
 
@@ -596,7 +634,7 @@ msgid "URL"
 msgstr "URL"
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
-#: nodeodm/models.py:33
+#: nodeodm/models.py:32
 msgid "Label"
 msgstr "Katman"
 
@@ -644,8 +682,8 @@ msgstr "Altlık Haritalar"
 msgid "Plugin name"
 msgstr "Eklenti adı"
 
-#: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:248 app/models/theme.py:18
+#: app/models/plugin.py:5 app/models/preset.py:9 app/models/project.py:28
+#: app/models/task.py:246 app/models/theme.py:18
 msgid "Name"
 msgstr "İsim"
 
@@ -665,76 +703,76 @@ msgstr "Eklenti"
 msgid "Plugins"
 msgstr "Eklentiler"
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Setting key"
 msgstr "Ayar anahtarı"
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Key"
 msgstr "Anahtar"
 
-#: app/models/plugin_datum.py:8
+#: app/models/plugin_datum.py:7
 msgid "The user this setting belongs to. If NULL, the setting is global."
 msgstr "Bu ayarın ait olduğu kullanıcı. NULL ise ayar geneldir."
 
-#: app/models/plugin_datum.py:8 app/templates/app/admin/object_history.html:23
+#: app/models/plugin_datum.py:7 app/templates/app/admin/object_history.html:23
 msgid "User"
 msgstr "Kullanıcı"
 
-#: app/models/plugin_datum.py:9
+#: app/models/plugin_datum.py:8
 msgid "Integer value"
 msgstr "Tamsayı değeri"
 
-#: app/models/plugin_datum.py:10
+#: app/models/plugin_datum.py:9
 msgid "Float value"
 msgstr "Ondalık değer"
 
-#: app/models/plugin_datum.py:11
+#: app/models/plugin_datum.py:10
 msgid "Bool value"
 msgstr "Mantıksal değer"
 
-#: app/models/plugin_datum.py:12
+#: app/models/plugin_datum.py:11
 msgid "String value"
 msgstr "Karakter dizisi değeri"
 
-#: app/models/plugin_datum.py:13
+#: app/models/plugin_datum.py:12
 msgid "JSON value"
 msgstr "JSON değeri"
 
-#: app/models/plugin_datum.py:19 app/models/plugin_datum.py:20
+#: app/models/plugin_datum.py:18 app/models/plugin_datum.py:19
 msgid "Plugin Datum"
 msgstr "Eklenti Verisi"
 
-#: app/models/preset.py:9
+#: app/models/preset.py:8
 msgid "The person who owns this preset"
 msgstr "Bu ön ayarın sahibi olan kişi"
 
-#: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
+#: app/models/preset.py:8 app/models/project.py:27 app/models/redirect.py:9
 msgid "Owner"
 msgstr "Sahibi"
 
-#: app/models/preset.py:10
+#: app/models/preset.py:9
 msgid "A label used to describe the preset"
 msgstr "Ön ayarı tanımlamak için kullanılan bir etiket"
 
-#: app/models/preset.py:11
+#: app/models/preset.py:10
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 "Bu ön ayarı tanımlayan seçenekler (Görev seçenekleriyle aynı formatta)."
 
-#: app/models/preset.py:11 app/models/task.py:254
+#: app/models/preset.py:10 app/models/task.py:252
 msgid "Options"
 msgstr "Seçenekler"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Creation date"
 msgstr "Oluşturulma tarihi"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Created at"
 msgstr "Şurada Oluşturuldu"
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid ""
 "Whether this preset is available to every user in the system or just to its "
 "owner."
@@ -742,15 +780,15 @@ msgstr ""
 "Bu ön ayarın sistemdeki her kullanıcı tarafından mı yoksa sadece sahibi "
 "tarafından mı kullanılabileceği."
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid "System"
 msgstr "Sistem"
 
-#: app/models/preset.py:20
+#: app/models/preset.py:19
 msgid "Preset"
 msgstr "Ön Ayar"
 
-#: app/models/preset.py:21
+#: app/models/preset.py:20
 msgid "Presets"
 msgstr "Ön Ayarlar"
 
@@ -809,7 +847,7 @@ msgstr "Siliniyor"
 msgid "Project tags"
 msgstr "Proje etiketleri"
 
-#: app/models/project.py:32 app/models/task.py:288
+#: app/models/project.py:32 app/models/task.py:286
 msgid "Tags"
 msgstr "Etiketler"
 
@@ -817,7 +855,7 @@ msgstr "Etiketler"
 msgid "A flag indicating whether this project is available to the public"
 msgstr "Bu projenin halka açık olup olmadığını gösteren bir işaret"
 
-#: app/models/project.py:33 app/models/task.py:265
+#: app/models/project.py:33 app/models/task.py:263
 msgid "Public"
 msgstr "Herkese Açık"
 
@@ -825,7 +863,7 @@ msgstr "Herkese Açık"
 msgid "A flag indicating whether this public project can be edited"
 msgstr "Bu kamu projesinin düzenlenebilir olup olmadığını gösteren bir işaret"
 
-#: app/models/project.py:34 app/models/task.py:266
+#: app/models/project.py:34 app/models/task.py:264
 msgid "Public Edit"
 msgstr "Herkese Açık Düzenleme"
 
@@ -837,12 +875,12 @@ msgstr "Projenin herkese açık tanımlayıcısı"
 msgid "Public Id"
 msgstr "Herkese Açık Kimlik"
 
-#: app/models/project.py:108 app/models/task.py:486
+#: app/models/project.py:108 app/models/task.py:484
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "%(task)s kopyası"
 
-#: app/models/project.py:141 app/models/task.py:247
+#: app/models/project.py:141 app/models/task.py:245
 msgid "Project"
 msgstr "Proje"
 
@@ -919,27 +957,27 @@ msgstr "Uygulama"
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: app/models/task.py:244
+#: app/models/task.py:242
 msgid "Id"
 msgstr "Kimlik"
 
-#: app/models/task.py:246
+#: app/models/task.py:244
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr "Görevin tanımlayıcısı (NodeODM API'si tarafından döndürülen değer)"
 
-#: app/models/task.py:246
+#: app/models/task.py:244
 msgid "UUID"
 msgstr "Benzersiz Kimlik"
 
-#: app/models/task.py:247
+#: app/models/task.py:245
 msgid "Project that this task belongs to"
 msgstr "Bu görevin ait olduğu proje"
 
-#: app/models/task.py:248
+#: app/models/task.py:246
 msgid "A label for the task"
 msgstr "Görev için bir etiket"
 
-#: app/models/task.py:249
+#: app/models/task.py:247
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
@@ -947,11 +985,11 @@ msgstr ""
 "Bu görevin başlangıcından bu yana geçen milisaniye sayısı (-1, bilgi "
 "bulunmadığını gösterir)"
 
-#: app/models/task.py:249
+#: app/models/task.py:247
 msgid "Processing Time"
 msgstr "İşlem Süresi"
 
-#: app/models/task.py:250
+#: app/models/task.py:248
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
@@ -959,11 +997,11 @@ msgstr ""
 "Bu göreve atanmış işlem düğümü (görev henüz bir işlem düğümüyle "
 "ilişkilendirilmemişse boş değer)"
 
-#: app/models/task.py:250 app/views/app.py:149 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:149 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr "İşlem Nodu"
 
-#: app/models/task.py:251
+#: app/models/task.py:249
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
@@ -971,63 +1009,63 @@ msgstr ""
 "Bu göreve otomatik olarak bir işlem düğümü atanıp atanmayacağını belirten "
 "işaret"
 
-#: app/models/task.py:251
+#: app/models/task.py:249
 msgid "Auto Processing Node"
 msgstr "Otomatik İşlem Düğümü"
 
-#: app/models/task.py:252
+#: app/models/task.py:250
 msgid "Current status of the task"
 msgstr "Görevin mevcut durumu"
 
-#: app/models/task.py:252
+#: app/models/task.py:250
 msgid "Status"
 msgstr "Durum"
 
-#: app/models/task.py:253
+#: app/models/task.py:251
 msgid "The last processing error received"
 msgstr "Alınan son işlem hatası"
 
-#: app/models/task.py:253
+#: app/models/task.py:251
 msgid "Last Error"
 msgstr "Son Hata"
 
-#: app/models/task.py:254
+#: app/models/task.py:252
 msgid "Options that are being used to process this task"
 msgstr "Bu görevi işlemek için kullanılan seçenekler"
 
-#: app/models/task.py:255
+#: app/models/task.py:253
 msgid "List of available assets to download"
 msgstr "İndirilebilir dosyaların listesi"
 
-#: app/models/task.py:255
+#: app/models/task.py:253
 msgid "Available Assets"
 msgstr "Mevcut Varlıklar"
 
-#: app/models/task.py:257
+#: app/models/task.py:255
 msgid "Extent of the orthophoto"
 msgstr "Ortofotonun kapladığı alan"
 
-#: app/models/task.py:257
+#: app/models/task.py:255
 msgid "Orthophoto Extent"
 msgstr "Ortofoto Alanı"
 
-#: app/models/task.py:258
+#: app/models/task.py:256
 msgid "Extent of the DSM"
 msgstr "Sayısal Yüzey Modelinin (DSM) kapladığı alan"
 
-#: app/models/task.py:258
+#: app/models/task.py:256
 msgid "DSM Extent"
 msgstr "DSM Kaplama Alanı"
 
-#: app/models/task.py:259
+#: app/models/task.py:257
 msgid "Extent of the DTM"
 msgstr "Sayısal Arazi Modelinin (DTM) Kapladığı Alan"
 
-#: app/models/task.py:259
+#: app/models/task.py:257
 msgid "DTM Extent"
 msgstr "DTM Kaplama Alanı"
 
-#: app/models/task.py:263
+#: app/models/task.py:261
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
@@ -1035,19 +1073,19 @@ msgstr ""
 "Görev üzerinde gerçekleştirilecek işlem. Seçilen işlem, sonraki işlem "
 "döngüsünde çalışan tarafından gerçekleştirilecektir."
 
-#: app/models/task.py:263
+#: app/models/task.py:261
 msgid "Pending Action"
 msgstr "Bekleyen İşlem"
 
-#: app/models/task.py:265
+#: app/models/task.py:263
 msgid "A flag indicating whether this task is available to the public"
 msgstr "Bu görevin herkese açık olup olmadığını belirten işaret"
 
-#: app/models/task.py:266
+#: app/models/task.py:264
 msgid "A flag indicating whether this public task can be edited"
 msgstr "Bu herkese açık görevin düzenlenebilir olup olmadığını belirten işaret"
 
-#: app/models/task.py:268
+#: app/models/task.py:266
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
@@ -1057,11 +1095,11 @@ msgstr ""
 "işlenmeden önce burada belirtilen boyuta yeniden boyutlandırıldığını veya "
 "boyutlandırılacağını belirtir."
 
-#: app/models/task.py:268
+#: app/models/task.py:266
 msgid "Resize To"
 msgstr "Yeniden Boyutlandırma Hedefi"
 
-#: app/models/task.py:271
+#: app/models/task.py:269
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
@@ -1069,48 +1107,48 @@ msgstr ""
 "Bu göreve ait dosyaların işlem düğümüne yüklenme ilerlemesini gösteren 0 ile "
 "1 arasında bir değer"
 
-#: app/models/task.py:272
+#: app/models/task.py:270
 msgid "Upload Progress"
 msgstr "Yükleme İlerlemesi"
 
-#: app/models/task.py:275
+#: app/models/task.py:273
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr ""
 "Bu görevin görüntülerinin yeniden boyutlandırılma ilerlemesini 0 ile 1 "
 "arasında belirten değer"
 
-#: app/models/task.py:276
+#: app/models/task.py:274
 msgid "Resize Progress"
 msgstr "Yeniden Boyutlandırma İlerlemesi"
 
-#: app/models/task.py:279
+#: app/models/task.py:277
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr "Bu görevin tahmini işlem ilerlemesini 0 ile 1 arasında belirten değer"
 
-#: app/models/task.py:280
+#: app/models/task.py:278
 msgid "Running Progress"
 msgstr "İşlem İlerlemesi"
 
-#: app/models/task.py:282
+#: app/models/task.py:280
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr "Bu görevin içe aktarıldığı URL (yalnızca içe aktarılan görevler için)"
 
-#: app/models/task.py:282
+#: app/models/task.py:280
 msgid "Import URL"
 msgstr "İçe Aktarma URL'si"
 
-#: app/models/task.py:283
+#: app/models/task.py:281
 msgid "Number of images associated with this task"
 msgstr "Bu görevle ilişkili görüntü sayısı"
 
-#: app/models/task.py:283
+#: app/models/task.py:281
 msgid "Images Count"
 msgstr "Görüntü Sayısı"
 
-#: app/models/task.py:284
+#: app/models/task.py:282
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
@@ -1118,11 +1156,11 @@ msgstr ""
 "Bu görevin işleme alınmadan önce bilgi veya dosyaların yüklenmesini bekleyip "
 "beklemediğini gösteren bir işaret."
 
-#: app/models/task.py:284
+#: app/models/task.py:282
 msgid "Partial"
 msgstr "Kısmi"
 
-#: app/models/task.py:285
+#: app/models/task.py:283
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
@@ -1130,15 +1168,15 @@ msgstr ""
 "Ölçümleri ve kamera açısını kaydetmek ve yeniden yüklemek için kullanılan, "
 "serileştirilmiş nokta bulutu sahne bilgileri"
 
-#: app/models/task.py:285
+#: app/models/task.py:283
 msgid "Potree Scene"
 msgstr "Nokta Bulutu Sahnesi"
 
-#: app/models/task.py:286
+#: app/models/task.py:284
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "Veri kümesinin EPSG kodu (coğrafi referanslıysa)"
 
-#: app/models/task.py:287
+#: app/models/task.py:285
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
@@ -1146,84 +1184,84 @@ msgstr ""
 "Veri kümesinin Bilinen Metin (WKT) tanımı (coğrafi referanslıysa ve EPSG "
 "kodu mevcut değilse)"
 
-#: app/models/task.py:288
+#: app/models/task.py:286
 msgid "Task tags"
 msgstr "Görev Etiketleri"
 
-#: app/models/task.py:289
+#: app/models/task.py:287
 msgid "List of orthophoto bands"
 msgstr "Ortofoto bantlarının listesi"
 
-#: app/models/task.py:289
+#: app/models/task.py:287
 msgid "Orthophoto Bands"
 msgstr "Ortofotoğraf Bantları"
 
-#: app/models/task.py:290
+#: app/models/task.py:288
 msgid "Size of the task on disk in megabytes"
 msgstr "Görevin diskte kapladığı alan MB"
 
-#: app/models/task.py:290
+#: app/models/task.py:288
 msgid "Size"
 msgstr "Boyut"
 
-#: app/models/task.py:291
+#: app/models/task.py:289
 msgid "A flag indicating whether this task was compacted"
 msgstr "Bu görevin sıkıştırılıp sıkıştırılmadığını belirten işaret"
 
-#: app/models/task.py:291
+#: app/models/task.py:289
 msgid "Compact"
 msgstr "Sıkıştırılmış"
 
-#: app/models/task.py:292
+#: app/models/task.py:290
 msgid "Polygon defining the crop area of this task"
 msgstr "Bu görevin kırpma alanını tanımlayan çokgen"
 
-#: app/models/task.py:292
+#: app/models/task.py:290
 msgid "Crop Polygon"
 msgstr "Kırpma Çokgeni"
 
-#: app/models/task.py:293
+#: app/models/task.py:291
 msgid "List of media files associated with this task"
 msgstr "Bu görevle ilişkili medya dosyalarının listesi"
 
-#: app/models/task.py:293
+#: app/models/task.py:291
 msgid "Media"
 msgstr "Medya"
 
-#: app/models/task.py:297
+#: app/models/task.py:295
 msgid "Task"
 msgstr "Görev"
 
-#: app/models/task.py:298
+#: app/models/task.py:296
 msgid "Tasks"
 msgstr "Görevler"
 
-#: app/models/task.py:309
+#: app/models/task.py:307
 msgid "unnamed"
 msgstr "isimsiz"
 
-#: app/models/task.py:618
+#: app/models/task.py:616
 msgid "Importing assets..."
 msgstr "Varlıklar içe aktarılıyor..."
 
-#: app/models/task.py:673 app/models/task.py:952
+#: app/models/task.py:671 app/models/task.py:950
 msgid "Invalid zip file"
 msgstr "Geçersiz zip dosyası"
 
-#: app/models/task.py:675
+#: app/models/task.py:673
 msgid "Unsupported compression method"
 msgstr "Desteklenmeyen sıkıştırma yöntemi"
 
-#: app/models/task.py:770
+#: app/models/task.py:768
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "Bağlantı hatası: %(error)s"
 
-#: app/models/task.py:850
+#: app/models/task.py:848
 msgid "Cannot restart a task that has no processing node"
 msgstr "İşlem düğümü olmayan bir görevi yeniden başlatamazsınız"
 
-#: app/models/task.py:1055
+#: app/models/task.py:1053
 msgid "Done!"
 msgstr "Tamamlandı!"
 
@@ -1351,7 +1389,11 @@ msgstr "500 Sunucu İç Hatası"
 msgid "Something happened. The server logs contain more information."
 msgstr "Bir şeyler ters gitti. Sunucu günlükleri daha fazla bilgi içeriyor."
 
-#: app/templates/app/about.html:13
+#: app/templates/app/about.html:25
+msgid "Minimize"
+msgstr ""
+
+#: app/templates/app/about.html:29
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1371,16 +1413,18 @@ msgid "Page not found"
 msgstr "Sayfa Bulunamadı"
 
 #: app/templates/app/admin/404.html:10
-msgid "We're sorry, but the requested page could not be found."
+#, fuzzy
+#| msgid "We're sorry, but the requested page could not be found."
+msgid "We’re sorry, but the requested page could not be found."
 msgstr "Üzgünüz, istenen sayfa bulunamadı."
 
-#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:9
-#: app/templates/app/admin/auth/user/change_password.html:13
+#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
+#: app/templates/app/admin/auth/user/change_password.html:15
 #: app/templates/app/admin/base.html:19
-#: app/templates/app/admin/change_form.html:18
-#: app/templates/app/admin/change_list.html:31
-#: app/templates/app/admin/delete_confirmation.html:13
-#: app/templates/app/admin/delete_selected_confirmation.html:13
+#: app/templates/app/admin/change_form.html:19
+#: app/templates/app/admin/change_list.html:33
+#: app/templates/app/admin/delete_confirmation.html:14
+#: app/templates/app/admin/delete_selected_confirmation.html:14
 #: app/templates/app/admin/invalid_setup.html:6
 #: app/templates/app/admin/object_history.html:6
 msgid "Home"
@@ -1395,70 +1439,98 @@ msgid "Server error (500)"
 msgstr "Sunucu hatası (500)"
 
 #: app/templates/app/admin/500.html:14
-msgid "Server Error (500)"
+#, fuzzy
+#| msgid "Server Error (500)"
+msgid "Server Error <em>(500)</em>"
 msgstr "Sunucu Hatası (500)"
 
 #: app/templates/app/admin/500.html:15
+#, fuzzy
+#| msgid ""
+#| "There's been an error. It's been reported to the site administrators via "
+#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
-"There's been an error. It's been reported to the site administrators via "
+"There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
 "Bir hata oluştu. Durum, site yöneticilerine e-posta ile bildirildi ve kısa "
 "süre içinde düzeltilecektir. Sabrınız için teşekkür ederiz."
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
 msgstr "Seçilen eylemi çalıştır"
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Go"
 msgstr "Git"
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 msgid "Click here to select the objects across all pages"
 msgstr "Tüm sayfalardaki nesneleri seçmek için buraya tıklayın"
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
 msgstr ""
 
-#: app/templates/app/admin/actions.html:12
+#: app/templates/app/admin/actions.html:18
 msgid "Clear selection"
 msgstr ""
 
-#: app/templates/app/admin/auth/user/add_form.html:6
-msgid ""
-"First, enter a username and password. Then, you'll be able to edit more user "
-"options."
+#: app/templates/app/admin/app_index.html:8
+msgid "Breadcrumbs"
 msgstr ""
 
-#: app/templates/app/admin/auth/user/add_form.html:8
-msgid "Enter a username and password."
-msgstr "Kullanıcı adı ve parola girin."
+#: app/templates/app/admin/auth/user/add_form.html:6
+msgid "After you’ve created a user, you’ll be able to edit more user options."
+msgstr ""
 
-#: app/templates/app/admin/auth/user/change_password.html:17
-#: app/templates/app/admin/auth/user/change_password.html:54
+#: app/templates/app/admin/auth/user/change_password.html:5
+#: app/templates/app/admin/change_form.html:4
+#: app/templates/app/admin/change_list.html:4
+#: app/templates/app/admin/login.html:4
+#, fuzzy
+#| msgid "Last Error"
+msgid "Error:"
+msgstr "Son Hata"
+
+#: app/templates/app/admin/auth/user/change_password.html:19
+#: app/templates/app/admin/auth/user/change_password.html:71
 msgid "Change password"
 msgstr ""
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
+#: app/templates/app/admin/auth/user/change_password.html:19
+msgid "Set password"
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:30
+#: app/templates/app/admin/change_form.html:44
+#: app/templates/app/admin/change_list.html:53
+#: app/templates/app/admin/login.html:24
+#, fuzzy
+#| msgid "Please correct the error below."
 msgid "Please correct the error below."
-msgstr "Lütfen aşağıdaki hatayı düzeltin."
+msgid_plural "Please correct the errors below."
+msgstr[0] "Lütfen aşağıdaki hatayı düzeltin."
+msgstr[1] "Lütfen aşağıdaki hatayı düzeltin."
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
-msgid "Please correct the errors below."
-msgstr "Lütfen aşağıdaki hataları düzeltin."
-
-#: app/templates/app/admin/auth/user/change_password.html:31
+#: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:36
+msgid ""
+"This action will <strong>enable</strong> password-based authentication for "
+"this user."
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:72
+msgid "Disable password-based authentication"
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:74
+msgid "Enable password-based authentication"
 msgstr ""
 
 #: app/templates/app/admin/base_site.html:3
@@ -1469,26 +1541,30 @@ msgstr "Django site yöneticisi"
 msgid "Django administration"
 msgstr "Django yönetimi"
 
-#: app/templates/app/admin/change_form.html:21
-#: app/templates/app/admin/change_list.html:49
+#: app/templates/app/admin/change_form.html:22
 #, python-format
 msgid "Add %(name)s"
 msgstr "%(name)s Ekle"
 
-#: app/templates/app/admin/change_form.html:33
-#: app/templates/app/admin/object_history.html:10
-msgid "History"
-msgstr ""
-
-#: app/templates/app/admin/change_form.html:35
-#: app/templates/app/admin/edit_inline/stacked.html:14
-#: app/templates/app/admin/edit_inline/tabular.html:36
-msgid "View on site"
-msgstr "Sitede görüntüle"
-
-#: app/templates/app/admin/change_list.html:69
+#: app/templates/app/admin/change_list.html:78
 msgid "Filter"
 msgstr "Filtre"
+
+#: app/templates/app/admin/change_list.html:81
+#, fuzzy
+#| msgid "Accounts"
+msgid "Hide counts"
+msgstr "Hesaplar"
+
+#: app/templates/app/admin/change_list.html:82
+#, fuzzy
+#| msgid "Accounts"
+msgid "Show counts"
+msgstr "Hesaplar"
+
+#: app/templates/app/admin/change_list.html:85
+msgid "Clear all filters"
+msgstr ""
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1498,27 +1574,26 @@ msgstr "Eklenti Yükle (.zip)"
 msgid "Manage Plugins"
 msgstr ""
 
-#: app/templates/app/admin/change_list_results.html:17
+#: app/templates/app/admin/change_list_results.html:16
 msgid "Remove from sorting"
 msgstr ""
 
-#: app/templates/app/admin/change_list_results.html:18
+#: app/templates/app/admin/change_list_results.html:17
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
 msgstr "Sıralama önceliği: %(priority_number)s"
 
-#: app/templates/app/admin/change_list_results.html:19
+#: app/templates/app/admin/change_list_results.html:18
 msgid "Toggle sorting"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:17
-#: app/templates/app/admin/related_widget_wrapper.html:23
-#: app/templates/app/admin/submit_line.html:6
+#: app/templates/app/admin/delete_confirmation.html:18
+#: app/templates/app/admin/submit_line.html:14
 #: app/templates/app/processing_node.html:54
 msgid "Delete"
 msgstr "Sil"
 
-#: app/templates/app/admin/delete_confirmation.html:23
+#: app/templates/app/admin/delete_confirmation.html:25
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
@@ -1533,33 +1608,33 @@ msgid ""
 "following protected related objects:"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_confirmation.html:35
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:39
-#: app/templates/app/admin/delete_selected_confirmation.html:38
+#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_selected_confirmation.html:31
 msgid "Objects"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:46
-#: app/templates/app/admin/delete_selected_confirmation.html:49
-msgid "Yes, I'm sure"
+#: app/templates/app/admin/delete_confirmation.html:44
+#: app/templates/app/admin/delete_selected_confirmation.html:42
+msgid "Yes, I’m sure"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:47
-#: app/templates/app/admin/delete_selected_confirmation.html:50
+#: app/templates/app/admin/delete_confirmation.html:45
+#: app/templates/app/admin/delete_selected_confirmation.html:43
 msgid "No, take me back"
 msgstr ""
 
-#: app/templates/app/admin/delete_selected_confirmation.html:16
+#: app/templates/app/admin/delete_selected_confirmation.html:17
 msgid "Delete multiple objects"
 msgstr ""
 
-#: app/templates/app/admin/delete_selected_confirmation.html:22
+#: app/templates/app/admin/delete_selected_confirmation.html:23
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
@@ -1567,14 +1642,14 @@ msgid ""
 "types of objects:"
 msgstr ""
 
-#: app/templates/app/admin/delete_selected_confirmation.html:29
+#: app/templates/app/admin/delete_selected_confirmation.html:26
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
 msgstr ""
 
-#: app/templates/app/admin/delete_selected_confirmation.html:36
+#: app/templates/app/admin/delete_selected_confirmation.html:29
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
@@ -1583,18 +1658,26 @@ msgstr ""
 "Seçili %(objects_name)s öğelerini silmek istediğinizden emin misiniz? "
 "Aşağıdaki tüm öğeler ve bunlarla ilişkili kayıtlar silinecektir:"
 
-#: app/templates/app/admin/edit_inline/stacked.html:12
-#: app/templates/app/admin/edit_inline/tabular.html:34
-#: app/templates/app/admin/index.html:37
-#: app/templates/app/admin/related_widget_wrapper.html:9
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "Change"
 msgstr "Değiştir"
 
-#: app/templates/app/admin/edit_inline/tabular.html:20
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
+msgid "View"
+msgstr ""
+
+#: app/templates/app/admin/edit_inline/stacked.html:22
+#: app/templates/app/admin/edit_inline/tabular.html:42
+msgid "View on site"
+msgstr "Sitede görüntüle"
+
+#: app/templates/app/admin/edit_inline/tabular.html:26
 msgid "Delete?"
 msgstr ""
 
-#: app/templates/app/admin/filter.html:2
+#: app/templates/app/admin/filter.html:4
 #, python-format
 msgid " By %(filter_title)s "
 msgstr ""
@@ -1603,39 +1686,46 @@ msgstr ""
 msgid "Summary"
 msgstr ""
 
-#: app/templates/app/admin/index.html:20
-#, python-format
-msgid "Models in the %(name)s application"
-msgstr ""
-
-#: app/templates/app/admin/index.html:31
-#: app/templates/app/admin/related_widget_wrapper.html:16
-msgid "Add"
-msgstr ""
-
-#: app/templates/app/admin/index.html:47
-msgid "You don't have permission to edit anything."
-msgstr ""
-
-#: app/templates/app/admin/index.html:55
+#: app/templates/app/admin/index.html:23
 msgid "Recent actions"
 msgstr ""
 
-#: app/templates/app/admin/index.html:56
+#: app/templates/app/admin/index.html:24
 msgid "My actions"
 msgstr "Eylemlerim"
 
-#: app/templates/app/admin/index.html:60
+#: app/templates/app/admin/index.html:28
 msgid "None available"
 msgstr ""
 
-#: app/templates/app/admin/index.html:74
+#: app/templates/app/admin/index.html:33
+msgid "Added:"
+msgstr ""
+
+#: app/templates/app/admin/index.html:33
+#, fuzzy
+#| msgid "Change"
+msgid "Changed:"
+msgstr "Değiştir"
+
+#: app/templates/app/admin/index.html:33
+#, fuzzy
+#| msgid "Delete"
+msgid "Deleted:"
+msgstr "Sil"
+
+#: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "Bilinmeyen İçerik"
 
 #: app/templates/app/admin/invalid_setup.html:12
+#, fuzzy
+#| msgid ""
+#| "Something's wrong with your database installation. Make sure the "
+#| "appropriate database tables have been created, and make sure the database "
+#| "is readable by the appropriate user."
 msgid ""
-"Something's wrong with your database installation. Make sure the appropriate "
+"Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
@@ -1643,19 +1733,23 @@ msgstr ""
 "oluşturulduğundan ve veritabanının ilgili kullanıcı tarafından "
 "okunabildiğinden emin olun."
 
-#: app/templates/app/admin/login.html:37
+#: app/templates/app/admin/login.html:40
 #, python-format
 msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
 "page. Would you like to login to a different account?"
 msgstr ""
 
-#: app/templates/app/admin/login.html:57
-msgid "Forgotten your password or username?"
+#: app/templates/app/admin/login.html:60
+msgid "Forgotten your login credentials?"
 msgstr ""
 
-#: app/templates/app/admin/login.html:61
+#: app/templates/app/admin/login.html:64
 msgid "Log in"
+msgstr ""
+
+#: app/templates/app/admin/object_history.html:10
+msgid "History"
 msgstr ""
 
 #: app/templates/app/admin/object_history.html:22
@@ -1666,9 +1760,15 @@ msgstr ""
 msgid "Action"
 msgstr ""
 
-#: app/templates/app/admin/object_history.html:38
+#: app/templates/app/admin/object_history.html:49
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/templates/app/admin/object_history.html:52
 msgid ""
-"This object doesn't have a change history. It probably wasn't added via this "
+"This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
 
@@ -1678,28 +1778,13 @@ msgid "Show all"
 msgstr ""
 
 #: app/templates/app/admin/pagination.html:11
-#: app/templates/app/admin/submit_line.html:3
+#: app/templates/app/admin/submit_line.html:4
 msgid "Save"
 msgstr "Sakla"
 
 #: app/templates/app/admin/popup_response.html:3
-msgid "Popup closing..."
+msgid "Popup closing…"
 msgstr ""
-
-#: app/templates/app/admin/related_widget_wrapper.html:8
-#, python-format
-msgid "Change selected %(model)s"
-msgstr ""
-
-#: app/templates/app/admin/related_widget_wrapper.html:15
-#, python-format
-msgid "Add another %(model)s"
-msgstr ""
-
-#: app/templates/app/admin/related_widget_wrapper.html:22
-#, python-format
-msgid "Delete selected %(model)s"
-msgstr "Seçili %(model)s öğesini sil"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1717,17 +1802,28 @@ msgstr[1] ""
 msgid "%(full_result_count)s total"
 msgstr ""
 
-#: app/templates/app/admin/submit_line.html:8
+#: app/templates/app/admin/submit_line.html:5
 msgid "Save as new"
 msgstr ""
 
-#: app/templates/app/admin/submit_line.html:9
+#: app/templates/app/admin/submit_line.html:6
 msgid "Save and add another"
 msgstr "Kaydet ve başka bir tane ekle"
 
-#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/admin/submit_line.html:7
 msgid "Save and continue editing"
 msgstr ""
+
+#: app/templates/app/admin/submit_line.html:7
+#, fuzzy
+#| msgid "Save and add another"
+msgid "Save and view"
+msgstr "Kaydet ve başka bir tane ekle"
+
+#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/dev_tools.html:9
+msgid "Close"
+msgstr "Kapat"
 
 #: app/templates/app/dashboard.html:15 app/templates/app/dashboard.html:28
 #: app/templates/app/welcome.html:227
@@ -1785,10 +1881,6 @@ msgstr ""
 msgid "Developer Tools"
 msgstr ""
 
-#: app/templates/app/dev_tools.html:9
-msgid "Close"
-msgstr "Kapat"
-
 #: app/templates/app/dev_tools.html:14
 msgid "Current Locale:"
 msgstr ""
@@ -1840,7 +1932,7 @@ msgstr "Çıkış"
 msgid "Dashboard"
 msgstr "Proje Paneli"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:38
+#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr ""
 
@@ -1868,27 +1960,27 @@ msgstr ""
 msgid "About"
 msgstr "Hakkında"
 
-#: app/templates/app/processing_node.html:11 nodeodm/models.py:24
+#: app/templates/app/processing_node.html:11 nodeodm/models.py:23
 msgid "Hostname"
 msgstr "Ana Makine Adı"
 
-#: app/templates/app/processing_node.html:15 nodeodm/models.py:25
+#: app/templates/app/processing_node.html:15 nodeodm/models.py:24
 msgid "Port"
 msgstr "Bağlantı Noktası"
 
-#: app/templates/app/processing_node.html:19 nodeodm/models.py:26
+#: app/templates/app/processing_node.html:19 nodeodm/models.py:25
 msgid "API Version"
 msgstr "API Sürümü"
 
-#: app/templates/app/processing_node.html:23 nodeodm/models.py:34
+#: app/templates/app/processing_node.html:23 nodeodm/models.py:33
 msgid "Engine"
 msgstr "Motor"
 
-#: app/templates/app/processing_node.html:27 nodeodm/models.py:32
+#: app/templates/app/processing_node.html:27 nodeodm/models.py:31
 msgid "Engine Version"
 msgstr ""
 
-#: app/templates/app/processing_node.html:31 nodeodm/models.py:28
+#: app/templates/app/processing_node.html:31 nodeodm/models.py:27
 msgid "Queue Count"
 msgstr "Kuyruktaki Görev Sayısı"
 
@@ -1896,7 +1988,7 @@ msgstr "Kuyruktaki Görev Sayısı"
 msgid "Max Images Limit"
 msgstr "Maksimum Resim Sınırı"
 
-#: app/templates/app/processing_node.html:43 nodeodm/models.py:27
+#: app/templates/app/processing_node.html:43 nodeodm/models.py:26
 msgid "Last Refreshed"
 msgstr ""
 
@@ -2006,6 +2098,10 @@ msgstr ""
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 
+#: app/translations/plugin_manifest_autogenerated.py:15
+msgid "Adds a mock button to the boundary option in the edit preset dialog"
+msgstr ""
+
 #: app/views/app.py:58
 msgid "First Project"
 msgstr "İlk Proje"
@@ -2025,8 +2121,8 @@ msgid ""
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
 "%(node)s kullanımdan kaldırılmıştır ve gelecekteki bir sürümde çalışmayı "
-"durdurabilir. Yükseltme yapmak için %(link_start)sm geçiş kılavuzuna %"
-"(link_end)s bakın."
+"durdurabilir. Yükseltme yapmak için %(link_start)sm geçiş kılavuzuna "
+"%(link_end)s bakın."
 
 #: app/views/app.py:145
 #, python-format
@@ -2110,11 +2206,11 @@ msgstr "Yükseklik değerlerini hesaplamak için sayısal yüzey modeli gereklid
 msgid "An orthophoto is required to compute temperature values."
 msgstr "Sıcaklık değerlerini hesaplamak için bir ortofoto gereklidir."
 
-#: coreplugins/contours/api.py:122
+#: coreplugins/contours/api.py:121
 msgid "No DSM layer is available."
 msgstr ""
 
-#: coreplugins/contours/api.py:124
+#: coreplugins/contours/api.py:123
 msgid "No DTM layer is available."
 msgstr "Hiçbir DTM katmanı mevcut değil."
 
@@ -2187,8 +2283,8 @@ msgid ""
 msgstr ""
 "Bu değerler, makinenizin kendi değerleri olmayıp uygulamanın çalıştığı "
 "sanallaştırma ortamına göre değişiklik gösterebilir. Bu değerleri bir Docker "
-"kurulumunda değiştirmek için %(win_hyperv_link)s, %(win_wsl2_link)s ve %"
-"(mac_link)s talimatlarına bakın."
+"kurulumunda değiştirmek için %(win_hyperv_link)s, %(win_wsl2_link)s ve "
+"%(mac_link)s talimatlarına bakın."
 
 #: coreplugins/diagnostic/templates/diagnostic.html:47
 #: coreplugins/diagnostic/templates/diagnostic.html:82
@@ -2203,7 +2299,7 @@ msgstr ""
 msgid "Lightning"
 msgstr "Lightning(Yıldırım)"
 
-#: coreplugins/objdetect/api.py:58
+#: coreplugins/objdetect/api.py:57
 msgid "No orthophoto is available."
 msgstr ""
 
@@ -2215,7 +2311,7 @@ msgstr "YKN Arayüzü"
 msgid "Node Management"
 msgstr ""
 
-#: nodeodm/models.py:24
+#: nodeodm/models.py:23
 msgid ""
 "Hostname or IP address where the node is located (can be an internal "
 "hostname as well). If you are using Docker, this is never 127.0.0.1 or "
@@ -2223,65 +2319,75 @@ msgid ""
 "Linux or by checking your network settings."
 msgstr ""
 
-#: nodeodm/models.py:25
+#: nodeodm/models.py:24
 msgid "Port that connects to the node's API"
 msgstr "Düğümün API'sine bağlanan port"
 
-#: nodeodm/models.py:26
+#: nodeodm/models.py:25
 msgid "API version used by the node"
 msgstr "Düğümün kullandığı API sürümü"
 
-#: nodeodm/models.py:27
+#: nodeodm/models.py:26
 msgid "When was the information about this node last retrieved?"
 msgstr "Bu düğüm hakkındaki bilgiler en son ne zaman alındı?"
 
-#: nodeodm/models.py:28
+#: nodeodm/models.py:27
 msgid ""
 "Number of tasks currently being processed by this node (as reported by the "
 "node itself)"
 msgstr ""
 
-#: nodeodm/models.py:29
+#: nodeodm/models.py:28
 msgid "Available Options"
 msgstr ""
 
-#: nodeodm/models.py:29
+#: nodeodm/models.py:28
 msgid "Description of the options that can be used for processing"
 msgstr "İşleme için kullanılabilecek seçeneklerin açıklaması"
 
-#: nodeodm/models.py:30
+#: nodeodm/models.py:29
 msgid "Token"
 msgstr ""
 
-#: nodeodm/models.py:30
+#: nodeodm/models.py:29
 msgid ""
 "Token to use for authentication. If the node doesn't have authentication, "
 "you can leave this field blank."
 msgstr ""
 
-#: nodeodm/models.py:31
+#: nodeodm/models.py:30
 msgid "Max Images"
 msgstr ""
 
-#: nodeodm/models.py:31
+#: nodeodm/models.py:30
 msgid "Maximum number of images accepted by this node."
 msgstr "Bu düğüm tarafından kabul edilen maksimum görüntü sayısı."
 
-#: nodeodm/models.py:32
+#: nodeodm/models.py:31
 msgid "Engine version used by the node."
 msgstr "Düğüm tarafından kullanılan motor sürümü."
 
-#: nodeodm/models.py:33
+#: nodeodm/models.py:32
 msgid ""
 "Optional label for this node. When set, this label will be shown instead of "
 "the hostname:port name."
 msgstr ""
-"Bu düğüm için isteğe bağlı bir etiket. Ayarlandığında, ana makine "
-"adı:bağlantı noktası (hostname:port) adı yerine bu etiket gösterilir."
+"Bu düğüm için isteğe bağlı bir etiket. Ayarlandığında, ana makine adı:"
+"bağlantı noktası (hostname:port) adı yerine bu etiket gösterilir."
 
-#: nodeodm/models.py:34
+#: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Düğüm tarafından kullanılan motor."
+
+#~ msgid "Enter a username and password."
+#~ msgstr "Kullanıcı adı ve parola girin."
+
+#~ msgid "Please correct the errors below."
+#~ msgstr "Lütfen aşağıdaki hataları düzeltin."
+
+#, python-format
+#~ msgid "Delete selected %(model)s"
+#~ msgstr "Seçili %(model)s öğesini sil"
 
 #~ msgid "Next"
 #~ msgstr "Sonraki"

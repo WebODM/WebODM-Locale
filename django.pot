@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-13 22:29+0000\n"
+"POT-Creation-Date: 2026-11-02 21:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,125 +18,154 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: app/admin.py:112
+#: app/admin.py:104
 msgid "Cannot restore default logo"
 msgstr ""
 
-#: app/admin.py:126
+#: app/admin.py:118
 msgid "Restore Default"
 msgstr ""
 
-#: app/admin.py:148
+#: app/admin.py:140
 msgid "Enter custom CSS"
 msgstr ""
 
-#: app/admin.py:149 app/models/theme.py:40
+#: app/admin.py:141 app/models/theme.py:40
 msgid "CSS"
 msgstr ""
 
-#: app/admin.py:152
+#: app/admin.py:144
 msgid "HTML that will be displayed above site header"
 msgstr ""
 
-#: app/admin.py:153 app/models/theme.py:41
+#: app/admin.py:145 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr ""
 
-#: app/admin.py:156
+#: app/admin.py:148
 msgid "HTML that will be displayed after site header"
 msgstr ""
 
-#: app/admin.py:157 app/models/theme.py:42
+#: app/admin.py:149 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr ""
 
-#: app/admin.py:160
+#: app/admin.py:152
 msgid "HTML that will be displayed after the body tag"
 msgstr ""
 
-#: app/admin.py:161 app/models/theme.py:43
+#: app/admin.py:153 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr ""
 
-#: app/admin.py:165
+#: app/admin.py:157
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
 "such as {ORGANIZATION} and {YEAR}."
 msgstr ""
 
-#: app/admin.py:166 app/models/theme.py:44
+#: app/admin.py:158 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr ""
 
-#: app/admin.py:226 app/models/project.py:29
+#: app/admin.py:218 app/models/project.py:29
 msgid "Description"
 msgstr ""
 
-#: app/admin.py:232
+#: app/admin.py:224
 msgid "Version"
 msgstr ""
 
-#: app/admin.py:238
+#: app/admin.py:230
 msgid "Author"
 msgstr ""
 
-#: app/admin.py:280
+#: app/admin.py:272
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 
-#: app/admin.py:283
+#: app/admin.py:275
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr ""
 
-#: app/admin.py:292
+#: app/admin.py:284
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 
-#: app/admin.py:295
+#: app/admin.py:287
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr ""
 
-#: app/admin.py:304
+#: app/admin.py:296
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr ""
 
-#: app/admin.py:380
+#: app/admin.py:372
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
 
-#: app/admin.py:382
+#: app/admin.py:374
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr ""
 
-#: app/admin.py:386
+#: app/admin.py:378
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr ""
 
-#: app/admin.py:395
+#: app/admin.py:387
 msgid "You need to upload a zip file"
 msgstr ""
 
-#: app/admin.py:414
+#: app/admin.py:406
 msgid "Disable"
 msgstr ""
 
-#: app/admin.py:417
+#: app/admin.py:409
 msgid "Enable"
 msgstr ""
 
-#: app/admin.py:422
+#: app/admin.py:414
 msgid "Actions"
+msgstr ""
+
+#: app/api/authentication.py:43
+msgid "Invalid payload."
+msgstr ""
+
+#: app/api/authentication.py:47
+msgid "Invalid signature."
+msgstr ""
+
+#: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
+msgid "User account is disabled."
+msgstr ""
+
+#: app/api/authentication.py:61
+msgid "Invalid Authorization header. No credentials provided."
+msgstr ""
+
+#: app/api/authentication.py:63
+msgid ""
+"Invalid Authorization header. Credentials string should not contain spaces."
+msgstr ""
+
+#: app/api/authentication.py:73 app/api/jwt.py:67
+msgid "Signature has expired."
+msgstr ""
+
+#: app/api/authentication.py:75 app/api/jwt.py:69
+msgid "Error decoding signature."
 msgstr ""
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
@@ -268,23 +297,27 @@ msgstr ""
 msgid "Temperature in Centikelvin degrees."
 msgstr ""
 
-#: app/api/jwt.py:35 app/api/jwt.py:44
-msgid "User account is disabled."
-msgstr ""
-
-#: app/api/jwt.py:40
+#: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
 msgstr ""
 
-#: app/api/jwt.py:52 app/api/jwt.py:60
+#: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
 msgstr ""
 
-#: app/api/jwt.py:62
+#: app/api/jwt.py:57
 msgid "Must include \"username\" and \"password\"."
 msgstr ""
 
-#: app/api/media.py:72 app/api/tasks.py:315
+#: app/api/jwt.py:74
+msgid "orig_iat field is required."
+msgstr ""
+
+#: app/api/jwt.py:76
+msgid "Refresh has expired."
+msgstr ""
+
+#: app/api/media.py:72 app/api/tasks.py:323
 msgid "No files uploaded"
 msgstr ""
 
@@ -376,157 +409,157 @@ msgstr ""
 msgid "Invalid filename"
 msgstr ""
 
-#: app/api/splats.py:86 app/api/tasks.py:922
+#: app/api/splats.py:86 app/api/tasks.py:928
 msgid "Invalid file type"
 msgstr ""
 
-#: app/api/splats.py:169 app/api/tasks.py:583 app/api/tasks.py:587
-#: app/api/tasks.py:729 app/api/tasks.py:732 app/api/tasks.py:765
-#: app/api/tasks.py:1091
+#: app/api/splats.py:169 app/api/tasks.py:591 app/api/tasks.py:595
+#: app/api/tasks.py:735 app/api/tasks.py:738 app/api/tasks.py:771
+#: app/api/tasks.py:1097
 msgid "Asset does not exist"
 msgstr ""
 
-#: app/api/tasks.py:116
+#: app/api/tasks.py:115
 msgid "Cannot create task, processing node is not valid"
 msgstr ""
 
-#: app/api/tasks.py:293
+#: app/api/tasks.py:301
 msgid "You need to upload at least 1 file before commit"
 msgstr ""
 
-#: app/api/tasks.py:371
+#: app/api/tasks.py:379
 msgid "Cannot duplicate task"
 msgstr ""
 
-#: app/api/tasks.py:388
+#: app/api/tasks.py:396
 msgid "Cannot create task, alignment task is not valid"
 msgstr ""
 
-#: app/api/tasks.py:405
+#: app/api/tasks.py:413
 msgid "Cannot create task, you need at least 2 images"
 msgstr ""
 
-#: app/api/tasks.py:783 app/api/tasks.py:1003
+#: app/api/tasks.py:789 app/api/tasks.py:1009
 msgid "Imported Task"
 msgstr ""
 
-#: app/api/tasks.py:787 app/api/tasks.py:914
+#: app/api/tasks.py:793 app/api/tasks.py:920
 msgid "Cannot create task, you need to upload 1 file"
 msgstr ""
 
-#: app/api/tasks.py:791
+#: app/api/tasks.py:797
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr ""
 
-#: app/api/tasks.py:793
+#: app/api/tasks.py:799
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr ""
 
-#: app/api/tasks.py:898 app/api/tasks.py:901
+#: app/api/tasks.py:904 app/api/tasks.py:907
 msgid "Invalid uuid"
 msgstr ""
 
-#: app/api/tasks.py:933
+#: app/api/tasks.py:939
 msgid "Invalid file type (extension mismatch)"
 msgstr ""
 
-#: app/api/tasks.py:957
+#: app/api/tasks.py:963
 msgid "Some parameters are not integers"
 msgstr ""
 
-#: app/api/tasks.py:1016 app/api/tasks.py:1021
+#: app/api/tasks.py:1022 app/api/tasks.py:1027
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:1023
+#: app/api/tasks.py:1029
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:1029
+#: app/api/tasks.py:1035
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:1035
+#: app/api/tasks.py:1041
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:1039
+#: app/api/tasks.py:1045
 msgid "No assets uploaded"
 msgstr ""
 
-#: app/api/tiler.py:364
+#: app/api/tiler.py:360
 msgid "Invalid boundaries parameter"
 msgstr ""
 
-#: app/api/tiler.py:383
+#: app/api/tiler.py:379
 msgid "Invalid tile size parameter"
 msgstr ""
 
-#: app/api/tiler.py:414 app/api/tiler.py:494
+#: app/api/tiler.py:410 app/api/tiler.py:490
 msgid "Outside of bounds"
 msgstr ""
 
-#: app/api/tiler.py:425
+#: app/api/tiler.py:421
 msgid "Invalid boundaries"
 msgstr ""
 
-#: app/api/tiler.py:500 app/api/tiler.py:628
+#: app/api/tiler.py:496 app/api/tiler.py:624
 msgid "Not a valid color_map value"
 msgstr ""
 
-#: app/api/tiler.py:508
+#: app/api/tiler.py:504
 msgid "Invalid rescale value"
 msgstr ""
 
-#: app/api/tiler.py:530
+#: app/api/tiler.py:526
 msgid "Invalid hillshade value"
 msgstr ""
 
-#: app/api/tiler.py:533
+#: app/api/tiler.py:529
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr ""
 
-#: app/api/tiler.py:557
+#: app/api/tiler.py:553
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
 
-#: app/api/tiler.py:613 app/api/tiler.py:615
+#: app/api/tiler.py:609 app/api/tiler.py:611
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:634
+#: app/api/tiler.py:630
 #, python-format
 msgid "Invalid resample value: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:640
+#: app/api/tiler.py:636
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:646 app/api/tiler.py:648
+#: app/api/tiler.py:642 app/api/tiler.py:644
 #, python-format
 msgid "Invalid PROJ string: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:651
+#: app/api/tiler.py:647
 msgid "Both formula and bands parameters are required"
 msgstr ""
 
-#: app/api/tiler.py:674
+#: app/api/tiler.py:670
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:682
+#: app/api/tiler.py:678
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:693
+#: app/api/tiler.py:689
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 
@@ -539,7 +572,7 @@ msgid "URL"
 msgstr ""
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
-#: nodeodm/models.py:33
+#: nodeodm/models.py:32
 msgid "Label"
 msgstr ""
 
@@ -587,8 +620,8 @@ msgstr ""
 msgid "Plugin name"
 msgstr ""
 
-#: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:248 app/models/theme.py:18
+#: app/models/plugin.py:5 app/models/preset.py:9 app/models/project.py:28
+#: app/models/task.py:246 app/models/theme.py:18
 msgid "Name"
 msgstr ""
 
@@ -608,89 +641,89 @@ msgstr ""
 msgid "Plugins"
 msgstr ""
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Setting key"
 msgstr ""
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Key"
 msgstr ""
 
-#: app/models/plugin_datum.py:8
+#: app/models/plugin_datum.py:7
 msgid "The user this setting belongs to. If NULL, the setting is global."
 msgstr ""
 
-#: app/models/plugin_datum.py:8 app/templates/app/admin/object_history.html:23
+#: app/models/plugin_datum.py:7 app/templates/app/admin/object_history.html:23
 msgid "User"
 msgstr ""
 
-#: app/models/plugin_datum.py:9
+#: app/models/plugin_datum.py:8
 msgid "Integer value"
 msgstr ""
 
-#: app/models/plugin_datum.py:10
+#: app/models/plugin_datum.py:9
 msgid "Float value"
 msgstr ""
 
-#: app/models/plugin_datum.py:11
+#: app/models/plugin_datum.py:10
 msgid "Bool value"
 msgstr ""
 
-#: app/models/plugin_datum.py:12
+#: app/models/plugin_datum.py:11
 msgid "String value"
 msgstr ""
 
-#: app/models/plugin_datum.py:13
+#: app/models/plugin_datum.py:12
 msgid "JSON value"
 msgstr ""
 
-#: app/models/plugin_datum.py:19 app/models/plugin_datum.py:20
+#: app/models/plugin_datum.py:18 app/models/plugin_datum.py:19
 msgid "Plugin Datum"
 msgstr ""
 
-#: app/models/preset.py:9
+#: app/models/preset.py:8
 msgid "The person who owns this preset"
 msgstr ""
 
-#: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
+#: app/models/preset.py:8 app/models/project.py:27 app/models/redirect.py:9
 msgid "Owner"
 msgstr ""
 
-#: app/models/preset.py:10
+#: app/models/preset.py:9
 msgid "A label used to describe the preset"
 msgstr ""
 
-#: app/models/preset.py:11
+#: app/models/preset.py:10
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 
-#: app/models/preset.py:11 app/models/task.py:254
+#: app/models/preset.py:10 app/models/task.py:252
 msgid "Options"
 msgstr ""
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Creation date"
 msgstr ""
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Created at"
 msgstr ""
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid ""
 "Whether this preset is available to every user in the system or just to its "
 "owner."
 msgstr ""
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid "System"
 msgstr ""
 
-#: app/models/preset.py:20
+#: app/models/preset.py:19
 msgid "Preset"
 msgstr ""
 
-#: app/models/preset.py:21
+#: app/models/preset.py:20
 msgid "Presets"
 msgstr ""
 
@@ -745,7 +778,7 @@ msgstr ""
 msgid "Project tags"
 msgstr ""
 
-#: app/models/project.py:32 app/models/task.py:288
+#: app/models/project.py:32 app/models/task.py:286
 msgid "Tags"
 msgstr ""
 
@@ -753,7 +786,7 @@ msgstr ""
 msgid "A flag indicating whether this project is available to the public"
 msgstr ""
 
-#: app/models/project.py:33 app/models/task.py:265
+#: app/models/project.py:33 app/models/task.py:263
 msgid "Public"
 msgstr ""
 
@@ -761,7 +794,7 @@ msgstr ""
 msgid "A flag indicating whether this public project can be edited"
 msgstr ""
 
-#: app/models/project.py:34 app/models/task.py:266
+#: app/models/project.py:34 app/models/task.py:264
 msgid "Public Edit"
 msgstr ""
 
@@ -773,12 +806,12 @@ msgstr ""
 msgid "Public Id"
 msgstr ""
 
-#: app/models/project.py:108 app/models/task.py:486
+#: app/models/project.py:108 app/models/task.py:484
 #, python-format
 msgid "Copy of %(task)s"
 msgstr ""
 
-#: app/models/project.py:141 app/models/task.py:247
+#: app/models/project.py:141 app/models/task.py:245
 msgid "Project"
 msgstr ""
 
@@ -855,290 +888,290 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: app/models/task.py:244
+#: app/models/task.py:242
 msgid "Id"
 msgstr ""
 
-#: app/models/task.py:246
+#: app/models/task.py:244
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr ""
 
-#: app/models/task.py:246
+#: app/models/task.py:244
 msgid "UUID"
 msgstr ""
 
-#: app/models/task.py:247
+#: app/models/task.py:245
 msgid "Project that this task belongs to"
 msgstr ""
 
-#: app/models/task.py:248
+#: app/models/task.py:246
 msgid "A label for the task"
 msgstr ""
 
-#: app/models/task.py:249
+#: app/models/task.py:247
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
 msgstr ""
 
-#: app/models/task.py:249
+#: app/models/task.py:247
 msgid "Processing Time"
 msgstr ""
 
-#: app/models/task.py:250
+#: app/models/task.py:248
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
 msgstr ""
 
-#: app/models/task.py:250 app/views/app.py:149 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:149 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr ""
 
-#: app/models/task.py:251
+#: app/models/task.py:249
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
 msgstr ""
 
-#: app/models/task.py:251
+#: app/models/task.py:249
 msgid "Auto Processing Node"
 msgstr ""
 
-#: app/models/task.py:252
+#: app/models/task.py:250
 msgid "Current status of the task"
 msgstr ""
 
-#: app/models/task.py:252
+#: app/models/task.py:250
 msgid "Status"
 msgstr ""
 
-#: app/models/task.py:253
+#: app/models/task.py:251
 msgid "The last processing error received"
 msgstr ""
 
-#: app/models/task.py:253
+#: app/models/task.py:251
 msgid "Last Error"
 msgstr ""
 
-#: app/models/task.py:254
+#: app/models/task.py:252
 msgid "Options that are being used to process this task"
 msgstr ""
 
-#: app/models/task.py:255
+#: app/models/task.py:253
 msgid "List of available assets to download"
 msgstr ""
 
-#: app/models/task.py:255
+#: app/models/task.py:253
 msgid "Available Assets"
 msgstr ""
 
-#: app/models/task.py:257
+#: app/models/task.py:255
 msgid "Extent of the orthophoto"
 msgstr ""
 
-#: app/models/task.py:257
+#: app/models/task.py:255
 msgid "Orthophoto Extent"
 msgstr ""
 
-#: app/models/task.py:258
+#: app/models/task.py:256
 msgid "Extent of the DSM"
 msgstr ""
 
-#: app/models/task.py:258
+#: app/models/task.py:256
 msgid "DSM Extent"
 msgstr ""
 
-#: app/models/task.py:259
+#: app/models/task.py:257
 msgid "Extent of the DTM"
 msgstr ""
 
-#: app/models/task.py:259
+#: app/models/task.py:257
 msgid "DTM Extent"
 msgstr ""
 
-#: app/models/task.py:263
+#: app/models/task.py:261
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
 msgstr ""
 
-#: app/models/task.py:263
+#: app/models/task.py:261
 msgid "Pending Action"
 msgstr ""
 
-#: app/models/task.py:265
+#: app/models/task.py:263
 msgid "A flag indicating whether this task is available to the public"
 msgstr ""
 
-#: app/models/task.py:266
+#: app/models/task.py:264
 msgid "A flag indicating whether this public task can be edited"
 msgstr ""
 
-#: app/models/task.py:268
+#: app/models/task.py:266
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
 "processing."
 msgstr ""
 
-#: app/models/task.py:268
+#: app/models/task.py:266
 msgid "Resize To"
 msgstr ""
 
-#: app/models/task.py:271
+#: app/models/task.py:269
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
 msgstr ""
 
-#: app/models/task.py:272
+#: app/models/task.py:270
 msgid "Upload Progress"
 msgstr ""
 
-#: app/models/task.py:275
+#: app/models/task.py:273
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr ""
 
-#: app/models/task.py:276
+#: app/models/task.py:274
 msgid "Resize Progress"
 msgstr ""
 
-#: app/models/task.py:279
+#: app/models/task.py:277
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr ""
 
-#: app/models/task.py:280
+#: app/models/task.py:278
 msgid "Running Progress"
 msgstr ""
 
-#: app/models/task.py:282
+#: app/models/task.py:280
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr ""
 
-#: app/models/task.py:282
+#: app/models/task.py:280
 msgid "Import URL"
 msgstr ""
 
-#: app/models/task.py:283
+#: app/models/task.py:281
 msgid "Number of images associated with this task"
 msgstr ""
 
-#: app/models/task.py:283
+#: app/models/task.py:281
 msgid "Images Count"
 msgstr ""
 
-#: app/models/task.py:284
+#: app/models/task.py:282
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
 msgstr ""
 
-#: app/models/task.py:284
+#: app/models/task.py:282
 msgid "Partial"
 msgstr ""
 
-#: app/models/task.py:285
+#: app/models/task.py:283
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
 msgstr ""
 
-#: app/models/task.py:285
+#: app/models/task.py:283
 msgid "Potree Scene"
 msgstr ""
 
-#: app/models/task.py:286
+#: app/models/task.py:284
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr ""
 
-#: app/models/task.py:287
+#: app/models/task.py:285
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
 msgstr ""
 
-#: app/models/task.py:288
+#: app/models/task.py:286
 msgid "Task tags"
 msgstr ""
 
-#: app/models/task.py:289
+#: app/models/task.py:287
 msgid "List of orthophoto bands"
 msgstr ""
 
-#: app/models/task.py:289
+#: app/models/task.py:287
 msgid "Orthophoto Bands"
 msgstr ""
 
-#: app/models/task.py:290
+#: app/models/task.py:288
 msgid "Size of the task on disk in megabytes"
 msgstr ""
 
-#: app/models/task.py:290
+#: app/models/task.py:288
 msgid "Size"
 msgstr ""
 
-#: app/models/task.py:291
+#: app/models/task.py:289
 msgid "A flag indicating whether this task was compacted"
 msgstr ""
 
-#: app/models/task.py:291
+#: app/models/task.py:289
 msgid "Compact"
 msgstr ""
 
-#: app/models/task.py:292
+#: app/models/task.py:290
 msgid "Polygon defining the crop area of this task"
 msgstr ""
 
-#: app/models/task.py:292
+#: app/models/task.py:290
 msgid "Crop Polygon"
 msgstr ""
 
-#: app/models/task.py:293
+#: app/models/task.py:291
 msgid "List of media files associated with this task"
 msgstr ""
 
-#: app/models/task.py:293
+#: app/models/task.py:291
 msgid "Media"
 msgstr ""
 
-#: app/models/task.py:297
+#: app/models/task.py:295
 msgid "Task"
 msgstr ""
 
-#: app/models/task.py:298
+#: app/models/task.py:296
 msgid "Tasks"
 msgstr ""
 
-#: app/models/task.py:309
+#: app/models/task.py:307
 msgid "unnamed"
 msgstr ""
 
-#: app/models/task.py:618
+#: app/models/task.py:616
 msgid "Importing assets..."
 msgstr ""
 
-#: app/models/task.py:673 app/models/task.py:952
+#: app/models/task.py:671 app/models/task.py:950
 msgid "Invalid zip file"
 msgstr ""
 
-#: app/models/task.py:675
+#: app/models/task.py:673
 msgid "Unsupported compression method"
 msgstr ""
 
-#: app/models/task.py:770
+#: app/models/task.py:768
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr ""
 
-#: app/models/task.py:850
+#: app/models/task.py:848
 msgid "Cannot restart a task that has no processing node"
 msgstr ""
 
-#: app/models/task.py:1055
+#: app/models/task.py:1053
 msgid "Done!"
 msgstr ""
 
@@ -1266,7 +1299,11 @@ msgstr ""
 msgid "Something happened. The server logs contain more information."
 msgstr ""
 
-#: app/templates/app/about.html:13
+#: app/templates/app/about.html:25
+msgid "Minimize"
+msgstr ""
+
+#: app/templates/app/about.html:29
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1281,16 +1318,16 @@ msgid "Page not found"
 msgstr ""
 
 #: app/templates/app/admin/404.html:10
-msgid "We're sorry, but the requested page could not be found."
+msgid "We’re sorry, but the requested page could not be found."
 msgstr ""
 
-#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:9
-#: app/templates/app/admin/auth/user/change_password.html:13
+#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
+#: app/templates/app/admin/auth/user/change_password.html:15
 #: app/templates/app/admin/base.html:19
-#: app/templates/app/admin/change_form.html:18
-#: app/templates/app/admin/change_list.html:31
-#: app/templates/app/admin/delete_confirmation.html:13
-#: app/templates/app/admin/delete_selected_confirmation.html:13
+#: app/templates/app/admin/change_form.html:19
+#: app/templates/app/admin/change_list.html:33
+#: app/templates/app/admin/delete_confirmation.html:14
+#: app/templates/app/admin/delete_selected_confirmation.html:14
 #: app/templates/app/admin/invalid_setup.html:6
 #: app/templates/app/admin/object_history.html:6
 msgid "Home"
@@ -1305,68 +1342,86 @@ msgid "Server error (500)"
 msgstr ""
 
 #: app/templates/app/admin/500.html:14
-msgid "Server Error (500)"
+msgid "Server Error <em>(500)</em>"
 msgstr ""
 
 #: app/templates/app/admin/500.html:15
 msgid ""
-"There's been an error. It's been reported to the site administrators via "
+"There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
 msgstr ""
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Go"
 msgstr ""
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 msgid "Click here to select the objects across all pages"
 msgstr ""
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
 msgstr ""
 
-#: app/templates/app/admin/actions.html:12
+#: app/templates/app/admin/actions.html:18
 msgid "Clear selection"
 msgstr ""
 
+#: app/templates/app/admin/app_index.html:8
+msgid "Breadcrumbs"
+msgstr ""
+
 #: app/templates/app/admin/auth/user/add_form.html:6
-msgid ""
-"First, enter a username and password. Then, you'll be able to edit more user "
-"options."
+msgid "After you’ve created a user, you’ll be able to edit more user options."
 msgstr ""
 
-#: app/templates/app/admin/auth/user/add_form.html:8
-msgid "Enter a username and password."
+#: app/templates/app/admin/auth/user/change_password.html:5
+#: app/templates/app/admin/change_form.html:4
+#: app/templates/app/admin/change_list.html:4
+#: app/templates/app/admin/login.html:4
+msgid "Error:"
 msgstr ""
 
-#: app/templates/app/admin/auth/user/change_password.html:17
-#: app/templates/app/admin/auth/user/change_password.html:54
+#: app/templates/app/admin/auth/user/change_password.html:19
+#: app/templates/app/admin/auth/user/change_password.html:71
 msgid "Change password"
 msgstr ""
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
+#: app/templates/app/admin/auth/user/change_password.html:19
+msgid "Set password"
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:30
+#: app/templates/app/admin/change_form.html:44
+#: app/templates/app/admin/change_list.html:53
+#: app/templates/app/admin/login.html:24
 msgid "Please correct the error below."
-msgstr ""
+msgid_plural "Please correct the errors below."
+msgstr[0] ""
+msgstr[1] ""
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
-msgid "Please correct the errors below."
-msgstr ""
-
-#: app/templates/app/admin/auth/user/change_password.html:31
+#: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:36
+msgid ""
+"This action will <strong>enable</strong> password-based authentication for "
+"this user."
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:72
+msgid "Disable password-based authentication"
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:74
+msgid "Enable password-based authentication"
 msgstr ""
 
 #: app/templates/app/admin/base_site.html:3
@@ -1377,25 +1432,25 @@ msgstr ""
 msgid "Django administration"
 msgstr ""
 
-#: app/templates/app/admin/change_form.html:21
-#: app/templates/app/admin/change_list.html:49
+#: app/templates/app/admin/change_form.html:22
 #, python-format
 msgid "Add %(name)s"
 msgstr ""
 
-#: app/templates/app/admin/change_form.html:33
-#: app/templates/app/admin/object_history.html:10
-msgid "History"
-msgstr ""
-
-#: app/templates/app/admin/change_form.html:35
-#: app/templates/app/admin/edit_inline/stacked.html:14
-#: app/templates/app/admin/edit_inline/tabular.html:36
-msgid "View on site"
-msgstr ""
-
-#: app/templates/app/admin/change_list.html:69
+#: app/templates/app/admin/change_list.html:78
 msgid "Filter"
+msgstr ""
+
+#: app/templates/app/admin/change_list.html:81
+msgid "Hide counts"
+msgstr ""
+
+#: app/templates/app/admin/change_list.html:82
+msgid "Show counts"
+msgstr ""
+
+#: app/templates/app/admin/change_list.html:85
+msgid "Clear all filters"
 msgstr ""
 
 #: app/templates/app/admin/change_list_plugin.html:29
@@ -1406,27 +1461,26 @@ msgstr ""
 msgid "Manage Plugins"
 msgstr ""
 
-#: app/templates/app/admin/change_list_results.html:17
+#: app/templates/app/admin/change_list_results.html:16
 msgid "Remove from sorting"
 msgstr ""
 
-#: app/templates/app/admin/change_list_results.html:18
+#: app/templates/app/admin/change_list_results.html:17
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
 msgstr ""
 
-#: app/templates/app/admin/change_list_results.html:19
+#: app/templates/app/admin/change_list_results.html:18
 msgid "Toggle sorting"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:17
-#: app/templates/app/admin/related_widget_wrapper.html:23
-#: app/templates/app/admin/submit_line.html:6
+#: app/templates/app/admin/delete_confirmation.html:18
+#: app/templates/app/admin/submit_line.html:14
 #: app/templates/app/processing_node.html:54
 msgid "Delete"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:23
+#: app/templates/app/admin/delete_confirmation.html:25
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
@@ -1441,33 +1495,33 @@ msgid ""
 "following protected related objects:"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_confirmation.html:35
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:39
-#: app/templates/app/admin/delete_selected_confirmation.html:38
+#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_selected_confirmation.html:31
 msgid "Objects"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:46
-#: app/templates/app/admin/delete_selected_confirmation.html:49
-msgid "Yes, I'm sure"
+#: app/templates/app/admin/delete_confirmation.html:44
+#: app/templates/app/admin/delete_selected_confirmation.html:42
+msgid "Yes, I’m sure"
 msgstr ""
 
-#: app/templates/app/admin/delete_confirmation.html:47
-#: app/templates/app/admin/delete_selected_confirmation.html:50
+#: app/templates/app/admin/delete_confirmation.html:45
+#: app/templates/app/admin/delete_selected_confirmation.html:43
 msgid "No, take me back"
 msgstr ""
 
-#: app/templates/app/admin/delete_selected_confirmation.html:16
+#: app/templates/app/admin/delete_selected_confirmation.html:17
 msgid "Delete multiple objects"
 msgstr ""
 
-#: app/templates/app/admin/delete_selected_confirmation.html:22
+#: app/templates/app/admin/delete_selected_confirmation.html:23
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
@@ -1475,32 +1529,40 @@ msgid ""
 "types of objects:"
 msgstr ""
 
-#: app/templates/app/admin/delete_selected_confirmation.html:29
+#: app/templates/app/admin/delete_selected_confirmation.html:26
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
 msgstr ""
 
-#: app/templates/app/admin/delete_selected_confirmation.html:36
+#: app/templates/app/admin/delete_selected_confirmation.html:29
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
 msgstr ""
 
-#: app/templates/app/admin/edit_inline/stacked.html:12
-#: app/templates/app/admin/edit_inline/tabular.html:34
-#: app/templates/app/admin/index.html:37
-#: app/templates/app/admin/related_widget_wrapper.html:9
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "Change"
 msgstr ""
 
-#: app/templates/app/admin/edit_inline/tabular.html:20
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
+msgid "View"
+msgstr ""
+
+#: app/templates/app/admin/edit_inline/stacked.html:22
+#: app/templates/app/admin/edit_inline/tabular.html:42
+msgid "View on site"
+msgstr ""
+
+#: app/templates/app/admin/edit_inline/tabular.html:26
 msgid "Delete?"
 msgstr ""
 
-#: app/templates/app/admin/filter.html:2
+#: app/templates/app/admin/filter.html:4
 #, python-format
 msgid " By %(filter_title)s "
 msgstr ""
@@ -1509,56 +1571,58 @@ msgstr ""
 msgid "Summary"
 msgstr ""
 
-#: app/templates/app/admin/index.html:20
-#, python-format
-msgid "Models in the %(name)s application"
-msgstr ""
-
-#: app/templates/app/admin/index.html:31
-#: app/templates/app/admin/related_widget_wrapper.html:16
-msgid "Add"
-msgstr ""
-
-#: app/templates/app/admin/index.html:47
-msgid "You don't have permission to edit anything."
-msgstr ""
-
-#: app/templates/app/admin/index.html:55
+#: app/templates/app/admin/index.html:23
 msgid "Recent actions"
 msgstr ""
 
-#: app/templates/app/admin/index.html:56
+#: app/templates/app/admin/index.html:24
 msgid "My actions"
 msgstr ""
 
-#: app/templates/app/admin/index.html:60
+#: app/templates/app/admin/index.html:28
 msgid "None available"
 msgstr ""
 
-#: app/templates/app/admin/index.html:74
+#: app/templates/app/admin/index.html:33
+msgid "Added:"
+msgstr ""
+
+#: app/templates/app/admin/index.html:33
+msgid "Changed:"
+msgstr ""
+
+#: app/templates/app/admin/index.html:33
+msgid "Deleted:"
+msgstr ""
+
+#: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr ""
 
 #: app/templates/app/admin/invalid_setup.html:12
 msgid ""
-"Something's wrong with your database installation. Make sure the appropriate "
+"Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
 
-#: app/templates/app/admin/login.html:37
+#: app/templates/app/admin/login.html:40
 #, python-format
 msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
 "page. Would you like to login to a different account?"
 msgstr ""
 
-#: app/templates/app/admin/login.html:57
-msgid "Forgotten your password or username?"
+#: app/templates/app/admin/login.html:60
+msgid "Forgotten your login credentials?"
 msgstr ""
 
-#: app/templates/app/admin/login.html:61
+#: app/templates/app/admin/login.html:64
 msgid "Log in"
+msgstr ""
+
+#: app/templates/app/admin/object_history.html:10
+msgid "History"
 msgstr ""
 
 #: app/templates/app/admin/object_history.html:22
@@ -1569,9 +1633,15 @@ msgstr ""
 msgid "Action"
 msgstr ""
 
-#: app/templates/app/admin/object_history.html:38
+#: app/templates/app/admin/object_history.html:49
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/templates/app/admin/object_history.html:52
 msgid ""
-"This object doesn't have a change history. It probably wasn't added via this "
+"This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
 
@@ -1581,27 +1651,12 @@ msgid "Show all"
 msgstr ""
 
 #: app/templates/app/admin/pagination.html:11
-#: app/templates/app/admin/submit_line.html:3
+#: app/templates/app/admin/submit_line.html:4
 msgid "Save"
 msgstr ""
 
 #: app/templates/app/admin/popup_response.html:3
-msgid "Popup closing..."
-msgstr ""
-
-#: app/templates/app/admin/related_widget_wrapper.html:8
-#, python-format
-msgid "Change selected %(model)s"
-msgstr ""
-
-#: app/templates/app/admin/related_widget_wrapper.html:15
-#, python-format
-msgid "Add another %(model)s"
-msgstr ""
-
-#: app/templates/app/admin/related_widget_wrapper.html:22
-#, python-format
-msgid "Delete selected %(model)s"
+msgid "Popup closing…"
 msgstr ""
 
 #: app/templates/app/admin/search_form.html:7
@@ -1620,16 +1675,25 @@ msgstr[1] ""
 msgid "%(full_result_count)s total"
 msgstr ""
 
-#: app/templates/app/admin/submit_line.html:8
+#: app/templates/app/admin/submit_line.html:5
 msgid "Save as new"
 msgstr ""
 
-#: app/templates/app/admin/submit_line.html:9
+#: app/templates/app/admin/submit_line.html:6
 msgid "Save and add another"
 msgstr ""
 
-#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/admin/submit_line.html:7
 msgid "Save and continue editing"
+msgstr ""
+
+#: app/templates/app/admin/submit_line.html:7
+msgid "Save and view"
+msgstr ""
+
+#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/dev_tools.html:9
+msgid "Close"
 msgstr ""
 
 #: app/templates/app/dashboard.html:15 app/templates/app/dashboard.html:28
@@ -1686,10 +1750,6 @@ msgstr ""
 msgid "Developer Tools"
 msgstr ""
 
-#: app/templates/app/dev_tools.html:9
-msgid "Close"
-msgstr ""
-
 #: app/templates/app/dev_tools.html:14
 msgid "Current Locale:"
 msgstr ""
@@ -1738,7 +1798,7 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:38
+#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr ""
 
@@ -1766,27 +1826,27 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: app/templates/app/processing_node.html:11 nodeodm/models.py:24
+#: app/templates/app/processing_node.html:11 nodeodm/models.py:23
 msgid "Hostname"
 msgstr ""
 
-#: app/templates/app/processing_node.html:15 nodeodm/models.py:25
+#: app/templates/app/processing_node.html:15 nodeodm/models.py:24
 msgid "Port"
 msgstr ""
 
-#: app/templates/app/processing_node.html:19 nodeodm/models.py:26
+#: app/templates/app/processing_node.html:19 nodeodm/models.py:25
 msgid "API Version"
 msgstr ""
 
-#: app/templates/app/processing_node.html:23 nodeodm/models.py:34
+#: app/templates/app/processing_node.html:23 nodeodm/models.py:33
 msgid "Engine"
 msgstr ""
 
-#: app/templates/app/processing_node.html:27 nodeodm/models.py:32
+#: app/templates/app/processing_node.html:27 nodeodm/models.py:31
 msgid "Engine Version"
 msgstr ""
 
-#: app/templates/app/processing_node.html:31 nodeodm/models.py:28
+#: app/templates/app/processing_node.html:31 nodeodm/models.py:27
 msgid "Queue Count"
 msgstr ""
 
@@ -1794,7 +1854,7 @@ msgstr ""
 msgid "Max Images Limit"
 msgstr ""
 
-#: app/templates/app/processing_node.html:43 nodeodm/models.py:27
+#: app/templates/app/processing_node.html:43 nodeodm/models.py:26
 msgid "Last Refreshed"
 msgstr ""
 
@@ -1899,6 +1959,10 @@ msgstr ""
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 
+#: app/translations/plugin_manifest_autogenerated.py:15
+msgid "Adds a mock button to the boundary option in the edit preset dialog"
+msgstr ""
+
 #: app/views/app.py:58
 msgid "First Project"
 msgstr ""
@@ -1992,11 +2056,11 @@ msgstr ""
 msgid "An orthophoto is required to compute temperature values."
 msgstr ""
 
-#: coreplugins/contours/api.py:122
+#: coreplugins/contours/api.py:121
 msgid "No DSM layer is available."
 msgstr ""
 
-#: coreplugins/contours/api.py:124
+#: coreplugins/contours/api.py:123
 msgid "No DTM layer is available."
 msgstr ""
 
@@ -2081,7 +2145,7 @@ msgstr ""
 msgid "Lightning"
 msgstr ""
 
-#: coreplugins/objdetect/api.py:58
+#: coreplugins/objdetect/api.py:57
 msgid "No orthophoto is available."
 msgstr ""
 
@@ -2093,7 +2157,7 @@ msgstr ""
 msgid "Node Management"
 msgstr ""
 
-#: nodeodm/models.py:24
+#: nodeodm/models.py:23
 msgid ""
 "Hostname or IP address where the node is located (can be an internal "
 "hostname as well). If you are using Docker, this is never 127.0.0.1 or "
@@ -2101,60 +2165,60 @@ msgid ""
 "Linux or by checking your network settings."
 msgstr ""
 
-#: nodeodm/models.py:25
+#: nodeodm/models.py:24
 msgid "Port that connects to the node's API"
 msgstr ""
 
-#: nodeodm/models.py:26
+#: nodeodm/models.py:25
 msgid "API version used by the node"
 msgstr ""
 
-#: nodeodm/models.py:27
+#: nodeodm/models.py:26
 msgid "When was the information about this node last retrieved?"
 msgstr ""
 
-#: nodeodm/models.py:28
+#: nodeodm/models.py:27
 msgid ""
 "Number of tasks currently being processed by this node (as reported by the "
 "node itself)"
 msgstr ""
 
-#: nodeodm/models.py:29
+#: nodeodm/models.py:28
 msgid "Available Options"
 msgstr ""
 
-#: nodeodm/models.py:29
+#: nodeodm/models.py:28
 msgid "Description of the options that can be used for processing"
 msgstr ""
 
-#: nodeodm/models.py:30
+#: nodeodm/models.py:29
 msgid "Token"
 msgstr ""
 
-#: nodeodm/models.py:30
+#: nodeodm/models.py:29
 msgid ""
 "Token to use for authentication. If the node doesn't have authentication, "
 "you can leave this field blank."
 msgstr ""
 
-#: nodeodm/models.py:31
+#: nodeodm/models.py:30
 msgid "Max Images"
 msgstr ""
 
-#: nodeodm/models.py:31
+#: nodeodm/models.py:30
 msgid "Maximum number of images accepted by this node."
 msgstr ""
 
-#: nodeodm/models.py:32
+#: nodeodm/models.py:31
 msgid "Engine version used by the node."
 msgstr ""
 
-#: nodeodm/models.py:33
+#: nodeodm/models.py:32
 msgid ""
 "Optional label for this node. When set, this label will be shown instead of "
 "the hostname:port name."
 msgstr ""
 
-#: nodeodm/models.py:34
+#: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr ""

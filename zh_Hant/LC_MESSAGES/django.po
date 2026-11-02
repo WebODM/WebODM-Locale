@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-13 22:29+0000\n"
+"POT-Creation-Date: 2026-11-02 21:01+0000\n"
 "PO-Revision-Date: 2026-04-28 01:09+0000\n"
 "Last-Translator: protonchang <protonmo@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
@@ -19,49 +19,49 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.17.1-dev\n"
 
-#: app/admin.py:112
+#: app/admin.py:104
 msgid "Cannot restore default logo"
 msgstr ""
 
-#: app/admin.py:126
+#: app/admin.py:118
 #, fuzzy
 #| msgid "Button Default"
 msgid "Restore Default"
 msgstr "預設按鈕"
 
-#: app/admin.py:148
+#: app/admin.py:140
 msgid "Enter custom CSS"
 msgstr "輸入自訂CSS"
 
-#: app/admin.py:149 app/models/theme.py:40
+#: app/admin.py:141 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:152
+#: app/admin.py:144
 msgid "HTML that will be displayed above site header"
 msgstr "網站標題以上顯示的HTML"
 
-#: app/admin.py:153 app/models/theme.py:41
+#: app/admin.py:145 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (在標題之前)"
 
-#: app/admin.py:156
+#: app/admin.py:148
 msgid "HTML that will be displayed after site header"
 msgstr "網站標題之後顯示的HTML"
 
-#: app/admin.py:157 app/models/theme.py:42
+#: app/admin.py:149 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (在標題之後)"
 
-#: app/admin.py:160
+#: app/admin.py:152
 msgid "HTML that will be displayed after the body tag"
 msgstr "顯示網頁內文的HTML"
 
-#: app/admin.py:161 app/models/theme.py:43
+#: app/admin.py:153 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (內文標籤之後)"
 
-#: app/admin.py:165
+#: app/admin.py:157
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -69,80 +69,113 @@ msgid ""
 msgstr ""
 "在網頁註腳中顯示的HTML。 您還可以使用特殊標籤，例如{ORGANIZATION}和{YEAR}。"
 
-#: app/admin.py:166 app/models/theme.py:44
+#: app/admin.py:158 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (網頁註腳)"
 
-#: app/admin.py:226 app/models/project.py:29
+#: app/admin.py:218 app/models/project.py:29
 msgid "Description"
 msgstr "描述"
 
-#: app/admin.py:232
+#: app/admin.py:224
 msgid "Version"
 msgstr "版本"
 
-#: app/admin.py:238
+#: app/admin.py:230
 msgid "Author"
 msgstr "作者"
 
-#: app/admin.py:280
+#: app/admin.py:272
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr "需要重新啟動。請重新啟動WebODM來啟用擴充功能%(plugin)s"
 
-#: app/admin.py:283
+#: app/admin.py:275
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "無法啟動擴充功能 %(plugin)s: %(message)s"
 
-#: app/admin.py:292
+#: app/admin.py:284
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr "需要重新啟動。請重新啟動WebODM來停用擴充功能 %(plugin)s"
 
-#: app/admin.py:295
+#: app/admin.py:287
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "無法停用擴充功能 %(plugin)s: %(message)s"
 
-#: app/admin.py:304
+#: app/admin.py:296
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "無法刪除擴充功能 %(plugin)s: %(message)s"
 
-#: app/admin.py:380
+#: app/admin.py:372
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
 
-#: app/admin.py:382
+#: app/admin.py:374
 #, fuzzy, python-format
 #| msgid "Plugin added successfully"
 msgid "%(plugin)s installed successfully"
 msgstr "已成功新增擴充功能"
 
-#: app/admin.py:386
+#: app/admin.py:378
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "無法載入擴充功能: %(message)s"
 
-#: app/admin.py:395
+#: app/admin.py:387
 msgid "You need to upload a zip file"
 msgstr "你需要上傳一個zip文件"
 
-#: app/admin.py:414
+#: app/admin.py:406
 msgid "Disable"
 msgstr "停用"
 
-#: app/admin.py:417
+#: app/admin.py:409
 msgid "Enable"
 msgstr "啟用"
 
-#: app/admin.py:422
+#: app/admin.py:414
 msgid "Actions"
 msgstr "動作"
+
+#: app/api/authentication.py:43
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid payload."
+msgstr "無效的動作"
+
+#: app/api/authentication.py:47
+#, fuzzy
+#| msgid "Invalid zip file"
+msgid "Invalid signature."
+msgstr "無效的 ZIP 檔案"
+
+#: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
+msgid "User account is disabled."
+msgstr ""
+
+#: app/api/authentication.py:61
+msgid "Invalid Authorization header. No credentials provided."
+msgstr ""
+
+#: app/api/authentication.py:63
+msgid ""
+"Invalid Authorization header. Credentials string should not contain spaces."
+msgstr ""
+
+#: app/api/authentication.py:73 app/api/jwt.py:67
+msgid "Signature has expired."
+msgstr ""
+
+#: app/api/authentication.py:75 app/api/jwt.py:69
+msgid "Error decoding signature."
+msgstr ""
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -284,25 +317,29 @@ msgstr "攝氏溫度。"
 msgid "Temperature in Centikelvin degrees."
 msgstr "攝氏開爾文溫度（以百分之一開爾文為單位）。"
 
-#: app/api/jwt.py:35 app/api/jwt.py:44
-msgid "User account is disabled."
-msgstr ""
-
-#: app/api/jwt.py:40
+#: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
 msgstr ""
 
-#: app/api/jwt.py:52 app/api/jwt.py:60
+#: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
 msgstr ""
 
-#: app/api/jwt.py:62
+#: app/api/jwt.py:57
 #, fuzzy
 #| msgid "Enter a username and password."
 msgid "Must include \"username\" and \"password\"."
 msgstr "請輸入使用者名稱與密碼。"
 
-#: app/api/media.py:72 app/api/tasks.py:315
+#: app/api/jwt.py:74
+msgid "orig_iat field is required."
+msgstr ""
+
+#: app/api/jwt.py:76
+msgid "Refresh has expired."
+msgstr ""
+
+#: app/api/media.py:72 app/api/tasks.py:323
 msgid "No files uploaded"
 msgstr "沒有上傳任何檔案"
 
@@ -408,168 +445,168 @@ msgstr "沒有上傳任何檔案"
 msgid "Invalid filename"
 msgstr "無效的 ZIP 檔案"
 
-#: app/api/splats.py:86 app/api/tasks.py:922
+#: app/api/splats.py:86 app/api/tasks.py:928
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid file type"
 msgstr "無效的 ZIP 檔案"
 
-#: app/api/splats.py:169 app/api/tasks.py:583 app/api/tasks.py:587
-#: app/api/tasks.py:729 app/api/tasks.py:732 app/api/tasks.py:765
-#: app/api/tasks.py:1091
+#: app/api/splats.py:169 app/api/tasks.py:591 app/api/tasks.py:595
+#: app/api/tasks.py:735 app/api/tasks.py:738 app/api/tasks.py:771
+#: app/api/tasks.py:1097
 msgid "Asset does not exist"
 msgstr "資產不存在"
 
-#: app/api/tasks.py:116
+#: app/api/tasks.py:115
 #, fuzzy
 #| msgid "Cannot create task, alignment task is not valid"
 msgid "Cannot create task, processing node is not valid"
 msgstr "無法建立任務，對齊任務無效"
 
-#: app/api/tasks.py:293
+#: app/api/tasks.py:301
 msgid "You need to upload at least 1 file before commit"
 msgstr "在提交之前，您必須先上傳至少 1 個檔案"
 
-#: app/api/tasks.py:371
+#: app/api/tasks.py:379
 msgid "Cannot duplicate task"
 msgstr "無法複製任務"
 
-#: app/api/tasks.py:388
+#: app/api/tasks.py:396
 msgid "Cannot create task, alignment task is not valid"
 msgstr "無法建立任務，對齊任務無效"
 
-#: app/api/tasks.py:405
+#: app/api/tasks.py:413
 msgid "Cannot create task, you need at least 2 images"
 msgstr "無法建立任務，您至少需要 2 張影像"
 
-#: app/api/tasks.py:783 app/api/tasks.py:1003
+#: app/api/tasks.py:789 app/api/tasks.py:1009
 msgid "Imported Task"
 msgstr "已匯入任務"
 
-#: app/api/tasks.py:787 app/api/tasks.py:914
+#: app/api/tasks.py:793 app/api/tasks.py:920
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "無法建立任務，您需要上傳 1 個檔案"
 
-#: app/api/tasks.py:791
+#: app/api/tasks.py:797
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr "無法建立任務，請指定一個 URL 或上傳 1 個檔案。"
 
-#: app/api/tasks.py:793
+#: app/api/tasks.py:799
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "無效的 URL。您是指 %(hint)s 嗎？"
 
-#: app/api/tasks.py:898 app/api/tasks.py:901
+#: app/api/tasks.py:904 app/api/tasks.py:907
 #, fuzzy
 #| msgid "Invalid action"
 msgid "Invalid uuid"
 msgstr "無效的動作"
 
-#: app/api/tasks.py:933
+#: app/api/tasks.py:939
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid file type (extension mismatch)"
 msgstr "無效的 ZIP 檔案"
 
-#: app/api/tasks.py:957
+#: app/api/tasks.py:963
 msgid "Some parameters are not integers"
 msgstr ""
 
-#: app/api/tasks.py:1016 app/api/tasks.py:1021
+#: app/api/tasks.py:1022 app/api/tasks.py:1027
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:1023
+#: app/api/tasks.py:1029
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:1029
+#: app/api/tasks.py:1035
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:1035
+#: app/api/tasks.py:1041
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:1039
+#: app/api/tasks.py:1045
 #, fuzzy
 #| msgid "No files uploaded"
 msgid "No assets uploaded"
 msgstr "沒有上傳任何檔案"
 
-#: app/api/tiler.py:364
+#: app/api/tiler.py:360
 msgid "Invalid boundaries parameter"
 msgstr "邊界參數無效"
 
-#: app/api/tiler.py:383
+#: app/api/tiler.py:379
 msgid "Invalid tile size parameter"
 msgstr "切片尺寸參數無效"
 
-#: app/api/tiler.py:414 app/api/tiler.py:494
+#: app/api/tiler.py:410 app/api/tiler.py:490
 msgid "Outside of bounds"
 msgstr "超出邊界"
 
-#: app/api/tiler.py:425
+#: app/api/tiler.py:421
 msgid "Invalid boundaries"
 msgstr "無效的邊界"
 
-#: app/api/tiler.py:500 app/api/tiler.py:628
+#: app/api/tiler.py:496 app/api/tiler.py:624
 msgid "Not a valid color_map value"
 msgstr "不是有效的 color_map 值"
 
-#: app/api/tiler.py:508
+#: app/api/tiler.py:504
 msgid "Invalid rescale value"
 msgstr "無效的重縮放值"
 
-#: app/api/tiler.py:530
+#: app/api/tiler.py:526
 msgid "Invalid hillshade value"
 msgstr "無效的陰影地形值"
 
-#: app/api/tiler.py:533
+#: app/api/tiler.py:529
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr "無法計算非高程柵格的陰影地形（發現多個波段）"
 
-#: app/api/tiler.py:557
+#: app/api/tiler.py:553
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr "無法處理切片：已提供強度影像，但未計算出 RGB 資料。"
 
-#: app/api/tiler.py:613 app/api/tiler.py:615
+#: app/api/tiler.py:609 app/api/tiler.py:611
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr "不支援的格式：%(value)s"
 
-#: app/api/tiler.py:634
+#: app/api/tiler.py:630
 #, python-format
 msgid "Invalid resample value: %(value)s"
 msgstr "無效的重採樣值：%(value)s"
 
-#: app/api/tiler.py:640
+#: app/api/tiler.py:636
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr "無效的 EPSG 代碼：%(value)s"
 
-#: app/api/tiler.py:646 app/api/tiler.py:648
+#: app/api/tiler.py:642 app/api/tiler.py:644
 #, fuzzy, python-format
 #| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid PROJ string: %(value)s"
 msgstr "無效的 EPSG 代碼：%(value)s"
 
-#: app/api/tiler.py:651
+#: app/api/tiler.py:647
 msgid "Both formula and bands parameters are required"
 msgstr "公式與波段參數皆為必填"
 
-#: app/api/tiler.py:674
+#: app/api/tiler.py:670
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr "無效的重縮放值：%(value)s"
 
-#: app/api/tiler.py:682
+#: app/api/tiler.py:678
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr "無效的陰影地形值：%(value)s"
 
-#: app/api/tiler.py:693
+#: app/api/tiler.py:689
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "無法在非地理參考的資料集中使用 EPSG"
 
@@ -582,7 +619,7 @@ msgid "URL"
 msgstr ""
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
-#: nodeodm/models.py:33
+#: nodeodm/models.py:32
 msgid "Label"
 msgstr "標籤"
 
@@ -632,8 +669,8 @@ msgstr ""
 msgid "Plugin name"
 msgstr "外掛名稱"
 
-#: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:248 app/models/theme.py:18
+#: app/models/plugin.py:5 app/models/preset.py:9 app/models/project.py:28
+#: app/models/task.py:246 app/models/theme.py:18
 msgid "Name"
 msgstr "名稱"
 
@@ -653,89 +690,89 @@ msgstr "外掛"
 msgid "Plugins"
 msgstr "外掛程式"
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Setting key"
 msgstr "設定鍵"
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Key"
 msgstr "鍵值"
 
-#: app/models/plugin_datum.py:8
+#: app/models/plugin_datum.py:7
 msgid "The user this setting belongs to. If NULL, the setting is global."
 msgstr "此設定所屬的使用者；若為 NULL，則表示此設定為全域設定。"
 
-#: app/models/plugin_datum.py:8 app/templates/app/admin/object_history.html:23
+#: app/models/plugin_datum.py:7 app/templates/app/admin/object_history.html:23
 msgid "User"
 msgstr "使用者"
 
-#: app/models/plugin_datum.py:9
+#: app/models/plugin_datum.py:8
 msgid "Integer value"
 msgstr "整數值"
 
-#: app/models/plugin_datum.py:10
+#: app/models/plugin_datum.py:9
 msgid "Float value"
 msgstr "浮點值"
 
-#: app/models/plugin_datum.py:11
+#: app/models/plugin_datum.py:10
 msgid "Bool value"
 msgstr "布林值"
 
-#: app/models/plugin_datum.py:12
+#: app/models/plugin_datum.py:11
 msgid "String value"
 msgstr "字串值"
 
-#: app/models/plugin_datum.py:13
+#: app/models/plugin_datum.py:12
 msgid "JSON value"
 msgstr "JSON 值"
 
-#: app/models/plugin_datum.py:19 app/models/plugin_datum.py:20
+#: app/models/plugin_datum.py:18 app/models/plugin_datum.py:19
 msgid "Plugin Datum"
 msgstr "外掛資料項（Plugin Datum）"
 
-#: app/models/preset.py:9
+#: app/models/preset.py:8
 msgid "The person who owns this preset"
 msgstr "此預設的擁有者"
 
-#: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
+#: app/models/preset.py:8 app/models/project.py:27 app/models/redirect.py:9
 msgid "Owner"
 msgstr "擁有者"
 
-#: app/models/preset.py:10
+#: app/models/preset.py:9
 msgid "A label used to describe the preset"
 msgstr "用於描述此預設的標籤"
 
-#: app/models/preset.py:11
+#: app/models/preset.py:10
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr "定義此預設的選項（格式與任務的選項相同）。"
 
-#: app/models/preset.py:11 app/models/task.py:254
+#: app/models/preset.py:10 app/models/task.py:252
 msgid "Options"
 msgstr "選項"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Creation date"
 msgstr "建立日期"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Created at"
 msgstr "建立於"
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid ""
 "Whether this preset is available to every user in the system or just to its "
 "owner."
 msgstr "此預設是對系統中所有使用者可用，還是僅限其擁有者使用。"
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid "System"
 msgstr "系統"
 
-#: app/models/preset.py:20
+#: app/models/preset.py:19
 msgid "Preset"
 msgstr "預設值"
 
-#: app/models/preset.py:21
+#: app/models/preset.py:20
 msgid "Presets"
 msgstr "預設集"
 
@@ -794,7 +831,7 @@ msgstr "正在刪除"
 msgid "Project tags"
 msgstr "Project tags"
 
-#: app/models/project.py:32 app/models/task.py:288
+#: app/models/project.py:32 app/models/task.py:286
 msgid "Tags"
 msgstr "標籤"
 
@@ -802,7 +839,7 @@ msgstr "標籤"
 msgid "A flag indicating whether this project is available to the public"
 msgstr "指示此專案是否對公眾開放的標記"
 
-#: app/models/project.py:33 app/models/task.py:265
+#: app/models/project.py:33 app/models/task.py:263
 msgid "Public"
 msgstr "公開"
 
@@ -810,7 +847,7 @@ msgstr "公開"
 msgid "A flag indicating whether this public project can be edited"
 msgstr "指示此公開專案是否可被編輯的標記"
 
-#: app/models/project.py:34 app/models/task.py:266
+#: app/models/project.py:34 app/models/task.py:264
 msgid "Public Edit"
 msgstr "公開編輯"
 
@@ -822,12 +859,12 @@ msgstr "專案的公開識別碼"
 msgid "Public Id"
 msgstr "公開 ID"
 
-#: app/models/project.py:108 app/models/task.py:486
+#: app/models/project.py:108 app/models/task.py:484
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "%(task)s 的副本"
 
-#: app/models/project.py:141 app/models/task.py:247
+#: app/models/project.py:141 app/models/task.py:245
 msgid "Project"
 msgstr "專案"
 
@@ -910,127 +947,127 @@ msgstr "應用程式"
 msgid "Settings"
 msgstr "設定"
 
-#: app/models/task.py:244
+#: app/models/task.py:242
 msgid "Id"
 msgstr "ID"
 
-#: app/models/task.py:246
+#: app/models/task.py:244
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr "任務的識別碼（由 NodeODM API 回傳）"
 
-#: app/models/task.py:246
+#: app/models/task.py:244
 msgid "UUID"
 msgstr "UUID（通用唯一識別碼）"
 
-#: app/models/task.py:247
+#: app/models/task.py:245
 msgid "Project that this task belongs to"
 msgstr "此任務所屬的專案"
 
-#: app/models/task.py:248
+#: app/models/task.py:246
 msgid "A label for the task"
 msgstr "此任務的標籤"
 
-#: app/models/task.py:249
+#: app/models/task.py:247
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
 msgstr "自此任務開始以來經過的毫秒數（-1 表示無可用資訊）"
 
-#: app/models/task.py:249
+#: app/models/task.py:247
 msgid "Processing Time"
 msgstr "處理時間"
 
-#: app/models/task.py:250
+#: app/models/task.py:248
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
 msgstr "指派給此任務的處理節點（若尚未關聯則為 null）"
 
-#: app/models/task.py:250 app/views/app.py:149 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:149 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr "處理節點"
 
-#: app/models/task.py:251
+#: app/models/task.py:249
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
 msgstr "指示此任務是否應自動指派處理節點的標記"
 
-#: app/models/task.py:251
+#: app/models/task.py:249
 msgid "Auto Processing Node"
 msgstr "自動處理節點"
 
-#: app/models/task.py:252
+#: app/models/task.py:250
 msgid "Current status of the task"
 msgstr "任務的目前狀態"
 
-#: app/models/task.py:252
+#: app/models/task.py:250
 msgid "Status"
 msgstr "狀態"
 
-#: app/models/task.py:253
+#: app/models/task.py:251
 msgid "The last processing error received"
 msgstr "收到的最後處理錯誤"
 
-#: app/models/task.py:253
+#: app/models/task.py:251
 msgid "Last Error"
 msgstr "最後錯誤"
 
-#: app/models/task.py:254
+#: app/models/task.py:252
 msgid "Options that are being used to process this task"
 msgstr "用於處理此任務的選項"
 
-#: app/models/task.py:255
+#: app/models/task.py:253
 msgid "List of available assets to download"
 msgstr "可供下載的資產清單"
 
-#: app/models/task.py:255
+#: app/models/task.py:253
 msgid "Available Assets"
 msgstr "可用的資產"
 
-#: app/models/task.py:257
+#: app/models/task.py:255
 msgid "Extent of the orthophoto"
 msgstr "正射影像的範圍"
 
-#: app/models/task.py:257
+#: app/models/task.py:255
 msgid "Orthophoto Extent"
 msgstr "正射影像範圍"
 
-#: app/models/task.py:258
+#: app/models/task.py:256
 msgid "Extent of the DSM"
 msgstr "DSM（數位地表模型）的範圍"
 
-#: app/models/task.py:258
+#: app/models/task.py:256
 msgid "DSM Extent"
 msgstr "DSM 範圍"
 
-#: app/models/task.py:259
+#: app/models/task.py:257
 msgid "Extent of the DTM"
 msgstr "DTM（數位地形模型）的範圍"
 
-#: app/models/task.py:259
+#: app/models/task.py:257
 msgid "DTM Extent"
 msgstr "DTM 範圍"
 
-#: app/models/task.py:263
+#: app/models/task.py:261
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
 msgstr "請求在此任務上執行的動作。所選動作將在下一次迭代時由工作節點執行。"
 
-#: app/models/task.py:263
+#: app/models/task.py:261
 msgid "Pending Action"
 msgstr "待執行動作"
 
-#: app/models/task.py:265
+#: app/models/task.py:263
 msgid "A flag indicating whether this task is available to the public"
 msgstr "指示此任務是否對公眾可用的標記"
 
-#: app/models/task.py:266
+#: app/models/task.py:264
 msgid "A flag indicating whether this public task can be edited"
 msgstr "指示此公開任務是否可被編輯的標記"
 
-#: app/models/task.py:268
+#: app/models/task.py:266
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
@@ -1039,56 +1076,56 @@ msgstr ""
 "當設定為不等於 -1 的值時，表示此任務的影像在處理前已經或將會被重新調整為此處"
 "指定的大小。"
 
-#: app/models/task.py:268
+#: app/models/task.py:266
 msgid "Resize To"
 msgstr "調整大小為"
 
-#: app/models/task.py:271
+#: app/models/task.py:269
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
 msgstr "介於 0 和 1 之間的值，表示此任務檔案上傳到處理節點的進度"
 
-#: app/models/task.py:272
+#: app/models/task.py:270
 msgid "Upload Progress"
 msgstr "上傳進度"
 
-#: app/models/task.py:275
+#: app/models/task.py:273
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr "介於 0 和 1 之間的值，表示此任務影像重新調整大小的進度"
 
-#: app/models/task.py:276
+#: app/models/task.py:274
 msgid "Resize Progress"
 msgstr "調整尺寸進度"
 
-#: app/models/task.py:279
+#: app/models/task.py:277
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr "介於 0 與 1 之間的值，用於顯示此任務的執行進度（預估）"
 
-#: app/models/task.py:280
+#: app/models/task.py:278
 msgid "Running Progress"
 msgstr "執行進度"
 
-#: app/models/task.py:282
+#: app/models/task.py:280
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr "本任務匯入來源的網址（僅限匯入任務）"
 
-#: app/models/task.py:282
+#: app/models/task.py:280
 msgid "Import URL"
 msgstr "匯入網址"
 
-#: app/models/task.py:283
+#: app/models/task.py:281
 msgid "Number of images associated with this task"
 msgstr "此任務相關的圖片數量"
 
-#: app/models/task.py:283
+#: app/models/task.py:281
 msgid "Images Count"
 msgstr "圖片數量"
 
-#: app/models/task.py:284
+#: app/models/task.py:282
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
@@ -1096,25 +1133,25 @@ msgstr ""
 "一項用以指示此任務當前，是否正在等待資訊，或是檔案上傳完成的旗標，結束後進入"
 "處理階段。"
 
-#: app/models/task.py:284
+#: app/models/task.py:282
 msgid "Partial"
 msgstr "部分"
 
-#: app/models/task.py:285
+#: app/models/task.py:283
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
 msgstr "序列化的 potree 場景資訊，用於儲存/載入測量資料與相機視角"
 
-#: app/models/task.py:285
+#: app/models/task.py:283
 msgid "Potree Scene"
 msgstr "Potree 場景"
 
-#: app/models/task.py:286
+#: app/models/task.py:284
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "資料集的 EPSG 代碼（若已具地理參考）"
 
-#: app/models/task.py:287
+#: app/models/task.py:285
 #, fuzzy
 #| msgid "EPSG code of the dataset (if georeferenced)"
 msgid ""
@@ -1122,86 +1159,86 @@ msgid ""
 "available)"
 msgstr "資料集的 EPSG 代碼（若已具地理參考）"
 
-#: app/models/task.py:288
+#: app/models/task.py:286
 msgid "Task tags"
 msgstr "任務標籤"
 
-#: app/models/task.py:289
+#: app/models/task.py:287
 msgid "List of orthophoto bands"
 msgstr "正射影像波段清單"
 
-#: app/models/task.py:289
+#: app/models/task.py:287
 msgid "Orthophoto Bands"
 msgstr "正射影像波段"
 
-#: app/models/task.py:290
+#: app/models/task.py:288
 msgid "Size of the task on disk in megabytes"
 msgstr "任務在磁碟上的大小（以 MB 計）"
 
-#: app/models/task.py:290
+#: app/models/task.py:288
 msgid "Size"
 msgstr "尺寸"
 
-#: app/models/task.py:291
+#: app/models/task.py:289
 msgid "A flag indicating whether this task was compacted"
 msgstr "指示此任務是否已被壓縮的標記"
 
-#: app/models/task.py:291
+#: app/models/task.py:289
 msgid "Compact"
 msgstr "壓縮"
 
-#: app/models/task.py:292
+#: app/models/task.py:290
 msgid "Polygon defining the crop area of this task"
 msgstr "定義此任務裁切區域的多邊形"
 
-#: app/models/task.py:292
+#: app/models/task.py:290
 msgid "Crop Polygon"
 msgstr "裁切多邊形"
 
-#: app/models/task.py:293
+#: app/models/task.py:291
 #, fuzzy
 #| msgid "Number of images associated with this task"
 msgid "List of media files associated with this task"
 msgstr "此任務相關的圖片數量"
 
-#: app/models/task.py:293
+#: app/models/task.py:291
 msgid "Media"
 msgstr ""
 
-#: app/models/task.py:297
+#: app/models/task.py:295
 msgid "Task"
 msgstr "任務"
 
-#: app/models/task.py:298
+#: app/models/task.py:296
 msgid "Tasks"
 msgstr "任務集"
 
-#: app/models/task.py:309
+#: app/models/task.py:307
 msgid "unnamed"
 msgstr "未命名"
 
-#: app/models/task.py:618
+#: app/models/task.py:616
 msgid "Importing assets..."
 msgstr "正在匯入資產…"
 
-#: app/models/task.py:673 app/models/task.py:952
+#: app/models/task.py:671 app/models/task.py:950
 msgid "Invalid zip file"
 msgstr "無效的 ZIP 檔案"
 
-#: app/models/task.py:675
+#: app/models/task.py:673
 msgid "Unsupported compression method"
 msgstr "不支援的壓縮方法"
 
-#: app/models/task.py:770
+#: app/models/task.py:768
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "連線錯誤：%(error)s"
 
-#: app/models/task.py:850
+#: app/models/task.py:848
 msgid "Cannot restart a task that has no processing node"
 msgstr "無法重新啟動沒有處理節點的任務"
 
-#: app/models/task.py:1055
+#: app/models/task.py:1053
 msgid "Done!"
 msgstr "完成！"
 
@@ -1329,7 +1366,11 @@ msgstr "500 內部伺服器錯誤"
 msgid "Something happened. The server logs contain more information."
 msgstr "發生錯誤。伺服器日誌中包含更多資訊。"
 
-#: app/templates/app/about.html:13
+#: app/templates/app/about.html:25
+msgid "Minimize"
+msgstr ""
+
+#: app/templates/app/about.html:29
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1347,16 +1388,18 @@ msgid "Page not found"
 msgstr "頁面未找到"
 
 #: app/templates/app/admin/404.html:10
-msgid "We're sorry, but the requested page could not be found."
+#, fuzzy
+#| msgid "We're sorry, but the requested page could not be found."
+msgid "We’re sorry, but the requested page could not be found."
 msgstr "很抱歉，找不到您請求的頁面。"
 
-#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:9
-#: app/templates/app/admin/auth/user/change_password.html:13
+#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
+#: app/templates/app/admin/auth/user/change_password.html:15
 #: app/templates/app/admin/base.html:19
-#: app/templates/app/admin/change_form.html:18
-#: app/templates/app/admin/change_list.html:31
-#: app/templates/app/admin/delete_confirmation.html:13
-#: app/templates/app/admin/delete_selected_confirmation.html:13
+#: app/templates/app/admin/change_form.html:19
+#: app/templates/app/admin/change_list.html:33
+#: app/templates/app/admin/delete_confirmation.html:14
+#: app/templates/app/admin/delete_selected_confirmation.html:14
 #: app/templates/app/admin/invalid_setup.html:6
 #: app/templates/app/admin/object_history.html:6
 msgid "Home"
@@ -1371,71 +1414,104 @@ msgid "Server error (500)"
 msgstr "伺服器錯誤（500）"
 
 #: app/templates/app/admin/500.html:14
-msgid "Server Error (500)"
+#, fuzzy
+#| msgid "Server Error (500)"
+msgid "Server Error <em>(500)</em>"
 msgstr "伺服器錯誤（500）"
 
 #: app/templates/app/admin/500.html:15
+#, fuzzy
+#| msgid ""
+#| "There's been an error. It's been reported to the site administrators via "
+#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
-"There's been an error. It's been reported to the site administrators via "
+"There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
 "發生錯誤。此問題已透過電子郵件回報給網站管理員，應會很快修復。感謝您的耐心等"
 "候。"
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
 msgstr "執行所選動作"
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Go"
 msgstr "執行"
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 msgid "Click here to select the objects across all pages"
 msgstr "點此以選取跨所有頁面的物件"
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
 msgstr "選取所有 %(total_count)s 個 %(module_name)s"
 
-#: app/templates/app/admin/actions.html:12
+#: app/templates/app/admin/actions.html:18
 msgid "Clear selection"
 msgstr "清除選取"
 
+#: app/templates/app/admin/app_index.html:8
+msgid "Breadcrumbs"
+msgstr ""
+
 #: app/templates/app/admin/auth/user/add_form.html:6
-msgid ""
-"First, enter a username and password. Then, you'll be able to edit more user "
-"options."
+#, fuzzy
+#| msgid ""
+#| "First, enter a username and password. Then, you'll be able to edit more "
+#| "user options."
+msgid "After you’ve created a user, you’ll be able to edit more user options."
 msgstr "首先，請輸入使用者名稱與密碼。之後，您將能夠編輯更多使用者選項。"
 
-#: app/templates/app/admin/auth/user/add_form.html:8
-msgid "Enter a username and password."
-msgstr "請輸入使用者名稱與密碼。"
+#: app/templates/app/admin/auth/user/change_password.html:5
+#: app/templates/app/admin/change_form.html:4
+#: app/templates/app/admin/change_list.html:4
+#: app/templates/app/admin/login.html:4
+#, fuzzy
+#| msgid "Last Error"
+msgid "Error:"
+msgstr "最後錯誤"
 
-#: app/templates/app/admin/auth/user/change_password.html:17
-#: app/templates/app/admin/auth/user/change_password.html:54
+#: app/templates/app/admin/auth/user/change_password.html:19
+#: app/templates/app/admin/auth/user/change_password.html:71
 msgid "Change password"
 msgstr "更改密碼"
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
+#: app/templates/app/admin/auth/user/change_password.html:19
+#, fuzzy
+#| msgid "Change password"
+msgid "Set password"
+msgstr "更改密碼"
+
+#: app/templates/app/admin/auth/user/change_password.html:30
+#: app/templates/app/admin/change_form.html:44
+#: app/templates/app/admin/change_list.html:53
+#: app/templates/app/admin/login.html:24
+#, fuzzy
+#| msgid "Please correct the error below."
 msgid "Please correct the error below."
-msgstr "請更正以下錯誤。"
+msgid_plural "Please correct the errors below."
+msgstr[0] "請更正以下錯誤。"
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
-msgid "Please correct the errors below."
-msgstr "請更正以下錯誤。"
-
-#: app/templates/app/admin/auth/user/change_password.html:31
+#: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
 msgstr "請為使用者 %(username)s 輸入新密碼。"
+
+#: app/templates/app/admin/auth/user/change_password.html:36
+msgid ""
+"This action will <strong>enable</strong> password-based authentication for "
+"this user."
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:72
+msgid "Disable password-based authentication"
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:74
+msgid "Enable password-based authentication"
+msgstr ""
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1445,26 +1521,30 @@ msgstr "Django 網站管理"
 msgid "Django administration"
 msgstr "Django 管理介面"
 
-#: app/templates/app/admin/change_form.html:21
-#: app/templates/app/admin/change_list.html:49
+#: app/templates/app/admin/change_form.html:22
 #, python-format
 msgid "Add %(name)s"
 msgstr "新增 %(name)s"
 
-#: app/templates/app/admin/change_form.html:33
-#: app/templates/app/admin/object_history.html:10
-msgid "History"
-msgstr "歷史記錄"
-
-#: app/templates/app/admin/change_form.html:35
-#: app/templates/app/admin/edit_inline/stacked.html:14
-#: app/templates/app/admin/edit_inline/tabular.html:36
-msgid "View on site"
-msgstr "在網站上檢視"
-
-#: app/templates/app/admin/change_list.html:69
+#: app/templates/app/admin/change_list.html:78
 msgid "Filter"
 msgstr "篩選"
+
+#: app/templates/app/admin/change_list.html:81
+#, fuzzy
+#| msgid "Accounts"
+msgid "Hide counts"
+msgstr "帳號"
+
+#: app/templates/app/admin/change_list.html:82
+#, fuzzy
+#| msgid "Accounts"
+msgid "Show counts"
+msgstr "帳號"
+
+#: app/templates/app/admin/change_list.html:85
+msgid "Clear all filters"
+msgstr ""
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1474,27 +1554,26 @@ msgstr "載入外掛（.zip）"
 msgid "Manage Plugins"
 msgstr "管理外掛"
 
-#: app/templates/app/admin/change_list_results.html:17
+#: app/templates/app/admin/change_list_results.html:16
 msgid "Remove from sorting"
 msgstr "從排序中移除"
 
-#: app/templates/app/admin/change_list_results.html:18
+#: app/templates/app/admin/change_list_results.html:17
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
 msgstr "排序優先順序：%(priority_number)s"
 
-#: app/templates/app/admin/change_list_results.html:19
+#: app/templates/app/admin/change_list_results.html:18
 msgid "Toggle sorting"
 msgstr "切換排序"
 
-#: app/templates/app/admin/delete_confirmation.html:17
-#: app/templates/app/admin/related_widget_wrapper.html:23
-#: app/templates/app/admin/submit_line.html:6
+#: app/templates/app/admin/delete_confirmation.html:18
+#: app/templates/app/admin/submit_line.html:14
 #: app/templates/app/processing_node.html:54
 msgid "Delete"
 msgstr "刪除"
 
-#: app/templates/app/admin/delete_confirmation.html:23
+#: app/templates/app/admin/delete_confirmation.html:25
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
@@ -1512,7 +1591,7 @@ msgid ""
 msgstr ""
 "刪除 %(object_name)s「%(escaped_object)s」需要同時刪除以下受保護的相關物件："
 
-#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_confirmation.html:35
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
@@ -1521,26 +1600,28 @@ msgstr ""
 "您確定要刪除 %(object_name)s「%(escaped_object)s」嗎？以下所有相關項目都將被"
 "刪除："
 
-#: app/templates/app/admin/delete_confirmation.html:39
-#: app/templates/app/admin/delete_selected_confirmation.html:38
+#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_selected_confirmation.html:31
 msgid "Objects"
 msgstr "物件"
 
-#: app/templates/app/admin/delete_confirmation.html:46
-#: app/templates/app/admin/delete_selected_confirmation.html:49
-msgid "Yes, I'm sure"
+#: app/templates/app/admin/delete_confirmation.html:44
+#: app/templates/app/admin/delete_selected_confirmation.html:42
+#, fuzzy
+#| msgid "Yes, I'm sure"
+msgid "Yes, I’m sure"
 msgstr "是的，我確定"
 
-#: app/templates/app/admin/delete_confirmation.html:47
-#: app/templates/app/admin/delete_selected_confirmation.html:50
+#: app/templates/app/admin/delete_confirmation.html:45
+#: app/templates/app/admin/delete_selected_confirmation.html:43
 msgid "No, take me back"
 msgstr "不，帶我返回"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:16
+#: app/templates/app/admin/delete_selected_confirmation.html:17
 msgid "Delete multiple objects"
 msgstr "刪除多個物件"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:22
+#: app/templates/app/admin/delete_selected_confirmation.html:23
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
@@ -1550,14 +1631,14 @@ msgstr ""
 "刪除所選的 %(objects_name)s 將會同時刪除相關物件，但您的帳號沒有權限刪除以下"
 "類型的物件："
 
-#: app/templates/app/admin/delete_selected_confirmation.html:29
+#: app/templates/app/admin/delete_selected_confirmation.html:26
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
 msgstr "刪除所選的 %(objects_name)s 需要同時刪除以下受保護的相關物件："
 
-#: app/templates/app/admin/delete_selected_confirmation.html:36
+#: app/templates/app/admin/delete_selected_confirmation.html:29
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
@@ -1565,18 +1646,26 @@ msgid ""
 msgstr ""
 "您確定要刪除所選的 %(objects_name)s 嗎？以下所有物件及其相關項目都將被刪除："
 
-#: app/templates/app/admin/edit_inline/stacked.html:12
-#: app/templates/app/admin/edit_inline/tabular.html:34
-#: app/templates/app/admin/index.html:37
-#: app/templates/app/admin/related_widget_wrapper.html:9
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "Change"
 msgstr "變更"
 
-#: app/templates/app/admin/edit_inline/tabular.html:20
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
+msgid "View"
+msgstr ""
+
+#: app/templates/app/admin/edit_inline/stacked.html:22
+#: app/templates/app/admin/edit_inline/tabular.html:42
+msgid "View on site"
+msgstr "在網站上檢視"
+
+#: app/templates/app/admin/edit_inline/tabular.html:26
 msgid "Delete?"
 msgstr "刪除？"
 
-#: app/templates/app/admin/filter.html:2
+#: app/templates/app/admin/filter.html:4
 #, python-format
 msgid " By %(filter_title)s "
 msgstr " 依 %(filter_title)s "
@@ -1585,46 +1674,53 @@ msgstr " 依 %(filter_title)s "
 msgid "Summary"
 msgstr "摘要"
 
-#: app/templates/app/admin/index.html:20
-#, python-format
-msgid "Models in the %(name)s application"
-msgstr "%(name)s 應用程式中的模型"
-
-#: app/templates/app/admin/index.html:31
-#: app/templates/app/admin/related_widget_wrapper.html:16
-msgid "Add"
-msgstr "新增"
-
-#: app/templates/app/admin/index.html:47
-msgid "You don't have permission to edit anything."
-msgstr "您沒有權限編輯任何內容。"
-
-#: app/templates/app/admin/index.html:55
+#: app/templates/app/admin/index.html:23
 msgid "Recent actions"
 msgstr "最近的動作"
 
-#: app/templates/app/admin/index.html:56
+#: app/templates/app/admin/index.html:24
 msgid "My actions"
 msgstr "我的動作"
 
-#: app/templates/app/admin/index.html:60
+#: app/templates/app/admin/index.html:28
 msgid "None available"
 msgstr "無可用項目"
 
-#: app/templates/app/admin/index.html:74
+#: app/templates/app/admin/index.html:33
+msgid "Added:"
+msgstr ""
+
+#: app/templates/app/admin/index.html:33
+#, fuzzy
+#| msgid "Change"
+msgid "Changed:"
+msgstr "變更"
+
+#: app/templates/app/admin/index.html:33
+#, fuzzy
+#| msgid "Delete"
+msgid "Deleted:"
+msgstr "刪除"
+
+#: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "未知內容"
 
 #: app/templates/app/admin/invalid_setup.html:12
+#, fuzzy
+#| msgid ""
+#| "Something's wrong with your database installation. Make sure the "
+#| "appropriate database tables have been created, and make sure the database "
+#| "is readable by the appropriate user."
 msgid ""
-"Something's wrong with your database installation. Make sure the appropriate "
+"Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
 "您的資料庫安裝有問題。請確認已建立適當的資料表，並確保資料庫可由適當的使用者"
 "讀取。"
 
-#: app/templates/app/admin/login.html:37
+#: app/templates/app/admin/login.html:40
 #, python-format
 msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
@@ -1632,13 +1728,19 @@ msgid ""
 msgstr ""
 "您已以 %(username)s 身分驗證，但沒有權限存取此頁面。要改用其他帳號登入嗎？"
 
-#: app/templates/app/admin/login.html:57
-msgid "Forgotten your password or username?"
+#: app/templates/app/admin/login.html:60
+#, fuzzy
+#| msgid "Forgotten your password or username?"
+msgid "Forgotten your login credentials?"
 msgstr "忘記密碼或使用者名稱了嗎？"
 
-#: app/templates/app/admin/login.html:61
+#: app/templates/app/admin/login.html:64
 msgid "Log in"
 msgstr "登入"
+
+#: app/templates/app/admin/object_history.html:10
+msgid "History"
+msgstr "歷史記錄"
 
 #: app/templates/app/admin/object_history.html:22
 msgid "Date/time"
@@ -1648,9 +1750,18 @@ msgstr "日期/時間"
 msgid "Action"
 msgstr "動作"
 
-#: app/templates/app/admin/object_history.html:38
+#: app/templates/app/admin/object_history.html:49
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] ""
+
+#: app/templates/app/admin/object_history.html:52
+#, fuzzy
+#| msgid ""
+#| "This object doesn't have a change history. It probably wasn't added via "
+#| "this admin site."
 msgid ""
-"This object doesn't have a change history. It probably wasn't added via this "
+"This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr "此物件沒有變更歷史。它可能不是透過此管理介面新增的。"
 
@@ -1660,28 +1771,15 @@ msgid "Show all"
 msgstr "顯示全部"
 
 #: app/templates/app/admin/pagination.html:11
-#: app/templates/app/admin/submit_line.html:3
+#: app/templates/app/admin/submit_line.html:4
 msgid "Save"
 msgstr "儲存"
 
 #: app/templates/app/admin/popup_response.html:3
-msgid "Popup closing..."
+#, fuzzy
+#| msgid "Popup closing..."
+msgid "Popup closing…"
 msgstr "正在關閉彈出視窗..."
-
-#: app/templates/app/admin/related_widget_wrapper.html:8
-#, python-format
-msgid "Change selected %(model)s"
-msgstr "變更所選的 %(model)s"
-
-#: app/templates/app/admin/related_widget_wrapper.html:15
-#, python-format
-msgid "Add another %(model)s"
-msgstr "新增另一個 %(model)s"
-
-#: app/templates/app/admin/related_widget_wrapper.html:22
-#, python-format
-msgid "Delete selected %(model)s"
-msgstr "刪除所選的 %(model)s"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1698,17 +1796,28 @@ msgstr[0] "%(counter)s 個結果"
 msgid "%(full_result_count)s total"
 msgstr "共 %(full_result_count)s 個"
 
-#: app/templates/app/admin/submit_line.html:8
+#: app/templates/app/admin/submit_line.html:5
 msgid "Save as new"
 msgstr "另存為新項目"
 
-#: app/templates/app/admin/submit_line.html:9
+#: app/templates/app/admin/submit_line.html:6
 msgid "Save and add another"
 msgstr "儲存並新增另一個"
 
-#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/admin/submit_line.html:7
 msgid "Save and continue editing"
 msgstr "儲存並繼續編輯"
+
+#: app/templates/app/admin/submit_line.html:7
+#, fuzzy
+#| msgid "Save as new"
+msgid "Save and view"
+msgstr "另存為新項目"
+
+#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/dev_tools.html:9
+msgid "Close"
+msgstr "關閉"
 
 #: app/templates/app/dashboard.html:15 app/templates/app/dashboard.html:28
 #: app/templates/app/welcome.html:227
@@ -1768,10 +1877,6 @@ msgstr ""
 msgid "Developer Tools"
 msgstr "開發者工具"
 
-#: app/templates/app/dev_tools.html:9
-msgid "Close"
-msgstr "關閉"
-
 #: app/templates/app/dev_tools.html:14
 msgid "Current Locale:"
 msgstr "目前語系："
@@ -1822,7 +1927,7 @@ msgstr "登出"
 msgid "Dashboard"
 msgstr "控制台"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:38
+#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "處理節點"
 
@@ -1850,27 +1955,27 @@ msgstr "品牌"
 msgid "About"
 msgstr "關於"
 
-#: app/templates/app/processing_node.html:11 nodeodm/models.py:24
+#: app/templates/app/processing_node.html:11 nodeodm/models.py:23
 msgid "Hostname"
 msgstr "主機名稱"
 
-#: app/templates/app/processing_node.html:15 nodeodm/models.py:25
+#: app/templates/app/processing_node.html:15 nodeodm/models.py:24
 msgid "Port"
 msgstr "連接埠"
 
-#: app/templates/app/processing_node.html:19 nodeodm/models.py:26
+#: app/templates/app/processing_node.html:19 nodeodm/models.py:25
 msgid "API Version"
 msgstr "API 版本"
 
-#: app/templates/app/processing_node.html:23 nodeodm/models.py:34
+#: app/templates/app/processing_node.html:23 nodeodm/models.py:33
 msgid "Engine"
 msgstr "引擎"
 
-#: app/templates/app/processing_node.html:27 nodeodm/models.py:32
+#: app/templates/app/processing_node.html:27 nodeodm/models.py:31
 msgid "Engine Version"
 msgstr "引擎版本"
 
-#: app/templates/app/processing_node.html:31 nodeodm/models.py:28
+#: app/templates/app/processing_node.html:31 nodeodm/models.py:27
 msgid "Queue Count"
 msgstr "佇列數"
 
@@ -1878,7 +1983,7 @@ msgstr "佇列數"
 msgid "Max Images Limit"
 msgstr "最大影像數限制"
 
-#: app/templates/app/processing_node.html:43 nodeodm/models.py:27
+#: app/templates/app/processing_node.html:43 nodeodm/models.py:26
 msgid "Last Refreshed"
 msgstr "上次重新整理"
 
@@ -1985,6 +2090,10 @@ msgstr ""
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 
+#: app/translations/plugin_manifest_autogenerated.py:15
+msgid "Adds a mock button to the boundary option in the edit preset dialog"
+msgstr ""
+
 #: app/views/app.py:58
 msgid "First Project"
 msgstr "第一個專案"
@@ -2089,11 +2198,11 @@ msgstr "計算高程值需要數位地表模型（DSM）。"
 msgid "An orthophoto is required to compute temperature values."
 msgstr "計算溫度值需要正射影像。"
 
-#: coreplugins/contours/api.py:122
+#: coreplugins/contours/api.py:121
 msgid "No DSM layer is available."
 msgstr "沒有可用的 DSM 圖層。"
 
-#: coreplugins/contours/api.py:124
+#: coreplugins/contours/api.py:123
 msgid "No DTM layer is available."
 msgstr "沒有可用的 DTM 圖層。"
 
@@ -2181,7 +2290,7 @@ msgstr ""
 msgid "Lightning"
 msgstr "閃電"
 
-#: coreplugins/objdetect/api.py:58
+#: coreplugins/objdetect/api.py:57
 msgid "No orthophoto is available."
 msgstr "沒有可用的正射影像。"
 
@@ -2193,7 +2302,7 @@ msgstr "GCP 介面"
 msgid "Node Management"
 msgstr "節點管理"
 
-#: nodeodm/models.py:24
+#: nodeodm/models.py:23
 msgid ""
 "Hostname or IP address where the node is located (can be an internal "
 "hostname as well). If you are using Docker, this is never 127.0.0.1 or "
@@ -2204,63 +2313,91 @@ msgstr ""
 "填寫 127.0.0.1 或 localhost。請在 Linux 上執行 ifconfig 或檢查網路設定來找到"
 "主機的 IP 位址。"
 
-#: nodeodm/models.py:25
+#: nodeodm/models.py:24
 msgid "Port that connects to the node's API"
 msgstr "連接至節點 API 的連接埠"
 
-#: nodeodm/models.py:26
+#: nodeodm/models.py:25
 msgid "API version used by the node"
 msgstr "節點使用的 API 版本"
 
-#: nodeodm/models.py:27
+#: nodeodm/models.py:26
 msgid "When was the information about this node last retrieved?"
 msgstr "上次擷取此節點資訊的時間？"
 
-#: nodeodm/models.py:28
+#: nodeodm/models.py:27
 msgid ""
 "Number of tasks currently being processed by this node (as reported by the "
 "node itself)"
 msgstr "此節點目前正在處理的任務數量（由節點本身回報）"
 
-#: nodeodm/models.py:29
+#: nodeodm/models.py:28
 msgid "Available Options"
 msgstr "可用選項"
 
-#: nodeodm/models.py:29
+#: nodeodm/models.py:28
 msgid "Description of the options that can be used for processing"
 msgstr "可用於處理的選項描述"
 
-#: nodeodm/models.py:30
+#: nodeodm/models.py:29
 msgid "Token"
 msgstr "Token ( 代幣)"
 
-#: nodeodm/models.py:30
+#: nodeodm/models.py:29
 msgid ""
 "Token to use for authentication. If the node doesn't have authentication, "
 "you can leave this field blank."
 msgstr "用於驗證的Token。如果節點沒有設定驗證，您可以將此欄位留空。"
 
-#: nodeodm/models.py:31
+#: nodeodm/models.py:30
 msgid "Max Images"
 msgstr "最大影像數"
 
-#: nodeodm/models.py:31
+#: nodeodm/models.py:30
 msgid "Maximum number of images accepted by this node."
 msgstr "此節點可接受的最大影像數量。"
 
-#: nodeodm/models.py:32
+#: nodeodm/models.py:31
 msgid "Engine version used by the node."
 msgstr "此節點使用的引擎版本。"
 
-#: nodeodm/models.py:33
+#: nodeodm/models.py:32
 msgid ""
 "Optional label for this node. When set, this label will be shown instead of "
 "the hostname:port name."
 msgstr "此節點的選用標籤。設定後，將以此標籤取代顯示主機名稱:連接埠名稱。"
 
-#: nodeodm/models.py:34
+#: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "此節點使用的引擎。"
+
+#~ msgid "Enter a username and password."
+#~ msgstr "請輸入使用者名稱與密碼。"
+
+#~ msgid "Please correct the errors below."
+#~ msgstr "請更正以下錯誤。"
+
+#, python-format
+#~ msgid "Models in the %(name)s application"
+#~ msgstr "%(name)s 應用程式中的模型"
+
+#~ msgid "Add"
+#~ msgstr "新增"
+
+#~ msgid "You don't have permission to edit anything."
+#~ msgstr "您沒有權限編輯任何內容。"
+
+#, python-format
+#~ msgid "Change selected %(model)s"
+#~ msgstr "變更所選的 %(model)s"
+
+#, python-format
+#~ msgid "Add another %(model)s"
+#~ msgstr "新增另一個 %(model)s"
+
+#, python-format
+#~ msgid "Delete selected %(model)s"
+#~ msgstr "刪除所選的 %(model)s"
 
 #~ msgid "Upload and tile ODM assets with Cesium ion."
 #~ msgstr "使用 Cesium ion 上傳並切片 ODM 資產。"

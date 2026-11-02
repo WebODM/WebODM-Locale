@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-13 22:29+0000\n"
+"POT-Creation-Date: 2026-11-02 21:01+0000\n"
 "PO-Revision-Date: 2026-08-17 08:51+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/webodm/webodm/cs/"
@@ -19,47 +19,47 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "X-Generator: Weblate 2026.9.dev0\n"
 
-#: app/admin.py:112
+#: app/admin.py:104
 msgid "Cannot restore default logo"
 msgstr "Nelze obnovit výchozí logo"
 
-#: app/admin.py:126
+#: app/admin.py:118
 msgid "Restore Default"
 msgstr "Obnovit výchozí nastavení"
 
-#: app/admin.py:148
+#: app/admin.py:140
 msgid "Enter custom CSS"
 msgstr "Zadejte vlastní CSS"
 
-#: app/admin.py:149 app/models/theme.py:40
+#: app/admin.py:141 app/models/theme.py:40
 msgid "CSS"
 msgstr "CSS"
 
-#: app/admin.py:152
+#: app/admin.py:144
 msgid "HTML that will be displayed above site header"
 msgstr "HTML, které se zobrazí nad záhlavím webu"
 
-#: app/admin.py:153 app/models/theme.py:41
+#: app/admin.py:145 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "HTML (před záhlavím)"
 
-#: app/admin.py:156
+#: app/admin.py:148
 msgid "HTML that will be displayed after site header"
 msgstr "HTML, které se zobrazí za záhlavím webu"
 
-#: app/admin.py:157 app/models/theme.py:42
+#: app/admin.py:149 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "HTML (za záhlavím)"
 
-#: app/admin.py:160
+#: app/admin.py:152
 msgid "HTML that will be displayed after the body tag"
 msgstr "HTML, které se zobrazí za značkou body"
 
-#: app/admin.py:161 app/models/theme.py:43
+#: app/admin.py:153 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "HTML (za body)"
 
-#: app/admin.py:165
+#: app/admin.py:157
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -68,82 +68,115 @@ msgstr ""
 "HTML, které se zobrazí v zápatí. Můžete také použít speciální značky, "
 "například {ORGANIZATION} a {YEAR}."
 
-#: app/admin.py:166 app/models/theme.py:44
+#: app/admin.py:158 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "HTML (zápatí)"
 
-#: app/admin.py:226 app/models/project.py:29
+#: app/admin.py:218 app/models/project.py:29
 msgid "Description"
 msgstr "Popis"
 
-#: app/admin.py:232
+#: app/admin.py:224
 msgid "Version"
 msgstr "Verze"
 
-#: app/admin.py:238
+#: app/admin.py:230
 msgid "Author"
 msgstr "Autor"
 
-#: app/admin.py:280
+#: app/admin.py:272
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
 "Nutný restart. Restartujte prosím WebODM, abyste mohli povolit %(plugin)s"
 
-#: app/admin.py:283
+#: app/admin.py:275
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "Nelze povolit zásuvný modul %(plugin)s: %(message)s"
 
-#: app/admin.py:292
+#: app/admin.py:284
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
 msgstr ""
 "Nutný restart. Restartujte prosím WebODM, abyste zcela zakázali %(plugin)s"
 
-#: app/admin.py:295
+#: app/admin.py:287
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "Nelze zakázat zásuvný modul %(plugin)s: %(message)s"
 
-#: app/admin.py:304
+#: app/admin.py:296
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Nelze odstranit zásuvný modul %(plugin)s: %(message)s"
 
-#: app/admin.py:380
+#: app/admin.py:372
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
 
-#: app/admin.py:382
+#: app/admin.py:374
 #, fuzzy, python-format
 #| msgid "Plugin added successfully"
 msgid "%(plugin)s installed successfully"
 msgstr "Plugin byl úspěšně přidán"
 
-#: app/admin.py:386
+#: app/admin.py:378
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "Nelze načíst zásuvný modul: %(message)s"
 
-#: app/admin.py:395
+#: app/admin.py:387
 msgid "You need to upload a zip file"
 msgstr "Musíte nahrát soubor zip"
 
-#: app/admin.py:414
+#: app/admin.py:406
 msgid "Disable"
 msgstr "Vypnout"
 
-#: app/admin.py:417
+#: app/admin.py:409
 msgid "Enable"
 msgstr "Zapnout"
 
-#: app/admin.py:422
+#: app/admin.py:414
 msgid "Actions"
 msgstr "Akce"
+
+#: app/api/authentication.py:43
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid payload."
+msgstr "Neplatná akce"
+
+#: app/api/authentication.py:47
+#, fuzzy
+#| msgid "Invalid file type"
+msgid "Invalid signature."
+msgstr "Chybný typ souboru"
+
+#: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
+msgid "User account is disabled."
+msgstr "Uživatelský účet je deaktivován."
+
+#: app/api/authentication.py:61
+msgid "Invalid Authorization header. No credentials provided."
+msgstr ""
+
+#: app/api/authentication.py:63
+msgid ""
+"Invalid Authorization header. Credentials string should not contain spaces."
+msgstr ""
+
+#: app/api/authentication.py:73 app/api/jwt.py:67
+msgid "Signature has expired."
+msgstr ""
+
+#: app/api/authentication.py:75 app/api/jwt.py:69
+msgid "Error decoding signature."
+msgstr ""
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -309,23 +342,27 @@ msgstr "Teplota ve stupních Celsia."
 msgid "Temperature in Centikelvin degrees."
 msgstr "Teplota v centikelvinech."
 
-#: app/api/jwt.py:35 app/api/jwt.py:44
-msgid "User account is disabled."
-msgstr "Uživatelský účet je deaktivován."
-
-#: app/api/jwt.py:40
+#: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
 msgstr "Nelze se vydávat za jiného uživatele, uživatel není superuživatel."
 
-#: app/api/jwt.py:52 app/api/jwt.py:60
+#: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
 msgstr "Nelze se přihlásit s poskytnutými přihlašovacími údaji."
 
-#: app/api/jwt.py:62
+#: app/api/jwt.py:57
 msgid "Must include \"username\" and \"password\"."
 msgstr "Musí obsahovat „uživatelské jméno“ a „heslo“."
 
-#: app/api/media.py:72 app/api/tasks.py:315
+#: app/api/jwt.py:74
+msgid "orig_iat field is required."
+msgstr ""
+
+#: app/api/jwt.py:76
+msgid "Refresh has expired."
+msgstr ""
+
+#: app/api/media.py:72 app/api/tasks.py:323
 msgid "No files uploaded"
 msgstr "Nebyly nahrány žádné soubory"
 
@@ -427,161 +464,161 @@ msgstr "Nebyly nahrány žádné soubory"
 msgid "Invalid filename"
 msgstr "Chybný typ souboru"
 
-#: app/api/splats.py:86 app/api/tasks.py:922
+#: app/api/splats.py:86 app/api/tasks.py:928
 msgid "Invalid file type"
 msgstr "Chybný typ souboru"
 
-#: app/api/splats.py:169 app/api/tasks.py:583 app/api/tasks.py:587
-#: app/api/tasks.py:729 app/api/tasks.py:732 app/api/tasks.py:765
-#: app/api/tasks.py:1091
+#: app/api/splats.py:169 app/api/tasks.py:591 app/api/tasks.py:595
+#: app/api/tasks.py:735 app/api/tasks.py:738 app/api/tasks.py:771
+#: app/api/tasks.py:1097
 msgid "Asset does not exist"
 msgstr "Asset neexistuje"
 
-#: app/api/tasks.py:116
+#: app/api/tasks.py:115
 msgid "Cannot create task, processing node is not valid"
 msgstr "Nelze vytvořit úlohu, uzel zpracování není platný"
 
-#: app/api/tasks.py:293
+#: app/api/tasks.py:301
 msgid "You need to upload at least 1 file before commit"
 msgstr "Před odevzdáním je třeba nahrát alespoň 1 soubor"
 
-#: app/api/tasks.py:371
+#: app/api/tasks.py:379
 msgid "Cannot duplicate task"
 msgstr "Nelze duplikovat úlohu"
 
-#: app/api/tasks.py:388
+#: app/api/tasks.py:396
 msgid "Cannot create task, alignment task is not valid"
 msgstr "Nelze vytvořit úlohu, úloha zarovnání není platná"
 
-#: app/api/tasks.py:405
+#: app/api/tasks.py:413
 msgid "Cannot create task, you need at least 2 images"
 msgstr "Nelze vytvořit úlohu, potřebujete alespoň 2 obrázky"
 
-#: app/api/tasks.py:783 app/api/tasks.py:1003
+#: app/api/tasks.py:789 app/api/tasks.py:1009
 msgid "Imported Task"
 msgstr "Importovaná úloha"
 
-#: app/api/tasks.py:787 app/api/tasks.py:914
+#: app/api/tasks.py:793 app/api/tasks.py:920
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "Nelze vytvořit úlohu, je třeba nahrát 1 soubor"
 
-#: app/api/tasks.py:791
+#: app/api/tasks.py:797
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr "Nelze vytvořit úlohu, zadejte adresu URL nebo nahrajte 1 soubor."
 
-#: app/api/tasks.py:793
+#: app/api/tasks.py:799
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "Neplatné URL. Mysleli jste %(hint)s ?"
 
-#: app/api/tasks.py:898 app/api/tasks.py:901
+#: app/api/tasks.py:904 app/api/tasks.py:907
 msgid "Invalid uuid"
 msgstr "Neplatné uuid"
 
-#: app/api/tasks.py:933
+#: app/api/tasks.py:939
 msgid "Invalid file type (extension mismatch)"
 msgstr "Neplatný typ souboru (neshoda přípon)"
 
-#: app/api/tasks.py:957
+#: app/api/tasks.py:963
 msgid "Some parameters are not integers"
 msgstr "Některé parametry nejsou celá čísla"
 
-#: app/api/tasks.py:1016 app/api/tasks.py:1021
+#: app/api/tasks.py:1022 app/api/tasks.py:1027
 msgid "GeoTIFF must have a valid CRS"
 msgstr "GeoTIFF musí mít platný CRS"
 
-#: app/api/tasks.py:1023
+#: app/api/tasks.py:1029
 msgid "Elevation model must have at most 2 band"
 msgstr "Elevační model musí mít nejméně 2 pásma"
 
-#: app/api/tasks.py:1029
+#: app/api/tasks.py:1035
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr "Bodové mračno musí být platný soubor LAZ/LAS"
 
-#: app/api/tasks.py:1035
+#: app/api/tasks.py:1041
 msgid "Textured model must be a valid GLB file"
 msgstr "Texturovaný model musí být platný GLB soubor"
 
-#: app/api/tasks.py:1039
+#: app/api/tasks.py:1045
 msgid "No assets uploaded"
 msgstr "Nebyly nahrány žádné assety"
 
-#: app/api/tiler.py:364
+#: app/api/tiler.py:360
 msgid "Invalid boundaries parameter"
 msgstr "Neplatný parametr hranic"
 
-#: app/api/tiler.py:383
+#: app/api/tiler.py:379
 msgid "Invalid tile size parameter"
 msgstr "Nesprávný parametr velikosti dlaždice"
 
-#: app/api/tiler.py:414 app/api/tiler.py:494
+#: app/api/tiler.py:410 app/api/tiler.py:490
 msgid "Outside of bounds"
 msgstr "Mimo hranice"
 
-#: app/api/tiler.py:425
+#: app/api/tiler.py:421
 msgid "Invalid boundaries"
 msgstr "Neplatné hranice"
 
-#: app/api/tiler.py:500 app/api/tiler.py:628
+#: app/api/tiler.py:496 app/api/tiler.py:624
 msgid "Not a valid color_map value"
 msgstr "Není platná hodnota color_map"
 
-#: app/api/tiler.py:508
+#: app/api/tiler.py:504
 msgid "Invalid rescale value"
 msgstr "Neplatná hodnota změny měřítka"
 
-#: app/api/tiler.py:530
+#: app/api/tiler.py:526
 msgid "Invalid hillshade value"
 msgstr "Nesprávná hodnota stínu kopce"
 
-#: app/api/tiler.py:533
+#: app/api/tiler.py:529
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr ""
 "Nelze vypočítat odstín kopce u rastru bez nadmořské výšky (nalezeno více "
 "pásem)"
 
-#: app/api/tiler.py:557
+#: app/api/tiler.py:553
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
 "Nelze zpracovat dlaždici: byl poskytnut obrázek intenzity, ale nebyla "
 "vypočtena žádná data RGB."
 
-#: app/api/tiler.py:613 app/api/tiler.py:615
+#: app/api/tiler.py:609 app/api/tiler.py:611
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr "Nepodporovaný formát: %(value)s"
 
-#: app/api/tiler.py:634
+#: app/api/tiler.py:630
 #, python-format
 msgid "Invalid resample value: %(value)s"
 msgstr "Nesprávný přepočet měřítka: %(value)s"
 
-#: app/api/tiler.py:640
+#: app/api/tiler.py:636
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr "Neplatný kód EPSG: %(value)s"
 
-#: app/api/tiler.py:646 app/api/tiler.py:648
+#: app/api/tiler.py:642 app/api/tiler.py:644
 #, python-format
 msgid "Invalid PROJ string: %(value)s"
 msgstr "Neplatný řetězec PROJ: %(value)s"
 
-#: app/api/tiler.py:651
+#: app/api/tiler.py:647
 msgid "Both formula and bands parameters are required"
 msgstr "Jsou vyžadovány parametry vzorce i pásma"
 
-#: app/api/tiler.py:674
+#: app/api/tiler.py:670
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr "Nesprávná hodnota změny měřítka: %(value)s"
 
-#: app/api/tiler.py:682
+#: app/api/tiler.py:678
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr "Neplatná hodnota hillshade: %(value)s"
 
-#: app/api/tiler.py:693
+#: app/api/tiler.py:689
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Nelze použít epsg na negeoreferencované datové sadě"
 
@@ -594,7 +631,7 @@ msgid "URL"
 msgstr "URL"
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
-#: nodeodm/models.py:33
+#: nodeodm/models.py:32
 msgid "Label"
 msgstr "Visačka"
 
@@ -642,8 +679,8 @@ msgstr "Podkladové mapy"
 msgid "Plugin name"
 msgstr "Název zásuvného modulu"
 
-#: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:28
-#: app/models/task.py:248 app/models/theme.py:18
+#: app/models/plugin.py:5 app/models/preset.py:9 app/models/project.py:28
+#: app/models/task.py:246 app/models/theme.py:18
 msgid "Name"
 msgstr "Název"
 
@@ -663,77 +700,77 @@ msgstr "Zásuvný modul"
 msgid "Plugins"
 msgstr "Zásuvné moduly"
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Setting key"
 msgstr "Klíč nastavení"
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Key"
 msgstr "Klíč"
 
-#: app/models/plugin_datum.py:8
+#: app/models/plugin_datum.py:7
 msgid "The user this setting belongs to. If NULL, the setting is global."
 msgstr ""
 "Uživatel, kterému toto nastavení patří. Pokud je NULL, nastavení je globální."
 
-#: app/models/plugin_datum.py:8 app/templates/app/admin/object_history.html:23
+#: app/models/plugin_datum.py:7 app/templates/app/admin/object_history.html:23
 msgid "User"
 msgstr "Uživatel"
 
-#: app/models/plugin_datum.py:9
+#: app/models/plugin_datum.py:8
 msgid "Integer value"
 msgstr "Celočíselná hodnota"
 
-#: app/models/plugin_datum.py:10
+#: app/models/plugin_datum.py:9
 msgid "Float value"
 msgstr "Plovoucí hodnota"
 
-#: app/models/plugin_datum.py:11
+#: app/models/plugin_datum.py:10
 msgid "Bool value"
 msgstr "Bool hodnota"
 
-#: app/models/plugin_datum.py:12
+#: app/models/plugin_datum.py:11
 msgid "String value"
 msgstr "Hodnota řetězce"
 
-#: app/models/plugin_datum.py:13
+#: app/models/plugin_datum.py:12
 msgid "JSON value"
 msgstr "JSON hodnota"
 
-#: app/models/plugin_datum.py:19 app/models/plugin_datum.py:20
+#: app/models/plugin_datum.py:18 app/models/plugin_datum.py:19
 msgid "Plugin Datum"
 msgstr "Datum pluginu"
 
-#: app/models/preset.py:9
+#: app/models/preset.py:8
 msgid "The person who owns this preset"
 msgstr "Osoba, která vlastní tuto předvolbu"
 
-#: app/models/preset.py:9 app/models/project.py:27 app/models/redirect.py:9
+#: app/models/preset.py:8 app/models/project.py:27 app/models/redirect.py:9
 msgid "Owner"
 msgstr "Vlastník"
 
-#: app/models/preset.py:10
+#: app/models/preset.py:9
 msgid "A label used to describe the preset"
 msgstr "Označení sloužící k popisu předvolby"
 
-#: app/models/preset.py:11
+#: app/models/preset.py:10
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 "Možnosti definující tuto předvolbu (stejný formát jako v možnostech úlohy)."
 
-#: app/models/preset.py:11 app/models/task.py:254
+#: app/models/preset.py:10 app/models/task.py:252
 msgid "Options"
 msgstr "Možnosti"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Creation date"
 msgstr "Datum vytvoření"
 
-#: app/models/preset.py:13 app/models/project.py:30 app/models/task.py:262
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Created at"
 msgstr "Vytvořeno v"
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid ""
 "Whether this preset is available to every user in the system or just to its "
 "owner."
@@ -741,15 +778,15 @@ msgstr ""
 "Zda je tato předvolba dostupná všem uživatelům v systému, nebo pouze jejímu "
 "vlastníkovi."
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid "System"
 msgstr "Systém"
 
-#: app/models/preset.py:20
+#: app/models/preset.py:19
 msgid "Preset"
 msgstr "Předvolba"
 
-#: app/models/preset.py:21
+#: app/models/preset.py:20
 msgid "Presets"
 msgstr "Předvolby"
 
@@ -807,7 +844,7 @@ msgstr "Odstranění"
 msgid "Project tags"
 msgstr "Štítky projektu"
 
-#: app/models/project.py:32 app/models/task.py:288
+#: app/models/project.py:32 app/models/task.py:286
 msgid "Tags"
 msgstr "Štítky"
 
@@ -815,7 +852,7 @@ msgstr "Štítky"
 msgid "A flag indicating whether this project is available to the public"
 msgstr "Příznak označující, zda je tento projekt k dispozici veřejnosti"
 
-#: app/models/project.py:33 app/models/task.py:265
+#: app/models/project.py:33 app/models/task.py:263
 msgid "Public"
 msgstr "Veřejné"
 
@@ -823,7 +860,7 @@ msgstr "Veřejné"
 msgid "A flag indicating whether this public project can be edited"
 msgstr "Příznak označující, zda lze tento veřejný projekt upravovat"
 
-#: app/models/project.py:34 app/models/task.py:266
+#: app/models/project.py:34 app/models/task.py:264
 msgid "Public Edit"
 msgstr "Veřejná úprava"
 
@@ -835,12 +872,12 @@ msgstr "Veřejný identifikátor projektu"
 msgid "Public Id"
 msgstr "Veřejné ID"
 
-#: app/models/project.py:108 app/models/task.py:486
+#: app/models/project.py:108 app/models/task.py:484
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "Kopie %(task)s"
 
-#: app/models/project.py:141 app/models/task.py:247
+#: app/models/project.py:141 app/models/task.py:245
 msgid "Project"
 msgstr "Projekt"
 
@@ -917,27 +954,27 @@ msgstr "Aplikace"
 msgid "Settings"
 msgstr "Nastavení"
 
-#: app/models/task.py:244
+#: app/models/task.py:242
 msgid "Id"
 msgstr "Id"
 
-#: app/models/task.py:246
+#: app/models/task.py:244
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr "Identifikátor úlohy (vrácený rozhraním NodeODM API)"
 
-#: app/models/task.py:246
+#: app/models/task.py:244
 msgid "UUID"
 msgstr "UUID"
 
-#: app/models/task.py:247
+#: app/models/task.py:245
 msgid "Project that this task belongs to"
 msgstr "Projekt, ke kterému tento úkol patří"
 
-#: app/models/task.py:248
+#: app/models/task.py:246
 msgid "A label for the task"
 msgstr "Označení úkolu"
 
-#: app/models/task.py:249
+#: app/models/task.py:247
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
@@ -945,11 +982,11 @@ msgstr ""
 "Počet milisekund, které uplynuly od začátku této úlohy (-1 znamená, že "
 "nejsou k dispozici žádné informace)"
 
-#: app/models/task.py:249
+#: app/models/task.py:247
 msgid "Processing Time"
 msgstr "Čas zpracování"
 
-#: app/models/task.py:250
+#: app/models/task.py:248
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
@@ -957,11 +994,11 @@ msgstr ""
 "Zpracovatelský uzel přiřazený této úloze (nebo null, pokud tato úloha ještě "
 "nebyla přiřazena)"
 
-#: app/models/task.py:250 app/views/app.py:149 nodeodm/models.py:37
+#: app/models/task.py:248 app/views/app.py:149 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr "Zpracovatelský uzel"
 
-#: app/models/task.py:251
+#: app/models/task.py:249
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
@@ -969,63 +1006,63 @@ msgstr ""
 "Příznak určující, zda má být této úloze automaticky přiřazen zpracovatelský "
 "uzel"
 
-#: app/models/task.py:251
+#: app/models/task.py:249
 msgid "Auto Processing Node"
 msgstr "Uzel automatického zpracování"
 
-#: app/models/task.py:252
+#: app/models/task.py:250
 msgid "Current status of the task"
 msgstr "Aktuální stav úkolu"
 
-#: app/models/task.py:252
+#: app/models/task.py:250
 msgid "Status"
 msgstr "Status"
 
-#: app/models/task.py:253
+#: app/models/task.py:251
 msgid "The last processing error received"
 msgstr "Poslední přijatá chyba zpracování"
 
-#: app/models/task.py:253
+#: app/models/task.py:251
 msgid "Last Error"
 msgstr "Poslední chyba"
 
-#: app/models/task.py:254
+#: app/models/task.py:252
 msgid "Options that are being used to process this task"
 msgstr "Možnosti, které se používají pro zpracování této úlohy"
 
-#: app/models/task.py:255
+#: app/models/task.py:253
 msgid "List of available assets to download"
 msgstr "Seznam dostupných prostředků ke stažení"
 
-#: app/models/task.py:255
+#: app/models/task.py:253
 msgid "Available Assets"
 msgstr "Dostupné prostředky"
 
-#: app/models/task.py:257
+#: app/models/task.py:255
 msgid "Extent of the orthophoto"
 msgstr "Rozsah ortofotomapy"
 
-#: app/models/task.py:257
+#: app/models/task.py:255
 msgid "Orthophoto Extent"
 msgstr "Rozsah ortofotomapy"
 
-#: app/models/task.py:258
+#: app/models/task.py:256
 msgid "Extent of the DSM"
 msgstr "Rozsah DSM"
 
-#: app/models/task.py:258
+#: app/models/task.py:256
 msgid "DSM Extent"
 msgstr "Rozsah DSM"
 
-#: app/models/task.py:259
+#: app/models/task.py:257
 msgid "Extent of the DTM"
 msgstr "Rozsah DTM"
 
-#: app/models/task.py:259
+#: app/models/task.py:257
 msgid "DTM Extent"
 msgstr "Rozsah DTM"
 
-#: app/models/task.py:263
+#: app/models/task.py:261
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
@@ -1033,19 +1070,19 @@ msgstr ""
 "Požadovaná akce, která má být provedena v rámci úlohy. Vybranou akci provede "
 "pracovník při příští iteraci."
 
-#: app/models/task.py:263
+#: app/models/task.py:261
 msgid "Pending Action"
 msgstr "Očekávaná akce"
 
-#: app/models/task.py:265
+#: app/models/task.py:263
 msgid "A flag indicating whether this task is available to the public"
 msgstr "Příznak označující, zda je tato úloha dostupná veřejnosti"
 
-#: app/models/task.py:266
+#: app/models/task.py:264
 msgid "A flag indicating whether this public task can be edited"
 msgstr "Příznak označující, zda lze tuto veřejnou úlohu upravovat"
 
-#: app/models/task.py:268
+#: app/models/task.py:266
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
@@ -1054,11 +1091,11 @@ msgstr ""
 "Je-li nastavena na jinou hodnotu než -1, znamená to, že obrázky pro tuto "
 "úlohu byly / budou před zpracováním zmenšeny na zde zadanou velikost."
 
-#: app/models/task.py:268
+#: app/models/task.py:266
 msgid "Resize To"
 msgstr "Změnit velikost na"
 
-#: app/models/task.py:271
+#: app/models/task.py:269
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
@@ -1066,47 +1103,47 @@ msgstr ""
 "Hodnota mezi 0 a 1 udávající průběh nahrávání souborů této úlohy do "
 "zpracovatelského uzlu"
 
-#: app/models/task.py:272
+#: app/models/task.py:270
 msgid "Upload Progress"
 msgstr "Pokrok při nahrávání"
 
-#: app/models/task.py:275
+#: app/models/task.py:273
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr "Hodnota mezi 0 a 1 udávající průběh změny velikosti obrázků této úlohy"
 
-#: app/models/task.py:276
+#: app/models/task.py:274
 msgid "Resize Progress"
 msgstr "Průběh změny velikosti"
 
-#: app/models/task.py:279
+#: app/models/task.py:277
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr "Hodnota mezi 0 a 1 udávající průběh (odhadovaný) této úlohy"
 
-#: app/models/task.py:280
+#: app/models/task.py:278
 msgid "Running Progress"
 msgstr "Pokrok při běhu"
 
-#: app/models/task.py:282
+#: app/models/task.py:280
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr ""
 "Adresa URL, ze které je úloha importována (pouze pro importované úlohy)"
 
-#: app/models/task.py:282
+#: app/models/task.py:280
 msgid "Import URL"
 msgstr "Import URL"
 
-#: app/models/task.py:283
+#: app/models/task.py:281
 msgid "Number of images associated with this task"
 msgstr "Počet snímků spojených s tímto úkolem"
 
-#: app/models/task.py:283
+#: app/models/task.py:281
 msgid "Images Count"
 msgstr "Počet obrázků"
 
-#: app/models/task.py:284
+#: app/models/task.py:282
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
@@ -1114,11 +1151,11 @@ msgstr ""
 "Příznak označující, zda tato úloha v současné době čeká na odeslání "
 "informací nebo souborů, než bude zváženo její zpracování."
 
-#: app/models/task.py:284
+#: app/models/task.py:282
 msgid "Partial"
 msgstr "Částečně"
 
-#: app/models/task.py:285
+#: app/models/task.py:283
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
@@ -1126,15 +1163,15 @@ msgstr ""
 "Serializované informace o scéně potree sloužící k uložení/nahrání měření a "
 "úhlu pohledu kamery"
 
-#: app/models/task.py:285
+#: app/models/task.py:283
 msgid "Potree Scene"
 msgstr "Scéna Potree"
 
-#: app/models/task.py:286
+#: app/models/task.py:284
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "Kód EPSG datové sady (pokud je georeferencovaná)"
 
-#: app/models/task.py:287
+#: app/models/task.py:285
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
@@ -1142,84 +1179,84 @@ msgstr ""
 "Definice datového souboru podle WKT (pokud je georeferencovaný a kód EPSG "
 "není k dispozici)"
 
-#: app/models/task.py:288
+#: app/models/task.py:286
 msgid "Task tags"
 msgstr "Štítky úkolů"
 
-#: app/models/task.py:289
+#: app/models/task.py:287
 msgid "List of orthophoto bands"
 msgstr "Seznam ortofotografických pásem"
 
-#: app/models/task.py:289
+#: app/models/task.py:287
 msgid "Orthophoto Bands"
 msgstr "Pásma ortofotomapy"
 
-#: app/models/task.py:290
+#: app/models/task.py:288
 msgid "Size of the task on disk in megabytes"
 msgstr "Velikost úlohy na disku v megabajtech"
 
-#: app/models/task.py:290
+#: app/models/task.py:288
 msgid "Size"
 msgstr "Velikost"
 
-#: app/models/task.py:291
+#: app/models/task.py:289
 msgid "A flag indicating whether this task was compacted"
 msgstr "Příznak označující, zda byla tato úloha zhutněna"
 
-#: app/models/task.py:291
+#: app/models/task.py:289
 msgid "Compact"
 msgstr "Kompaktní"
 
-#: app/models/task.py:292
+#: app/models/task.py:290
 msgid "Polygon defining the crop area of this task"
 msgstr "Polygon vymezující plochu ořezu tohoto úkolu"
 
-#: app/models/task.py:292
+#: app/models/task.py:290
 msgid "Crop Polygon"
 msgstr "Polygon ořezu"
 
-#: app/models/task.py:293
+#: app/models/task.py:291
 msgid "List of media files associated with this task"
 msgstr "Seznam mediálních souborů spojených s touto úlohou"
 
-#: app/models/task.py:293
+#: app/models/task.py:291
 msgid "Media"
 msgstr "Média"
 
-#: app/models/task.py:297
+#: app/models/task.py:295
 msgid "Task"
 msgstr "Úkol"
 
-#: app/models/task.py:298
+#: app/models/task.py:296
 msgid "Tasks"
 msgstr "Úkoly"
 
-#: app/models/task.py:309
+#: app/models/task.py:307
 msgid "unnamed"
 msgstr "nejmenovaný"
 
-#: app/models/task.py:618
+#: app/models/task.py:616
 msgid "Importing assets..."
 msgstr "Importování assetu..."
 
-#: app/models/task.py:673 app/models/task.py:952
+#: app/models/task.py:671 app/models/task.py:950
 msgid "Invalid zip file"
 msgstr "Chybný soubor zip"
 
-#: app/models/task.py:675
+#: app/models/task.py:673
 msgid "Unsupported compression method"
 msgstr "Nepodporovaná metoda komprese"
 
-#: app/models/task.py:770
+#: app/models/task.py:768
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "Chyba spojení: %(error)s"
 
-#: app/models/task.py:850
+#: app/models/task.py:848
 msgid "Cannot restart a task that has no processing node"
 msgstr "Nelze restartovat úlohu, která nemá žádný zpracovatelský uzel"
 
-#: app/models/task.py:1055
+#: app/models/task.py:1053
 msgid "Done!"
 msgstr "Dokončeno!"
 
@@ -1347,7 +1384,11 @@ msgstr "500 Vnitřní chyba serveru"
 msgid "Something happened. The server logs contain more information."
 msgstr "Něco se stalo. Další informace jsou uvedeny v protokolech serveru."
 
-#: app/templates/app/about.html:13
+#: app/templates/app/about.html:25
+msgid "Minimize"
+msgstr ""
+
+#: app/templates/app/about.html:29
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1367,16 +1408,18 @@ msgid "Page not found"
 msgstr "Stránka nenalezena"
 
 #: app/templates/app/admin/404.html:10
-msgid "We're sorry, but the requested page could not be found."
+#, fuzzy
+#| msgid "We're sorry, but the requested page could not be found."
+msgid "We’re sorry, but the requested page could not be found."
 msgstr "Je nám líto, ale požadovanou stránku se nepodařilo najít."
 
-#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:9
-#: app/templates/app/admin/auth/user/change_password.html:13
+#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
+#: app/templates/app/admin/auth/user/change_password.html:15
 #: app/templates/app/admin/base.html:19
-#: app/templates/app/admin/change_form.html:18
-#: app/templates/app/admin/change_list.html:31
-#: app/templates/app/admin/delete_confirmation.html:13
-#: app/templates/app/admin/delete_selected_confirmation.html:13
+#: app/templates/app/admin/change_form.html:19
+#: app/templates/app/admin/change_list.html:33
+#: app/templates/app/admin/delete_confirmation.html:14
+#: app/templates/app/admin/delete_selected_confirmation.html:14
 #: app/templates/app/admin/invalid_setup.html:6
 #: app/templates/app/admin/object_history.html:6
 msgid "Home"
@@ -1391,73 +1434,108 @@ msgid "Server error (500)"
 msgstr "Chyba serveru (500)"
 
 #: app/templates/app/admin/500.html:14
-msgid "Server Error (500)"
+#, fuzzy
+#| msgid "Server Error (500)"
+msgid "Server Error <em>(500)</em>"
 msgstr "Chyba serveru (500)"
 
 #: app/templates/app/admin/500.html:15
+#, fuzzy
+#| msgid ""
+#| "There's been an error. It's been reported to the site administrators via "
+#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
-"There's been an error. It's been reported to the site administrators via "
+"There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
 "Došlo k chybě. Byla nahlášena správcům webu e-mailem a měla by být brzy "
 "opravena. Děkujeme za vaši trpělivost."
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
 msgstr "Spustit vybranou akci"
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Go"
 msgstr "Spustit"
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 msgid "Click here to select the objects across all pages"
 msgstr "Kliknutím sem vyberete objekty na všech stránkách"
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
 msgstr "Vybrat vše %(total_count)s %(module_name)s"
 
-#: app/templates/app/admin/actions.html:12
+#: app/templates/app/admin/actions.html:18
 msgid "Clear selection"
 msgstr "Vymazat výběr"
 
+#: app/templates/app/admin/app_index.html:8
+msgid "Breadcrumbs"
+msgstr ""
+
 #: app/templates/app/admin/auth/user/add_form.html:6
-msgid ""
-"First, enter a username and password. Then, you'll be able to edit more user "
-"options."
+#, fuzzy
+#| msgid ""
+#| "First, enter a username and password. Then, you'll be able to edit more "
+#| "user options."
+msgid "After you’ve created a user, you’ll be able to edit more user options."
 msgstr ""
 "Nejprve zadejte uživatelské jméno a heslo. Poté budete moci upravit další "
 "možnosti uživatele."
 
-#: app/templates/app/admin/auth/user/add_form.html:8
-msgid "Enter a username and password."
-msgstr "Zadejte uživatelské jméno a heslo."
+#: app/templates/app/admin/auth/user/change_password.html:5
+#: app/templates/app/admin/change_form.html:4
+#: app/templates/app/admin/change_list.html:4
+#: app/templates/app/admin/login.html:4
+#, fuzzy
+#| msgid "Last Error"
+msgid "Error:"
+msgstr "Poslední chyba"
 
-#: app/templates/app/admin/auth/user/change_password.html:17
-#: app/templates/app/admin/auth/user/change_password.html:54
+#: app/templates/app/admin/auth/user/change_password.html:19
+#: app/templates/app/admin/auth/user/change_password.html:71
 msgid "Change password"
 msgstr "Změnit heslo"
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
+#: app/templates/app/admin/auth/user/change_password.html:19
+#, fuzzy
+#| msgid "Change password"
+msgid "Set password"
+msgstr "Změnit heslo"
+
+#: app/templates/app/admin/auth/user/change_password.html:30
+#: app/templates/app/admin/change_form.html:44
+#: app/templates/app/admin/change_list.html:53
+#: app/templates/app/admin/login.html:24
+#, fuzzy
+#| msgid "Please correct the error below."
 msgid "Please correct the error below."
-msgstr "Opravte prosím níže uvedenou chybu."
+msgid_plural "Please correct the errors below."
+msgstr[0] "Opravte prosím níže uvedenou chybu."
+msgstr[1] "Opravte prosím níže uvedenou chybu."
+msgstr[2] "Opravte prosím níže uvedenou chybu."
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
-msgid "Please correct the errors below."
-msgstr "Opravte prosím níže uvedené chyby."
-
-#: app/templates/app/admin/auth/user/change_password.html:31
+#: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
 msgstr "Zadejte nové heslo pro uživatele <strong>%(username)s</strong>."
+
+#: app/templates/app/admin/auth/user/change_password.html:36
+msgid ""
+"This action will <strong>enable</strong> password-based authentication for "
+"this user."
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:72
+msgid "Disable password-based authentication"
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:74
+msgid "Enable password-based authentication"
+msgstr ""
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1467,26 +1545,30 @@ msgstr "Správce webu Django"
 msgid "Django administration"
 msgstr "Správa systému Django"
 
-#: app/templates/app/admin/change_form.html:21
-#: app/templates/app/admin/change_list.html:49
+#: app/templates/app/admin/change_form.html:22
 #, python-format
 msgid "Add %(name)s"
 msgstr "Přidat %(name)s"
 
-#: app/templates/app/admin/change_form.html:33
-#: app/templates/app/admin/object_history.html:10
-msgid "History"
-msgstr "Historie"
-
-#: app/templates/app/admin/change_form.html:35
-#: app/templates/app/admin/edit_inline/stacked.html:14
-#: app/templates/app/admin/edit_inline/tabular.html:36
-msgid "View on site"
-msgstr "Zobrazení na webu"
-
-#: app/templates/app/admin/change_list.html:69
+#: app/templates/app/admin/change_list.html:78
 msgid "Filter"
 msgstr "Filtr"
+
+#: app/templates/app/admin/change_list.html:81
+#, fuzzy
+#| msgid "Accounts"
+msgid "Hide counts"
+msgstr "Účty"
+
+#: app/templates/app/admin/change_list.html:82
+#, fuzzy
+#| msgid "Accounts"
+msgid "Show counts"
+msgstr "Účty"
+
+#: app/templates/app/admin/change_list.html:85
+msgid "Clear all filters"
+msgstr ""
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1496,27 +1578,26 @@ msgstr "Načíst plugin (.zip)"
 msgid "Manage Plugins"
 msgstr "Správa pluginů"
 
-#: app/templates/app/admin/change_list_results.html:17
+#: app/templates/app/admin/change_list_results.html:16
 msgid "Remove from sorting"
 msgstr "Odstranit z třídění"
 
-#: app/templates/app/admin/change_list_results.html:18
+#: app/templates/app/admin/change_list_results.html:17
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
 msgstr "Priorita řazení: %(priority_number)s"
 
-#: app/templates/app/admin/change_list_results.html:19
+#: app/templates/app/admin/change_list_results.html:18
 msgid "Toggle sorting"
 msgstr "Přepnout třídění"
 
-#: app/templates/app/admin/delete_confirmation.html:17
-#: app/templates/app/admin/related_widget_wrapper.html:23
-#: app/templates/app/admin/submit_line.html:6
+#: app/templates/app/admin/delete_confirmation.html:18
+#: app/templates/app/admin/submit_line.html:14
 #: app/templates/app/processing_node.html:54
 msgid "Delete"
 msgstr "Smazat"
 
-#: app/templates/app/admin/delete_confirmation.html:23
+#: app/templates/app/admin/delete_confirmation.html:25
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
@@ -1536,7 +1617,7 @@ msgstr ""
 "Odstranění %(object_name)s '%(escaped_object)s' by vyžadovalo odstranění "
 "následujících chráněných souvisejících objektů:"
 
-#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_confirmation.html:35
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
@@ -1545,26 +1626,28 @@ msgstr ""
 "Opravdu chcete odstranit %(object_name)s \"%(escaped_object)s\"? Budou "
 "odstraněny všechny následující související položky:"
 
-#: app/templates/app/admin/delete_confirmation.html:39
-#: app/templates/app/admin/delete_selected_confirmation.html:38
+#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_selected_confirmation.html:31
 msgid "Objects"
 msgstr "Objekty"
 
-#: app/templates/app/admin/delete_confirmation.html:46
-#: app/templates/app/admin/delete_selected_confirmation.html:49
-msgid "Yes, I'm sure"
+#: app/templates/app/admin/delete_confirmation.html:44
+#: app/templates/app/admin/delete_selected_confirmation.html:42
+#, fuzzy
+#| msgid "Yes, I'm sure"
+msgid "Yes, I’m sure"
 msgstr "Ano, jsem si jistý"
 
-#: app/templates/app/admin/delete_confirmation.html:47
-#: app/templates/app/admin/delete_selected_confirmation.html:50
+#: app/templates/app/admin/delete_confirmation.html:45
+#: app/templates/app/admin/delete_selected_confirmation.html:43
 msgid "No, take me back"
 msgstr "Ne, vrať mě zpátky"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:16
+#: app/templates/app/admin/delete_selected_confirmation.html:17
 msgid "Delete multiple objects"
 msgstr "Odstranit více objektů"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:22
+#: app/templates/app/admin/delete_selected_confirmation.html:23
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
@@ -1574,7 +1657,7 @@ msgstr ""
 "Odstranění vybraných %(objects_name)s by vedlo k odstranění souvisejících "
 "objektů, ale váš účet nemá oprávnění odstraňovat následující typy objektů:"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:29
+#: app/templates/app/admin/delete_selected_confirmation.html:26
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
@@ -1583,7 +1666,7 @@ msgstr ""
 "Odstranění vybraných %(objects_name)s by vyžadovalo odstranění následujících "
 "chráněných souvisejících objektů:"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:36
+#: app/templates/app/admin/delete_selected_confirmation.html:29
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
@@ -1592,18 +1675,26 @@ msgstr ""
 "Opravdu chcete odstranit vybrané %(objects_name)s? Budou odstraněny všechny "
 "následující objekty a s nimi související položky:"
 
-#: app/templates/app/admin/edit_inline/stacked.html:12
-#: app/templates/app/admin/edit_inline/tabular.html:34
-#: app/templates/app/admin/index.html:37
-#: app/templates/app/admin/related_widget_wrapper.html:9
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "Change"
 msgstr "Změnit"
 
-#: app/templates/app/admin/edit_inline/tabular.html:20
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
+msgid "View"
+msgstr ""
+
+#: app/templates/app/admin/edit_inline/stacked.html:22
+#: app/templates/app/admin/edit_inline/tabular.html:42
+msgid "View on site"
+msgstr "Zobrazení na webu"
+
+#: app/templates/app/admin/edit_inline/tabular.html:26
 msgid "Delete?"
 msgstr "Smazat?"
 
-#: app/templates/app/admin/filter.html:2
+#: app/templates/app/admin/filter.html:4
 #, python-format
 msgid " By %(filter_title)s "
 msgstr " Podle %(filter_title)s "
@@ -1612,39 +1703,46 @@ msgstr " Podle %(filter_title)s "
 msgid "Summary"
 msgstr "Shrnutí"
 
-#: app/templates/app/admin/index.html:20
-#, python-format
-msgid "Models in the %(name)s application"
-msgstr "Modely v aplikaci %(name)s"
-
-#: app/templates/app/admin/index.html:31
-#: app/templates/app/admin/related_widget_wrapper.html:16
-msgid "Add"
-msgstr "Přidat"
-
-#: app/templates/app/admin/index.html:47
-msgid "You don't have permission to edit anything."
-msgstr "Nemáte oprávnění cokoli upravovat."
-
-#: app/templates/app/admin/index.html:55
+#: app/templates/app/admin/index.html:23
 msgid "Recent actions"
 msgstr "Nedávné akce"
 
-#: app/templates/app/admin/index.html:56
+#: app/templates/app/admin/index.html:24
 msgid "My actions"
 msgstr "Moje akce"
 
-#: app/templates/app/admin/index.html:60
+#: app/templates/app/admin/index.html:28
 msgid "None available"
 msgstr "Nejsou k dispozici"
 
-#: app/templates/app/admin/index.html:74
+#: app/templates/app/admin/index.html:33
+msgid "Added:"
+msgstr ""
+
+#: app/templates/app/admin/index.html:33
+#, fuzzy
+#| msgid "Change"
+msgid "Changed:"
+msgstr "Změnit"
+
+#: app/templates/app/admin/index.html:33
+#, fuzzy
+#| msgid "Delete"
+msgid "Deleted:"
+msgstr "Smazat"
+
+#: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "Neznámý obsah"
 
 #: app/templates/app/admin/invalid_setup.html:12
+#, fuzzy
+#| msgid ""
+#| "Something's wrong with your database installation. Make sure the "
+#| "appropriate database tables have been created, and make sure the database "
+#| "is readable by the appropriate user."
 msgid ""
-"Something's wrong with your database installation. Make sure the appropriate "
+"Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
@@ -1652,7 +1750,7 @@ msgstr ""
 "příslušné databázové tabulky, a zkontrolujte, zda je databáze čitelná pro "
 "příslušného uživatele."
 
-#: app/templates/app/admin/login.html:37
+#: app/templates/app/admin/login.html:40
 #, python-format
 msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
@@ -1661,13 +1759,19 @@ msgstr ""
 "Jste ověřeni jako %(username)s, ale nemáte oprávnění k přístupu na tuto "
 "stránku. Chcete se přihlásit k jinému účtu?"
 
-#: app/templates/app/admin/login.html:57
-msgid "Forgotten your password or username?"
+#: app/templates/app/admin/login.html:60
+#, fuzzy
+#| msgid "Forgotten your password or username?"
+msgid "Forgotten your login credentials?"
 msgstr "Zapomněli jste heslo nebo uživatelské jméno?"
 
-#: app/templates/app/admin/login.html:61
+#: app/templates/app/admin/login.html:64
 msgid "Log in"
 msgstr "Přihlášení"
+
+#: app/templates/app/admin/object_history.html:10
+msgid "History"
+msgstr "Historie"
 
 #: app/templates/app/admin/object_history.html:22
 msgid "Date/time"
@@ -1677,9 +1781,20 @@ msgstr "Datum/čas"
 msgid "Action"
 msgstr "Akce"
 
-#: app/templates/app/admin/object_history.html:38
+#: app/templates/app/admin/object_history.html:49
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: app/templates/app/admin/object_history.html:52
+#, fuzzy
+#| msgid ""
+#| "This object doesn't have a change history. It probably wasn't added via "
+#| "this admin site."
 msgid ""
-"This object doesn't have a change history. It probably wasn't added via this "
+"This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
 "Tento objekt nemá historii změn. Pravděpodobně nebyl přidán prostřednictvím "
@@ -1691,28 +1806,15 @@ msgid "Show all"
 msgstr "Zobrazit vše"
 
 #: app/templates/app/admin/pagination.html:11
-#: app/templates/app/admin/submit_line.html:3
+#: app/templates/app/admin/submit_line.html:4
 msgid "Save"
 msgstr "Uložit"
 
 #: app/templates/app/admin/popup_response.html:3
-msgid "Popup closing..."
+#, fuzzy
+#| msgid "Popup closing..."
+msgid "Popup closing…"
 msgstr "Zavírání vyskakovacího okna..."
-
-#: app/templates/app/admin/related_widget_wrapper.html:8
-#, python-format
-msgid "Change selected %(model)s"
-msgstr "Změna vybraných %(model)s"
-
-#: app/templates/app/admin/related_widget_wrapper.html:15
-#, python-format
-msgid "Add another %(model)s"
-msgstr "Přidat další %(model)s"
-
-#: app/templates/app/admin/related_widget_wrapper.html:22
-#, python-format
-msgid "Delete selected %(model)s"
-msgstr "Odstranit vybrané %(model)s"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1731,17 +1833,28 @@ msgstr[2] "%(counter)s výsledků"
 msgid "%(full_result_count)s total"
 msgstr "%(full_result_count)s celkem"
 
-#: app/templates/app/admin/submit_line.html:8
+#: app/templates/app/admin/submit_line.html:5
 msgid "Save as new"
 msgstr "Uložit jako nový"
 
-#: app/templates/app/admin/submit_line.html:9
+#: app/templates/app/admin/submit_line.html:6
 msgid "Save and add another"
 msgstr "Uložit a přidat další"
 
-#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/admin/submit_line.html:7
 msgid "Save and continue editing"
 msgstr "Uložit a pokračovat v úpravách"
+
+#: app/templates/app/admin/submit_line.html:7
+#, fuzzy
+#| msgid "Save as new"
+msgid "Save and view"
+msgstr "Uložit jako nový"
+
+#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/dev_tools.html:9
+msgid "Close"
+msgstr "Zavřít"
 
 #: app/templates/app/dashboard.html:15 app/templates/app/dashboard.html:28
 #: app/templates/app/welcome.html:227
@@ -1804,10 +1917,6 @@ msgstr ""
 msgid "Developer Tools"
 msgstr "Vývojářské nástroje"
 
-#: app/templates/app/dev_tools.html:9
-msgid "Close"
-msgstr "Zavřít"
-
 #: app/templates/app/dev_tools.html:14
 msgid "Current Locale:"
 msgstr "Aktuální lokalizace:"
@@ -1858,7 +1967,7 @@ msgstr "Odhlášení"
 msgid "Dashboard"
 msgstr "Ovládací panel"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:38
+#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Zpracovatelské uzly"
 
@@ -1886,27 +1995,27 @@ msgstr "Značka"
 msgid "About"
 msgstr "O software"
 
-#: app/templates/app/processing_node.html:11 nodeodm/models.py:24
+#: app/templates/app/processing_node.html:11 nodeodm/models.py:23
 msgid "Hostname"
 msgstr "Název hostitele"
 
-#: app/templates/app/processing_node.html:15 nodeodm/models.py:25
+#: app/templates/app/processing_node.html:15 nodeodm/models.py:24
 msgid "Port"
 msgstr "Port"
 
-#: app/templates/app/processing_node.html:19 nodeodm/models.py:26
+#: app/templates/app/processing_node.html:19 nodeodm/models.py:25
 msgid "API Version"
 msgstr "API Verze"
 
-#: app/templates/app/processing_node.html:23 nodeodm/models.py:34
+#: app/templates/app/processing_node.html:23 nodeodm/models.py:33
 msgid "Engine"
 msgstr "Engine"
 
-#: app/templates/app/processing_node.html:27 nodeodm/models.py:32
+#: app/templates/app/processing_node.html:27 nodeodm/models.py:31
 msgid "Engine Version"
 msgstr "Verze Engine"
 
-#: app/templates/app/processing_node.html:31 nodeodm/models.py:28
+#: app/templates/app/processing_node.html:31 nodeodm/models.py:27
 msgid "Queue Count"
 msgstr "Počet front"
 
@@ -1914,7 +2023,7 @@ msgstr "Počet front"
 msgid "Max Images Limit"
 msgstr "Maximální limit obrázků"
 
-#: app/templates/app/processing_node.html:43 nodeodm/models.py:27
+#: app/templates/app/processing_node.html:43 nodeodm/models.py:26
 msgid "Last Refreshed"
 msgstr "Poslední aktualizace"
 
@@ -2024,6 +2133,10 @@ msgstr "Příklad pluginu pro vývoj"
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr "Plugin pro přidání tlačítka pro fotografování mapy nebo 3D modelu."
 
+#: app/translations/plugin_manifest_autogenerated.py:15
+msgid "Adds a mock button to the boundary option in the edit preset dialog"
+msgstr ""
+
 #: app/views/app.py:58
 msgid "First Project"
 msgstr "První projekt"
@@ -2131,11 +2244,11 @@ msgstr "K výpočtu hodnot nadmořské výšky je zapotřebí digitální model 
 msgid "An orthophoto is required to compute temperature values."
 msgstr "K výpočtu hodnot teploty je zapotřebí ortofoto."
 
-#: coreplugins/contours/api.py:122
+#: coreplugins/contours/api.py:121
 msgid "No DSM layer is available."
 msgstr "Vrstva DSM není k dispozici."
 
-#: coreplugins/contours/api.py:124
+#: coreplugins/contours/api.py:123
 msgid "No DTM layer is available."
 msgstr "Vrstva DTM není k dispozici."
 
@@ -2224,7 +2337,7 @@ msgstr "Ahoj světe"
 msgid "Lightning"
 msgstr "Lightning"
 
-#: coreplugins/objdetect/api.py:58
+#: coreplugins/objdetect/api.py:57
 msgid "No orthophoto is available."
 msgstr "Ortofotomapa není k dispozici."
 
@@ -2236,7 +2349,7 @@ msgstr "Rozhraní GCP"
 msgid "Node Management"
 msgstr "Správa uzlů"
 
-#: nodeodm/models.py:24
+#: nodeodm/models.py:23
 msgid ""
 "Hostname or IP address where the node is located (can be an internal "
 "hostname as well). If you are using Docker, this is never 127.0.0.1 or "
@@ -2248,19 +2361,19 @@ msgstr ""
 "nebo localhost. Adresu IP hostitelského počítače zjistíte spuštěním příkazu "
 "ifconfig v systému Linux nebo kontrolou nastavení sítě."
 
-#: nodeodm/models.py:25
+#: nodeodm/models.py:24
 msgid "Port that connects to the node's API"
 msgstr "Port, který se připojuje k rozhraní API uzlu"
 
-#: nodeodm/models.py:26
+#: nodeodm/models.py:25
 msgid "API version used by the node"
 msgstr "Verze API používaná uzlem"
 
-#: nodeodm/models.py:27
+#: nodeodm/models.py:26
 msgid "When was the information about this node last retrieved?"
 msgstr "Kdy byly naposledy načteny informace o tomto uzlu?"
 
-#: nodeodm/models.py:28
+#: nodeodm/models.py:27
 msgid ""
 "Number of tasks currently being processed by this node (as reported by the "
 "node itself)"
@@ -2268,19 +2381,19 @@ msgstr ""
 "Počet úloh, které tento uzel aktuálně zpracovává (podle hlášení samotného "
 "uzlu)"
 
-#: nodeodm/models.py:29
+#: nodeodm/models.py:28
 msgid "Available Options"
 msgstr "Dostupné možnosti"
 
-#: nodeodm/models.py:29
+#: nodeodm/models.py:28
 msgid "Description of the options that can be used for processing"
 msgstr "Popis možností, které lze použít pro zpracování"
 
-#: nodeodm/models.py:30
+#: nodeodm/models.py:29
 msgid "Token"
 msgstr "Token"
 
-#: nodeodm/models.py:30
+#: nodeodm/models.py:29
 msgid ""
 "Token to use for authentication. If the node doesn't have authentication, "
 "you can leave this field blank."
@@ -2288,19 +2401,19 @@ msgstr ""
 "Token, který se použije k ověření. Pokud uzel nemá autentizaci, můžete toto "
 "pole nechat prázdné."
 
-#: nodeodm/models.py:31
+#: nodeodm/models.py:30
 msgid "Max Images"
 msgstr "Max. obrázků"
 
-#: nodeodm/models.py:31
+#: nodeodm/models.py:30
 msgid "Maximum number of images accepted by this node."
 msgstr "Maximální počet obrázků přijatých tímto uzlem."
 
-#: nodeodm/models.py:32
+#: nodeodm/models.py:31
 msgid "Engine version used by the node."
 msgstr "Verze enginu používaná uzlem."
 
-#: nodeodm/models.py:33
+#: nodeodm/models.py:32
 msgid ""
 "Optional label for this node. When set, this label will be shown instead of "
 "the hostname:port name."
@@ -2308,9 +2421,37 @@ msgstr ""
 "Nepovinný štítek pro tento uzel. Pokud je nastaven, bude tento štítek "
 "zobrazen místo názvu hostitel:port."
 
-#: nodeodm/models.py:34
+#: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Engine používaný uzlem."
+
+#~ msgid "Enter a username and password."
+#~ msgstr "Zadejte uživatelské jméno a heslo."
+
+#~ msgid "Please correct the errors below."
+#~ msgstr "Opravte prosím níže uvedené chyby."
+
+#, python-format
+#~ msgid "Models in the %(name)s application"
+#~ msgstr "Modely v aplikaci %(name)s"
+
+#~ msgid "Add"
+#~ msgstr "Přidat"
+
+#~ msgid "You don't have permission to edit anything."
+#~ msgstr "Nemáte oprávnění cokoli upravovat."
+
+#, python-format
+#~ msgid "Change selected %(model)s"
+#~ msgstr "Změna vybraných %(model)s"
+
+#, python-format
+#~ msgid "Add another %(model)s"
+#~ msgstr "Přidat další %(model)s"
+
+#, python-format
+#~ msgid "Delete selected %(model)s"
+#~ msgstr "Odstranit vybrané %(model)s"
 
 #~ msgid "Upload and tile ODM assets with Cesium ion."
 #~ msgstr "Nahrávání a dlaždicové vykreslení assetů ODM s Cesium ion."

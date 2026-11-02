@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-13 22:29+0000\n"
+"POT-Creation-Date: 2026-11-02 21:01+0000\n"
 "PO-Revision-Date: 2026-03-05 19:48+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/webodm/react-ui/el/"
@@ -52,7 +52,7 @@ msgstr "Οι αλλαγές σας θα χαθούν. Είστε σίγουρο�
 #: app/static/app/js/MapView.jsx:127
 #: app/static/app/js/classes/AssetDownloads.js:46
 #: app/static/app/js/classes/PipelineSteps.js:47
-#: app/static/app/js/components/EditPresetDialog.jsx:95
+#: app/static/app/js/components/EditPresetDialog.jsx:96
 #: app/static/app/js/components/ImportExternalPanel.jsx:12
 #: app/static/app/js/components/Map.jsx:133
 msgid "Orthophoto"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
-#: app/static/app/js/components/EditPresetDialog.jsx:59
+#: app/static/app/js/components/EditPresetDialog.jsx:60
 #: app/static/app/js/components/ImportExternalPanel.jsx:15
 msgid "Point Cloud"
 msgstr "Νέφος σημείων"
@@ -242,8 +242,8 @@ msgstr ""
 #: app/static/app/js/components/ErrorMessage.jsx:34
 #: app/static/app/js/components/ImportExternalPanel.jsx:283
 #: app/static/app/js/components/ManageMediaDialog.jsx:599
-#: app/static/app/js/components/NewTaskPanel.jsx:247
-#: app/static/app/js/components/NewTaskPanel.jsx:254
+#: app/static/app/js/components/NewTaskPanel.jsx:252
+#: app/static/app/js/components/NewTaskPanel.jsx:259
 #: app/static/app/js/components/ProjectListItem.jsx:882
 #: app/static/app/js/components/ProjectListItem.jsx:895
 #: app/static/app/js/components/SplatsDialog.jsx:580
@@ -407,7 +407,7 @@ msgid "Load Dataset"
 msgstr "Φόρτωση συνόλου δεδομένων"
 
 #: app/static/app/js/classes/PipelineSteps.js:12
-#: app/static/app/js/components/EditPresetDialog.jsx:48
+#: app/static/app/js/components/EditPresetDialog.jsx:49
 msgid "Structure From Motion"
 msgstr "Δομή από κίνηση"
 
@@ -420,17 +420,17 @@ msgid "Point Filtering"
 msgstr "Φιλτράρισμα σημείων"
 
 #: app/static/app/js/classes/PipelineSteps.js:27
-#: app/static/app/js/components/EditPresetDialog.jsx:69
+#: app/static/app/js/components/EditPresetDialog.jsx:70
 msgid "Meshing"
 msgstr "Πλέξη"
 
 #: app/static/app/js/classes/PipelineSteps.js:32
-#: app/static/app/js/components/EditPresetDialog.jsx:77
+#: app/static/app/js/components/EditPresetDialog.jsx:78
 msgid "Texturing"
 msgstr "Υφοποίηση"
 
 #: app/static/app/js/classes/PipelineSteps.js:37
-#: app/static/app/js/components/EditPresetDialog.jsx:54
+#: app/static/app/js/components/EditPresetDialog.jsx:55
 msgid "Georeferencing"
 msgstr "Γεωαναφορά"
 
@@ -619,168 +619,168 @@ msgstr "Προσθήκη ετικετών"
 msgid "Add group"
 msgstr "Προσθήκη έργου"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:21
+#: app/static/app/js/components/EditPresetDialog.jsx:22
 #, fuzzy
 #| msgid "Start Processing"
 msgid "Input & Preprocessing"
 msgstr "Έναρξη επεξεργασίας"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:24
+#: app/static/app/js/components/EditPresetDialog.jsx:25
 #, fuzzy
 #| msgid "Camera Animation"
 msgid "Camera Configuration"
 msgstr "Κάμερα Animation"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:25
+#: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Masking"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:26
+#: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Multispectral"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:27
+#: app/static/app/js/components/EditPresetDialog.jsx:28
 msgid "Video Input"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:32
+#: app/static/app/js/components/EditPresetDialog.jsx:33
 msgid "Bounds & Cropping"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:35
+#: app/static/app/js/components/EditPresetDialog.jsx:36
 msgid "Boundary"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:40
+#: app/static/app/js/components/EditPresetDialog.jsx:41
 msgid "Coordinate Reference System"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:43
-#: app/static/app/js/components/EditTaskForm.jsx:625
+#: app/static/app/js/components/EditPresetDialog.jsx:44
+#: app/static/app/js/components/EditTaskForm.jsx:626
 #: app/static/app/js/components/SplatsDialog.jsx:454
 msgid "Options"
 msgstr "Επιλογές"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:51
+#: app/static/app/js/components/EditPresetDialog.jsx:52
 msgid "Feature Extraction"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:52
+#: app/static/app/js/components/EditPresetDialog.jsx:53
 msgid "Feature Matching"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:53
+#: app/static/app/js/components/EditPresetDialog.jsx:54
 #, fuzzy
 #| msgid "Reconstructed Points:"
 msgid "Reconstruction"
 msgstr "Ανακατασκευασμένα σημεία:"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:62
+#: app/static/app/js/components/EditPresetDialog.jsx:63
 #, fuzzy
 #| msgid "Elevation"
 msgid "Generation"
 msgstr "Ανύψωση"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:63
+#: app/static/app/js/components/EditPresetDialog.jsx:64
 #, fuzzy
 #| msgid "Filter"
 msgid "Filtering"
 msgstr "Φίλτρο"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:64
+#: app/static/app/js/components/EditPresetDialog.jsx:65
 #, fuzzy
 #| msgid "Processing"
 msgid "Post-Processing"
 msgstr "Επεξεργασία"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:72
+#: app/static/app/js/components/EditPresetDialog.jsx:73
 msgid "Mesh Generation"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:80
+#: app/static/app/js/components/EditPresetDialog.jsx:81
 #, fuzzy
 #| msgid "Texturing"
 msgid "Texture Options"
 msgstr "Υφοποίηση"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:85
+#: app/static/app/js/components/EditPresetDialog.jsx:86
 msgid "Digital Elevation Models"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:88
+#: app/static/app/js/components/EditPresetDialog.jsx:89
 #, fuzzy
 #| msgid "Task Output:"
 msgid "Outputs"
 msgstr "Έξοδος εργασιών:"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:89
+#: app/static/app/js/components/EditPresetDialog.jsx:90
 msgid "Resolution & Sampling"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:90
+#: app/static/app/js/components/EditPresetDialog.jsx:91
 #, fuzzy
 #| msgid "Classification filter"
 msgid "Ground Classification (SMRF)"
 msgstr "Φίλτρο ταξινόμησης"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:98
+#: app/static/app/js/components/EditPresetDialog.jsx:99
 #, fuzzy
 #| msgid "Orthophoto Cutline"
 msgid "Orthophoto Options"
 msgstr "Ορθοφωτογραμμή κοπής"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:103
+#: app/static/app/js/components/EditPresetDialog.jsx:104
 #, fuzzy
 #| msgid "Miles"
 msgid "Tiles"
 msgstr "Μίλια"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:106
+#: app/static/app/js/components/EditPresetDialog.jsx:107
 #, fuzzy
 #| msgid "Options"
 msgid "Tiles Options"
 msgstr "Επιλογές"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:111
+#: app/static/app/js/components/EditPresetDialog.jsx:112
 msgid "System & Pipeline Control"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:114
+#: app/static/app/js/components/EditPresetDialog.jsx:115
 msgid "Performance"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:115
+#: app/static/app/js/components/EditPresetDialog.jsx:116
 #, fuzzy
 #| msgid "Helicopter control"
 msgid "Pipeline Control"
 msgstr "Έλεγχος ελικοπτέρου"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:120
+#: app/static/app/js/components/EditPresetDialog.jsx:121
 msgid "Split/Merge"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:123
+#: app/static/app/js/components/EditPresetDialog.jsx:124
 msgid "Splitting"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:124
+#: app/static/app/js/components/EditPresetDialog.jsx:125
 msgid "Merging"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:471
+#: app/static/app/js/components/EditPresetDialog.jsx:519
 #, fuzzy
 #| msgid "Other settings"
 msgid "Other Options"
 msgstr "Άλλες ρυθμίσεις"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:508
-#: app/static/app/js/components/EditTaskForm.jsx:571
+#: app/static/app/js/components/EditPresetDialog.jsx:556
+#: app/static/app/js/components/EditTaskForm.jsx:572
 msgid "Edit Task Options"
 msgstr "Επεξεργασία επιλογών εργασίας"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:515
+#: app/static/app/js/components/EditPresetDialog.jsx:563
 #: app/static/app/js/components/EditProjectDialog.jsx:169
-#: app/static/app/js/components/EditTaskForm.jsx:656
+#: app/static/app/js/components/EditTaskForm.jsx:659
 #: app/static/app/js/components/Paginator.jsx:29
 #: app/static/app/js/components/ProjectListItem.jsx:62
 #: coreplugins/annotate/public/Popup.jsx:779
@@ -789,28 +789,28 @@ msgstr "Επεξεργασία επιλογών εργασίας"
 msgid "Name"
 msgstr "Όνομα"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:522
+#: app/static/app/js/components/EditPresetDialog.jsx:570
 #: app/static/app/js/components/Paginator.jsx:136
 msgid "Search"
 msgstr "Αναζήτηση"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:525
+#: app/static/app/js/components/EditPresetDialog.jsx:573
 msgid "Flat View"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:525
+#: app/static/app/js/components/EditPresetDialog.jsx:573
 msgid "Grouped View"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:529
+#: app/static/app/js/components/EditPresetDialog.jsx:577
 msgid "Expand"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:529
+#: app/static/app/js/components/EditPresetDialog.jsx:577
 msgid "Collapse"
 msgstr ""
 
-#: app/static/app/js/components/EditPresetDialog.jsx:539
+#: app/static/app/js/components/EditPresetDialog.jsx:587
 msgid "Search options..."
 msgstr ""
 
@@ -834,20 +834,20 @@ msgid "Cannot complete operation."
 msgstr "Δεν μπορεί να ολοκληρωθεί η λειτουργία."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:153
-#: app/static/app/js/components/EditTaskForm.jsx:604
+#: app/static/app/js/components/EditTaskForm.jsx:605
 #: app/static/app/js/components/Paginator.jsx:32
 #: app/static/app/js/components/ProjectListItem.jsx:65
 msgid "Tags"
 msgstr "Ετικέτες"
 
 #: app/static/app/js/components/EditProjectDialog.jsx:165
-#: app/static/app/js/components/EditTaskForm.jsx:585
+#: app/static/app/js/components/EditTaskForm.jsx:586
 #: app/static/app/js/components/TaskListItem.jsx:873
 msgid "Duplicate"
 msgstr "Διπλασιασμός"
 
 #: app/static/app/js/components/EditProjectDialog.jsx:172
-#: app/static/app/js/components/EditTaskForm.jsx:667
+#: app/static/app/js/components/EditTaskForm.jsx:670
 msgid "Add tags"
 msgstr "Προσθήκη ετικετών"
 
@@ -855,22 +855,22 @@ msgstr "Προσθήκη ετικετών"
 msgid "Description (optional)"
 msgstr "Περιγραφή (προαιρετική)"
 
-#: app/static/app/js/components/EditTaskForm.jsx:115
+#: app/static/app/js/components/EditTaskForm.jsx:116
 msgid ""
 "Could not load list of processing nodes. Are you connected to the internet?"
 msgstr ""
 "Δεν ήταν δυνατή η φόρτωση λίστας κόμβων επεξεργασίας. Είστε συνδεδεμένοι στο "
 "διαδίκτυο;"
 
-#: app/static/app/js/components/EditTaskForm.jsx:123
+#: app/static/app/js/components/EditTaskForm.jsx:124
 msgid "We tried to reach:"
 msgstr "Προσπαθήσαμε να επικοινωνήσουμε:"
 
-#: app/static/app/js/components/EditTaskForm.jsx:124
+#: app/static/app/js/components/EditTaskForm.jsx:125
 msgid "There are no usable processing nodes."
 msgstr "Δεν υπάρχουν χρησιμοποιήσιμοι κόμβοι επεξεργασίας."
 
-#: app/static/app/js/components/EditTaskForm.jsx:124
+#: app/static/app/js/components/EditTaskForm.jsx:125
 msgid ""
 "Make sure that at least one processing node is reachable and that you have "
 "granted the current user sufficient permissions to view the processing node "
@@ -887,14 +887,14 @@ msgstr ""
 "Εάν επαναφέρετε έναν κόμβο σε λειτουργία, θα χρειαστούν περίπου 30 "
 "δευτερόλεπτα για να τον αναγνωρίσει το WebODM."
 
-#: app/static/app/js/components/EditTaskForm.jsx:223
+#: app/static/app/js/components/EditTaskForm.jsx:224
 msgid "Could not load list of presets. Are you connected to the internet?"
 msgstr ""
 "Δεν μπόρεσε να φορτώσει τη λίστα των προεπιλογών. Είστε συνδεδεμένοι στο "
 "διαδίκτυο;"
 
-#: app/static/app/js/components/EditTaskForm.jsx:232
-#: app/static/app/js/components/EditTaskForm.jsx:423
+#: app/static/app/js/components/EditTaskForm.jsx:233
+#: app/static/app/js/components/EditTaskForm.jsx:424
 #: app/static/app/js/components/ExportAssetPanel.jsx:240
 #: app/static/app/js/components/ExportAssetPanel.jsx:241
 #: app/static/app/js/components/Map.jsx:812
@@ -906,27 +906,27 @@ msgstr ""
 msgid "Custom"
 msgstr "Προσαρμοσμένο"
 
-#: app/static/app/js/components/EditTaskForm.jsx:239
-#: app/static/app/js/components/EditTaskForm.jsx:391
+#: app/static/app/js/components/EditTaskForm.jsx:240
+#: app/static/app/js/components/EditTaskForm.jsx:392
 msgid "Default"
 msgstr "Προεπιλεγμένη τιμή"
 
-#: app/static/app/js/components/EditTaskForm.jsx:476
+#: app/static/app/js/components/EditTaskForm.jsx:477
 msgid "My Preset"
 msgstr "Η Προεπιλογή μου"
 
-#: app/static/app/js/components/EditTaskForm.jsx:476
+#: app/static/app/js/components/EditTaskForm.jsx:477
 #, python-format
 msgid "Copy of %(preset)s"
 msgstr "Αντιγραφή των %(preset)s"
 
-#: app/static/app/js/components/EditTaskForm.jsx:499
+#: app/static/app/js/components/EditTaskForm.jsx:500
 msgid "Could not duplicate the preset. Please try to refresh the page."
 msgstr ""
 "Δεν μπόρεσε να αντιγράψει την προεπιλογή. Προσπαθήστε να ανανεώσετε τη "
 "σελίδα."
 
-#: app/static/app/js/components/EditTaskForm.jsx:508
+#: app/static/app/js/components/EditTaskForm.jsx:509
 msgid ""
 "System presets can only be removed by a staff member from the Administration "
 "panel."
@@ -934,22 +934,22 @@ msgstr ""
 "Οι προεπιλογές συστήματος μπορούν να αφαιρεθούν μόνο από ένα μέλος του "
 "προσωπικού από τον πίνακα διαχείρισης."
 
-#: app/static/app/js/components/EditTaskForm.jsx:512
+#: app/static/app/js/components/EditTaskForm.jsx:513
 #, python-format
 msgid "Are you sure you want to delete \"%(preset)s\"?"
 msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε το \"%(preset)s\";"
 
-#: app/static/app/js/components/EditTaskForm.jsx:525
+#: app/static/app/js/components/EditTaskForm.jsx:526
 msgid "Could not delete the preset. Please try to refresh the page."
 msgstr ""
 "Δεν μπόρεσε να διαγράψει την προεπιλογή. Προσπαθήστε να ανανεώσετε τη σελίδα."
 
-#: app/static/app/js/components/EditTaskForm.jsx:549
+#: app/static/app/js/components/EditTaskForm.jsx:550
 msgid "Retry"
 msgstr "Επανάληψη"
 
-#: app/static/app/js/components/EditTaskForm.jsx:572
-#: app/static/app/js/components/EditTaskForm.jsx:579
+#: app/static/app/js/components/EditTaskForm.jsx:573
+#: app/static/app/js/components/EditTaskForm.jsx:580
 #: app/static/app/js/components/ManageMediaDialog.jsx:496
 #: app/static/app/js/components/ProjectListItem.jsx:866
 #: app/static/app/js/components/TaskListItem.jsx:614
@@ -958,14 +958,14 @@ msgstr "Επανάληψη"
 msgid "Edit"
 msgstr "Επεξεργασία"
 
-#: app/static/app/js/components/EditTaskForm.jsx:589
+#: app/static/app/js/components/EditTaskForm.jsx:590
 #: app/static/app/js/components/EditTaskPanel.jsx:82
 #: app/static/app/js/components/FormDialog.jsx:11
 #: coreplugins/annotate/public/Popup.jsx:1007
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#: app/static/app/js/components/EditTaskForm.jsx:593
+#: app/static/app/js/components/EditTaskForm.jsx:594
 #: app/static/app/js/components/FormDialog.jsx:180
 #: app/static/app/js/components/LayersControlAnnotations.jsx:73
 #: app/static/app/js/components/LayersControlAnnotations.jsx:151
@@ -982,12 +982,12 @@ msgstr "Αποθήκευση"
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: app/static/app/js/components/EditTaskForm.jsx:615
+#: app/static/app/js/components/EditTaskForm.jsx:616
 #: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Processing Node"
 msgstr "Κόμβος επεξεργασίας"
 
-#: app/static/app/js/components/EditTaskForm.jsx:649
+#: app/static/app/js/components/EditTaskForm.jsx:652
 msgid "Loading processing nodes and presets..."
 msgstr "Φόρτωση κόμβων επεξεργασίας και προεπιλογών..."
 
@@ -999,8 +999,8 @@ msgstr ""
 #: app/static/app/js/components/EditTaskPanel.jsx:75
 #: app/static/app/js/components/FormDialog.jsx:207
 #: app/static/app/js/components/ManageMediaDialog.jsx:421
-#: app/static/app/js/components/NewTaskPanel.jsx:266
-#: app/static/app/js/components/NewTaskPanel.jsx:351
+#: app/static/app/js/components/NewTaskPanel.jsx:271
+#: app/static/app/js/components/NewTaskPanel.jsx:357
 #: app/static/app/js/components/SplatsDialog.jsx:536
 #: app/static/app/js/components/TaskListItem.jsx:590
 #: app/static/app/js/components/TaskListItem.jsx:854
@@ -1259,7 +1259,7 @@ msgid "Bands:"
 msgstr "Ζώνες:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:429
-#: app/static/app/js/components/NewTaskPanel.jsx:296
+#: app/static/app/js/components/NewTaskPanel.jsx:302
 msgid "Automatic"
 msgstr "Αυτόματο"
 
@@ -1327,7 +1327,7 @@ msgid "Overlays"
 msgstr ""
 
 #: app/static/app/js/components/LayersControlPanel.jsx:42
-#: app/static/app/js/components/NewTaskPanel.jsx:353
+#: app/static/app/js/components/NewTaskPanel.jsx:359
 #: coreplugins/contours/public/ContoursPanel.jsx:312
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:186
 msgid "Loading…"
@@ -1527,7 +1527,7 @@ msgid "Cannot convert %(file)s"
 msgstr "Δεν είναι δυνατή η διαγραφή εργασίας."
 
 #: app/static/app/js/components/Map.jsx:1734
-#: app/static/app/js/components/NewTaskPanel.jsx:296
+#: app/static/app/js/components/NewTaskPanel.jsx:302
 #: app/static/app/js/components/TaskList.jsx:143
 msgid "Loading..."
 msgstr "Φόρτωση..."
@@ -1596,21 +1596,21 @@ msgstr "Έργο"
 msgid "Are you sure you want to cancel?"
 msgstr "Είστε βέβαιοι ότι θέλετε να ακυρώσετε?"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:234
+#: app/static/app/js/components/NewTaskPanel.jsx:239
 #, python-format
 msgid "%(count)s files selected."
 msgstr "Επιλέχθηκαν %(count)s αρχεία."
 
-#: app/static/app/js/components/NewTaskPanel.jsx:237
+#: app/static/app/js/components/NewTaskPanel.jsx:242
 #, python-format
 msgid "%(count)s files and GCP file (%(name)s) selected."
 msgstr "Επιλέχθηκαν %(count)s αρχεία και αρχείο GCP (%(name)s)."
 
-#: app/static/app/js/components/NewTaskPanel.jsx:244
+#: app/static/app/js/components/NewTaskPanel.jsx:249
 msgid "Please check these additional options:"
 msgstr "Ελέγξτε αυτές τις πρόσθετες επιλογές:"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:248
+#: app/static/app/js/components/NewTaskPanel.jsx:253
 msgid ""
 "Did you forget any images? When images exceed 1000, they are often stored "
 "inside multiple folders on the SD card."
@@ -1618,7 +1618,7 @@ msgstr ""
 "Ξεχάσατε κάποια εικόνα; Όταν οι εικόνες υπερβαίνουν τις 1000, συχνά "
 "αποθηκεύονται σε πολλούς φακέλους στην κάρτα SD."
 
-#: app/static/app/js/components/NewTaskPanel.jsx:255
+#: app/static/app/js/components/NewTaskPanel.jsx:260
 #, python-format
 msgid ""
 "Whoops! It looks like your GCP file is not formatted properly: %(errors)s "
@@ -1627,11 +1627,11 @@ msgstr ""
 "Ωχ! Φαίνεται ότι το αρχείο GCP σας δεν έχει μορφοποιηθεί σωστά: %(errors)s "
 "Δείτε το %(link)s για πληροφορίες σχετικά με τη μορφή αρχείου GCP"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:256
+#: app/static/app/js/components/NewTaskPanel.jsx:261
 msgid "GCP File"
 msgstr "Αρχείο GCP"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:264
+#: app/static/app/js/components/NewTaskPanel.jsx:269
 #, python-format
 msgid ""
 "Number of files selected exceeds the maximum of %(count)s allowed on this "
@@ -1640,26 +1640,26 @@ msgstr ""
 "Ο αριθμός των επιλεγμένων αρχείων υπερβαίνει το μέγιστο επιτρεπόμενο όριο "
 "%(count)s σε αυτόν τον κόμβο επεξεργασίας."
 
-#: app/static/app/js/components/NewTaskPanel.jsx:293
+#: app/static/app/js/components/NewTaskPanel.jsx:299
 #: app/static/app/js/components/TaskListItem.jsx:487
 msgid "Alignment"
 msgstr "Ευθυγράμμιση"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:309
+#: app/static/app/js/components/NewTaskPanel.jsx:315
 #: app/static/app/js/components/SplatsDialog.jsx:461
 msgid "Resize Images"
 msgstr "Αλλαγή μεγέθους εικόνων"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:333
+#: app/static/app/js/components/NewTaskPanel.jsx:339
 #: app/static/app/js/components/SplatsDialog.jsx:484
 msgid "px"
 msgstr "px"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:355
+#: app/static/app/js/components/NewTaskPanel.jsx:361
 msgid "Review"
 msgstr "Ανασκόπηση"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:355
+#: app/static/app/js/components/NewTaskPanel.jsx:361
 #: app/static/app/js/components/TaskListItem.jsx:622
 msgid "Start Processing"
 msgstr "Έναρξη επεξεργασίας"
@@ -1701,16 +1701,16 @@ msgstr "Αποτελέσματα αναζήτησης για:"
 msgid "You might run out of memory if you use this option."
 msgstr "Μπορεί να εξαντληθεί η μνήμη αν χρησιμοποιήσετε αυτή την επιλογή."
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:155
+#: app/static/app/js/components/ProcessingNodeOption.jsx:166
 #: app/static/app/js/translations/potree_autogenerated.js:63
 msgid "Enable"
 msgstr "Ενεργοποίηση"
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:164
+#: app/static/app/js/components/ProcessingNodeOption.jsx:175
 msgid "Click to import a JSON file"
 msgstr "Κάντε κλικ για να εισαγάγετε ένα αρχείο JSON"
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:185
+#: app/static/app/js/components/ProcessingNodeOption.jsx:196
 msgid "Reset to default"
 msgstr "Επαναφορά στις προεπιλογές"
 
@@ -2354,145 +2354,73 @@ msgstr ""
 #: app/static/app/js/translations/odm_autogenerated.js:4
 #, python-format
 msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
 msgstr ""
-"Δημιουργία OBJ που έχουν ένα μόνο υλικό και ένα μόνο αρχείο υφής αντί για "
-"πολλαπλά. Προεπιλογή: %(default)s"
+"Χρησιμοποιήστε αυτήν την ετικέτα εάν έχετε ένα αρχείο GCP αλλά θέλετε να "
+"χρησιμοποιήσετε τις πληροφορίες EXIF για γεωαναφορά. Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
-msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"Ορίστε τη συμπίεση που θα χρησιμοποιείται για τις ορθοφωτογραφίες. Μπορεί να "
-"είναι ένα από τα εξής: %(choices)s. Προεπιλογή: %(default)s"
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr "Δημιουργία εξόδων OGC 3D πλακιδίων. Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:6
 #, python-format
 msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
 msgstr ""
-"Μην επιχειρήσετε να συγχωνεύσετε μερικές ανακατασκευές. Αυτό μπορεί να "
-"συμβεί όταν οι εικόνες δεν έχουν επαρκή επικάλυψη ή είναι απομονωμένες. "
+"Ανάλυση ορθοφωτογραφίας σε cm / pixel. Σημειώστε ότι αυτή η τιμή "
+"περιορίζεται από μια εκτίμηση της απόστασης δειγματοληψίας εδάφους (GSD)."
 "Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
 msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
 msgstr ""
-"Φιλτράρει το νέφος σημείων κρατώντας μόνο ένα σημείο γύρω από μια ακτίνα N "
-"(σε μέτρα). Αυτό μπορεί να είναι χρήσιμο για τον περιορισμό της ανάλυσης "
-"εξόδου του νέφους σημείων και την αφαίρεση των διπλών σημείων. Ορίστε την "
-"τιμή 0 για να απενεργοποιήσετε τη δειγματοληψία. Προεπιλογή: %(default)s"
+"Παρακάμψτε το χρόνο ανάγνωσης του κυλιόμενου κλείστρου για τον αισθητήρα της "
+"κάμεράς σας (σε χιλιοστά του δευτερολέπτου), αντί να χρησιμοποιείτε τη βάση "
+"δεδομένων ανάγνωσης κυλιόμενου κλείστρου. Σημειώστε ότι δεν υπάρχουν όλες οι "
+"κάμερες στη βάση δεδομένων. Ορίστε την τιμή 0 για να χρησιμοποιήσετε την "
+"τιμή της βάσης δεδομένων. Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
-msgid "Copy output results to this folder after processing."
+#, python-format
+msgid ""
+"Set point cloud quality. Higher quality generates better, denser point "
+"clouds, but requires more memory and takes longer. Each step up in quality "
+"increases processing time roughly by a factor of 4x.Can be one of: "
+"%(choices)s. Default: %(default)s"
 msgstr ""
-"Αντιγράψτε τα αποτελέσματα εξόδου σε αυτόν το φάκελο μετά την επεξεργασία."
+"Ποιότητα νέφους σημείου ρύθμισης. Η υψηλότερη ποιότητα παράγει καλύτερα, "
+"πυκνότερα νέφη σημείων, αλλά απαιτεί περισσότερη μνήμη και διαρκεί "
+"περισσότερο. Κάθε βήμα στην ποιότητα αυξάνει το χρόνο επεξεργασίας περίπου "
+"κατά έναν παράγοντα 4x.Μπορεί να είναι ένα από τα εξής:%(choices)s. "
+"Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
 msgid ""
-"Set the radiometric calibration to perform on images. When processing "
-"multispectral and thermal images you should set this option to obtain "
-"reflectance/temperature values (otherwise you will get digital number "
-"values). [camera] applies black level, vignetting, row gradient gain/"
-"exposure compensation (if appropriate EXIF tags are found) and computes "
-"absolute temperature values. [camera+sun] is experimental, applies all the "
-"corrections of [camera], plus compensates for spectral radiance registered "
-"via a downwelling light sensor (DLS) taking in consideration the angle of "
-"the sun. Can be one of: %(choices)s. Default: %(default)s"
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
 msgstr ""
-"Ορίστε τη ραδιομετρική βαθμονόμηση που θα εκτελείται στις εικόνες. Κατά την "
-"επεξεργασία πολυφασματικών και θερμικών εικόνων θα πρέπει να ορίσετε αυτή "
-"την επιλογή για να λάβετε τιμές ανάκλασης/θερμοκρασίας (διαφορετικά θα "
-"λάβετε τιμές ψηφιακών αριθμών). [κάμερα] εφαρμόζει αντιστάθμιση μαύρου "
-"επιπέδου, βινιετοποίησης, αντιστάθμιση κέρδους/έκθεσης κλίσης σειράς (εάν "
-"βρεθούν οι κατάλληλες ετικέτες EXIF) και υπολογίζει απόλυτες τιμές "
-"θερμοκρασίας. Το [κάμερα+ήλιος] είναι πειραματικό, εφαρμόζει όλες τις "
-"διορθώσεις του [κάμερα] και επιπλέον αντισταθμίζει τη φασματική ακτινοβολία "
-"που καταγράφεται μέσω ενός αισθητήρα καθοδικού φωτός (DLS), λαμβάνοντας "
-"υπόψη τη γωνία του ήλιου. Μπορεί να είναι ένα από τα εξής:%(choices)s. "
-"Προεπιλογή: %(default)s"
+"Απλό μορφολογικό φίλτρο κλιμακωτή παράμετρος ανύψωσης. Προεπιλογή: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:10
 #, python-format
 msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"The maximum output resolution of extracted video frames in pixels. Default: "
 "%(default)s"
 msgstr ""
-"Ο μέγιστος αριθμός διεργασιών που θα χρησιμοποιηθούν σε διάφορες διεργασίες. "
-"Η μέγιστη απαίτηση μνήμης είναι ~1GB ανά νήμα και ανάλυση εικόνας 2 "
-"megapixel. Προεπιλογή: %(default)s"
+"Η μέγιστη ανάλυση εξόδου των εξαγόμενων καρέ βίντεο σε pixel. Προεπιλογή: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
-"%(default)s"
-msgstr ""
-"Μέσος αριθμός εικόνων ανά υπομοντέλο. Κατά τον διαχωρισμό ενός μεγάλου "
-"συνόλου δεδομένων σε μικρότερα υποδείγματα, οι εικόνες ομαδοποιούνται σε "
-"ομάδες. Αυτή η τιμή ρυθμίζει τον αριθμό των εικόνων που θα πρέπει να έχει "
-"κατά μέσο όρο κάθε συστάδα. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-#, python-format
-msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"Ορίστε έναν τύπο προβολής κάμερας. Η χειροκίνητη ρύθμιση μιας τιμής μπορεί "
-"να βοηθήσει στη βελτίωση της γεωμετρικής αναπαραμόρφωσης. Από προεπιλογή, η "
-"εφαρμογή προσπαθεί να καθορίσει έναν τύπο φακού από τα μεταδεδομένα των "
-"εικόνων. Μπορεί να είναι ένα από τα εξής:%(choices)s. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
-msgstr ""
-"Παραλείψτε τη δημιουργία ενός πλήρους τρισδιάστατου μοντέλου. Αυτό μπορεί να "
-"εξοικονομήσει χρόνο εάν χρειάζεστε μόνο 2D αποτελέσματα, όπως "
-"ορθοφωτογραφίες και DEM. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:14
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
-msgstr ""
-"Εξαγωγή του νέφους σημείων με γεωαναφορά σε μορφή CSV. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:15
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr ""
-"Ο μέγιστος αριθμός κορυφών του πλέγματος εξόδου. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:16
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
-msgstr ""
-"Αυτόματος υπολογισμός μάσκας εικόνας με χρήση AI για την αφαίρεση του "
-"φόντου. Πειραματικά. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:17
 #, python-format
 msgid ""
 "Turn off camera parameter optimization during bundle adjustment. This can be "
@@ -2504,135 +2432,71 @@ msgstr ""
 "των αποτελεσμάτων που παρουσιάζουν θόλωση / καμπύλωση ή όταν οι εικόνες "
 "λαμβάνονται με κάμερα με κυλιόμενο κλείστρο. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:18
+#: app/static/app/js/translations/odm_autogenerated.js:12
 #, python-format
 msgid ""
-"Radius of the overlap between submodels in meters. After grouping images "
-"into clusters, images that are closer than this radius to a cluster are "
-"added to the cluster. This is done to ensure that neighboring submodels "
-"overlap. All imagesneed GPS information. Default: %(default)s"
+"Simple Morphological Filter window radius parameter (meters). Default: "
+"%(default)s"
 msgstr ""
-"Ακτίνα της επικάλυψης μεταξύ υπομοντέλων σε μέτρα. Μετά την ομαδοποίηση των "
-"εικόνων σε συστάδες, οι εικόνες που βρίσκονται πιο κοντά σε αυτήν την ακτίνα "
-"σε μια συστάδα προστίθενται στη συστάδα. Αυτό γίνεται για να διασφαλιστεί "
-"ότι τα γειτονικά υπομοντέλα επικαλύπτονται. Όλες οι εικόνες χρειάζονται "
-"πληροφορίες GPS. Προεπιλογή: %(default)s"
+"Παράμετρος ακτίνας παραθύρου απλού μορφολογικού φίλτρου (Mέτρα). Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:13
+#, fuzzy, python-format
+#| msgid ""
+#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+#| "Default: %(default)s"
+msgid ""
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"Ορίστε τη συμπίεση που θα χρησιμοποιείται για τις ορθοφωτογραφίες. Μπορεί να "
+"είναι ένα από τα εξής: %(choices)s. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Delete heavy intermediate files to optimize disk space usage. This affects "
+"the ability to restart the pipeline from an intermediate stage, but allows "
+"datasets to be processed on machines that don't have sufficient disk space "
+"available. Default: %(default)s"
+msgstr ""
+"Διαγράψτε βαριά ενδιάμεσα αρχεία για να βελτιστοποιήσετε τη χρήση του χώρου "
+"στο δίσκο. Αυτό επηρεάζει τη δυνατότητα επανεκκίνησης του αγωγού από ένα "
+"ενδιάμεσο στάδιο, αλλά επιτρέπει την επεξεργασία συνόλων δεδομένων σε "
+"μηχανήματα που δεν διαθέτουν επαρκή χώρο στο δίσκο. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:15
+#, python-format
+msgid ""
+"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
+msgstr ""
+"Διατηρήστε τα πρόσωπα στο πλέγμα που δεν φαίνονται σε καμία κάμερα. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:16
+msgid "Displays version number and exits. "
+msgstr "Εμφανίζει τον αριθμό έκδοσης και εξέρχεται. "
+
+#: app/static/app/js/translations/odm_autogenerated.js:17
+#, python-format
+msgid ""
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
+msgstr ""
+"Επιλέξτε τον αλγόριθμο για την εξαγωγή των βασικών σημείων και τον "
+"υπολογιζόμενο περιγραφέα. Μπορεί να είναι ένας από τους εξής:%(choices)s. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:18
+msgid ""
+"Permanently delete all previous results and rerun the processing pipeline."
+msgstr ""
+"Διαγράψτε μόνιμα όλα τα προηγούμενα αποτελέσματα και επανεκτελέστε τον αγωγό "
+"επεξεργασίας."
 
 #: app/static/app/js/translations/odm_autogenerated.js:19
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
-msgstr ""
-"Ορίστε αυτή την παράμετρο αν θέλετε ένα ριγέ GeoTIFF. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:20
-#, python-format
-msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
-msgstr ""
-"Ταξινόμηση των εξόδων του νέφους σημείων. Μπορείτε να ελέγξετε τη "
-"συμπεριφορά αυτής της επιλογής ρυθμίζοντας τις παραμέτρους --dem-*. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
-msgstr ""
-"Διαδρομή προς το αρχείο ομάδων εικόνων που ελέγχει τον τρόπο με τον οποίο οι "
-"εικόνες θα πρέπει να χωρίζονται σε ομάδες. Το αρχείο πρέπει να έχει την "
-"ακόλουθη μορφή:onoma_eikonas onoma_group Default: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
-#, python-format
-msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
-msgstr ""
-"Παράλειψη ευθυγράμμισης υπομοντέλων στη συγχώνευση διαχωρισμού. Χρήσιμο εάν "
-"το GPS είναι αρκετά καλό σε πολύ μεγάλα σύνολα δεδομένων. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate.Default: %(default)s"
-msgstr ""
-"Ανάλυση ορθοφωτογραφίας σε cm / pixel. Σημειώστε ότι αυτή η τιμή "
-"περιορίζεται από μια εκτίμηση της απόστασης δειγματοληψίας εδάφους (GSD)."
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
-msgstr ""
-"Απλό μορφολογικό φίλτρο κλιμακωτή παράμετρος ανύψωσης. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:25
-#, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
-msgstr ""
-"Ανάλυση DSM/DTM σε cm/px. Σημειώστε ότι η τιμή αυτή καλύπτεται από μια "
-"εκτίμηση της απόστασης δειγματοληψίας εδάφους (GSD). Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:26
-#, python-format
-msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
-msgstr ""
-"Βάθος Octree που χρησιμοποιείται στην ανακατασκευή του πλέγματος, αυξήστε το "
-"για να λάβετε περισσότερες κορυφές, οι συνιστώμενες τιμές είναι 8-12. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:27
-#, python-format
-msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
-msgstr ""
-"Διεύθυνση URL σε μια περίπτωση ClusterODM για την παράλληλη διανομή μιας "
-"ροής εργασίας διαχωρισμού-συγχώνευσης σε πολλούς κόμβους. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:28
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
-msgstr ""
-"Διαδρομή προς το αρχείο γεωεντοπισμού της εικόνας που περιέχει τις "
-"συντεταγμένες του κέντρου της κάμερας που χρησιμοποιούνται για τη "
-"γεωαναφορά. Αν δεν έχετε τιμές για yaw/pitch/roll, μπορείτε να τις ορίσετε "
-"στο 0. Το αρχείο πρέπει να έχει την ακόλουθη μορφή: EPSG:<code> η<+proj "
-"definition>image_name geo_x geo_y geo_z [yaw (μοίρες)] [pitch (μοίρες)] "
-"[roll (μοίρες)] [horz accuracy (meters)] [vert accuracy (meters)]Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
-"simple morphological filter. Check the --dem* and --smrf* parameters for "
-"finer tuning. Default: %(default)s"
-msgstr ""
-"Χρησιμοποιήστε αυτή την ετικέτα για να δημιουργήσετε ένα DTM (Ψηφιακό "
-"μοντέλο εδάφους, αποκλειστικά εδάφους) χρησιμοποιώντας ένα απλό μορφολογικό "
-"φίλτρο. Ελέγξτε τις παραμέτρους --dem* και --smrf* για λεπτομερέστερη "
-"ρύθμιση. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
 #, python-format
 msgid ""
 "Perform image matching with the nearest N images based on image filename "
@@ -2646,28 +2510,7 @@ msgstr ""
 "Εφαρμόζεται μόνο σε σύνολα δεδομένων χωρίς γεωαναφορά. Ορίστε την τιμή 0 για "
 "απενεργοποίηση. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"Simple Morphological Filter window radius parameter (meters). Default: "
-"%(default)s"
-msgstr ""
-"Παράμετρος ακτίνας παραθύρου απλού μορφολογικού φίλτρου (Mέτρα). Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Specify the distance between camera shot locations and the outer edge of the "
-"boundary when computing the boundary with --auto-boundary. Set to 0 to "
-"automatically choose a value. Default: %(default)s"
-msgstr ""
-"Καθορίστε την απόσταση μεταξύ των θέσεων λήψης της κάμερας και του "
-"εξωτερικού άκρου του ορίου όταν υπολογίζετε το όριο με την επιλογή --auto-"
-"boundary. Ορίστε την τιμή 0 για να επιλέξετε αυτόματα μια τιμή. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
+#: app/static/app/js/translations/odm_autogenerated.js:20
 #, python-format
 msgid ""
 "Skip normalization of colors across all images. Useful when processing "
@@ -2676,27 +2519,28 @@ msgstr ""
 "Παραλείψτε την κανονικοποίηση των χρωμάτων σε όλες τις εικόνες. Χρήσιμο κατά "
 "την επεξεργασία ραδιομετρικών δεδομένων. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:34
+#: app/static/app/js/translations/odm_autogenerated.js:21
 #, python-format
 msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
+"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
+"simple morphological filter. Check the --dem* and --smrf* parameters for "
+"finer tuning. Default: %(default)s"
 msgstr ""
-"Αποθηκεύστε το νέφος σημείων με γεωαναφορά σε μορφή βελτιστοποιημένου νέφους "
-"σημείων (COPC). Προεπιλογή: %(default)s"
+"Χρησιμοποιήστε αυτή την ετικέτα για να δημιουργήσετε ένα DTM (Ψηφιακό "
+"μοντέλο εδάφους, αποκλειστικά εδάφους) χρησιμοποιώντας ένα απλό μορφολογικό "
+"φίλτρο. Ελέγξτε τις παραμέτρους --dem* και --smrf* για λεπτομερέστερη "
+"ρύθμιση. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:35
+#: app/static/app/js/translations/odm_autogenerated.js:22
 #, python-format
 msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"Name of dataset (i.e subfolder name within project folder). Default: "
 "%(default)s"
 msgstr ""
-"Φιλτράρει το νέφος σημείων αφαιρώντας τα σημεία που αποκλίνουν περισσότερο "
-"από Ν τυπικές αποκλίσεις από τον τοπικό μέσο όρο. Ορίστε την τιμή 0 για να "
-"απενεργοποιήσετε το φιλτράρισμα. Προεπιλογή: %(default)s"
+"Όνομα του συνόλου δεδομένων (π.χ. όνομα υποφακέλου εντός του φακέλου του "
+"έργου). Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:36
+#: app/static/app/js/translations/odm_autogenerated.js:23
 #, fuzzy, python-format
 #| msgid ""
 #| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
@@ -2721,109 +2565,7 @@ msgstr ""
 "επιλογής μπορεί μερικές φορές να βοηθήσει στον έλεγχο των φαινομένων "
 "κύρτωσης σε μεγάλες περιοχές. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:37
-#, fuzzy, python-format
-#| msgid ""
-#| "Choose the structure from motion algorithm. For aerial datasets, if "
-#| "camera GPS positions and angles are available, triangulation can generate "
-#| "better results. For planar scenes captured at fixed altitude with nadir-"
-#| "only images, planar can be much faster. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
-msgid ""
-"Choose the structure from motion algorithm. For aerial datasets, if camera "
-"GPS positions and angles are available, triangulation can be faster. Planar "
-"is deprecated and will be removed in a future version. Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-"Επιλέξτε τη δομή από τον αλγόριθμο κίνησης. Για σύνολα δεδομένων από αέρος, "
-"εάν είναι διαθέσιμες οι θέσεις και οι γωνίες GPS της κάμερας, ο τριγωνισμός "
-"μπορεί να παράγει καλύτερα αποτελέσματα. Για επίπεδες σκηνές που έχουν "
-"καταγραφεί σε σταθερό ύψος με εικόνες μόνο από το ναδίρ, η επίπεδη μπορεί να "
-"είναι πολύ πιο γρήγορη. Μπορεί να είναι ένα από τα εξής: %(choices)s. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:38
-#, python-format
-msgid ""
-"Perform image matching with the nearest images based on GPS exif data. Set "
-"to 0 to match by triangulation. Default: %(default)s"
-msgstr ""
-"Πραγματοποιήστε αντιστοίχιση εικόνων με τις πλησιέστερες εικόνες με βάση τα "
-"δεδομένα exif του GPS. Ορίστε την τιμή 0 για αντιστοίχιση με τριγωνισμό. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:39
-#, python-format
-msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"Ορίστε την ποιότητα εξαγωγής χαρακτηριστικών. Η υψηλότερη ποιότητα παράγει "
-"καλύτερα χαρακτηριστικά, αλλά απαιτεί περισσότερη μνήμη και διαρκεί "
-"περισσότερο. Μπορεί να είναι ένα από τα εξής: %(choices)s. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:40
-#, python-format
-msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
-msgstr ""
-"Παρακάμψτε το χρόνο ανάγνωσης του κυλιόμενου κλείστρου για τον αισθητήρα της "
-"κάμεράς σας (σε χιλιοστά του δευτερολέπτου), αντί να χρησιμοποιείτε τη βάση "
-"δεδομένων ανάγνωσης κυλιόμενου κλείστρου. Σημειώστε ότι δεν υπάρχουν όλες οι "
-"κάμερες στη βάση δεδομένων. Ορίστε την τιμή 0 για να χρησιμοποιήσετε την "
-"τιμή της βάσης δεδομένων. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:41
-#, python-format
-msgid ""
-"Delete heavy intermediate files to optimize disk space usage. This affects "
-"the ability to restart the pipeline from an intermediate stage, but allows "
-"datasets to be processed on machines that don't have sufficient disk space "
-"available. Default: %(default)s"
-msgstr ""
-"Διαγράψτε βαριά ενδιάμεσα αρχεία για να βελτιστοποιήσετε τη χρήση του χώρου "
-"στο δίσκο. Αυτό επηρεάζει τη δυνατότητα επανεκκίνησης του αγωγού από ένα "
-"ενδιάμεσο στάδιο, αλλά επιτρέπει την επεξεργασία συνόλων δεδομένων σε "
-"μηχανήματα που δεν διαθέτουν επαρκή χώρο στο δίσκο. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:42
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr ""
-"Δημιουργία μοντέλων με υφή σε ένα αρχείο δυαδικού glTF (GLB). Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:43
-#, python-format
-msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
-"%(default)s"
-msgstr ""
-"Δημιουργία GeoTIFFs βελτιστοποιημένου νέφους αντί για κανονικά GeoTIFFs. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:44
-msgid "Displays version number and exits. "
-msgstr "Εμφανίζει τον αριθμό έκδοσης και εξέρχεται. "
-
-#: app/static/app/js/translations/odm_autogenerated.js:45
-#, python-format
-msgid ""
-"Run local bundle adjustment for every image added to the reconstruction and "
-"a global adjustment every 100 images. Speeds up reconstruction for very "
-"large datasets. Default: %(default)s"
-msgstr ""
-"Εκτελέστε τοπική προσαρμογή δέσμης για κάθε εικόνα που προστίθεται στην "
-"ανακατασκευή και μια συνολική προσαρμογή κάθε 100 εικόνες. Επιταχύνει την "
-"ανακατασκευή για πολύ μεγάλα σύνολα δεδομένων. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:46
+#: app/static/app/js/translations/odm_autogenerated.js:24
 #, python-format
 msgid ""
 "Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
@@ -2845,87 +2587,154 @@ msgstr ""
 "το χρειάζεστε, και ακόμα και τότε: μην το χρησιμοποιείτε. Προεπιλογή: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:47
+#: app/static/app/js/translations/odm_autogenerated.js:25
 #, python-format
 msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
 "%(default)s"
 msgstr ""
-"Επαναλάβετε μόνο αυτό το στάδιο και σταματήστε. Μπορεί να είναι ένα από τα "
-"εξής: %(choices)s. Προεπιλογή: %(default)s"
+"Φιλτράρει το νέφος σημείων κρατώντας μόνο ένα σημείο γύρω από μια ακτίνα N "
+"(σε μέτρα). Αυτό μπορεί να είναι χρήσιμο για τον περιορισμό της ανάλυσης "
+"εξόδου του νέφους σημείων και την αφαίρεση των διπλών σημείων. Ορίστε την "
+"τιμή 0 για να απενεργοποιήσετε τη δειγματοληψία. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:48
+#: app/static/app/js/translations/odm_autogenerated.js:26
 #, python-format
 msgid ""
-"Decimate the points before generating the DEM. 1 is no decimation (full "
-"quality). 100 decimates ~99%% of the points. Useful for speeding up "
-"generation of DEM results in very large datasets. Default: %(default)s"
+"Specify the distance between camera shot locations and the outer edge of the "
+"boundary when computing the boundary with --auto-boundary. Set to 0 to "
+"automatically choose a value. Default: %(default)s"
 msgstr ""
-"Αποδεκατισμός των σημείων πριν από τη δημιουργία του DEM. Το 1 δεν είναι "
-"αποδεκατισμός (πλήρης ποιότητα). Το 100 αποκομματικοποιεί το ~99%% των "
-"σημείων. Χρήσιμο για την επιτάχυνση της δημιουργίας αποτελεσμάτων DEM σε "
-"πολύ μεγάλα σύνολα δεδομένων. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-"Εξαγωγή του νέφους σημείων με γεωαναφορά σε μορφή LAS. Προεπιλογή: "
+"Καθορίστε την απόσταση μεταξύ των θέσεων λήψης της κάμερας και του "
+"εξωτερικού άκρου του ορίου όταν υπολογίζετε το όριο με την επιλογή --auto-"
+"boundary. Ορίστε την τιμή 0 για να επιλέξετε αυτόματα μια τιμή. Προεπιλογή: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:50
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
-msgid ""
-"Set the units of the PDF report. By default the vertical units of the "
-"coordinate reference system are used. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"Ορίστε τη συμπίεση που θα χρησιμοποιείται για τις ορθοφωτογραφίες. Μπορεί να "
-"είναι ένα από τα εξής: %(choices)s. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
+#: app/static/app/js/translations/odm_autogenerated.js:27
 #, python-format
 msgid ""
-"Set point cloud quality. Higher quality generates better, denser point "
-"clouds, but requires more memory and takes longer. Each step up in quality "
-"increases processing time roughly by a factor of 4x.Can be one of: "
-"%(choices)s. Default: %(default)s"
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
 msgstr ""
-"Ποιότητα νέφους σημείου ρύθμισης. Η υψηλότερη ποιότητα παράγει καλύτερα, "
-"πυκνότερα νέφη σημείων, αλλά απαιτεί περισσότερη μνήμη και διαρκεί "
-"περισσότερο. Κάθε βήμα στην ποιότητα αυξάνει το χρόνο επεξεργασίας περίπου "
-"κατά έναν παράγοντα 4x.Μπορεί να είναι ένα από τα εξής:%(choices)s. "
+"Ορίστε αυτόματα ένα όριο χρησιμοποιώντας τις θέσεις λήψης της κάμερας για να "
+"περιορίσετε την περιοχή της ανακατασκευής. Αυτό μπορεί να βοηθήσει στην "
+"αφαίρεση μακρινών αντικειμένων φόντου (ουρανός, τοπία φόντου κ.λπ.). Βλέπε "
+"επίσης --boundary. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:28
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgstr ""
+"Εξαγωγή του νέφους σημείων με γεωαναφορά σε μορφή CSV. Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:29
+#, python-format
+msgid ""
+"Octree depth used in the mesh reconstruction, increase to get more vertices, "
+"recommended values are 8-12. Default: %(default)s"
+msgstr ""
+"Βάθος Octree που χρησιμοποιείται στην ανακατασκευή του πλέγματος, αυξήστε το "
+"για να λάβετε περισσότερες κορυφές, οι συνιστώμενες τιμές είναι 8-12. "
 "Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:52
+#: app/static/app/js/translations/odm_autogenerated.js:30
 #, python-format
 msgid ""
-"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
-"filling. Starting with a radius equal to the output resolution, N different "
-"DEMs are generated with progressively bigger radius using the inverse "
-"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
-"then merged using nearest neighbor interpolation. Default: %(default)s"
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
 msgstr ""
-"Αριθμός βημάτων που χρησιμοποιούνται για την πλήρωση περιοχών με κενά. "
-"Ορίστε την τιμή 0 για να απενεργοποιήσετε τη συμπλήρωση κενών. Ξεκινώντας με "
-"ακτίνα ίση με την ανάλυση εξόδου, παράγονται Ν διαφορετικά DEM με "
-"προοδευτικά μεγαλύτερη ακτίνα χρησιμοποιώντας τον αλγόριθμο IDW (inverse "
-"distance weighted) και συγχωνεύονται μεταξύ τους. Τα υπόλοιπα κενά "
-"συγχωνεύονται στη συνέχεια με τη χρήση παρεμβολής του πλησιέστερου γείτονα. "
+"Χρήση ενός πλήρους τρισδιάστατου πλέγματος για τον υπολογισμό της "
+"ορθοφωτογραφίας αντί για πλέγμα 2,5D. Αυτή η επιλογή είναι λίγο ταχύτερη και "
+"παρέχει παρόμοια αποτελέσματα σε επίπεδες περιοχές. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:31
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"%(default)s"
+msgstr ""
+"Αυτόματη περικοπή των εξόδων εικόνας με τη δημιουργία ενός ομαλού "
+"ρυθμιστικού διαφράγματος γύρω από τα όρια του συνόλου δεδομένων, "
+"συρρικνωμένου κατά N μέτρα. Χρησιμοποιήστε 0 για να απενεργοποιήσετε την "
+"περικοπή. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
+#, python-format
+msgid ""
+"Run local bundle adjustment for every image added to the reconstruction and "
+"a global adjustment every 100 images. Speeds up reconstruction for very "
+"large datasets. Default: %(default)s"
+msgstr ""
+"Εκτελέστε τοπική προσαρμογή δέσμης για κάθε εικόνα που προστίθεται στην "
+"ανακατασκευή και μια συνολική προσαρμογή κάθε 100 εικόνες. Επιταχύνει την "
+"ανακατασκευή για πολύ μεγάλα σύνολα δεδομένων. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:33
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+"Πολύγωνο GeoJSON που περιορίζει την περιοχή της ανακατασκευής. Μπορεί να "
+"καθοριστεί είτε ως διαδρομή προς ένα αρχείο GeoJSON είτε ως συμβολοσειρά "
+"JSON που αναπαριστά τα περιεχόμενα ενός αρχείου GeoJSON. Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:34
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
+msgstr ""
+"Ορίστε αυτή την παράμετρο εάν θέλετε να δημιουργήσετε μια απόδοση PNG της "
+"ορθοφωτογραφίας. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:35
+#, python-format
+msgid ""
+"Set the radiometric calibration to perform on images. When processing "
+"multispectral and thermal images you should set this option to obtain "
+"reflectance/temperature values (otherwise you will get digital number "
+"values). [camera] applies black level, vignetting, row gradient gain/"
+"exposure compensation (if appropriate EXIF tags are found) and computes "
+"absolute temperature values. [camera+sun] is experimental, applies all the "
+"corrections of [camera], plus compensates for spectral radiance registered "
+"via a downwelling light sensor (DLS) taking in consideration the angle of "
+"the sun. Can be one of: %(choices)s. Default: %(default)s"
+msgstr ""
+"Ορίστε τη ραδιομετρική βαθμονόμηση που θα εκτελείται στις εικόνες. Κατά την "
+"επεξεργασία πολυφασματικών και θερμικών εικόνων θα πρέπει να ορίσετε αυτή "
+"την επιλογή για να λάβετε τιμές ανάκλασης/θερμοκρασίας (διαφορετικά θα "
+"λάβετε τιμές ψηφιακών αριθμών). [κάμερα] εφαρμόζει αντιστάθμιση μαύρου "
+"επιπέδου, βινιετοποίησης, αντιστάθμιση κέρδους/έκθεσης κλίσης σειράς (εάν "
+"βρεθούν οι κατάλληλες ετικέτες EXIF) και υπολογίζει απόλυτες τιμές "
+"θερμοκρασίας. Το [κάμερα+ήλιος] είναι πειραματικό, εφαρμόζει όλες τις "
+"διορθώσεις του [κάμερα] και επιπλέον αντισταθμίζει τη φασματική ακτινοβολία "
+"που καταγράφεται μέσω ενός αισθητήρα καθοδικού φωτός (DLS), λαμβάνοντας "
+"υπόψη τη γωνία του ήλιου. Μπορεί να είναι ένα από τα εξής:%(choices)s. "
 "Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:53
+#: app/static/app/js/translations/odm_autogenerated.js:36
+#, python-format
 msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
 msgstr ""
-"Διαγράψτε μόνιμα όλα τα προηγούμενα αποτελέσματα και επανεκτελέστε τον αγωγό "
-"επεξεργασίας."
+"Χρησιμοποιήστε τα δεδομένα GPS exif των εικόνων για την ανακατασκευή, ακόμη "
+"και αν υπάρχουν GCPs.Αυτή η σημαία είναι χρήσιμη αν έχετε μετρήσεις GPS "
+"υψηλής ακρίβειας. Εάν δεν υπάρχουν GCP, αυτή η σημαία δεν κάνει τίποτα. "
+"Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:54
+#: app/static/app/js/translations/odm_autogenerated.js:37
 #, python-format
 msgid ""
 "Turn on rolling shutter correction. If the camera has a rolling shutter and "
@@ -2938,45 +2747,49 @@ msgstr ""
 "ενεργοποιήσετε αυτή την επιλογή για να βελτιώσετε την ακρίβεια των "
 "αποτελεσμάτων. Βλέπε επίσης --roll-shutter-readout. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:55
+#: app/static/app/js/translations/odm_autogenerated.js:38
 #, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr "Δημιουργία εξόδων OGC 3D πλακιδίων. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:56
 msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
 msgstr ""
-"Διαδρομή προς το φάκελο του έργου. Ο φάκελος του έργου σας θα πρέπει να "
-"περιέχει υποφακέλους για κάθε σύνολο δεδομένων. Κάθε σύνολο δεδομένων θα "
-"πρέπει να έχει ένα φάκελο \"\"images\"\"."
+"Ακτίνα της επικάλυψης μεταξύ υπομοντέλων σε μέτρα. Μετά την ομαδοποίηση των "
+"εικόνων σε συστάδες, οι εικόνες που βρίσκονται πιο κοντά σε αυτήν την ακτίνα "
+"σε μια συστάδα προστίθενται στη συστάδα. Αυτό γίνεται για να διασφαλιστεί "
+"ότι τα γειτονικά υπομοντέλα επικαλύπτονται. Όλες οι εικόνες χρειάζονται "
+"πληροφορίες GPS. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:57
+#: app/static/app/js/translations/odm_autogenerated.js:39
 #, python-format
 msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
-"mosaics with multiple overlapping orthophotos. Default: %(default)s"
-msgstr ""
-"Δημιουργεί ένα πολύγωνο γύρω από την περιοχή περικοπής που κόβει την "
-"ορθοφωτογραφία γύρω από τις άκρες των χαρακτηριστικών. Αυτό το πολύγωνο "
-"μπορεί να είναι χρήσιμο για τη συρραφή μωσαϊκών χωρίς συγκόλληση με "
-"πολλαπλές επικαλυπτόμενες ορθοφωτογραφίες. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-#, python-format
-msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
 "%(default)s"
 msgstr ""
-"Αυτόματη περικοπή των εξόδων εικόνας με τη δημιουργία ενός ομαλού "
-"ρυθμιστικού διαφράγματος γύρω από τα όρια του συνόλου δεδομένων, "
-"συρρικνωμένου κατά N μέτρα. Χρησιμοποιήστε 0 για να απενεργοποιήσετε την "
-"περικοπή. Προεπιλογή: %(default)s"
+"Φιλτράρει το νέφος σημείων αφαιρώντας τα σημεία που αποκλίνουν περισσότερο "
+"από Ν τυπικές αποκλίσεις από τον τοπικό μέσο όρο. Ορίστε την τιμή 0 για να "
+"απενεργοποιήσετε το φιλτράρισμα. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:59
+#: app/static/app/js/translations/odm_autogenerated.js:40
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr ""
+"Μην χρησιμοποιείτε την επιτάχυνση GPU, ακόμη και αν είναι διαθέσιμη. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:41
+#, python-format
+msgid ""
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
+msgstr ""
+"Μέγιστος αριθμός καρέ που θα εξαχθούν από αρχεία βίντεο για επεξεργασία. "
+"Ορίστε το 0 για να μην υπάρχει όριο. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:42
 #, python-format
 msgid ""
 "Choose what to merge in the merge step in a split dataset. By default all "
@@ -2986,82 +2799,7 @@ msgstr ""
 "δεδομένων. Από προεπιλογή συγχωνεύονται όλες οι διαθέσιμες εκροές. Επιλογές: "
 "%(choices)s. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
-"%(default)s"
-msgstr ""
-"Παράμετρος κλίσης του απλού μορφολογικού φίλτρου (άνοδος σε σχέση με τη "
-"διαδρομή). Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr ""
-"Παραλείψτε τη δημιουργία της ορθοφωτογραφίας. Αυτό μπορεί να εξοικονομήσει "
-"χρόνο εάν χρειάζεστε μόνο τρισδιάστατα αποτελέσματα ή DEM. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, python-format
-msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-"Ελάχιστος αριθμός χαρακτηριστικών που πρέπει να εξαχθούν ανά εικόνα. "
-"Περισσότερα χαρακτηριστικά μπορεί να είναι χρήσιμα για την εύρεση "
-"περισσότερων αντιστοιχιών μεταξύ εικόνων, επιτρέποντας ενδεχομένως την "
-"ανακατασκευή περιοχών με μικρή επικάλυψη ή ανεπαρκή χαρακτηριστικά. Τα "
-"περισσότερα χαρακτηριστικά επιβραδύνουν επίσης την επεξεργασία. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
-"a progressive morphological filter. Check the --dem* parameters for finer "
-"tuning. Default: %(default)s"
-msgstr ""
-"Χρησιμοποιήστε αυτήν την ετικέτα για να δημιουργήσετε ένα DSM (Ψηφιακό "
-"μοντέλο επιφάνειας, έδαφος + αντικείμενα) χρησιμοποιώντας ένα προοδευτικό "
-"μορφολογικό φίλτρο. Ελέγξτε τις παραμέτρους --dem* για λεπτομερέστερη "
-"ρύθμιση. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-msgid "show this help message and exit"
-msgstr "εμφάνιση αυτού του μηνύματος βοήθειας και έξοδος"
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
-#, python-format
-msgid ""
-"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
-"altitude value of the GPS EXIF data. This does not change the value of any "
-"GCPs. This can be useful for example when adjusting from ellipsoidal to "
-"orthometric height. Default: %(default)s"
-msgstr ""
-"Ορίστε μια μετατόπιση GPS σε μέτρα για τον κατακόρυφο άξονα (Z) προσθέτοντάς "
-"την στην τιμή υψομέτρου των δεδομένων EXIF GPS. Αυτό δεν αλλάζει την τιμή "
-"κανενός GCP. Αυτό μπορεί να είναι χρήσιμο για παράδειγμα κατά την προσαρμογή "
-"από ελλειψοειδές σε ορθομετρικό ύψος. Προεπιλογή:  %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:66
-#, python-format
-msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
-msgstr ""
-"Ορίστε αυτόματα ένα όριο χρησιμοποιώντας τις θέσεις λήψης της κάμερας για να "
-"περιορίσετε την περιοχή της ανακατασκευής. Αυτό μπορεί να βοηθήσει στην "
-"αφαίρεση μακρινών αντικειμένων φόντου (ουρανός, τοπία φόντου κ.λπ.). Βλέπε "
-"επίσης --boundary. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:67
+#: app/static/app/js/translations/odm_autogenerated.js:43
 #, fuzzy, python-format
 #| msgid ""
 #| "When processing multispectral datasets, ODM will automatically align the "
@@ -3077,127 +2815,47 @@ msgstr ""
 "υποστεί μετεπεξεργασία και είναι ήδη ευθυγραμμισμένες, χρησιμοποιήστε αυτή "
 "την επιλογή. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:68
+#: app/static/app/js/translations/odm_autogenerated.js:44
 #, python-format
 msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
-msgstr ""
-"Ορίστε αυτή την παράμετρο εάν θέλετε να δημιουργήσετε μια απόδοση PNG της "
-"ορθοφωτογραφίας. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-"Πολύγωνο GeoJSON που περιορίζει την περιοχή της ανακατασκευής. Μπορεί να "
-"καθοριστεί είτε ως διαδρομή προς ένα αρχείο GeoJSON είτε ως συμβολοσειρά "
-"JSON που αναπαριστά τα περιεχόμενα ενός αρχείου GeoJSON. Προεπιλογή: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-"Χρησιμοποιήστε αυτήν την ετικέτα εάν έχετε ένα αρχείο GCP αλλά θέλετε να "
-"χρησιμοποιήσετε τις πληροφορίες EXIF για γεωαναφορά. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"Path to the file containing the ground control points used for "
-"georeferencing. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2]Default: %(default)s"
-msgstr ""
-"Διαδρομή προς το αρχείο που περιέχει τα σημεία ελέγχου εδάφους που "
-"χρησιμοποιούνται για τη γεωαναφορά. Το αρχείο πρέπει να έχει την ακόλουθη "
-"μορφή: EPSG:<code> η<+proj definition>geo_x geo_y geo_z im_x im_y image_name "
-"[gcp_name] [extra1] [extra2]Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:72
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr ""
-"Μην χρησιμοποιείτε την επιτάχυνση GPU, ακόμη και αν είναι διαθέσιμη. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:73
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
-msgstr ""
-"Αυτόματος υπολογισμός μάσκας εικόνας με χρήση AI για την αφαίρεση του "
-"ουρανού. Πειραματικό. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-"Χρήση ενός πλήρους τρισδιάστατου πλέγματος για τον υπολογισμό της "
-"ορθοφωτογραφίας αντί για πλέγμα 2,5D. Αυτή η επιλογή είναι λίγο ταχύτερη και "
-"παρέχει παρόμοια αποτελέσματα σε επίπεδες περιοχές. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
 "%(default)s"
 msgstr ""
-"Τερματισμός της επεξεργασίας σε αυτό το στάδιο. Μπορεί να είναι ένα από τα "
-"εξής: %(choices)s. Προεπιλογή: %(default)s"
+"Μέσος αριθμός εικόνων ανά υπομοντέλο. Κατά τον διαχωρισμό ενός μεγάλου "
+"συνόλου δεδομένων σε μικρότερα υποδείγματα, οι εικόνες ομαδοποιούνται σε "
+"ομάδες. Αυτή η τιμή ρυθμίζει τον αριθμό των εικόνων που θα πρέπει να έχει "
+"κατά μέσο όρο κάθε συστάδα. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:76
+#: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
 msgid ""
-"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
-"Default: %(default)s"
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
 msgstr ""
-"Εξαγωγή του νέφους σημείων με γεωαναφορά σε μορφή ψηφίδας σημείων Entwine "
-"(EPT). Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
-#, python-format
-msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
-msgstr ""
-"Παράλειψη δημιουργίας αναφοράς PDF. Αυτό μπορεί να εξοικονομήσει χρόνο αν "
-"δεν χρειάζεστε μια αναφορά. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:78
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-"Χρησιμοποιήστε τις παραμέτρους της κάμερας που έχουν υπολογιστεί από ένα "
-"άλλο σύνολο δεδομένων αντί να τις υπολογίσετε. Μπορεί να καθοριστεί είτε ως "
-"διαδρομή προς ένα αρχείο cameras.json είτε ως συμβολοσειρά JSON που "
-"αναπαριστά τα περιεχόμενα ενός αρχείου cameras.json. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:79
-#, python-format
-msgid ""
-"The maximum output resolution of extracted video frames in pixels. Default: "
-"%(default)s"
-msgstr ""
-"Η μέγιστη ανάλυση εξόδου των εξαγόμενων καρέ βίντεο σε pixel. Προεπιλογή: "
+"Εξαγωγή του νέφους σημείων με γεωαναφορά σε μορφή LAS. Προεπιλογή: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:80
+#: app/static/app/js/translations/odm_autogenerated.js:46
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+"Δημιουργία μοντέλων με υφή σε ένα αρχείο δυαδικού glTF (GLB). Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:47
+#, python-format
+msgid ""
+"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
+"outputs should be automatically aligned to. Experimental. Default: "
+"%(default)s"
+msgstr ""
+"Διαδρομή προς ένα GeoTIFF DEM ή ένα νέφος σημείων LAS/LAZ με το οποίο θα "
+"πρέπει να ευθυγραμμιστούν αυτόματα τα αποτελέσματα της ανακατασκευής. "
+"Πειραματικό. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:48
 #, fuzzy, python-format
 #| msgid ""
 #| "Skips dense reconstruction and 3D model generation. It generates an "
@@ -3214,67 +2872,33 @@ msgstr ""
 "χρειάζεστε μόνο μια ορθοφωτογραφία και δεν χρειάζεστε ένα πλήρες "
 "τρισδιάστατο μοντέλο, ενεργοποιήστε αυτή την επιλογή. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:81
+#: app/static/app/js/translations/odm_autogenerated.js:49
 #, python-format
 msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
 msgstr ""
-"Ορίστε αυτή την παράμετρο εάν θέλετε να δημιουργήσετε μια απόδοση του Google "
-"Earth (KMZ) της ορθοφωτογραφίας. Προεπιλογή: %(default)s"
+"Ορίστε έναν τύπο προβολής κάμερας. Η χειροκίνητη ρύθμιση μιας τιμής μπορεί "
+"να βοηθήσει στη βελτίωση της γεωμετρικής αναπαραμόρφωσης. Από προεπιλογή, η "
+"εφαρμογή προσπαθεί να καθορίσει έναν τύπο φακού από τα μεταδεδομένα των "
+"εικόνων. Μπορεί να είναι ένα από τα εξής:%(choices)s. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:82
+#: app/static/app/js/translations/odm_autogenerated.js:50
 #, python-format
 msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
 msgstr ""
-"Κατά την επεξεργασία πολυφασματικών συνόλων δεδομένων, μπορείτε να "
-"καθορίσετε το όνομα της κύριας ζώνης που θα χρησιμοποιηθεί για την "
-"ανακατασκευή. Συνιστάται να επιλέξετε μια ζώνη που έχει ευκρινείς "
-"λεπτομέρειες και βρίσκεται σε εστίαση. Προεπιλογή: %(default)s"
+"Ορίστε μια μετατόπιση GPS σε μέτρα για τον κατακόρυφο άξονα (Z) προσθέτοντάς "
+"την στην τιμή υψομέτρου των δεδομένων EXIF GPS. Αυτό δεν αλλάζει την τιμή "
+"κανενός GCP. Αυτό μπορεί να είναι χρήσιμο για παράδειγμα κατά την προσαρμογή "
+"από ελλειψοειδές σε ορθομετρικό ύψος. Προεπιλογή:  %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:83
-#, python-format
-msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
-msgstr ""
-"Χρησιμοποιήστε τα δεδομένα GPS exif των εικόνων για την ανακατασκευή, ακόμη "
-"και αν υπάρχουν GCPs.Αυτή η σημαία είναι χρήσιμη αν έχετε μετρήσεις GPS "
-"υψηλής ακρίβειας. Εάν δεν υπάρχουν GCP, αυτή η σημαία δεν κάνει τίποτα. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:84
-#, python-format
-msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
-msgstr ""
-"Μέγιστος αριθμός καρέ που θα εξαχθούν από αρχεία βίντεο για επεξεργασία. "
-"Ορίστε το 0 για να μην υπάρχει όριο. Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:85
-#, python-format
-msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-"Επιλέξτε τον αλγόριθμο για την εξαγωγή των βασικών σημείων και τον "
-"υπολογιζόμενο περιγραφέα. Μπορεί να είναι ένας από τους εξής:%(choices)s. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:86
-#, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
-msgstr ""
-"Διατηρήστε τα πρόσωπα στο πλέγμα που δεν φαίνονται σε καμία κάμερα. "
-"Προεπιλογή: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:87
+#: app/static/app/js/translations/odm_autogenerated.js:51
 #, fuzzy, python-format
 #| msgid ""
 #| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
@@ -3294,7 +2918,141 @@ msgstr ""
 "BRUTEFORCE είναι πολύ αργός αλλά σταθερός.Μπορεί να είναι ένα από τα εξής: "
 "%(choices)s. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:88
+#: app/static/app/js/translations/odm_autogenerated.js:52
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"Τερματισμός της επεξεργασίας σε αυτό το στάδιο. Μπορεί να είναι ένα από τα "
+"εξής: %(choices)s. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:53
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr ""
+"Ο μέγιστος αριθμός κορυφών του πλέγματος εξόδου. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+"Δημιουργία στατικών πλακιδίων για ορθοφωτογραφίες και DEM που είναι "
+"κατάλληλα για προγράμματα προβολής όπως το Leaflet ή το OpenLayers. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+"Μην επιχειρήσετε να συγχωνεύσετε μερικές ανακατασκευές. Αυτό μπορεί να "
+"συμβεί όταν οι εικόνες δεν έχουν επαρκή επικάλυψη ή είναι απομονωμένες. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
+#, python-format
+msgid ""
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
+msgstr ""
+"Ελάχιστος αριθμός χαρακτηριστικών που πρέπει να εξαχθούν ανά εικόνα. "
+"Περισσότερα χαρακτηριστικά μπορεί να είναι χρήσιμα για την εύρεση "
+"περισσότερων αντιστοιχιών μεταξύ εικόνων, επιτρέποντας ενδεχομένως την "
+"ανακατασκευή περιοχών με μικρή επικάλυψη ή ανεπαρκή χαρακτηριστικά. Τα "
+"περισσότερα χαρακτηριστικά επιβραδύνουν επίσης την επεξεργασία. Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:57
+#, python-format
+msgid ""
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
+msgstr ""
+"Ο μέγιστος αριθμός διεργασιών που θα χρησιμοποιηθούν σε διάφορες διεργασίες. "
+"Η μέγιστη απαίτηση μνήμης είναι ~1GB ανά νήμα και ανάλυση εικόνας 2 "
+"megapixel. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:58
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+"Αυτόματος υπολογισμός μάσκας εικόνας με χρήση AI για την αφαίρεση του "
+"φόντου. Πειραματικά. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"Generates a polygon around the cropping area that cuts the orthophoto around "
+"the edges of features. This polygon can be useful for stitching seamless "
+"mosaics with multiple overlapping orthophotos. Default: %(default)s"
+msgstr ""
+"Δημιουργεί ένα πολύγωνο γύρω από την περιοχή περικοπής που κόβει την "
+"ορθοφωτογραφία γύρω από τις άκρες των χαρακτηριστικών. Αυτό το πολύγωνο "
+"μπορεί να είναι χρήσιμο για τη συρραφή μωσαϊκών χωρίς συγκόλληση με "
+"πολλαπλές επικαλυπτόμενες ορθοφωτογραφίες. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
+#, python-format
+msgid ""
+"Decimate the points before generating the DEM. 1 is no decimation (full "
+"quality). 100 decimates ~99%% of the points. Useful for speeding up "
+"generation of DEM results in very large datasets. Default: %(default)s"
+msgstr ""
+"Αποδεκατισμός των σημείων πριν από τη δημιουργία του DEM. Το 1 δεν είναι "
+"αποδεκατισμός (πλήρης ποιότητα). Το 100 αποκομματικοποιεί το ~99%% των "
+"σημείων. Χρήσιμο για την επιτάχυνση της δημιουργίας αποτελεσμάτων DEM σε "
+"πολύ μεγάλα σύνολα δεδομένων. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
+msgid ""
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
+msgstr ""
+"Ανάλυση DSM/DTM σε cm/px. Σημειώστε ότι η τιμή αυτή καλύπτεται από μια "
+"εκτίμηση της απόστασης δειγματοληψίας εδάφους (GSD). Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+"Αυτόματος υπολογισμός μάσκας εικόνας με χρήση AI για την αφαίρεση του "
+"ουρανού. Πειραματικό. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:63
+msgid "show this help message and exit"
+msgstr "εμφάνιση αυτού του μηνύματος βοήθειας και έξοδος"
+
+#: app/static/app/js/translations/odm_autogenerated.js:64
+#, python-format
+msgid ""
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
+msgstr ""
+"Διαδρομή προς το αρχείο γεωεντοπισμού της εικόνας που περιέχει τις "
+"συντεταγμένες του κέντρου της κάμερας που χρησιμοποιούνται για τη "
+"γεωαναφορά. Αν δεν έχετε τιμές για yaw/pitch/roll, μπορείτε να τις ορίσετε "
+"στο 0. Το αρχείο πρέπει να έχει την ακόλουθη μορφή: EPSG:<code> η<+proj "
+"definition>image_name geo_x geo_y geo_z [yaw (μοίρες)] [pitch (μοίρες)] "
+"[roll (μοίρες)] [horz accuracy (meters)] [vert accuracy (meters)]Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:65
 #, python-format
 msgid ""
 "Simple Morphological Filter elevation threshold parameter (meters). Default: "
@@ -3303,19 +3061,16 @@ msgstr ""
 "Παράμετρος κατωφλίου ανύψωσης του απλού μορφολογικού φίλτρου (μέτρα). "
 "Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:89
+#: app/static/app/js/translations/odm_autogenerated.js:66
 #, python-format
 msgid ""
-"Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
 msgstr ""
-"Οι γεωμετρικές εκτιμήσεις βελτιώνουν την ακρίβεια του νέφους σημείων με τον "
-"υπολογισμό γεωμετρικά συνεπών χαρτών βάθους, αλλά μπορεί να μην είναι "
-"χρήσιμες σε μεγαλύτερα σύνολα δεδομένων. Αυτή η σημαία απενεργοποιεί τις "
-"γεωμετρικές εκτιμήσεις. Προεπιλογή: %(default)s"
+"Ορίστε τη συμπίεση που θα χρησιμοποιείται για τις ορθοφωτογραφίες. Μπορεί να "
+"είναι ένα από τα εξής: %(choices)s. Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:90
+#: app/static/app/js/translations/odm_autogenerated.js:67
 #, python-format
 msgid ""
 "Computes an euclidean raster map for each DEM. The map reports the distance "
@@ -3328,35 +3083,280 @@ msgstr ""
 "συμπλήρωση οποιασδήποτε τρύπας). Αυτό μπορεί να είναι χρήσιμο για την "
 "απομόνωση των περιοχών που έχουν γεμίσει.Προεπιλογή: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:91
+#: app/static/app/js/translations/odm_autogenerated.js:68
 #, python-format
 msgid ""
-"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
-"outputs should be automatically aligned to. Experimental. Default: "
+"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
+"filling. Starting with a radius equal to the output resolution, N different "
+"DEMs are generated with progressively bigger radius using the inverse "
+"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
+"then merged using nearest neighbor interpolation. Default: %(default)s"
+msgstr ""
+"Αριθμός βημάτων που χρησιμοποιούνται για την πλήρωση περιοχών με κενά. "
+"Ορίστε την τιμή 0 για να απενεργοποιήσετε τη συμπλήρωση κενών. Ξεκινώντας με "
+"ακτίνα ίση με την ανάλυση εξόδου, παράγονται Ν διαφορετικά DEM με "
+"προοδευτικά μεγαλύτερη ακτίνα χρησιμοποιώντας τον αλγόριθμο IDW (inverse "
+"distance weighted) και συγχωνεύονται μεταξύ τους. Τα υπόλοιπα κενά "
+"συγχωνεύονται στη συνέχεια με τη χρήση παρεμβολής του πλησιέστερου γείτονα. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
+#, python-format
+msgid ""
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
+msgstr ""
+"Αποθηκεύστε το νέφος σημείων με γεωαναφορά σε μορφή βελτιστοποιημένου νέφους "
+"σημείων (COPC). Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:70
+#, python-format
+msgid ""
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
+msgstr ""
+"Διαδρομή προς το αρχείο ομάδων εικόνων που ελέγχει τον τρόπο με τον οποίο οι "
+"εικόνες θα πρέπει να χωρίζονται σε ομάδες. Το αρχείο πρέπει να έχει την "
+"ακόλουθη μορφή:onoma_eikonas onoma_group Default: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"Διαδρομή προς ένα GeoTIFF DEM ή ένα νέφος σημείων LAS/LAZ με το οποίο θα "
-"πρέπει να ευθυγραμμιστούν αυτόματα τα αποτελέσματα της ανακατασκευής. "
-"Πειραματικό. Προεπιλογή: %(default)s"
+"Επαναλάβετε μόνο αυτό το στάδιο και σταματήστε. Μπορεί να είναι ένα από τα "
+"εξής: %(choices)s. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
+"Default: %(default)s"
+msgstr ""
+"Εξαγωγή του νέφους σημείων με γεωαναφορά σε μορφή ψηφίδας σημείων Entwine "
+"(EPT). Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
+msgstr ""
+"Παράλειψη δημιουργίας αναφοράς PDF. Αυτό μπορεί να εξοικονομήσει χρόνο αν "
+"δεν χρειάζεστε μια αναφορά. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgstr ""
+"Ορίστε αυτή την παράμετρο αν θέλετε ένα ριγέ GeoTIFF. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid ""
+"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
+"a progressive morphological filter. Check the --dem* parameters for finer "
+"tuning. Default: %(default)s"
+msgstr ""
+"Χρησιμοποιήστε αυτήν την ετικέτα για να δημιουργήσετε ένα DSM (Ψηφιακό "
+"μοντέλο επιφάνειας, έδαφος + αντικείμενα) χρησιμοποιώντας ένα προοδευτικό "
+"μορφολογικό φίλτρο. Ελέγξτε τις παραμέτρους --dem* για λεπτομερέστερη "
+"ρύθμιση. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+"Παράλειψη ευθυγράμμισης υπομοντέλων στη συγχώνευση διαχωρισμού. Χρήσιμο εάν "
+"το GPS είναι αρκετά καλό σε πολύ μεγάλα σύνολα δεδομένων. Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+#, fuzzy, python-format
+#| msgid ""
+#| "Choose the structure from motion algorithm. For aerial datasets, if "
+#| "camera GPS positions and angles are available, triangulation can generate "
+#| "better results. For planar scenes captured at fixed altitude with nadir-"
+#| "only images, planar can be much faster. Can be one of: %(choices)s. "
+#| "Default: %(default)s"
+msgid ""
+"Choose the structure from motion algorithm. For aerial datasets, if camera "
+"GPS positions and angles are available, triangulation can be faster. Planar "
+"is deprecated and will be removed in a future version. Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+"Επιλέξτε τη δομή από τον αλγόριθμο κίνησης. Για σύνολα δεδομένων από αέρος, "
+"εάν είναι διαθέσιμες οι θέσεις και οι γωνίες GPS της κάμερας, ο τριγωνισμός "
+"μπορεί να παράγει καλύτερα αποτελέσματα. Για επίπεδες σκηνές που έχουν "
+"καταγραφεί σε σταθερό ύψος με εικόνες μόνο από το ναδίρ, η επίπεδη μπορεί να "
+"είναι πολύ πιο γρήγορη. Μπορεί να είναι ένα από τα εξής: %(choices)s. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+"Δημιουργία GeoTIFFs βελτιστοποιημένου νέφους αντί για κανονικά GeoTIFFs. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:79
+#, python-format
+msgid ""
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
+msgstr ""
+"Οι γεωμετρικές εκτιμήσεις βελτιώνουν την ακρίβεια του νέφους σημείων με τον "
+"υπολογισμό γεωμετρικά συνεπών χαρτών βάθους, αλλά μπορεί να μην είναι "
+"χρήσιμες σε μεγαλύτερα σύνολα δεδομένων. Αυτή η σημαία απενεργοποιεί τις "
+"γεωμετρικές εκτιμήσεις. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:80
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"Ορίστε την ποιότητα εξαγωγής χαρακτηριστικών. Η υψηλότερη ποιότητα παράγει "
+"καλύτερα χαρακτηριστικά, αλλά απαιτεί περισσότερη μνήμη και διαρκεί "
+"περισσότερο. Μπορεί να είναι ένα από τα εξής: %(choices)s. Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:81
+#, python-format
+msgid ""
+"Path to the file containing the ground control points used for "
+"georeferencing. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
+"[extra2]Default: %(default)s"
+msgstr ""
+"Διαδρομή προς το αρχείο που περιέχει τα σημεία ελέγχου εδάφους που "
+"χρησιμοποιούνται για τη γεωαναφορά. Το αρχείο πρέπει να έχει την ακόλουθη "
+"μορφή: EPSG:<code> η<+proj definition>geo_x geo_y geo_z im_x im_y image_name "
+"[gcp_name] [extra1] [extra2]Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:82
+#, python-format
+msgid ""
+"Simple Morphological Filter slope parameter (rise over run). Default: "
+"%(default)s"
+msgstr ""
+"Παράμετρος κλίσης του απλού μορφολογικού φίλτρου (άνοδος σε σχέση με τη "
+"διαδρομή). Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:83
+#, python-format
+msgid ""
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+"Δημιουργία OBJ που έχουν ένα μόνο υλικό και ένα μόνο αρχείο υφής αντί για "
+"πολλαπλά. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:84
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+"Ορίστε αυτή την παράμετρο εάν θέλετε να δημιουργήσετε μια απόδοση του Google "
+"Earth (KMZ) της ορθοφωτογραφίας. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:85
+#, python-format
+msgid ""
+"Perform image matching with the nearest images based on GPS exif data. Set "
+"to 0 to match by triangulation. Default: %(default)s"
+msgstr ""
+"Πραγματοποιήστε αντιστοίχιση εικόνων με τις πλησιέστερες εικόνες με βάση τα "
+"δεδομένα exif του GPS. Ορίστε την τιμή 0 για αντιστοίχιση με τριγωνισμό. "
+"Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:86
+#, python-format
+msgid ""
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
+msgstr ""
+"Διεύθυνση URL σε μια περίπτωση ClusterODM για την παράλληλη διανομή μιας "
+"ροής εργασίας διαχωρισμού-συγχώνευσης σε πολλούς κόμβους. Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:87
+#, python-format
+msgid ""
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
+msgstr ""
+"Παραλείψτε τη δημιουργία της ορθοφωτογραφίας. Αυτό μπορεί να εξοικονομήσει "
+"χρόνο εάν χρειάζεστε μόνο τρισδιάστατα αποτελέσματα ή DEM. Προεπιλογή: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+"Παραλείψτε τη δημιουργία ενός πλήρους τρισδιάστατου μοντέλου. Αυτό μπορεί να "
+"εξοικονομήσει χρόνο εάν χρειάζεστε μόνο 2D αποτελέσματα, όπως "
+"ορθοφωτογραφίες και DEM. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
+#, python-format
+msgid ""
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
+"Κατά την επεξεργασία πολυφασματικών συνόλων δεδομένων, μπορείτε να "
+"καθορίσετε το όνομα της κύριας ζώνης που θα χρησιμοποιηθεί για την "
+"ανακατασκευή. Συνιστάται να επιλέξετε μια ζώνη που έχει ευκρινείς "
+"λεπτομέρειες και βρίσκεται σε εστίαση. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:90
+#, python-format
+msgid ""
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
+msgstr ""
+"Χρησιμοποιήστε τις παραμέτρους της κάμερας που έχουν υπολογιστεί από ένα "
+"άλλο σύνολο δεδομένων αντί να τις υπολογίσετε. Μπορεί να καθοριστεί είτε ως "
+"διαδρομή προς ένα αρχείο cameras.json είτε ως συμβολοσειρά JSON που "
+"αναπαριστά τα περιεχόμενα ενός αρχείου cameras.json. Προεπιλογή: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:91
+msgid "Copy output results to this folder after processing."
+msgstr ""
+"Αντιγράψτε τα αποτελέσματα εξόδου σε αυτόν το φάκελο μετά την επεξεργασία."
 
 #: app/static/app/js/translations/odm_autogenerated.js:92
 #, python-format
 msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
 msgstr ""
-"Όνομα του συνόλου δεδομένων (π.χ. όνομα υποφακέλου εντός του φακέλου του "
-"έργου). Προεπιλογή: %(default)s"
+"Ταξινόμηση των εξόδων του νέφους σημείων. Μπορείτε να ελέγξετε τη "
+"συμπεριφορά αυτής της επιλογής ρυθμίζοντας τις παραμέτρους --dem-*. "
+"Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:93
-#, python-format
 msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
 msgstr ""
-"Δημιουργία στατικών πλακιδίων για ορθοφωτογραφίες και DEM που είναι "
-"κατάλληλα για προγράμματα προβολής όπως το Leaflet ή το OpenLayers. "
-"Προεπιλογή: %(default)s"
+"Διαδρομή προς το φάκελο του έργου. Ο φάκελος του έργου σας θα πρέπει να "
+"περιέχει υποφακέλους για κάθε σύνολο δεδομένων. Κάθε σύνολο δεδομένων θα "
+"πρέπει να έχει ένα φάκελο \"\"images\"\"."
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
 msgid "Compute volume, area and length measurements on Leaflet"
