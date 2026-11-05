@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-02 21:01+0000\n"
-"PO-Revision-Date: 2026-10-31 07:51+0000\n"
-"Last-Translator: Marcin Sołoguba <czalaviek@users.noreply.hosted.weblate."
-"org>\n"
-"Language-Team: Polish <https://hosted.weblate.org/projects/webodm/webodm/pl/"
-">\n"
+"PO-Revision-Date: 2026-11-06 07:51+0000\n"
+"Last-Translator: Marcin Sołoguba <czalaviek@users.noreply.hosted.weblate.org>"
+"\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/webodm/webodm/pl/>"
+"\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.11.dev0\n"
+"X-Generator: Weblate 2026.11.2.dev0\n"
 
 #: app/admin.py:104
 msgid "Cannot restore default logo"
@@ -157,10 +157,8 @@ msgid "Invalid payload."
 msgstr "Nieprawidłowy eksport"
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid filename"
 msgid "Invalid signature."
-msgstr "Nieprawidłowa nazwa pliku"
+msgstr "Nieprawidłowy podpis."
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
@@ -169,6 +167,8 @@ msgstr "Konto użytkownika jest wyłączone."
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
 msgstr ""
+"Nieprawidłowy nagłówek „Authorization”. Nie podano danych "
+"uwierzytelniających."
 
 #: app/api/authentication.py:63
 msgid ""
@@ -181,7 +181,7 @@ msgstr ""
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "Błąd podczas dekodowania podpisu."
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -371,11 +371,11 @@ msgstr "Musi zawierać nazwę użytkownika i hasło."
 
 #: app/api/jwt.py:74
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "Wymagane jest pole orig_iat."
 
 #: app/api/jwt.py:76
 msgid "Refresh has expired."
-msgstr ""
+msgstr "Czas na odświeżenie minął."
 
 #: app/api/media.py:72 app/api/tasks.py:323
 msgid "No files uploaded"
@@ -1403,7 +1403,7 @@ msgstr "Coś się stało. Dzienniki serwera zawierają więcej informacji."
 
 #: app/templates/app/about.html:25
 msgid "Minimize"
-msgstr ""
+msgstr "Minimalizacja"
 
 #: app/templates/app/about.html:29
 #, python-format
@@ -1452,10 +1452,8 @@ msgid "Server error (500)"
 msgstr "Błąd serwera (500)"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "Błąd serwera (500)"
+msgstr "Błąd serwera <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
 #, fuzzy
@@ -1493,26 +1491,20 @@ msgstr "Wyczyść zaznaczenie"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Nawigacja"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
 msgstr ""
-"Najpierw wprowadź nazwę użytkownika i hasło. Następnie będzie można edytować "
-"więcej opcji użytkownika."
+"Po tym jak utworzyłeś konto użytkownika będziesz mógł edytować więcej jego "
+"uprawnień."
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
 #: app/templates/app/admin/login.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "Ostatni błąd"
+msgstr "Błąd:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1520,22 +1512,18 @@ msgid "Change password"
 msgstr "Zmień hasło"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "Zmień hasło"
+msgstr "Ustaw hasło"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
 #: app/templates/app/admin/login.html:24
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
 msgstr[0] "Popraw poniższy błąd."
-msgstr[1] "Popraw poniższy błąd."
-msgstr[2] "Popraw poniższy błąd."
+msgstr[1] "Popraw poniższe błędy."
+msgstr[2] "Popraw poniższe błędy."
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
