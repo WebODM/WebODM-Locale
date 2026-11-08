@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-02 21:01+0000\n"
-"PO-Revision-Date: 2026-10-16 23:59+0000\n"
+"PO-Revision-Date: 2026-11-09 09:51+0000\n"
 "Last-Translator: \"Luca P.\" <upa@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/it/"
-">\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/"
+"it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.11.dev0\n"
+"X-Generator: Weblate 2026.11.2.dev0\n"
 
 #: app/admin.py:104
 msgid "Cannot restore default logo"
@@ -147,16 +147,12 @@ msgid "Actions"
 msgstr "Azioni"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid export"
 msgid "Invalid payload."
-msgstr "Esport non valido"
+msgstr "Payload non valido."
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid filename"
 msgid "Invalid signature."
-msgstr "Nome file non valido"
+msgstr "Firma non valida."
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
@@ -164,20 +160,22 @@ msgstr "L'account utente è disabilitato."
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "Intestazione autorizzazione non valida. Nessuna credenziale fornita."
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
 msgstr ""
+"Intestazione autorizzazione non valida. La stringa delle credenziali non "
+"deve contenere spazi."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "La firma è scaduta."
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "Errore decodifica firma."
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -365,11 +363,11 @@ msgstr "Deve includere \"username\" e \"password\"."
 
 #: app/api/jwt.py:74
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "campo orig_iat è obbligatorio."
 
 #: app/api/jwt.py:76
 msgid "Refresh has expired."
-msgstr ""
+msgstr "Aggiornamento scaduto."
 
 #: app/api/media.py:72 app/api/tasks.py:323
 msgid "No files uploaded"
@@ -1395,7 +1393,7 @@ msgstr ""
 
 #: app/templates/app/about.html:25
 msgid "Minimize"
-msgstr ""
+msgstr "Minimizza"
 
 #: app/templates/app/about.html:29
 #, python-format
@@ -1417,8 +1415,6 @@ msgid "Page not found"
 msgstr "Pagina non trovata"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
 msgstr "Siamo spiacenti, la pagina richiesta non è stata trovata."
 
@@ -1443,16 +1439,10 @@ msgid "Server error (500)"
 msgstr "Errore del server (500)"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "Errore del server (500)"
+msgstr "Errore del server <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
@@ -1483,26 +1473,19 @@ msgstr "Cancella selezione"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Percorso di navigazione"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
 msgstr ""
-"Innanzitutto, inserisci un nome utente e una password. Quindi, sarai in "
-"grado di modificare più opzioni utente."
+"Dopo che avrai creato l'utente sarai in grado di modificare più opzioni."
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
 #: app/templates/app/admin/login.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "Ultimo errore"
+msgstr "Errore:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1510,20 +1493,16 @@ msgid "Change password"
 msgstr "Cambia la password"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "Cambia la password"
+msgstr "Imposta password"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
 #: app/templates/app/admin/login.html:24
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] "Per favore correggi gli errori qui sotto."
+msgstr[0] "Per favore correggi l'errore qui sotto."
 msgstr[1] "Per favore correggi gli errori qui sotto."
 
 #: app/templates/app/admin/auth/user/change_password.html:34
@@ -1537,14 +1516,16 @@ msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
 msgstr ""
+"Questa azione <strong>abilita</strong> l'autenticazione basata su password "
+"per questo utente."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "Disabilita autenticazione basata su password"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "Abilita autenticazione basata su password"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1564,20 +1545,16 @@ msgid "Filter"
 msgstr "Filtro"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "Account"
+msgstr "Nascondi conteggi"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "Account"
+msgstr "Mostra conteggi"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "Rimuovi filtri"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1642,8 +1619,6 @@ msgstr "Oggetti"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
 msgstr "Sì, sono sicuro"
 
@@ -1693,7 +1668,7 @@ msgstr "Modifica"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "Vedi"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1727,30 +1702,21 @@ msgstr "Non disponibile"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "Aggiunto:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "Modifica"
+msgstr "Modificato:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "Cancella"
+msgstr "Cancellato:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "Contenuto sconosciuto"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
@@ -1770,10 +1736,8 @@ msgstr ""
 "questa pagina. Desideri accedere con un altro account?"
 
 #: app/templates/app/admin/login.html:60
-#, fuzzy
-#| msgid "Forgotten your password or username?"
 msgid "Forgotten your login credentials?"
-msgstr "Hai dimenticato la password o il nome utente?"
+msgstr "Hai dimenticato le credenziali di accesso?"
 
 #: app/templates/app/admin/login.html:64
 msgid "Log in"
@@ -1794,14 +1758,10 @@ msgstr "Azione"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "voce"
+msgstr[1] "voci"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
@@ -1820,10 +1780,8 @@ msgid "Save"
 msgstr "Salva"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "Chiusura popup..."
+msgstr "Chiusura popup…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1854,10 +1812,8 @@ msgid "Save and continue editing"
 msgstr "Salva e continua a modificare"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "Salva come nuovo"
+msgstr "Salva e vedi"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -2150,6 +2106,8 @@ msgstr ""
 #: app/translations/plugin_manifest_autogenerated.py:15
 msgid "Adds a mock button to the boundary option in the edit preset dialog"
 msgstr ""
+"Aggiunge un pulsante fittizio all'opzione del contorno nella finestra di "
+"dialogo di modifica dei preset"
 
 #: app/views/app.py:58
 msgid "First Project"
