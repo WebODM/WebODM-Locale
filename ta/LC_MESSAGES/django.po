@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-08 16:19+0000\n"
+"POT-Creation-Date: 2026-11-12 19:02+0000\n"
 "PO-Revision-Date: 2026-03-05 19:55+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
-"Language-Team: Tamil <https://hosted.weblate.org/projects/webodm/webodm/ta/>"
-"\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/webodm/webodm/ta/"
+">\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,39 +19,49 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/admin.py:65
+#: app/admin.py:104
+msgid "Cannot restore default logo"
+msgstr ""
+
+#: app/admin.py:118
+#, fuzzy
+#| msgid "Button Default"
+msgid "Restore Default"
+msgstr "பொத்தான் இயல்புநிலை"
+
+#: app/admin.py:140
 msgid "Enter custom CSS"
 msgstr "தனிப்பயன் சிஎச்எச் ஐ உள்ளிடவும்"
 
-#: app/admin.py:66 app/models/theme.py:40
+#: app/admin.py:141 app/models/theme.py:40
 msgid "CSS"
 msgstr "சிஎச்எச்"
 
-#: app/admin.py:69
+#: app/admin.py:144
 msgid "HTML that will be displayed above site header"
 msgstr "தள தலைப்புக்கு மேலே காண்பிக்கப்படும் உஉகுமொ"
 
-#: app/admin.py:70 app/models/theme.py:41
+#: app/admin.py:145 app/models/theme.py:41
 msgid "HTML (before header)"
 msgstr "உஉகுமொ (தலைப்பு முன்)"
 
-#: app/admin.py:73
+#: app/admin.py:148
 msgid "HTML that will be displayed after site header"
 msgstr "தள தலைப்புக்குப் பிறகு காண்பிக்கப்படும் உஉகுமொ"
 
-#: app/admin.py:74 app/models/theme.py:42
+#: app/admin.py:149 app/models/theme.py:42
 msgid "HTML (after header)"
 msgstr "உஉகுமொ (தலைப்புக்குப் பிறகு)"
 
-#: app/admin.py:77
+#: app/admin.py:152
 msgid "HTML that will be displayed after the body tag"
 msgstr "உடல் குறிச்சொல்லுக்குப் பிறகு காண்பிக்கப்படும் உஉகுமொ"
 
-#: app/admin.py:78 app/models/theme.py:43
+#: app/admin.py:153 app/models/theme.py:43
 msgid "HTML (after body)"
 msgstr "உஉகுமொ (உடலுக்குப் பிறகு)"
 
-#: app/admin.py:82
+#: app/admin.py:157
 #, python-brace-format
 msgid ""
 "HTML that will be displayed in the footer. You can also use the special tags "
@@ -60,86 +70,126 @@ msgstr ""
 "உஉகுமொ அடிக்குறிப்பில் காண்பிக்கப்படும். {ORGANIZATION} மற்றும் {YEAR} போன்ற சிறப்பு "
 "குறிச்சொற்களையும் நீங்கள் பயன்படுத்தலாம்."
 
-#: app/admin.py:83 app/models/theme.py:44
+#: app/admin.py:158 app/models/theme.py:44
 msgid "HTML (footer)"
 msgstr "உஉகுமொ (அடிக்குறிப்பு)"
 
-#: app/admin.py:115 app/models/project.py:25
+#: app/admin.py:218 app/models/project.py:29
 msgid "Description"
 msgstr "விவரம்"
 
-#: app/admin.py:121
+#: app/admin.py:224
 msgid "Version"
 msgstr "பதிப்பு"
 
-#: app/admin.py:127
+#: app/admin.py:230
 msgid "Author"
 msgstr "நூலாசிரியர்"
 
-#: app/admin.py:159
+#: app/admin.py:272
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr "மறுதொடக்கம் தேவை. %(plugin)s இயக்க WeboDM ஐ மறுதொடக்கம் செய்யுங்கள்"
 
-#: app/admin.py:162
+#: app/admin.py:275
 #, python-format
 msgid "Cannot enable plugin %(plugin)s: %(message)s"
 msgstr "சொருகி %(message)s: %(plugin)s இயக்க முடியாது"
 
-#: app/admin.py:171
+#: app/admin.py:284
 #, python-format
 msgid "Restart required. Please restart WebODM to fully disable %(plugin)s"
-msgstr ""
-"மறுதொடக்கம் தேவை. %(plugin)s முழுமையாக முடக்க WeboDM ஐ மறுதொடக்கம் செய்யுங்கள்"
+msgstr "மறுதொடக்கம் தேவை. %(plugin)s முழுமையாக முடக்க WeboDM ஐ மறுதொடக்கம் செய்யுங்கள்"
 
-#: app/admin.py:174
+#: app/admin.py:287
 #, python-format
 msgid "Cannot disable plugin %(plugin)s: %(message)s"
 msgstr "சொருகி %(message)s: %(plugin)s முடக்க முடியாது"
 
-#: app/admin.py:183
+#: app/admin.py:296
 #, python-format
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "சொருகி %(message)s: %(plugin)s நீக்க முடியாது"
 
-#: app/admin.py:231
-msgid "Plugin added successfully"
+#: app/admin.py:372
+#, python-format
+msgid ""
+"Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
+"changes."
+msgstr ""
+
+#: app/admin.py:374
+#, fuzzy, python-format
+#| msgid "Plugin added successfully"
+msgid "%(plugin)s installed successfully"
 msgstr "சொருகி வெற்றிகரமாக சேர்க்கப்பட்டது"
 
-#: app/admin.py:233
+#: app/admin.py:378
 #, python-format
 msgid "Cannot load plugin: %(message)s"
 msgstr "சொருகி ஏற்ற முடியாது: %(message)s"
 
-#: app/admin.py:239
+#: app/admin.py:387
 msgid "You need to upload a zip file"
 msgstr "நீங்கள் ஒரு சிப் கோப்பை பதிவேற்ற வேண்டும்"
 
-#: app/admin.py:253
+#: app/admin.py:406
 msgid "Disable"
 msgstr "முடக்கு"
 
-#: app/admin.py:256
+#: app/admin.py:409
 msgid "Enable"
 msgstr "இயக்கு"
 
-#: app/admin.py:261
+#: app/admin.py:414
 msgid "Actions"
 msgstr "செயல்கள்"
+
+#: app/api/authentication.py:43
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid payload."
+msgstr "தவறான செயல்"
+
+#: app/api/authentication.py:47
+#, fuzzy
+#| msgid "Invalid boundaries"
+msgid "Invalid signature."
+msgstr "தவறான எல்லைகள்"
+
+#: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
+msgid "User account is disabled."
+msgstr ""
+
+#: app/api/authentication.py:61
+msgid "Invalid Authorization header. No credentials provided."
+msgstr ""
+
+#: app/api/authentication.py:63
+msgid ""
+"Invalid Authorization header. Credentials string should not contain spaces."
+msgstr ""
+
+#: app/api/authentication.py:73 app/api/jwt.py:67
+msgid "Signature has expired."
+msgstr ""
+
+#: app/api/authentication.py:75 app/api/jwt.py:69
+msgid "Error decoding signature."
+msgstr ""
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
 "Normalized Difference Vegetation Index shows the amount of green vegetation."
-msgstr ""
-"இயல்பாக்கப்பட்ட வேறுபாடு தாவர அட்டவணை பச்சை தாவரங்களின் அளவைக் காட்டுகிறது."
+msgstr "இயல்பாக்கப்பட்ட வேறுபாடு தாவர அட்டவணை பச்சை தாவரங்களின் அளவைக் காட்டுகிறது."
 
 #: app/api/formulas.py:17
 msgid ""
 "Normalized difference yellowness index (NDYI), best model variability in "
 "relative yield potential in Canola."
 msgstr ""
-"இயல்பாக்கப்பட்ட வேறுபாடு யெல்லவுன்ச் இன்டெக்ச் (என்.டி.ஒய்.ஐ), கனோலாவில் ஒப்பீட்டு மகசூல் ஆற்றலில் "
-"சிறந்த மாதிரி மாறுபாடு."
+"இயல்பாக்கப்பட்ட வேறுபாடு யெல்லவுன்ச் இன்டெக்ச் (என்.டி.ஒய்.ஐ), கனோலாவில் ஒப்பீட்டு மகசூல் "
+"ஆற்றலில் சிறந்த மாதிரி மாறுபாடு."
 
 #: app/api/formulas.py:22
 msgid ""
@@ -174,8 +224,7 @@ msgstr ""
 
 #: app/api/formulas.py:45
 msgid "Visual Atmospheric Resistance Index shows the areas of vegetation."
-msgstr ""
-"காட்சி வளிமண்டல எதிர்ப்புக் குறியீடு தாவரங்களின் பகுதிகளைக் காட்டுகிறது."
+msgstr "காட்சி வளிமண்டல எதிர்ப்புக் குறியீடு தாவரங்களின் பகுதிகளைக் காட்டுகிறது."
 
 #: app/api/formulas.py:50
 msgid "Modified Photochemical Reflectance Index"
@@ -205,14 +254,13 @@ msgid ""
 "Green Normalized Difference Vegetation Index is similar to NDVI, but "
 "measures the green spectrum instead of red."
 msgstr ""
-"பச்சை இயல்பாக்கப்பட்ட வேறுபாடு தாவர குறியீடு NDVI க்கு ஒத்ததாகும், ஆனால் சிவப்பு நிறத்திற்கு "
-"பதிலாக பச்சை நிறமாலையை அளவிடுகிறது."
+"பச்சை இயல்பாக்கப்பட்ட வேறுபாடு தாவர குறியீடு NDVI க்கு ஒத்ததாகும், ஆனால் சிவப்பு "
+"நிறத்திற்கு பதிலாக பச்சை நிறமாலையை அளவிடுகிறது."
 
 #: app/api/formulas.py:73
 msgid ""
 "Green Ratio Vegetation Index is sensitive to photosynthetic rates in forests."
-msgstr ""
-"பசுமை விகித தாவர அட்டவணை காடுகளில் ஒளிச்சேர்க்கை விகிதங்களுக்கு உணர்திறன்."
+msgstr "பசுமை விகித தாவர அட்டவணை காடுகளில் ஒளிச்சேர்க்கை விகிதங்களுக்கு உணர்திறன்."
 
 #: app/api/formulas.py:77
 msgid ""
@@ -227,8 +275,8 @@ msgid ""
 "Modified Non-Linear Index improves the Non-Linear Index algorithm to account "
 "for soil areas."
 msgstr ""
-"மாற்றியமைக்கப்பட்ட நேரியல் அல்லாத குறியீடு மண் பகுதிகளுக்கு கணக்கிட நேரியல் அல்லாத குறியீட்டு "
-"வழிமுறையை மேம்படுத்துகிறது."
+"மாற்றியமைக்கப்பட்ட நேரியல் அல்லாத குறியீடு மண் பகுதிகளுக்கு கணக்கிட நேரியல் அல்லாத "
+"குறியீட்டு வழிமுறையை மேம்படுத்துகிறது."
 
 #: app/api/formulas.py:85
 msgid ""
@@ -243,24 +291,25 @@ msgid ""
 "Renormalized Difference Vegetation Index uses the difference between near-IR "
 "and red, plus NDVI to show areas of healthy vegetation."
 msgstr ""
-"மறுசீரமைக்கப்பட்ட வேறுபாடு தாவர அட்டவணை ஆரோக்கியமான தாவரங்களின் பகுதிகளைக் காட்ட அருகிலுள்ள "
-"ஐ.ஆர் மற்றும் சிவப்பு, மற்றும் என்.டி.வி.ஐ ஆகியவற்றுக்கு இடையேயான வித்தியாசத்தைப் "
-"பயன்படுத்துகிறது."
+"மறுசீரமைக்கப்பட்ட வேறுபாடு தாவர அட்டவணை ஆரோக்கியமான தாவரங்களின் பகுதிகளைக் காட்ட "
+"அருகிலுள்ள ஐ.ஆர் மற்றும் சிவப்பு, மற்றும் என்.டி.வி.ஐ ஆகியவற்றுக்கு இடையேயான "
+"வித்தியாசத்தைப் பயன்படுத்துகிறது."
 
 #: app/api/formulas.py:93
 msgid ""
 "Transformed Difference Vegetation Index highlights vegetation cover in urban "
 "environments."
 msgstr ""
-"மாற்றப்பட்ட வேறுபாடு தாவர அட்டவணை நகர்ப்புற சூழல்களில் தாவரங்களின் அட்டையை எடுத்துக்காட்டுகிறது."
+"மாற்றப்பட்ட வேறுபாடு தாவர அட்டவணை நகர்ப்புற சூழல்களில் தாவரங்களின் அட்டையை "
+"எடுத்துக்காட்டுகிறது."
 
 #: app/api/formulas.py:97
 msgid ""
 "Optimized Soil Adjusted Vegetation Index is based on SAVI, but tends to work "
 "better in areas with little vegetation where soil is visible."
 msgstr ""
-"உகந்த மண் சரிசெய்யப்பட்ட தாவர அட்டவணை சாவியை அடிப்படையாகக் கொண்டது, ஆனால் மண் தெரியும் சிறிய "
-"தாவரங்களைக் கொண்ட பகுதிகளில் சிறப்பாக செயல்பட முனைகிறது."
+"உகந்த மண் சரிசெய்யப்பட்ட தாவர அட்டவணை சாவியை அடிப்படையாகக் கொண்டது, ஆனால் மண் தெரியும் "
+"சிறிய தாவரங்களைக் கொண்ட பகுதிகளில் சிறப்பாக செயல்பட முனைகிறது."
 
 #: app/api/formulas.py:101
 msgid "Leaf Area Index estimates foliage areas and predicts crop yields."
@@ -292,125 +341,371 @@ msgstr "செல்சியச் டிகிரிகளில் வெப�
 msgid "Temperature in Centikelvin degrees."
 msgstr "சென்டிகெல்வின் டிகிரிகளில் வெப்பநிலை."
 
-#: app/api/projects.py:125
-msgid "Cannot duplicate project"
-msgstr "திட்டத்தை நகலெடுக்க முடியாது"
+#: app/api/jwt.py:35
+msgid "Cannot impersonate, user is not superuser."
+msgstr ""
 
-#: app/api/projects.py:193
-msgid "Invalid user in permissions list"
-msgstr "இசைவு பட்டியலில் தவறான பயனர்"
+#: app/api/jwt.py:47 app/api/jwt.py:55
+msgid "Unable to log in with provided credentials."
+msgstr ""
 
-#: app/api/projects.py:195
-msgid "Invalid permissions"
-msgstr "தவறான அனுமதிகள்"
+#: app/api/jwt.py:57
+#, fuzzy
+#| msgid "Enter a username and password."
+msgid "Must include \"username\" and \"password\"."
+msgstr "பயனர்பெயர் மற்றும் கடவுச்சொல்லை உள்ளிடவும்."
 
-#: app/api/tasks.py:186
-msgid "You need to upload at least 1 file before commit"
-msgstr "கமிட் முன் குறைந்தது 1 கோப்பை பதிவேற்ற வேண்டும்"
+#: app/api/jwt.py:71
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid token."
+msgstr "தவறான செயல்"
 
-#: app/api/tasks.py:208
+#: app/api/jwt.py:76
+msgid "orig_iat field is required."
+msgstr ""
+
+#: app/api/jwt.py:78
+msgid "Refresh has expired."
+msgstr ""
+
+#: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
 msgstr "கோப்புகள் பதிவேற்றப்படவில்லை"
 
-#: app/api/tasks.py:234
-msgid "Cannot duplicate task"
-msgstr "பணியை நகலெடுக்க முடியாது"
+#: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
+#: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid uuid"
+msgstr "தவறான செயல்"
 
-#: app/api/tasks.py:251
-msgid "Cannot create task, you need at least 2 images"
-msgstr "பணியை உருவாக்க முடியாது, உங்களுக்கு குறைந்தது 2 படங்கள் தேவை"
+#: app/api/media.py:158 app/api/splats.py:140
+msgid "File exceeds maximum allowed size"
+msgstr ""
 
-#: app/api/tasks.py:370 app/api/tasks.py:374 app/api/tasks.py:398
-#: app/api/tasks.py:401 app/api/tasks.py:419
+#: app/api/overlays.py:38
+msgid "Invalid overlay ID"
+msgstr ""
+
+#: app/api/overlays.py:82 app/api/overlays.py:234
+msgid "Missing file"
+msgstr ""
+
+#: app/api/overlays.py:85 app/api/overlays.py:242
+#, python-format
+msgid "%(file)s is bigger than %(size)s MB."
+msgstr ""
+
+#: app/api/overlays.py:93 app/api/overlays.py:169
+msgid "Invalid overlay metadata"
+msgstr ""
+
+#: app/api/overlays.py:104 app/api/overlays.py:185
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid GeoJSON"
+msgstr "தவறான செயல்"
+
+#: app/api/overlays.py:240
+#, python-format
+msgid "Not a DXF or zipped shapefile: %(file)s"
+msgstr ""
+
+#: app/api/overlays.py:251 app/api/overlays.py:253
+#, fuzzy
+#| msgid "Invalid EPSG code: %(value)s"
+msgid "Invalid EPSG code"
+msgstr "தவறான இபிஎச்சி குறியீடு: %(value)s"
+
+#: app/api/overlays.py:283 app/api/overlays.py:290
+#, python-format
+msgid "Cannot convert %(file)s: %(reason)s"
+msgstr ""
+
+#: app/api/projects.py:147
+msgid "Cannot duplicate project"
+msgstr "திட்டத்தை நகலெடுக்க முடியாது"
+
+#: app/api/projects.py:243
+msgid "Invalid user in permissions list"
+msgstr "இசைவு பட்டியலில் தவறான பயனர்"
+
+#: app/api/projects.py:245
+#, fuzzy
+#| msgid "Invalid user in permissions list"
+msgid "Invalid group in permissions list"
+msgstr "இசைவு பட்டியலில் தவறான பயனர்"
+
+#: app/api/projects.py:247
+msgid "Invalid permissions"
+msgstr "தவறான அனுமதிகள்"
+
+#: app/api/splats.py:29 app/api/splats.py:31
+#, fuzzy
+#| msgid "Invalid zip file"
+msgid "Invalid image size"
+msgstr "தவறான சிப் கோப்பு"
+
+#: app/api/splats.py:35
+#, python-format
+msgid "Task is missing %(asset)s"
+msgstr ""
+
+#: app/api/splats.py:48
+msgid "Export is not ready"
+msgstr ""
+
+#: app/api/splats.py:52
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid export"
+msgstr "தவறான செயல்"
+
+#: app/api/splats.py:57
+msgid "Export has expired, please generate a new one"
+msgstr ""
+
+#: app/api/splats.py:73
+msgid "Cannot upload a splats model (task is missing a point cloud)"
+msgstr ""
+
+#: app/api/splats.py:77
+#, fuzzy
+#| msgid "No files uploaded"
+msgid "A single file must be uploaded"
+msgstr "கோப்புகள் பதிவேற்றப்படவில்லை"
+
+#: app/api/splats.py:82
+#, fuzzy
+#| msgid "Invalid zip file"
+msgid "Invalid filename"
+msgstr "தவறான சிப் கோப்பு"
+
+#: app/api/splats.py:86 app/api/tasks.py:941
+#, fuzzy
+#| msgid "Invalid zip file"
+msgid "Invalid file type"
+msgstr "தவறான சிப் கோப்பு"
+
+#: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
+#: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
+#: app/api/tasks.py:1112
 msgid "Asset does not exist"
 msgstr "சொத்து இல்லை"
 
-#: app/api/tasks.py:437
+#: app/api/tasks.py:115
+#, fuzzy
+#| msgid "Cannot restart a task that has no processing node"
+msgid "Cannot create task, processing node is not valid"
+msgstr "செயலாக்க முனை இல்லாத பணியை மறுதொடக்கம் செய்ய முடியாது"
+
+#: app/api/tasks.py:308
+msgid "You need to upload at least 1 file before commit"
+msgstr "கமிட் முன் குறைந்தது 1 கோப்பை பதிவேற்ற வேண்டும்"
+
+#: app/api/tasks.py:393
+msgid "Cannot duplicate task"
+msgstr "பணியை நகலெடுக்க முடியாது"
+
+#: app/api/tasks.py:411
+#, fuzzy
+#| msgid "Cannot create task, you need at least 2 images"
+msgid "Cannot create task, alignment task is not valid"
+msgstr "பணியை உருவாக்க முடியாது, உங்களுக்கு குறைந்தது 2 படங்கள் தேவை"
+
+#: app/api/tasks.py:428
+msgid "Cannot create task, you need at least 2 images"
+msgstr "பணியை உருவாக்க முடியாது, உங்களுக்கு குறைந்தது 2 படங்கள் தேவை"
+
+#: app/api/tasks.py:800 app/api/tasks.py:1024
 msgid "Imported Task"
 msgstr "இறக்குமதி செய்யப்பட்ட பணி"
 
-#: app/api/tasks.py:440
+#: app/api/tasks.py:804 app/api/tasks.py:933
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "பணியை உருவாக்க முடியாது, நீங்கள் 1 கோப்பை பதிவேற்ற வேண்டும்"
 
-#: app/api/tasks.py:443
+#: app/api/tasks.py:808
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr ""
 "பணியை உருவாக்க முடியாது, ஒன்று முகவரி ஐ குறிப்பிடவும் அல்லது 1 கோப்பைப் பதிவேற்றவும்."
 
-#: app/api/tiler.py:307
+#: app/api/tasks.py:810
+#, python-format
+msgid "Invalid URL. Did you mean %(hint)s ?"
+msgstr ""
+
+#: app/api/tasks.py:952
+msgid "Invalid file type (extension mismatch)"
+msgstr ""
+
+#: app/api/tasks.py:976
+msgid "Some parameters are not integers"
+msgstr ""
+
+#: app/api/tasks.py:1037 app/api/tasks.py:1042
+msgid "GeoTIFF must have a valid CRS"
+msgstr ""
+
+#: app/api/tasks.py:1044
+msgid "Elevation model must have at most 2 band"
+msgstr ""
+
+#: app/api/tasks.py:1050
+msgid "Point cloud must be a valid LAZ/LAS file"
+msgstr ""
+
+#: app/api/tasks.py:1056
+msgid "Textured model must be a valid GLB file"
+msgstr ""
+
+#: app/api/tasks.py:1060
+#, fuzzy
+#| msgid "No files uploaded"
+msgid "No assets uploaded"
+msgstr "கோப்புகள் பதிவேற்றப்படவில்லை"
+
+#: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
 msgstr "தவறான எல்லைகள் அளவுரு"
 
-#: app/api/tiler.py:326
+#: app/api/tiler.py:404
 msgid "Invalid tile size parameter"
 msgstr "தவறான ஓடு அளவு அளவுரு"
 
-#: app/api/tiler.py:356 app/api/tiler.py:428
+#: app/api/tiler.py:437 app/api/tiler.py:521
 msgid "Outside of bounds"
 msgstr "எல்லைகளுக்கு வெளியே"
 
-#: app/api/tiler.py:366
+#: app/api/tiler.py:448
 msgid "Invalid boundaries"
 msgstr "தவறான எல்லைகள்"
 
-#: app/api/tiler.py:434 app/api/tiler.py:553
+#: app/api/tiler.py:527 app/api/tiler.py:670
 msgid "Not a valid color_map value"
 msgstr "செல்லுபடியாகும் வண்ணம்_மாப் மதிப்பு அல்ல"
 
-#: app/api/tiler.py:440
+#: app/api/tiler.py:535
 msgid "Invalid rescale value"
 msgstr "தவறான மீட்பு மதிப்பு"
 
-#: app/api/tiler.py:462
+#: app/api/tiler.py:567
 msgid "Invalid hillshade value"
 msgstr "தவறான இல்சேட் மதிப்பு"
 
-#: app/api/tiler.py:465
+#: app/api/tiler.py:570
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
-msgstr ""
-"உயரமற்ற ராச்டரின் இல்சேட்டை கணக்கிட முடியாது (பல பட்டைகள் காணப்படுகின்றன)"
+msgstr "உயரமற்ற ராச்டரின் இல்சேட்டை கணக்கிட முடியாது (பல பட்டைகள் காணப்படுகின்றன)"
 
-#: app/api/tiler.py:489
+#: app/api/tiler.py:594
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
-"ஓடு செயலாக்க முடியாது: தீவிரம் படம் வழங்கப்பட்டது, ஆனால் RGB தரவு எதுவும் கணக்கிடப்படவில்லை."
+"ஓடு செயலாக்க முடியாது: தீவிரம் படம் வழங்கப்பட்டது, ஆனால் RGB தரவு எதுவும் "
+"கணக்கிடப்படவில்லை."
 
-#: app/api/tiler.py:538 app/api/tiler.py:540
+#: app/api/tiler.py:652 app/api/tiler.py:654
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr "ஆதரிக்கப்படாத வடிவம்: %(value)s"
 
-#: app/api/tiler.py:559
+#: app/api/tiler.py:676
+#, fuzzy, python-format
+#| msgid "Invalid rescale value: %(value)s"
+msgid "Invalid resample value: %(value)s"
+msgstr "தவறான மீட்பு மதிப்பு: %(value)s"
+
+#: app/api/tiler.py:682
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr "தவறான இபிஎச்சி குறியீடு: %(value)s"
 
-#: app/api/tiler.py:562
+#: app/api/tiler.py:688 app/api/tiler.py:690
+#, fuzzy, python-format
+#| msgid "Invalid EPSG code: %(value)s"
+msgid "Invalid PROJ string: %(value)s"
+msgstr "தவறான இபிஎச்சி குறியீடு: %(value)s"
+
+#: app/api/tiler.py:693
 msgid "Both formula and bands parameters are required"
 msgstr "தேற்றம் மற்றும் பட்டைகள் அளவுருக்கள் இரண்டும் தேவை"
 
-#: app/api/tiler.py:585
+#: app/api/tiler.py:716
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr "தவறான மீட்பு மதிப்பு: %(value)s"
 
-#: app/api/tiler.py:593
+#: app/api/tiler.py:724
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr "தவறான இல்சேட் மதிப்பு: %(value)s"
 
-#: app/api/tiler.py:604
+#: app/api/tiler.py:735
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "உலகம் அல்லாத தரவுத்தொகுப்பில் EPSG ஐப் பயன்படுத்த முடியாது"
+
+#: app/models/basemap.py:14
+msgid "Type"
+msgstr ""
+
+#: app/models/basemap.py:15
+msgid "URL"
+msgstr ""
+
+#: app/models/basemap.py:16 app/templates/app/processing_node.html:39
+#: nodeodm/models.py:32
+msgid "Label"
+msgstr "சிட்டை"
+
+#: app/models/basemap.py:17
+msgid "Attribution"
+msgstr ""
+
+#: app/models/basemap.py:20
+msgid "Max zoom"
+msgstr ""
+
+#: app/models/basemap.py:23
+msgid "Min zoom"
+msgstr ""
+
+#: app/models/basemap.py:24
+msgid "Subdomains"
+msgstr ""
+
+#: app/models/basemap.py:25
+msgid "Layers"
+msgstr ""
+
+#: app/models/basemap.py:26
+msgid "Styles"
+msgstr ""
+
+#: app/models/basemap.py:31
+msgid "Format"
+msgstr ""
+
+#: app/models/basemap.py:32
+#, fuzzy
+#| msgid "Button Default"
+msgid "Default"
+msgstr "பொத்தான் இயல்புநிலை"
+
+#: app/models/basemap.py:35
+msgid "Basemap"
+msgstr ""
+
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+msgid "Basemaps"
+msgstr ""
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
 msgstr "சொருகி பெயர்"
 
-#: app/models/plugin.py:5 app/models/preset.py:10 app/models/project.py:24
-#: app/models/task.py:245 app/models/theme.py:18
+#: app/models/plugin.py:5 app/models/preset.py:9 app/models/project.py:28
+#: app/models/task.py:246 app/models/theme.py:18
 msgid "Name"
 msgstr "பெயர்"
 
@@ -430,77 +725,76 @@ msgstr "சொருகு"
 msgid "Plugins"
 msgstr "செருகுநிரல்கள்"
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Setting key"
 msgstr "அமைத்தல் விசை"
 
-#: app/models/plugin_datum.py:7
+#: app/models/plugin_datum.py:6
 msgid "Key"
 msgstr "விசை"
 
-#: app/models/plugin_datum.py:8
+#: app/models/plugin_datum.py:7
 msgid "The user this setting belongs to. If NULL, the setting is global."
-msgstr ""
-"இந்த அமைப்பு பயனருக்கு சொந்தமானது. பூச்யமாக இருந்தால், அமைப்பு உலகளாவியதாகும்."
+msgstr "இந்த அமைப்பு பயனருக்கு சொந்தமானது. பூச்யமாக இருந்தால், அமைப்பு உலகளாவியதாகும்."
 
-#: app/models/plugin_datum.py:8 app/templates/app/admin/object_history.html:23
+#: app/models/plugin_datum.py:7 app/templates/app/admin/object_history.html:23
 msgid "User"
 msgstr "பயனர்"
 
-#: app/models/plugin_datum.py:9
+#: app/models/plugin_datum.py:8
 msgid "Integer value"
 msgstr "முழு மதிப்பு"
 
-#: app/models/plugin_datum.py:10
+#: app/models/plugin_datum.py:9
 msgid "Float value"
 msgstr "மிதவை மதிப்பு"
 
-#: app/models/plugin_datum.py:11
+#: app/models/plugin_datum.py:10
 msgid "Bool value"
 msgstr "பூல் மதிப்பு"
 
-#: app/models/plugin_datum.py:12
+#: app/models/plugin_datum.py:11
 msgid "String value"
 msgstr "சரம் மதிப்பு"
 
-#: app/models/plugin_datum.py:13
+#: app/models/plugin_datum.py:12
 msgid "JSON value"
 msgstr "சாதொபொகு மதிப்பு"
 
-#: app/models/plugin_datum.py:19 app/models/plugin_datum.py:20
+#: app/models/plugin_datum.py:18 app/models/plugin_datum.py:19
 msgid "Plugin Datum"
 msgstr "சொருகி தேதி"
 
-#: app/models/preset.py:9
+#: app/models/preset.py:8
 msgid "The person who owns this preset"
 msgstr "இந்த முன்னமைவை வைத்திருக்கும் நபர்"
 
-#: app/models/preset.py:9 app/models/project.py:23
+#: app/models/preset.py:8 app/models/project.py:27 app/models/redirect.py:9
 msgid "Owner"
 msgstr "உரிமையாளர்"
 
-#: app/models/preset.py:10
+#: app/models/preset.py:9
 msgid "A label used to describe the preset"
 msgstr "முன்னமைவை விவரிக்கப் பயன்படும் சிட்டை"
 
-#: app/models/preset.py:11
+#: app/models/preset.py:10
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
 "இந்த முன்னமைவை வரையறுக்கும் விருப்பங்கள் (ஒரு பணியின் விருப்பங்களில் உள்ள அதே வடிவம்)."
 
-#: app/models/preset.py:11 app/models/task.py:251
+#: app/models/preset.py:10 app/models/task.py:252
 msgid "Options"
 msgstr "விருப்பங்கள்"
 
-#: app/models/preset.py:13 app/models/project.py:26 app/models/task.py:259
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Creation date"
 msgstr "உருவாக்கும் தேதி"
 
-#: app/models/preset.py:13 app/models/project.py:26 app/models/task.py:259
+#: app/models/preset.py:12 app/models/project.py:30 app/models/task.py:260
 msgid "Created at"
 msgstr "உருவாக்கப்பட்டது"
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid ""
 "Whether this preset is available to every user in the system or just to its "
 "owner."
@@ -508,15 +802,15 @@ msgstr ""
 "இந்த முன்னமைவு கணினியில் உள்ள ஒவ்வொரு பயனருக்கும் கிடைக்குமா அல்லது அதன் உரிமையாளருக்கு "
 "கிடைக்குமா."
 
-#: app/models/preset.py:14
+#: app/models/preset.py:13
 msgid "System"
 msgstr "மண்டலம்"
 
-#: app/models/preset.py:20
+#: app/models/preset.py:19
 msgid "Preset"
 msgstr "முன்னமைவு"
 
-#: app/models/preset.py:21
+#: app/models/preset.py:20
 msgid "Presets"
 msgstr "முன்னமைவுகள்"
 
@@ -528,51 +822,129 @@ msgstr "மெகாபைட்டுகளில் அதிகபட்ச �
 msgid "Quota"
 msgstr "ஒதுக்கீடு"
 
-#: app/models/project.py:23
+#: app/models/profile.py:16
+msgid "Cluster Id this user is assigned to"
+msgstr ""
+
+#: app/models/profile.py:16
+msgid "Cluster Id"
+msgstr ""
+
+#: app/models/profile.py:17
+msgid "OIDC Subject used for SSO"
+msgstr ""
+
+#: app/models/profile.py:17
+#, fuzzy
+#| msgid "Objects"
+msgid "OIDC Subject"
+msgstr "பொருள்கள்"
+
+#: app/models/project.py:27
 msgid "The person who created the project"
 msgstr "திட்டத்தை உருவாக்கிய நபர்"
 
-#: app/models/project.py:24
+#: app/models/project.py:28
 msgid "A label used to describe the project"
 msgstr "திட்டத்தை விவரிக்க பயன்படுத்தப்படும் சிட்டை"
 
-#: app/models/project.py:25
+#: app/models/project.py:29
 msgid "More in-depth description of the project"
 msgstr "திட்டத்தின் மேலும் ஆழமான விளக்கம்"
 
-#: app/models/project.py:27
+#: app/models/project.py:31
 msgid ""
 "Whether this project has been marked for deletion. Projects that have "
 "running tasks need to wait for tasks to be properly cleaned up before they "
 "can be deleted."
 msgstr ""
-"இந்த திட்டம் நீக்குவதற்கு குறிக்கப்பட்டுள்ளதா. பணிகளை இயங்கும் திட்டங்கள் நீக்கப்படுவதற்கு முன்னர் "
-"பணிகள் சரியாக தூய்மை செய்யப்படுவதற்கு காத்திருக்க வேண்டும்."
+"இந்த திட்டம் நீக்குவதற்கு குறிக்கப்பட்டுள்ளதா. பணிகளை இயங்கும் திட்டங்கள் நீக்கப்படுவதற்கு "
+"முன்னர் பணிகள் சரியாக தூய்மை செய்யப்படுவதற்கு காத்திருக்க வேண்டும்."
 
-#: app/models/project.py:27
+#: app/models/project.py:31
 msgid "Deleting"
 msgstr "நீக்குதல்"
 
-#: app/models/project.py:28
+#: app/models/project.py:32
 msgid "Project tags"
 msgstr "திட்ட குறிச்சொற்கள்"
 
-#: app/models/project.py:28 app/models/task.py:282
+#: app/models/project.py:32 app/models/task.py:286
 msgid "Tags"
 msgstr "குறிச்சொற்கள்"
 
-#: app/models/project.py:65 app/models/task.py:430
+#: app/models/project.py:33
+#, fuzzy
+#| msgid "A flag indicating whether this task is available to the public"
+msgid "A flag indicating whether this project is available to the public"
+msgstr "இந்த பணி பொதுமக்களுக்கு கிடைக்குமா என்பதைக் குறிக்கும் கொடி"
+
+#: app/models/project.py:33 app/models/task.py:263
+msgid "Public"
+msgstr "பொது"
+
+#: app/models/project.py:34
+#, fuzzy
+#| msgid "A flag indicating whether this task is available to the public"
+msgid "A flag indicating whether this public project can be edited"
+msgstr "இந்த பணி பொதுமக்களுக்கு கிடைக்குமா என்பதைக் குறிக்கும் கொடி"
+
+#: app/models/project.py:34 app/models/task.py:264
+#, fuzzy
+#| msgid "Public"
+msgid "Public Edit"
+msgstr "பொது"
+
+#: app/models/project.py:35 app/models/redirect.py:7
+#, fuzzy
+#| msgid "More in-depth description of the project"
+msgid "Public identifier of the project"
+msgstr "திட்டத்தின் மேலும் ஆழமான விளக்கம்"
+
+#: app/models/project.py:35 app/models/redirect.py:7
+#, fuzzy
+#| msgid "Public"
+msgid "Public Id"
+msgstr "பொது"
+
+#: app/models/project.py:108 app/models/task.py:484
 #, python-format
 msgid "Copy of %(task)s"
 msgstr "%(task)s நகல்"
 
-#: app/models/project.py:90 app/models/task.py:244
+#: app/models/project.py:141 app/models/task.py:245
 msgid "Project"
 msgstr "திட்டம்"
 
-#: app/models/project.py:91 coreplugins/projects-charts/templates/index.html:7
+#: app/models/project.py:142
 msgid "Projects"
 msgstr "திட்டங்கள்"
+
+#: app/models/redirect.py:6
+#, fuzzy
+#| msgid "Project"
+msgid "Project Id"
+msgstr "திட்டம்"
+
+#: app/models/redirect.py:8
+#, fuzzy
+#| msgid "Task"
+msgid "Task Id"
+msgstr "பணி"
+
+#: app/models/redirect.py:9
+#, fuzzy
+#| msgid "The person who owns this preset"
+msgid "The person associated with this redirect"
+msgstr "இந்த முன்னமைவை வைத்திருக்கும் நபர்"
+
+#: app/models/redirect.py:23
+msgid "Redirect"
+msgstr ""
+
+#: app/models/redirect.py:24
+msgid "Redirects"
+msgstr ""
 
 #: app/models/setting.py:20
 msgid "The name of your application"
@@ -615,7 +987,7 @@ msgstr "கருப்பொருள்"
 msgid "Active theme"
 msgstr "செயலில் கருப்பொருள்"
 
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:125
+#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
 msgid "Application"
 msgstr "பயன்பாடு"
 
@@ -623,27 +995,27 @@ msgstr "பயன்பாடு"
 msgid "Settings"
 msgstr "அமைப்புகள்"
 
-#: app/models/task.py:241
+#: app/models/task.py:242
 msgid "Id"
 msgstr "ஐடி"
 
-#: app/models/task.py:243
+#: app/models/task.py:244
 msgid "Identifier of the task (as returned by NodeODM API)"
 msgstr "பணியின் அடையாளங்காட்டி (NODEODM பநிஇ ஆல் திருப்பி அனுப்பப்பட்டது)"
 
-#: app/models/task.py:243
+#: app/models/task.py:244
 msgid "UUID"
 msgstr "Uuid"
 
-#: app/models/task.py:244
+#: app/models/task.py:245
 msgid "Project that this task belongs to"
 msgstr "இந்த பணி சொந்தமானது என்று திட்டம்"
 
-#: app/models/task.py:245
+#: app/models/task.py:246
 msgid "A label for the task"
 msgstr "பணிக்கான சிட்டை"
 
-#: app/models/task.py:246
+#: app/models/task.py:247
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
@@ -651,11 +1023,11 @@ msgstr ""
 "இந்த பணியின் தொடக்கத்திலிருந்து கடந்த மில்லி விநாடிகளின் எண்ணிக்கை (-1 எந்த தகவலும் "
 "கிடைக்கவில்லை என்பதைக் குறிக்கிறது)"
 
-#: app/models/task.py:246
+#: app/models/task.py:247
 msgid "Processing Time"
 msgstr "செயலாக்க நேரம்"
 
-#: app/models/task.py:247
+#: app/models/task.py:248
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
@@ -663,66 +1035,77 @@ msgstr ""
 "இந்த பணிக்கு ஒதுக்கப்பட்ட முனையை செயலாக்குகிறது (அல்லது இந்த பணி இன்னும் "
 "தொடர்புபடுத்தப்படவில்லை என்றால் பூச்யம்)"
 
-#: app/models/task.py:247 app/views/app.py:118 nodeodm/models.py:36
+#: app/models/task.py:248 app/views/app.py:154 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr "செயலாக்க முனை"
 
-#: app/models/task.py:248
+#: app/models/task.py:249
 msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
-msgstr ""
-"இந்த பணியை தானாகவே செயலாக்க முனையை ஒதுக்க வேண்டுமா என்பதைக் குறிக்கும் கொடி"
+msgstr "இந்த பணியை தானாகவே செயலாக்க முனையை ஒதுக்க வேண்டுமா என்பதைக் குறிக்கும் கொடி"
 
-#: app/models/task.py:248
+#: app/models/task.py:249
 msgid "Auto Processing Node"
 msgstr "ஆட்டோ செயலாக்க முனை"
 
-#: app/models/task.py:249
+#: app/models/task.py:250
 msgid "Current status of the task"
 msgstr "பணியின் தற்போதைய நிலை"
 
-#: app/models/task.py:249
+#: app/models/task.py:250
 msgid "Status"
 msgstr "நிலை"
 
-#: app/models/task.py:250
+#: app/models/task.py:251
 msgid "The last processing error received"
 msgstr "கடைசி செயலாக்க பிழை பெறப்பட்டது"
 
-#: app/models/task.py:250
+#: app/models/task.py:251
 msgid "Last Error"
 msgstr "கடைசி பிழை"
 
-#: app/models/task.py:251
+#: app/models/task.py:252
 msgid "Options that are being used to process this task"
 msgstr "இந்த பணியை செயலாக்க பயன்படுத்தப்படும் விருப்பங்கள்"
 
-#: app/models/task.py:252
+#: app/models/task.py:253
 msgid "List of available assets to download"
 msgstr "பதிவிறக்கம் செய்ய கிடைக்கக்கூடிய சொத்துக்களின் பட்டியல்"
 
-#: app/models/task.py:252
+#: app/models/task.py:253
 msgid "Available Assets"
 msgstr "கிடைக்கும் சொத்துக்கள்"
 
-#: app/models/task.py:254
+#: app/models/task.py:255
 msgid "Extent of the orthophoto"
 msgstr "ஆர்த்தோஃபோட்டோவின் அளவு"
 
-#: app/models/task.py:254
+#: app/models/task.py:255
 msgid "Orthophoto Extent"
 msgstr "ஆர்த்தோஃபோட்டோ அளவு"
 
-#: app/models/task.py:255
+#: app/models/task.py:256
+#, fuzzy
+#| msgid "Extent of the orthophoto"
+msgid "Extent of the DSM"
+msgstr "ஆர்த்தோஃபோட்டோவின் அளவு"
+
+#: app/models/task.py:256
 msgid "DSM Extent"
 msgstr "டி.எச்.எம் அளவு"
 
-#: app/models/task.py:256
+#: app/models/task.py:257
+#, fuzzy
+#| msgid "Extent of the orthophoto"
+msgid "Extent of the DTM"
+msgstr "ஆர்த்தோஃபோட்டோவின் அளவு"
+
+#: app/models/task.py:257
 msgid "DTM Extent"
 msgstr "டிடிஎம் அளவு"
 
-#: app/models/task.py:260
+#: app/models/task.py:261
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
@@ -730,82 +1113,84 @@ msgstr ""
 "பணியில் கோரப்பட்ட நடவடிக்கை செய்யப்பட வேண்டும். தேர்ந்தெடுக்கப்பட்ட நடவடிக்கை அடுத்த மறு "
 "செய்கையில் தொழிலாளியால் செய்யப்படும்."
 
-#: app/models/task.py:260
+#: app/models/task.py:261
 msgid "Pending Action"
 msgstr "நடவடிக்கை நிலுவையில் உள்ளது"
 
-#: app/models/task.py:262
+#: app/models/task.py:263
 msgid "A flag indicating whether this task is available to the public"
 msgstr "இந்த பணி பொதுமக்களுக்கு கிடைக்குமா என்பதைக் குறிக்கும் கொடி"
 
-#: app/models/task.py:262
-msgid "Public"
-msgstr "பொது"
+#: app/models/task.py:264
+#, fuzzy
+#| msgid "A flag indicating whether this task is available to the public"
+msgid "A flag indicating whether this public task can be edited"
+msgstr "இந்த பணி பொதுமக்களுக்கு கிடைக்குமா என்பதைக் குறிக்கும் கொடி"
 
-#: app/models/task.py:263
+#: app/models/task.py:266
 msgid ""
 "When set to a value different than -1, indicates that the images for this "
 "task have been / will be resized to the size specified here before "
 "processing."
 msgstr ""
-"-1 ஐ விட வேறுபட்ட மதிப்பாக அமைக்கப்பட்டால், இந்தப் பணிக்கான படங்கள் செயலாக்கத்திற்கு முன் இங்கே "
-"குறிப்பிடப்பட்டுள்ள அளவிற்கு மாற்றியமைக்கப்படும் / மாற்றியமைக்கப்பட்டதைக் குறிக்கிறது."
+"-1 ஐ விட வேறுபட்ட மதிப்பாக அமைக்கப்பட்டால், இந்தப் பணிக்கான படங்கள் செயலாக்கத்திற்கு முன் "
+"இங்கே குறிப்பிடப்பட்டுள்ள அளவிற்கு மாற்றியமைக்கப்படும் / மாற்றியமைக்கப்பட்டதைக் குறிக்கிறது."
 
-#: app/models/task.py:263
+#: app/models/task.py:266
 msgid "Resize To"
 msgstr "மறுஅளவிடுங்கள்"
 
-#: app/models/task.py:266
+#: app/models/task.py:269
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
 msgstr ""
-"0 மற்றும் 1 க்கு இடையிலான மதிப்பு இந்த பணியின் கோப்புகளின் பதிவேற்ற முன்னேற்றத்தை செயலாக்க "
-"முனைக்கு குறிக்கிறது"
+"0 மற்றும் 1 க்கு இடையிலான மதிப்பு இந்த பணியின் கோப்புகளின் பதிவேற்ற முன்னேற்றத்தை "
+"செயலாக்க முனைக்கு குறிக்கிறது"
 
-#: app/models/task.py:267
+#: app/models/task.py:270
 msgid "Upload Progress"
 msgstr "முன்னேற்றத்தைப் பதிவேற்றவும்"
 
-#: app/models/task.py:270
+#: app/models/task.py:273
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr ""
 "0 மற்றும் 1 க்கு இடையிலான மதிப்பு இந்த பணியின் படங்களின் மறுஅளவிடுதல் முன்னேற்றத்தைக் "
 "குறிக்கிறது"
 
-#: app/models/task.py:271
+#: app/models/task.py:274
 msgid "Resize Progress"
 msgstr "முன்னேற்றத்தை மறுஅளவிடுங்கள்"
 
-#: app/models/task.py:274
+#: app/models/task.py:277
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr "இந்த பணியின் இயங்கும் முன்னேற்றத்தைக் குறிக்கும் 0 முதல் 1 வரை மதிப்பு"
 
-#: app/models/task.py:275
+#: app/models/task.py:278
 msgid "Running Progress"
 msgstr "இயங்கும் முன்னேற்றம்"
 
-#: app/models/task.py:277
+#: app/models/task.py:280
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr ""
 "முகவரி இந்த பணி இறக்குமதி செய்யப்படுகிறது (இறக்குமதி செய்யப்பட்ட பணிகளுக்கு மட்டுமே)"
 
-#: app/models/task.py:277
+#: app/models/task.py:280
 msgid "Import URL"
 msgstr "இறக்குமதி முகவரி"
 
-#: app/models/task.py:278
+#: app/models/task.py:281
 msgid "Number of images associated with this task"
 msgstr "இந்த பணியுடன் தொடர்புடைய படங்களின் எண்ணிக்கை"
 
-#: app/models/task.py:278
+#: app/models/task.py:281
 msgid "Images Count"
 msgstr "படங்கள் எண்ணப்படுகின்றன"
 
-#: app/models/task.py:279
+#: app/models/task.py:282
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
@@ -813,11 +1198,11 @@ msgstr ""
 "செயலாக்கத்திற்கு பரிசீலிக்கப்படுவதற்கு முன்னர் செய்தி அல்லது கோப்புகள் பதிவேற்றப்படுவதற்கு "
 "இந்த பணி தற்போது காத்திருக்கிறதா என்பதைக் குறிக்கும் கொடி."
 
-#: app/models/task.py:279
+#: app/models/task.py:282
 msgid "Partial"
 msgstr "பகுதி"
 
-#: app/models/task.py:280
+#: app/models/task.py:283
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
@@ -825,69 +1210,104 @@ msgstr ""
 "அளவீடுகள் மற்றும் கேமரா பார்வை கோணத்தை சேமிக்க/ஏற்ற பயன்படுத்தப்படும் வரிசைப்படுத்தப்பட்ட "
 "பொட்டிரீ காட்சி செய்தி"
 
-#: app/models/task.py:280
+#: app/models/task.py:283
 msgid "Potree Scene"
 msgstr "பொட்டீக் காட்சி"
 
-#: app/models/task.py:281
+#: app/models/task.py:284
 msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "தரவுத்தொகுப்பின் EPSG குறியீடு (புவிசார் என்றால்)"
 
-#: app/models/task.py:282
+#: app/models/task.py:285
+#, fuzzy
+#| msgid "EPSG code of the dataset (if georeferenced)"
+msgid ""
+"WKT definition of the dataset (if georeferenced and EPSG code is not "
+"available)"
+msgstr "தரவுத்தொகுப்பின் EPSG குறியீடு (புவிசார் என்றால்)"
+
+#: app/models/task.py:286
 msgid "Task tags"
 msgstr "பணி குறிச்சொற்கள்"
 
-#: app/models/task.py:283
+#: app/models/task.py:287
 msgid "List of orthophoto bands"
 msgstr "ஆர்த்தோஃபோட்டோ பட்டைகள் பட்டியல்"
 
-#: app/models/task.py:283
+#: app/models/task.py:287
 msgid "Orthophoto Bands"
 msgstr "ஆர்த்தோஃபோட்டோ பட்டைகள்"
 
-#: app/models/task.py:284
+#: app/models/task.py:288
 msgid "Size of the task on disk in megabytes"
 msgstr "மெகாபைட்டுகளில் வட்டில் பணியின் அளவு"
 
-#: app/models/task.py:284
+#: app/models/task.py:288
 msgid "Size"
 msgstr "அளவு"
 
-#: app/models/task.py:287
+#: app/models/task.py:289
+#, fuzzy
+#| msgid "A flag indicating whether this task is available to the public"
+msgid "A flag indicating whether this task was compacted"
+msgstr "இந்த பணி பொதுமக்களுக்கு கிடைக்குமா என்பதைக் குறிக்கும் கொடி"
+
+#: app/models/task.py:289
+msgid "Compact"
+msgstr ""
+
+#: app/models/task.py:290
+msgid "Polygon defining the crop area of this task"
+msgstr ""
+
+#: app/models/task.py:290
+msgid "Crop Polygon"
+msgstr ""
+
+#: app/models/task.py:291
+#, fuzzy
+#| msgid "Number of images associated with this task"
+msgid "List of media files associated with this task"
+msgstr "இந்த பணியுடன் தொடர்புடைய படங்களின் எண்ணிக்கை"
+
+#: app/models/task.py:291
+msgid "Media"
+msgstr ""
+
+#: app/models/task.py:295
 msgid "Task"
 msgstr "பணி"
 
-#: app/models/task.py:288
+#: app/models/task.py:296
 msgid "Tasks"
 msgstr "பணிகள்"
 
-#: app/models/task.py:299
+#: app/models/task.py:307
 msgid "unnamed"
 msgstr "பெயரில்லாதது"
 
-#: app/models/task.py:549
+#: app/models/task.py:620
 msgid "Importing assets..."
 msgstr "சொத்துக்களை இறக்குமதி செய்தல் ..."
 
-#: app/models/task.py:601 app/models/task.py:869
+#: app/models/task.py:675 app/models/task.py:954
 msgid "Invalid zip file"
 msgstr "தவறான சிப் கோப்பு"
 
-#: app/models/task.py:695
+#: app/models/task.py:677
+msgid "Unsupported compression method"
+msgstr ""
+
+#: app/models/task.py:772
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "இணைப்பு பிழை: %(error)s"
 
-#: app/models/task.py:775
+#: app/models/task.py:852
 msgid "Cannot restart a task that has no processing node"
 msgstr "செயலாக்க முனை இல்லாத பணியை மறுதொடக்கம் செய்ய முடியாது"
 
-#: app/models/task.py:949
-#, python-format
-msgid "Unsupported SRS %(code)s. Please make sure you picked a supported SRS."
-msgstr "ஆதரிக்கப்படாத SRS %(code)s. நீங்கள் ஆதரிக்கப்பட்ட எச்.ஆர்.எச்."
-
-#: app/models/task.py:968
+#: app/models/task.py:1057
 msgid "Done!"
 msgstr "முடிந்தது!"
 
@@ -999,6 +1419,16 @@ msgstr "செய் அறிவிப்புகளின் பின்ன�
 msgid "Success"
 msgstr "செய்"
 
+#: app/templates/app/403.html:6
+msgid "403 Forbidden"
+msgstr ""
+
+#: app/templates/app/403.html:7
+#, fuzzy
+#| msgid "You don't have permission to edit anything."
+msgid "You do not have permission to access this page."
+msgstr "எதையும் திருத்த உங்களுக்கு இசைவு இல்லை."
+
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
 msgstr "404 பக்கம் கிடைக்கவில்லை"
@@ -1015,7 +1445,11 @@ msgstr "500 உள் சேவையக பிழை"
 msgid "Something happened. The server logs contain more information."
 msgstr "ஏதோ நடந்தது. சேவையக பதிவுகளில் கூடுதல் தகவல்கள் உள்ளன."
 
-#: app/templates/app/about.html:94
+#: app/templates/app/about.html:26
+msgid "Minimize"
+msgstr ""
+
+#: app/templates/app/about.html:30
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1026,25 +1460,27 @@ msgid ""
 msgstr ""
 "இந்த நிரல் இலவச மென்பொருள்: நீங்கள் அதை மறுபகிர்வு செய்யலாம் மற்றும்/அல்லது குனு அஃபெரோ "
 "பொது பொது உரிமத்தின் விதிமுறைகளின் கீழ் இலவச மென்பொருள் அறக்கட்டளையால் வெளியிடப்பட்டபடி, "
-"உரிமத்தின் பதிப்பு 3 அல்லது (உங்கள் விருப்பத்தில்) பின்னர் எந்தப் பதிப்பையும் மாற்றலாம். மேலும் "
-"விவரங்களுக்கு %(link_start)sthe குனு அஃபெரோ பொது பொது உரிமம் %(link_end)s ஐப் "
-"பார்க்கவும்."
+"உரிமத்தின் பதிப்பு 3 அல்லது (உங்கள் விருப்பத்தில்) பின்னர் எந்தப் பதிப்பையும் மாற்றலாம். "
+"மேலும் விவரங்களுக்கு %(link_start)sthe குனு அஃபெரோ பொது பொது உரிமம் %(link_end)s "
+"ஐப் பார்க்கவும்."
 
 #: app/templates/app/admin/404.html:4 app/templates/app/admin/404.html:8
 msgid "Page not found"
 msgstr "பக்கம் கிடைக்கவில்லை"
 
 #: app/templates/app/admin/404.html:10
-msgid "We're sorry, but the requested page could not be found."
+#, fuzzy
+#| msgid "We're sorry, but the requested page could not be found."
+msgid "We’re sorry, but the requested page could not be found."
 msgstr "மன்னிக்கவும், ஆனால் கோரப்பட்ட பக்கத்தைக் கண்டுபிடிக்க முடியவில்லை."
 
-#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:9
-#: app/templates/app/admin/auth/user/change_password.html:13
+#: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
+#: app/templates/app/admin/auth/user/change_password.html:15
 #: app/templates/app/admin/base.html:19
-#: app/templates/app/admin/change_form.html:18
-#: app/templates/app/admin/change_list.html:31
-#: app/templates/app/admin/delete_confirmation.html:13
-#: app/templates/app/admin/delete_selected_confirmation.html:13
+#: app/templates/app/admin/change_form.html:19
+#: app/templates/app/admin/change_list.html:33
+#: app/templates/app/admin/delete_confirmation.html:14
+#: app/templates/app/admin/delete_selected_confirmation.html:14
 #: app/templates/app/admin/invalid_setup.html:6
 #: app/templates/app/admin/object_history.html:6
 msgid "Home"
@@ -1059,73 +1495,105 @@ msgid "Server error (500)"
 msgstr "சேவையக பிழை (500)"
 
 #: app/templates/app/admin/500.html:14
-msgid "Server Error (500)"
+#, fuzzy
+#| msgid "Server Error (500)"
+msgid "Server Error <em>(500)</em>"
 msgstr "சேவையக பிழை (500)"
 
 #: app/templates/app/admin/500.html:15
+#, fuzzy
+#| msgid ""
+#| "There's been an error. It's been reported to the site administrators via "
+#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
-"There's been an error. It's been reported to the site administrators via "
+"There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
 "பிழை ஏற்பட்டுள்ளது. இது தள நிர்வாகிகளுக்கு மின்னஞ்சல் வழியாக தெரிவிக்கப்பட்டுள்ளது, "
 "விரைவில் சரி செய்யப்பட வேண்டும். உங்கள் பொறுமைக்கு நன்றி."
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
 msgstr "தேர்ந்தெடுக்கப்பட்ட செயலை இயக்கவும்"
 
-#: app/templates/app/admin/actions.html:4
+#: app/templates/app/admin/actions.html:8
 msgid "Go"
 msgstr "போ"
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 msgid "Click here to select the objects across all pages"
 msgstr "எல்லா பக்கங்களிலும் உள்ள பொருள்களைத் தேர்ந்தெடுக்க இங்கே சொடுக்கு செய்க"
 
-#: app/templates/app/admin/actions.html:10
+#: app/templates/app/admin/actions.html:16
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
 msgstr "அனைத்து %(total_count)s %(module_name)sத் தேர்ந்தெடுக்கவும்"
 
-#: app/templates/app/admin/actions.html:12
+#: app/templates/app/admin/actions.html:18
 msgid "Clear selection"
 msgstr "தெளிவான தேர்வு"
 
+#: app/templates/app/admin/app_index.html:8
+msgid "Breadcrumbs"
+msgstr ""
+
 #: app/templates/app/admin/auth/user/add_form.html:6
-msgid ""
-"First, enter a username and password. Then, you'll be able to edit more user "
-"options."
+#, fuzzy
+#| msgid ""
+#| "First, enter a username and password. Then, you'll be able to edit more "
+#| "user options."
+msgid "After you’ve created a user, you’ll be able to edit more user options."
 msgstr ""
 "முதலில், பயனர்பெயர் மற்றும் கடவுச்சொல்லை உள்ளிடவும். பின்னர், நீங்கள் மேலும் பயனர் "
 "விருப்பங்களைத் திருத்த முடியும்."
 
-#: app/templates/app/admin/auth/user/add_form.html:8
-msgid "Enter a username and password."
-msgstr "பயனர்பெயர் மற்றும் கடவுச்சொல்லை உள்ளிடவும்."
+#: app/templates/app/admin/auth/user/change_password.html:5
+#: app/templates/app/admin/change_form.html:4
+#: app/templates/app/admin/change_list.html:4
+#, fuzzy
+#| msgid "Last Error"
+msgid "Error:"
+msgstr "கடைசி பிழை"
 
-#: app/templates/app/admin/auth/user/change_password.html:17
-#: app/templates/app/admin/auth/user/change_password.html:54
+#: app/templates/app/admin/auth/user/change_password.html:19
+#: app/templates/app/admin/auth/user/change_password.html:71
 msgid "Change password"
 msgstr "கடவுச்சொல்லை மாற்றவும்"
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
+#: app/templates/app/admin/auth/user/change_password.html:19
+#, fuzzy
+#| msgid "Change password"
+msgid "Set password"
+msgstr "கடவுச்சொல்லை மாற்றவும்"
+
+#: app/templates/app/admin/auth/user/change_password.html:30
+#: app/templates/app/admin/change_form.html:44
+#: app/templates/app/admin/change_list.html:53
+#, fuzzy
+#| msgid "Please correct the error below."
 msgid "Please correct the error below."
-msgstr "கீழே உள்ள பிழையை சரிசெய்யவும்."
+msgid_plural "Please correct the errors below."
+msgstr[0] "கீழே உள்ள பிழையை சரிசெய்யவும்."
+msgstr[1] "கீழே உள்ள பிழையை சரிசெய்யவும்."
 
-#: app/templates/app/admin/auth/user/change_password.html:27
-#: app/templates/app/admin/change_form.html:47
-#: app/templates/app/admin/change_list.html:58
-#: app/templates/app/admin/login.html:21
-msgid "Please correct the errors below."
-msgstr "கீழே உள்ள பிழைகளை சரிசெய்யவும்."
-
-#: app/templates/app/admin/auth/user/change_password.html:31
+#: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
 msgstr "பயனருக்கு புதிய கடவுச்சொல்லை உள்ளிடவும் <strong>%(username)s </strong>."
+
+#: app/templates/app/admin/auth/user/change_password.html:36
+msgid ""
+"This action will <strong>enable</strong> password-based authentication for "
+"this user."
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:72
+msgid "Disable password-based authentication"
+msgstr ""
+
+#: app/templates/app/admin/auth/user/change_password.html:74
+msgid "Enable password-based authentication"
+msgstr ""
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1135,56 +1603,59 @@ msgstr "சாங்கோ தள நிர்வாகி"
 msgid "Django administration"
 msgstr "சாங்கோ நிர்வாகம்"
 
-#: app/templates/app/admin/change_form.html:21
-#: app/templates/app/admin/change_list.html:49
+#: app/templates/app/admin/change_form.html:22
 #, python-format
 msgid "Add %(name)s"
 msgstr "%(name)s சேர்க்கவும்"
 
-#: app/templates/app/admin/change_form.html:33
-#: app/templates/app/admin/object_history.html:10
-msgid "History"
-msgstr "வரலாறு"
-
-#: app/templates/app/admin/change_form.html:35
-#: app/templates/app/admin/edit_inline/stacked.html:14
-#: app/templates/app/admin/edit_inline/tabular.html:36
-msgid "View on site"
-msgstr "தளத்தில் காண்க"
-
-#: app/templates/app/admin/change_list.html:69
+#: app/templates/app/admin/change_list.html:78
 msgid "Filter"
 msgstr "வடிப்பி"
 
-#: app/templates/app/admin/change_list_plugin.html:24
+#: app/templates/app/admin/change_list.html:81
+#, fuzzy
+#| msgid "Accounts"
+msgid "Hide counts"
+msgstr "கணக்குகள்"
+
+#: app/templates/app/admin/change_list.html:82
+#, fuzzy
+#| msgid "Accounts"
+msgid "Show counts"
+msgstr "கணக்குகள்"
+
+#: app/templates/app/admin/change_list.html:85
+msgid "Clear all filters"
+msgstr ""
+
+#: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
 msgstr "சொருகி ஏற்றவும் (.zip)"
 
-#: app/templates/app/admin/change_list_plugin.html:28
+#: app/templates/app/admin/change_list_plugin.html:33
 msgid "Manage Plugins"
 msgstr "செருகுநிரல்களை நிர்வகிக்கவும்"
 
-#: app/templates/app/admin/change_list_results.html:17
+#: app/templates/app/admin/change_list_results.html:16
 msgid "Remove from sorting"
 msgstr "வரிசையாக்கத்திலிருந்து அகற்று"
 
-#: app/templates/app/admin/change_list_results.html:18
+#: app/templates/app/admin/change_list_results.html:17
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
 msgstr "முன்னுரிமை வரிசைப்படுத்துதல்: %(priority_number)s"
 
-#: app/templates/app/admin/change_list_results.html:19
+#: app/templates/app/admin/change_list_results.html:18
 msgid "Toggle sorting"
 msgstr "வரிசையாக்கத்தை மாற்றவும்"
 
-#: app/templates/app/admin/delete_confirmation.html:17
-#: app/templates/app/admin/related_widget_wrapper.html:23
-#: app/templates/app/admin/submit_line.html:6
+#: app/templates/app/admin/delete_confirmation.html:18
+#: app/templates/app/admin/submit_line.html:14
 #: app/templates/app/processing_node.html:54
 msgid "Delete"
 msgstr "நீக்கு"
 
-#: app/templates/app/admin/delete_confirmation.html:23
+#: app/templates/app/admin/delete_confirmation.html:25
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
@@ -1203,7 +1674,7 @@ msgstr ""
 "%(object_name)s ' %(escaped_object)s' ஐ நீக்குவதற்கு பின்வரும் பாதுகாக்கப்பட்ட "
 "தொடர்புடைய பொருள்களை நீக்க வேண்டும்:"
 
-#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_confirmation.html:35
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
@@ -1212,26 +1683,28 @@ msgstr ""
 "%(escaped_object)s \" %(object_name)s\" ஐ நீக்க விரும்புகிறீர்களா? பின்வரும் "
 "தொடர்புடைய உருப்படிகள் அனைத்தும் நீக்கப்படும்:"
 
-#: app/templates/app/admin/delete_confirmation.html:39
-#: app/templates/app/admin/delete_selected_confirmation.html:38
+#: app/templates/app/admin/delete_confirmation.html:37
+#: app/templates/app/admin/delete_selected_confirmation.html:31
 msgid "Objects"
 msgstr "பொருள்கள்"
 
-#: app/templates/app/admin/delete_confirmation.html:46
-#: app/templates/app/admin/delete_selected_confirmation.html:49
-msgid "Yes, I'm sure"
+#: app/templates/app/admin/delete_confirmation.html:44
+#: app/templates/app/admin/delete_selected_confirmation.html:42
+#, fuzzy
+#| msgid "Yes, I'm sure"
+msgid "Yes, I’m sure"
 msgstr "ஆம், நான் உறுதியாக நம்புகிறேன்"
 
-#: app/templates/app/admin/delete_confirmation.html:47
-#: app/templates/app/admin/delete_selected_confirmation.html:50
+#: app/templates/app/admin/delete_confirmation.html:45
+#: app/templates/app/admin/delete_selected_confirmation.html:43
 msgid "No, take me back"
 msgstr "இல்லை, என்னை திரும்ப அழைத்துச் செல்லுங்கள்"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:16
+#: app/templates/app/admin/delete_selected_confirmation.html:17
 msgid "Delete multiple objects"
 msgstr "பல பொருள்களை நீக்கவும்"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:22
+#: app/templates/app/admin/delete_selected_confirmation.html:23
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
@@ -1241,7 +1714,7 @@ msgstr ""
 "தேர்ந்தெடுக்கப்பட்ட %(objects_name)s நீக்குவது தொடர்புடைய பொருள்களை நீக்குவதற்கு "
 "வழிவகுக்கும், ஆனால் பின்வரும் வகை பொருள்களை நீக்க உங்கள் கணக்கில் இசைவு இல்லை:"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:29
+#: app/templates/app/admin/delete_selected_confirmation.html:26
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
@@ -1250,7 +1723,7 @@ msgstr ""
 "தேர்ந்தெடுக்கப்பட்ட %(objects_name)s நீக்குவதற்கு பின்வரும் பாதுகாக்கப்பட்ட தொடர்புடைய "
 "பொருள்களை நீக்க வேண்டும்:"
 
-#: app/templates/app/admin/delete_selected_confirmation.html:36
+#: app/templates/app/admin/delete_selected_confirmation.html:29
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
@@ -1259,18 +1732,26 @@ msgstr ""
 "தேர்ந்தெடுக்கப்பட்ட %(objects_name)s நீக்க விரும்புகிறீர்களா? பின்வரும் பொருள்கள் மற்றும் "
 "அவற்றுடன் தொடர்புடைய உருப்படிகள் அனைத்தும் நீக்கப்படும்:"
 
-#: app/templates/app/admin/edit_inline/stacked.html:12
-#: app/templates/app/admin/edit_inline/tabular.html:34
-#: app/templates/app/admin/index.html:37
-#: app/templates/app/admin/related_widget_wrapper.html:9
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "Change"
 msgstr "மாற்றம்"
 
-#: app/templates/app/admin/edit_inline/tabular.html:20
+#: app/templates/app/admin/edit_inline/stacked.html:20
+#: app/templates/app/admin/edit_inline/tabular.html:40
+msgid "View"
+msgstr ""
+
+#: app/templates/app/admin/edit_inline/stacked.html:22
+#: app/templates/app/admin/edit_inline/tabular.html:42
+msgid "View on site"
+msgstr "தளத்தில் காண்க"
+
+#: app/templates/app/admin/edit_inline/tabular.html:26
 msgid "Delete?"
 msgstr "நீக்கவா?"
 
-#: app/templates/app/admin/filter.html:2
+#: app/templates/app/admin/filter.html:4
 #, python-format
 msgid " By %(filter_title)s "
 msgstr " மூலம் %(filter_title)s "
@@ -1279,39 +1760,46 @@ msgstr " மூலம் %(filter_title)s "
 msgid "Summary"
 msgstr "சுருக்கம்"
 
-#: app/templates/app/admin/index.html:20
-#, python-format
-msgid "Models in the %(name)s application"
-msgstr "%(name)s பயன்பாட்டில் உள்ள மாதிரிகள்"
-
-#: app/templates/app/admin/index.html:31
-#: app/templates/app/admin/related_widget_wrapper.html:16
-msgid "Add"
-msgstr "கூட்டு"
-
-#: app/templates/app/admin/index.html:47
-msgid "You don't have permission to edit anything."
-msgstr "எதையும் திருத்த உங்களுக்கு இசைவு இல்லை."
-
-#: app/templates/app/admin/index.html:55
+#: app/templates/app/admin/index.html:23
 msgid "Recent actions"
 msgstr "அண்மைக் கால செயல்கள்"
 
-#: app/templates/app/admin/index.html:56
+#: app/templates/app/admin/index.html:24
 msgid "My actions"
 msgstr "எனது செயல்கள்"
 
-#: app/templates/app/admin/index.html:60
+#: app/templates/app/admin/index.html:28
 msgid "None available"
 msgstr "எதுவும் கிடைக்கவில்லை"
 
-#: app/templates/app/admin/index.html:74
+#: app/templates/app/admin/index.html:33
+msgid "Added:"
+msgstr ""
+
+#: app/templates/app/admin/index.html:33
+#, fuzzy
+#| msgid "Change"
+msgid "Changed:"
+msgstr "மாற்றம்"
+
+#: app/templates/app/admin/index.html:33
+#, fuzzy
+#| msgid "Delete"
+msgid "Deleted:"
+msgstr "நீக்கு"
+
+#: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "தெரியாத உள்ளடக்கம்"
 
 #: app/templates/app/admin/invalid_setup.html:12
+#, fuzzy
+#| msgid ""
+#| "Something's wrong with your database installation. Make sure the "
+#| "appropriate database tables have been created, and make sure the database "
+#| "is readable by the appropriate user."
 msgid ""
-"Something's wrong with your database installation. Make sure the appropriate "
+"Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
@@ -1319,22 +1807,9 @@ msgstr ""
 "என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள், மேலும் பொருத்தமான பயனரால் தரவுத்தளம் படிக்கக்கூடியது "
 "என்பதை உறுதிப்படுத்தவும்."
 
-#: app/templates/app/admin/login.html:37
-#, python-format
-msgid ""
-"You are authenticated as %(username)s, but are not authorized to access this "
-"page. Would you like to login to a different account?"
-msgstr ""
-"நீங்கள் %(username)s என அங்கீகரிக்கப்பட்டுள்ளீர்கள், ஆனால் இந்த பக்கத்தை அணுக "
-"அங்கீகரிக்கப்படவில்லை. வேறு கணக்கில் உள்நுழைய விரும்புகிறீர்களா?"
-
-#: app/templates/app/admin/login.html:57
-msgid "Forgotten your password or username?"
-msgstr "உங்கள் கடவுச்சொல் அல்லது பயனர்பெயரை மறந்துவிட்டீர்களா?"
-
-#: app/templates/app/admin/login.html:61
-msgid "Log in"
-msgstr "புகுபதிகை"
+#: app/templates/app/admin/object_history.html:10
+msgid "History"
+msgstr "வரலாறு"
 
 #: app/templates/app/admin/object_history.html:22
 msgid "Date/time"
@@ -1344,9 +1819,19 @@ msgstr "தேதி/நேரம்"
 msgid "Action"
 msgstr "செயல்"
 
-#: app/templates/app/admin/object_history.html:38
+#: app/templates/app/admin/object_history.html:49
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/templates/app/admin/object_history.html:52
+#, fuzzy
+#| msgid ""
+#| "This object doesn't have a change history. It probably wasn't added via "
+#| "this admin site."
 msgid ""
-"This object doesn't have a change history. It probably wasn't added via this "
+"This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
 "இந்த பொருளுக்கு மாற்ற வரலாறு இல்லை. இந்த நிர்வாகி தளம் வழியாக இது சேர்க்கப்படவில்லை."
@@ -1357,28 +1842,15 @@ msgid "Show all"
 msgstr "அனைத்தையும் காட்டு"
 
 #: app/templates/app/admin/pagination.html:11
-#: app/templates/app/admin/submit_line.html:3
+#: app/templates/app/admin/submit_line.html:4
 msgid "Save"
 msgstr "சேமி"
 
 #: app/templates/app/admin/popup_response.html:3
-msgid "Popup closing..."
+#, fuzzy
+#| msgid "Popup closing..."
+msgid "Popup closing…"
 msgstr "பாப்அப் நிறைவு ..."
-
-#: app/templates/app/admin/related_widget_wrapper.html:8
-#, python-format
-msgid "Change selected %(model)s"
-msgstr "தேர்ந்தெடுக்கப்பட்ட %(model)s மாற்றவும்"
-
-#: app/templates/app/admin/related_widget_wrapper.html:15
-#, python-format
-msgid "Add another %(model)s"
-msgstr "மற்றொரு %(model)s சேர்க்கவும்"
-
-#: app/templates/app/admin/related_widget_wrapper.html:22
-#, python-format
-msgid "Delete selected %(model)s"
-msgstr "தேர்ந்தெடுக்கப்பட்ட %(model)s நீக்கு"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1396,67 +1868,78 @@ msgstr[1] "%(counter)s முடிவுகள்"
 msgid "%(full_result_count)s total"
 msgstr "%(full_result_count)s மொத்தம்"
 
-#: app/templates/app/admin/submit_line.html:8
+#: app/templates/app/admin/submit_line.html:5
 msgid "Save as new"
 msgstr "புதியதாக சேமிக்கவும்"
 
-#: app/templates/app/admin/submit_line.html:9
+#: app/templates/app/admin/submit_line.html:6
 msgid "Save and add another"
 msgstr "சேமித்து மற்றொன்றைச் சேர்க்கவும்"
 
-#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/admin/submit_line.html:7
 msgid "Save and continue editing"
 msgstr "சேமித்து திருத்துதல் தொடரவும்"
 
-#: app/templates/app/dashboard.html:18 app/templates/app/dashboard.html:31
+#: app/templates/app/admin/submit_line.html:7
+#, fuzzy
+#| msgid "Save as new"
+msgid "Save and view"
+msgstr "புதியதாக சேமிக்கவும்"
+
+#: app/templates/app/admin/submit_line.html:10
+#: app/templates/app/dev_tools.html:9
+msgid "Close"
+msgstr "மூடு"
+
+#: app/templates/app/dashboard.html:15 app/templates/app/dashboard.html:28
 #: app/templates/app/welcome.html:227
 msgid "Welcome!"
 msgstr "வரவேற்கிறோம்!"
 
-#: app/templates/app/dashboard.html:19
+#: app/templates/app/dashboard.html:16
 msgid "Add a Processing Node"
 msgstr "செயலாக்க முனையைச் சேர்க்கவும்"
 
-#: app/templates/app/dashboard.html:22
+#: app/templates/app/dashboard.html:19
 #, python-format
 msgid ""
 "To get started, \"%(add_processing_node)s\". A processing node is a computer "
 "running an instance of %(nodeodm_link)s or some other software implementing "
 "this %(api_link)s."
 msgstr ""
-"தொடங்க, \"%(api_link)s\". செயலாக்க முனை என்பது %(nodeodm_link)s அல்லது இந்த %"
-"(add_processing_node)s செயல்படுத்தும் வேறு சில மென்பொருள்களின் நிகழ்வை இயக்கும் கணினி "
-"ஆகும்."
+"தொடங்க, \"%(api_link)s\". செயலாக்க முனை என்பது %(nodeodm_link)s அல்லது இந்த "
+"%(add_processing_node)s செயல்படுத்தும் வேறு சில மென்பொருள்களின் நிகழ்வை இயக்கும் "
+"கணினி ஆகும்."
 
-#: app/templates/app/dashboard.html:32
+#: app/templates/app/dashboard.html:29
 msgid "Select Images and GCP"
 msgstr "படங்கள் மற்றும் சி.சி.பி என்பதைத் தேர்ந்தெடுக்கவும்"
 
-#: app/templates/app/dashboard.html:34
+#: app/templates/app/dashboard.html:31
 #, python-format
 msgid ""
 "To create a map, press the \"%(upload_images)s\" button, or drag and drop "
 "some images into a project."
 msgstr ""
-"ஒரு வரைபடத்தை உருவாக்க, \"%(upload_images)s\" பொத்தானை அழுத்தவும் அல்லது சில படங்களை "
-"ஒரு திட்டத்தில் இழுத்து விடுங்கள்."
+"ஒரு வரைபடத்தை உருவாக்க, \"%(upload_images)s\" பொத்தானை அழுத்தவும் அல்லது சில "
+"படங்களை ஒரு திட்டத்தில் இழுத்து விடுங்கள்."
 
-#: app/templates/app/dashboard.html:38
+#: app/templates/app/dashboard.html:35
 msgid "You need at least 5 images, but 16-32 is typically the minimum."
 msgstr "உங்களுக்கு குறைந்தது 5 படங்கள் தேவை, ஆனால் 16-32 பொதுவாக குறைந்தபட்சம்."
 
-#: app/templates/app/dashboard.html:39
+#: app/templates/app/dashboard.html:36
 #, python-format
 msgid "Images must overlap by 65%% or more. Aim for 70-72%%"
 msgstr ""
 "படங்கள் 65 %% அல்லது அதற்கு மேற்பட்டவற்றால் ஒன்றுடன் ஒன்று இருக்க வேண்டும். 70-72 %% நோக்கம்"
 
-#: app/templates/app/dashboard.html:40
+#: app/templates/app/dashboard.html:37
 #, python-format
 msgid "For great 3D, images must overlap by 83%%"
 msgstr "சிறந்த 3D க்கு, படங்கள் 83 %% ஒன்றுடன் ஒன்று இருக்க வேண்டும்"
 
-#: app/templates/app/dashboard.html:41
+#: app/templates/app/dashboard.html:38
 #, python-format
 msgid ""
 "A %(link_start)sGCP File%(link_end)s is optional, but can increase "
@@ -1465,14 +1948,10 @@ msgstr ""
 "ஒரு %(link_end)sGCP கோப்பு %(link_start)s விருப்பமானவை, ஆனால் புவிசார் துல்லியத்தை "
 "அதிகரிக்கும்"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:134
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "உருவாக்குபவர் கருவிகள்"
-
-#: app/templates/app/dev_tools.html:9
-msgid "Close"
-msgstr "மூடு"
 
 #: app/templates/app/dev_tools.html:14
 msgid "Current Locale:"
@@ -1504,8 +1983,7 @@ msgstr "இடு"
 
 #: app/templates/app/dev_tools.html:33
 msgid "Executing… do not refresh the page! This could take a while."
-msgstr ""
-"செயல்படுத்துதல்… பக்கத்தை புதுப்பிக்க வேண்டாம்! இதற்கு சிறிது நேரம் ஆகலாம்."
+msgstr "செயல்படுத்துதல்… பக்கத்தை புதுப்பிக்க வேண்டாம்! இதற்கு சிறிது நேரம் ஆகலாம்."
 
 #: app/templates/app/logged_in_base.html:16
 #, python-format
@@ -1521,7 +1999,7 @@ msgstr "%(total)s பயன்பாடுகள் %(used)s பயன்பட�
 msgid "Logout"
 msgstr "வெளியேற்றம்"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:48
+#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
 msgid "Dashboard"
 msgstr "முகப்புப்பெட்டி"
 
@@ -1549,7 +2027,7 @@ msgstr "குழுக்கள்"
 msgid "Brand"
 msgstr "சூட்டுக்குறி"
 
-#: app/templates/app/logged_in_base.html:138 app/views/app.py:108
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
 msgid "About"
 msgstr "பற்றி"
 
@@ -1581,10 +2059,6 @@ msgstr "வரிசை எண்ணிக்கை"
 msgid "Max Images Limit"
 msgstr "அதிகபட்ச படங்கள் வரம்பு"
 
-#: app/templates/app/processing_node.html:39 nodeodm/models.py:32
-msgid "Label"
-msgstr "சிட்டை"
-
 #: app/templates/app/processing_node.html:43 nodeodm/models.py:26
 msgid "Last Refreshed"
 msgstr "கடைசியாக புத்துணர்ச்சி"
@@ -1609,8 +2083,8 @@ msgid ""
 "recent tasks will be automatically deleted %(when)s, until usage falls below "
 "%(total)s."
 msgstr ""
-"வட்டு ஒதுக்கீடு மீறப்படுகிறது (%(total)s இல் %(used)s பயன்படுத்தப்படுகிறது). பயன்பாடு %"
-"(when)s கீழே விழும் வரை, மிக அண்மைக் கால பணிகள் தானாகவே %(total)s நீக்கப்படும்."
+"வட்டு ஒதுக்கீடு மீறப்படுகிறது (%(total)s இல் %(used)s பயன்படுத்தப்படுகிறது). பயன்பாடு "
+"%(when)s கீழே விழும் வரை, மிக அண்மைக் கால பணிகள் தானாகவே %(total)s நீக்கப்படும்."
 
 #: app/templates/app/quota.html:14
 #, python-format
@@ -1628,125 +2102,101 @@ msgstr "ஓ! கீழே உள்ள பிழைகளை சரிபார�
 #: app/templates/app/welcome.html:228
 msgid ""
 "Before we get started, we need to create an administrator account for you:"
-msgstr ""
-"நாங்கள் தொடங்குவதற்கு முன், உங்களுக்காக ஒரு நிர்வாகி கணக்கை உருவாக்க வேண்டும்:"
+msgstr "நாங்கள் தொடங்குவதற்கு முன், உங்களுக்காக ஒரு நிர்வாகி கணக்கை உருவாக்க வேண்டும்:"
 
 #: app/templates/app/welcome.html:237
 msgid "Create Account"
 msgstr "கணக்கை உருவாக்கவும்"
 
-#: app/templatetags/settings.py:57
+#: app/templatetags/settings.py:74
 #, python-format
 msgid "in %(num)s days"
 msgstr "%(num)s நாட்களில்"
 
-#: app/templatetags/settings.py:59
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s hours"
 msgstr "%(num)s மணிநேரத்தில்"
 
-#: app/templatetags/settings.py:61
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "%(num)s நிமையங்களில்"
 
-#: app/templatetags/settings.py:63
+#: app/templatetags/settings.py:80
 msgid "very soon"
 msgstr "மிக விரைவில்"
 
 #: app/translations/plugin_manifest_autogenerated.py:4
-msgid "Import images from external sources directly"
-msgstr "வெளிப்புற மூலங்களிலிருந்து படங்களை நேரடியாக இறக்குமதி செய்யுங்கள்"
-
-#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Compute, preview and export contours from DEMs"
 msgstr "டெம்சிலிருந்து வரையறைகளை கணக்கிடுதல், முன்னோட்டம் மற்றும் ஏற்றுமதி"
 
-#: app/translations/plugin_manifest_autogenerated.py:6
+#: app/translations/plugin_manifest_autogenerated.py:5
 msgid "Display program version, memory and disk space usage statistics"
-msgstr ""
-"நிரல் பதிப்பு, நினைவகம் மற்றும் வட்டு விண்வெளி பயன்பாட்டு புள்ளிவிவரங்களைக் காண்பி"
+msgstr "நிரல் பதிப்பு, நினைவகம் மற்றும் வட்டு விண்வெளி பயன்பாட்டு புள்ளிவிவரங்களைக் காண்பி"
 
-#: app/translations/plugin_manifest_autogenerated.py:7
-msgid "Integrate WebODM with DroneDB: import images and share results"
-msgstr ""
-"TronedB உடன் WebodM ஐ ஒருங்கிணைக்கவும்: படங்களை இறக்குமதி செய்து முடிவுகளைப் பகிரவும்"
-
-#: app/translations/plugin_manifest_autogenerated.py:8
-msgid "Create editable short links when sharing task URLs"
-msgstr ""
-"பணி முகவரி களைப் பகிரும்போது திருத்தக்கூடிய குறுகிய இணைப்புகளை உருவாக்கவும்"
-
-#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:6
 msgid "Add a fullscreen button to the 2D map view"
 msgstr "2 டி வரைபடக் காட்சியில் முழுத்திரை பொத்தானைச் சேர்க்கவும்"
 
-#: app/translations/plugin_manifest_autogenerated.py:10
+#: app/translations/plugin_manifest_autogenerated.py:7
 msgid "Process in the cloud with webodm.net"
 msgstr "Webodm.net உடன் மேகக்கட்டத்தில் செயல்முறை"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:8
 msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "துண்டுப்பிரசுரத்தில் தொகுதி, பகுதி மற்றும் நீள அளவீடுகளை கணக்கிடுங்கள்"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
-msgid "A plugin to upload orthophotos to OpenAerialMap"
-msgstr "ஆர்த்தோஃபோட்டோசை OpenAerialMap இல் பதிவேற்ற ஒரு சொருகி"
-
-#: app/translations/plugin_manifest_autogenerated.py:13
-msgid ""
-"A plugin to add a button for quickly opening OpenStreetMap's iD editor and "
-"setup a TMS basemap."
-msgstr ""
-"ஓபன்ச்ட்ரீட்மேப்பின் ஐடி எடிட்டரை விரைவாக திறப்பதற்கான பொத்தானைச் சேர்க்கவும், டிஎம்எச் பேச்மேப்பை "
-"அமைக்கவும் ஒரு சொருகி."
-
-#: app/translations/plugin_manifest_autogenerated.py:14
-#: app/translations/plugin_manifest_autogenerated.py:18
+#: app/translations/plugin_manifest_autogenerated.py:9
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "படங்களிலிருந்து சி.சி.பி கோப்புகளை உருவாக்க ஒரு சொருகி"
 
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "A plugin to show charts of projects and tasks"
-msgstr "திட்டங்கள் மற்றும் பணிகளின் விளக்கப்படங்களைக் காட்ட ஒரு சொருகி"
-
-#: app/translations/plugin_manifest_autogenerated.py:16
-msgid "Create short links when sharing task URLs"
-msgstr "பணி முகவரி களைப் பகிரும்போது குறுகிய இணைப்புகளை உருவாக்கவும்"
-
-#: app/translations/plugin_manifest_autogenerated.py:17
-msgid ""
-"Get notified when a task has finished processing, has been removed or has "
-"failed"
-msgstr ""
-"ஒரு பணி செயலாக்கத்தை முடித்ததும், அகற்றப்பட்டதும் அல்லது தோல்வியுற்றதும் அறிவிக்கப்படும்"
-
-#: app/translations/plugin_manifest_autogenerated.py:19
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "2 டி வரைபடங்களை எளிதாக சிறுகுறிப்பு செய்து அளவிடவும்"
 
-#: app/translations/plugin_manifest_autogenerated.py:20
-msgid "Add a GPS location button to the 2D map view"
-msgstr "2 டி வரைபடக் காட்சியில் சி.பி.எச் இருப்பிட பொத்தானைச் சேர்க்கவும்"
+#: app/translations/plugin_manifest_autogenerated.py:12
+msgid "Detect objects using AI in orthophotos"
+msgstr ""
 
-#: app/views/app.py:46
+#: app/translations/plugin_manifest_autogenerated.py:13
+msgid "An example plugin for development"
+msgstr ""
+
+#: app/translations/plugin_manifest_autogenerated.py:14
+msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
+msgstr ""
+
+#: app/views/app.py:42
+msgid "Logged out"
+msgstr ""
+
+#: app/views/app.py:63
 msgid "First Project"
 msgstr "முதல் திட்டம்"
 
-#: app/views/app.py:56 app/views/public.py:28
+#: app/views/app.py:79
 msgid "Map"
 msgstr "வரைபடம்"
 
-#: app/views/app.py:85
+#: app/views/app.py:113
 msgid "3D Model Display"
 msgstr "3D மாதிரி காட்சி"
 
-#: app/views/app.py:114
+#: app/views/app.py:146
+#, python-format
+msgid ""
+"%(node)s is deprecated might stop working in a future version. See the "
+"%(link_start)s migration guide %(link_end)s to upgrade."
+msgstr ""
+
+#: app/views/app.py:150
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s ஆஃப்லைனில் இருப்பதாக தெரிகிறது."
 
-#: app/views/app.py:152
+#: app/views/app.py:188
 msgid "Welcome"
 msgstr "வரவேற்கிறோம்"
 
@@ -1762,34 +2212,96 @@ msgstr "மொழிபெயர்ப்பு கோப்புகள் ம�
 msgid "Invalid action"
 msgstr "தவறான செயல்"
 
-#: coreplugins/annotate/api.py:47 coreplugins/annotate/dist/annotate/api.py:47
-#: coreplugins/measure/api.py:21
+#: app/views/oidc.py:53 app/views/oidc.py:90
+msgid "Invalid SSO provider. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:95 app/views/oidc.py:128 app/views/oidc.py:134
+#: app/views/oidc.py:150 app/views/oidc.py:157 app/views/oidc.py:174
+msgid "SSO login failed."
+msgstr ""
+
+#: app/views/oidc.py:101
+msgid "Invalid SSO state. Please try again."
+msgstr ""
+
+#: app/views/oidc.py:106
+msgid "Missing SSO authorization code."
+msgstr ""
+
+#: app/views/oidc.py:186
+msgid "Cannot create user. A username already exists with the same e-mail."
+msgstr ""
+
+#: app/views/oidc.py:190
+msgid "This account is disabled. Please contact an administrator."
+msgstr ""
+
+#: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
+#: coreplugins/annotate/dist/annotate/api.py:61
+#: coreplugins/annotate/dist/annotate/api.py:101 coreplugins/measure/api.py:21
 msgid ""
 "No surface model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dsm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"மேற்பரப்பு மாதிரி எதுவும் கிடைக்கவில்லை. டாச்போர்டில் இருந்து, இந்த பணியைத் தேர்ந்தெடுத்து, "
-"திருத்தத்தை அழுத்தவும், விருப்பங்களிலிருந்து \"டி.எச்.எம்\" ஐ சரிபார்க்கவும், பின்னர் "
-"மறுதொடக்கம் -> ஐ டெமிலிருந்து அழுத்தவும்."
+"மேற்பரப்பு மாதிரி எதுவும் கிடைக்கவில்லை. டாச்போர்டில் இருந்து, இந்த பணியைத் "
+"தேர்ந்தெடுத்து, திருத்தத்தை அழுத்தவும், விருப்பங்களிலிருந்து \"டி.எச்.எம்\" ஐ "
+"சரிபார்க்கவும், பின்னர் மறுதொடக்கம் -> ஐ டெமிலிருந்து அழுத்தவும்."
 
-#: coreplugins/annotate/api.py:70 coreplugins/annotate/dist/annotate/api.py:70
+#: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
+#: coreplugins/annotate/dist/annotate/api.py:64
+#: coreplugins/annotate/dist/annotate/api.py:104
+#, fuzzy
+#| msgid ""
+#| "No surface model available. From the Dashboard, select this task, press "
+#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
+#| "From DEM."
+msgid ""
+"No terrain model available. From the Dashboard, select this task, press "
+"Edit, from the options make sure to check \"dtm\", then press Restart --> "
+"From DEM."
+msgstr ""
+"மேற்பரப்பு மாதிரி எதுவும் கிடைக்கவில்லை. டாச்போர்டில் இருந்து, இந்த பணியைத் "
+"தேர்ந்தெடுத்து, திருத்தத்தை அழுத்தவும், விருப்பங்களிலிருந்து \"டி.எச்.எம்\" ஐ "
+"சரிபார்க்கவும், பின்னர் மறுதொடக்கம் -> ஐ டெமிலிருந்து அழுத்தவும்."
+
+#: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
+#: coreplugins/annotate/dist/annotate/api.py:66
+#: coreplugins/annotate/dist/annotate/api.py:106
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid surface model"
+msgstr "தவறான செயல்"
+
+#: coreplugins/annotate/api.py:111
+#: coreplugins/annotate/dist/annotate/api.py:111
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid line"
+msgstr "தவறான செயல்"
+
+#: coreplugins/annotate/api.py:128
+#: coreplugins/annotate/dist/annotate/api.py:128
 msgid "A digital surface model is required to compute elevation values."
 msgstr "உயர மதிப்புகளைக் கணக்கிட டிசிட்டல் மேற்பரப்பு மாதிரி தேவை."
 
-#: coreplugins/contours/api.py:86
+#: coreplugins/annotate/api.py:162
+#: coreplugins/annotate/dist/annotate/api.py:162
+#, fuzzy
+#| msgid "A digital surface model is required to compute elevation values."
+msgid "An orthophoto is required to compute temperature values."
+msgstr "உயர மதிப்புகளைக் கணக்கிட டிசிட்டல் மேற்பரப்பு மாதிரி தேவை."
+
+#: coreplugins/contours/api.py:121
 msgid "No DSM layer is available."
 msgstr "டி.எச்.எம் அடுக்கு எதுவும் கிடைக்கவில்லை."
 
-#: coreplugins/contours/api.py:88
+#: coreplugins/contours/api.py:123
 msgid "No DTM layer is available."
 msgstr "டிடிஎம் அடுக்கு எதுவும் கிடைக்கவில்லை."
 
-#: coreplugins/contours/api.py:119
-msgid "Could not generate contour file. This might be a bug."
-msgstr "விளிம்பு கோப்பை உருவாக்க முடியவில்லை. இது ஒரு பிழையாக இருக்கலாம்."
-
-#: coreplugins/diagnostic/plugin.py:36
+#: coreplugins/diagnostic/plugin.py:66
 msgid "Diagnostic"
 msgstr "கண்டறியும்"
 
@@ -1857,62 +2369,32 @@ msgid ""
 "%(mac_link)s for changing these values in a Docker setup."
 msgstr ""
 "இந்த மதிப்புகள் பயன்பாடு இயங்கும் மெய்நிகராக்க சூழலுடன் தொடர்புடையதாக இருக்கலாம், உங்கள் "
-"இயந்திரத்தின் மதிப்புகள் அவசியமில்லை. இந்த மதிப்புகளை ஒரு கப்பல்துறை அமைப்பில் மாற்றுவதற்கு "
-"%(mac_link)s, %(win_wsl2_link)s மற்றும் %(win_hyperv_link)s க்கான வழிமுறைகளைப் "
-"பார்க்கவும்."
+"இயந்திரத்தின் மதிப்புகள் அவசியமில்லை. இந்த மதிப்புகளை ஒரு கப்பல்துறை அமைப்பில் "
+"மாற்றுவதற்கு %(mac_link)s, %(win_wsl2_link)s மற்றும் %(win_hyperv_link)s க்கான "
+"வழிமுறைகளைப் பார்க்கவும்."
 
 #: coreplugins/diagnostic/templates/diagnostic.html:47
 #: coreplugins/diagnostic/templates/diagnostic.html:82
 msgid "Disk Space"
 msgstr "வட்டு இடம்"
 
-#: coreplugins/editshortlinks/api.py:59
-msgid ""
-"Short URLs can only include letters, numbers, underscore and dash characters "
-"(A-Z, 0-9, _, -)."
+#: coreplugins/hello-world/plugin.py:10
+msgid "Hello World"
 msgstr ""
-"குறுகிய முகவரி களில் கடிதங்கள், எண்கள், அடிக்கோடிட்ட மற்றும் கோடு எழுத்துக்கள் மட்டுமே "
-"அடங்கும் (A-Z, 0-9, _,-)."
 
-#: coreplugins/editshortlinks/api.py:63
-msgid "This short URL is already taken."
-msgstr "இந்த குறுகிய முகவரி ஏற்கனவே எடுக்கப்பட்டுள்ளது."
-
-#: coreplugins/lightning/plugin.py:25 coreplugins/lightning/plugin.py:39
+#: coreplugins/lightning/plugin.py:28
 msgid "Lightning"
 msgstr "மின்னல்"
+
+#: coreplugins/objdetect/api.py:57
+#, fuzzy
+#| msgid "No DSM layer is available."
+msgid "No orthophoto is available."
+msgstr "டி.எச்.எம் அடுக்கு எதுவும் கிடைக்கவில்லை."
 
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"
 msgstr "சி.சி.பி இடைமுகம்"
-
-#: coreplugins/projects-charts/plugin.py:55
-msgid "Charts"
-msgstr "விளக்கப்படங்கள்"
-
-#: coreplugins/projects-charts/templates/index.html:11
-msgid "Year"
-msgstr "ஆண்டு"
-
-#: coreplugins/projects-charts/templates/index.html:23
-msgid "Next"
-msgstr "அடுத்தது"
-
-#: coreplugins/projects-charts/templates/index.html:69
-msgid "Projects by month"
-msgstr "மாதத்திற்குள் திட்டங்கள்"
-
-#: coreplugins/projects-charts/templates/index.html:111
-msgid "Tasks by month"
-msgstr "மாதத்திற்கு பணிகள்"
-
-#: coreplugins/tasknotification/plugin.py:84
-msgid "Task Notification"
-msgstr "பணி அறிவிப்பு"
-
-#: coreplugins/tasknotification/templates/index.html:5
-msgid "Tasks Notification"
-msgstr "பணிகள் அறிவிப்பு"
 
 #: nodeodm/apps.py:8
 msgid "Node Management"
@@ -1966,8 +2448,8 @@ msgid ""
 "Token to use for authentication. If the node doesn't have authentication, "
 "you can leave this field blank."
 msgstr ""
-"அங்கீகாரத்திற்கு பயன்படுத்த கிள்ளாக்கு. முனைக்கு ஏற்பு இல்லையென்றால், நீங்கள் இந்த புலத்தை காலியாக "
-"விடலாம்."
+"அங்கீகாரத்திற்கு பயன்படுத்த கிள்ளாக்கு. முனைக்கு ஏற்பு இல்லையென்றால், நீங்கள் இந்த புலத்தை "
+"காலியாக விடலாம்."
 
 #: nodeodm/models.py:30
 msgid "Max Images"
@@ -1992,3 +2474,115 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "முனை பயன்படுத்தும் இயந்திரம்."
+
+#, python-format
+#~ msgid ""
+#~ "Unsupported SRS %(code)s. Please make sure you picked a supported SRS."
+#~ msgstr "ஆதரிக்கப்படாத SRS %(code)s. நீங்கள் ஆதரிக்கப்பட்ட எச்.ஆர்.எச்."
+
+#~ msgid "Please correct the errors below."
+#~ msgstr "கீழே உள்ள பிழைகளை சரிசெய்யவும்."
+
+#, python-format
+#~ msgid "Models in the %(name)s application"
+#~ msgstr "%(name)s பயன்பாட்டில் உள்ள மாதிரிகள்"
+
+#~ msgid "Add"
+#~ msgstr "கூட்டு"
+
+#, python-format
+#~ msgid ""
+#~ "You are authenticated as %(username)s, but are not authorized to access "
+#~ "this page. Would you like to login to a different account?"
+#~ msgstr ""
+#~ "நீங்கள் %(username)s என அங்கீகரிக்கப்பட்டுள்ளீர்கள், ஆனால் இந்த பக்கத்தை அணுக "
+#~ "அங்கீகரிக்கப்படவில்லை. வேறு கணக்கில் உள்நுழைய விரும்புகிறீர்களா?"
+
+#~ msgid "Forgotten your password or username?"
+#~ msgstr "உங்கள் கடவுச்சொல் அல்லது பயனர்பெயரை மறந்துவிட்டீர்களா?"
+
+#~ msgid "Log in"
+#~ msgstr "புகுபதிகை"
+
+#, python-format
+#~ msgid "Change selected %(model)s"
+#~ msgstr "தேர்ந்தெடுக்கப்பட்ட %(model)s மாற்றவும்"
+
+#, python-format
+#~ msgid "Add another %(model)s"
+#~ msgstr "மற்றொரு %(model)s சேர்க்கவும்"
+
+#, python-format
+#~ msgid "Delete selected %(model)s"
+#~ msgstr "தேர்ந்தெடுக்கப்பட்ட %(model)s நீக்கு"
+
+#~ msgid "Import images from external sources directly"
+#~ msgstr "வெளிப்புற மூலங்களிலிருந்து படங்களை நேரடியாக இறக்குமதி செய்யுங்கள்"
+
+#~ msgid "Integrate WebODM with DroneDB: import images and share results"
+#~ msgstr ""
+#~ "TronedB உடன் WebodM ஐ ஒருங்கிணைக்கவும்: படங்களை இறக்குமதி செய்து முடிவுகளைப் "
+#~ "பகிரவும்"
+
+#~ msgid "Create editable short links when sharing task URLs"
+#~ msgstr ""
+#~ "பணி முகவரி களைப் பகிரும்போது திருத்தக்கூடிய குறுகிய இணைப்புகளை உருவாக்கவும்"
+
+#~ msgid "A plugin to upload orthophotos to OpenAerialMap"
+#~ msgstr "ஆர்த்தோஃபோட்டோசை OpenAerialMap இல் பதிவேற்ற ஒரு சொருகி"
+
+#~ msgid ""
+#~ "A plugin to add a button for quickly opening OpenStreetMap's iD editor "
+#~ "and setup a TMS basemap."
+#~ msgstr ""
+#~ "ஓபன்ச்ட்ரீட்மேப்பின் ஐடி எடிட்டரை விரைவாக திறப்பதற்கான பொத்தானைச் சேர்க்கவும், டிஎம்எச் "
+#~ "பேச்மேப்பை அமைக்கவும் ஒரு சொருகி."
+
+#~ msgid "A plugin to show charts of projects and tasks"
+#~ msgstr "திட்டங்கள் மற்றும் பணிகளின் விளக்கப்படங்களைக் காட்ட ஒரு சொருகி"
+
+#~ msgid "Create short links when sharing task URLs"
+#~ msgstr "பணி முகவரி களைப் பகிரும்போது குறுகிய இணைப்புகளை உருவாக்கவும்"
+
+#~ msgid ""
+#~ "Get notified when a task has finished processing, has been removed or has "
+#~ "failed"
+#~ msgstr ""
+#~ "ஒரு பணி செயலாக்கத்தை முடித்ததும், அகற்றப்பட்டதும் அல்லது தோல்வியுற்றதும் அறிவிக்கப்படும்"
+
+#~ msgid "Add a GPS location button to the 2D map view"
+#~ msgstr "2 டி வரைபடக் காட்சியில் சி.பி.எச் இருப்பிட பொத்தானைச் சேர்க்கவும்"
+
+#~ msgid "Could not generate contour file. This might be a bug."
+#~ msgstr "விளிம்பு கோப்பை உருவாக்க முடியவில்லை. இது ஒரு பிழையாக இருக்கலாம்."
+
+#~ msgid ""
+#~ "Short URLs can only include letters, numbers, underscore and dash "
+#~ "characters (A-Z, 0-9, _, -)."
+#~ msgstr ""
+#~ "குறுகிய முகவரி களில் கடிதங்கள், எண்கள், அடிக்கோடிட்ட மற்றும் கோடு எழுத்துக்கள் மட்டுமே "
+#~ "அடங்கும் (A-Z, 0-9, _,-)."
+
+#~ msgid "This short URL is already taken."
+#~ msgstr "இந்த குறுகிய முகவரி ஏற்கனவே எடுக்கப்பட்டுள்ளது."
+
+#~ msgid "Charts"
+#~ msgstr "விளக்கப்படங்கள்"
+
+#~ msgid "Year"
+#~ msgstr "ஆண்டு"
+
+#~ msgid "Next"
+#~ msgstr "அடுத்தது"
+
+#~ msgid "Projects by month"
+#~ msgstr "மாதத்திற்குள் திட்டங்கள்"
+
+#~ msgid "Tasks by month"
+#~ msgstr "மாதத்திற்கு பணிகள்"
+
+#~ msgid "Task Notification"
+#~ msgstr "பணி அறிவிப்பு"
+
+#~ msgid "Tasks Notification"
+#~ msgstr "பணிகள் அறிவிப்பு"

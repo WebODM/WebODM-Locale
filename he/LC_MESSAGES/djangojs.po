@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 23:42+0000\n"
+"POT-Creation-Date: 2026-11-12 19:02+0000\n"
 "PO-Revision-Date: 2026-03-05 19:48+0000\n"
 "Last-Translator: בנימין זיידמן <4140276@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/webodm/react-ui/"
@@ -20,80 +20,247 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 5.17-dev\n"
 
-#: app/static/app/js/Console.jsx:135
+#: app/static/app/js/Console.jsx:152
 #, python-format
 msgid "output truncated at %(count)s lines"
 msgstr "הפלט נחתך ב-%(count)s שורות"
 
-#: app/static/app/js/Console.jsx:147 app/static/app/js/Console.jsx:155
-#: app/static/app/js/Console.jsx:165
+#: app/static/app/js/Console.jsx:164 app/static/app/js/Console.jsx:172
+#: app/static/app/js/Console.jsx:182
 msgid "Toggle Fullscreen"
 msgstr "הפעלה/כיבוי מסך מלא"
 
-#: app/static/app/js/Console.jsx:148 app/static/app/js/Console.jsx:156
+#: app/static/app/js/Console.jsx:165 app/static/app/js/Console.jsx:173
 msgid "Exit Fullscreen"
 msgstr "יציאה ממסך מלא"
 
-#: app/static/app/js/Console.jsx:162
+#: app/static/app/js/Console.jsx:179
 msgid "Download To File"
 msgstr "הורדה לקובץ"
 
-#: app/static/app/js/Dashboard.jsx:26
+#: app/static/app/js/Dashboard.jsx:39
 msgid "Name field is required"
 msgstr "נדרש שדה 'שם'"
 
-#: app/static/app/js/Dashboard.jsx:66
+#: app/static/app/js/Dashboard.jsx:83
 msgid "Add Project"
 msgstr "הוסף פרויקט"
 
-#: app/static/app/js/Dashboard.jsx:101
+#: app/static/app/js/Dashboard.jsx:120
 msgid "Your changes will be lost. Are you sure you want to leave?"
 msgstr "השינויים שלך יאבדו. האם אתה בטוח שברצונך לעזוב?"
 
-#: app/static/app/js/MapView.jsx:67
+#: app/static/app/js/MapView.jsx:127
 #: app/static/app/js/classes/AssetDownloads.js:46
 #: app/static/app/js/classes/PipelineSteps.js:47
-#: app/static/app/js/components/Map.jsx:86
+#: app/static/app/js/components/EditPresetDialog.jsx:97
+#: app/static/app/js/components/ImportExternalPanel.jsx:12
+#: app/static/app/js/components/Map.jsx:133
 msgid "Orthophoto"
 msgstr "אורתופוטו"
 
-#: app/static/app/js/MapView.jsx:72 app/static/app/js/components/Map.jsx:88
+#: app/static/app/js/MapView.jsx:132
+#: app/static/app/js/components/EditPresetDialog.jsx:28
+#: app/static/app/js/components/Map.jsx:135
+#, fuzzy
+#| msgid "Normal"
+msgid "Thermal"
+msgstr "נוֹרמָלִי"
+
+#: app/static/app/js/MapView.jsx:132 app/static/app/js/components/Map.jsx:135
 msgid "Plant Health"
 msgstr "בריאות הצמח"
 
-#: app/static/app/js/MapView.jsx:77
-#: app/static/app/js/classes/AssetDownloads.js:51
+#: app/static/app/js/MapView.jsx:137
+#: app/static/app/js/classes/AssetDownloads.js:52
+#: app/static/app/js/components/ImportExternalPanel.jsx:13
+#: app/static/app/js/components/Map.jsx:137
 msgid "Surface Model"
 msgstr "מודל פני השטח"
 
-#: app/static/app/js/MapView.jsx:82
-#: app/static/app/js/classes/AssetDownloads.js:49
+#: app/static/app/js/MapView.jsx:142
+#: app/static/app/js/classes/AssetDownloads.js:50
+#: app/static/app/js/components/ImportExternalPanel.jsx:14
+#: app/static/app/js/components/Map.jsx:139
 msgid "Terrain Model"
 msgstr "מודל שטח"
 
-#: app/static/app/js/ModelView.jsx:37
+#: app/static/app/js/MapView.jsx:155
+msgid "A map is not available for this task or project."
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
 msgstr "לא ניתן להגדיר תצוגת מצלמה ראשונית"
 
-#: app/static/app/js/ModelView.jsx:62
+#: app/static/app/js/ModelView.jsx:67
 msgid "set initial camera view"
 msgstr "הגדרת תצוגת מצלמה ראשונית"
 
-#: app/static/app/js/ModelView.jsx:83
+#: app/static/app/js/ModelView.jsx:89 app/static/app/js/components/Map.jsx:606
 msgid "Cameras"
 msgstr "מצלמות"
 
-#: app/static/app/js/ModelView.jsx:96
-msgid "Show Model"
-msgstr "הצג דגם"
-
-#: app/static/app/js/ModelView.jsx:123
+#: app/static/app/js/ModelView.jsx:114
 msgid "Show Cameras"
 msgstr "הצג מצלמות"
 
-#: app/static/app/js/ModelView.jsx:730
+#: app/static/app/js/ModelView.jsx:117
+#: app/static/app/js/components/ManageMediaDialog.jsx:560
+#: coreplugins/lightning/public/ShareDialog.jsx:336
+msgid "Size"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
+msgid "Cannot load splats renderer"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:818
+msgid ""
+"Could not load splats. This task doesn't seem to have a valid splats file."
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:925
+#: app/static/app/js/classes/AssetDownloads.js:54
+#: app/static/app/js/components/EditPresetDialog.jsx:61
+#: app/static/app/js/components/ImportExternalPanel.jsx:15
+msgid "Point Cloud"
+msgstr "ענן נקודות"
+
+#: app/static/app/js/ModelView.jsx:932
+#: app/static/app/js/classes/AssetDownloads.js:56
+#: app/static/app/js/components/ImportExternalPanel.jsx:16
+msgid "Textured Model"
+msgstr "מודל מרקמי"
+
+#: app/static/app/js/ModelView.jsx:939
+#: app/static/app/js/classes/AssetDownloads.js:63
+#: app/static/app/js/components/TaskListItem.jsx:866
+msgid "Splats"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:981
+#, fuzzy
+#| msgid "Loading..."
+msgid "Loading splats..."
+msgstr "טוען..."
+
+#: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
 msgstr "טוען מודל בעל מרקם..."
+
+#: app/static/app/js/PluginBrowser.jsx:57
+msgid "Installed"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:61
+#, python-format
+msgid "Requires WebODM %(version)s"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:65
+msgid "Update"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:69
+msgid "Install"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:80
+msgid "Experimental"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:81
+#, fuzzy
+#| msgid "Duplicate"
+msgid "Deprecated"
+msgstr "לְשַׁכְפֵּל"
+
+#: app/static/app/js/PluginBrowser.jsx:82
+#, python-format
+msgid "by %(author)s"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:159
+msgid "The plugin repository returned an error:"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:161
+#: app/static/app/js/PluginBrowser.jsx:167
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid ""
+"The plugin repository returned an invalid response. Please try again later."
+msgstr "לא ניתן ליצור משימה חדשה. אנא נסה שוב מאוחר יותר."
+
+#: app/static/app/js/PluginBrowser.jsx:164
+msgid ""
+"Cannot connect to the plugin repository. Check that this server has internet "
+"access and that the connection is not blocked by a firewall or proxy."
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:187
+#: app/static/app/js/components/SplatsDialog.jsx:452
+#, fuzzy
+#| msgid "Downloading…"
+msgid "Downloading..."
+msgstr "מוריד…"
+
+#: app/static/app/js/PluginBrowser.jsx:191
+msgid "The plugin repository returned an error while downloading the plugin:"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:193
+#: app/static/app/js/PluginBrowser.jsx:196
+msgid ""
+"Cannot download the plugin. The connection to the plugin repository failed "
+"or was interrupted."
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:199
+#, fuzzy
+#| msgid "Restarting..."
+msgid "Installing..."
+msgstr "הפעלה מחדש..."
+
+#: app/static/app/js/PluginBrowser.jsx:215
+#: app/static/app/js/PluginBrowser.jsx:217
+msgid "WebODM could not install the plugin:"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:220
+msgid ""
+"Cannot send the plugin to WebODM. The connection was interrupted or the "
+"server is not responding."
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:253
+msgid "No plugins found."
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:276
+#: app/static/app/js/components/ErrorMessage.jsx:34
+#: app/static/app/js/components/ImportExternalPanel.jsx:283
+#: app/static/app/js/components/ManageMediaDialog.jsx:599
+#: app/static/app/js/components/NewTaskPanel.jsx:252
+#: app/static/app/js/components/NewTaskPanel.jsx:259
+#: app/static/app/js/components/ProjectListItem.jsx:882
+#: app/static/app/js/components/ProjectListItem.jsx:895
+#: app/static/app/js/components/SplatsDialog.jsx:580
+#: app/static/app/js/components/Toaster.jsx:317
+msgid "Close"
+msgstr "לִסְגוֹר"
+
+#: app/static/app/js/PluginBrowser.jsx:277
+#: app/static/app/js/PluginBrowser.jsx:325
+msgid "Install Plugins"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:287
+#, fuzzy
+#| msgid "Search"
+msgid "Search plugins"
+msgstr "לְחַפֵּשׂ"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -103,85 +270,146 @@ msgstr "אורתופוטו (MBTiles)"
 msgid "Orthophoto (Tiles)"
 msgstr "אורתופוטו (אריחים)"
 
-#: app/static/app/js/classes/AssetDownloads.js:50
+#: app/static/app/js/classes/AssetDownloads.js:49
+#, fuzzy
+#| msgid "Orthophoto (Tiles)"
+msgid "Orthophoto Cutline"
+msgstr "אורתופוטו (אריחים)"
+
+#: app/static/app/js/classes/AssetDownloads.js:51
 msgid "Terrain Model (Tiles)"
 msgstr "מודל שטח (אריחים)"
 
-#: app/static/app/js/classes/AssetDownloads.js:52
+#: app/static/app/js/classes/AssetDownloads.js:53
 msgid "Surface Model (Tiles)"
 msgstr "מודל פני השטח (אריחים)"
 
-#: app/static/app/js/classes/AssetDownloads.js:53
-msgid "Point Cloud"
-msgstr "ענן נקודות"
-
-#: app/static/app/js/classes/AssetDownloads.js:54
+#: app/static/app/js/classes/AssetDownloads.js:55
 msgid "Point Cloud (3D Tiles)"
 msgstr "ענן נקודות (אריחים תלת-ממדיים)"
 
-#: app/static/app/js/classes/AssetDownloads.js:55
-msgid "Textured Model"
-msgstr "מודל מרקמי"
-
-#: app/static/app/js/classes/AssetDownloads.js:56
+#: app/static/app/js/classes/AssetDownloads.js:57
 msgid "Textured Model (3D Tiles)"
 msgstr "מודל בעל מרקם (אריחים תלת-ממדיים)"
 
-#: app/static/app/js/classes/AssetDownloads.js:57
+#: app/static/app/js/classes/AssetDownloads.js:58
 msgid "Textured Model (glTF)"
 msgstr "מודל מרקמי (glTF)"
 
-#: app/static/app/js/classes/AssetDownloads.js:58
+#: app/static/app/js/classes/AssetDownloads.js:59
 msgid "Camera Parameters"
 msgstr "פרמטרים של המצלמה"
 
-#: app/static/app/js/classes/AssetDownloads.js:59
+#: app/static/app/js/classes/AssetDownloads.js:60
 msgid "Camera Shots"
 msgstr "צילומי מצלמה"
 
-#: app/static/app/js/classes/AssetDownloads.js:60
+#: app/static/app/js/classes/AssetDownloads.js:61
+#: app/static/app/js/components/Map.jsx:678
 msgid "Ground Control Points"
 msgstr "נקודות בקרה קרקעיות"
 
-#: app/static/app/js/classes/AssetDownloads.js:61
+#: app/static/app/js/classes/AssetDownloads.js:62
 msgid "Quality Report"
 msgstr "דוח איכות"
 
 #: app/static/app/js/classes/AssetDownloads.js:66
+#: coreplugins/lightning/public/ShareDialog.jsx:328
 msgid "All Assets"
 msgstr "כל התוצרים"
 
-#: app/static/app/js/classes/Basemaps.js:9
-msgid "Google Maps Hybrid"
-msgstr "גוגל-מפות היברידי"
+#: app/static/app/js/classes/Gcp.js:18
+#, fuzzy, python-format
+#| msgid "Invalid response: %(error)s"
+msgid "Invalid CRS: %(line)s"
+msgstr "תגובה לא חוקית: %(error)s"
 
-#: app/static/app/js/classes/Basemaps.js:17
-msgid "ESRI Satellite"
-msgstr "לוויין ESRI"
+#: app/static/app/js/classes/Gcp.js:34 app/static/app/js/classes/Gcp.js:38
+#, fuzzy, python-format
+#| msgid "Invalid response: %(error)s"
+msgid "Invalid line %(num)s: %(line)s"
+msgstr "תגובה לא חוקית: %(error)s"
 
-#: app/static/app/js/classes/Basemaps.js:26
-msgid "OSM Mapnik"
+#: app/static/app/js/classes/Gcp.js:44
+msgid "Empty GCP file"
 msgstr ""
 
-#: app/static/app/js/classes/PendingActions.js:11
+#: app/static/app/js/classes/OverlayColors.js:5
+#: coreplugins/annotate/public/markers.js:6
+msgid "Blue"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayColors.js:9
+#: coreplugins/annotate/public/markers.js:10
+#, fuzzy
+#| msgid "Read"
+msgid "Red"
+msgstr "קריאה"
+
+#: app/static/app/js/classes/OverlayColors.js:13
+#: coreplugins/annotate/public/markers.js:14
+msgid "Green"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayColors.js:17
+#: coreplugins/annotate/public/markers.js:18
+#, fuzzy
+#| msgid "Hello,"
+msgid "Yellow"
+msgstr "שלום,"
+
+#: app/static/app/js/classes/OverlayColors.js:21
+#: coreplugins/annotate/public/markers.js:22
+msgid "Pink"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayColors.js:25
+#: coreplugins/annotate/public/markers.js:26
+msgid "Orange"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayColors.js:29
+#: coreplugins/annotate/public/markers.js:30
+msgid "Gray"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayLayer.js:14
+#, fuzzy, python-format
+#| msgid "%(file)s is bigger than 5 MB."
+msgid "%(file)s is bigger than %(size)s MB."
+msgstr "%(file)s גדול מ-5 מגה-בייט."
+
+#: app/static/app/js/classes/OverlayLayer.js:23
+#, python-format
+msgid "Not a proper JSON file: %(file)s"
+msgstr "קובץ JSON לא תקין: %(file)s"
+
+#: app/static/app/js/classes/PendingActions.js:12
 msgid "Canceling..."
 msgstr "מבטל..."
 
-#: app/static/app/js/classes/PendingActions.js:14
-#: app/static/app/js/components/FormDialog.jsx:169
+#: app/static/app/js/classes/PendingActions.js:15
+#: app/static/app/js/components/FormDialog.jsx:177
 msgid "Deleting..."
 msgstr "מוחק..."
 
-#: app/static/app/js/classes/PendingActions.js:17
+#: app/static/app/js/classes/PendingActions.js:18
 msgid "Restarting..."
 msgstr "הפעלה מחדש..."
 
-#: app/static/app/js/classes/PendingActions.js:20
+#: app/static/app/js/classes/PendingActions.js:21
 msgid "Resizing images..."
 msgstr "שינוי גודל של תמונות..."
 
-#: app/static/app/js/classes/PendingActions.js:23
+#: app/static/app/js/classes/PendingActions.js:24
+#: app/static/app/js/components/Map.jsx:1742
 msgid "Importing..."
+msgstr "מייבא..."
+
+#: app/static/app/js/classes/PendingActions.js:27
+#, fuzzy
+#| msgid "Importing..."
+msgid "Compacting..."
 msgstr "מייבא..."
 
 #: app/static/app/js/classes/PipelineSteps.js:7
@@ -189,6 +417,7 @@ msgid "Load Dataset"
 msgstr "טעינת מערך נתונים"
 
 #: app/static/app/js/classes/PipelineSteps.js:12
+#: app/static/app/js/components/EditPresetDialog.jsx:50
 msgid "Structure From Motion"
 msgstr "מבנה מתנועה"
 
@@ -201,14 +430,17 @@ msgid "Point Filtering"
 msgstr "‪סינון נקודות"
 
 #: app/static/app/js/classes/PipelineSteps.js:27
+#: app/static/app/js/components/EditPresetDialog.jsx:71
 msgid "Meshing"
 msgstr "רשת"
 
 #: app/static/app/js/classes/PipelineSteps.js:32
+#: app/static/app/js/components/EditPresetDialog.jsx:79
 msgid "Texturing"
 msgstr "מרקם"
 
 #: app/static/app/js/classes/PipelineSteps.js:37
+#: app/static/app/js/components/EditPresetDialog.jsx:56
 msgid "Georeferencing"
 msgstr "התאמה גאוגרפית"
 
@@ -217,6 +449,8 @@ msgid "DEM"
 msgstr "DEM (מודל גבהים דיגיטלי)"
 
 #: app/static/app/js/classes/PipelineSteps.js:52
+#: app/static/app/js/components/TaskListItem.jsx:571
+#: app/static/app/js/components/TaskListItem.jsx:573
 msgid "Report"
 msgstr "דִווּחַ"
 
@@ -237,6 +471,7 @@ msgid "Queued"
 msgstr "בתור"
 
 #: app/static/app/js/classes/StatusCodes.js:15
+#: app/static/app/js/components/Toaster.jsx:19
 msgid "Processing"
 msgstr "עיבוד"
 
@@ -252,66 +487,352 @@ msgstr "הושלם"
 msgid "Canceled"
 msgstr "בּוּטל"
 
-#: app/static/app/js/classes/TempLayer.js:14
-#, python-format
-msgid "%(file)s is bigger than 5 MB."
-msgstr "%(file)s גדול מ-5 מגה-בייט."
+#: app/static/app/js/classes/Units.js:15 app/static/app/js/classes/Units.js:22
+#: coreplugins/measure/public/app.jsx:36
+msgid "Acres"
+msgstr "אקרים (יחידות מידה)"
 
-#: app/static/app/js/classes/TempLayer.js:30
-#, python-format
-msgid "Not a proper zipped shapefile: %(file)s"
-msgstr "קובץ מכווץ אינו תקין: %(file)s"
+#: app/static/app/js/classes/Units.js:29 app/static/app/js/classes/Units.js:36
+#: app/static/app/js/components/ExportAssetPanel.jsx:215
+#: coreplugins/measure/public/app.jsx:37
+msgid "Feet"
+msgstr "רגל - Feet (יחידת מידה)"
 
-#: app/static/app/js/classes/TempLayer.js:43
-#, python-format
-msgid "Not a proper JSON file: %(file)s"
-msgstr "קובץ JSON לא תקין: %(file)s"
+#: app/static/app/js/classes/Units.js:43
+msgid "Inches"
+msgstr ""
 
-#: app/static/app/js/components/AssetDownloadButtons.jsx:56
-msgid "Download Assets"
-msgstr "הורדת תוצרים"
+#: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
+msgid "Hectares"
+msgstr "הקטרים - Hectares (יחידות מידה)"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:49
+#: app/static/app/js/classes/Units.js:57
+#: app/static/app/js/components/ExportAssetPanel.jsx:214
+#: coreplugins/measure/public/app.jsx:40
+msgid "Meters"
+msgstr "מטרים"
+
+#: app/static/app/js/classes/Units.js:64 coreplugins/measure/public/app.jsx:38
+msgid "Kilometers"
+msgstr "קילומטרים"
+
+#: app/static/app/js/classes/Units.js:71
+#, fuzzy
+#| msgid "Perimeter"
+msgid "Centimeters"
+msgstr "היקף"
+
+#: app/static/app/js/classes/Units.js:78 app/static/app/js/classes/Units.js:85
+#: coreplugins/measure/public/app.jsx:41
+msgid "Miles"
+msgstr "מייל - Miles (יחידת מידה)"
+
+#: app/static/app/js/classes/Units.js:92 app/static/app/js/classes/Units.js:99
+#, fuzzy
+#| msgid "Sq Feet"
+msgid "Square Feet"
+msgstr "רגל רבוע (Sq Feet)"
+
+#: app/static/app/js/classes/Units.js:106
+#, fuzzy
+#| msgid "Sq Meters"
+msgid "Square Meters"
+msgstr "מ\"ר - מטרים רבועים (Sq Meters)"
+
+#: app/static/app/js/classes/Units.js:113
+#, fuzzy
+#| msgid "Kilometers"
+msgid "Square Kilometers"
+msgstr "קילומטרים"
+
+#: app/static/app/js/classes/Units.js:120
+#: app/static/app/js/classes/Units.js:127
+#, fuzzy
+#| msgid "Sq Miles"
+msgid "Square Miles"
+msgstr "מייל רבוע (Sq Miles)"
+
+#: app/static/app/js/classes/Units.js:134
+msgid "Cubic Meters"
+msgstr "מטרים מעוקבים (מ\"ר)"
+
+#: app/static/app/js/classes/Units.js:141
+#: app/static/app/js/classes/Units.js:148
+#, fuzzy
+#| msgid "Cubic Meters"
+msgid "Cubic Yards"
+msgstr "מטרים מעוקבים (מ\"ר)"
+
+#: app/static/app/js/classes/Units.js:158
+msgid "Celsius"
+msgstr ""
+
+#: app/static/app/js/classes/Units.js:168
+msgid "Fahrenheit"
+msgstr ""
+
+#: app/static/app/js/classes/Units.js:286
+msgid "Metric"
+msgstr ""
+
+#: app/static/app/js/classes/Units.js:321
+msgid "Imperial"
+msgstr ""
+
+#: app/static/app/js/classes/Units.js:385
+msgid "Imperial (US)"
+msgstr ""
+
+#: app/static/app/js/components/AssetDownloadButtons.jsx:79
+#: app/static/app/js/components/ExportAssetDialog.jsx:41
+#: app/static/app/js/components/MapPreview.jsx:460
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:94
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:208
+msgid "Download"
+msgstr "הורדה"
+
+#: app/static/app/js/components/AssetDownloadButtons.jsx:111
+msgid "Backup"
+msgstr ""
+
+#: app/static/app/js/components/CropButton.jsx:16
+msgid "Crop"
+msgstr ""
+
+#: app/static/app/js/components/EditPermissionsPanel.jsx:63
 msgid "Cannot load permissions."
 msgstr "לא ניתן לטעון הרשאות."
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:150
+#: app/static/app/js/components/EditPermissionsPanel.jsx:194
 msgid "Read/Write"
 msgstr "קריאה/כתיבה"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:151
+#: app/static/app/js/components/EditPermissionsPanel.jsx:195
 msgid "Read"
 msgstr "קריאה"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:152
+#: app/static/app/js/components/EditPermissionsPanel.jsx:196
 msgid "No Access"
 msgstr "אין גישה"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:225
+#: app/static/app/js/components/EditPermissionsPanel.jsx:278
+msgid "Group name"
+msgstr ""
+
+#: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
 msgstr "שם משתמש"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:248
+#: app/static/app/js/components/EditPermissionsPanel.jsx:320
 msgid "Permissions"
 msgstr "הרשאות"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:110
-#: app/static/app/js/components/EditTaskForm.jsx:530
+#: app/static/app/js/components/EditPermissionsPanel.jsx:327
+#, fuzzy
+#| msgid "Add tags"
+msgid "Add user"
+msgstr "הוסף תגיות"
+
+#: app/static/app/js/components/EditPermissionsPanel.jsx:328
+#, fuzzy
+#| msgid "Add Project"
+msgid "Add group"
+msgstr "הוסף פרויקט"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:22
+#, fuzzy
+#| msgid "Start Processing"
+msgid "Input & Preprocessing"
+msgstr "התחל עיבוד"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:25
+#, fuzzy
+#| msgid "Camera Animation"
+msgid "Camera Configuration"
+msgstr "אנימציית מצלמה"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:26
+msgid "Masking"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:27
+msgid "Multispectral"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:29
+msgid "Video Input"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:34
+msgid "Bounds & Cropping"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:37
+msgid "Boundary"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:42
+msgid "Coordinate Reference System"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:45
+#: app/static/app/js/components/EditTaskForm.jsx:626
+#: app/static/app/js/components/SplatsDialog.jsx:454
+msgid "Options"
+msgstr "אפשרויות"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:53
+msgid "Feature Extraction"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:54
+msgid "Feature Matching"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:55
+#, fuzzy
+#| msgid "Reconstructed Points:"
+msgid "Reconstruction"
+msgstr "נקודות משוחזרות:"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:64
+#, fuzzy
+#| msgid "Annotation"
+msgid "Generation"
+msgstr "הערה (אנוטציה)"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:65
+#, fuzzy
+#| msgid "Filter"
+msgid "Filtering"
+msgstr "סינון"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:66
+#, fuzzy
+#| msgid "Processing"
+msgid "Post-Processing"
+msgstr "עיבוד"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:74
+msgid "Mesh Generation"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:82
+#, fuzzy
+#| msgid "Texturing"
+msgid "Texture Options"
+msgstr "מרקם"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:87
+msgid "Digital Elevation Models"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:90
+#, fuzzy
+#| msgid "Task Output:"
+msgid "Outputs"
+msgstr "פלט משימה:"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:91
+msgid "Resolution & Sampling"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:92
+#, fuzzy
+#| msgid "Classification filter"
+msgid "Ground Classification (SMRF)"
+msgstr "מסנן סיווג"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:100
+#, fuzzy
+#| msgid "Orthophoto (Tiles)"
+msgid "Orthophoto Options"
+msgstr "אורתופוטו (אריחים)"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:105
+#, fuzzy
+#| msgid "Miles"
+msgid "Tiles"
+msgstr "מייל - Miles (יחידת מידה)"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:108
+#, fuzzy
+#| msgid "Options"
+msgid "Tiles Options"
+msgstr "אפשרויות"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:113
+msgid "System & Pipeline Control"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:116
+msgid "Performance"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:117
+#, fuzzy
+#| msgid "Helicopter control"
+msgid "Pipeline Control"
+msgstr "בקרת הליקופטר"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:122
+msgid "Split/Merge"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:125
+msgid "Splitting"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:126
+msgid "Merging"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:520
+#, fuzzy
+#| msgid "Other settings"
+msgid "Other Options"
+msgstr "הגדרות נוספות"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:557
+#: app/static/app/js/components/EditTaskForm.jsx:572
 msgid "Edit Task Options"
 msgstr "עריכת אפשרויות משימה"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:116
+#: app/static/app/js/components/EditPresetDialog.jsx:564
 #: app/static/app/js/components/EditProjectDialog.jsx:169
-#: app/static/app/js/components/EditTaskForm.jsx:615
-#: app/static/app/js/components/Paginator.jsx:28
-#: app/static/app/js/components/ProjectListItem.jsx:54
+#: app/static/app/js/components/EditTaskForm.jsx:659
+#: app/static/app/js/components/Paginator.jsx:29
+#: app/static/app/js/components/ProjectListItem.jsx:62
+#: coreplugins/annotate/public/Popup.jsx:898
+#: coreplugins/annotate/public/Popup.jsx:905
+#: coreplugins/annotate/public/Popup.jsx:931
 msgid "Name"
 msgstr "שֵׁם"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:124
-#: app/static/app/js/components/Paginator.jsx:121
+#: app/static/app/js/components/EditPresetDialog.jsx:571
+#: app/static/app/js/components/Paginator.jsx:136
 msgid "Search"
 msgstr "לְחַפֵּשׂ"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:574
+msgid "Flat View"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:574
+msgid "Grouped View"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:578
+msgid "Expand"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:578
+msgid "Collapse"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:588
+msgid "Search options..."
+msgstr ""
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -327,20 +848,26 @@ msgstr "יוצר פרויקט..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:125
 #: app/static/app/js/components/EditProjectDialog.jsx:131
-#: app/static/app/js/components/TaskListItem.jsx:209
-#: app/static/app/js/components/TaskListItem.jsx:217
+#: app/static/app/js/components/TaskListItem.jsx:237
+#: app/static/app/js/components/TaskListItem.jsx:245
 msgid "Cannot complete operation."
 msgstr "לא ניתן להשלים את הפעולה."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:153
-#: app/static/app/js/components/EditTaskForm.jsx:563
-#: app/static/app/js/components/Paginator.jsx:31
-#: app/static/app/js/components/ProjectListItem.jsx:57
+#: app/static/app/js/components/EditTaskForm.jsx:605
+#: app/static/app/js/components/Paginator.jsx:32
+#: app/static/app/js/components/ProjectListItem.jsx:65
 msgid "Tags"
 msgstr "תגיות"
 
+#: app/static/app/js/components/EditProjectDialog.jsx:165
+#: app/static/app/js/components/EditTaskForm.jsx:586
+#: app/static/app/js/components/TaskListItem.jsx:873
+msgid "Duplicate"
+msgstr "לְשַׁכְפֵּל"
+
 #: app/static/app/js/components/EditProjectDialog.jsx:172
-#: app/static/app/js/components/EditTaskForm.jsx:626
+#: app/static/app/js/components/EditTaskForm.jsx:670
 msgid "Add tags"
 msgstr "הוסף תגיות"
 
@@ -348,20 +875,20 @@ msgstr "הוסף תגיות"
 msgid "Description (optional)"
 msgstr "תיאור (אופציונלי)"
 
-#: app/static/app/js/components/EditTaskForm.jsx:101
+#: app/static/app/js/components/EditTaskForm.jsx:116
 msgid ""
 "Could not load list of processing nodes. Are you connected to the internet?"
 msgstr "לא ניתן היה לטעון את רשימת צמתי העיבוד. האם אתה מחובר לאינטרנט?"
 
-#: app/static/app/js/components/EditTaskForm.jsx:109
+#: app/static/app/js/components/EditTaskForm.jsx:124
 msgid "We tried to reach:"
 msgstr "ניסינו להגיע ל:"
 
-#: app/static/app/js/components/EditTaskForm.jsx:110
+#: app/static/app/js/components/EditTaskForm.jsx:125
 msgid "There are no usable processing nodes."
 msgstr "אין צמתי עיבוד שמישים."
 
-#: app/static/app/js/components/EditTaskForm.jsx:110
+#: app/static/app/js/components/EditTaskForm.jsx:125
 msgid ""
 "Make sure that at least one processing node is reachable and that you have "
 "granted the current user sufficient permissions to view the processing node "
@@ -372,113 +899,124 @@ msgid ""
 msgstr ""
 "ודא שלפחות צומת עיבוד אחד נגיש וכי הענקת למשתמש הנוכחי הרשאות מספיקות כדי "
 "לצפות בצומת העיבוד (על ידי מעבר אל ניהול -- צומת עיבוד -- בחירת צומת -- "
-"הרשאות אובייקט -- הוספת משתמש/קבוצה וסימון האפשרות CAN VIEW PROCESSING NODE)"
-". אם אתה מחזיר צומת למצב מקוון, ייקח בערך 30 שניות עד ש-WebODM יזהה אותו."
+"הרשאות אובייקט -- הוספת משתמש/קבוצה וסימון האפשרות CAN VIEW PROCESSING "
+"NODE). אם אתה מחזיר צומת למצב מקוון, ייקח בערך 30 שניות עד ש-WebODM יזהה "
+"אותו."
 
-#: app/static/app/js/components/EditTaskForm.jsx:210
+#: app/static/app/js/components/EditTaskForm.jsx:224
 msgid "Could not load list of presets. Are you connected to the internet?"
 msgstr ""
 "לא ניתן היה לטעון את רשימת ההגדרות הקבועות מראש. האם אתה מחובר לאינטרנט?"
 
-#: app/static/app/js/components/EditTaskForm.jsx:219
-#: app/static/app/js/components/EditTaskForm.jsx:382
-#: app/static/app/js/components/ExportAssetPanel.jsx:185
-#: app/static/app/js/components/Map.jsx:423
-#: coreplugins/contours/public/ContoursPanel.jsx:246
-#: coreplugins/contours/public/ContoursPanel.jsx:273
-#: coreplugins/contours/public/ContoursPanel.jsx:292
+#: app/static/app/js/components/EditTaskForm.jsx:233
+#: app/static/app/js/components/EditTaskForm.jsx:424
+#: app/static/app/js/components/ExportAssetPanel.jsx:240
+#: app/static/app/js/components/ExportAssetPanel.jsx:241
+#: app/static/app/js/components/Map.jsx:812
+#: app/static/app/js/components/MapPreview.jsx:133
+#: coreplugins/annotate/public/Popup.jsx:891
+#: coreplugins/contours/public/ContoursPanel.jsx:322
+#: coreplugins/contours/public/ContoursPanel.jsx:349
+#: coreplugins/contours/public/ContoursPanel.jsx:369
 msgid "Custom"
 msgstr "מותאם אישית"
 
-#: app/static/app/js/components/EditTaskForm.jsx:226
-#: app/static/app/js/components/EditTaskForm.jsx:350
+#: app/static/app/js/components/EditTaskForm.jsx:240
+#: app/static/app/js/components/EditTaskForm.jsx:392
 msgid "Default"
 msgstr "בְּרִירַת מֶחדָל"
 
-#: app/static/app/js/components/EditTaskForm.jsx:435
+#: app/static/app/js/components/EditTaskForm.jsx:477
 msgid "My Preset"
 msgstr "ההגדרה שלי"
 
-#: app/static/app/js/components/EditTaskForm.jsx:435
+#: app/static/app/js/components/EditTaskForm.jsx:477
 #, python-format
 msgid "Copy of %(preset)s"
 msgstr "עותק של %(preset)s"
 
-#: app/static/app/js/components/EditTaskForm.jsx:458
+#: app/static/app/js/components/EditTaskForm.jsx:500
 msgid "Could not duplicate the preset. Please try to refresh the page."
 msgstr "לא ניתן היה לשכפל את ההגדרה המוגדרת מראש. אנא נסה לרענן את הדף."
 
-#: app/static/app/js/components/EditTaskForm.jsx:467
+#: app/static/app/js/components/EditTaskForm.jsx:509
 msgid ""
 "System presets can only be removed by a staff member from the Administration "
 "panel."
 msgstr "לא ניתן לשכפל את הקביעה המוגדרת מראש. אנא נסה לרענן את העמוד."
 
-#: app/static/app/js/components/EditTaskForm.jsx:471
+#: app/static/app/js/components/EditTaskForm.jsx:513
 #, python-format
 msgid "Are you sure you want to delete \"%(preset)s\"?"
 msgstr "האם אתה בטוח שברצונך למחוק את \"%(preset)s\"?"
 
-#: app/static/app/js/components/EditTaskForm.jsx:484
+#: app/static/app/js/components/EditTaskForm.jsx:526
 msgid "Could not delete the preset. Please try to refresh the page."
 msgstr "לא ניתן למחוק את ההגדרה המוגדרת מראש. אנא נסה לרענן את הדף."
 
-#: app/static/app/js/components/EditTaskForm.jsx:508
+#: app/static/app/js/components/EditTaskForm.jsx:550
 msgid "Retry"
 msgstr "נסה שוב"
 
-#: app/static/app/js/components/EditTaskForm.jsx:531
-#: app/static/app/js/components/EditTaskForm.jsx:538
-#: app/static/app/js/components/ProjectListItem.jsx:682
-#: app/static/app/js/components/TaskListItem.jsx:465
-#: app/static/app/js/components/TaskListItem.jsx:695
-#: coreplugins/editshortlinks/public/SLControls.jsx:162
+#: app/static/app/js/components/EditTaskForm.jsx:573
+#: app/static/app/js/components/EditTaskForm.jsx:580
+#: app/static/app/js/components/ManageMediaDialog.jsx:496
+#: app/static/app/js/components/ProjectListItem.jsx:866
+#: app/static/app/js/components/TaskListItem.jsx:614
+#: app/static/app/js/components/TaskListItem.jsx:859
+#: coreplugins/annotate/public/Popup.jsx:948
+#: coreplugins/annotate/public/Popup.jsx:1153
 msgid "Edit"
 msgstr "לַעֲרוֹך"
 
-#: app/static/app/js/components/EditTaskForm.jsx:544
-#: app/static/app/js/components/TaskListItem.jsx:701
-msgid "Duplicate"
-msgstr "לְשַׁכְפֵּל"
-
-#: app/static/app/js/components/EditTaskForm.jsx:548
+#: app/static/app/js/components/EditTaskForm.jsx:590
 #: app/static/app/js/components/EditTaskPanel.jsx:82
 #: app/static/app/js/components/FormDialog.jsx:11
-#: coreplugins/editshortlinks/public/SLControls.jsx:170
+#: coreplugins/annotate/public/Popup.jsx:1157
 msgid "Save"
 msgstr "לשמור"
 
-#: app/static/app/js/components/EditTaskForm.jsx:552
-#: app/static/app/js/components/FormDialog.jsx:172
-#: app/static/app/js/components/TaskListItem.jsx:493
-#: app/static/app/js/components/TaskListItem.jsx:711
-#: coreplugins/measure/public/app.jsx:34
+#: app/static/app/js/components/EditTaskForm.jsx:594
+#: app/static/app/js/components/FormDialog.jsx:180
+#: app/static/app/js/components/LayersControlAnnotations.jsx:73
+#: app/static/app/js/components/LayersControlAnnotations.jsx:151
+#: app/static/app/js/components/LayersControlOverlays.jsx:121
+#: app/static/app/js/components/LayersControlOverlays.jsx:219
+#: app/static/app/js/components/ManageMediaDialog.jsx:544
+#: app/static/app/js/components/ManageMediaDialog.jsx:582
+#: app/static/app/js/components/MapPreview.jsx:194
+#: app/static/app/js/components/ProjectListItem.jsx:872
+#: app/static/app/js/components/TaskListItem.jsx:580
+#: app/static/app/js/components/TaskListItem.jsx:890
+#: coreplugins/annotate/public/Popup.jsx:1156
+#: coreplugins/measure/public/app.jsx:35
 msgid "Delete"
 msgstr "למחוק"
 
-#: app/static/app/js/components/EditTaskForm.jsx:574
-#: coreplugins/lightning/public/Dashboard.jsx:153
+#: app/static/app/js/components/EditTaskForm.jsx:616
+#: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Processing Node"
 msgstr "צומת עיבוד"
 
-#: app/static/app/js/components/EditTaskForm.jsx:584
-msgid "Options"
-msgstr "אפשרויות"
-
-#: app/static/app/js/components/EditTaskForm.jsx:608
+#: app/static/app/js/components/EditTaskForm.jsx:652
 msgid "Loading processing nodes and presets..."
 msgstr "טוען צמתי עיבוד וקביעות מוגדרות מראש..."
 
 #: app/static/app/js/components/EditTaskPanel.jsx:56
-msgid "Could not update task information. Plese try again."
-msgstr ""
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Could not update task information. Please try again."
+msgstr "לא ניתן ליצור משימה חדשה. אנא נסה שוב מאוחר יותר."
 
 #: app/static/app/js/components/EditTaskPanel.jsx:75
-#: app/static/app/js/components/FormDialog.jsx:199
-#: app/static/app/js/components/NewTaskPanel.jsx:185
-#: app/static/app/js/components/TaskListItem.jsx:474
-#: app/static/app/js/components/TaskListItem.jsx:690
-#: coreplugins/measure/public/app.jsx:33
+#: app/static/app/js/components/FormDialog.jsx:207
+#: app/static/app/js/components/ManageMediaDialog.jsx:421
+#: app/static/app/js/components/NewTaskPanel.jsx:271
+#: app/static/app/js/components/NewTaskPanel.jsx:357
+#: app/static/app/js/components/SplatsDialog.jsx:536
+#: app/static/app/js/components/TaskListItem.jsx:590
+#: app/static/app/js/components/TaskListItem.jsx:854
+#: coreplugins/measure/public/app.jsx:34
 msgid "Cancel"
 msgstr "לְבַטֵל"
 
@@ -486,51 +1024,49 @@ msgstr "לְבַטֵל"
 msgid "Saving..."
 msgstr "שומר..."
 
-#: app/static/app/js/components/ErrorMessage.jsx:29
-#: app/static/app/js/components/ProjectListItem.jsx:694
-msgid "Close"
-msgstr "לִסְגוֹר"
-
-#: app/static/app/js/components/ExportAssetDialog.jsx:38
+#: app/static/app/js/components/ExportAssetDialog.jsx:40
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:93
 msgid "Downloading…"
 msgstr "מוריד…"
 
-#: app/static/app/js/components/ExportAssetDialog.jsx:39
-msgid "Download"
-msgstr "הורדה"
-
-#: app/static/app/js/components/ExportAssetPanel.jsx:152
-#: app/static/app/js/components/ImportTaskPanel.jsx:138
-#: app/static/app/js/components/LayersControlLayer.jsx:251
-#: app/static/app/js/components/ProjectList.jsx:72
+#: app/static/app/js/components/ExportAssetPanel.jsx:185
+#: app/static/app/js/components/ImportTaskPanel.jsx:141
+#: app/static/app/js/components/LayersControlLayer.jsx:375
+#: app/static/app/js/components/ProjectList.jsx:75
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:72
 #, python-format
 msgid "Invalid JSON response: %(error)s"
 msgstr "תגובת JSON לא חוקית: %(error)s"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:179
-#: coreplugins/contours/public/ContoursPanel.jsx:287
-msgid "Projection:"
-msgstr "הקרנה:"
+#: app/static/app/js/components/ExportAssetPanel.jsx:234
+#: app/static/app/js/components/TaskListItem.jsx:720
+msgid "CRS:"
+msgstr ""
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:183
-#: coreplugins/contours/public/ContoursPanel.jsx:290
+#: app/static/app/js/components/ExportAssetPanel.jsx:238
+#: coreplugins/contours/public/ContoursPanel.jsx:367
 msgid "Lat/Lon"
 msgstr "קו רוחב/קו אורך"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:184
-#: coreplugins/contours/public/ContoursPanel.jsx:291
+#: app/static/app/js/components/ExportAssetPanel.jsx:239
+#: coreplugins/contours/public/ContoursPanel.jsx:368
 msgid "Web Mercator"
 msgstr "תקן ווב מרקטור"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:202
+#: app/static/app/js/components/ExportAssetPanel.jsx:266
 msgid "Format:"
 msgstr "פורמט:"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:211
+#: app/static/app/js/components/ExportAssetPanel.jsx:274
+#, python-format
+msgid "Resample (%(unit)s):"
+msgstr ""
+
+#: app/static/app/js/components/ExportAssetPanel.jsx:282
 msgid "Export:"
 msgstr "ייצוא:"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:216
+#: app/static/app/js/components/ExportAssetPanel.jsx:287
 msgid "Exporting..."
 msgstr "מייצא..."
 
@@ -543,20 +1079,22 @@ msgid "Saving…"
 msgstr "שומר…"
 
 #: app/static/app/js/components/FormDialog.jsx:14
-#: coreplugins/editshortlinks/public/SLControls.jsx:112
 msgid "Are you sure?"
 msgstr "אתה בטוח?"
 
-#: app/static/app/js/components/FormDialog.jsx:130
+#: app/static/app/js/components/FormDialog.jsx:138
 msgid "Could not apply changes"
 msgstr "לא ניתן היה להחיל את השינויים"
 
-#: app/static/app/js/components/FormDialog.jsx:151
+#: app/static/app/js/components/FormDialog.jsx:159
+#: app/static/app/js/components/ProjectListItem.jsx:560
 msgid "Could not delete item"
 msgstr "לא ניתן היה למחוק את הפריט"
 
 #: app/static/app/js/components/GCPPopup.jsx:81
-#: app/static/app/js/components/ImagePopup.jsx:47
+#: app/static/app/js/components/ImagePopup.jsx:94
+#: app/static/app/js/components/MediaView.jsx:69
+#: coreplugins/annotate/public/Popup.jsx:809
 msgid "Image missing"
 msgstr "תמונה חסרה"
 
@@ -573,166 +1111,492 @@ msgstr "(מטרים)"
 msgid "Vertical error:"
 msgstr "שגיאה אנכית:"
 
-#: app/static/app/js/components/Histogram.jsx:300
+#: app/static/app/js/components/Histogram.jsx:353
 msgid "Min:"
 msgstr "מינימום:"
 
-#: app/static/app/js/components/Histogram.jsx:301
+#: app/static/app/js/components/Histogram.jsx:354
 msgid "Max:"
 msgstr "מקסימום:"
 
-#: app/static/app/js/components/ImagePopup.jsx:86
+#: app/static/app/js/components/ImagePopup.jsx:254
+msgid "Altitude"
+msgstr ""
+
+#: app/static/app/js/components/ImagePopup.jsx:262
 msgid "Download Image"
 msgstr "הורד תמונה"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:63
+#: app/static/app/js/components/ImportExternalPanel.jsx:114
+#, fuzzy
+#| msgid "Cannot upload file. Check your internet connection and try again."
+msgid ""
+"Upload failed after multiple retries. Please check your connection and try "
+"again."
+msgstr "לא ניתן להעלות את הקובץ. בדוק את חיבור האינטרנט שלך ונסה שוב."
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:206
+#, fuzzy
+#| msgid "Cannot retrieve estimate. Try again later."
+msgid "Failed to complete upload. Try again later."
+msgstr "אין אפשרות לאחזר הערכה. נסה שוב מאוחר יותר."
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:216
+msgid "Select at least one file to upload."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:223
+msgid "A textured model requires also a point cloud to be properly displayed."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:247
+msgid "Failed to initialize upload. Try again later."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:286
+msgid "Import External Data"
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:287
+msgid "Select files. At least one file is required."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:307
+msgid "Remove"
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:323
+#: app/static/app/js/components/ImportTaskPanel.jsx:201
+msgid "Cancel Upload"
+msgstr "ביטול העלאה"
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:333
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload"
+msgstr "העלאת קובץ"
+
+#: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
 msgstr "לא ניתן להעלות את הקובץ. בדוק את חיבור האינטרנט שלך ונסה שוב."
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:91
-#: coreplugins/editshortlinks/public/SLControls.jsx:44
-#: coreplugins/editshortlinks/public/SLControls.jsx:62
-#: coreplugins/editshortlinks/public/SLControls.jsx:100
-#: coreplugins/editshortlinks/public/SLControls.jsx:128
-#: coreplugins/editshortlinks/public/SLControls.jsx:131
-#: coreplugins/shortlinks/public/SLCheckbox.jsx:46
-#: coreplugins/shortlinks/public/SLCheckbox.jsx:50
+#: app/static/app/js/components/ImportTaskPanel.jsx:94
 #, python-format
 msgid "Invalid response from server: %(error)s"
 msgstr "תגובה לא חוקית מהשרת: %(error)s"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:94
+#: app/static/app/js/components/ImportTaskPanel.jsx:97
 msgid "An error occured while uploading the file. Please try again."
 msgstr "אירעה שגיאה בעת העלאת הקובץ. אנא נסה שוב."
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:142
+#: app/static/app/js/components/ImportTaskPanel.jsx:145
 msgid "Cannot import from URL. Check your internet connection."
 msgstr "לא ניתן לייבא מכתובת URL. בדוק את חיבור האינטרנט שלך."
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:159
-msgid "Import Existing Assets"
-msgstr ""
-
-#: app/static/app/js/components/ImportTaskPanel.jsx:160
-#, python-format
-msgid ""
-"You can import .zip files that have been exported from existing tasks via "
-"Download Assets %(arrow)s All Assets."
+#: app/static/app/js/components/ImportTaskPanel.jsx:166
+msgid "Import Assets or Backups"
 msgstr ""
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:167
+#, python-format
+msgid ""
+"You can import .zip files that have been exported from existing tasks via "
+"Download %(arrow)s All Assets | Backup."
+msgstr ""
+
+#: app/static/app/js/components/ImportTaskPanel.jsx:174
 msgid "Upload a File"
 msgstr "העלאת קובץ"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:175
+#: app/static/app/js/components/ImportTaskPanel.jsx:182
 msgid "Import From URL"
 msgstr "ייבוא מכתובת URL"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:184
-#: app/static/app/js/components/ProjectListItem.jsx:599
+#: app/static/app/js/components/ImportTaskPanel.jsx:191
+#: app/static/app/js/components/Map.jsx:1741
+#: app/static/app/js/components/ProjectListItem.jsx:776
 msgid "Import"
 msgstr "יְבוּא"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:194
-msgid "Cancel Upload"
-msgstr "ביטול העלאה"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:289
-msgid "Algorithm:"
-msgstr "אלגוריתם:"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:301
-msgid "Filter:"
-msgstr ""
-
-#: app/static/app/js/components/LayersControlLayer.jsx:313
-msgid "Color:"
-msgstr "צבע:"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:325
-msgid "Shading:"
-msgstr "הצללה:"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:328
-#: app/static/app/js/components/Map.jsx:424
-msgid "None"
-msgstr "ללא ערך"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:329
-#: coreplugins/contours/public/ContoursPanel.jsx:228
-msgid "Normal"
-msgstr "נוֹרמָלִי"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:330
-msgid "Extruded"
-msgstr "הבלטה"
-
-#: app/static/app/js/components/LayersControlPanel.jsx:26
-#: app/static/app/js/components/NewTaskPanel.jsx:187
-#: coreplugins/contours/public/ContoursPanel.jsx:236
-msgid "Loading…"
-msgstr "טוען…"
-
-#: app/static/app/js/components/LayersControlPanel.jsx:44
+#: app/static/app/js/components/LayersControl.jsx:40
+#: app/static/app/js/components/LayersControlPanel.jsx:145
 msgid "Layers"
 msgstr "שכבות"
 
-#: app/static/app/js/components/Map.jsx:90
-msgid "DSM"
+#: app/static/app/js/components/LayersControlAnnotations.jsx:61
+#: app/static/app/js/components/LayersControlAnnotations.jsx:134
+#: app/static/app/js/components/LayersControlOverlays.jsx:108
+#: app/static/app/js/components/LayersControlOverlays.jsx:184
+#: coreplugins/annotate/public/Popup.jsx:767
+#, fuzzy
+#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+msgid "Are you sure you want to delete this?"
+msgstr "האם אתה בטוח שברצונך למחוק את \"%(preset)s\"?"
+
+#: app/static/app/js/components/LayersControlAnnotations.jsx:149
+#: app/static/app/js/translations/potree_autogenerated.js:8
+msgid "Annotations"
+msgstr "הערות"
+
+#: app/static/app/js/components/LayersControlAnnotations.jsx:150
+#: coreplugins/annotate/public/Popup.jsx:1150
+#: coreplugins/annotate/public/Toolbox.jsx:1209
+#: coreplugins/measure/public/MeasurePopup.jsx:201
+msgid "Export to GeoJSON"
+msgstr "ייצא ל-GeoJSON"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:411
+msgid "Side By Side"
 msgstr ""
 
-#: app/static/app/js/components/Map.jsx:92
-msgid "DTM"
+#: app/static/app/js/components/LayersControlLayer.jsx:411
+msgid "Zoom To"
 msgstr ""
 
-#: app/static/app/js/components/Map.jsx:280
-msgid "(Cameras)"
+#: app/static/app/js/components/LayersControlLayer.jsx:430
+msgid "Algorithm:"
+msgstr "אלגוריתם:"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:442
+msgid "Bands:"
 msgstr ""
 
-#: app/static/app/js/components/Map.jsx:330
-msgid "(GCPs)"
+#: app/static/app/js/components/LayersControlLayer.jsx:447
+#: app/static/app/js/components/NewTaskPanel.jsx:302
+msgid "Automatic"
 msgstr ""
 
-#: app/static/app/js/components/Map.jsx:404
+#: app/static/app/js/components/LayersControlLayer.jsx:451
+#, python-format
+msgid "Not every band for %(name)s could be automatically identified."
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:451
+msgid "Your sensor might not have the proper bands for using this algorithm."
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:458
+msgid "Color:"
+msgstr "צבע:"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:470
+msgid "Display:"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:473
+#: coreplugins/annotate/public/Popup.jsx:984
+#, fuzzy
+#| msgid "Elevation:"
+msgid "Elevation"
+msgstr "גובה:"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:474
+msgid "Slope"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:481
+msgid "Shading:"
+msgstr "הצללה:"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:484
+#: app/static/app/js/components/Map.jsx:813
+#: app/static/app/js/components/MapPreview.jsx:134
+#: coreplugins/annotate/public/Popup.jsx:899
+#: coreplugins/annotate/public/Popup.jsx:906
+msgid "None"
+msgstr "ללא ערך"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:485
+#: coreplugins/contours/public/ContoursPanel.jsx:291
+msgid "Normal"
+msgstr "נוֹרמָלִי"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:486
+msgid "Extruded"
+msgstr "הבלטה"
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:57
+msgid "Change color"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:206
+#, fuzzy
+#| msgid "Moving..."
+msgid "Converting..."
+msgstr "מעביר..."
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:216
+#: app/static/app/js/components/Map.jsx:1730
+#: app/static/app/js/translations/potree_autogenerated.js:52
+#: app/static/app/js/translations/potree_autogenerated.js:62
+msgid "Opacity"
+msgstr "אטימות"
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:218
+#, fuzzy
+#| msgid "Saving…"
+msgid "Syncing…"
+msgstr "שומר…"
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:294
+msgid "Overlays"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlPanel.jsx:42
+#: app/static/app/js/components/NewTaskPanel.jsx:359
+#: coreplugins/contours/public/ContoursPanel.jsx:312
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:186
+msgid "Loading…"
+msgstr "טוען…"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:153
+#: app/static/app/js/components/ProjectListItem.jsx:306
+#: app/static/app/js/components/SplatsDialog.jsx:178
+#, python-format
+msgid "%(filename)s is not a valid file"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:174
+#: app/static/app/js/components/ProjectListItem.jsx:335
+#: app/static/app/js/components/SplatsDialog.jsx:195
+#, python-format
+msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
+msgstr ""
+"לא ניתן להעלות את %(filename)s, חרגת ממספר הניסיונות החוזרים המרבי "
+"(%(max_retries)s)"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:186
+#: app/static/app/js/components/ProjectListItem.jsx:347
+#: app/static/app/js/components/SplatsDialog.jsx:202
+#, fuzzy, python-format
+#| msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
+msgid ""
+"Cannot upload %(filename)s, file is too large! Default MaxFileSize is "
+"%(maxFileSize)s MB!"
+msgstr ""
+"לא ניתן להעלות את %(filename)s, חרגת ממספר הניסיונות החוזרים המרבי "
+"(%(max_retries)s)"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:247
+#: app/static/app/js/components/SplatsDialog.jsx:235
+#, fuzzy
+#| msgid "Cannot upload file. Check your internet connection and try again."
+msgid "Upload failed. Check your connection and try again."
+msgstr "לא ניתן להעלות את הקובץ. בדוק את חיבור האינטרנט שלך ונסה שוב."
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:271
+#, fuzzy
+#| msgid "Cannot load permissions."
+msgid "Cannot load media."
+msgstr "לא ניתן לטעון הרשאות."
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:288
+#, fuzzy, python-format
+#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+msgid "Are you sure you want to delete %(filename)s ?"
+msgstr "האם אתה בטוח שברצונך למחוק את \"%(preset)s\"?"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:318
+#, fuzzy
+#| msgid "Cannot delete task."
+msgid "Cannot delete file."
+msgstr "לא ניתן למחוק את המשימה."
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:356
+#, fuzzy
+#| msgid "Cannot complete operation."
+msgid "Cannot update description."
+msgstr "לא ניתן להשלים את הפעולה."
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:371
+msgid "Video"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:372
+msgid "Panorama"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:373
+msgid "Photo"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:401
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload Files"
+msgstr "העלאת קובץ"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:403
+msgid ""
+"Georeferenced photos, panoramas and videos will be displayed on the map."
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:412
+#: app/static/app/js/components/SplatsDialog.jsx:527
+msgid "Finalizing... please wait"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:433
+msgid "No media files."
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:445
+#, fuzzy
+#| msgid "Righ view"
+msgid "Grid view"
+msgstr "מבט ימני"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:452
+#, fuzzy
+#| msgid "Left view"
+msgid "List view"
+msgstr "מבט שמאלי"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:516
+#: app/static/app/js/components/Map.jsx:542
+#: app/static/app/js/components/TaskListItem.jsx:865
+msgid "Media"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:558
+#, fuzzy
+#| msgid "Username"
+msgid "Filename"
+msgstr "שם משתמש"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:559
+#: coreplugins/annotate/public/Popup.jsx:947
+#, fuzzy
+#| msgid "Description (optional)"
+msgid "Description"
+msgstr "תיאור (אופציונלי)"
+
+#: app/static/app/js/components/Map.jsx:793
+#: app/static/app/js/components/MapPreview.jsx:114
 msgid "Enter a tile URL template. Valid coordinates are:"
 msgstr "הזן תבנית כתובת אתר (URL) לאריחים. קואורדינטות חוקיות הן:"
 
-#: app/static/app/js/components/Map.jsx:405
+#: app/static/app/js/components/Map.jsx:794
+#: app/static/app/js/components/MapPreview.jsx:115
 #, python-brace-format
 msgid "{z}, {x}, {y} for Z/X/Y tile scheme"
 msgstr "{z}, {x}, {y} עבור סכמת אריחים Z/X/Y"
 
-#: app/static/app/js/components/Map.jsx:406
-msgid "{-y} for flipped TMS-style Y coordinates"
+#: app/static/app/js/components/Map.jsx:795
+#: app/static/app/js/components/MapPreview.jsx:116
+#, fuzzy
+#| msgid "{-y} for flipped TMS-style Y coordinates"
+msgid "{−y} for flipped TMS-style Y coordinates"
 msgstr "{-y} עבור קואורדינטות Y הפוכות בסגנון TMS"
 
-#: app/static/app/js/components/Map.jsx:408
+#: app/static/app/js/components/Map.jsx:797
+#: app/static/app/js/components/MapPreview.jsx:118
 msgid "Example:"
 msgstr "דוגמה:"
 
-#: app/static/app/js/components/Map.jsx:475
-msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
+#: app/static/app/js/components/Map.jsx:881
+#, fuzzy
+#| msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
+msgid "Add a GeoJSON (.json), ShapeFile (.zip) or AutoCAD (.dxf) overlay"
 msgstr "הוסף שכבת-על זמנית של GeoJSON (.json) או ShapeFile (.zip)"
 
-#: app/static/app/js/components/Map.jsx:526
+#: app/static/app/js/components/Map.jsx:942
+#, fuzzy
+#| msgid "Cannot import from URL. Check your internet connection."
+msgid "Cannot set cropping area. Check your internet connection."
+msgstr "לא ניתן לייבא מכתובת URL. בדוק את חיבור האינטרנט שלך."
+
+#: app/static/app/js/components/Map.jsx:968
+#, fuzzy
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to set a new crop area?"
+msgstr "האם אתה בטוח שאתה רוצה לבטל?"
+
+#: app/static/app/js/components/Map.jsx:1037
 msgid "Error: cannot load assets list."
 msgstr "שגיאה: לא ניתן לטעון את רשימת התוצרים."
 
-#: app/static/app/js/components/Map.jsx:597
-msgid "Opacity:"
-msgstr "אטימות:"
+#: app/static/app/js/components/Map.jsx:1142
+msgid "Cannot import overlay: no task is loaded."
+msgstr ""
 
-#: app/static/app/js/components/Map.jsx:601
-#: app/static/app/js/components/TaskList.jsx:136
+#: app/static/app/js/components/Map.jsx:1230
+#: app/static/app/js/components/Map.jsx:1263
+#: app/static/app/js/components/Map.jsx:1281
+#, python-format
+msgid "Cannot save overlay %(name)s"
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:1296
+#: app/static/app/js/components/Map.jsx:1336
+msgid "Overlay"
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:1388
+msgid "Invalid EPSG code"
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:1456
+#: app/static/app/js/components/Map.jsx:1465
+#, python-format
+msgid "Cannot convert %(file)s"
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:1734
+#: app/static/app/js/components/NewTaskPanel.jsx:302
+#: app/static/app/js/components/TaskList.jsx:143
 msgid "Loading..."
 msgstr "טוען..."
+
+#: app/static/app/js/components/Map.jsx:1740
+#, fuzzy
+#| msgid "Import"
+msgid "Import DXF"
+msgstr "יְבוּא"
+
+#: app/static/app/js/components/MapPreview.jsx:172
+#, fuzzy
+#| msgid "Description (optional)"
+msgid "Set Reconstruction Area (optional)"
+msgstr "תיאור (אופציונלי)"
+
+#: app/static/app/js/components/MapPreview.jsx:326
+#, fuzzy, python-format
+#| msgid "Cannot restart task from (stage)s."
+msgid "Cannot extract GPS data from %(file)s"
+msgstr "לא ניתן להפעיל מחדש משימה משלבים אלה."
+
+#: app/static/app/js/components/MapPreview.jsx:449
+#, fuzzy
+#| msgid "Point location"
+msgid "Plotting GPS locations..."
+msgstr "מיקום נקודה"
+
+#: app/static/app/js/components/MapPreview.jsx:454
+#, python-format
+msgid "For performance reasons, only %(num)s images are plotted"
+msgstr ""
+
+#: app/static/app/js/components/MapPreview.jsx:465
+msgid "GeoJSON"
+msgstr ""
+
+#: app/static/app/js/components/MapPreview.jsx:466
+msgid "CSV"
+msgstr ""
+
+#: app/static/app/js/components/MapPreview.jsx:467
+#, fuzzy
+#| msgid "Download To File"
+msgid "Geolocation File"
+msgstr "הורדה לקובץ"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:9
 msgid "Move Task"
 msgstr "העברת משימה"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:10
-#: app/static/app/js/components/ProjectListItem.jsx:568
+#: app/static/app/js/components/ProjectListItem.jsx:745
 msgid "Save Changes"
 msgstr "שמירת שינויים"
 
@@ -741,59 +1605,117 @@ msgid "Moving..."
 msgstr "מעביר..."
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:54
-#: app/static/app/js/components/ProjectList.jsx:79
+#: app/static/app/js/components/ProjectList.jsx:82
 #, python-format
 msgid "Could not load projects list: %(error)s"
 msgstr "לא ניתן היה לטעון את רשימת הפרויקטים: %(error)s"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:88
+#: coreplugins/lightning/public/ShareDialog.jsx:306
 msgid "Project"
 msgstr "פּרוֹיֶקט"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:83
+#: app/static/app/js/components/NewTaskPanel.jsx:123
 msgid "Are you sure you want to cancel?"
 msgstr "האם אתה בטוח שאתה רוצה לבטל?"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:131
+#: app/static/app/js/components/NewTaskPanel.jsx:239
+#, fuzzy, python-format
+#| msgid "%(count)s files uploaded successfully"
+msgid "%(count)s files selected."
+msgstr "%(count)s קבצים הועלו בהצלחה"
+
+#: app/static/app/js/components/NewTaskPanel.jsx:242
 #, python-format
-msgid "%(count)s files selected. Please check these additional options:"
+msgid "%(count)s files and GCP file (%(name)s) selected."
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:249
+#, fuzzy
+#| msgid "%(count)s files selected. Please check these additional options:"
+msgid "Please check these additional options:"
 msgstr "%(count)s קבצים נבחרו. אנא סמן את האפשרויות הנוספות הבאות:"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:144
+#: app/static/app/js/components/NewTaskPanel.jsx:253
+msgid ""
+"Did you forget any images? When images exceed 1000, they are often stored "
+"inside multiple folders on the SD card."
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:260
+#, python-format
+msgid ""
+"Whoops! It looks like your GCP file is not formatted properly: %(errors)s "
+"See %(link)s for information on the GCP file format"
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:261
+msgid "GCP File"
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:269
+#, python-format
+msgid ""
+"Number of files selected exceeds the maximum of %(count)s allowed on this "
+"processing node."
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:299
+#: app/static/app/js/components/TaskListItem.jsx:487
+msgid "Alignment"
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:315
+#: app/static/app/js/components/SplatsDialog.jsx:461
 msgid "Resize Images"
 msgstr "שינוי גודל של תמונות"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:168
+#: app/static/app/js/components/NewTaskPanel.jsx:339
+#: app/static/app/js/components/SplatsDialog.jsx:484
 msgid "px"
 msgstr "פיקסלים (px)"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:189
+#: app/static/app/js/components/NewTaskPanel.jsx:361
 msgid "Review"
 msgstr "סְקִירָה"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:189
+#: app/static/app/js/components/NewTaskPanel.jsx:361
+#: app/static/app/js/components/TaskListItem.jsx:622
 msgid "Start Processing"
 msgstr "התחל עיבוד"
 
-#: app/static/app/js/components/Paginator.jsx:25
-#: app/static/app/js/components/ProjectListItem.jsx:51
+#: app/static/app/js/components/OverlayFeaturePopup.jsx:33
+#: coreplugins/annotate/public/Popup.jsx:952
+#, fuzzy
+#| msgid "Color:"
+msgid "Color"
+msgstr "צבע:"
+
+#: app/static/app/js/components/Paginator.jsx:26
+#: app/static/app/js/components/ProjectListItem.jsx:59
 msgid "Created on"
 msgstr "נוצר ב-"
 
-#: app/static/app/js/components/Paginator.jsx:34
+#: app/static/app/js/components/Paginator.jsx:35
 msgid "Owner"
 msgstr "בעלים"
 
-#: app/static/app/js/components/Paginator.jsx:127
-msgid "Search names or #tags"
+#: app/static/app/js/components/Paginator.jsx:142
+msgid "Search names, #tags or @user"
 msgstr ""
 
-#: app/static/app/js/components/Paginator.jsx:138
-#: app/static/app/js/components/ProjectListItem.jsx:667
+#: app/static/app/js/components/Paginator.jsx:153
+#: app/static/app/js/components/ProjectListItem.jsx:851
 msgid "Sort"
 msgstr "מיון"
 
-#: app/static/app/js/components/Paginator.jsx:145
+#: app/static/app/js/components/Paginator.jsx:157
+#, fuzzy
+#| msgid "this page"
+msgid "Items per page"
+msgstr "דף זה"
+
+#: app/static/app/js/components/Paginator.jsx:172
 msgid "Search results for:"
 msgstr "תוצאות חיפוש עבור:"
 
@@ -801,47 +1723,39 @@ msgstr "תוצאות חיפוש עבור:"
 msgid "You might run out of memory if you use this option."
 msgstr "ייתכן שייגמר לך הזיכרון אם תשתמש באפשרות זו."
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:146
-#: app/static/app/js/translations/potree_autogenerated.js:62
+#: app/static/app/js/components/ProcessingNodeOption.jsx:166
+#: app/static/app/js/translations/potree_autogenerated.js:63
 msgid "Enable"
 msgstr "לְאַפשֵׁר"
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:155
-msgid "Click to import a .JSON file"
+#: app/static/app/js/components/ProcessingNodeOption.jsx:175
+msgid "Click to import a JSON file"
 msgstr ""
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:176
+#: app/static/app/js/components/ProcessingNodeOption.jsx:196
 msgid "Reset to default"
 msgstr "איפוס לברירת מחדל"
 
-#: app/static/app/js/components/ProjectListItem.jsx:212
-#, python-format
-msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
-msgstr ""
-"לא ניתן להעלות את %(filename)s, חרגת ממספר הניסיונות החוזרים המרבי (%"
-"(max_retries)s)"
-
-#: app/static/app/js/components/ProjectListItem.jsx:261
-#: app/static/app/js/components/ProjectListItem.jsx:378
-#, python-format
-msgid "Cannot create new task. Invalid response from server: %(error)s"
-msgstr "לא ניתן ליצור משימה חדשה. תגובה לא חוקית מהשרת: %(error)s"
-
-#: app/static/app/js/components/ProjectListItem.jsx:264
-#: app/static/app/js/components/ProjectListItem.jsx:382
+#: app/static/app/js/components/ProjectListItem.jsx:198
+#: app/static/app/js/components/ProjectListItem.jsx:533
 msgid "Cannot create new task. Please try again later."
 msgstr "לא ניתן ליצור משימה חדשה. אנא נסה שוב מאוחר יותר."
 
-#: app/static/app/js/components/ProjectListItem.jsx:271
+#: app/static/app/js/components/ProjectListItem.jsx:224
 #, python-format
 msgid ""
 "%(count)s files cannot be uploaded. As a reminder, only images (.jpg, .tif, ."
 "png) and GCP files (.txt) can be uploaded. Try again."
 msgstr ""
-"לא ניתן להעלות %(count)s קבצים. כתזכורת, ניתן להעלות רק תמונות (.jpg, .tif, "
-".png) וקבצי GCP (.txt). נסה שנית."
+"לא ניתן להעלות %(count)s קבצים. כתזכורת, ניתן להעלות רק תמונות (.jpg, .tif, ."
+"png) וקבצי GCP (.txt). נסה שנית."
 
-#: app/static/app/js/components/ProjectListItem.jsx:555
+#: app/static/app/js/components/ProjectListItem.jsx:529
+#, python-format
+msgid "Cannot create new task. Invalid response from server: %(error)s"
+msgstr "לא ניתן ליצור משימה חדשה. תגובה לא חוקית מהשרת: %(error)s"
+
+#: app/static/app/js/components/ProjectListItem.jsx:731
 msgid ""
 "All tasks, images and models associated with this project will be "
 "permanently deleted. Are you sure you want to continue?"
@@ -849,67 +1763,117 @@ msgstr ""
 "כל המשימות, התמונות והמודלים המשויכים לפרויקט זה יימחקו לצמיתות. האם אתה "
 "בטוח שברצונך להמשיך?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:556
+#: app/static/app/js/components/ProjectListItem.jsx:732
 msgid ""
 "This project was shared with you. It will not be deleted, but simply hidden "
 "from your dashboard. Continue?"
-msgstr "פרויקט זה שותף איתך. הוא לא יימחק, אלא רק יוסתר מלוח הבקרה שלך. להמשיך?"
+msgstr ""
+"פרויקט זה שותף איתך. הוא לא יימחק, אלא רק יוסתר מלוח הבקרה שלך. להמשיך?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:567
+#: app/static/app/js/components/ProjectListItem.jsx:744
 msgid "Edit Project"
 msgstr "עריכת פרויקט"
 
-#: app/static/app/js/components/ProjectListItem.jsx:569
+#: app/static/app/js/components/ProjectListItem.jsx:746
 msgid "Saving changes..."
 msgstr "שומר שינויים..."
 
-#: app/static/app/js/components/ProjectListItem.jsx:594
+#: app/static/app/js/components/ProjectListItem.jsx:771
 msgid "Select Images and GCP"
 msgstr "בחירת תמונות ו-GCP"
 
-#: app/static/app/js/components/ProjectListItem.jsx:628
+#: app/static/app/js/components/ProjectListItem.jsx:779
+msgid "Assets / Backups"
+msgstr ""
+
+#: app/static/app/js/components/ProjectListItem.jsx:780
+msgid "External Data"
+msgstr ""
+
+#: app/static/app/js/components/ProjectListItem.jsx:812
 #, python-format
 msgid "%(count)s Tasks"
 msgstr "%(count)s משימות"
 
-#: app/static/app/js/components/ProjectListItem.jsx:641
+#: app/static/app/js/components/ProjectListItem.jsx:825
 msgid "Filter"
 msgstr "סינון"
 
-#: app/static/app/js/components/ProjectListItem.jsx:661
+#: app/static/app/js/components/ProjectListItem.jsx:845
 msgid "Clear"
 msgstr "נקה"
 
-#: app/static/app/js/components/ProjectListItem.jsx:676
-#: app/static/app/js/components/TaskListItem.jsx:452
+#: app/static/app/js/components/ProjectListItem.jsx:860
 msgid "View Map"
 msgstr "הצג מפה"
 
-#: app/static/app/js/components/ShareButton.jsx:58
+#: app/static/app/js/components/ProjectListItem.jsx:883
+msgid ""
+"Unstable connection detected. If the upload gets stuck, press the button "
+"below to enable stable mode. You will then need to restart the upload."
+msgstr ""
+
+#: app/static/app/js/components/ProjectListItem.jsx:886
+msgid "Enable Stable Mode"
+msgstr ""
+
+#: app/static/app/js/components/ShareButton.jsx:72
+#: app/static/app/js/components/ShareButton.jsx:74
+#: coreplugins/lightning/public/ShareButton.jsx:47
+#: coreplugins/lightning/public/ShareDialog.jsx:321
+#: coreplugins/lightning/public/ShareDialog.jsx:391
 msgid "Share"
 msgstr "שתף"
 
-#: app/static/app/js/components/SharePopup.jsx:78
+#: app/static/app/js/components/SharePopup.jsx:108
 msgid "An error occurred. Check your connection and permissions."
 msgstr "אירעה שגיאה. בדוק את החיבור וההרשאות שלך."
 
-#: app/static/app/js/components/SharePopup.jsx:96
+#: app/static/app/js/components/SharePopup.jsx:180
 msgid "Share This Task"
 msgstr "שתף משימה זו"
 
-#: app/static/app/js/components/SharePopup.jsx:105
+#: app/static/app/js/components/SharePopup.jsx:180
+#, fuzzy
+#| msgid "Share This Task"
+msgid "Share This Project"
+msgstr "שתף משימה זו"
+
+#: app/static/app/js/components/SharePopup.jsx:186
 msgid "QR"
 msgstr "קוד QR"
 
-#: app/static/app/js/components/SharePopup.jsx:118
+#: app/static/app/js/components/SharePopup.jsx:209
+#: coreplugins/lightning/public/Dashboard.jsx:187
 msgid "Enabled"
 msgstr "מופעל"
 
-#: app/static/app/js/components/SharePopup.jsx:124
+#: app/static/app/js/components/SharePopup.jsx:223
+msgid "Allow Edits"
+msgstr ""
+
+#: app/static/app/js/components/SharePopup.jsx:230
+msgid "Dismiss"
+msgstr ""
+
+#: app/static/app/js/components/SharePopup.jsx:232
+#, python-format
+msgid ""
+"The link below is accessible only within your local network. To share a link "
+"with others online, use a %(service)s"
+msgstr ""
+
+#: app/static/app/js/components/SharePopup.jsx:232
+#, fuzzy
+#| msgid "Path distance"
+msgid "hosted instance"
+msgstr "מרחק נתיב"
+
+#: app/static/app/js/components/SharePopup.jsx:238
 msgid "Link:"
 msgstr "קישור:"
 
-#: app/static/app/js/components/SharePopup.jsx:141
+#: app/static/app/js/components/SharePopup.jsx:255
 msgid "HTML iframe:"
 msgstr "iframe של HTML:"
 
@@ -921,35 +1885,144 @@ msgstr "בסדר יורד"
 msgid "Ascending"
 msgstr "בסדר עולה"
 
-#: app/static/app/js/components/SwitchModeButton.jsx:47
+#: app/static/app/js/components/SplatsDialog.jsx:137
+msgid "Please upload a single file."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:330
+#: coreplugins/annotate/public/Popup.jsx:287
+#: coreplugins/annotate/public/Popup.jsx:320
+#: coreplugins/annotate/public/Popup.jsx:352
+#: coreplugins/annotate/public/Popup.jsx:405
+#: coreplugins/annotate/public/Popup.jsx:446
+#: coreplugins/annotate/public/Popup.jsx:576
+#: coreplugins/annotate/public/Popup.jsx:657
+#: coreplugins/measure/public/MeasurePopup.jsx:146
+#, python-format
+msgid "Invalid response: %(error)s"
+msgstr "תגובה לא חוקית: %(error)s"
+
+#: app/static/app/js/components/SplatsDialog.jsx:333
+msgid "Cannot export training data."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:338
+#, fuzzy
+#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+msgid "Are you sure you want to delete the splats model?"
+msgstr "האם אתה בטוח שברצונך למחוק את \"%(preset)s\"?"
+
+#: app/static/app/js/components/SplatsDialog.jsx:352
+#, fuzzy
+#| msgid "Cannot delete task."
+msgid "Cannot delete splats model."
+msgstr "לא ניתן למחוק את המשימה."
+
+#: app/static/app/js/components/SplatsDialog.jsx:389
+msgid ""
+"This task is missing camera information. Training data cannot be downloaded."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:394
+msgid ""
+"This task is missing a point cloud. The training data will include an empty "
+"point cloud. Some training software might not work properly without one. "
+"Uploading a splats model requires a point cloud."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:399
+msgid ""
+"This task is missing camera information and a point cloud. No splats can be "
+"downloaded or uploaded."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:404
+msgid ""
+"The images for this task are not available, so they will not be part of the "
+"download. After extracting the .zip file, copy the original images into the "
+"\"images\" folder before training."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:409
+msgid ""
+"Most images in this dataset are nadir. Splats typically require obliques and/"
+"or orbits for good results."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:421
+msgid "A splats model has been added."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:424
+#, fuzzy
+#| msgid "show in 3D"
+msgid "View in 3D"
+msgstr "הצג בתלת-ממד (3D)"
+
+#: app/static/app/js/components/SplatsDialog.jsx:428
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload New"
+msgstr "העלאת קובץ"
+
+#: app/static/app/js/components/SplatsDialog.jsx:452
+#, fuzzy
+#| msgid "Download Image"
+msgid "Download Training Data"
+msgstr "הורד תמונה"
+
+#: app/static/app/js/components/SplatsDialog.jsx:497
+#, python-format
+msgid "Train a model using %(link_start)s compatible software %(link_end)s"
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:507
+msgid "You don't have permission to upload a splats model to this task."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:516
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload Splats Model"
+msgstr "העלאת קובץ"
+
+#: app/static/app/js/components/SplatsDialog.jsx:560
+msgid "Gaussian Splats"
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:566
+msgid "Processing splats model... this might take a bit"
+msgstr ""
+
+#: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
 msgstr "תלת מימד (3D)"
 
-#: app/static/app/js/components/SwitchModeButton.jsx:47
+#: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "2D"
 msgstr "דו מימד (2D)"
 
-#: app/static/app/js/components/TaskList.jsx:64
+#: app/static/app/js/components/TaskList.jsx:71
 #, python-format
 msgid "Could not load task list: %(error)s"
 msgstr "לא ניתן היה לטעון את רשימת המשימות: %(error)s"
 
-#: app/static/app/js/components/TaskList.jsx:138
+#: app/static/app/js/components/TaskList.jsx:145
 #, python-format
 msgid "Error: %(error)s"
 msgstr "שגיאה:: %(error)s"
 
-#: app/static/app/js/components/TaskList.jsx:138
+#: app/static/app/js/components/TaskList.jsx:145
 msgid "Try again"
 msgstr "נסה שנית"
 
-#: app/static/app/js/components/TaskList.jsx:146
-#: app/static/app/js/components/TaskListItem.jsx:416
+#: app/static/app/js/components/TaskList.jsx:153
+#: app/static/app/js/components/TaskListItem.jsx:519
 #, python-format
 msgid "Task #%(number)s"
 msgstr "משימה #%(number)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:263
+#: app/static/app/js/components/TaskListItem.jsx:321
 #, python-format
 msgid ""
 "It looks like there might be one of the following problems: %(problems)s You "
@@ -958,28 +2031,28 @@ msgstr ""
 "נראה כי ייתכן שיש אחת מהבעיות הבאות: %(problems)s ניתן לקרוא עוד על שיטות "
 "עבודה מומלצות לצילום תמונות טובות %(link)s."
 
-#: app/static/app/js/components/TaskListItem.jsx:264
+#: app/static/app/js/components/TaskListItem.jsx:322
 msgid "Not enough images"
 msgstr "אין מספיק תמונות"
 
-#: app/static/app/js/components/TaskListItem.jsx:265
+#: app/static/app/js/components/TaskListItem.jsx:323
 msgid "Not enough overlap between images"
 msgstr "אין מספיק חפיפה בין התמונות"
 
-#: app/static/app/js/components/TaskListItem.jsx:266
+#: app/static/app/js/components/TaskListItem.jsx:324
 msgid "Images might be too blurry (common with phone cameras)"
 msgstr "ייתכן שהתמונות מטושטשות מדי (נפוץ במצלמות טלפונים)"
 
-#: app/static/app/js/components/TaskListItem.jsx:267
+#: app/static/app/js/components/TaskListItem.jsx:325
 msgid ""
 "The min-num-features task option is set too low, try increasing it by 25%"
 msgstr "מספר נקודות המפתח המינימלי למשימה הוא נמוך מידי, נסה להגדיל אותו ב-25%"
 
-#: app/static/app/js/components/TaskListItem.jsx:268
+#: app/static/app/js/components/TaskListItem.jsx:326
 msgid "here"
 msgstr "כָּאן"
 
-#: app/static/app/js/components/TaskListItem.jsx:271
+#: app/static/app/js/components/TaskListItem.jsx:329
 #, python-format
 msgid ""
 "It looks like this computer might be too old. WebODM requires a computer "
@@ -991,132 +2064,185 @@ msgstr ""
 "בערכות הוראות MMX, SSE, SSE2, SSE3 ו-SSSE3 או גבוה יותר. עדיין ניתן להריץ את "
 "WebODM אם תבנה תמונת Docker משלך. ראה %(link)s למידע נוסף."
 
-#: app/static/app/js/components/TaskListItem.jsx:271
+#: app/static/app/js/components/TaskListItem.jsx:329
 msgid "this page"
 msgstr "דף זה"
 
-#: app/static/app/js/components/TaskListItem.jsx:273
+#: app/static/app/js/components/TaskListItem.jsx:331
+#, fuzzy
+#| msgid ""
+#| "The processing node is missing a program necessary to complete the task. "
+#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
+#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
-"This might indicate a corrupted installation. If you built OpenDroneMap, "
-"please check that all programs built without errors."
+"This might indicate a corrupted installation. If you built ODM, please check "
+"that all programs built without errors."
 msgstr ""
 "בצומת העיבוד חסרה התוכנית הדרושה להשלמת המשימה. ייתכן שזה מצביע על התקנה "
 "פגומה. אם התקנת בעצמך את OpenDroneMap, אנא וודא שכל התוכניות נבנו ללא שגיאות."
 
-#: app/static/app/js/components/TaskListItem.jsx:314
+#: app/static/app/js/components/TaskListItem.jsx:372
 #, python-format
 msgid "From %(stage)s"
 msgstr "מתוך שלב %(stage)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:326
+#: app/static/app/js/components/TaskListItem.jsx:384
 msgid "Resume Processing"
 msgstr "המשך עיבוד"
 
-#: app/static/app/js/components/TaskListItem.jsx:342
+#: app/static/app/js/components/TaskListItem.jsx:400
 msgid "Cannot restart task."
 msgstr "לא ניתן להפעיל מחדש את המשימה."
 
-#: app/static/app/js/components/TaskListItem.jsx:384
+#: app/static/app/js/components/TaskListItem.jsx:442
 msgid "Cannot restart task from (stage)s."
 msgstr "לא ניתן להפעיל מחדש משימה משלבים אלה."
 
-#: app/static/app/js/components/TaskListItem.jsx:420
+#: app/static/app/js/components/TaskListItem.jsx:491
+msgid "GPS"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:494
+msgid "GCP"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:523
 msgid "Sending images to processing node"
 msgstr "שליחת תמונות לצומת עיבוד"
 
-#: app/static/app/js/components/TaskListItem.jsx:422
+#: app/static/app/js/components/TaskListItem.jsx:525
 msgid "Waiting for a node..."
 msgstr "ממתין לצומת..."
 
-#: app/static/app/js/components/TaskListItem.jsx:459
-msgid "View 3D Model"
+#: app/static/app/js/components/TaskListItem.jsx:556
+msgid "Map"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:565
+#, fuzzy
+#| msgid "View 3D Model"
+msgid "3D Model"
 msgstr "צפה במודל תלת-ממדי (3D)"
 
-#: app/static/app/js/components/TaskListItem.jsx:474
-#: app/static/app/js/components/TaskListItem.jsx:690
-msgid "Cannot cancel task."
-msgstr "לא ניתן לבטל את המשימה."
-
-#: app/static/app/js/components/TaskListItem.jsx:487
-msgid "Restart"
-msgstr "הפעלה מחדש"
-
-#: app/static/app/js/components/TaskListItem.jsx:494
-#: app/static/app/js/components/TaskListItem.jsx:712
+#: app/static/app/js/components/TaskListItem.jsx:581
+#: app/static/app/js/components/TaskListItem.jsx:891
 msgid ""
 "All information related to this task, including images, maps and models will "
 "be deleted. Continue?"
-msgstr "כל המידע הקשור למשימה זו, כולל תמונות, מפות ומודלים, יימחק! האם להמשיך?"
+msgstr ""
+"כל המידע הקשור למשימה זו, כולל תמונות, מפות ומודלים, יימחק! האם להמשיך?"
 
-#: app/static/app/js/components/TaskListItem.jsx:495
-#: app/static/app/js/components/TaskListItem.jsx:713
+#: app/static/app/js/components/TaskListItem.jsx:582
+#: app/static/app/js/components/TaskListItem.jsx:892
 msgid "Cannot delete task."
 msgstr "לא ניתן למחוק את המשימה."
 
-#: app/static/app/js/components/TaskListItem.jsx:548
+#: app/static/app/js/components/TaskListItem.jsx:590
+#: app/static/app/js/components/TaskListItem.jsx:854
+msgid "Cannot cancel task."
+msgstr "לא ניתן לבטל את המשימה."
+
+#: app/static/app/js/components/TaskListItem.jsx:607
+msgid "Restart"
+msgstr "הפעלה מחדש"
+
+#: app/static/app/js/components/TaskListItem.jsx:607
+#, fuzzy
+#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+msgid "Are you sure you want to restart this task?"
+msgstr "האם אתה בטוח שברצונך למחוק את \"%(preset)s\"?"
+
+#: app/static/app/js/components/TaskListItem.jsx:623
+msgid "Have all images been uploaded?"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:624
+#, fuzzy
+#| msgid "Cannot restart task."
+msgid "Cannot start processing task."
+msgstr "לא ניתן להפעיל מחדש את המשימה."
+
+#: app/static/app/js/components/TaskListItem.jsx:682
+#, fuzzy
+#| msgid "Task Output:"
+msgid "Task ID:"
+msgstr "פלט משימה:"
+
+#: app/static/app/js/components/TaskListItem.jsx:683
+msgid "Copy to clipboard"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:686
 msgid "Created on:"
 msgstr "נוצר בתאריך:"
 
-#: app/static/app/js/components/TaskListItem.jsx:552
+#: app/static/app/js/components/TaskListItem.jsx:690
 msgid "Processing Node:"
 msgstr "צומת עיבוד:"
 
-#: app/static/app/js/components/TaskListItem.jsx:553
+#: app/static/app/js/components/TaskListItem.jsx:691
 msgid "auto"
 msgstr "אוטומטי"
 
-#: app/static/app/js/components/TaskListItem.jsx:553
+#: app/static/app/js/components/TaskListItem.jsx:691
 msgid "manual"
 msgstr "יָדָנִי"
 
-#: app/static/app/js/components/TaskListItem.jsx:557
+#: app/static/app/js/components/TaskListItem.jsx:695
 msgid "Options:"
 msgstr "אפשרויות:"
 
-#: app/static/app/js/components/TaskListItem.jsx:562
+#: app/static/app/js/components/TaskListItem.jsx:700
 msgid "Average GSD:"
 msgstr "ממוצע GSD:"
 
-#: app/static/app/js/components/TaskListItem.jsx:567
-#: coreplugins/measure/public/MeasurePopup.jsx:142
+#: app/static/app/js/components/TaskListItem.jsx:705
+#: coreplugins/measure/public/MeasurePopup.jsx:186
 msgid "Area:"
 msgstr "אזור:"
 
-#: app/static/app/js/components/TaskListItem.jsx:572
-msgid "Reconstructed Points:"
-msgstr "נקודות משוחזרות:"
+#: app/static/app/js/components/TaskListItem.jsx:710
+#, fuzzy
+#| msgid "Point size"
+msgid "Points:"
+msgstr "גודל נקודה"
 
-#: app/static/app/js/components/TaskListItem.jsx:576
+#: app/static/app/js/components/TaskListItem.jsx:715
+#, fuzzy
+#| msgid "Georeferencing"
+msgid "Georeferencing:"
+msgstr "התאמה גאוגרפית"
+
+#: app/static/app/js/components/TaskListItem.jsx:725
+msgid "Disk Usage:"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:729
 msgid "Task Output:"
 msgstr "פלט משימה:"
 
-#: app/static/app/js/components/TaskListItem.jsx:578
+#: app/static/app/js/components/TaskListItem.jsx:731
 msgid "On"
 msgstr "פועל"
 
-#: app/static/app/js/components/TaskListItem.jsx:579
+#: app/static/app/js/components/TaskListItem.jsx:732
 msgid "Off"
 msgstr "כבוי"
 
-#: app/static/app/js/components/TaskListItem.jsx:599
-msgid ""
-"An orthophoto could not be generated. To generate one, make sure GPS "
-"information is embedded in the EXIF tags of your images, or use a Ground "
-"Control Points (GCP) file."
+#: app/static/app/js/components/TaskListItem.jsx:741
+msgid "Thumbnail"
 msgstr ""
-"לא ניתן היה ליצור אורתופוטו. כדי ליצור אחד, ודא שמידע GPS מוטמע בתגיות EXIF "
-"של התמונות שלך, או השתמש בקובץ נקודות בקרת קרקע (GCP)."
 
-#: app/static/app/js/components/TaskListItem.jsx:602
+#: app/static/app/js/components/TaskListItem.jsx:759
 msgid "enough RAM allocated"
 msgstr "מספיק זיכרון RAM שהוקצה"
 
-#: app/static/app/js/components/TaskListItem.jsx:602
+#: app/static/app/js/components/TaskListItem.jsx:759
 msgid "cloud processing node"
 msgstr "צומת עיבוד ענן"
 
-#: app/static/app/js/components/TaskListItem.jsx:602
+#: app/static/app/js/components/TaskListItem.jsx:759
 #, python-format
 msgid ""
 "It looks like your processing node ran out of memory. If you are using "
@@ -1125,46 +2251,273 @@ msgid ""
 "images, make your images smaller, or reduce the max-concurrency parameter "
 "from the task's options. You can also try to use a %(cloudlink)s."
 msgstr ""
-"נראה שצומת העיבוד שלך אזל מהזיכרון. אם אתה משתמש ב-docker, ודא שסביבת ה-"
-"docker שלך מכילה %(memlink)s. לחלופין, ודא שיש לך מספיק זיכרון RAM פיזי, "
+"נראה שצומת העיבוד שלך אזל מהזיכרון. אם אתה משתמש ב-docker, ודא שסביבת "
+"ה-docker שלך מכילה %(memlink)s. לחלופין, ודא שיש לך מספיק זיכרון RAM פיזי, "
 "צמצם את מספר התמונות, הקטן את התמונות שלך, או צמצם את הפרמטר max-concurrency "
 "מאפשרויות המשימה. אתה יכול גם לנסות להשתמש ב- %(cloudlink)s."
 
-#: app/static/app/js/components/TaskListItem.jsx:609
+#: app/static/app/js/components/TaskListItem.jsx:766
+#, python-format
 msgid ""
 "\"Process exited with code 1\" means that part of the processing failed. "
 "Sometimes it's a problem with the dataset, sometimes it can be solved by "
-"tweaking the Task Options. Check the documentation at %(link)"
+"tweaking the Task Options. Check the documentation at %(link)s"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:656
+#: app/static/app/js/components/TaskListItem.jsx:816
 msgid "Set a processing node"
 msgstr "הגדר צומת עיבוד"
 
-#: app/static/app/js/components/TaskListItem.jsx:661
-msgid "Waiting for image upload..."
-msgstr "ממתין להעלאת תמונה..."
+#: app/static/app/js/components/TaskListItem.jsx:821
+#, fuzzy
+#| msgid "Waiting for a node..."
+msgid "Waiting to start processing..."
+msgstr "ממתין לצומת..."
 
-#: app/static/app/js/components/TaskListItem.jsx:700
+#: app/static/app/js/components/TaskListItem.jsx:872
 msgid "Move"
 msgstr "העבר"
 
-#: app/static/app/js/components/UploadProgressBar.jsx:29
+#: app/static/app/js/components/TaskListItem.jsx:884
+#, fuzzy
+#| msgid "Compass"
+msgid "Compact"
+msgstr "מצפן"
+
+#: app/static/app/js/components/TaskListItem.jsx:885
+msgid ""
+"Compacting will free disk space by permanently deleting the original images "
+"used for processing. It will no longer be possible to restart the task. Maps "
+"and models will remain in place. Continue?"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:886
+#, fuzzy
+#| msgid "Cannot cancel task."
+msgid "Cannot compact task."
+msgstr "לא ניתן לבטל את המשימה."
+
+#: app/static/app/js/components/Toaster.jsx:14
+#, fuzzy
+#| msgid "Processing"
+msgid "Processed"
+msgstr "עיבוד"
+
+#: app/static/app/js/components/Toaster.jsx:15
+#, fuzzy
+#| msgid "Share"
+msgid "Shared"
+msgstr "שתף"
+
+#: app/static/app/js/components/Toaster.jsx:16
+#, fuzzy
+#| msgid "Export"
+msgid "Exported"
+msgstr "ייצוא"
+
+#: app/static/app/js/components/Toaster.jsx:20
+#, fuzzy
+#| msgid "Share"
+msgid "Sharing"
+msgstr "שתף"
+
+#: app/static/app/js/components/Toaster.jsx:21
+#, fuzzy
+#| msgid "Exporting..."
+msgid "Exporting"
+msgstr "מייצא..."
+
+#: app/static/app/js/components/Toaster.jsx:243
+#: coreplugins/lightning/public/ShareDialog.jsx:259
+#, fuzzy
+#| msgid "Move Task"
+msgid "Task"
+msgstr "העברת משימה"
+
+#: app/static/app/js/components/Toaster.jsx:268
+#, fuzzy
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to cancel the tasks?"
+msgstr "האם אתה בטוח שאתה רוצה לבטל?"
+
+#: app/static/app/js/components/UploadProgressBar.jsx:25
 #, python-format
 msgid "remaining to upload: %(bytes)s"
 msgstr "נותר להעלות: %(bytes)s"
 
-#: app/static/app/js/components/UploadProgressBar.jsx:35
+#: app/static/app/js/components/UploadProgressBar.jsx:31
 #, python-format
 msgid "%(count)s files %(remaining)s"
 msgstr "%(count)s קבצים %(remaining)s"
 
-#: app/static/app/js/components/UploadProgressBar.jsx:36
+#: app/static/app/js/components/UploadProgressBar.jsx:32
 #, python-format
 msgid "%(count)s files uploaded successfully"
 msgstr "%(count)s קבצים הועלו בהצלחה"
 
 #: app/static/app/js/translations/odm_autogenerated.js:3
+msgid ""
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
+msgstr ""
+"נתיב לתיקיית הפרויקט. תיקיית הפרויקט שלך צריכה להכיל תת-תיקיות עבור כל סט "
+"נתונים. כל סט נתונים צריך להכיל תיקיית \"images\"."
+
+#: app/static/app/js/translations/odm_autogenerated.js:4
+#, fuzzy, python-format
+#| msgid ""
+#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
+#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
+#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
+#| "one of: %(choices)s. Default: %(default)s"
+msgid ""
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
+"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"אלגוריתם ההתאמה (Matcher algorithm): ספרייה מהירה לשכנים הקרובים ביותר "
+"(FLANN) או שק מילים (Bag of Words - BOW). FLANN איטי יותר, אך יציב יותר. BOW "
+"מהיר יותר, אך לעיתים יכול לפספס התאמות תקינות. BRUTEFORCE איטי מאוד אך חזק "
+"(robust). יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:5
+#, python-format
+msgid ""
+"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
+"simple morphological filter. Check the --dem* and --smrf* parameters for "
+"finer tuning. Default: %(default)s"
+msgstr ""
+"השתמש בתג זה לבניית DTM (מודל שטח דיגיטלי, קרקע בלבד) באמצעות מסנן מורפולוגי "
+"פשוט. בדוק את הפרמטרים dem*-- ו-smrf*-- לכוונון עדין יותר. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:6
+msgid "show this help message and exit"
+msgstr "הצג הודעת עזרה זו וצא"
+
+#: app/static/app/js/translations/odm_autogenerated.js:7
+#, python-format
+msgid ""
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
+msgstr ""
+"דלג על יצירת דוח PDF. זה יכול לחסוך זמן אם אינך זקוק לדוח. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:8
+#, python-format
+msgid ""
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+"צור קובצי OBJ בעלי חומר יחיד וקובץ טקסטורה יחיד, במקום מרובים. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:9
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+"אל תנסה למזג שחזורים חלקיים. מצב כזה יכול לקרות כאשר לתמונות אין חפיפה מספקת "
+"או שהן מבודדות. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:10
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
+msgstr ""
+"הגדר פרמטר זה אם ברצונך ליצור עיבוד PNG של האורתופוטו. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:11
+#, python-format
+msgid ""
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
+msgstr ""
+"כתובת URL למופע ClusterODM לצורך פיזור תהליך עבודה של פיצול-מיזוג על פני "
+"מספר צמתים במקביל. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:12
+#, fuzzy, python-format
+#| msgid ""
+#| "Radius of the overlap between submodels. After grouping images into "
+#| "clusters, images that are closer than this radius to a cluster are added "
+#| "to the cluster. This is done to ensure that neighboring submodels "
+#| "overlap. Default: %(default)s"
+msgid ""
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
+msgstr ""
+"רדיוס החפיפה בין תת-מודלים. לאחר קיבוץ תמונות לאשכולות, תמונות שנמצאות "
+"קרובות יותר מרדיוס זה לאשכול מתווספות לאשכול. זאת על מנת להבטיח שתת-מודלים "
+"שכנים יחפפו. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:13
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"קבע את איכות חילוץ המאפיינים. איכות גבוהה יותר מייצרת מאפיינים טובים יותר, "
+"אך דורשת יותר זיכרון ולוקחת זמן רב יותר. יכול להיות אחד מ: %(choices)s. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
+"relative to the default behavior if set to true. Ordinarily, GSD estimates "
+"are used to cap the maximum resolution of image outputs and resizes images "
+"when necessary, resulting in faster processing and lower memory usage. Since "
+"GSD is an estimate, sometimes ignoring it can result in slightly better "
+"image output quality. Never set --ignore-gsd to true unless you are positive "
+"you need it, and even then: do not use it. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:15
+#, python-format
+msgid ""
+"Choose what to merge in the merge step in a split dataset. By default all "
+"available outputs are merged. Options: %(choices)s. Default: %(default)s"
+msgstr ""
+"בחר מה למזג בשלב המיזוג בסט נתונים מפוצל. כברירת מחדל, כל הפלטים הזמינים "
+"ממוזגים. אפשרויות: %(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:16
+#, python-format
+msgid ""
+"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
+"filling. Starting with a radius equal to the output resolution, N different "
+"DEMs are generated with progressively bigger radius using the inverse "
+"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
+"then merged using nearest neighbor interpolation. Default: %(default)s"
+msgstr ""
+"מספר השלבים המשמשים למילוי אזורים עם רווחים. הגדר ל-0 כדי לבטל מילוי רווחים. "
+"החל מרדיוס השווה לרזולוציית הפלט, נוצרים N מודלי גובה דיגיטליים (DEM) שונים "
+"עם רדיוס הולך וגדל באמצעות אלגוריתם IDW (Inverse Distance Weighted) וממוזגים "
+"יחד. רווחים שנותרו ממוזגים לאחר מכן באמצעות אינטרפולציה של השכן הקרוב ביותר. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:17
+#, python-format
+msgid ""
+"Generates a polygon around the cropping area that cuts the orthophoto around "
+"the edges of features. This polygon can be useful for stitching seamless "
+"mosaics with multiple overlapping orthophotos. Default: %(default)s"
+msgstr ""
+"יוצר פוליגון סביב אזור החיתוך, החותך את האורתופוטו מסביב לקצוות של תוואי "
+"השטח. פוליגון זה יכול להיות שימושי לתפירת פסיפסים חלקים עם מספר אורתופוטו "
+"חופפים. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:18
 #, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
@@ -1180,161 +2533,27 @@ msgstr ""
 "ערך זה יכולה לעיתים לעזור לשלוט ב'אפקטי קערה' (Bowling Effects) על פני שטחים "
 "גדולים. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:4
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-"פוליגון GeoJSON המגביל את אזור השחזור. ניתן לציין אותו כנתיב לקובץ GeoJSON "
-"או כמחרוזת JSON המייצגת את תוכנו של קובץ GeoJSON. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:5
-#, python-format
-msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
-msgstr ""
-"מספר הפריימים המקסימלי לחילוץ מקובצי וידאו לעיבוד. הגדר ל-0 כדי לא להגביל. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:6
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-"ייצא את ענן הנקודות הממוקם גיאוגרפית (georeferenced) בפורמט LAS. ברירת מחדל: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:7
-#, python-format
-msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
-msgstr ""
-"דלג על נרמול הצבעים בכל התמונות. שימושי בעת עיבוד נתונים רדיומטריים. ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:8
-#, python-format
-msgid ""
-"Path to the file containing the ground control points used for "
-"georeferencing. The file needs to use the following format: EPSG:<code> or <"
-"+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2]Default: %(default)s"
-msgstr ""
-"נתיב לקובץ המכיל את נקודות הבקרה הקרקעיות (GCPs) המשמשות למיקום גיאוגרפי. "
-"הקובץ צריך להשתמש בפורמט הבא:EPSG:<code> or <+proj definition>geo_x geo_y "
-"geo_z im_x im_y image_name [gcp_name] [extra1] [extra2] ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:9
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-"השתמש באפשרות זו אם יש לך קובץ GCP אך ברצונך להשתמש במידע EXIF למיקום "
-"גיאוגרפי (georeferencing) במקום זאת. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:10
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or <"
-"+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
-msgstr ""
-"תיב לקובץ מיקום גיאוגרפי של תמונות המכיל את קואורדינטות מרכז המצלמה המשמשות "
-"למיקום גיאוגרפי (georeferencing). אם אין לך ערכים עבור זווית צידוד/עלרוד/"
-"גלגול (yaw/pitch/roll), תוכל להגדיר אותם ל-0. הקובץ צריך להשתמש בפורמט "
-"הבא:EPSG:<code> or <+proj definition>image_name geo_x geo_y geo_z [yaw "
-"(degrees)] [pitch (degrees)] [roll (degrees)] [horz accuracy (meters)] [vert "
-"accuracy (meters)] ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
-msgstr ""
-"חשב אוטומטית מסכות תמונה באמצעות AI להסרת הרקע. ניסיוני. ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-#, python-format
-msgid ""
-"Build orthophoto overviews for faster display in programs such as QGIS. "
-"Default: %(default)s"
-msgstr ""
-"——בנה סקירות-על של אורתופוטו (orthophoto overviews) לתצוגה מהירה יותר "
-"בתוכנות כגון QGIS. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
-msgstr ""
-"בצע סיווג לענני הנקודות המופקים. באפשרותך לשלוט על התנהגות אפשרות זו על ידי "
-"כוונון הפרמטרים --dem-*. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:14
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-"השתמש בפרמטרי המצלמה שחושבו ממערך נתונים אחר במקום לחשב אותם מחדש. ניתן "
-"לציין זאת כנתיב לקובץ cameras.json או כמחרוזת JSON המייצגת את תוכנו של קובץ "
-"cameras.json. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:15
-#, python-format
-msgid ""
-"Run local bundle adjustment for every image added to the reconstruction and "
-"a global adjustment every 100 images. Speeds up reconstruction for very "
-"large datasets. Default: %(default)s"
-msgstr ""
-"בצע כיוון אלומות (Bundle Adjustment) מקומי עבור כל תמונה שנוספה לשחזור, "
-"וכיוון אלומות גלובלי כל 100 תמונות. מאיץ את השחזור עבור סטים גדולים מאוד של "
-"נתונים. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:16
-#, python-format
-msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
-msgstr ""
-"שמור את ענן הנקודות הממוקם גיאוגרפית (georeferenced point cloud) בפורמט "
-"Cloud Optimized Point Cloud (COPC). ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:17
-#, python-format
-msgid ""
-"The maximum output resolution of extracted video frames in pixels. Default: "
-"%(default)s"
-msgstr ""
-"רזולוציית הפלט המרבית של פריימים שחולצו מוידאו, בפיקסלים. ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:18
-#, python-format
-msgid ""
-"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
-"simple morphological filter. Check the --dem* and --smrf* parameters for "
-"finer tuning. Default: %(default)s"
-msgstr ""
-"השתמש בתג זה לבניית DTM (מודל שטח דיגיטלי, קרקע בלבד) באמצעות מסנן מורפולוגי "
-"פשוט. בדוק את הפרמטרים dem*-- ו-smrf*-- לכוונון עדין יותר. ברירת מחדל: %"
-"(default)s"
-
 #: app/static/app/js/translations/odm_autogenerated.js:19
+#, fuzzy, python-format
+#| msgid ""
+#| "Choose the structure from motion algorithm. For aerial datasets, if "
+#| "camera GPS positions and angles are available, triangulation can generate "
+#| "better results. For planar scenes captured at fixed altitude with nadir-"
+#| "only images, planar can be much faster. Can be one of: %(choices)s. "
+#| "Default: %(default)s"
+msgid ""
+"Choose the structure from motion algorithm. For aerial datasets, if camera "
+"GPS positions and angles are available, triangulation can be faster. Planar "
+"is deprecated and will be removed in a future version. Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+"בחר את אלגוריתם המבנה מתנועה (Structure From Motion). עבור סטים של נתונים "
+"אוויריים, אם מיקומי GPS וזוויות המצלמה זמינים, טריאנגולציה יכולה לייצר "
+"תוצאות טובות יותר. עבור סצנות מישוריות שצולמו בגובה קבוע עם צילום אנכי "
+"(Nadir image) בלבד, מישורי יכול להיות מהיר בהרבה. יכול להיות אחד מ: "
+"%(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:20
 #, python-format
 msgid ""
 "Delete heavy intermediate files to optimize disk space usage. This affects "
@@ -1346,7 +2565,64 @@ msgstr ""
 "היכולת להפעיל מחדש את תהליך העבודה משלב ביניים, אך מאפשרת לעבד סטים של "
 "נתונים במחשבים שאין להם מספיק מקום פנוי בדיסק. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:20
+#: app/static/app/js/translations/odm_autogenerated.js:21
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr ""
+"מספר הקודקודים (vertices) המקסימלי של רשת הפלט. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:22
+#, python-format
+msgid ""
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+msgstr ""
+"קבע אוטומטית גבול באמצעות מיקומי צילום של המצלמה כדי להגביל את אזור השחזור. "
+"זה יכול לעזור להסיר עצמים מרוחקים ברקע (שמיים, נופי רקע וכו'). ראה גם --"
+"boundary. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:23
+#, python-format
+msgid ""
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
+msgstr ""
+"השתמש באפשרות זו אם יש לך קובץ GCP אך ברצונך להשתמש במידע EXIF למיקום "
+"גיאוגרפי (georeferencing) במקום זאת. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:24
+#, python-format
+msgid ""
+"The maximum output resolution of extracted video frames in pixels. Default: "
+"%(default)s"
+msgstr ""
+"רזולוציית הפלט המרבית של פריימים שחולצו מוידאו, בפיקסלים. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:25
+#, python-format
+msgid ""
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
+"כאשר מעבדים סטים של נתונים מולטיספקטרליים, ניתן לציין את שם הרצועה הראשית "
+"שתשמש לשחזור. מומלץ לבחור רצועה בעלת פרטים חדים וממוקדת. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:26
+#, python-format
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
+msgstr ""
+"השתמש בנתוני ה-GPS מתוך ה-Exif של התמונות לצורך השחזור, גם אם קיימות נקודות "
+"בקרה קרקעיות (GCPs). דגל זה שימושי במיוחד אם יש לך מדידות GPS בדיוק גבוה. אם "
+"אין נקודות בקרה קרקעיות, דגל זה לא ישפיע. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:27
 #, python-format
 msgid ""
 "Automatically crop image outputs by creating a smooth buffer around the "
@@ -1356,246 +2632,41 @@ msgstr ""
 "חתוך אוטומטית את יציאות התמונה על ידי יצירת חיץ חלק סביב גבולות סט הנתונים, "
 "מכווץ ב-N מטרים. השתמש ב-0 כדי לבטל את החיתוך. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid ""
-"Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
-msgstr ""
-"אומדנים גיאומטריים משפרים את דיוק ענן הנקודות על ידי חישוב מפות עומק עקביות "
-"גיאומטרית, אך ייתכן שלא יהיו שמישים במערכי נתונים גדולים יותר. מתג זה מבטל "
-"אומדנים גיאומטריים. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
-msgstr ""
-"חשב מסכות תמונה אוטומטית באמצעות AI כדי להסיר את השמיים. ניסיוני. ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"קבע את סוג הדחיסה לשימוש עבור אורתופוטו. יכול להיות אחד מאלה: %(choices)s. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
-msgstr ""
-"דלג על יצירת מודל תלת-ממד מלא. פעולה זו יכולה לחסוך זמן אם אתה זקוק רק "
-"לתוצאות דו-ממדיות כגון אורתופוטו ומודלי גובה דיגיטליים (DEMs). ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:25
-#, python-format
-msgid ""
-"Skips dense reconstruction and 3D model generation. It generates an "
-"orthophoto directly from the sparse reconstruction. If you just need an "
-"orthophoto and do not need a full 3D model, turn on this option. Default: "
-"%(default)s"
-msgstr ""
-"מדלג על שחזור צפוף ועל יצירת מודל תלת-ממד. אפשרות זו מייצרת אורתופוטו ישירות "
-"מהשחזור הדליל. אם אתה זקוק רק לאורתופוטו ואינך זקוק למודל תלת-ממד מלא, הפעל "
-"אפשרות זו. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:26
-msgid "show this help message and exit"
-msgstr "הצג הודעת עזרה זו וצא"
-
-#: app/static/app/js/translations/odm_autogenerated.js:27
-#, python-format
-msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
-"images are taken with a rolling shutter camera. Default: %(default)s"
-msgstr ""
-"כבה אופטימיזציה של פרמטרי מצלמה במהלך כיוון אלומות (bundle adjustment). זה "
-"יכול להיות שימושי לפעמים לשיפור תוצאות המציגות עיוותי כיפה/קערה (doming/"
-"bowling) או כאשר תמונות צולמו במצלמה עם תריס גלגול (rolling shutter). ברירת "
-"מחדל: %(default)s"
-
 #: app/static/app/js/translations/odm_autogenerated.js:28
+#, python-format
+msgid ""
+"Run local bundle adjustment for every image added to the reconstruction and "
+"a global adjustment every 100 images. Speeds up reconstruction for very "
+"large datasets. Default: %(default)s"
+msgstr ""
+"בצע כיוון אלומות (Bundle Adjustment) מקומי עבור כל תמונה שנוספה לשחזור, "
+"וכיוון אלומות גלובלי כל 100 תמונות. מאיץ את השחזור עבור סטים גדולים מאוד של "
+"נתונים. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:29
 #, python-format
 msgid ""
 "Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
 msgstr "שמור פאות ברשת (mesh) שאינן נראות באף מצלמה. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Perform ground rectification on the point cloud. This means that wrongly "
-"classified ground points will be re-classified and gaps will be filled. "
-"Useful for generating DTMs. Default: %(default)s"
-msgstr ""
-"בצע תיקון קרקע על ענן הנקודות. משמעות הדבר היא שנקודות קרקע שסווגו בטעות "
-"יסווגו מחדש ופערים ימולאו. שימושי ליצירת DTMs. ברירת מחדל: %(default)s"
-
 #: app/static/app/js/translations/odm_autogenerated.js:30
 #, python-format
 msgid ""
-"Computes an euclidean raster map for each DEM. The map reports the distance "
-"from each cell to the nearest NODATA value (before any hole filling takes "
-"place). This can be useful to isolate the areas that have been filled. "
-"Default: %(default)s"
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
 msgstr ""
-"מחשב מפת רסטר אוקלידית עבור כל מודל גובה דיגיטלי (DEM). המפה מציגה את המרחק "
-"מכל תא לערך ה-NODATA הקרוב ביותר (לפני מילוי חורים). זה יכול להיות שימושי "
-"לבידוד אזורים שמולאו. ברירת מחדל: %(default)s"
+"תיב לקובץ מיקום גיאוגרפי של תמונות המכיל את קואורדינטות מרכז המצלמה המשמשות "
+"למיקום גיאוגרפי (georeferencing). אם אין לך ערכים עבור זווית "
+"צידוד/עלרוד/גלגול (yaw/pitch/roll), תוכל להגדיר אותם ל-0. הקובץ צריך להשתמש "
+"בפורמט הבא:EPSG:<code> or <+proj definition>image_name geo_x geo_y geo_z "
+"[yaw (degrees)] [pitch (degrees)] [roll (degrees)] [horz accuracy (meters)] "
+"[vert accuracy (meters)] ברירת מחדל: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
-msgstr ""
-"כאשר מעבדים סטים של נתונים מולטיספקטרליים, ניתן לציין את שם הרצועה הראשית "
-"שתשמש לשחזור. מומלץ לבחור רצועה בעלת פרטים חדים וממוקדת. ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
-msgstr ""
-"אל תנסה למזג שחזורים חלקיים. מצב כזה יכול לקרות כאשר לתמונות אין חפיפה מספקת "
-"או שהן מבודדות. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
-#, python-format
-msgid ""
-"Set point cloud quality. Higher quality generates better, denser point "
-"clouds, but requires more memory and takes longer. Each step up in quality "
-"increases processing time roughly by a factor of 4x.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-"קבע את איכות ענן הנקודות. איכות גבוהה יותר מייצרת ענני נקודות טובים וצפופים "
-"יותר, אך דורשת יותר זיכרון ולוקחת זמן רב יותר. כל עלייה באיכות מגדילה את זמן "
-"העיבוד בערך פי 4. יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:34
-#, python-format
-msgid ""
-"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
-"filling. Starting with a radius equal to the output resolution, N different "
-"DEMs are generated with progressively bigger radius using the inverse "
-"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
-"then merged using nearest neighbor interpolation. Default: %(default)s"
-msgstr ""
-"מספר השלבים המשמשים למילוי אזורים עם רווחים. הגדר ל-0 כדי לבטל מילוי רווחים. "
-"החל מרדיוס השווה לרזולוציית הפלט, נוצרים N מודלי גובה דיגיטליים (DEM) שונים "
-"עם רדיוס הולך וגדל באמצעות אלגוריתם IDW (Inverse Distance Weighted) וממוזגים "
-"יחד. רווחים שנותרו ממוזגים לאחר מכן באמצעות אינטרפולציה של השכן הקרוב ביותר. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:35
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
-msgstr ""
-"ייצא את ענן הנקודות שעבר התאמה גיאוגרפית לפורמט CSV. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:36
-#, python-format
-msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
-msgstr ""
-"כתובת URL למופע ClusterODM לצורך פיזור תהליך עבודה של פיצול-מיזוג על פני "
-"מספר צמתים במקביל. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:37
-#, python-format
-msgid ""
-"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
-"outputs should be automatically aligned to. Experimental. Default: "
-"%(default)s"
-msgstr ""
-"תיב לקובץ GeoTIFF DEM או ענן נקודות LAS/LAZ שאליו יישורי הפלט של השחזור "
-"באופן אוטומטי. ניסיוני. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:38
-#, python-format
-msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
-"%(default)s"
-msgstr ""
-"צור קובצי GeoTIFF אופטימליים לענן (COG) במקום קובצי GeoTIFF רגילים. ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:39
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
-"%(default)s"
-msgstr ""
-"פרמטר שיפוע של מסנן מורפולוגי פשוט (עלייה חלקי ריצה). ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:40
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
-"Default: %(default)s"
-msgstr ""
-"ייצא את ענן הנקודות הממוקם גיאוגרפית בפורמט Entwine Point Tile ‏(EPT). ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:41
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
-"%(default)s"
-msgstr ""
-"הפעל תיקון תריס מתגלגל. אם למצלמה יש תריס מתגלגל (rolling shutter) והתמונות "
-"צולמו בתנועה, תוכל להפעיל אפשרות זו כדי לשפר את דיוק התוצאות. ראה גם --"
-"rolling-shutter-readout. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:42
-#, python-format
-msgid ""
-"Choose the structure from motion algorithm. For aerial datasets, if camera "
-"GPS positions and angles are available, triangulation can generate better "
-"results. For planar scenes captured at fixed altitude with nadir-only "
-"images, planar can be much faster. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"בחר את אלגוריתם המבנה מתנועה (Structure From Motion). עבור סטים של נתונים "
-"אוויריים, אם מיקומי GPS וזוויות המצלמה זמינים, טריאנגולציה יכולה לייצר "
-"תוצאות טובות יותר. עבור סצנות מישוריות שצולמו בגובה קבוע עם צילום אנכי "
-"(Nadir image) בלבד, מישורי יכול להיות מהיר בהרבה. יכול להיות אחד מ: %"
-"(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:43
-#, python-format
-msgid ""
-"Choose what to merge in the merge step in a split dataset. By default all "
-"available outputs are merged. Options: %(choices)s. Default: %(default)s"
-msgstr ""
-"בחר מה למזג בשלב המיזוג בסט נתונים מפוצל. כברירת מחדל, כל הפלטים הזמינים "
-"ממוזגים. אפשרויות: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:44
-#, python-format
-msgid ""
-"Perform image matching with the nearest images based on GPS exif data. Set "
-"to 0 to match by triangulation. Default: %(default)s"
-msgstr ""
-"בצע התאמת תמונות עם התמונות הקרובות ביותר בהתבסס על נתוני GPS בפורמט Exif. "
-"הגדר ל-0 כדי להתאים לפי טריאנגולציה. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
 msgid ""
 "Minimum number of features to extract per image. More features can be useful "
@@ -1608,316 +2679,7 @@ msgstr ""
 "חפיפה מועטה או מאפיינים לא מספקים. יותר מאפיינים גם מאטים את העיבוד. ברירת "
 "מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:46
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
-"%(default)s"
-msgstr "פרמטר סף גובה של מסנן מורפולוגי פשוט (מטרים). ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:47
-#, python-format
-msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
-msgstr ""
-"דרוס את זמן קריאת התריס המתגלגל עבור חיישן המצלמה שלך (באלפיות שנייה), במקום "
-"להשתמש במסד הנתונים של זמני קריאת תריס מתגלגל. שים לב שלא כל המצלמות קיימות "
-"במסד הנתונים. הגדר ל-0 כדי להשתמש בערך מברירת המחדל של מסד הנתונים. ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:48
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
-msgstr "פרמטר סקאלר גובה של מסנן מורפולוגי פשוט. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
-msgstr ""
-"מחק לצמיתות את כל התוצאות הקודמות והרץ מחדש את צינור עיבוד הנתונים (pipeline)"
-"."
-
-#: app/static/app/js/translations/odm_autogenerated.js:50
-#, python-format
-msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
-"mosaics with multiple overlapping orthophotos. Default: %(default)s"
-msgstr ""
-"יוצר פוליגון סביב אזור החיתוך, החותך את האורתופוטו מסביב לקצוות של תוואי "
-"השטח. פוליגון זה יכול להיות שימושי לתפירת פסיפסים חלקים עם מספר אורתופוטו "
-"חופפים. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"קבע את איכות חילוץ המאפיינים. איכות גבוהה יותר מייצרת מאפיינים טובים יותר, "
-"אך דורשת יותר זיכרון ולוקחת זמן רב יותר. יכול להיות אחד מ: %(choices)s. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
-#, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped to 2x the "
-"ground sampling distance (GSD) estimate. To remove the cap, check --ignore-"
-"gsd also. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:53
-msgid "Displays version number and exits. "
-msgstr "מציג את מספר הגרסה ויוצא. "
-
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
-msgstr ""
-"הגדר פרמטר זה אם ברצונך ליצור עיבוד PNG של האורתופוטו. ברירת מחדל: %(default)"
-"s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
-#, python-format
-msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
-"%(default)s"
-msgstr ""
-"המספר המקסימלי של תהליכים לשימוש בתהליכים שונים. דרישת זיכרון שיא היא בערך "
-"1GB לכל תהליך ורזולוציית תמונה של 2 מגה-פיקסל. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:56
-#, python-format
-msgid "Skip the blending of colors near seams. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Radius of the overlap between submodels. After grouping images into "
-"clusters, images that are closer than this radius to a cluster are added to "
-"the cluster. This is done to ensure that neighboring submodels overlap. "
-"Default: %(default)s"
-msgstr ""
-"רדיוס החפיפה בין תת-מודלים. לאחר קיבוץ תמונות לאשכולות, תמונות שנמצאות "
-"קרובות יותר מרדיוס זה לאשכול מתווספות לאשכול. זאת על מנת להבטיח שתת-מודלים "
-"שכנים יחפפו. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr "אל תשתמש בהאצת GPU, גם אם היא זמינה. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"When processing multispectral datasets, ODM will automatically align the "
-"images for each band. If the images have been postprocessed and are already "
-"aligned, use this option. Default: %(default)s"
-msgstr ""
-"בעת עיבוד סטים של נתונים מולטיספקטרליים, ODM מיישר אוטומטית את התמונות עבור "
-"כל רצועה. אם התמונות עברו עיבוד מקדים וכבר מיושרות, השתמש באפשרות זו. ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
-"%(default)s"
-msgstr ""
-"מסנן את ענן הנקודות על ידי הסרת נקודות החורגות ביותר מ-N סטיות תקן מהממוצע "
-"המקומי. הגדר ל-0 כדי לבטל את הסינון. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-#, python-format
-msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate. To remove the cap, check --ignore-"
-"gsd also. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, python-format
-msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
-msgstr ""
-"קבע אוטומטית גבול באמצעות מיקומי צילום של המצלמה כדי להגביל את אזור השחזור. "
-"זה יכול לעזור להסיר עצמים מרוחקים ברקע (שמיים, נופי רקע וכו'). ראה גם --"
-"boundary. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
-msgstr ""
-"מסנן את ענן הנקודות על ידי שמירת נקודה בודדת בלבד סביב רדיוס N (במטרים). זה "
-"יכול להיות שימושי להגבלת רזולוציית הפלט של ענן הנקודות ולהסרת נקודות כפולות. "
-"הגדר ל-0 כדי לבטל את הדגימה. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-#, python-format
-msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
-msgstr ""
-"דלג על יישור תת-מודלים בתהליך פיצול-מיזוג (split-merge). שימושי אם ה-GPS "
-"מדויק מספיק במערכי נתונים גדולים מאוד. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
-msgstr ""
-"הגדר פרמטר זה אם ברצונך ליצור עיבוד של האורתופוטו בפורמט Google Earth (KMZ). "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:66
-#, python-format
-msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
-msgstr ""
-"נתיב לקובץ קבוצות התמונות השולט באופן חלוקת התמונות לקבוצות. הקובץ צריך "
-"להשתמש בפורמט הבא: image_name group_nameDefault: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:67
-#, python-format
-msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-"בחר את האלגוריתם לחילוץ נקודות מפתח (keypoints) וחישוב מתארים (descriptors). "
-"יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:68
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
-msgstr ""
-"הגדר פרמטר זה אם ברצונך ליצור קובץ GeoTIFF מפוספס. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Specify the distance between camera shot locations and the outer edge of the "
-"boundary when computing the boundary with --auto-boundary. Set to 0 to "
-"automatically choose a value. Default: %(default)s"
-msgstr ""
-"ציין את המרחק בין מיקומי צילום המצלמה לקצה החיצוני של הגבול בעת חישוב הגבול "
-"באמצעות --auto-boundary. הגדר ל-0 כדי לבחור ערך באופן אוטומטי. ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
-"%(default)s"
-msgstr ""
-"מספר התמונות הממוצע לתת-מודל. בעת פיצול סט נתונים גדול לתת-מודלים קטנים "
-"יותר, תמונות מקובצות לאשכולות. ערך זה מווסת את מספר התמונות שצריך להיות "
-"בממוצע בכל אשכול. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"Decimate the points before generating the DEM. 1 is no decimation (full "
-"quality). 100 decimates ~99%% of the points. Useful for speeding up "
-"generation of DEM results in very large datasets. Default: %(default)s"
-msgstr ""
-"דלל את הנקודות לפני יצירת מודל הגובה הדיגיטלי (DEM). 1 פירושו ללא דילול "
-"(איכות מלאה). 100 מדלל כ-99%% מהנקודות. שימושי להאצת יצירת תוצאות DEM במערכי "
-"נתונים גדולים מאוד. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:72
-msgid "Copy output results to this folder after processing."
-msgstr "העתק את תוצאות הפלט לתיקייה זו לאחר העיבוד."
-
-#: app/static/app/js/translations/odm_autogenerated.js:73
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-"צור אריחים סטטיים עבור אורתופוטו ומודלי גובה דיגיטליים (DEM) המתאימים לצופים "
-"כמו Leaflet או OpenLayers. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
-msgstr ""
-"צור קובצי OBJ בעלי חומר יחיד וקובץ טקסטורה יחיד, במקום מרובים. ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"הפעל שלב זה בלבד ועצור. יכול להיות אחד מהבאים: %(choices)s. ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
-#, python-format
-msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"קבע את סוג היטל המצלמה. קביעה ידנית של ערך יכולה לעזור לשפר את הסרת העיוותים "
-"הגיאומטריים. כברירת מחדל, היישום מנסה לקבוע את סוג העדשה מתוך מטא-הנתונים של "
-"התמונות. יכול להיות אחד מהבאים: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
-#, python-format
-msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"עצור את העיבוד בשלב זה. יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)"
-"s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:78
-#, python-format
-msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
-msgstr ""
-"השתמש בנתוני ה-GPS מתוך ה-Exif של התמונות לצורך השחזור, גם אם קיימות נקודות "
-"בקרה קרקעיות (GCPs). דגל זה שימושי במיוחד אם יש לך מדידות GPS בדיוק גבוה. אם "
-"אין נקודות בקרה קרקעיות, דגל זה לא ישפיע. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:79
-msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
-msgstr ""
-"נתיב לתיקיית הפרויקט. תיקיית הפרויקט שלך צריכה להכיל תת-תיקיות עבור כל סט "
-"נתונים. כל סט נתונים צריך להכיל תיקיית \"images\"."
-
-#: app/static/app/js/translations/odm_autogenerated.js:80
+#: app/static/app/js/translations/odm_autogenerated.js:32
 #, python-format
 msgid ""
 "Octree depth used in the mesh reconstruction, increase to get more vertices, "
@@ -1926,44 +2688,7 @@ msgstr ""
 "עומק ה-Octree (עץ אוקטלי) המשמש בשחזור הרשת. הגדל את הערך כדי לקבל יותר "
 "קודקודים (vertices). הערכים המומלצים הם 8-12. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:81
-#, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr "צור פלטים מסוג OGC 3D Tiles. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:82
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-"השתמש ברשת תלת-ממדית (3D mesh) מלאה לחישוב האורתופוטו במקום ברשת דו-ממדית "
-"וחצי (2.5D mesh). אפשרות זו מהירה יותר ומספקת תוצאות דומות באזורים מישוריים. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:83
-#, python-format
-msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-"אלגוריתם ההתאמה (Matcher algorithm): ספרייה מהירה לשכנים הקרובים ביותר "
-"(FLANN) או שק מילים (Bag of Words - BOW). FLANN איטי יותר, אך יציב יותר. BOW "
-"מהיר יותר, אך לעיתים יכול לפספס התאמות תקינות. BRUTEFORCE איטי מאוד אך חזק "
-"(robust). יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:84
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr ""
-"צור מודלים תלת-ממדיים עם טקסטורות בקובץ Binary glTF (GLB) יחיד. ברירת מחדל: %"
-"(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:85
+#: app/static/app/js/translations/odm_autogenerated.js:33
 #, python-format
 msgid ""
 "Set the radiometric calibration to perform on images. When processing "
@@ -1985,57 +2710,184 @@ msgstr ""
 "באמצעות חיישן אור כלפי מטה (DLS), תוך התחשבות בזווית השמש. יכול להיות אחד מ: "
 "%(choices)s. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:86
+#: app/static/app/js/translations/odm_autogenerated.js:34
 #, python-format
 msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
 msgstr ""
-"דלג על יצירת דוח PDF. זה יכול לחסוך זמן אם אינך זקוק לדוח. ברירת מחדל: %"
-"(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:87
+#: app/static/app/js/translations/odm_autogenerated.js:35
 #, python-format
 msgid ""
-"Ignore Ground Sampling Distance (GSD). GSD caps the maximum resolution of "
-"image outputs and resizes images when necessary, resulting in faster "
-"processing and lower memory usage. Since GSD is an estimate, sometimes "
-"ignoring it can result in slightly better image output quality. Default: "
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
 "%(default)s"
 msgstr ""
+"מספר התמונות הממוצע לתת-מודל. בעת פיצול סט נתונים גדול לתת-מודלים קטנים "
+"יותר, תמונות מקובצות לאשכולות. ערך זה מווסת את מספר התמונות שצריך להיות "
+"בממוצע בכל אשכול. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:88
+#: app/static/app/js/translations/odm_autogenerated.js:36
 #, python-format
 msgid ""
-"Perform image matching with the nearest N images based on image filename "
-"order. Can speed up processing of sequential images, such as those extracted "
-"from video. Set to 0 to disable. Default: %(default)s"
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
 msgstr ""
+"בצע סיווג לענני הנקודות המופקים. באפשרותך לשלוט על התנהגות אפשרות זו על ידי "
+"כוונון הפרמטרים --dem-*. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:89
+#: app/static/app/js/translations/odm_autogenerated.js:37
+#, python-format
+msgid ""
+"Path to the file containing the ground control points used for "
+"georeferencing. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
+"[extra2]Default: %(default)s"
+msgstr ""
+"נתיב לקובץ המכיל את נקודות הבקרה הקרקעיות (GCPs) המשמשות למיקום גיאוגרפי. "
+"הקובץ צריך להשתמש בפורמט הבא:EPSG:<code> or <+proj definition>geo_x geo_y "
+"geo_z im_x im_y image_name [gcp_name] [extra1] [extra2] ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:38
+#, python-format
+msgid ""
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
+msgstr ""
+"דרוס את זמן קריאת התריס המתגלגל עבור חיישן המצלמה שלך (באלפיות שנייה), במקום "
+"להשתמש במסד הנתונים של זמני קריאת תריס מתגלגל. שים לב שלא כל המצלמות קיימות "
+"במסד הנתונים. הגדר ל-0 כדי להשתמש בערך מברירת המחדל של מסד הנתונים. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:39
+#, python-format
+msgid ""
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"%(default)s"
+msgstr ""
+"מסנן את ענן הנקודות על ידי הסרת נקודות החורגות ביותר מ-N סטיות תקן מהממוצע "
+"המקומי. הגדר ל-0 כדי לבטל את הסינון. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:40
+#, python-format
+msgid ""
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"קבע את סוג היטל המצלמה. קביעה ידנית של ערך יכולה לעזור לשפר את הסרת העיוותים "
+"הגיאומטריים. כברירת מחדל, היישום מנסה לקבוע את סוג העדשה מתוך מטא-הנתונים של "
+"התמונות. יכול להיות אחד מהבאים: %(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:41
 #, python-format
 msgid ""
 "Name of dataset (i.e subfolder name within project folder). Default: "
 "%(default)s"
 msgstr ""
-"שם מערך הנתונים (כלומר, שם תת-התיקייה בתוך תיקיית הפרויקט). ברירת מחדל: %"
-"(default)s"
+"שם מערך הנתונים (כלומר, שם תת-התיקייה בתוך תיקיית הפרויקט). ברירת מחדל: "
+"%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:90
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr "מספר הקודקודים (vertices) המקסימלי של רשת הפלט. ברירת מחדל: %(default)s"
+#: app/static/app/js/translations/odm_autogenerated.js:42
+msgid ""
+"Permanently delete all previous results and rerun the processing pipeline."
+msgstr ""
+"מחק לצמיתות את כל התוצאות הקודמות והרץ מחדש את צינור עיבוד הנתונים "
+"(pipeline)."
 
-#: app/static/app/js/translations/odm_autogenerated.js:91
+#: app/static/app/js/translations/odm_autogenerated.js:43
 #, python-format
 msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
+"Perform image matching with the nearest images based on GPS exif data. Set "
+"to 0 to match by triangulation. Default: %(default)s"
 msgstr ""
-"דלג על יצירת האורתופוטו. זה יכול לחסוך זמן אם אתה זקוק רק לתוצאות תלת-ממד או "
-"למודלי גובה דיגיטליים (DEMs). ברירת מחדל: %(default)s"
+"בצע התאמת תמונות עם התמונות הקרובות ביותר בהתבסס על נתוני GPS בפורמט Exif. "
+"הגדר ל-0 כדי להתאים לפי טריאנגולציה. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:92
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, fuzzy, python-format
+#| msgid ""
+#| "Skips dense reconstruction and 3D model generation. It generates an "
+#| "orthophoto directly from the sparse reconstruction. If you just need an "
+#| "orthophoto and do not need a full 3D model, turn on this option. Default: "
+#| "%(default)s"
+msgid ""
+"Skips dense reconstruction and 3D model generation. It generates an "
+"orthophoto directly from the sparse reconstruction. On flat terrain with no "
+"objects/structures, turn this on to save time. Default: %(default)s"
+msgstr ""
+"מדלג על שחזור צפוף ועל יצירת מודל תלת-ממד. אפשרות זו מייצרת אורתופוטו ישירות "
+"מהשחזור הדליל. אם אתה זקוק רק לאורתופוטו ואינך זקוק למודל תלת-ממד מלא, הפעל "
+"אפשרות זו. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:45
+#, python-format
+msgid ""
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
+msgstr ""
+"המספר המקסימלי של תהליכים לשימוש בתהליכים שונים. דרישת זיכרון שיא היא בערך "
+"1GB לכל תהליך ורזולוציית תמונה של 2 מגה-פיקסל. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:46
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
+"Default: %(default)s"
+msgstr ""
+"ייצא את ענן הנקודות הממוקם גיאוגרפית בפורמט Entwine Point Tile ‏(EPT). ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:47
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+"הגדר פרמטר זה אם ברצונך ליצור עיבוד של האורתופוטו בפורמט Google Earth (KMZ). "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:48
+#, python-format
+msgid ""
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"קבע את סוג הדחיסה לשימוש עבור אורתופוטו. יכול להיות אחד מאלה: %(choices)s. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:49
+#, python-format
+msgid ""
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
+msgstr ""
+"שמור את ענן הנקודות הממוקם גיאוגרפית (georeferenced point cloud) בפורמט "
+"Cloud Optimized Point Cloud (COPC). ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:50
+msgid "Displays version number and exits. "
+msgstr "מציג את מספר הגרסה ויוצא. "
+
+#: app/static/app/js/translations/odm_autogenerated.js:51
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+"פוליגון GeoJSON המגביל את אזור השחזור. ניתן לציין אותו כנתיב לקובץ GeoJSON "
+"או כמחרוזת JSON המייצגת את תוכנו של קובץ GeoJSON. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:52
 #, python-format
 msgid ""
 "Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
@@ -2046,21 +2898,384 @@ msgstr ""
 "מורפולוגי פרוגרסיבי. בדוק את הפרמטרים המתחילים ב--dem לכוונון עדין יותר. "
 "ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:93
+#: app/static/app/js/translations/odm_autogenerated.js:53
+msgid "Copy output results to this folder after processing."
+msgstr "העתק את תוצאות הפלט לתיקייה זו לאחר העיבוד."
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
+#, python-format
+msgid ""
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"הפעל מחדש את העיבוד החל משלב זה. אפשרויות: %(choices)s. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr "אל תשתמש בהאצת GPU, גם אם היא זמינה. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation threshold parameter (meters). Default: "
+"%(default)s"
+msgstr "פרמטר סף גובה של מסנן מורפולוגי פשוט (מטרים). ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:57
+#, python-format
+msgid ""
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
+msgstr ""
+"בחר את האלגוריתם לחילוץ נקודות מפתח (keypoints) וחישוב מתארים (descriptors). "
+"יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:58
+#, python-format
+msgid ""
+"Set point cloud quality. Higher quality generates better, denser point "
+"clouds, but requires more memory and takes longer. Each step up in quality "
+"increases processing time roughly by a factor of 4x.Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+"קבע את איכות ענן הנקודות. איכות גבוהה יותר מייצרת ענני נקודות טובים וצפופים "
+"יותר, אך דורשת יותר זיכרון ולוקחת זמן רב יותר. כל עלייה באיכות מגדילה את זמן "
+"העיבוד בערך פי 4. יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"עצור את העיבוד בשלב זה. יכול להיות אחד מ: %(choices)s. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
+#, python-format
+msgid ""
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
+msgid ""
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
+msgstr ""
+"השתמש בפרמטרי המצלמה שחושבו ממערך נתונים אחר במקום לחשב אותם מחדש. ניתן "
+"לציין זאת כנתיב לקובץ cameras.json או כמחרוזת JSON המייצגת את תוכנו של קובץ "
+"cameras.json. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, fuzzy, python-format
+#| msgid ""
+#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+#| "Default: %(default)s"
+msgid ""
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"קבע את סוג הדחיסה לשימוש עבור אורתופוטו. יכול להיות אחד מאלה: %(choices)s. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:63
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgstr "פרמטר סקאלר גובה של מסנן מורפולוגי פשוט. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:64
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+"צור מודלים תלת-ממדיים עם טקסטורות בקובץ Binary glTF (GLB) יחיד. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:65
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"הפעל שלב זה בלבד ועצור. יכול להיות אחד מהבאים: %(choices)s. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:66
+#, python-format
+msgid ""
+"Decimate the points before generating the DEM. 1 is no decimation (full "
+"quality). 100 decimates ~99%% of the points. Useful for speeding up "
+"generation of DEM results in very large datasets. Default: %(default)s"
+msgstr ""
+"דלל את הנקודות לפני יצירת מודל הגובה הדיגיטלי (DEM). 1 פירושו ללא דילול "
+"(איכות מלאה). 100 מדלל כ-99%% מהנקודות. שימושי להאצת יצירת תוצאות DEM במערכי "
+"נתונים גדולים מאוד. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+"צור קובצי GeoTIFF אופטימליים לענן (COG) במקום קובצי GeoTIFF רגילים. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid ""
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
+msgstr ""
+"נתיב לקובץ קבוצות התמונות השולט באופן חלוקת התמונות לקבוצות. הקובץ צריך "
+"להשתמש בפורמט הבא: image_name group_nameDefault: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
+#, python-format
+msgid ""
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
+"%(default)s"
+msgstr ""
+"מסנן את ענן הנקודות על ידי שמירת נקודה בודדת בלבד סביב רדיוס N (במטרים). זה "
+"יכול להיות שימושי להגבלת רזולוציית הפלט של ענן הנקודות ולהסרת נקודות כפולות. "
+"הגדר ל-0 כדי לבטל את הדגימה. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:70
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+"השתמש ברשת תלת-ממדית (3D mesh) מלאה לחישוב האורתופוטו במקום ברשת דו-ממדית "
+"וחצי (2.5D mesh). אפשרות זו מהירה יותר ומספקת תוצאות דומות באזורים מישוריים. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+"חשב אוטומטית מסכות תמונה באמצעות AI להסרת הרקע. ניסיוני. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+"חשב מסכות תמונה אוטומטית באמצעות AI כדי להסיר את השמיים. ניסיוני. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Computes an euclidean raster map for each DEM. The map reports the distance "
+"from each cell to the nearest NODATA value (before any hole filling takes "
+"place). This can be useful to isolate the areas that have been filled. "
+"Default: %(default)s"
+msgstr ""
+"מחשב מפת רסטר אוקלידית עבור כל מודל גובה דיגיטלי (DEM). המפה מציגה את המרחק "
+"מכל תא לערך ה-NODATA הקרוב ביותר (לפני מילוי חורים). זה יכול להיות שימושי "
+"לבידוד אזורים שמולאו. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgstr ""
+"הגדר פרמטר זה אם ברצונך ליצור קובץ GeoTIFF מפוספס. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr "צור פלטים מסוג OGC 3D Tiles. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
+msgstr ""
+"ייצא את ענן הנקודות הממוקם גיאוגרפית (georeferenced) בפורמט LAS. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
+#, python-format
+msgid ""
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
+msgstr ""
+"אומדנים גיאומטריים משפרים את דיוק ענן הנקודות על ידי חישוב מפות עומק עקביות "
+"גיאומטרית, אך ייתכן שלא יהיו שמישים במערכי נתונים גדולים יותר. מתג זה מבטל "
+"אומדנים גיאומטריים. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:79
+#, python-format
+msgid ""
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
+"%(default)s"
+msgstr ""
+"הפעל תיקון תריס מתגלגל. אם למצלמה יש תריס מתגלגל (rolling shutter) והתמונות "
+"צולמו בתנועה, תוכל להפעיל אפשרות זו כדי לשפר את דיוק התוצאות. ראה גם --"
+"rolling-shutter-readout. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:80
+#, python-format
+msgid ""
+"Perform image matching with the nearest N images based on image filename "
+"order. Can speed up processing of sequential images, such as those extracted "
+"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"disable. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:81
+#, python-format
+msgid ""
+"Turn off camera parameter optimization during bundle adjustment. This can be "
+"sometimes useful for improving results that exhibit doming/bowling or when "
+"images are taken with a rolling shutter camera. Default: %(default)s"
+msgstr ""
+"כבה אופטימיזציה של פרמטרי מצלמה במהלך כיוון אלומות (bundle adjustment). זה "
+"יכול להיות שימושי לפעמים לשיפור תוצאות המציגות עיוותי כיפה/קערה (doming/"
+"bowling) או כאשר תמונות צולמו במצלמה עם תריס גלגול (rolling shutter). ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:82
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+"דלג על יצירת מודל תלת-ממד מלא. פעולה זו יכולה לחסוך זמן אם אתה זקוק רק "
+"לתוצאות דו-ממדיות כגון אורתופוטו ומודלי גובה דיגיטליים (DEMs). ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:83
+#, python-format
+msgid ""
+"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
+"outputs should be automatically aligned to. Experimental. Default: "
+"%(default)s"
+msgstr ""
+"תיב לקובץ GeoTIFF DEM או ענן נקודות LAS/LAZ שאליו יישורי הפלט של השחזור "
+"באופן אוטומטי. ניסיוני. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:84
+#, python-format
+msgid ""
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
+msgstr ""
+"דלג על נרמול הצבעים בכל התמונות. שימושי בעת עיבוד נתונים רדיומטריים. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:85
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+"צור אריחים סטטיים עבור אורתופוטו ומודלי גובה דיגיטליים (DEM) המתאימים לצופים "
+"כמו Leaflet או OpenLayers. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:86
+#, python-format
+msgid ""
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
+msgstr ""
+"מספר הפריימים המקסימלי לחילוץ מקובצי וידאו לעיבוד. הגדר ל-0 כדי לא להגביל. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:87
+#, python-format
+msgid ""
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
+msgstr ""
+"דלג על יצירת האורתופוטו. זה יכול לחסוך זמן אם אתה זקוק רק לתוצאות תלת-ממד או "
+"למודלי גובה דיגיטליים (DEMs). ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid ""
+"Simple Morphological Filter slope parameter (rise over run). Default: "
+"%(default)s"
+msgstr ""
+"פרמטר שיפוע של מסנן מורפולוגי פשוט (עלייה חלקי ריצה). ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
 #, python-format
 msgid ""
 "Simple Morphological Filter window radius parameter (meters). Default: "
 "%(default)s"
 msgstr "רדיוס חלון של מסנן מורפולוגי פשוט (במטרים). ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:94
+#: app/static/app/js/translations/odm_autogenerated.js:90
+#, fuzzy, python-format
+#| msgid ""
+#| "When processing multispectral datasets, ODM will automatically align the "
+#| "images for each band. If the images have been postprocessed and are "
+#| "already aligned, use this option. Default: %(default)s"
+msgid ""
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
+msgstr ""
+"בעת עיבוד סטים של נתונים מולטיספקטרליים, ODM מיישר אוטומטית את התמונות עבור "
+"כל רצועה. אם התמונות עברו עיבוד מקדים וכבר מיושרות, השתמש באפשרות זו. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
 msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
+"Specify the distance between camera shot locations and the outer edge of the "
+"boundary when computing the boundary with --auto-boundary. Set to 0 to "
+"automatically choose a value. Default: %(default)s"
 msgstr ""
-"הפעל מחדש את העיבוד החל משלב זה. אפשרויות: %(choices)s. ברירת מחדל: %"
-"(default)s"
+"ציין את המרחק בין מיקומי צילום המצלמה לקצה החיצוני של הגבול בעת חישוב הגבול "
+"באמצעות --auto-boundary. הגדר ל-0 כדי לבחור ערך באופן אוטומטי. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:92
+#, python-format
+msgid ""
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+"דלג על יישור תת-מודלים בתהליך פיצול-מיזוג (split-merge). שימושי אם ה-GPS "
+"מדויק מספיק במערכי נתונים גדולים מאוד. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:93
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgstr ""
+"ייצא את ענן הנקודות שעבר התאמה גיאוגרפית לפורמט CSV. ברירת מחדל: %(default)s"
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
 msgid "Compute volume, area and length measurements on Leaflet"
@@ -2137,12 +3352,8 @@ msgstr "מידות"
 msgid "Clipping"
 msgstr "חיתוך"
 
-#: app/static/app/js/translations/potree_autogenerated.js:8
-msgid "Annotations"
-msgstr "הערות"
-
 #: app/static/app/js/translations/potree_autogenerated.js:9
-#: app/static/app/js/translations/potree_autogenerated.js:54
+#: app/static/app/js/translations/potree_autogenerated.js:55
 msgid "Materials"
 msgstr "חומרים"
 
@@ -2195,7 +3406,7 @@ msgid "Volume measurement"
 msgstr "מדידת נפח"
 
 #: app/static/app/js/translations/potree_autogenerated.js:22
-#: app/static/app/js/translations/potree_autogenerated.js:78
+#: app/static/app/js/translations/potree_autogenerated.js:79
 msgid "Height profile"
 msgstr "פרופיל גובה"
 
@@ -2300,152 +3511,417 @@ msgid "Camera Animation"
 msgstr "אנימציית מצלמה"
 
 #: app/static/app/js/translations/potree_autogenerated.js:48
+#, fuzzy
+#| msgid "Camera Animation"
+msgid "Remove last camera animation"
+msgstr "אנימציית מצלמה"
+
+#: app/static/app/js/translations/potree_autogenerated.js:49
 msgid "Point budget"
 msgstr "הקצאת נקודות"
 
-#: app/static/app/js/translations/potree_autogenerated.js:49
+#: app/static/app/js/translations/potree_autogenerated.js:50
 msgid "Point size"
 msgstr "גודל נקודה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:50
+#: app/static/app/js/translations/potree_autogenerated.js:51
 msgid "Minimum size"
 msgstr "גודל מינימלי"
 
-#: app/static/app/js/translations/potree_autogenerated.js:51
-#: app/static/app/js/translations/potree_autogenerated.js:61
-msgid "Opacity"
-msgstr "אטימות"
-
-#: app/static/app/js/translations/potree_autogenerated.js:52
+#: app/static/app/js/translations/potree_autogenerated.js:53
 msgid "Field of view"
 msgstr "שדה ראייה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:53
+#: app/static/app/js/translations/potree_autogenerated.js:54
 msgid "Point sizing"
 msgstr "הגדרת גודל נקודה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:55
+#: app/static/app/js/translations/potree_autogenerated.js:56
 msgid "Elevation range"
 msgstr "טווח גובה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:56
+#: app/static/app/js/translations/potree_autogenerated.js:57
 msgid "Scalar range"
 msgstr "טווח משתנה סקלרי"
 
-#: app/static/app/js/translations/potree_autogenerated.js:57
+#: app/static/app/js/translations/potree_autogenerated.js:58
 msgid "Quality"
 msgstr "איכות"
 
-#: app/static/app/js/translations/potree_autogenerated.js:58
+#: app/static/app/js/translations/potree_autogenerated.js:59
 msgid "Shape"
 msgstr "צורה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:59
+#: app/static/app/js/translations/potree_autogenerated.js:60
 msgid "Radius"
 msgstr "רדיוס"
 
-#: app/static/app/js/translations/potree_autogenerated.js:60
+#: app/static/app/js/translations/potree_autogenerated.js:61
 msgid "Strength"
 msgstr "עוצמה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:63
+#: app/static/app/js/translations/potree_autogenerated.js:64
 msgid "Min node size"
 msgstr "גודל צומת מינימלי"
 
-#: app/static/app/js/translations/potree_autogenerated.js:64
+#: app/static/app/js/translations/potree_autogenerated.js:65
 msgid "Clip mode"
 msgstr "מצב חיתוך"
 
-#: app/static/app/js/translations/potree_autogenerated.js:65
+#: app/static/app/js/translations/potree_autogenerated.js:66
 msgid "Speed"
 msgstr "מהירות"
 
-#: app/static/app/js/translations/potree_autogenerated.js:66
+#: app/static/app/js/translations/potree_autogenerated.js:67
 msgid "Sky"
 msgstr "שמיים"
 
-#: app/static/app/js/translations/potree_autogenerated.js:67
+#: app/static/app/js/translations/potree_autogenerated.js:68
 msgid "Keep above ground"
 msgstr "שמור מעל הקרקע"
 
-#: app/static/app/js/translations/potree_autogenerated.js:68
+#: app/static/app/js/translations/potree_autogenerated.js:69
 msgid "Box"
 msgstr "תיבה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:69
+#: app/static/app/js/translations/potree_autogenerated.js:70
 msgid "Length unit"
 msgstr "יחידת אורך"
 
-#: app/static/app/js/translations/potree_autogenerated.js:70
+#: app/static/app/js/translations/potree_autogenerated.js:71
 msgid "Lock view"
 msgstr "נעל תצוגה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:71
-#: app/static/app/js/translations/potree_autogenerated.js:88
+#: app/static/app/js/translations/potree_autogenerated.js:72
+#: app/static/app/js/translations/potree_autogenerated.js:89
 msgid "Language"
 msgstr "שפה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:72
+#: app/static/app/js/translations/potree_autogenerated.js:73
 msgid "Backface Culling"
 msgstr "הסתרת פאות אחוריות"
 
-#: app/static/app/js/translations/potree_autogenerated.js:73
+#: app/static/app/js/translations/potree_autogenerated.js:74
 msgid "clip"
 msgstr "חתוך"
 
-#: app/static/app/js/translations/potree_autogenerated.js:74
+#: app/static/app/js/translations/potree_autogenerated.js:75
 msgid "show volume"
 msgstr "הצג נפח"
 
-#: app/static/app/js/translations/potree_autogenerated.js:75
+#: app/static/app/js/translations/potree_autogenerated.js:76
 msgid "show in 3D"
 msgstr "הצג בתלת-ממד (3D)"
 
-#: app/static/app/js/translations/potree_autogenerated.js:76
+#: app/static/app/js/translations/potree_autogenerated.js:77
 msgid "show on map"
 msgstr "הצג על המפה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:77
+#: app/static/app/js/translations/potree_autogenerated.js:78
 msgid "Number of Points"
 msgstr "מספר נקודות"
 
-#: app/static/app/js/translations/potree_autogenerated.js:79
+#: app/static/app/js/translations/potree_autogenerated.js:80
 msgid "Save LAS(3D)"
 msgstr "שמור LAS (תלת-ממד)"
 
-#: app/static/app/js/translations/potree_autogenerated.js:80
+#: app/static/app/js/translations/potree_autogenerated.js:81
 msgid "Save CSV(2D)"
 msgstr "שמור CSV (דו-ממד)"
 
-#: app/static/app/js/translations/potree_autogenerated.js:81
+#: app/static/app/js/translations/potree_autogenerated.js:82
 msgid "Camera Position"
 msgstr "מיקום מצלמה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:82
+#: app/static/app/js/translations/potree_autogenerated.js:83
 msgid "Camera Target"
 msgstr "יעד מצלמה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:83
+#: app/static/app/js/translations/potree_autogenerated.js:84
 msgid "Return Number"
 msgstr "מספר החזרה"
 
-#: app/static/app/js/translations/potree_autogenerated.js:84
+#: app/static/app/js/translations/potree_autogenerated.js:85
 msgid "Number of Returns"
 msgstr "מספר החזרים"
 
-#: app/static/app/js/translations/potree_autogenerated.js:85
+#: app/static/app/js/translations/potree_autogenerated.js:86
 msgid "min"
 msgstr "מינימום"
 
-#: app/static/app/js/translations/potree_autogenerated.js:86
+#: app/static/app/js/translations/potree_autogenerated.js:87
 msgid "max"
 msgstr "מקסימום"
 
-#: app/static/app/js/translations/potree_autogenerated.js:87
+#: app/static/app/js/translations/potree_autogenerated.js:88
 msgid "GPS Time"
 msgstr "זמן GPS"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:57
+#: coreplugins/annotate/public/ElevationProfile.jsx:409
+#, fuzzy
+#| msgid "Path distance"
+msgid "Distance:"
+msgstr "מרחק נתיב"
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:409
+#: coreplugins/contours/public/ContoursPanel.jsx:178
+msgid "Elevation:"
+msgstr "גובה:"
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:412
+msgid "Reset"
+msgstr ""
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:415
+#: coreplugins/annotate/public/Toolbox.jsx:1210
+#, fuzzy
+#| msgid "Export to GeoJSON"
+msgid "Export to CSV"
+msgstr "ייצא ל-GeoJSON"
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:418
+#: coreplugins/annotate/public/Volume3D.jsx:387
+msgid "Go Back"
+msgstr ""
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:419
+#: coreplugins/annotate/public/Volume3D.jsx:388
+#, fuzzy
+#| msgid "Back view"
+msgid "Back"
+msgstr "מבט אחורי"
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:92
+#: coreplugins/annotate/public/Toolbox.jsx:1208
+#, fuzzy
+#| msgid "Annotations"
+msgid "Annotations Report"
+msgstr "הערות"
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:100
+msgid "Prepared by:"
+msgstr ""
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:106
+#, fuzzy
+#| msgid "Username"
+msgid "Enter name"
+msgstr "שם משתמש"
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:110
+msgid "Notes:"
+msgstr ""
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:117
+#, fuzzy
+#| msgid "Description (optional)"
+msgid "Additional notes (optional)"
+msgstr "תיאור (אופציונלי)"
+
+#: coreplugins/annotate/public/Popup.jsx:313
+msgid "Invalid coordinates"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:886
+#: coreplugins/measure/public/MeasurePopup.jsx:178
+#, fuzzy
+#| msgid "Language"
+msgid "Triangulate"
+msgstr "שפה"
+
+#: coreplugins/annotate/public/Popup.jsx:887
+#: coreplugins/measure/public/MeasurePopup.jsx:179
+msgid "Plane"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:888
+#: coreplugins/measure/public/MeasurePopup.jsx:180
+#, fuzzy
+#| msgid "Average GSD:"
+msgid "Average"
+msgstr "ממוצע GSD:"
+
+#: coreplugins/annotate/public/Popup.jsx:889
+#: coreplugins/measure/public/MeasurePopup.jsx:181
+msgid "Highest"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:890
+#: coreplugins/measure/public/MeasurePopup.jsx:182
+msgid "Lowest"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:897
+#: coreplugins/annotate/public/Popup.jsx:1002
+#, fuzzy
+#| msgid "Strength"
+msgid "Length"
+msgstr "עוצמה"
+
+#: coreplugins/annotate/public/Popup.jsx:903
+#: coreplugins/annotate/public/Popup.jsx:1036
+#: coreplugins/measure/public/app.jsx:26
+msgid "Area"
+msgstr "שטח"
+
+#: coreplugins/annotate/public/Popup.jsx:904
+#: coreplugins/annotate/public/Popup.jsx:1042
+#, fuzzy
+#| msgid "Volume:"
+msgid "Volume"
+msgstr "נפח:"
+
+#: coreplugins/annotate/public/Popup.jsx:935
+msgid "Display"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:969
+msgid "Coordinates"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:993
+msgid "Temperature"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1006
+#, fuzzy
+#| msgid "Elevation range"
+msgid "Elevation Profile"
+msgstr "טווח גובה"
+
+#: coreplugins/annotate/public/Popup.jsx:1010
+#: coreplugins/annotate/public/Popup.jsx:1064
+msgid "DSM"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1011
+#: coreplugins/annotate/public/Popup.jsx:1065
+msgid "DTM"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1013
+#: coreplugins/annotate/public/Popup.jsx:1014
+msgid "Show"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1028
+#, fuzzy
+#| msgid "Elevation range"
+msgid "Elevation profile error"
+msgstr "טווח גובה"
+
+#: coreplugins/annotate/public/Popup.jsx:1039
+#: coreplugins/measure/public/app.jsx:27
+msgid "Perimeter"
+msgstr "היקף"
+
+#: coreplugins/annotate/public/Popup.jsx:1049
+#: coreplugins/annotate/public/Volume3D.jsx:383
+#, fuzzy
+#| msgid "Custom"
+msgid "Cut"
+msgstr "מותאם אישית"
+
+#: coreplugins/annotate/public/Popup.jsx:1055
+#: coreplugins/annotate/public/Volume3D.jsx:384
+msgid "Fill"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1061
+#, fuzzy
+#| msgid "Surface Model"
+msgid "Surface"
+msgstr "מודל פני השטח"
+
+#: coreplugins/annotate/public/Popup.jsx:1071
+msgid "Base Surface"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1079
+#, fuzzy
+#| msgid "show in 3D"
+msgid "Show 3D"
+msgstr "הצג בתלת-ממד (3D)"
+
+#: coreplugins/annotate/public/Popup.jsx:1085
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom Z"
+msgstr "מותאם אישית"
+
+#: coreplugins/annotate/public/Popup.jsx:1107
+msgid "3D view error"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1117
+#, fuzzy
+#| msgid "Center on this location"
+msgid "No images found at this location"
+msgstr "מקד (הצג במרכז) מיקום זה"
+
+#: coreplugins/annotate/public/Popup.jsx:1139
+#, fuzzy
+#| msgid "Preview"
+msgid "Previous"
+msgstr "תצוגה מקדימה"
+
+#: coreplugins/annotate/public/Popup.jsx:1141
+msgid "Next"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1024
+#: coreplugins/annotate/public/Toolbox.jsx:1180
+#, fuzzy
+#| msgid "Point size"
+msgid "Point"
+msgstr "גודל נקודה"
+
+#: coreplugins/annotate/public/Toolbox.jsx:1026
+#: coreplugins/annotate/public/Toolbox.jsx:1166
+msgid "Line"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1028
+#: coreplugins/annotate/public/Toolbox.jsx:1173
+#, fuzzy
+#| msgid "Polygon clip"
+msgid "Polygon"
+msgstr "חיתוך פוליגון"
+
+#: coreplugins/annotate/public/Toolbox.jsx:1030
+msgid "Inspection"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1152
+msgid "Select"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1159
+msgid "Inspect"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1187
+#, fuzzy
+#| msgid "Export to GeoJSON"
+msgid "Import GeoJSON"
+msgstr "ייצא ל-GeoJSON"
+
+#: coreplugins/annotate/public/Toolbox.jsx:1197
+#, fuzzy
+#| msgid "Annotations"
+msgid "Export Annotations"
+msgstr "הערות"
+
+#: coreplugins/annotate/public/Volume3D.jsx:385
+msgid "Base"
+msgstr ""
+
+#: coreplugins/contours/public/Contours.jsx:37
+#: coreplugins/contours/public/ContoursPanel.jsx:429
+msgid "Contours"
+msgstr "קווי גובה"
+
+#: coreplugins/contours/public/ContoursPanel.jsx:74
 msgid ""
 "No DSM or DTM is available. To export contours, make sure to process a task "
 "with either the --dsm or --dtm option checked."
@@ -2453,93 +3929,123 @@ msgstr ""
 "אין מודל שטח דיגיטלי (DSM) או מודל טופוגרפי דיגיטלי (DTM) זמינים. כדי לייצא "
 "קווי גובה (contours), ודא שעיבדת את המשימה עם האפשרות --dsm או --dtm מסומנת."
 
-#: coreplugins/contours/public/ContoursPanel.jsx:61
+#: coreplugins/contours/public/ContoursPanel.jsx:78
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:51
 msgid ""
 "Cannot retrieve information for task. Are you are connected to the internet?"
 msgstr "אין אפשרות לאחזר מידע למשימה. האם אתה מחובר לאינטרנט?"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:131
-msgid "Elevation:"
-msgstr "גובה:"
-
-#: coreplugins/contours/public/ContoursPanel.jsx:131
-msgid "meters"
+#: coreplugins/contours/public/ContoursPanel.jsx:290
+msgid "Minimal"
 msgstr ""
 
-#: coreplugins/contours/public/ContoursPanel.jsx:227
-msgid "Do not simplify"
-msgstr "אל תפשט (השאר במורכבות המקורית)"
-
-#: coreplugins/contours/public/ContoursPanel.jsx:229
+#: coreplugins/contours/public/ContoursPanel.jsx:292
 msgid "Aggressive"
 msgstr "אגרסיבי"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:242
+#: coreplugins/contours/public/ContoursPanel.jsx:318
 msgid "Interval:"
 msgstr "מרווח:"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:245
-#: coreplugins/contours/public/ContoursPanel.jsx:254
-#: coreplugins/contours/public/ContoursPanel.jsx:272
-#: coreplugins/contours/public/ContoursPanel.jsx:281
-msgid "meter"
-msgstr ""
-
-#: coreplugins/contours/public/ContoursPanel.jsx:252
-#: coreplugins/contours/public/ContoursPanel.jsx:279
+#: coreplugins/contours/public/ContoursPanel.jsx:328
+#: coreplugins/contours/public/ContoursPanel.jsx:355
 msgid "Value:"
 msgstr "ערך:"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:260
+#: coreplugins/contours/public/ContoursPanel.jsx:336
 msgid "Layer:"
 msgstr "שכבה:"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:269
+#: coreplugins/contours/public/ContoursPanel.jsx:345
 msgid "Simplify:"
 msgstr "פשט:"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:314
+#: coreplugins/contours/public/ContoursPanel.jsx:363
+msgid "SRS:"
+msgstr ""
+
+#: coreplugins/contours/public/ContoursPanel.jsx:391
 msgid "Preview"
 msgstr "תצוגה מקדימה"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:319
+#: coreplugins/contours/public/ContoursPanel.jsx:396
 msgid "Export"
 msgstr "ייצוא"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:352
-msgid "Contours"
-msgstr "קווי גובה"
+#: coreplugins/lightning/public/CloudLogin.jsx:44
+#: coreplugins/lightning/public/CloudLogin.jsx:47
+#: coreplugins/lightning/public/ShareDialog.jsx:116
+#, fuzzy
+#| msgid "Cannot retrieve estimate. Try again later."
+msgid "Invalid response. Try again later."
+msgstr "אין אפשרות לאחזר הערכה. נסה שוב מאוחר יותר."
 
-#: coreplugins/editshortlinks/public/SLControls.jsx:154
-#: coreplugins/shortlinks/public/SLCheckbox.jsx:69
-msgid "Short Link"
-msgstr "קישור מקוצר"
+#: coreplugins/lightning/public/CloudLogin.jsx:78
+msgid "Invalid password. Do you need to reset it?"
+msgstr ""
 
-#: coreplugins/editshortlinks/public/SLControls.jsx:178
-msgid "Suffix"
-msgstr "סיומת"
+#: coreplugins/lightning/public/CloudLogin.jsx:83
+#: coreplugins/lightning/public/Login.jsx:62
+msgid "Cannot login. Invalid response:"
+msgstr "אין אפשרות להתחבר. תגובה לא חוקית:"
 
-#: coreplugins/editshortlinks/public/SLControls.jsx:191
-msgid "Delete Short Link"
-msgstr "מחק קישור מקוצר"
+#: coreplugins/lightning/public/CloudLogin.jsx:86
+#: coreplugins/lightning/public/Login.jsx:66
+msgid ""
+"Cannot login. Please make sure you are connected to the internet, or try "
+"again in an hour."
+msgstr "אין אפשרות להתחבר. אנא ודא שאתה מחובר לאינטרנט, או נסה שוב בעוד שעה."
 
-#: coreplugins/lightning/public/CostEstimateItem.jsx:103
+#: coreplugins/lightning/public/CloudLogin.jsx:106
+#, python-format
+msgid ""
+"Your Lightning cloud platform account is not active yet. To activate it, "
+"visit %(link)s and make sure you can access the cloud platform, then try "
+"again."
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:114
+msgid "Please confirm the password of your Lightning account to continue:"
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:118
+#: coreplugins/lightning/public/Login.jsx:103
+msgid "Password"
+msgstr "סיסמה"
+
+#: coreplugins/lightning/public/CloudLogin.jsx:119
+msgid "switch"
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:127
+#, fuzzy
+#| msgid "Forgot password?"
+msgid "Reset password"
+msgstr "שכחת סיסמה?"
+
+#: coreplugins/lightning/public/CloudLogin.jsx:133
+#, fuzzy
+#| msgid "Password"
+msgid "Confirm Password"
+msgstr "סיסמה"
+
+#: coreplugins/lightning/public/CostEstimateItem.jsx:113
 msgid "Cannot retrieve estimate. Try again later."
 msgstr "אין אפשרות לאחזר הערכה. נסה שוב מאוחר יותר."
 
-#: coreplugins/lightning/public/CostEstimateItem.jsx:106
+#: coreplugins/lightning/public/CostEstimateItem.jsx:116
 msgid "Cannot retrieve estimate. Check parameters or try again later."
 msgstr "אין אפשרות לאחזר הערכה. בדוק פרמטרים או נסה שוב מאוחר יותר."
 
-#: coreplugins/lightning/public/CostEstimateItem.jsx:139
+#: coreplugins/lightning/public/CostEstimateItem.jsx:149
 msgid "Credits Estimate"
 msgstr "אומדן קרדיטים"
 
-#: coreplugins/lightning/public/Dashboard.jsx:39
+#: coreplugins/lightning/public/Dashboard.jsx:43
 msgid "Loading dashboard..."
 msgstr "טוען לוח בקרה..."
 
-#: coreplugins/lightning/public/Dashboard.jsx:48
+#: coreplugins/lightning/public/Dashboard.jsx:61
 msgid ""
 "Cannot load lightning dashboard. Are you running the latest version of "
 "WebODM?"
@@ -2547,7 +4053,7 @@ msgstr ""
 "לא ניתן לטעון את לוח הבקרה של Lightning. האם אתה מפעיל את הגרסה האחרונה של "
 "WebODM?"
 
-#: coreplugins/lightning/public/Dashboard.jsx:52
+#: coreplugins/lightning/public/Dashboard.jsx:65
 msgid ""
 "Cannot load lightning dashboard. Please make sure you are connected to the "
 "internet, or try again in an hour."
@@ -2555,106 +4061,202 @@ msgstr ""
 "לא ניתן לטעון את לוח הבקרה של Lightning. אנא ודא שאתה מחובר לאינטרנט, או נסה "
 "שוב בעוד שעה."
 
-#: coreplugins/lightning/public/Dashboard.jsx:75
+#: coreplugins/lightning/public/Dashboard.jsx:91
 msgid "Cannot sync nodes. Are you connected to the internet?"
 msgstr "לא ניתן לסנכרן צמתים. האם אתה מחובר לאינטרנט?"
 
-#: coreplugins/lightning/public/Dashboard.jsx:83
+#: coreplugins/lightning/public/Dashboard.jsx:99
 msgid "Logging out…"
 msgstr "מבצע יציאה…"
 
-#: coreplugins/lightning/public/Dashboard.jsx:89
-#: coreplugins/lightning/public/Dashboard.jsx:94
+#: coreplugins/lightning/public/Dashboard.jsx:105
+#: coreplugins/lightning/public/Dashboard.jsx:110
 msgid "Cannot logout:"
 msgstr "אין אפשרות להתנתק:"
 
-#: coreplugins/lightning/public/Dashboard.jsx:115
+#: coreplugins/lightning/public/Dashboard.jsx:146
 msgid "credits"
 msgstr "קרדיטים"
 
-#: coreplugins/lightning/public/Dashboard.jsx:117
+#: coreplugins/lightning/public/Dashboard.jsx:148
 msgid "Unlimited"
 msgstr "ללא הגבלה"
 
-#: coreplugins/lightning/public/Dashboard.jsx:130
+#: coreplugins/lightning/public/Dashboard.jsx:161
 msgid "Balance:"
 msgstr "יתרה:"
 
-#: coreplugins/lightning/public/Dashboard.jsx:131
+#: coreplugins/lightning/public/Dashboard.jsx:162
 msgid "Buy Credits"
 msgstr "רכוש קרדיטים"
 
-#: coreplugins/lightning/public/Dashboard.jsx:132
+#: coreplugins/lightning/public/Dashboard.jsx:163
 msgid "Refresh Balance"
 msgstr "רענן יתרה"
 
-#: coreplugins/lightning/public/Dashboard.jsx:135
+#: coreplugins/lightning/public/Dashboard.jsx:166
 msgid "Hello,"
 msgstr "שלום,"
 
-#: coreplugins/lightning/public/Dashboard.jsx:138
+#: coreplugins/lightning/public/Dashboard.jsx:171
 msgid "Synced Nodes"
 msgstr "‪‪צמתים מסונכרנים"
 
-#: coreplugins/lightning/public/Dashboard.jsx:146
+#: coreplugins/lightning/public/Dashboard.jsx:179
 msgid "Resync"
 msgstr "בצע סנכרון מחדש"
 
-#: coreplugins/lightning/public/Dashboard.jsx:153
+#: coreplugins/lightning/public/Dashboard.jsx:185
+msgid "Share Buttons"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:187
+#, fuzzy
+#| msgid "Enabled"
+msgid "Disabled"
+msgstr "מופעל"
+
+#: coreplugins/lightning/public/Dashboard.jsx:189
+msgid "Toggle"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Dashboard"
 msgstr "לוח בקרה"
 
-#: coreplugins/lightning/public/Dashboard.jsx:159
+#: coreplugins/lightning/public/Dashboard.jsx:204
 msgid "Logout"
 msgstr "התנתק"
 
-#: coreplugins/lightning/public/Login.jsx:56
-msgid "Cannot login. Invalid response:"
-msgstr "אין אפשרות להתחבר. תגובה לא חוקית:"
-
-#: coreplugins/lightning/public/Login.jsx:60
-msgid ""
-"Cannot login. Please make sure you are connected to the internet, or try "
-"again in an hour."
-msgstr "אין אפשרות להתחבר. אנא ודא שאתה מחובר לאינטרנט, או נסה שוב בעוד שעה."
-
-#: coreplugins/lightning/public/Login.jsx:90
+#: coreplugins/lightning/public/Login.jsx:96
 msgid "E-mail Address"
 msgstr "כתובת אימייל"
 
-#: coreplugins/lightning/public/Login.jsx:97
-msgid "Password"
-msgstr "סיסמה"
-
-#: coreplugins/lightning/public/Login.jsx:104
+#: coreplugins/lightning/public/Login.jsx:110
 msgid "Don't have an account?"
 msgstr "אין לך חשבון?"
 
-#: coreplugins/lightning/public/Login.jsx:105
+#: coreplugins/lightning/public/Login.jsx:111
 msgid "Forgot password?"
 msgstr "שכחת סיסמה?"
 
-#: coreplugins/lightning/public/Login.jsx:110
+#: coreplugins/lightning/public/Login.jsx:116
 msgid "Login and Sync"
 msgstr "התחבר וסנכרן"
 
-#: coreplugins/lightning/public/app.jsx:39
-msgid "Lightning Network"
+#: coreplugins/lightning/public/ShareDialog.jsx:119
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot communicate with Lightning's cloud platform. Try again later."
+msgstr "לא ניתן ליצור משימה חדשה. אנא נסה שוב מאוחר יותר."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:150
+#, fuzzy
+#| msgid "Cannot retrieve estimate. Try again later."
+msgid "Cannot calculate size. Try again later."
+msgstr "אין אפשרות לאחזר הערכה. נסה שוב מאוחר יותר."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:193
+#, fuzzy
+#| msgid "Cannot retrieve estimate. Try again later."
+msgid "Service not available. Try again later."
+msgstr "אין אפשרות לאחזר הערכה. נסה שוב מאוחר יותר."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:196
+#, fuzzy
+#| msgid "Cannot retrieve estimate. Try again later."
+msgid "Cannot verify credentials. Try again later."
+msgstr "אין אפשרות לאחזר הערכה. נסה שוב מאוחר יותר."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:263
+#, fuzzy
+#| msgid "Invalid response: %(error)s"
+msgid "Invalid response"
+msgstr "תגובה לא חוקית: %(error)s"
+
+#: coreplugins/lightning/public/ShareDialog.jsx:266
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot share. Please try again in a bit."
+msgstr "לא ניתן ליצור משימה חדשה. אנא נסה שוב מאוחר יותר."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:278
+msgid "Checking your credentials..."
 msgstr ""
 
-#: coreplugins/lightning/public/app.jsx:40
+#: coreplugins/lightning/public/ShareDialog.jsx:287
+#, fuzzy
+#| msgid "Creating project..."
+msgid "Retrieving your projects..."
+msgstr "יוצר פרויקט..."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:301
 msgid ""
-"Lightning is a service that allows you to quickly process small and large "
-"datasets using high performance servers in the cloud."
+"Your Lightning account does not have permanent cloud storage. You can still "
+"share, but data will be deleted shortly after upload."
 msgstr ""
-"Lightning הוא שירות המאפשר לך לעבד במהירות סטים קטנים וגדולים של נתונים "
-"באמצעות שרתי ביצועים גבוהים בענן."
 
-#: coreplugins/lightning/public/app.jsx:41
+#: coreplugins/lightning/public/ShareDialog.jsx:313
+#, fuzzy
+#| msgid "Created on"
+msgid "Create New"
+msgstr "נוצר ב-"
+
+#: coreplugins/lightning/public/ShareDialog.jsx:329
+msgid "All Assets + Original Images"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:330
+msgid "Only"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:342
+msgid "Size exceeds available storage quota"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:355
+msgid "Select All"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:359
+msgid "Deselect All"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:389
+msgid "Share with Lightning"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:392
+#, fuzzy
+#| msgid "Saving..."
+msgid "Sharing..."
+msgstr "שומר..."
+
+#: coreplugins/lightning/public/app.jsx:42
+msgid "Lightning"
+msgstr ""
+
+#: coreplugins/lightning/public/app.jsx:43
+msgid ""
+"Lightning is a cloud service built by WebODM developers that allows you to:"
+msgstr ""
+
+#: coreplugins/lightning/public/app.jsx:46
+#, python-format
+msgid ""
+"Quickly process datasets with high performance servers powered by the "
+"%(link)s photogrammetry engine"
+msgstr ""
+
+#: coreplugins/lightning/public/app.jsx:49
+msgid "Easily share public links to your datasets"
+msgstr ""
+
+#: coreplugins/lightning/public/app.jsx:51
 msgid "register"
 msgstr "הרשמה"
 
-#: coreplugins/lightning/public/app.jsx:42
+#: coreplugins/lightning/public/app.jsx:52
 #, python-format
 msgid ""
 "Below you can enter your %(link)s credentials to sync your account and "
@@ -2662,136 +4264,206 @@ msgid ""
 "can %(register)s for free."
 msgstr ""
 "בחלק התחתון תוכל להזין את פרטי ההתחברות שלך ל-%(link)s כדי לסנכרן את חשבונך "
-"ולהגדיר באופן אוטומטי צומת עיבוד חדש. אם אין לך חשבון, תוכל להירשם בחינם %"
-"(register)s ."
+"ולהגדיר באופן אוטומטי צומת עיבוד חדש. אם אין לך חשבון, תוכל להירשם בחינם "
+"%(register)s ."
 
-#: coreplugins/measure/public/MeasurePopup.jsx:105
-#, python-format
-msgid "Invalid response: %(error)s"
-msgstr "תגובה לא חוקית: %(error)s"
-
-#: coreplugins/measure/public/MeasurePopup.jsx:143
+#: coreplugins/measure/public/MeasurePopup.jsx:185
 msgid "Perimeter:"
 msgstr "היקף:"
 
-#: coreplugins/measure/public/MeasurePopup.jsx:144
-#: coreplugins/measure/public/MeasurePopup.jsx:145
-#: coreplugins/measure/public/MeasurePopup.jsx:146
+#: coreplugins/measure/public/MeasurePopup.jsx:187
+#: coreplugins/measure/public/MeasurePopup.jsx:190
+#: coreplugins/measure/public/MeasurePopup.jsx:200
 msgid "Volume:"
 msgstr "נפח:"
 
-#: coreplugins/measure/public/MeasurePopup.jsx:144
+#: coreplugins/measure/public/MeasurePopup.jsx:187
 msgid "computing…"
 msgstr "מְחַשֵּׁב…"
 
-#: coreplugins/measure/public/MeasurePopup.jsx:145
-msgid "Cubic Meters"
-msgstr "מטרים מעוקבים (מ\"ר)"
-
-#: coreplugins/measure/public/MeasurePopup.jsx:145
-msgid "Cubic Feet"
+#: coreplugins/measure/public/MeasurePopup.jsx:191
+msgid "Base surface:"
 msgstr ""
 
-#: coreplugins/measure/public/MeasurePopup.jsx:147
-msgid "Export to GeoJSON"
-msgstr "ייצא ל-GeoJSON"
-
-#: coreplugins/measure/public/app.jsx:18
+#: coreplugins/measure/public/app.jsx:19
 msgid "Measure volume, area and length"
 msgstr "מְדֹד נפח, שטח ואורך"
 
-#: coreplugins/measure/public/app.jsx:19
+#: coreplugins/measure/public/app.jsx:20
 msgid "Measurement"
 msgstr "מדידה"
 
-#: coreplugins/measure/public/app.jsx:20
+#: coreplugins/measure/public/app.jsx:21
 msgid "Measure"
 msgstr "מְדֹד"
 
-#: coreplugins/measure/public/app.jsx:21
+#: coreplugins/measure/public/app.jsx:22
 msgid "Create a new measurement"
 msgstr "צור מדידה חדשה"
 
-#: coreplugins/measure/public/app.jsx:22
+#: coreplugins/measure/public/app.jsx:23
 msgid "Start creating a measurement by adding points to the map"
 msgstr "התחל יצירת מדידה על ידי הוספת נקודות למפה"
 
-#: coreplugins/measure/public/app.jsx:23
+#: coreplugins/measure/public/app.jsx:24
 msgid "Finish measurement"
 msgstr "סיים מדידה"
 
-#: coreplugins/measure/public/app.jsx:24
+#: coreplugins/measure/public/app.jsx:25
 msgid "Last point"
 msgstr "נקודה אחרונה"
 
-#: coreplugins/measure/public/app.jsx:25
-msgid "Area"
-msgstr "שטח"
-
-#: coreplugins/measure/public/app.jsx:26
-msgid "Perimeter"
-msgstr "היקף"
-
-#: coreplugins/measure/public/app.jsx:27
+#: coreplugins/measure/public/app.jsx:28
 msgid "Point location"
 msgstr "מיקום נקודה"
 
-#: coreplugins/measure/public/app.jsx:28
+#: coreplugins/measure/public/app.jsx:29
 msgid "Linear measurement"
 msgstr "מדידה לינארית"
 
-#: coreplugins/measure/public/app.jsx:29
+#: coreplugins/measure/public/app.jsx:30
 msgid "Path distance"
 msgstr "מרחק נתיב"
 
-#: coreplugins/measure/public/app.jsx:30
+#: coreplugins/measure/public/app.jsx:31
 msgid "Center on this area"
 msgstr "מקד (הצג במרכז) אזור זה"
 
-#: coreplugins/measure/public/app.jsx:31
+#: coreplugins/measure/public/app.jsx:32
 msgid "Center on this line"
 msgstr "מקד (הצג במרכז) קו זה"
 
-#: coreplugins/measure/public/app.jsx:32
+#: coreplugins/measure/public/app.jsx:33
 msgid "Center on this location"
 msgstr "מקד (הצג במרכז) מיקום זה"
 
-#: coreplugins/measure/public/app.jsx:35
-msgid "Acres"
-msgstr "אקרים (יחידות מידה)"
-
-#: coreplugins/measure/public/app.jsx:36
-msgid "Feet"
-msgstr "רגל - Feet (יחידת מידה)"
-
-#: coreplugins/measure/public/app.jsx:37
-msgid "Kilometers"
-msgstr "קילומטרים"
-
-#: coreplugins/measure/public/app.jsx:38
-msgid "Hectares"
-msgstr "הקטרים - Hectares (יחידות מידה)"
-
-#: coreplugins/measure/public/app.jsx:39
-msgid "Meters"
-msgstr "מטרים"
-
-#: coreplugins/measure/public/app.jsx:40
-msgid "Miles"
-msgstr "מייל - Miles (יחידת מידה)"
-
-#: coreplugins/measure/public/app.jsx:41
+#: coreplugins/measure/public/app.jsx:42
 msgid "Sq Feet"
 msgstr "רגל רבוע (Sq Feet)"
 
-#: coreplugins/measure/public/app.jsx:42
+#: coreplugins/measure/public/app.jsx:43
 msgid "Sq Meters"
 msgstr "מ\"ר - מטרים רבועים (Sq Meters)"
 
-#: coreplugins/measure/public/app.jsx:43
+#: coreplugins/measure/public/app.jsx:44
 msgid "Sq Miles"
 msgstr "מייל רבוע (Sq Miles)"
 
-#: coreplugins/measure/public/app.jsx:55
+#: coreplugins/measure/public/app.jsx:65
 msgid "Export Measurements"
 msgstr "ייצוא מדידות"
+
+#: coreplugins/objdetect/public/ObjDetect.jsx:37
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:221
+msgid "Object Detection"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:47
+msgid ""
+"No orthophoto is available. To use object detection you need an orthophoto."
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:93
+msgid "Label:"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:94
+msgid "Confidence:"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:178
+msgid "Cars"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:179
+msgid "Trees"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:180
+msgid "Athletic Facilities"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:181
+msgid "Boats"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:182
+msgid "Planes"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:199
+msgid "Detect"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:204
+msgid "Count:"
+msgstr ""
+
+#~ msgid "Show Model"
+#~ msgstr "הצג דגם"
+
+#~ msgid "Google Maps Hybrid"
+#~ msgstr "גוגל-מפות היברידי"
+
+#~ msgid "ESRI Satellite"
+#~ msgstr "לוויין ESRI"
+
+#, python-format
+#~ msgid "Not a proper zipped shapefile: %(file)s"
+#~ msgstr "קובץ מכווץ אינו תקין: %(file)s"
+
+#~ msgid "Download Assets"
+#~ msgstr "הורדת תוצרים"
+
+#~ msgid "Projection:"
+#~ msgstr "הקרנה:"
+
+#~ msgid "Opacity:"
+#~ msgstr "אטימות:"
+
+#~ msgid ""
+#~ "An orthophoto could not be generated. To generate one, make sure GPS "
+#~ "information is embedded in the EXIF tags of your images, or use a Ground "
+#~ "Control Points (GCP) file."
+#~ msgstr ""
+#~ "לא ניתן היה ליצור אורתופוטו. כדי ליצור אחד, ודא שמידע GPS מוטמע בתגיות "
+#~ "EXIF של התמונות שלך, או השתמש בקובץ נקודות בקרת קרקע (GCP)."
+
+#~ msgid "Waiting for image upload..."
+#~ msgstr "ממתין להעלאת תמונה..."
+
+#, python-format
+#~ msgid ""
+#~ "Build orthophoto overviews for faster display in programs such as QGIS. "
+#~ "Default: %(default)s"
+#~ msgstr ""
+#~ "——בנה סקירות-על של אורתופוטו (orthophoto overviews) לתצוגה מהירה יותר "
+#~ "בתוכנות כגון QGIS. ברירת מחדל: %(default)s"
+
+#, python-format
+#~ msgid ""
+#~ "Perform ground rectification on the point cloud. This means that wrongly "
+#~ "classified ground points will be re-classified and gaps will be filled. "
+#~ "Useful for generating DTMs. Default: %(default)s"
+#~ msgstr ""
+#~ "בצע תיקון קרקע על ענן הנקודות. משמעות הדבר היא שנקודות קרקע שסווגו בטעות "
+#~ "יסווגו מחדש ופערים ימולאו. שימושי ליצירת DTMs. ברירת מחדל: %(default)s"
+
+#~ msgid "Do not simplify"
+#~ msgstr "אל תפשט (השאר במורכבות המקורית)"
+
+#~ msgid "Short Link"
+#~ msgstr "קישור מקוצר"
+
+#~ msgid "Suffix"
+#~ msgstr "סיומת"
+
+#~ msgid "Delete Short Link"
+#~ msgstr "מחק קישור מקוצר"
+
+#~ msgid ""
+#~ "Lightning is a service that allows you to quickly process small and large "
+#~ "datasets using high performance servers in the cloud."
+#~ msgstr ""
+#~ "Lightning הוא שירות המאפשר לך לעבד במהירות סטים קטנים וגדולים של נתונים "
+#~ "באמצעות שרתי ביצועים גבוהים בענן."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 21:01+0000\n"
+"POT-Creation-Date: 2026-11-12 19:02+0000\n"
 "PO-Revision-Date: 2026-03-05 19:51+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Kannada <https://hosted.weblate.org/projects/webodm/webodm/kn/"
@@ -328,19 +328,28 @@ msgstr ""
 msgid "Must include \"username\" and \"password\"."
 msgstr ""
 
-#: app/api/jwt.py:74
-msgid "orig_iat field is required."
+#: app/api/jwt.py:71
+msgid "Invalid token."
 msgstr ""
 
 #: app/api/jwt.py:76
+msgid "orig_iat field is required."
+msgstr ""
+
+#: app/api/jwt.py:78
 msgid "Refresh has expired."
 msgstr ""
 
-#: app/api/media.py:72 app/api/tasks.py:323
+#: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
 msgstr "ಯಾವುದೇ ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿಲ್ಲ"
 
-#: app/api/media.py:153 app/api/splats.py:139
+#: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
+#: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
+msgid "Invalid uuid"
+msgstr ""
+
+#: app/api/media.py:158 app/api/splats.py:140
 msgid "File exceeds maximum allowed size"
 msgstr ""
 
@@ -430,13 +439,13 @@ msgstr "ಯಾವುದೇ ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋ�
 msgid "Invalid filename"
 msgstr ""
 
-#: app/api/splats.py:86 app/api/tasks.py:928
+#: app/api/splats.py:86 app/api/tasks.py:941
 msgid "Invalid file type"
 msgstr ""
 
-#: app/api/splats.py:169 app/api/tasks.py:591 app/api/tasks.py:595
-#: app/api/tasks.py:735 app/api/tasks.py:738 app/api/tasks.py:771
-#: app/api/tasks.py:1097
+#: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
+#: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
+#: app/api/tasks.py:1112
 msgid "Asset does not exist"
 msgstr "ಆಸ್ತಿ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್"
 
@@ -446,150 +455,146 @@ msgstr "ಆಸ್ತಿ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್"
 msgid "Cannot create task, processing node is not valid"
 msgstr "ಕಾರ್ಯವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ನಿಮಗೆ ಕನಿಷ್ಠ 2 ಚಿತ್ರಗಳು ಬೇಕಾಗುತ್ತವೆ"
 
-#: app/api/tasks.py:301
+#: app/api/tasks.py:308
 #, fuzzy
 #| msgid "You need to upload at least 2 images before commit"
 msgid "You need to upload at least 1 file before commit"
 msgstr "ಬದ್ಧರಾಗುವ ಮೊದಲು ನೀವು ಕನಿಷ್ಠ 2 ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ"
 
-#: app/api/tasks.py:379
+#: app/api/tasks.py:393
 msgid "Cannot duplicate task"
 msgstr ""
 
-#: app/api/tasks.py:396
+#: app/api/tasks.py:411
 #, fuzzy
 #| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, alignment task is not valid"
 msgstr "ಕಾರ್ಯವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ನಿಮಗೆ ಕನಿಷ್ಠ 2 ಚಿತ್ರಗಳು ಬೇಕಾಗುತ್ತವೆ"
 
-#: app/api/tasks.py:413
+#: app/api/tasks.py:428
 msgid "Cannot create task, you need at least 2 images"
 msgstr "ಕಾರ್ಯವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ನಿಮಗೆ ಕನಿಷ್ಠ 2 ಚಿತ್ರಗಳು ಬೇಕಾಗುತ್ತವೆ"
 
-#: app/api/tasks.py:789 app/api/tasks.py:1009
+#: app/api/tasks.py:800 app/api/tasks.py:1024
 msgid "Imported Task"
 msgstr "ಆಮದು ಮಾಡಿದ ಕಾರ್ಯ"
 
-#: app/api/tasks.py:793 app/api/tasks.py:920
+#: app/api/tasks.py:804 app/api/tasks.py:933
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "ಕಾರ್ಯವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ನೀವು 1 ಫೈಲ್ ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ"
 
-#: app/api/tasks.py:797
+#: app/api/tasks.py:808
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr ""
 "ಕಾರ್ಯವನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ಉ.ರ್.ಲ್ ಅನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಿ ಅಥವಾ 1 ಫೈಲ್ ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ."
 
-#: app/api/tasks.py:799
+#: app/api/tasks.py:810
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr ""
 
-#: app/api/tasks.py:904 app/api/tasks.py:907
-msgid "Invalid uuid"
-msgstr ""
-
-#: app/api/tasks.py:939
+#: app/api/tasks.py:952
 msgid "Invalid file type (extension mismatch)"
 msgstr ""
 
-#: app/api/tasks.py:963
+#: app/api/tasks.py:976
 msgid "Some parameters are not integers"
 msgstr ""
 
-#: app/api/tasks.py:1022 app/api/tasks.py:1027
+#: app/api/tasks.py:1037 app/api/tasks.py:1042
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:1029
+#: app/api/tasks.py:1044
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:1035
+#: app/api/tasks.py:1050
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:1041
+#: app/api/tasks.py:1056
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:1045
+#: app/api/tasks.py:1060
 #, fuzzy
 #| msgid "No files uploaded"
 msgid "No assets uploaded"
 msgstr "ಯಾವುದೇ ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿಲ್ಲ"
 
-#: app/api/tiler.py:360
+#: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
 msgstr ""
 
-#: app/api/tiler.py:379
+#: app/api/tiler.py:404
 msgid "Invalid tile size parameter"
 msgstr ""
 
-#: app/api/tiler.py:410 app/api/tiler.py:490
+#: app/api/tiler.py:437 app/api/tiler.py:521
 msgid "Outside of bounds"
 msgstr ""
 
-#: app/api/tiler.py:421
+#: app/api/tiler.py:448
 msgid "Invalid boundaries"
 msgstr ""
 
-#: app/api/tiler.py:496 app/api/tiler.py:624
+#: app/api/tiler.py:527 app/api/tiler.py:670
 msgid "Not a valid color_map value"
 msgstr ""
 
-#: app/api/tiler.py:504
+#: app/api/tiler.py:535
 msgid "Invalid rescale value"
 msgstr ""
 
-#: app/api/tiler.py:526
+#: app/api/tiler.py:567
 msgid "Invalid hillshade value"
 msgstr ""
 
-#: app/api/tiler.py:529
+#: app/api/tiler.py:570
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr ""
 
-#: app/api/tiler.py:553
+#: app/api/tiler.py:594
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
 
-#: app/api/tiler.py:609 app/api/tiler.py:611
+#: app/api/tiler.py:652 app/api/tiler.py:654
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:630
+#: app/api/tiler.py:676
 #, python-format
 msgid "Invalid resample value: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:636
+#: app/api/tiler.py:682
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:642 app/api/tiler.py:644
+#: app/api/tiler.py:688 app/api/tiler.py:690
 #, python-format
 msgid "Invalid PROJ string: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:647
+#: app/api/tiler.py:693
 msgid "Both formula and bands parameters are required"
 msgstr ""
 
-#: app/api/tiler.py:670
+#: app/api/tiler.py:716
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:678
+#: app/api/tiler.py:724
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr ""
 
-#: app/api/tiler.py:689
+#: app/api/tiler.py:735
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 
@@ -964,7 +969,7 @@ msgid ""
 "associated yet)"
 msgstr ""
 
-#: app/models/task.py:248 app/views/app.py:149 nodeodm/models.py:36
+#: app/models/task.py:248 app/views/app.py:154 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr ""
 
@@ -1192,28 +1197,28 @@ msgstr "ಕಾರ್ಯಗಳು"
 msgid "unnamed"
 msgstr ""
 
-#: app/models/task.py:616
+#: app/models/task.py:620
 msgid "Importing assets..."
 msgstr ""
 
-#: app/models/task.py:671 app/models/task.py:950
+#: app/models/task.py:675 app/models/task.py:954
 msgid "Invalid zip file"
 msgstr ""
 
-#: app/models/task.py:673
+#: app/models/task.py:677
 msgid "Unsupported compression method"
 msgstr ""
 
-#: app/models/task.py:768
+#: app/models/task.py:772
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr ""
 
-#: app/models/task.py:848
+#: app/models/task.py:852
 msgid "Cannot restart a task that has no processing node"
 msgstr ""
 
-#: app/models/task.py:1053
+#: app/models/task.py:1057
 msgid "Done!"
 msgstr ""
 
@@ -1325,6 +1330,14 @@ msgstr ""
 msgid "Success"
 msgstr "ಯಶಸ್ಸು"
 
+#: app/templates/app/403.html:6
+msgid "403 Forbidden"
+msgstr ""
+
+#: app/templates/app/403.html:7
+msgid "You do not have permission to access this page."
+msgstr ""
+
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
 msgstr ""
@@ -1341,11 +1354,11 @@ msgstr ""
 msgid "Something happened. The server logs contain more information."
 msgstr ""
 
-#: app/templates/app/about.html:25
+#: app/templates/app/about.html:26
 msgid "Minimize"
 msgstr ""
 
-#: app/templates/app/about.html:29
+#: app/templates/app/about.html:30
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1425,7 +1438,6 @@ msgstr ""
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#: app/templates/app/admin/login.html:4
 #, fuzzy
 #| msgid "Last Error"
 msgid "Error:"
@@ -1443,7 +1455,6 @@ msgstr ""
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#: app/templates/app/admin/login.html:24
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
 msgstr[0] ""
@@ -1654,21 +1665,6 @@ msgid ""
 "the appropriate user."
 msgstr ""
 
-#: app/templates/app/admin/login.html:40
-#, python-format
-msgid ""
-"You are authenticated as %(username)s, but are not authorized to access this "
-"page. Would you like to login to a different account?"
-msgstr ""
-
-#: app/templates/app/admin/login.html:60
-msgid "Forgotten your login credentials?"
-msgstr ""
-
-#: app/templates/app/admin/login.html:64
-msgid "Log in"
-msgstr ""
-
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
 msgstr ""
@@ -1842,7 +1838,7 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:60
+#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
 msgid "Dashboard"
 msgstr ""
 
@@ -1870,7 +1866,7 @@ msgstr ""
 msgid "Brand"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:133
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
 msgid "About"
 msgstr ""
 
@@ -2007,35 +2003,35 @@ msgstr ""
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Adds a mock button to the boundary option in the edit preset dialog"
+#: app/views/app.py:42
+msgid "Logged out"
 msgstr ""
 
-#: app/views/app.py:58
+#: app/views/app.py:63
 msgid "First Project"
 msgstr ""
 
-#: app/views/app.py:74
+#: app/views/app.py:79
 msgid "Map"
 msgstr ""
 
-#: app/views/app.py:108
+#: app/views/app.py:113
 msgid "3D Model Display"
 msgstr ""
 
-#: app/views/app.py:141
+#: app/views/app.py:146
 #, python-format
 msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
 
-#: app/views/app.py:145
+#: app/views/app.py:150
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr ""
 
-#: app/views/app.py:183
+#: app/views/app.py:188
 msgid "Welcome"
 msgstr ""
 
@@ -2076,31 +2072,42 @@ msgstr ""
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 
-#: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
-#: coreplugins/measure/api.py:21
+#: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
+#: coreplugins/annotate/dist/annotate/api.py:61
+#: coreplugins/annotate/dist/annotate/api.py:101 coreplugins/measure/api.py:21
 msgid ""
 "No surface model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dsm\", then press Restart --> "
 "From DEM."
 msgstr ""
 
-#: coreplugins/annotate/api.py:63 coreplugins/annotate/dist/annotate/api.py:63
+#: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
+#: coreplugins/annotate/dist/annotate/api.py:64
+#: coreplugins/annotate/dist/annotate/api.py:104
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
 
-#: coreplugins/annotate/api.py:65 coreplugins/annotate/dist/annotate/api.py:65
+#: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
+#: coreplugins/annotate/dist/annotate/api.py:66
+#: coreplugins/annotate/dist/annotate/api.py:106
 msgid "Invalid surface model"
 msgstr ""
 
-#: coreplugins/annotate/api.py:91 coreplugins/annotate/dist/annotate/api.py:91
+#: coreplugins/annotate/api.py:111
+#: coreplugins/annotate/dist/annotate/api.py:111
+msgid "Invalid line"
+msgstr ""
+
+#: coreplugins/annotate/api.py:128
+#: coreplugins/annotate/dist/annotate/api.py:128
 msgid "A digital surface model is required to compute elevation values."
 msgstr ""
 
-#: coreplugins/annotate/api.py:125
-#: coreplugins/annotate/dist/annotate/api.py:125
+#: coreplugins/annotate/api.py:162
+#: coreplugins/annotate/dist/annotate/api.py:162
 msgid "An orthophoto is required to compute temperature values."
 msgstr ""
 

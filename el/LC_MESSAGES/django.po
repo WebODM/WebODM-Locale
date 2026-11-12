@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 21:01+0000\n"
+"POT-Creation-Date: 2026-11-12 19:02+0000\n"
 "PO-Revision-Date: 2026-03-05 19:39+0000\n"
 "Last-Translator: Christos Kanotidis <christoskanotidis@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/webodm/webodm/el/"
@@ -372,19 +372,32 @@ msgstr ""
 msgid "Must include \"username\" and \"password\"."
 msgstr "Εισάγετε ένα όνομα χρήστη και έναν κωδικό πρόσβασης."
 
-#: app/api/jwt.py:74
+#: app/api/jwt.py:71
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid token."
+msgstr "Μη έγκυρη ενέργεια"
+
+#: app/api/jwt.py:76
 msgid "orig_iat field is required."
 msgstr ""
 
-#: app/api/jwt.py:76
+#: app/api/jwt.py:78
 msgid "Refresh has expired."
 msgstr ""
 
-#: app/api/media.py:72 app/api/tasks.py:323
+#: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
 msgstr "Δεν έχουν μεταφορτωθεί αρχεία"
 
-#: app/api/media.py:153 app/api/splats.py:139
+#: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
+#: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid uuid"
+msgstr "Μη έγκυρη ενέργεια"
+
+#: app/api/media.py:158 app/api/splats.py:140
 msgid "File exceeds maximum allowed size"
 msgstr ""
 
@@ -486,15 +499,15 @@ msgstr "Δεν έχουν μεταφορτωθεί αρχεία"
 msgid "Invalid filename"
 msgstr "Μη έγκυρο αρχείο zip"
 
-#: app/api/splats.py:86 app/api/tasks.py:928
+#: app/api/splats.py:86 app/api/tasks.py:941
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid file type"
 msgstr "Μη έγκυρο αρχείο zip"
 
-#: app/api/splats.py:169 app/api/tasks.py:591 app/api/tasks.py:595
-#: app/api/tasks.py:735 app/api/tasks.py:738 app/api/tasks.py:771
-#: app/api/tasks.py:1097
+#: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
+#: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
+#: app/api/tasks.py:1112
 msgid "Asset does not exist"
 msgstr "Ο Πόρος δεν υπάρχει"
 
@@ -504,156 +517,150 @@ msgstr "Ο Πόρος δεν υπάρχει"
 msgid "Cannot create task, processing node is not valid"
 msgstr "Δεν είναι δυνατή η δημιουργία εργασίας, η εργασία δεν είναι έγκυρη"
 
-#: app/api/tasks.py:301
+#: app/api/tasks.py:308
 msgid "You need to upload at least 1 file before commit"
 msgstr "Πρέπει να ανεβάσετε τουλάχιστον 1 αρχείο πριν από τη δέσμευση"
 
-#: app/api/tasks.py:379
+#: app/api/tasks.py:393
 msgid "Cannot duplicate task"
 msgstr "Δεν είναι δυνατή η επανάληψη της εργασίας"
 
-#: app/api/tasks.py:396
+#: app/api/tasks.py:411
 msgid "Cannot create task, alignment task is not valid"
 msgstr "Δεν είναι δυνατή η δημιουργία εργασίας, η εργασία δεν είναι έγκυρη"
 
-#: app/api/tasks.py:413
+#: app/api/tasks.py:428
 msgid "Cannot create task, you need at least 2 images"
 msgstr ""
 "Δεν μπορείτε να δημιουργήσετε την εργασία, χρειάζεστε τουλάχιστον 2 εικόνες"
 
-#: app/api/tasks.py:789 app/api/tasks.py:1009
+#: app/api/tasks.py:800 app/api/tasks.py:1024
 msgid "Imported Task"
 msgstr "Εισαγόμενη εργασία"
 
-#: app/api/tasks.py:793 app/api/tasks.py:920
+#: app/api/tasks.py:804 app/api/tasks.py:933
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "Δεν μπορείτε να δημιουργήσετε εργασία, πρέπει να ανεβάσετε 1 αρχείο"
 
-#: app/api/tasks.py:797
+#: app/api/tasks.py:808
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr ""
 "Δεν είναι δυνατή η δημιουργία εργασίας, είτε καθορίστε μια διεύθυνση URL "
 "είτε ανεβάστε 1 αρχείο."
 
-#: app/api/tasks.py:799
+#: app/api/tasks.py:810
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "Μη έγκυρη διεύθυνση URL. Εννοούσατε %(hint)s;"
 
-#: app/api/tasks.py:904 app/api/tasks.py:907
-#, fuzzy
-#| msgid "Invalid action"
-msgid "Invalid uuid"
-msgstr "Μη έγκυρη ενέργεια"
-
-#: app/api/tasks.py:939
+#: app/api/tasks.py:952
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid file type (extension mismatch)"
 msgstr "Μη έγκυρο αρχείο zip"
 
-#: app/api/tasks.py:963
+#: app/api/tasks.py:976
 msgid "Some parameters are not integers"
 msgstr ""
 
-#: app/api/tasks.py:1022 app/api/tasks.py:1027
+#: app/api/tasks.py:1037 app/api/tasks.py:1042
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:1029
+#: app/api/tasks.py:1044
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:1035
+#: app/api/tasks.py:1050
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:1041
+#: app/api/tasks.py:1056
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:1045
+#: app/api/tasks.py:1060
 #, fuzzy
 #| msgid "No files uploaded"
 msgid "No assets uploaded"
 msgstr "Δεν έχουν μεταφορτωθεί αρχεία"
 
-#: app/api/tiler.py:360
+#: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
 msgstr "Μη έγκυρη παράμετρος ορίων"
 
-#: app/api/tiler.py:379
+#: app/api/tiler.py:404
 msgid "Invalid tile size parameter"
 msgstr "Μη έγκυρη παράμετρος μεγέθους πλακιδίων"
 
-#: app/api/tiler.py:410 app/api/tiler.py:490
+#: app/api/tiler.py:437 app/api/tiler.py:521
 msgid "Outside of bounds"
 msgstr "Εκτός ορίων"
 
-#: app/api/tiler.py:421
+#: app/api/tiler.py:448
 msgid "Invalid boundaries"
 msgstr "Μη έγκυρα όρια"
 
-#: app/api/tiler.py:496 app/api/tiler.py:624
+#: app/api/tiler.py:527 app/api/tiler.py:670
 msgid "Not a valid color_map value"
 msgstr "Μη έγκυρη τιμή color_map"
 
-#: app/api/tiler.py:504
+#: app/api/tiler.py:535
 msgid "Invalid rescale value"
 msgstr "Μη έγκυρη τιμή αναπροσαρμογής κλίμακας"
 
-#: app/api/tiler.py:526
+#: app/api/tiler.py:567
 msgid "Invalid hillshade value"
 msgstr "Μη έγκυρη τιμή σκίασης λόφου"
 
-#: app/api/tiler.py:529
+#: app/api/tiler.py:570
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr ""
 "Δεν είναι δυνατός ο υπολογισμός της σκιάς λόφου ενός μη υψομετρικού ράστερ "
 "(βρέθηκαν πολλαπλές ζώνες)"
 
-#: app/api/tiler.py:553
+#: app/api/tiler.py:594
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
 "Δεν είναι δυνατή η επεξεργασία πλακιδίων: δόθηκε εικόνα έντασης, αλλά δεν "
 "υπολογίστηκαν δεδομένα RGB."
 
-#: app/api/tiler.py:609 app/api/tiler.py:611
+#: app/api/tiler.py:652 app/api/tiler.py:654
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr "Μη υποστηριζόμενη μορφή: %(value)s"
 
-#: app/api/tiler.py:630
+#: app/api/tiler.py:676
 #, python-format
 msgid "Invalid resample value: %(value)s"
 msgstr "Μη έγκυρη τιμή αναδιαμόρφωσης: %(value)s"
 
-#: app/api/tiler.py:636
+#: app/api/tiler.py:682
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr "Μη έγκυρος κωδικός EPSG: %(value)s"
 
-#: app/api/tiler.py:642 app/api/tiler.py:644
+#: app/api/tiler.py:688 app/api/tiler.py:690
 #, python-format
 msgid "Invalid PROJ string: %(value)s"
 msgstr "Μη έγκυρη συμβολοσειρά PROJ string: %(value)s"
 
-#: app/api/tiler.py:647
+#: app/api/tiler.py:693
 msgid "Both formula and bands parameters are required"
 msgstr "Απαιτούνται παράμετροι τύπου και ζωνών"
 
-#: app/api/tiler.py:670
+#: app/api/tiler.py:716
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr "Μη έγκυρη τιμή αναπροσαρμογής κλίμακας: %(value)s"
 
-#: app/api/tiler.py:678
+#: app/api/tiler.py:724
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr "Μη έγκυρη τιμή σκίασης λόφου: %(value)s"
 
-#: app/api/tiler.py:689
+#: app/api/tiler.py:735
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Δεν είναι δυνατή η χρήση του epsg σε σύνολο δεδομένων χωρίς γεωαναφορά"
 
@@ -1038,7 +1045,7 @@ msgstr ""
 "Κόμβος επεξεργασίας που έχει ανατεθεί σε αυτήν την εργασία (ή μηδέν εάν η "
 "εργασία δεν έχει συσχετιστεί ακόμη)"
 
-#: app/models/task.py:248 app/views/app.py:149 nodeodm/models.py:36
+#: app/models/task.py:248 app/views/app.py:154 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr "Κόμβος επεξεργασίας"
 
@@ -1288,29 +1295,29 @@ msgstr "Εργασίες"
 msgid "unnamed"
 msgstr "ανώνυμο"
 
-#: app/models/task.py:616
+#: app/models/task.py:620
 msgid "Importing assets..."
 msgstr "Εισαγωγή πόρων..."
 
-#: app/models/task.py:671 app/models/task.py:950
+#: app/models/task.py:675 app/models/task.py:954
 msgid "Invalid zip file"
 msgstr "Μη έγκυρο αρχείο zip"
 
-#: app/models/task.py:673
+#: app/models/task.py:677
 msgid "Unsupported compression method"
 msgstr "Μη υποστηριζόμενη μέθοδος συμπίεσης"
 
-#: app/models/task.py:768
+#: app/models/task.py:772
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "Σφάλμα σύνδεσης: %(error)s"
 
-#: app/models/task.py:848
+#: app/models/task.py:852
 msgid "Cannot restart a task that has no processing node"
 msgstr ""
 "Δεν είναι δυνατή η επανεκκίνηση μιας εργασίας που δεν έχει κόμβο επεξεργασίας"
 
-#: app/models/task.py:1053
+#: app/models/task.py:1057
 msgid "Done!"
 msgstr "Έτοιμο!"
 
@@ -1422,6 +1429,16 @@ msgstr "Το χρώμα φόντου των ειδοποιήσεων επιτυ�
 msgid "Success"
 msgstr "Επιτυχία"
 
+#: app/templates/app/403.html:6
+msgid "403 Forbidden"
+msgstr ""
+
+#: app/templates/app/403.html:7
+#, fuzzy
+#| msgid "You don't have permission to edit anything."
+msgid "You do not have permission to access this page."
+msgstr "Δεν έχετε άδεια να επεξεργαστείτε κάτι."
+
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
 msgstr "404 Η σελίδα δεν βρέθηκε"
@@ -1440,11 +1457,11 @@ msgstr ""
 "Κάτι συνέβη. Τα αρχεία καταγραφής του διακομιστή περιέχουν περισσότερες "
 "πληροφορίες."
 
-#: app/templates/app/about.html:25
+#: app/templates/app/about.html:26
 msgid "Minimize"
 msgstr ""
 
-#: app/templates/app/about.html:29
+#: app/templates/app/about.html:30
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1546,7 +1563,6 @@ msgstr ""
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#: app/templates/app/admin/login.html:4
 #, fuzzy
 #| msgid "Last Error"
 msgid "Error:"
@@ -1566,7 +1582,6 @@ msgstr "Αλλαγή κωδικού πρόσβασης"
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#: app/templates/app/admin/login.html:24
 #, fuzzy
 #| msgid "Please correct the error below."
 msgid "Please correct the error below."
@@ -1809,26 +1824,6 @@ msgstr ""
 "ότι έχουν δημιουργηθεί οι κατάλληλοι πίνακες της βάσης δεδομένων και "
 "βεβαιωθείτε ότι η βάση δεδομένων είναι αναγνώσιμη από τον κατάλληλο χρήστη."
 
-#: app/templates/app/admin/login.html:40
-#, python-format
-msgid ""
-"You are authenticated as %(username)s, but are not authorized to access this "
-"page. Would you like to login to a different account?"
-msgstr ""
-"Έχετε πιστοποιηθεί ως %(username)s, αλλά δεν είστε εξουσιοδοτημένοι να έχετε "
-"πρόσβαση σε αυτή τη σελίδα. Θα θέλατε να συνδεθείτε με διαφορετικό "
-"λογαριασμό;"
-
-#: app/templates/app/admin/login.html:60
-#, fuzzy
-#| msgid "Forgotten your password or username?"
-msgid "Forgotten your login credentials?"
-msgstr "Ξεχάσατε τον κωδικό πρόσβασης ή το όνομα χρήστη σας;"
-
-#: app/templates/app/admin/login.html:64
-msgid "Log in"
-msgstr "Σύνδεση"
-
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
 msgstr "Ιστορικό"
@@ -2027,7 +2022,7 @@ msgstr "%(used)s από %(total)s που χρησιμοποιήθηκαν"
 msgid "Logout"
 msgstr "Αποσύνδεση"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:60
+#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Ταμπλό"
 
@@ -2055,7 +2050,7 @@ msgstr "Ομάδες"
 msgid "Brand"
 msgstr "Επωνυμία"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:133
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
 msgid "About"
 msgstr "Περί"
 
@@ -2202,35 +2197,35 @@ msgstr "Ένα παράδειγμα πρόσθετου για ανάπτυξη"
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Adds a mock button to the boundary option in the edit preset dialog"
+#: app/views/app.py:42
+msgid "Logged out"
 msgstr ""
 
-#: app/views/app.py:58
+#: app/views/app.py:63
 msgid "First Project"
 msgstr "Πρώτο έργο"
 
-#: app/views/app.py:74
+#: app/views/app.py:79
 msgid "Map"
 msgstr "Χάρτης"
 
-#: app/views/app.py:108
+#: app/views/app.py:113
 msgid "3D Model Display"
 msgstr "Οθόνη Μοντέλου 3D"
 
-#: app/views/app.py:141
+#: app/views/app.py:146
 #, python-format
 msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
 
-#: app/views/app.py:145
+#: app/views/app.py:150
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "Ο κόμβος %(node)s φαίνεται να είναι εκτός σύνδεσης."
 
-#: app/views/app.py:183
+#: app/views/app.py:188
 msgid "Welcome"
 msgstr "Καλώς ήρθατε"
 
@@ -2271,8 +2266,9 @@ msgstr ""
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 
-#: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
-#: coreplugins/measure/api.py:21
+#: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
+#: coreplugins/annotate/dist/annotate/api.py:61
+#: coreplugins/annotate/dist/annotate/api.py:101 coreplugins/measure/api.py:21
 msgid ""
 "No surface model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dsm\", then press Restart --> "
@@ -2282,7 +2278,9 @@ msgstr ""
 "εργασία, πατήστε Επεξεργασία, από τις επιλογές βεβαιωθείτε ότι έχετε "
 "τσεκάρει το \"dsm\" και, στη συνέχεια, πατήστε Επανεκκίνηση --> Από DEM."
 
-#: coreplugins/annotate/api.py:63 coreplugins/annotate/dist/annotate/api.py:63
+#: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
+#: coreplugins/annotate/dist/annotate/api.py:64
+#: coreplugins/annotate/dist/annotate/api.py:104
 #, fuzzy
 #| msgid ""
 #| "No surface model available. From the Dashboard, select this task, press "
@@ -2297,19 +2295,29 @@ msgstr ""
 "εργασία, πατήστε Επεξεργασία, από τις επιλογές βεβαιωθείτε ότι έχετε "
 "τσεκάρει το \"dsm\" και, στη συνέχεια, πατήστε Επανεκκίνηση --> Από DEM."
 
-#: coreplugins/annotate/api.py:65 coreplugins/annotate/dist/annotate/api.py:65
+#: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
+#: coreplugins/annotate/dist/annotate/api.py:66
+#: coreplugins/annotate/dist/annotate/api.py:106
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid surface model"
 msgstr "Μη έγκυρο αρχείο zip"
 
-#: coreplugins/annotate/api.py:91 coreplugins/annotate/dist/annotate/api.py:91
+#: coreplugins/annotate/api.py:111
+#: coreplugins/annotate/dist/annotate/api.py:111
+#, fuzzy
+#| msgid "Invalid zip file"
+msgid "Invalid line"
+msgstr "Μη έγκυρο αρχείο zip"
+
+#: coreplugins/annotate/api.py:128
+#: coreplugins/annotate/dist/annotate/api.py:128
 msgid "A digital surface model is required to compute elevation values."
 msgstr ""
 "Απαιτείται ένα ψηφιακό μοντέλο επιφάνειας για τον υπολογισμό των τιμών."
 
-#: coreplugins/annotate/api.py:125
-#: coreplugins/annotate/dist/annotate/api.py:125
+#: coreplugins/annotate/api.py:162
+#: coreplugins/annotate/dist/annotate/api.py:162
 msgid "An orthophoto is required to compute temperature values."
 msgstr "Απαιτείται ορθοφωτογραφία για τον υπολογισμό των τιμών."
 
@@ -2498,6 +2506,23 @@ msgstr ""
 msgid "Engine used by the node."
 msgstr "Μηχανή που χρησιμοποιείται από τον κόμβο."
 
+#, python-format
+#~ msgid ""
+#~ "You are authenticated as %(username)s, but are not authorized to access "
+#~ "this page. Would you like to login to a different account?"
+#~ msgstr ""
+#~ "Έχετε πιστοποιηθεί ως %(username)s, αλλά δεν είστε εξουσιοδοτημένοι να "
+#~ "έχετε πρόσβαση σε αυτή τη σελίδα. Θα θέλατε να συνδεθείτε με διαφορετικό "
+#~ "λογαριασμό;"
+
+#, fuzzy
+#~| msgid "Forgotten your password or username?"
+#~ msgid "Forgotten your login credentials?"
+#~ msgstr "Ξεχάσατε τον κωδικό πρόσβασης ή το όνομα χρήστη σας;"
+
+#~ msgid "Log in"
+#~ msgstr "Σύνδεση"
+
 #~ msgid "Enter a username and password."
 #~ msgstr "Εισάγετε ένα όνομα χρήστη και έναν κωδικό πρόσβασης."
 
@@ -2510,9 +2535,6 @@ msgstr "Μηχανή που χρησιμοποιείται από τον κόμ�
 
 #~ msgid "Add"
 #~ msgstr "Προσθήκη"
-
-#~ msgid "You don't have permission to edit anything."
-#~ msgstr "Δεν έχετε άδεια να επεξεργαστείτε κάτι."
 
 #, python-format
 #~ msgid "Change selected %(model)s"

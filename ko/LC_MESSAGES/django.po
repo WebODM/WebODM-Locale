@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 21:01+0000\n"
+"POT-Creation-Date: 2026-11-12 19:02+0000\n"
 "PO-Revision-Date: 2026-03-05 19:39+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/webodm/webodm/ko/"
@@ -357,19 +357,32 @@ msgstr ""
 msgid "Must include \"username\" and \"password\"."
 msgstr "사용자명과 암호를 입력하세요."
 
-#: app/api/jwt.py:74
+#: app/api/jwt.py:71
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid token."
+msgstr "잘못된 작업"
+
+#: app/api/jwt.py:76
 msgid "orig_iat field is required."
 msgstr ""
 
-#: app/api/jwt.py:76
+#: app/api/jwt.py:78
 msgid "Refresh has expired."
 msgstr ""
 
-#: app/api/media.py:72 app/api/tasks.py:323
+#: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
 msgstr "업로드된 파일이 없습니다"
 
-#: app/api/media.py:153 app/api/splats.py:139
+#: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
+#: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid uuid"
+msgstr "잘못된 작업"
+
+#: app/api/media.py:158 app/api/splats.py:140
 msgid "File exceeds maximum allowed size"
 msgstr ""
 
@@ -471,15 +484,15 @@ msgstr "업로드된 파일이 없습니다"
 msgid "Invalid filename"
 msgstr "잘못된 zip 파일"
 
-#: app/api/splats.py:86 app/api/tasks.py:928
+#: app/api/splats.py:86 app/api/tasks.py:941
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid file type"
 msgstr "잘못된 zip 파일"
 
-#: app/api/splats.py:169 app/api/tasks.py:591 app/api/tasks.py:595
-#: app/api/tasks.py:735 app/api/tasks.py:738 app/api/tasks.py:771
-#: app/api/tasks.py:1097
+#: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
+#: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
+#: app/api/tasks.py:1112
 msgid "Asset does not exist"
 msgstr "애셋이 존재하지 않습니다"
 
@@ -489,156 +502,150 @@ msgstr "애셋이 존재하지 않습니다"
 msgid "Cannot create task, processing node is not valid"
 msgstr "작업을 생성할 수 없습니다, 최소 2장 이상의 이미지가 필요합니다"
 
-#: app/api/tasks.py:301
+#: app/api/tasks.py:308
 msgid "You need to upload at least 1 file before commit"
 msgstr "결정하기 전에 최소 1장 의 이미지들을 업로드 하여야 합니다"
 
-#: app/api/tasks.py:379
+#: app/api/tasks.py:393
 msgid "Cannot duplicate task"
 msgstr "작업을 복제할 수 없습니다"
 
-#: app/api/tasks.py:396
+#: app/api/tasks.py:411
 #, fuzzy
 #| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, alignment task is not valid"
 msgstr "작업을 생성할 수 없습니다, 최소 2장 이상의 이미지가 필요합니다"
 
-#: app/api/tasks.py:413
+#: app/api/tasks.py:428
 msgid "Cannot create task, you need at least 2 images"
 msgstr "작업을 생성할 수 없습니다, 최소 2장 이상의 이미지가 필요합니다"
 
-#: app/api/tasks.py:789 app/api/tasks.py:1009
+#: app/api/tasks.py:800 app/api/tasks.py:1024
 msgid "Imported Task"
 msgstr "불러온 작업"
 
-#: app/api/tasks.py:793 app/api/tasks.py:920
+#: app/api/tasks.py:804 app/api/tasks.py:933
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "작업을 생성할 수 없습니다, 1개의 파일을 업로드 해야합니다"
 
-#: app/api/tasks.py:797
+#: app/api/tasks.py:808
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr ""
 "작업을 생성할 수 없습니다, URL을 지정하거나 1개의 파일을 업로드 하세요."
 
-#: app/api/tasks.py:799
+#: app/api/tasks.py:810
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr ""
 
-#: app/api/tasks.py:904 app/api/tasks.py:907
-#, fuzzy
-#| msgid "Invalid action"
-msgid "Invalid uuid"
-msgstr "잘못된 작업"
-
-#: app/api/tasks.py:939
+#: app/api/tasks.py:952
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid file type (extension mismatch)"
 msgstr "잘못된 zip 파일"
 
-#: app/api/tasks.py:963
+#: app/api/tasks.py:976
 msgid "Some parameters are not integers"
 msgstr ""
 
-#: app/api/tasks.py:1022 app/api/tasks.py:1027
+#: app/api/tasks.py:1037 app/api/tasks.py:1042
 msgid "GeoTIFF must have a valid CRS"
 msgstr ""
 
-#: app/api/tasks.py:1029
+#: app/api/tasks.py:1044
 msgid "Elevation model must have at most 2 band"
 msgstr ""
 
-#: app/api/tasks.py:1035
+#: app/api/tasks.py:1050
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr ""
 
-#: app/api/tasks.py:1041
+#: app/api/tasks.py:1056
 msgid "Textured model must be a valid GLB file"
 msgstr ""
 
-#: app/api/tasks.py:1045
+#: app/api/tasks.py:1060
 #, fuzzy
 #| msgid "No files uploaded"
 msgid "No assets uploaded"
 msgstr "업로드된 파일이 없습니다"
 
-#: app/api/tiler.py:360
+#: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
 msgstr "잘못된 경계 매개변수"
 
-#: app/api/tiler.py:379
+#: app/api/tiler.py:404
 msgid "Invalid tile size parameter"
 msgstr "잘못된 타일 크기 매개변수"
 
-#: app/api/tiler.py:410 app/api/tiler.py:490
+#: app/api/tiler.py:437 app/api/tiler.py:521
 msgid "Outside of bounds"
 msgstr "범위를 벗어남"
 
-#: app/api/tiler.py:421
+#: app/api/tiler.py:448
 msgid "Invalid boundaries"
 msgstr "잘못된 경계"
 
-#: app/api/tiler.py:496 app/api/tiler.py:624
+#: app/api/tiler.py:527 app/api/tiler.py:670
 msgid "Not a valid color_map value"
 msgstr "유효한 color_map 값이 아닙니다"
 
-#: app/api/tiler.py:504
+#: app/api/tiler.py:535
 msgid "Invalid rescale value"
 msgstr "잘못된 재조정 값"
 
-#: app/api/tiler.py:526
+#: app/api/tiler.py:567
 msgid "Invalid hillshade value"
 msgstr "잘못된 hillshade 값"
 
-#: app/api/tiler.py:529
+#: app/api/tiler.py:570
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr "고도가 없는 래스터의 색조를 계산할 수 없습니다(여러 대역 발견)"
 
-#: app/api/tiler.py:553
+#: app/api/tiler.py:594
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
 "타일을 처리할 수 없음: 강도 이미지가 제공되었지만 RGB 데이터가 계산되지 않았"
 "습니다."
 
-#: app/api/tiler.py:609 app/api/tiler.py:611
+#: app/api/tiler.py:652 app/api/tiler.py:654
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr "지원되지 않는 형식: %(value)s"
 
-#: app/api/tiler.py:630
+#: app/api/tiler.py:676
 #, fuzzy, python-format
 #| msgid "Invalid rescale value: %(value)s"
 msgid "Invalid resample value: %(value)s"
 msgstr "잘못된 재조정 값: %(value)s"
 
-#: app/api/tiler.py:636
+#: app/api/tiler.py:682
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr "잘못된 EPSG 코드: %(value)s"
 
-#: app/api/tiler.py:642 app/api/tiler.py:644
+#: app/api/tiler.py:688 app/api/tiler.py:690
 #, fuzzy, python-format
 #| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid PROJ string: %(value)s"
 msgstr "잘못된 EPSG 코드: %(value)s"
 
-#: app/api/tiler.py:647
+#: app/api/tiler.py:693
 msgid "Both formula and bands parameters are required"
 msgstr "공식 및 대역 매개변수가 모두 필요합니다"
 
-#: app/api/tiler.py:670
+#: app/api/tiler.py:716
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr "잘못된 재조정 값: %(value)s"
 
-#: app/api/tiler.py:678
+#: app/api/tiler.py:724
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr "잘못된 힐쉐이드 값: %(value)s"
 
-#: app/api/tiler.py:689
+#: app/api/tiler.py:735
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "지리 참조되지 않은 데이터 세트에서 epsg를 사용할 수 없습니다"
 
@@ -1029,7 +1036,7 @@ msgid ""
 msgstr ""
 "이 작업에 할당 된 처리 노드 (또는이 작업이 아직 연결되지 않은 경우 null)"
 
-#: app/models/task.py:248 app/views/app.py:149 nodeodm/models.py:36
+#: app/models/task.py:248 app/views/app.py:154 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr "프로세싱 노드"
 
@@ -1277,28 +1284,28 @@ msgstr "작업"
 msgid "unnamed"
 msgstr "이름 없음"
 
-#: app/models/task.py:616
+#: app/models/task.py:620
 msgid "Importing assets..."
 msgstr "자산 가져 오는 중 ..."
 
-#: app/models/task.py:671 app/models/task.py:950
+#: app/models/task.py:675 app/models/task.py:954
 msgid "Invalid zip file"
 msgstr "잘못된 zip 파일"
 
-#: app/models/task.py:673
+#: app/models/task.py:677
 msgid "Unsupported compression method"
 msgstr ""
 
-#: app/models/task.py:768
+#: app/models/task.py:772
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "연결 오류 : %(error)s"
 
-#: app/models/task.py:848
+#: app/models/task.py:852
 msgid "Cannot restart a task that has no processing node"
 msgstr "처리 노드가없는 작업을 다시 시작할 수 없습니다"
 
-#: app/models/task.py:1053
+#: app/models/task.py:1057
 msgid "Done!"
 msgstr "완료!"
 
@@ -1410,6 +1417,16 @@ msgstr "성공 알림의 배경 색입니다."
 msgid "Success"
 msgstr "성공"
 
+#: app/templates/app/403.html:6
+msgid "403 Forbidden"
+msgstr ""
+
+#: app/templates/app/403.html:7
+#, fuzzy
+#| msgid "You don't have permission to edit anything."
+msgid "You do not have permission to access this page."
+msgstr "아무 것도 수정할 수있는 권한이 없습니다."
+
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
 msgstr "404 페이지를 찾을 수 없음"
@@ -1426,11 +1443,11 @@ msgstr "500 내부 서버 오류"
 msgid "Something happened. The server logs contain more information."
 msgstr "문제가 발생했습니다. 서버 로그에는 자세한 정보가 포함되어 있습니다."
 
-#: app/templates/app/about.html:25
+#: app/templates/app/about.html:26
 msgid "Minimize"
 msgstr ""
 
-#: app/templates/app/about.html:29
+#: app/templates/app/about.html:30
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1530,7 +1547,6 @@ msgstr ""
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#: app/templates/app/admin/login.html:4
 #, fuzzy
 #| msgid "Last Error"
 msgid "Error:"
@@ -1550,7 +1566,6 @@ msgstr "비밀번호 변경"
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#: app/templates/app/admin/login.html:24
 #, fuzzy
 #| msgid "Please correct the error below."
 msgid "Please correct the error below."
@@ -1786,25 +1801,6 @@ msgstr ""
 "데이터베이스 설치에 문제가 있습니다. 적절한 데이터베이스 테이블이 작성되었는"
 "지 확인하고 적절한 사용자가 데이터베이스를 읽을 수 있는지 확인하십시오."
 
-#: app/templates/app/admin/login.html:40
-#, python-format
-msgid ""
-"You are authenticated as %(username)s, but are not authorized to access this "
-"page. Would you like to login to a different account?"
-msgstr ""
-"귀하는 %(username)s로 인증되었지만 이 페이지에 액세스할 수 있는 권한이 없습니"
-"다. 다른 계정으로 로그인하시겠습니까?"
-
-#: app/templates/app/admin/login.html:60
-#, fuzzy
-#| msgid "Forgotten your password or username?"
-msgid "Forgotten your login credentials?"
-msgstr "비밀번호 또는 사용자 이름을 잊으셨습니까?"
-
-#: app/templates/app/admin/login.html:64
-msgid "Log in"
-msgstr "로그인"
-
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
 msgstr "최근 기록"
@@ -1994,7 +1990,7 @@ msgstr "%(total)s 중 %(used)s 사용 됨"
 msgid "Logout"
 msgstr "로그아웃"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:60
+#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
 msgid "Dashboard"
 msgstr "대쉬보드"
 
@@ -2022,7 +2018,7 @@ msgstr "그룹"
 msgid "Brand"
 msgstr "브랜드"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:133
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
 msgid "About"
 msgstr "소개"
 
@@ -2164,35 +2160,35 @@ msgstr ""
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Adds a mock button to the boundary option in the edit preset dialog"
+#: app/views/app.py:42
+msgid "Logged out"
 msgstr ""
 
-#: app/views/app.py:58
+#: app/views/app.py:63
 msgid "First Project"
 msgstr "첫 번째 프로젝트"
 
-#: app/views/app.py:74
+#: app/views/app.py:79
 msgid "Map"
 msgstr "지도"
 
-#: app/views/app.py:108
+#: app/views/app.py:113
 msgid "3D Model Display"
 msgstr "3D 모델 표시"
 
-#: app/views/app.py:141
+#: app/views/app.py:146
 #, python-format
 msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
 
-#: app/views/app.py:145
+#: app/views/app.py:150
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s 는 오프라인인 것 같음."
 
-#: app/views/app.py:183
+#: app/views/app.py:188
 msgid "Welcome"
 msgstr "환영 합니다"
 
@@ -2233,8 +2229,9 @@ msgstr ""
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
 
-#: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
-#: coreplugins/measure/api.py:21
+#: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
+#: coreplugins/annotate/dist/annotate/api.py:61
+#: coreplugins/annotate/dist/annotate/api.py:101 coreplugins/measure/api.py:21
 msgid ""
 "No surface model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dsm\", then press Restart --> "
@@ -2243,7 +2240,9 @@ msgstr ""
 "사용 가능한 표면 모델이 없습니다. 대시보드에서 이 작업을 선택하고 편집을 누르"
 "고 옵션에서 \"dsm\"을 선택한 다음 다시 시작 --> DEM에서를 누릅니다."
 
-#: coreplugins/annotate/api.py:63 coreplugins/annotate/dist/annotate/api.py:63
+#: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
+#: coreplugins/annotate/dist/annotate/api.py:64
+#: coreplugins/annotate/dist/annotate/api.py:104
 #, fuzzy
 #| msgid ""
 #| "No surface model available. From the Dashboard, select this task, press "
@@ -2257,18 +2256,28 @@ msgstr ""
 "사용 가능한 표면 모델이 없습니다. 대시보드에서 이 작업을 선택하고 편집을 누르"
 "고 옵션에서 \"dsm\"을 선택한 다음 다시 시작 --> DEM에서를 누릅니다."
 
-#: coreplugins/annotate/api.py:65 coreplugins/annotate/dist/annotate/api.py:65
+#: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
+#: coreplugins/annotate/dist/annotate/api.py:66
+#: coreplugins/annotate/dist/annotate/api.py:106
 #, fuzzy
 #| msgid "Invalid zip file"
 msgid "Invalid surface model"
 msgstr "잘못된 zip 파일"
 
-#: coreplugins/annotate/api.py:91 coreplugins/annotate/dist/annotate/api.py:91
+#: coreplugins/annotate/api.py:111
+#: coreplugins/annotate/dist/annotate/api.py:111
+#, fuzzy
+#| msgid "Invalid zip file"
+msgid "Invalid line"
+msgstr "잘못된 zip 파일"
+
+#: coreplugins/annotate/api.py:128
+#: coreplugins/annotate/dist/annotate/api.py:128
 msgid "A digital surface model is required to compute elevation values."
 msgstr "고도 값을 계산하기 위해 디지털 표면 모델이 필요합니다."
 
-#: coreplugins/annotate/api.py:125
-#: coreplugins/annotate/dist/annotate/api.py:125
+#: coreplugins/annotate/api.py:162
+#: coreplugins/annotate/dist/annotate/api.py:162
 #, fuzzy
 #| msgid "A digital surface model is required to compute elevation values."
 msgid "An orthophoto is required to compute temperature values."
@@ -2454,6 +2463,22 @@ msgstr ""
 msgid "Engine used by the node."
 msgstr "노드에서 사용하는 엔진입니다."
 
+#, python-format
+#~ msgid ""
+#~ "You are authenticated as %(username)s, but are not authorized to access "
+#~ "this page. Would you like to login to a different account?"
+#~ msgstr ""
+#~ "귀하는 %(username)s로 인증되었지만 이 페이지에 액세스할 수 있는 권한이 없"
+#~ "습니다. 다른 계정으로 로그인하시겠습니까?"
+
+#, fuzzy
+#~| msgid "Forgotten your password or username?"
+#~ msgid "Forgotten your login credentials?"
+#~ msgstr "비밀번호 또는 사용자 이름을 잊으셨습니까?"
+
+#~ msgid "Log in"
+#~ msgstr "로그인"
+
 #~ msgid "Enter a username and password."
 #~ msgstr "사용자명과 암호를 입력하세요."
 
@@ -2466,9 +2491,6 @@ msgstr "노드에서 사용하는 엔진입니다."
 
 #~ msgid "Add"
 #~ msgstr "추가"
-
-#~ msgid "You don't have permission to edit anything."
-#~ msgstr "아무 것도 수정할 수있는 권한이 없습니다."
 
 #, python-format
 #~ msgid "Change selected %(model)s"

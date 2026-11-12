@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 21:01+0000\n"
+"POT-Creation-Date: 2026-11-12 19:02+0000\n"
 "PO-Revision-Date: 2026-11-09 09:51+0000\n"
 "Last-Translator: \"Luca P.\" <upa@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/"
-"it/>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/it/"
+">\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -361,19 +361,30 @@ msgstr "Non è possibile accedere con le credenziali fornite."
 msgid "Must include \"username\" and \"password\"."
 msgstr "Deve includere \"username\" e \"password\"."
 
-#: app/api/jwt.py:74
+#: app/api/jwt.py:71
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid token."
+msgstr "Azione non valida"
+
+#: app/api/jwt.py:76
 msgid "orig_iat field is required."
 msgstr "campo orig_iat è obbligatorio."
 
-#: app/api/jwt.py:76
+#: app/api/jwt.py:78
 msgid "Refresh has expired."
 msgstr "Aggiornamento scaduto."
 
-#: app/api/media.py:72 app/api/tasks.py:323
+#: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
 msgstr "Nessun file caricato"
 
-#: app/api/media.py:153 app/api/splats.py:139
+#: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
+#: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
+msgid "Invalid uuid"
+msgstr "UUID non valido"
+
+#: app/api/media.py:158 app/api/splats.py:140
 msgid "File exceeds maximum allowed size"
 msgstr "Il file supera la dimensione massima consentita"
 
@@ -461,13 +472,13 @@ msgstr "Deve essere caricato un singolo file"
 msgid "Invalid filename"
 msgstr "Nome file non valido"
 
-#: app/api/splats.py:86 app/api/tasks.py:928
+#: app/api/splats.py:86 app/api/tasks.py:941
 msgid "Invalid file type"
 msgstr "Tipo file non valido"
 
-#: app/api/splats.py:169 app/api/tasks.py:591 app/api/tasks.py:595
-#: app/api/tasks.py:735 app/api/tasks.py:738 app/api/tasks.py:771
-#: app/api/tasks.py:1097
+#: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
+#: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
+#: app/api/tasks.py:1112
 msgid "Asset does not exist"
 msgstr "La risorsa non esiste"
 
@@ -475,147 +486,143 @@ msgstr "La risorsa non esiste"
 msgid "Cannot create task, processing node is not valid"
 msgstr "Impossibile creare l'attività, il nodo di elaborazione non è valido"
 
-#: app/api/tasks.py:301
+#: app/api/tasks.py:308
 msgid "You need to upload at least 1 file before commit"
 msgstr "Devi caricare almeno 1 file prima di confermare"
 
-#: app/api/tasks.py:379
+#: app/api/tasks.py:393
 msgid "Cannot duplicate task"
 msgstr "Impossibile duplicare l'attività"
 
-#: app/api/tasks.py:396
+#: app/api/tasks.py:411
 msgid "Cannot create task, alignment task is not valid"
 msgstr "Impossibile creare l'attività, l'attività di allineamento non è valida"
 
-#: app/api/tasks.py:413
+#: app/api/tasks.py:428
 msgid "Cannot create task, you need at least 2 images"
 msgstr "Non è possibile creare l'attività, richieste almeno 2 immagini"
 
-#: app/api/tasks.py:789 app/api/tasks.py:1009
+#: app/api/tasks.py:800 app/api/tasks.py:1024
 msgid "Imported Task"
 msgstr "Attività importata"
 
-#: app/api/tasks.py:793 app/api/tasks.py:920
+#: app/api/tasks.py:804 app/api/tasks.py:933
 msgid "Cannot create task, you need to upload 1 file"
 msgstr "Impossibile creare l'attività, devi caricare almeno 1 file"
 
-#: app/api/tasks.py:797
+#: app/api/tasks.py:808
 msgid "Cannot create task, either specify a URL or upload 1 file."
 msgstr "Impossibile creare l'attività, indicare un URL oppure caricare 1 file."
 
-#: app/api/tasks.py:799
+#: app/api/tasks.py:810
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "URL non valido. Intendevi %(hint)s?"
 
-#: app/api/tasks.py:904 app/api/tasks.py:907
-msgid "Invalid uuid"
-msgstr "UUID non valido"
-
-#: app/api/tasks.py:939
+#: app/api/tasks.py:952
 msgid "Invalid file type (extension mismatch)"
 msgstr "Tipo file non valido (estensione non corrispondente)"
 
-#: app/api/tasks.py:963
+#: app/api/tasks.py:976
 msgid "Some parameters are not integers"
 msgstr "Alcuni parametri non sono interi"
 
-#: app/api/tasks.py:1022 app/api/tasks.py:1027
+#: app/api/tasks.py:1037 app/api/tasks.py:1042
 msgid "GeoTIFF must have a valid CRS"
 msgstr "GeoTIFF deve avere un CRS valido"
 
-#: app/api/tasks.py:1029
+#: app/api/tasks.py:1044
 msgid "Elevation model must have at most 2 band"
 msgstr "Il modello di elevazione deve avere al massimo 2 band"
 
-#: app/api/tasks.py:1035
+#: app/api/tasks.py:1050
 msgid "Point cloud must be a valid LAZ/LAS file"
 msgstr "La point cloud deve essere un file LAZ/LAS valido"
 
-#: app/api/tasks.py:1041
+#: app/api/tasks.py:1056
 msgid "Textured model must be a valid GLB file"
 msgstr "Il modello testurizzato deve essere un file GLB valido"
 
-#: app/api/tasks.py:1045
+#: app/api/tasks.py:1060
 msgid "No assets uploaded"
 msgstr "Nessun asset caricato"
 
-#: app/api/tiler.py:360
+#: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
 msgstr "Parametro limiti non valido"
 
-#: app/api/tiler.py:379
+#: app/api/tiler.py:404
 msgid "Invalid tile size parameter"
 msgstr "Parametro dimensione riquadro non valido"
 
-#: app/api/tiler.py:410 app/api/tiler.py:490
+#: app/api/tiler.py:437 app/api/tiler.py:521
 msgid "Outside of bounds"
 msgstr "Fuori dai limiti"
 
-#: app/api/tiler.py:421
+#: app/api/tiler.py:448
 msgid "Invalid boundaries"
 msgstr "Limiti non validi"
 
-#: app/api/tiler.py:496 app/api/tiler.py:624
+#: app/api/tiler.py:527 app/api/tiler.py:670
 msgid "Not a valid color_map value"
 msgstr "Valore di color_map non valido"
 
-#: app/api/tiler.py:504
+#: app/api/tiler.py:535
 msgid "Invalid rescale value"
 msgstr "Valore di ridimensionamento non valido"
 
-#: app/api/tiler.py:526
+#: app/api/tiler.py:567
 msgid "Invalid hillshade value"
 msgstr "Valore di ombreggiatura non valido"
 
-#: app/api/tiler.py:529
+#: app/api/tiler.py:570
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr ""
 "Impossibile calcolare l'ombreggiatura di raster senza elevazione (sono state "
 "trovate più bande)"
 
-#: app/api/tiler.py:553
+#: app/api/tiler.py:594
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
 "Impossibile elaborare il riquadro: immagine di intensità fornita, ma nessun "
 "dato RGB è stato calcolato."
 
-#: app/api/tiler.py:609 app/api/tiler.py:611
+#: app/api/tiler.py:652 app/api/tiler.py:654
 #, python-format
 msgid "Unsupported format: %(value)s"
 msgstr "Formato non supportato: %(value)s"
 
-#: app/api/tiler.py:630
+#: app/api/tiler.py:676
 #, python-format
 msgid "Invalid resample value: %(value)s"
 msgstr "Valore di ricampionamento non valido: %(value)s"
 
-#: app/api/tiler.py:636
+#: app/api/tiler.py:682
 #, python-format
 msgid "Invalid EPSG code: %(value)s"
 msgstr "Codice EPSG non valido: %(value)s"
 
-#: app/api/tiler.py:642 app/api/tiler.py:644
+#: app/api/tiler.py:688 app/api/tiler.py:690
 #, python-format
 msgid "Invalid PROJ string: %(value)s"
 msgstr "Stringa PROJ non valida: %(value)s"
 
-#: app/api/tiler.py:647
+#: app/api/tiler.py:693
 msgid "Both formula and bands parameters are required"
 msgstr "Sono richiesti sia la formula che i parametri delle bande"
 
-#: app/api/tiler.py:670
+#: app/api/tiler.py:716
 #, python-format
 msgid "Invalid rescale value: %(value)s"
 msgstr "Valore di ridimensionamento non valido: %(value)s"
 
-#: app/api/tiler.py:678
+#: app/api/tiler.py:724
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
 msgstr "Valore di ombreggiatura non valido: %(value)s"
 
-#: app/api/tiler.py:689
+#: app/api/tiler.py:735
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Non è possibile usare epsg su dataset non georeferenziati"
 
@@ -993,7 +1000,7 @@ msgstr ""
 "Nodo di elaborazione assegnato a questa attività (o nullo se questa attività "
 "non è stata ancora associata)"
 
-#: app/models/task.py:248 app/views/app.py:149 nodeodm/models.py:36
+#: app/models/task.py:248 app/views/app.py:154 nodeodm/models.py:36
 msgid "Processing Node"
 msgstr "Nodo elaborazione"
 
@@ -1240,28 +1247,28 @@ msgstr "Attività"
 msgid "unnamed"
 msgstr "senza nome"
 
-#: app/models/task.py:616
+#: app/models/task.py:620
 msgid "Importing assets..."
 msgstr "Importazione risorse..."
 
-#: app/models/task.py:671 app/models/task.py:950
+#: app/models/task.py:675 app/models/task.py:954
 msgid "Invalid zip file"
 msgstr "File zip non valido"
 
-#: app/models/task.py:673
+#: app/models/task.py:677
 msgid "Unsupported compression method"
 msgstr "Metodo di compressione non supportato"
 
-#: app/models/task.py:768
+#: app/models/task.py:772
 #, python-format
 msgid "Connection error: %(error)s"
 msgstr "Errore di connessione: %(error)s"
 
-#: app/models/task.py:848
+#: app/models/task.py:852
 msgid "Cannot restart a task that has no processing node"
 msgstr "Impossibile riavviare una attività che non ha un nodo di elaborazione"
 
-#: app/models/task.py:1053
+#: app/models/task.py:1057
 msgid "Done!"
 msgstr "Fatto!"
 
@@ -1374,6 +1381,16 @@ msgstr "Colore di sfondo delle notifiche con esito positivo."
 msgid "Success"
 msgstr "Successo"
 
+#: app/templates/app/403.html:6
+msgid "403 Forbidden"
+msgstr ""
+
+#: app/templates/app/403.html:7
+#, fuzzy
+#| msgid "You don't have permission to edit anything."
+msgid "You do not have permission to access this page."
+msgstr "Non hai il permesso di modificare nulla."
+
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
 msgstr "404 Pagina Non Trovata"
@@ -1391,11 +1408,11 @@ msgid "Something happened. The server logs contain more information."
 msgstr ""
 "E' successo qualcosa. Il log del server contiene maggiori informazioni."
 
-#: app/templates/app/about.html:25
+#: app/templates/app/about.html:26
 msgid "Minimize"
 msgstr "Minimizza"
 
-#: app/templates/app/about.html:29
+#: app/templates/app/about.html:30
 #, python-format
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
@@ -1483,7 +1500,6 @@ msgstr ""
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#: app/templates/app/admin/login.html:4
 msgid "Error:"
 msgstr "Errore:"
 
@@ -1499,7 +1515,6 @@ msgstr "Imposta password"
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#: app/templates/app/admin/login.html:24
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
 msgstr[0] "Per favore correggi l'errore qui sotto."
@@ -1726,23 +1741,6 @@ msgstr ""
 "state create le tabelle di database appropriate e che il database sia "
 "leggibile dall'utente appropriato."
 
-#: app/templates/app/admin/login.html:40
-#, python-format
-msgid ""
-"You are authenticated as %(username)s, but are not authorized to access this "
-"page. Would you like to login to a different account?"
-msgstr ""
-"Sei autenticato come %(username)s, ma non sei autorizzato ad accedere a "
-"questa pagina. Desideri accedere con un altro account?"
-
-#: app/templates/app/admin/login.html:60
-msgid "Forgotten your login credentials?"
-msgstr "Hai dimenticato le credenziali di accesso?"
-
-#: app/templates/app/admin/login.html:64
-msgid "Log in"
-msgstr "Accedi"
-
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
 msgstr "Storia"
@@ -1929,7 +1927,7 @@ msgstr "%(used)s di %(total)s usati"
 msgid "Logout"
 msgstr "Esci"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:60
+#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Pannello di controllo"
 
@@ -1957,7 +1955,7 @@ msgstr "Gruppi"
 msgid "Brand"
 msgstr "Personalizza"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:133
+#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
 msgid "About"
 msgstr "Informazioni"
 
@@ -2103,25 +2101,23 @@ msgstr ""
 "Un plugin per aggiungere un pulsante per scattare uno snapshot della mappa o "
 "del modello 3D."
 
-#: app/translations/plugin_manifest_autogenerated.py:15
-msgid "Adds a mock button to the boundary option in the edit preset dialog"
+#: app/views/app.py:42
+msgid "Logged out"
 msgstr ""
-"Aggiunge un pulsante fittizio all'opzione del contorno nella finestra di "
-"dialogo di modifica dei preset"
 
-#: app/views/app.py:58
+#: app/views/app.py:63
 msgid "First Project"
 msgstr "Primo Progetto"
 
-#: app/views/app.py:74
+#: app/views/app.py:79
 msgid "Map"
 msgstr "Mappa"
 
-#: app/views/app.py:108
+#: app/views/app.py:113
 msgid "3D Model Display"
 msgstr "Vista Modello 3D"
 
-#: app/views/app.py:141
+#: app/views/app.py:146
 #, python-format
 msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
@@ -2130,12 +2126,12 @@ msgstr ""
 "%(node)s è deprecato potrebbe non funzionare in una versione futura. Vedere "
 "la %(link_start)s guida alla migrazione %(link_end)s per aggiornarlo."
 
-#: app/views/app.py:145
+#: app/views/app.py:150
 #, python-format
 msgid "%(node)s seems to be offline."
 msgstr "%(node)s sembra offline."
 
-#: app/views/app.py:183
+#: app/views/app.py:188
 msgid "Welcome"
 msgstr "Benvenuto"
 
@@ -2176,8 +2172,9 @@ msgstr "Non posso creare l'utente. Esiste già un utente con la stessa e-mail."
 msgid "This account is disabled. Please contact an administrator."
 msgstr "Questo account è disabilitato. Per favore contatta un amministratore."
 
-#: coreplugins/annotate/api.py:60 coreplugins/annotate/dist/annotate/api.py:60
-#: coreplugins/measure/api.py:21
+#: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
+#: coreplugins/annotate/dist/annotate/api.py:61
+#: coreplugins/annotate/dist/annotate/api.py:101 coreplugins/measure/api.py:21
 msgid ""
 "No surface model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dsm\", then press Restart --> "
@@ -2187,7 +2184,9 @@ msgstr ""
 "questo processo, premi Edit, dalle opzioni verifica di spuntare \"dsm\", poi "
 "premi Restart --> From DEM."
 
-#: coreplugins/annotate/api.py:63 coreplugins/annotate/dist/annotate/api.py:63
+#: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
+#: coreplugins/annotate/dist/annotate/api.py:64
+#: coreplugins/annotate/dist/annotate/api.py:104
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
@@ -2197,18 +2196,28 @@ msgstr ""
 "processo, premi Edit, dalle opzioni verifica di spuntare \"dtm\", poi premi "
 "Restart --> From DEM."
 
-#: coreplugins/annotate/api.py:65 coreplugins/annotate/dist/annotate/api.py:65
+#: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
+#: coreplugins/annotate/dist/annotate/api.py:66
+#: coreplugins/annotate/dist/annotate/api.py:106
 msgid "Invalid surface model"
 msgstr "Modello della superficie non valido"
 
-#: coreplugins/annotate/api.py:91 coreplugins/annotate/dist/annotate/api.py:91
+#: coreplugins/annotate/api.py:111
+#: coreplugins/annotate/dist/annotate/api.py:111
+#, fuzzy
+#| msgid "Invalid filename"
+msgid "Invalid line"
+msgstr "Nome file non valido"
+
+#: coreplugins/annotate/api.py:128
+#: coreplugins/annotate/dist/annotate/api.py:128
 msgid "A digital surface model is required to compute elevation values."
 msgstr ""
 "E' richiesto un modello digitale della superficie per calcolare i valori di "
 "elevazione."
 
-#: coreplugins/annotate/api.py:125
-#: coreplugins/annotate/dist/annotate/api.py:125
+#: coreplugins/annotate/api.py:162
+#: coreplugins/annotate/dist/annotate/api.py:162
 msgid "An orthophoto is required to compute temperature values."
 msgstr "E' richiesta un ortofoto per calcolare i valori di temperatura."
 
@@ -2396,6 +2405,25 @@ msgstr ""
 msgid "Engine used by the node."
 msgstr "Motore usato dal nodo."
 
+#, python-format
+#~ msgid ""
+#~ "You are authenticated as %(username)s, but are not authorized to access "
+#~ "this page. Would you like to login to a different account?"
+#~ msgstr ""
+#~ "Sei autenticato come %(username)s, ma non sei autorizzato ad accedere a "
+#~ "questa pagina. Desideri accedere con un altro account?"
+
+#~ msgid "Forgotten your login credentials?"
+#~ msgstr "Hai dimenticato le credenziali di accesso?"
+
+#~ msgid "Log in"
+#~ msgstr "Accedi"
+
+#~ msgid "Adds a mock button to the boundary option in the edit preset dialog"
+#~ msgstr ""
+#~ "Aggiunge un pulsante fittizio all'opzione del contorno nella finestra di "
+#~ "dialogo di modifica dei preset"
+
 #~ msgid "Enter a username and password."
 #~ msgstr "Immettere un nome utente e una password."
 
@@ -2408,9 +2436,6 @@ msgstr "Motore usato dal nodo."
 
 #~ msgid "Add"
 #~ msgstr "Aggiungi"
-
-#~ msgid "You don't have permission to edit anything."
-#~ msgstr "Non hai il permesso di modificare nulla."
 
 #, python-format
 #~ msgid "Change selected %(model)s"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-18 20:03+0000\n"
+"POT-Creation-Date: 2026-11-12 19:02+0000\n"
 "PO-Revision-Date: 2026-04-30 18:09+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/webodm/react-ui/"
@@ -20,80 +20,247 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.17.1\n"
 
-#: app/static/app/js/Console.jsx:135
+#: app/static/app/js/Console.jsx:152
 #, python-format
 msgid "output truncated at %(count)s lines"
 msgstr "rezultat je skraćen na %(count)s retka"
 
-#: app/static/app/js/Console.jsx:147 app/static/app/js/Console.jsx:155
-#: app/static/app/js/Console.jsx:165
+#: app/static/app/js/Console.jsx:164 app/static/app/js/Console.jsx:172
+#: app/static/app/js/Console.jsx:182
 msgid "Toggle Fullscreen"
 msgstr "Uklj./Isklj. cjeloekranski prikaz"
 
-#: app/static/app/js/Console.jsx:148 app/static/app/js/Console.jsx:156
+#: app/static/app/js/Console.jsx:165 app/static/app/js/Console.jsx:173
 msgid "Exit Fullscreen"
 msgstr "Napusti cjeloekranski prikaz"
 
-#: app/static/app/js/Console.jsx:162
+#: app/static/app/js/Console.jsx:179
 msgid "Download To File"
 msgstr "Preuzmi u datoteku"
 
-#: app/static/app/js/Dashboard.jsx:26
+#: app/static/app/js/Dashboard.jsx:39
 msgid "Name field is required"
 msgstr "Potrebno je ime polja"
 
-#: app/static/app/js/Dashboard.jsx:62
+#: app/static/app/js/Dashboard.jsx:83
 msgid "Add Project"
 msgstr "Dodaj projekt"
 
-#: app/static/app/js/Dashboard.jsx:97
+#: app/static/app/js/Dashboard.jsx:120
 msgid "Your changes will be lost. Are you sure you want to leave?"
 msgstr "Tvoje promjene će se izgubiti. Stvarno želiš napustiti?"
 
-#: app/static/app/js/MapView.jsx:67
+#: app/static/app/js/MapView.jsx:127
 #: app/static/app/js/classes/AssetDownloads.js:46
 #: app/static/app/js/classes/PipelineSteps.js:47
-#: app/static/app/js/components/Map.jsx:85
+#: app/static/app/js/components/EditPresetDialog.jsx:97
+#: app/static/app/js/components/ImportExternalPanel.jsx:12
+#: app/static/app/js/components/Map.jsx:133
 msgid "Orthophoto"
 msgstr "Ortogonalna aerofotografija"
 
-#: app/static/app/js/MapView.jsx:72 app/static/app/js/components/Map.jsx:87
+#: app/static/app/js/MapView.jsx:132
+#: app/static/app/js/components/EditPresetDialog.jsx:28
+#: app/static/app/js/components/Map.jsx:135
+#, fuzzy
+#| msgid "Normal"
+msgid "Thermal"
+msgstr "Normalno"
+
+#: app/static/app/js/MapView.jsx:132 app/static/app/js/components/Map.jsx:135
 msgid "Plant Health"
 msgstr "Zdravlje biljaka"
 
-#: app/static/app/js/MapView.jsx:77
-#: app/static/app/js/classes/AssetDownloads.js:51
+#: app/static/app/js/MapView.jsx:137
+#: app/static/app/js/classes/AssetDownloads.js:52
+#: app/static/app/js/components/ImportExternalPanel.jsx:13
+#: app/static/app/js/components/Map.jsx:137
 msgid "Surface Model"
 msgstr "Model površine"
 
-#: app/static/app/js/MapView.jsx:82
-#: app/static/app/js/classes/AssetDownloads.js:49
+#: app/static/app/js/MapView.jsx:142
+#: app/static/app/js/classes/AssetDownloads.js:50
+#: app/static/app/js/components/ImportExternalPanel.jsx:14
+#: app/static/app/js/components/Map.jsx:139
 msgid "Terrain Model"
 msgstr "Model terena"
 
-#: app/static/app/js/ModelView.jsx:36
+#: app/static/app/js/MapView.jsx:155
+msgid "A map is not available for this task or project."
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
 msgstr "Nije moguće postaviti početni prikaz kamere"
 
-#: app/static/app/js/ModelView.jsx:61
+#: app/static/app/js/ModelView.jsx:67
 msgid "set initial camera view"
 msgstr "postavi početni prikaz kamere"
 
-#: app/static/app/js/ModelView.jsx:82
+#: app/static/app/js/ModelView.jsx:89 app/static/app/js/components/Map.jsx:606
 msgid "Cameras"
 msgstr "Kamere"
 
-#: app/static/app/js/ModelView.jsx:95
-msgid "Show Model"
-msgstr "Pokaži model"
-
-#: app/static/app/js/ModelView.jsx:122
+#: app/static/app/js/ModelView.jsx:114
 msgid "Show Cameras"
 msgstr "Pokaži kamere"
 
-#: app/static/app/js/ModelView.jsx:677
+#: app/static/app/js/ModelView.jsx:117
+#: app/static/app/js/components/ManageMediaDialog.jsx:560
+#: coreplugins/lightning/public/ShareDialog.jsx:336
+msgid "Size"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
+msgid "Cannot load splats renderer"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:818
+msgid ""
+"Could not load splats. This task doesn't seem to have a valid splats file."
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:925
+#: app/static/app/js/classes/AssetDownloads.js:54
+#: app/static/app/js/components/EditPresetDialog.jsx:61
+#: app/static/app/js/components/ImportExternalPanel.jsx:15
+msgid "Point Cloud"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:932
+#: app/static/app/js/classes/AssetDownloads.js:56
+#: app/static/app/js/components/ImportExternalPanel.jsx:16
+msgid "Textured Model"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:939
+#: app/static/app/js/classes/AssetDownloads.js:63
+#: app/static/app/js/components/TaskListItem.jsx:866
+msgid "Splats"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:981
+#, fuzzy
+#| msgid "Loading..."
+msgid "Loading splats..."
+msgstr "Učitavanje …"
+
+#: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
 msgstr "Učitavanje modela s teksturom …"
+
+#: app/static/app/js/PluginBrowser.jsx:57
+msgid "Installed"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:61
+#, python-format
+msgid "Requires WebODM %(version)s"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:65
+msgid "Update"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:69
+msgid "Install"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:80
+msgid "Experimental"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:81
+#, fuzzy
+#| msgid "Duplicate"
+msgid "Deprecated"
+msgstr "Dupliciraj"
+
+#: app/static/app/js/PluginBrowser.jsx:82
+#, python-format
+msgid "by %(author)s"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:159
+msgid "The plugin repository returned an error:"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:161
+#: app/static/app/js/PluginBrowser.jsx:167
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid ""
+"The plugin repository returned an invalid response. Please try again later."
+msgstr "Nije moguće stvoriti novi zadatak. Pokušaj ponovo kasnije."
+
+#: app/static/app/js/PluginBrowser.jsx:164
+msgid ""
+"Cannot connect to the plugin repository. Check that this server has internet "
+"access and that the connection is not blocked by a firewall or proxy."
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:187
+#: app/static/app/js/components/SplatsDialog.jsx:452
+#, fuzzy
+#| msgid "Downloading…"
+msgid "Downloading..."
+msgstr "Preuzimanje u tijeku …"
+
+#: app/static/app/js/PluginBrowser.jsx:191
+msgid "The plugin repository returned an error while downloading the plugin:"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:193
+#: app/static/app/js/PluginBrowser.jsx:196
+msgid ""
+"Cannot download the plugin. The connection to the plugin repository failed "
+"or was interrupted."
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:199
+#, fuzzy
+#| msgid "Restarting..."
+msgid "Installing..."
+msgstr "Ponovno pokretanje..."
+
+#: app/static/app/js/PluginBrowser.jsx:215
+#: app/static/app/js/PluginBrowser.jsx:217
+msgid "WebODM could not install the plugin:"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:220
+msgid ""
+"Cannot send the plugin to WebODM. The connection was interrupted or the "
+"server is not responding."
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:253
+msgid "No plugins found."
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:276
+#: app/static/app/js/components/ErrorMessage.jsx:34
+#: app/static/app/js/components/ImportExternalPanel.jsx:283
+#: app/static/app/js/components/ManageMediaDialog.jsx:599
+#: app/static/app/js/components/NewTaskPanel.jsx:252
+#: app/static/app/js/components/NewTaskPanel.jsx:259
+#: app/static/app/js/components/ProjectListItem.jsx:882
+#: app/static/app/js/components/ProjectListItem.jsx:895
+#: app/static/app/js/components/SplatsDialog.jsx:580
+#: app/static/app/js/components/Toaster.jsx:317
+msgid "Close"
+msgstr "Zatvori"
+
+#: app/static/app/js/PluginBrowser.jsx:277
+#: app/static/app/js/PluginBrowser.jsx:325
+msgid "Install Plugins"
+msgstr ""
+
+#: app/static/app/js/PluginBrowser.jsx:287
+#, fuzzy
+#| msgid "Search"
+msgid "Search plugins"
+msgstr "Traži"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -103,81 +270,148 @@ msgstr "Ortogonalna aerofotografija (MB pločice)"
 msgid "Orthophoto (Tiles)"
 msgstr "Ortogonalna aerofotografija (pločice)"
 
-#: app/static/app/js/classes/AssetDownloads.js:50
+#: app/static/app/js/classes/AssetDownloads.js:49
+#, fuzzy
+#| msgid "Orthophoto (Tiles)"
+msgid "Orthophoto Cutline"
+msgstr "Ortogonalna aerofotografija (pločice)"
+
+#: app/static/app/js/classes/AssetDownloads.js:51
 msgid "Terrain Model (Tiles)"
 msgstr "Model terena (pločice)"
 
-#: app/static/app/js/classes/AssetDownloads.js:52
+#: app/static/app/js/classes/AssetDownloads.js:53
 msgid "Surface Model (Tiles)"
 msgstr "Model površine (pločice)"
 
-#: app/static/app/js/classes/AssetDownloads.js:53
-msgid "Point Cloud"
-msgstr ""
-
-#: app/static/app/js/classes/AssetDownloads.js:54
+#: app/static/app/js/classes/AssetDownloads.js:55
 msgid "Point Cloud (3D Tiles)"
 msgstr ""
 
-#: app/static/app/js/classes/AssetDownloads.js:55
-msgid "Textured Model"
-msgstr ""
-
-#: app/static/app/js/classes/AssetDownloads.js:56
+#: app/static/app/js/classes/AssetDownloads.js:57
 msgid "Textured Model (3D Tiles)"
 msgstr ""
 
-#: app/static/app/js/classes/AssetDownloads.js:57
+#: app/static/app/js/classes/AssetDownloads.js:58
+#, fuzzy
+#| msgid "Terrain Model (Tiles)"
+msgid "Textured Model (glTF)"
+msgstr "Model terena (pločice)"
+
+#: app/static/app/js/classes/AssetDownloads.js:59
 msgid "Camera Parameters"
 msgstr "Parametri kamere"
 
-#: app/static/app/js/classes/AssetDownloads.js:58
+#: app/static/app/js/classes/AssetDownloads.js:60
 msgid "Camera Shots"
 msgstr "Snimke kamere"
 
-#: app/static/app/js/classes/AssetDownloads.js:59
+#: app/static/app/js/classes/AssetDownloads.js:61
+#: app/static/app/js/components/Map.jsx:678
 msgid "Ground Control Points"
 msgstr "Kontrolne točke na tlu"
 
-#: app/static/app/js/classes/AssetDownloads.js:60
+#: app/static/app/js/classes/AssetDownloads.js:62
 msgid "Quality Report"
 msgstr "Izvještaj o kvaliteti"
 
-#: app/static/app/js/classes/AssetDownloads.js:65
+#: app/static/app/js/classes/AssetDownloads.js:66
+#: coreplugins/lightning/public/ShareDialog.jsx:328
 msgid "All Assets"
 msgstr "Svi resursi"
 
-#: app/static/app/js/classes/Basemaps.js:9
-msgid "Google Maps Hybrid"
-msgstr "Hibridne Google karte"
+#: app/static/app/js/classes/Gcp.js:18
+#, fuzzy, python-format
+#| msgid "Invalid response: %(error)s"
+msgid "Invalid CRS: %(line)s"
+msgstr "Neispravan odgovor: %(error)s"
 
-#: app/static/app/js/classes/Basemaps.js:17
-msgid "ESRI Satellite"
-msgstr "ESRI satelit"
+#: app/static/app/js/classes/Gcp.js:34 app/static/app/js/classes/Gcp.js:38
+#, fuzzy, python-format
+#| msgid "Invalid response: %(error)s"
+msgid "Invalid line %(num)s: %(line)s"
+msgstr "Neispravan odgovor: %(error)s"
 
-#: app/static/app/js/classes/Basemaps.js:26
-msgid "OSM Mapnik"
-msgstr "OSM Mapnik"
+#: app/static/app/js/classes/Gcp.js:44
+msgid "Empty GCP file"
+msgstr ""
 
-#: app/static/app/js/classes/PendingActions.js:11
+#: app/static/app/js/classes/OverlayColors.js:5
+#: coreplugins/annotate/public/markers.js:6
+msgid "Blue"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayColors.js:9
+#: coreplugins/annotate/public/markers.js:10
+#, fuzzy
+#| msgid "Read"
+msgid "Red"
+msgstr "Čitaj"
+
+#: app/static/app/js/classes/OverlayColors.js:13
+#: coreplugins/annotate/public/markers.js:14
+msgid "Green"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayColors.js:17
+#: coreplugins/annotate/public/markers.js:18
+#, fuzzy
+#| msgid "Hello,"
+msgid "Yellow"
+msgstr "Zdravo,"
+
+#: app/static/app/js/classes/OverlayColors.js:21
+#: coreplugins/annotate/public/markers.js:22
+msgid "Pink"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayColors.js:25
+#: coreplugins/annotate/public/markers.js:26
+msgid "Orange"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayColors.js:29
+#: coreplugins/annotate/public/markers.js:30
+msgid "Gray"
+msgstr ""
+
+#: app/static/app/js/classes/OverlayLayer.js:14
+#, fuzzy, python-format
+#| msgid "%(file)s is bigger than 5 MB."
+msgid "%(file)s is bigger than %(size)s MB."
+msgstr "%(file)s je veća od 5 MB."
+
+#: app/static/app/js/classes/OverlayLayer.js:23
+#, python-format
+msgid "Not a proper JSON file: %(file)s"
+msgstr ""
+
+#: app/static/app/js/classes/PendingActions.js:12
 msgid "Canceling..."
 msgstr "Prekidanje …"
 
-#: app/static/app/js/classes/PendingActions.js:14
-#: app/static/app/js/components/FormDialog.jsx:163
+#: app/static/app/js/classes/PendingActions.js:15
+#: app/static/app/js/components/FormDialog.jsx:177
 msgid "Deleting..."
 msgstr "Brisanje..."
 
-#: app/static/app/js/classes/PendingActions.js:17
+#: app/static/app/js/classes/PendingActions.js:18
 msgid "Restarting..."
 msgstr "Ponovno pokretanje..."
 
-#: app/static/app/js/classes/PendingActions.js:20
+#: app/static/app/js/classes/PendingActions.js:21
 msgid "Resizing images..."
 msgstr "Mijenjanje veličine fotografija..."
 
-#: app/static/app/js/classes/PendingActions.js:23
+#: app/static/app/js/classes/PendingActions.js:24
+#: app/static/app/js/components/Map.jsx:1742
 msgid "Importing..."
+msgstr "Uvoz …"
+
+#: app/static/app/js/classes/PendingActions.js:27
+#, fuzzy
+#| msgid "Importing..."
+msgid "Compacting..."
 msgstr "Uvoz …"
 
 #: app/static/app/js/classes/PipelineSteps.js:7
@@ -185,6 +419,7 @@ msgid "Load Dataset"
 msgstr ""
 
 #: app/static/app/js/classes/PipelineSteps.js:12
+#: app/static/app/js/components/EditPresetDialog.jsx:50
 msgid "Structure From Motion"
 msgstr ""
 
@@ -197,14 +432,17 @@ msgid "Point Filtering"
 msgstr ""
 
 #: app/static/app/js/classes/PipelineSteps.js:27
+#: app/static/app/js/components/EditPresetDialog.jsx:71
 msgid "Meshing"
 msgstr ""
 
 #: app/static/app/js/classes/PipelineSteps.js:32
+#: app/static/app/js/components/EditPresetDialog.jsx:79
 msgid "Texturing"
 msgstr ""
 
 #: app/static/app/js/classes/PipelineSteps.js:37
+#: app/static/app/js/components/EditPresetDialog.jsx:56
 msgid "Georeferencing"
 msgstr ""
 
@@ -213,6 +451,8 @@ msgid "DEM"
 msgstr "digitalni model terena"
 
 #: app/static/app/js/classes/PipelineSteps.js:52
+#: app/static/app/js/components/TaskListItem.jsx:571
+#: app/static/app/js/components/TaskListItem.jsx:573
 msgid "Report"
 msgstr "Izvještaj"
 
@@ -233,6 +473,7 @@ msgid "Queued"
 msgstr "U redu čekanja"
 
 #: app/static/app/js/classes/StatusCodes.js:15
+#: app/static/app/js/components/Toaster.jsx:19
 msgid "Processing"
 msgstr "Obrađuje se"
 
@@ -248,107 +489,402 @@ msgstr "Dovršeno"
 msgid "Canceled"
 msgstr "Prekinuto"
 
-#: app/static/app/js/classes/TempLayer.js:14
-#, python-format
-msgid "%(file)s is bigger than 5 MB."
-msgstr "%(file)s je veća od 5 MB."
+#: app/static/app/js/classes/Units.js:15 app/static/app/js/classes/Units.js:22
+#: coreplugins/measure/public/app.jsx:36
+msgid "Acres"
+msgstr "Ari"
 
-#: app/static/app/js/classes/TempLayer.js:30
-#, python-format
-msgid "Not a proper zipped shapefile: %(file)s"
+#: app/static/app/js/classes/Units.js:29 app/static/app/js/classes/Units.js:36
+#: app/static/app/js/components/ExportAssetPanel.jsx:215
+#: coreplugins/measure/public/app.jsx:37
+msgid "Feet"
+msgstr "Stope"
+
+#: app/static/app/js/classes/Units.js:43
+msgid "Inches"
 msgstr ""
 
-#: app/static/app/js/classes/TempLayer.js:43
-#, python-format
-msgid "Not a proper JSON file: %(file)s"
+#: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
+msgid "Hectares"
+msgstr "Hektari"
+
+#: app/static/app/js/classes/Units.js:57
+#: app/static/app/js/components/ExportAssetPanel.jsx:214
+#: coreplugins/measure/public/app.jsx:40
+msgid "Meters"
+msgstr "Metri"
+
+#: app/static/app/js/classes/Units.js:64 coreplugins/measure/public/app.jsx:38
+msgid "Kilometers"
+msgstr "Kilometri"
+
+#: app/static/app/js/classes/Units.js:71
+#, fuzzy
+#| msgid "meters"
+msgid "Centimeters"
+msgstr "metri"
+
+#: app/static/app/js/classes/Units.js:78 app/static/app/js/classes/Units.js:85
+#: coreplugins/measure/public/app.jsx:41
+msgid "Miles"
+msgstr "Milje"
+
+#: app/static/app/js/classes/Units.js:92 app/static/app/js/classes/Units.js:99
+#, fuzzy
+#| msgid "Sq Feet"
+msgid "Square Feet"
+msgstr "Kvadratne stope"
+
+#: app/static/app/js/classes/Units.js:106
+#, fuzzy
+#| msgid "Sq Meters"
+msgid "Square Meters"
+msgstr "Kvadratni metri"
+
+#: app/static/app/js/classes/Units.js:113
+#, fuzzy
+#| msgid "Kilometers"
+msgid "Square Kilometers"
+msgstr "Kilometri"
+
+#: app/static/app/js/classes/Units.js:120
+#: app/static/app/js/classes/Units.js:127
+#, fuzzy
+#| msgid "Sq Miles"
+msgid "Square Miles"
+msgstr "Kvadratne milje"
+
+#: app/static/app/js/classes/Units.js:134
+msgid "Cubic Meters"
+msgstr "Kubični metri"
+
+#: app/static/app/js/classes/Units.js:141
+#: app/static/app/js/classes/Units.js:148
+#, fuzzy
+#| msgid "Cubic Meters"
+msgid "Cubic Yards"
+msgstr "Kubični metri"
+
+#: app/static/app/js/classes/Units.js:158
+msgid "Celsius"
 msgstr ""
 
-#: app/static/app/js/components/AssetDownloadButtons.jsx:56
-msgid "Download Assets"
+#: app/static/app/js/classes/Units.js:168
+msgid "Fahrenheit"
 msgstr ""
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:49
+#: app/static/app/js/classes/Units.js:286
+msgid "Metric"
+msgstr ""
+
+#: app/static/app/js/classes/Units.js:321
+msgid "Imperial"
+msgstr ""
+
+#: app/static/app/js/classes/Units.js:385
+msgid "Imperial (US)"
+msgstr ""
+
+#: app/static/app/js/components/AssetDownloadButtons.jsx:79
+#: app/static/app/js/components/ExportAssetDialog.jsx:41
+#: app/static/app/js/components/MapPreview.jsx:460
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:94
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:208
+msgid "Download"
+msgstr "Preuzmi"
+
+#: app/static/app/js/components/AssetDownloadButtons.jsx:111
+msgid "Backup"
+msgstr ""
+
+#: app/static/app/js/components/CropButton.jsx:16
+msgid "Crop"
+msgstr ""
+
+#: app/static/app/js/components/EditPermissionsPanel.jsx:63
 msgid "Cannot load permissions."
 msgstr "Neuspjelo učitavanje dozvola."
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:150
+#: app/static/app/js/components/EditPermissionsPanel.jsx:194
 msgid "Read/Write"
 msgstr "Čitaj/Zapiši"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:151
+#: app/static/app/js/components/EditPermissionsPanel.jsx:195
 msgid "Read"
 msgstr "Čitaj"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:152
+#: app/static/app/js/components/EditPermissionsPanel.jsx:196
 msgid "No Access"
 msgstr "Bez pristupa"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:225
+#: app/static/app/js/components/EditPermissionsPanel.jsx:278
+msgid "Group name"
+msgstr ""
+
+#: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
 msgstr "Korisničko ime"
 
-#: app/static/app/js/components/EditPermissionsPanel.jsx:248
+#: app/static/app/js/components/EditPermissionsPanel.jsx:320
 msgid "Permissions"
 msgstr "Dozvole"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:110
-#: app/static/app/js/components/EditTaskForm.jsx:523
+#: app/static/app/js/components/EditPermissionsPanel.jsx:327
+msgid "Add user"
+msgstr ""
+
+#: app/static/app/js/components/EditPermissionsPanel.jsx:328
+#, fuzzy
+#| msgid "Add Project"
+msgid "Add group"
+msgstr "Dodaj projekt"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:22
+#, fuzzy
+#| msgid "Start Processing"
+msgid "Input & Preprocessing"
+msgstr "Pokreni obradu"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:25
+#, fuzzy
+#| msgid "Camera Position"
+msgid "Camera Configuration"
+msgstr "Pozicija kamere"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:26
+msgid "Masking"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:27
+msgid "Multispectral"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:29
+msgid "Video Input"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:34
+msgid "Bounds & Cropping"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:37
+msgid "Boundary"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:42
+msgid "Coordinate Reference System"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:45
+#: app/static/app/js/components/EditTaskForm.jsx:626
+#: app/static/app/js/components/SplatsDialog.jsx:454
+msgid "Options"
+msgstr "Opcije"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:53
+msgid "Feature Extraction"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:54
+msgid "Feature Matching"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:55
+msgid "Reconstruction"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:64
+#, fuzzy
+#| msgid "Annotation"
+msgid "Generation"
+msgstr "Pribilješka"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:65
+#, fuzzy
+#| msgid "Filter:"
+msgid "Filtering"
+msgstr "Filtar:"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:66
+#, fuzzy
+#| msgid "Processing"
+msgid "Post-Processing"
+msgstr "Obrađuje se"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:74
+msgid "Mesh Generation"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:82
+#, fuzzy
+#| msgid "Options"
+msgid "Texture Options"
+msgstr "Opcije"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:87
+msgid "Digital Elevation Models"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:90
+#, fuzzy
+#| msgid "Task Output:"
+msgid "Outputs"
+msgstr "Rezultat zadatka:"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:91
+msgid "Resolution & Sampling"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:92
+#, fuzzy
+#| msgid "Classification filter"
+msgid "Ground Classification (SMRF)"
+msgstr "Klasifikacijski filtar"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:100
+#, fuzzy
+#| msgid "Orthophoto (Tiles)"
+msgid "Orthophoto Options"
+msgstr "Ortogonalna aerofotografija (pločice)"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:105
+#, fuzzy
+#| msgid "Miles"
+msgid "Tiles"
+msgstr "Milje"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:108
+#, fuzzy
+#| msgid "Options"
+msgid "Tiles Options"
+msgstr "Opcije"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:113
+msgid "System & Pipeline Control"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:116
+msgid "Performance"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:117
+msgid "Pipeline Control"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:122
+msgid "Split/Merge"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:125
+msgid "Splitting"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:126
+msgid "Merging"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:520
+#, fuzzy
+#| msgid "Other settings"
+msgid "Other Options"
+msgstr "Druge postavke"
+
+#: app/static/app/js/components/EditPresetDialog.jsx:557
+#: app/static/app/js/components/EditTaskForm.jsx:572
 msgid "Edit Task Options"
 msgstr "Opcije uređivanja zadatka"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:116
-#: app/static/app/js/components/EditProjectDialog.jsx:141
-#: app/static/app/js/components/EditTaskForm.jsx:597
+#: app/static/app/js/components/EditPresetDialog.jsx:564
+#: app/static/app/js/components/EditProjectDialog.jsx:169
+#: app/static/app/js/components/EditTaskForm.jsx:659
+#: app/static/app/js/components/Paginator.jsx:29
+#: app/static/app/js/components/ProjectListItem.jsx:62
+#: coreplugins/annotate/public/Popup.jsx:898
+#: coreplugins/annotate/public/Popup.jsx:905
+#: coreplugins/annotate/public/Popup.jsx:931
 msgid "Name"
 msgstr "Ime"
 
-#: app/static/app/js/components/EditPresetDialog.jsx:124
+#: app/static/app/js/components/EditPresetDialog.jsx:571
+#: app/static/app/js/components/Paginator.jsx:136
 msgid "Search"
 msgstr "Traži"
 
-#: app/static/app/js/components/EditProjectDialog.jsx:13
+#: app/static/app/js/components/EditPresetDialog.jsx:574
+msgid "Flat View"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:574
+msgid "Grouped View"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:578
+msgid "Expand"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:578
+msgid "Collapse"
+msgstr ""
+
+#: app/static/app/js/components/EditPresetDialog.jsx:588
+msgid "Search options..."
+msgstr ""
+
+#: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
 msgstr "Novi projekt"
 
-#: app/static/app/js/components/EditProjectDialog.jsx:14
+#: app/static/app/js/components/EditProjectDialog.jsx:17
 msgid "Create Project"
 msgstr "Stvori projekt"
 
-#: app/static/app/js/components/EditProjectDialog.jsx:15
+#: app/static/app/js/components/EditProjectDialog.jsx:18
 msgid "Creating project..."
 msgstr "Stvaranje projekta …"
 
-#: app/static/app/js/components/EditProjectDialog.jsx:17
-msgid ""
-"All tasks, images and models associated with this project will be "
-"permanently deleted. Are you sure you want to continue?"
-msgstr ""
-
-#: app/static/app/js/components/EditProjectDialog.jsx:116
-#: app/static/app/js/components/EditProjectDialog.jsx:122
-#: app/static/app/js/components/TaskListItem.jsx:206
-#: app/static/app/js/components/TaskListItem.jsx:214
+#: app/static/app/js/components/EditProjectDialog.jsx:125
+#: app/static/app/js/components/EditProjectDialog.jsx:131
+#: app/static/app/js/components/TaskListItem.jsx:237
+#: app/static/app/js/components/TaskListItem.jsx:245
 msgid "Cannot complete operation."
 msgstr ""
 
-#: app/static/app/js/components/EditProjectDialog.jsx:147
+#: app/static/app/js/components/EditProjectDialog.jsx:153
+#: app/static/app/js/components/EditTaskForm.jsx:605
+#: app/static/app/js/components/Paginator.jsx:32
+#: app/static/app/js/components/ProjectListItem.jsx:65
+msgid "Tags"
+msgstr ""
+
+#: app/static/app/js/components/EditProjectDialog.jsx:165
+#: app/static/app/js/components/EditTaskForm.jsx:586
+#: app/static/app/js/components/TaskListItem.jsx:873
+msgid "Duplicate"
+msgstr "Dupliciraj"
+
+#: app/static/app/js/components/EditProjectDialog.jsx:172
+#: app/static/app/js/components/EditTaskForm.jsx:670
+msgid "Add tags"
+msgstr ""
+
+#: app/static/app/js/components/EditProjectDialog.jsx:179
 msgid "Description (optional)"
 msgstr "Opsi (opcionalno)"
 
-#: app/static/app/js/components/EditTaskForm.jsx:89
+#: app/static/app/js/components/EditTaskForm.jsx:116
 msgid ""
 "Could not load list of processing nodes. Are you connected to the internet?"
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:97
+#: app/static/app/js/components/EditTaskForm.jsx:124
 msgid "We tried to reach:"
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:98
+#: app/static/app/js/components/EditTaskForm.jsx:125
 msgid "There are no usable processing nodes."
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:98
+#: app/static/app/js/components/EditTaskForm.jsx:125
 msgid ""
 "Make sure that at least one processing node is reachable and that you have "
 "granted the current user sufficient permissions to view the processing node "
@@ -358,111 +894,121 @@ msgid ""
 "recognize it."
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:216
+#: app/static/app/js/components/EditTaskForm.jsx:224
 msgid "Could not load list of presets. Are you connected to the internet?"
 msgstr ""
 "Nije bilo moguće učitati popis unaprijed postavljenih postavki. Jesi li "
 "povezan/a na internet?"
 
-#: app/static/app/js/components/EditTaskForm.jsx:225
-#: app/static/app/js/components/EditTaskForm.jsx:384
-#: app/static/app/js/components/ExportAssetPanel.jsx:185
-#: app/static/app/js/components/Map.jsx:400
-#: coreplugins/contours/public/ContoursPanel.jsx:246
-#: coreplugins/contours/public/ContoursPanel.jsx:273
-#: coreplugins/contours/public/ContoursPanel.jsx:292
+#: app/static/app/js/components/EditTaskForm.jsx:233
+#: app/static/app/js/components/EditTaskForm.jsx:424
+#: app/static/app/js/components/ExportAssetPanel.jsx:240
+#: app/static/app/js/components/ExportAssetPanel.jsx:241
+#: app/static/app/js/components/Map.jsx:812
+#: app/static/app/js/components/MapPreview.jsx:133
+#: coreplugins/annotate/public/Popup.jsx:891
+#: coreplugins/contours/public/ContoursPanel.jsx:322
+#: coreplugins/contours/public/ContoursPanel.jsx:349
+#: coreplugins/contours/public/ContoursPanel.jsx:369
 msgid "Custom"
 msgstr "Priagođeno"
 
-#: app/static/app/js/components/EditTaskForm.jsx:232
-#: app/static/app/js/components/EditTaskForm.jsx:353
+#: app/static/app/js/components/EditTaskForm.jsx:240
+#: app/static/app/js/components/EditTaskForm.jsx:392
 msgid "Default"
 msgstr "Standardno"
 
-#: app/static/app/js/components/EditTaskForm.jsx:437
+#: app/static/app/js/components/EditTaskForm.jsx:477
 msgid "My Preset"
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:437
+#: app/static/app/js/components/EditTaskForm.jsx:477
 #, python-format
 msgid "Copy of %(preset)s"
 msgstr "Kopija od %(preset)s"
 
-#: app/static/app/js/components/EditTaskForm.jsx:460
+#: app/static/app/js/components/EditTaskForm.jsx:500
 msgid "Could not duplicate the preset. Please try to refresh the page."
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:469
+#: app/static/app/js/components/EditTaskForm.jsx:509
 msgid ""
 "System presets can only be removed by a staff member from the Administration "
 "panel."
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:473
+#: app/static/app/js/components/EditTaskForm.jsx:513
 #, python-format
 msgid "Are you sure you want to delete \"%(preset)s\"?"
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:486
+#: app/static/app/js/components/EditTaskForm.jsx:526
 msgid "Could not delete the preset. Please try to refresh the page."
 msgstr ""
 
-#: app/static/app/js/components/EditTaskForm.jsx:501
+#: app/static/app/js/components/EditTaskForm.jsx:550
 msgid "Retry"
 msgstr "Pokušaj ponovo"
 
-#: app/static/app/js/components/EditTaskForm.jsx:524
-#: app/static/app/js/components/EditTaskForm.jsx:531
-#: app/static/app/js/components/ProjectListItem.jsx:551
-#: app/static/app/js/components/TaskListItem.jsx:455
-#: app/static/app/js/components/TaskListItem.jsx:685
-#: coreplugins/editshortlinks/public/SLControls.jsx:162
+#: app/static/app/js/components/EditTaskForm.jsx:573
+#: app/static/app/js/components/EditTaskForm.jsx:580
+#: app/static/app/js/components/ManageMediaDialog.jsx:496
+#: app/static/app/js/components/ProjectListItem.jsx:866
+#: app/static/app/js/components/TaskListItem.jsx:614
+#: app/static/app/js/components/TaskListItem.jsx:859
+#: coreplugins/annotate/public/Popup.jsx:948
+#: coreplugins/annotate/public/Popup.jsx:1153
 msgid "Edit"
 msgstr "Uredi"
 
-#: app/static/app/js/components/EditTaskForm.jsx:537
-#: app/static/app/js/components/TaskListItem.jsx:691
-msgid "Duplicate"
-msgstr "Dupliciraj"
-
-#: app/static/app/js/components/EditTaskForm.jsx:541
+#: app/static/app/js/components/EditTaskForm.jsx:590
 #: app/static/app/js/components/EditTaskPanel.jsx:82
 #: app/static/app/js/components/FormDialog.jsx:11
-#: coreplugins/editshortlinks/public/SLControls.jsx:170
+#: coreplugins/annotate/public/Popup.jsx:1157
 msgid "Save"
 msgstr "Spremi"
 
-#: app/static/app/js/components/EditTaskForm.jsx:545
-#: app/static/app/js/components/FormDialog.jsx:166
-#: app/static/app/js/components/TaskListItem.jsx:483
-#: app/static/app/js/components/TaskListItem.jsx:701
-#: coreplugins/measure/public/app.jsx:34
+#: app/static/app/js/components/EditTaskForm.jsx:594
+#: app/static/app/js/components/FormDialog.jsx:180
+#: app/static/app/js/components/LayersControlAnnotations.jsx:73
+#: app/static/app/js/components/LayersControlAnnotations.jsx:151
+#: app/static/app/js/components/LayersControlOverlays.jsx:121
+#: app/static/app/js/components/LayersControlOverlays.jsx:219
+#: app/static/app/js/components/ManageMediaDialog.jsx:544
+#: app/static/app/js/components/ManageMediaDialog.jsx:582
+#: app/static/app/js/components/MapPreview.jsx:194
+#: app/static/app/js/components/ProjectListItem.jsx:872
+#: app/static/app/js/components/TaskListItem.jsx:580
+#: app/static/app/js/components/TaskListItem.jsx:890
+#: coreplugins/annotate/public/Popup.jsx:1156
+#: coreplugins/measure/public/app.jsx:35
 msgid "Delete"
 msgstr "Izbriši"
 
-#: app/static/app/js/components/EditTaskForm.jsx:556
-#: coreplugins/lightning/public/Dashboard.jsx:153
+#: app/static/app/js/components/EditTaskForm.jsx:616
+#: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Processing Node"
 msgstr "Čvor obrade"
 
-#: app/static/app/js/components/EditTaskForm.jsx:566
-msgid "Options"
-msgstr "Opcije"
-
-#: app/static/app/js/components/EditTaskForm.jsx:590
+#: app/static/app/js/components/EditTaskForm.jsx:652
 msgid "Loading processing nodes and presets..."
 msgstr ""
 
 #: app/static/app/js/components/EditTaskPanel.jsx:56
-msgid "Could not update task information. Plese try again."
+#, fuzzy
+#| msgid "Could not update task information. Plese try again."
+msgid "Could not update task information. Please try again."
 msgstr "Neuspjelo aktualiziranje informacija zadatka. Pokušaj ponovo."
 
 #: app/static/app/js/components/EditTaskPanel.jsx:75
-#: app/static/app/js/components/FormDialog.jsx:193
-#: app/static/app/js/components/NewTaskPanel.jsx:185
-#: app/static/app/js/components/TaskListItem.jsx:464
-#: app/static/app/js/components/TaskListItem.jsx:680
-#: coreplugins/measure/public/app.jsx:33
+#: app/static/app/js/components/FormDialog.jsx:207
+#: app/static/app/js/components/ManageMediaDialog.jsx:421
+#: app/static/app/js/components/NewTaskPanel.jsx:271
+#: app/static/app/js/components/NewTaskPanel.jsx:357
+#: app/static/app/js/components/SplatsDialog.jsx:536
+#: app/static/app/js/components/TaskListItem.jsx:590
+#: app/static/app/js/components/TaskListItem.jsx:854
+#: coreplugins/measure/public/app.jsx:34
 msgid "Cancel"
 msgstr "Odustani"
 
@@ -470,51 +1016,49 @@ msgstr "Odustani"
 msgid "Saving..."
 msgstr "Spremanje u tijeku …"
 
-#: app/static/app/js/components/ErrorMessage.jsx:29
-#: app/static/app/js/components/ProjectListItem.jsx:562
-msgid "Close"
-msgstr "Zatvori"
-
-#: app/static/app/js/components/ExportAssetDialog.jsx:38
+#: app/static/app/js/components/ExportAssetDialog.jsx:40
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:93
 msgid "Downloading…"
 msgstr "Preuzimanje u tijeku …"
 
-#: app/static/app/js/components/ExportAssetDialog.jsx:39
-msgid "Download"
-msgstr "Preuzmi"
-
-#: app/static/app/js/components/ExportAssetPanel.jsx:152
-#: app/static/app/js/components/ImportTaskPanel.jsx:138
-#: app/static/app/js/components/LayersControlLayer.jsx:250
-#: app/static/app/js/components/ProjectList.jsx:56
+#: app/static/app/js/components/ExportAssetPanel.jsx:185
+#: app/static/app/js/components/ImportTaskPanel.jsx:141
+#: app/static/app/js/components/LayersControlLayer.jsx:375
+#: app/static/app/js/components/ProjectList.jsx:75
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:72
 #, python-format
 msgid "Invalid JSON response: %(error)s"
 msgstr "Naispravan JSON odgovor: %(error)s"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:179
-#: coreplugins/contours/public/ContoursPanel.jsx:287
-msgid "Projection:"
-msgstr "Projekcija:"
+#: app/static/app/js/components/ExportAssetPanel.jsx:234
+#: app/static/app/js/components/TaskListItem.jsx:720
+msgid "CRS:"
+msgstr ""
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:183
-#: coreplugins/contours/public/ContoursPanel.jsx:290
+#: app/static/app/js/components/ExportAssetPanel.jsx:238
+#: coreplugins/contours/public/ContoursPanel.jsx:367
 msgid "Lat/Lon"
 msgstr "Geografska širina/dužina"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:184
-#: coreplugins/contours/public/ContoursPanel.jsx:291
+#: app/static/app/js/components/ExportAssetPanel.jsx:239
+#: coreplugins/contours/public/ContoursPanel.jsx:368
 msgid "Web Mercator"
 msgstr "Web Mercator"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:202
+#: app/static/app/js/components/ExportAssetPanel.jsx:266
 msgid "Format:"
 msgstr "Format:"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:211
+#: app/static/app/js/components/ExportAssetPanel.jsx:274
+#, python-format
+msgid "Resample (%(unit)s):"
+msgstr ""
+
+#: app/static/app/js/components/ExportAssetPanel.jsx:282
 msgid "Export:"
 msgstr "Izvoz:"
 
-#: app/static/app/js/components/ExportAssetPanel.jsx:216
+#: app/static/app/js/components/ExportAssetPanel.jsx:287
 msgid "Exporting..."
 msgstr "Izvoz utijeku …"
 
@@ -527,20 +1071,22 @@ msgid "Saving…"
 msgstr "Spremanje u tijelku …"
 
 #: app/static/app/js/components/FormDialog.jsx:14
-#: coreplugins/editshortlinks/public/SLControls.jsx:112
 msgid "Are you sure?"
 msgstr "Sigurno?"
 
-#: app/static/app/js/components/FormDialog.jsx:124
+#: app/static/app/js/components/FormDialog.jsx:138
 msgid "Could not apply changes"
 msgstr "Nije bilo moguće primijeniti promjene"
 
-#: app/static/app/js/components/FormDialog.jsx:145
+#: app/static/app/js/components/FormDialog.jsx:159
+#: app/static/app/js/components/ProjectListItem.jsx:560
 msgid "Could not delete item"
 msgstr "Nije bilo moguće izbrisati element"
 
 #: app/static/app/js/components/GCPPopup.jsx:81
-#: app/static/app/js/components/ImagePopup.jsx:47
+#: app/static/app/js/components/ImagePopup.jsx:94
+#: app/static/app/js/components/MediaView.jsx:69
+#: coreplugins/annotate/public/Popup.jsx:809
 msgid "Image missing"
 msgstr "Slika nedostaje"
 
@@ -557,166 +1103,476 @@ msgstr "(metri)"
 msgid "Vertical error:"
 msgstr "Okomita greška:"
 
-#: app/static/app/js/components/Histogram.jsx:293
+#: app/static/app/js/components/Histogram.jsx:353
 msgid "Min:"
 msgstr "Minimum:"
 
-#: app/static/app/js/components/Histogram.jsx:294
+#: app/static/app/js/components/Histogram.jsx:354
 msgid "Max:"
 msgstr "Maksimum:"
 
-#: app/static/app/js/components/ImagePopup.jsx:86
+#: app/static/app/js/components/ImagePopup.jsx:254
+msgid "Altitude"
+msgstr ""
+
+#: app/static/app/js/components/ImagePopup.jsx:262
 msgid "Download Image"
 msgstr "Preuzmi sliku"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:63
+#: app/static/app/js/components/ImportExternalPanel.jsx:114
+msgid ""
+"Upload failed after multiple retries. Please check your connection and try "
+"again."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:206
+msgid "Failed to complete upload. Try again later."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:216
+msgid "Select at least one file to upload."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:223
+msgid "A textured model requires also a point cloud to be properly displayed."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:247
+msgid "Failed to initialize upload. Try again later."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:286
+msgid "Import External Data"
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:287
+msgid "Select files. At least one file is required."
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:307
+msgid "Remove"
+msgstr ""
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:323
+#: app/static/app/js/components/ImportTaskPanel.jsx:201
+msgid "Cancel Upload"
+msgstr "Prekini prijenos"
+
+#: app/static/app/js/components/ImportExternalPanel.jsx:333
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload"
+msgstr "Prenesi jednu datoteku"
+
+#: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
 msgstr ""
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:91
-#: coreplugins/editshortlinks/public/SLControls.jsx:44
-#: coreplugins/editshortlinks/public/SLControls.jsx:62
-#: coreplugins/editshortlinks/public/SLControls.jsx:100
-#: coreplugins/editshortlinks/public/SLControls.jsx:128
-#: coreplugins/editshortlinks/public/SLControls.jsx:131
-#: coreplugins/shortlinks/public/SLCheckbox.jsx:46
-#: coreplugins/shortlinks/public/SLCheckbox.jsx:50
+#: app/static/app/js/components/ImportTaskPanel.jsx:94
 #, python-format
 msgid "Invalid response from server: %(error)s"
 msgstr "Neispravan odgovor od servera: %(error)s"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:94
+#: app/static/app/js/components/ImportTaskPanel.jsx:97
 msgid "An error occured while uploading the file. Please try again."
 msgstr ""
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:142
+#: app/static/app/js/components/ImportTaskPanel.jsx:145
 msgid "Cannot import from URL. Check your internet connection."
 msgstr ""
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:159
-msgid "Import Existing Assets"
-msgstr ""
-
-#: app/static/app/js/components/ImportTaskPanel.jsx:160
-#, python-format
-msgid ""
-"You can import .zip files that have been exported from existing tasks via "
-"Download Assets %(arrow)s All Assets."
+#: app/static/app/js/components/ImportTaskPanel.jsx:166
+msgid "Import Assets or Backups"
 msgstr ""
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:167
+#, python-format
+msgid ""
+"You can import .zip files that have been exported from existing tasks via "
+"Download %(arrow)s All Assets | Backup."
+msgstr ""
+
+#: app/static/app/js/components/ImportTaskPanel.jsx:174
 msgid "Upload a File"
 msgstr "Prenesi jednu datoteku"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:175
+#: app/static/app/js/components/ImportTaskPanel.jsx:182
 msgid "Import From URL"
 msgstr "Uvezi iz URL adrese"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:184
-#: app/static/app/js/components/ProjectListItem.jsx:514
+#: app/static/app/js/components/ImportTaskPanel.jsx:191
+#: app/static/app/js/components/Map.jsx:1741
+#: app/static/app/js/components/ProjectListItem.jsx:776
 msgid "Import"
 msgstr "Uvezi"
 
-#: app/static/app/js/components/ImportTaskPanel.jsx:194
-msgid "Cancel Upload"
-msgstr "Prekini prijenos"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:288
-msgid "Algorithm:"
-msgstr "Algoritam:"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:300
-msgid "Filter:"
-msgstr "Filtar:"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:312
-msgid "Color:"
-msgstr "Boja:"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:324
-msgid "Shading:"
-msgstr "Sjenčanje:"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:327
-#: app/static/app/js/components/Map.jsx:401
-msgid "None"
-msgstr "Bez"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:328
-#: coreplugins/contours/public/ContoursPanel.jsx:228
-msgid "Normal"
-msgstr "Normalno"
-
-#: app/static/app/js/components/LayersControlLayer.jsx:329
-msgid "Extruded"
-msgstr "Ekstrudirano"
-
-#: app/static/app/js/components/LayersControlPanel.jsx:26
-#: app/static/app/js/components/NewTaskPanel.jsx:187
-#: coreplugins/contours/public/ContoursPanel.jsx:236
-msgid "Loading…"
-msgstr "Učitavanje u tijeku …"
-
-#: app/static/app/js/components/LayersControlPanel.jsx:44
+#: app/static/app/js/components/LayersControl.jsx:40
+#: app/static/app/js/components/LayersControlPanel.jsx:145
 msgid "Layers"
 msgstr "Slojevi"
 
-#: app/static/app/js/components/Map.jsx:89
-msgid "DSM"
-msgstr "digitalni model površine"
+#: app/static/app/js/components/LayersControlAnnotations.jsx:61
+#: app/static/app/js/components/LayersControlAnnotations.jsx:134
+#: app/static/app/js/components/LayersControlOverlays.jsx:108
+#: app/static/app/js/components/LayersControlOverlays.jsx:184
+#: coreplugins/annotate/public/Popup.jsx:767
+#, fuzzy
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to delete this?"
+msgstr "Sigurno želiš odustati?"
 
-#: app/static/app/js/components/Map.jsx:91
-msgid "DTM"
-msgstr "digitalni model terena"
+#: app/static/app/js/components/LayersControlAnnotations.jsx:149
+#: app/static/app/js/translations/potree_autogenerated.js:8
+msgid "Annotations"
+msgstr "Pribilješke"
 
-#: app/static/app/js/components/Map.jsx:261
-msgid "(Cameras)"
-msgstr "(Kamere)"
+#: app/static/app/js/components/LayersControlAnnotations.jsx:150
+#: coreplugins/annotate/public/Popup.jsx:1150
+#: coreplugins/annotate/public/Toolbox.jsx:1209
+#: coreplugins/measure/public/MeasurePopup.jsx:201
+msgid "Export to GeoJSON"
+msgstr "Izvezi u GeoJSON"
 
-#: app/static/app/js/components/Map.jsx:310
-msgid "(GCPs)"
-msgstr "(Google Cloud platforme)"
+#: app/static/app/js/components/LayersControlLayer.jsx:411
+msgid "Side By Side"
+msgstr ""
 
-#: app/static/app/js/components/Map.jsx:382
+#: app/static/app/js/components/LayersControlLayer.jsx:411
+msgid "Zoom To"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:430
+msgid "Algorithm:"
+msgstr "Algoritam:"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:442
+msgid "Bands:"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:447
+#: app/static/app/js/components/NewTaskPanel.jsx:302
+msgid "Automatic"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:451
+#, python-format
+msgid "Not every band for %(name)s could be automatically identified."
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:451
+msgid "Your sensor might not have the proper bands for using this algorithm."
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:458
+msgid "Color:"
+msgstr "Boja:"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:470
+msgid "Display:"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:473
+#: coreplugins/annotate/public/Popup.jsx:984
+#, fuzzy
+#| msgid "Elevation:"
+msgid "Elevation"
+msgstr "Visina:"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:474
+msgid "Slope"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlLayer.jsx:481
+msgid "Shading:"
+msgstr "Sjenčanje:"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:484
+#: app/static/app/js/components/Map.jsx:813
+#: app/static/app/js/components/MapPreview.jsx:134
+#: coreplugins/annotate/public/Popup.jsx:899
+#: coreplugins/annotate/public/Popup.jsx:906
+msgid "None"
+msgstr "Bez"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:485
+#: coreplugins/contours/public/ContoursPanel.jsx:291
+msgid "Normal"
+msgstr "Normalno"
+
+#: app/static/app/js/components/LayersControlLayer.jsx:486
+msgid "Extruded"
+msgstr "Ekstrudirano"
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:57
+msgid "Change color"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:206
+#, fuzzy
+#| msgid "Moving..."
+msgid "Converting..."
+msgstr "Premještanje …"
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:216
+#: app/static/app/js/components/Map.jsx:1730
+#: app/static/app/js/translations/potree_autogenerated.js:52
+#: app/static/app/js/translations/potree_autogenerated.js:62
+msgid "Opacity"
+msgstr "Neprozirnost"
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:218
+#, fuzzy
+#| msgid "Saving…"
+msgid "Syncing…"
+msgstr "Spremanje u tijelku …"
+
+#: app/static/app/js/components/LayersControlOverlays.jsx:294
+msgid "Overlays"
+msgstr ""
+
+#: app/static/app/js/components/LayersControlPanel.jsx:42
+#: app/static/app/js/components/NewTaskPanel.jsx:359
+#: coreplugins/contours/public/ContoursPanel.jsx:312
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:186
+msgid "Loading…"
+msgstr "Učitavanje u tijeku …"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:153
+#: app/static/app/js/components/ProjectListItem.jsx:306
+#: app/static/app/js/components/SplatsDialog.jsx:178
+#, python-format
+msgid "%(filename)s is not a valid file"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:174
+#: app/static/app/js/components/ProjectListItem.jsx:335
+#: app/static/app/js/components/SplatsDialog.jsx:195
+#, python-format
+msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:186
+#: app/static/app/js/components/ProjectListItem.jsx:347
+#: app/static/app/js/components/SplatsDialog.jsx:202
+#, python-format
+msgid ""
+"Cannot upload %(filename)s, file is too large! Default MaxFileSize is "
+"%(maxFileSize)s MB!"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:247
+#: app/static/app/js/components/SplatsDialog.jsx:235
+#, fuzzy
+#| msgid "An error occurred. Check your connection and permissions."
+msgid "Upload failed. Check your connection and try again."
+msgstr "Dogodila se greška. Provjeri vezu i dozvole."
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:271
+#, fuzzy
+#| msgid "Cannot load permissions."
+msgid "Cannot load media."
+msgstr "Neuspjelo učitavanje dozvola."
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:288
+#, fuzzy, python-format
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to delete %(filename)s ?"
+msgstr "Sigurno želiš odustati?"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:318
+#, fuzzy
+#| msgid "Cannot delete task."
+msgid "Cannot delete file."
+msgstr "Nije moguće izbrisati zadatak."
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:356
+#, fuzzy
+#| msgid "Cannot load permissions."
+msgid "Cannot update description."
+msgstr "Neuspjelo učitavanje dozvola."
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:371
+msgid "Video"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:372
+msgid "Panorama"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:373
+msgid "Photo"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:401
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload Files"
+msgstr "Prenesi jednu datoteku"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:403
+msgid ""
+"Georeferenced photos, panoramas and videos will be displayed on the map."
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:412
+#: app/static/app/js/components/SplatsDialog.jsx:527
+msgid "Finalizing... please wait"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:433
+msgid "No media files."
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:445
+#, fuzzy
+#| msgid "Righ view"
+msgid "Grid view"
+msgstr "Prikaz desno"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:452
+#, fuzzy
+#| msgid "Left view"
+msgid "List view"
+msgstr "Prikaz lijevo"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:516
+#: app/static/app/js/components/Map.jsx:542
+#: app/static/app/js/components/TaskListItem.jsx:865
+msgid "Media"
+msgstr ""
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:558
+#, fuzzy
+#| msgid "Username"
+msgid "Filename"
+msgstr "Korisničko ime"
+
+#: app/static/app/js/components/ManageMediaDialog.jsx:559
+#: coreplugins/annotate/public/Popup.jsx:947
+#, fuzzy
+#| msgid "Description (optional)"
+msgid "Description"
+msgstr "Opsi (opcionalno)"
+
+#: app/static/app/js/components/Map.jsx:793
+#: app/static/app/js/components/MapPreview.jsx:114
 msgid "Enter a tile URL template. Valid coordinates are:"
 msgstr ""
 
-#: app/static/app/js/components/Map.jsx:383
+#: app/static/app/js/components/Map.jsx:794
+#: app/static/app/js/components/MapPreview.jsx:115
 #, python-brace-format
 msgid "{z}, {x}, {y} for Z/X/Y tile scheme"
 msgstr "{z}, {x}, {y} za Z/X/Y shemu pločica"
 
-#: app/static/app/js/components/Map.jsx:384
-msgid "{-y} for flipped TMS-style Y coordinates"
+#: app/static/app/js/components/Map.jsx:795
+#: app/static/app/js/components/MapPreview.jsx:116
+msgid "{−y} for flipped TMS-style Y coordinates"
 msgstr ""
 
-#: app/static/app/js/components/Map.jsx:386
+#: app/static/app/js/components/Map.jsx:797
+#: app/static/app/js/components/MapPreview.jsx:118
 msgid "Example:"
 msgstr "Primjer:"
 
-#: app/static/app/js/components/Map.jsx:452
-msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
+#: app/static/app/js/components/Map.jsx:881
+msgid "Add a GeoJSON (.json), ShapeFile (.zip) or AutoCAD (.dxf) overlay"
 msgstr ""
 
-#: app/static/app/js/components/Map.jsx:503
+#: app/static/app/js/components/Map.jsx:942
+msgid "Cannot set cropping area. Check your internet connection."
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:968
+#, fuzzy
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to set a new crop area?"
+msgstr "Sigurno želiš odustati?"
+
+#: app/static/app/js/components/Map.jsx:1037
 msgid "Error: cannot load assets list."
 msgstr ""
 
-#: app/static/app/js/components/Map.jsx:574
-msgid "Opacity:"
-msgstr "Prozirnost:"
+#: app/static/app/js/components/Map.jsx:1142
+msgid "Cannot import overlay: no task is loaded."
+msgstr ""
 
-#: app/static/app/js/components/Map.jsx:578
-#: app/static/app/js/components/TaskList.jsx:82
+#: app/static/app/js/components/Map.jsx:1230
+#: app/static/app/js/components/Map.jsx:1263
+#: app/static/app/js/components/Map.jsx:1281
+#, python-format
+msgid "Cannot save overlay %(name)s"
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:1296
+#: app/static/app/js/components/Map.jsx:1336
+msgid "Overlay"
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:1388
+msgid "Invalid EPSG code"
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:1456
+#: app/static/app/js/components/Map.jsx:1465
+#, python-format
+msgid "Cannot convert %(file)s"
+msgstr ""
+
+#: app/static/app/js/components/Map.jsx:1734
+#: app/static/app/js/components/NewTaskPanel.jsx:302
+#: app/static/app/js/components/TaskList.jsx:143
 msgid "Loading..."
 msgstr "Učitavanje …"
+
+#: app/static/app/js/components/Map.jsx:1740
+#, fuzzy
+#| msgid "Import"
+msgid "Import DXF"
+msgstr "Uvezi"
+
+#: app/static/app/js/components/MapPreview.jsx:172
+#, fuzzy
+#| msgid "Description (optional)"
+msgid "Set Reconstruction Area (optional)"
+msgstr "Opsi (opcionalno)"
+
+#: app/static/app/js/components/MapPreview.jsx:326
+#, python-format
+msgid "Cannot extract GPS data from %(file)s"
+msgstr ""
+
+#: app/static/app/js/components/MapPreview.jsx:449
+#, fuzzy
+#| msgid "Point location"
+msgid "Plotting GPS locations..."
+msgstr "Lokacija točke"
+
+#: app/static/app/js/components/MapPreview.jsx:454
+#, python-format
+msgid "For performance reasons, only %(num)s images are plotted"
+msgstr ""
+
+#: app/static/app/js/components/MapPreview.jsx:465
+msgid "GeoJSON"
+msgstr ""
+
+#: app/static/app/js/components/MapPreview.jsx:466
+msgid "CSV"
+msgstr ""
+
+#: app/static/app/js/components/MapPreview.jsx:467
+#, fuzzy
+#| msgid "Download To File"
+msgid "Geolocation File"
+msgstr "Preuzmi u datoteku"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:9
 msgid "Move Task"
 msgstr "Premjesti zadatak"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:10
-#: app/static/app/js/components/ProjectListItem.jsx:485
+#: app/static/app/js/components/ProjectListItem.jsx:745
 msgid "Save Changes"
 msgstr "Spremi promjene"
 
@@ -725,178 +1581,450 @@ msgid "Moving..."
 msgstr "Premještanje …"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:54
-#: app/static/app/js/components/ProjectList.jsx:63
+#: app/static/app/js/components/ProjectList.jsx:82
 #, python-format
 msgid "Could not load projects list: %(error)s"
 msgstr "Neuspjelo učitavanje popisa projekata: %(error)s"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:88
+#: coreplugins/lightning/public/ShareDialog.jsx:306
 msgid "Project"
 msgstr "Projekt"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:83
+#: app/static/app/js/components/NewTaskPanel.jsx:123
 msgid "Are you sure you want to cancel?"
 msgstr "Sigurno želiš odustati?"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:131
+#: app/static/app/js/components/NewTaskPanel.jsx:239
+#, fuzzy, python-format
+#| msgid "%(count)s Tasks"
+msgid "%(count)s files selected."
+msgstr "%(count)s zadatka"
+
+#: app/static/app/js/components/NewTaskPanel.jsx:242
 #, python-format
-msgid "%(count)s files selected. Please check these additional options:"
+msgid "%(count)s files and GCP file (%(name)s) selected."
 msgstr ""
 
-#: app/static/app/js/components/NewTaskPanel.jsx:144
+#: app/static/app/js/components/NewTaskPanel.jsx:249
+msgid "Please check these additional options:"
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:253
+msgid ""
+"Did you forget any images? When images exceed 1000, they are often stored "
+"inside multiple folders on the SD card."
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:260
+#, python-format
+msgid ""
+"Whoops! It looks like your GCP file is not formatted properly: %(errors)s "
+"See %(link)s for information on the GCP file format"
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:261
+msgid "GCP File"
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:269
+#, python-format
+msgid ""
+"Number of files selected exceeds the maximum of %(count)s allowed on this "
+"processing node."
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:299
+#: app/static/app/js/components/TaskListItem.jsx:487
+msgid "Alignment"
+msgstr ""
+
+#: app/static/app/js/components/NewTaskPanel.jsx:315
+#: app/static/app/js/components/SplatsDialog.jsx:461
 msgid "Resize Images"
 msgstr "Promijeni veličinu slika"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:168
+#: app/static/app/js/components/NewTaskPanel.jsx:339
+#: app/static/app/js/components/SplatsDialog.jsx:484
 msgid "px"
 msgstr "px"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:189
+#: app/static/app/js/components/NewTaskPanel.jsx:361
 msgid "Review"
 msgstr "Pregledaj"
 
-#: app/static/app/js/components/NewTaskPanel.jsx:189
+#: app/static/app/js/components/NewTaskPanel.jsx:361
+#: app/static/app/js/components/TaskListItem.jsx:622
 msgid "Start Processing"
 msgstr "Pokreni obradu"
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:140
-#: app/static/app/js/translations/potree_autogenerated.js:62
+#: app/static/app/js/components/OverlayFeaturePopup.jsx:33
+#: coreplugins/annotate/public/Popup.jsx:952
+#, fuzzy
+#| msgid "Color:"
+msgid "Color"
+msgstr "Boja:"
+
+#: app/static/app/js/components/Paginator.jsx:26
+#: app/static/app/js/components/ProjectListItem.jsx:59
+#, fuzzy
+#| msgid "Created on:"
+msgid "Created on"
+msgstr "Stvoreno:"
+
+#: app/static/app/js/components/Paginator.jsx:35
+msgid "Owner"
+msgstr ""
+
+#: app/static/app/js/components/Paginator.jsx:142
+msgid "Search names, #tags or @user"
+msgstr ""
+
+#: app/static/app/js/components/Paginator.jsx:153
+#: app/static/app/js/components/ProjectListItem.jsx:851
+msgid "Sort"
+msgstr ""
+
+#: app/static/app/js/components/Paginator.jsx:157
+#, fuzzy
+#| msgid "this page"
+msgid "Items per page"
+msgstr "ova stranica"
+
+#: app/static/app/js/components/Paginator.jsx:172
+msgid "Search results for:"
+msgstr ""
+
+#: app/static/app/js/components/ProcessingNodeOption.jsx:8
+msgid "You might run out of memory if you use this option."
+msgstr ""
+
+#: app/static/app/js/components/ProcessingNodeOption.jsx:166
+#: app/static/app/js/translations/potree_autogenerated.js:63
 msgid "Enable"
 msgstr "Aktiviraj"
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:149
-msgid "Click to import a .JSON file"
+#: app/static/app/js/components/ProcessingNodeOption.jsx:175
+#, fuzzy
+#| msgid "Click to import a .JSON file"
+msgid "Click to import a JSON file"
 msgstr "Klikni za uvoz .JSON datoteke"
 
-#: app/static/app/js/components/ProcessingNodeOption.jsx:164
+#: app/static/app/js/components/ProcessingNodeOption.jsx:196
 msgid "Reset to default"
 msgstr "Resetiraj na standardne vrijednosti"
 
-#: app/static/app/js/components/ProjectListItem.jsx:188
-#, python-format
-msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
-msgstr ""
-
-#: app/static/app/js/components/ProjectListItem.jsx:237
-#: app/static/app/js/components/ProjectListItem.jsx:354
-#, python-format
-msgid "Cannot create new task. Invalid response from server: %(error)s"
-msgstr ""
-"Nije moguće stvoriti novi zadatak. Nevažeći odgovor poslužitelja: %(error)s"
-
-#: app/static/app/js/components/ProjectListItem.jsx:240
-#: app/static/app/js/components/ProjectListItem.jsx:358
+#: app/static/app/js/components/ProjectListItem.jsx:198
+#: app/static/app/js/components/ProjectListItem.jsx:533
 msgid "Cannot create new task. Please try again later."
 msgstr "Nije moguće stvoriti novi zadatak. Pokušaj ponovo kasnije."
 
-#: app/static/app/js/components/ProjectListItem.jsx:247
+#: app/static/app/js/components/ProjectListItem.jsx:224
 #, python-format
 msgid ""
 "%(count)s files cannot be uploaded. As a reminder, only images (.jpg, .tif, ."
 "png) and GCP files (.txt) can be uploaded. Try again."
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:484
+#: app/static/app/js/components/ProjectListItem.jsx:529
+#, python-format
+msgid "Cannot create new task. Invalid response from server: %(error)s"
+msgstr ""
+"Nije moguće stvoriti novi zadatak. Nevažeći odgovor poslužitelja: %(error)s"
+
+#: app/static/app/js/components/ProjectListItem.jsx:731
+msgid ""
+"All tasks, images and models associated with this project will be "
+"permanently deleted. Are you sure you want to continue?"
+msgstr ""
+
+#: app/static/app/js/components/ProjectListItem.jsx:732
+msgid ""
+"This project was shared with you. It will not be deleted, but simply hidden "
+"from your dashboard. Continue?"
+msgstr ""
+
+#: app/static/app/js/components/ProjectListItem.jsx:744
 msgid "Edit Project"
 msgstr "Uredi projekt"
 
-#: app/static/app/js/components/ProjectListItem.jsx:486
+#: app/static/app/js/components/ProjectListItem.jsx:746
 msgid "Saving changes..."
 msgstr "Spremanje promjena u tijeku …"
 
-#: app/static/app/js/components/ProjectListItem.jsx:509
+#: app/static/app/js/components/ProjectListItem.jsx:771
 msgid "Select Images and GCP"
 msgstr "Odaberi slike i Google Cloud platformu"
 
-#: app/static/app/js/components/ProjectListItem.jsx:529
-#: app/static/app/js/components/TaskListItem.jsx:442
-msgid "View Map"
-msgstr "Prikaži kartu"
+#: app/static/app/js/components/ProjectListItem.jsx:779
+msgid "Assets / Backups"
+msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:544
+#: app/static/app/js/components/ProjectListItem.jsx:780
+msgid "External Data"
+msgstr ""
+
+#: app/static/app/js/components/ProjectListItem.jsx:812
 #, python-format
 msgid "%(count)s Tasks"
 msgstr "%(count)s zadatka"
 
-#: app/static/app/js/components/ShareButton.jsx:58
+#: app/static/app/js/components/ProjectListItem.jsx:825
+#, fuzzy
+#| msgid "Filter:"
+msgid "Filter"
+msgstr "Filtar:"
+
+#: app/static/app/js/components/ProjectListItem.jsx:845
+msgid "Clear"
+msgstr ""
+
+#: app/static/app/js/components/ProjectListItem.jsx:860
+msgid "View Map"
+msgstr "Prikaži kartu"
+
+#: app/static/app/js/components/ProjectListItem.jsx:883
+msgid ""
+"Unstable connection detected. If the upload gets stuck, press the button "
+"below to enable stable mode. You will then need to restart the upload."
+msgstr ""
+
+#: app/static/app/js/components/ProjectListItem.jsx:886
+msgid "Enable Stable Mode"
+msgstr ""
+
+#: app/static/app/js/components/ShareButton.jsx:72
+#: app/static/app/js/components/ShareButton.jsx:74
+#: coreplugins/lightning/public/ShareButton.jsx:47
+#: coreplugins/lightning/public/ShareDialog.jsx:321
+#: coreplugins/lightning/public/ShareDialog.jsx:391
 msgid "Share"
 msgstr "Dijeli"
 
-#: app/static/app/js/components/SharePopup.jsx:78
+#: app/static/app/js/components/SharePopup.jsx:108
 msgid "An error occurred. Check your connection and permissions."
 msgstr "Dogodila se greška. Provjeri vezu i dozvole."
 
-#: app/static/app/js/components/SharePopup.jsx:96
+#: app/static/app/js/components/SharePopup.jsx:180
 msgid "Share This Task"
 msgstr "Dijeli ovaj zadatak"
 
-#: app/static/app/js/components/SharePopup.jsx:105
+#: app/static/app/js/components/SharePopup.jsx:180
+#, fuzzy
+#| msgid "Share This Task"
+msgid "Share This Project"
+msgstr "Dijeli ovaj zadatak"
+
+#: app/static/app/js/components/SharePopup.jsx:186
 msgid "QR"
 msgstr "QR"
 
-#: app/static/app/js/components/SharePopup.jsx:118
+#: app/static/app/js/components/SharePopup.jsx:209
+#: coreplugins/lightning/public/Dashboard.jsx:187
 msgid "Enabled"
 msgstr "Aktivirano"
 
-#: app/static/app/js/components/SharePopup.jsx:124
+#: app/static/app/js/components/SharePopup.jsx:223
+msgid "Allow Edits"
+msgstr ""
+
+#: app/static/app/js/components/SharePopup.jsx:230
+msgid "Dismiss"
+msgstr ""
+
+#: app/static/app/js/components/SharePopup.jsx:232
+#, python-format
+msgid ""
+"The link below is accessible only within your local network. To share a link "
+"with others online, use a %(service)s"
+msgstr ""
+
+#: app/static/app/js/components/SharePopup.jsx:232
+msgid "hosted instance"
+msgstr ""
+
+#: app/static/app/js/components/SharePopup.jsx:238
 msgid "Link:"
 msgstr "Poveznica:"
 
-#: app/static/app/js/components/SharePopup.jsx:141
+#: app/static/app/js/components/SharePopup.jsx:255
 msgid "HTML iframe:"
 msgstr "HTML iframe:"
 
-#: app/static/app/js/components/SwitchModeButton.jsx:47
+#: app/static/app/js/components/SortPanel.jsx:48
+msgid "Descending"
+msgstr ""
+
+#: app/static/app/js/components/SortPanel.jsx:54
+msgid "Ascending"
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:137
+msgid "Please upload a single file."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:330
+#: coreplugins/annotate/public/Popup.jsx:287
+#: coreplugins/annotate/public/Popup.jsx:320
+#: coreplugins/annotate/public/Popup.jsx:352
+#: coreplugins/annotate/public/Popup.jsx:405
+#: coreplugins/annotate/public/Popup.jsx:446
+#: coreplugins/annotate/public/Popup.jsx:576
+#: coreplugins/annotate/public/Popup.jsx:657
+#: coreplugins/measure/public/MeasurePopup.jsx:146
+#, python-format
+msgid "Invalid response: %(error)s"
+msgstr "Neispravan odgovor: %(error)s"
+
+#: app/static/app/js/components/SplatsDialog.jsx:333
+msgid "Cannot export training data."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:338
+#, fuzzy
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to delete the splats model?"
+msgstr "Sigurno želiš odustati?"
+
+#: app/static/app/js/components/SplatsDialog.jsx:352
+#, fuzzy
+#| msgid "Cannot delete task."
+msgid "Cannot delete splats model."
+msgstr "Nije moguće izbrisati zadatak."
+
+#: app/static/app/js/components/SplatsDialog.jsx:389
+msgid ""
+"This task is missing camera information. Training data cannot be downloaded."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:394
+msgid ""
+"This task is missing a point cloud. The training data will include an empty "
+"point cloud. Some training software might not work properly without one. "
+"Uploading a splats model requires a point cloud."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:399
+msgid ""
+"This task is missing camera information and a point cloud. No splats can be "
+"downloaded or uploaded."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:404
+msgid ""
+"The images for this task are not available, so they will not be part of the "
+"download. After extracting the .zip file, copy the original images into the "
+"\"images\" folder before training."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:409
+msgid ""
+"Most images in this dataset are nadir. Splats typically require obliques and/"
+"or orbits for good results."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:421
+msgid "A splats model has been added."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:424
+#, fuzzy
+#| msgid "show in 3D"
+msgid "View in 3D"
+msgstr "prikaži kao 3D"
+
+#: app/static/app/js/components/SplatsDialog.jsx:428
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload New"
+msgstr "Prenesi jednu datoteku"
+
+#: app/static/app/js/components/SplatsDialog.jsx:452
+#, fuzzy
+#| msgid "Download Image"
+msgid "Download Training Data"
+msgstr "Preuzmi sliku"
+
+#: app/static/app/js/components/SplatsDialog.jsx:497
+#, python-format
+msgid "Train a model using %(link_start)s compatible software %(link_end)s"
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:507
+msgid "You don't have permission to upload a splats model to this task."
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:516
+#, fuzzy
+#| msgid "Upload a File"
+msgid "Upload Splats Model"
+msgstr "Prenesi jednu datoteku"
+
+#: app/static/app/js/components/SplatsDialog.jsx:560
+msgid "Gaussian Splats"
+msgstr ""
+
+#: app/static/app/js/components/SplatsDialog.jsx:566
+msgid "Processing splats model... this might take a bit"
+msgstr ""
+
+#: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
 msgstr "3D"
 
-#: app/static/app/js/components/SwitchModeButton.jsx:47
+#: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "2D"
 msgstr "2D"
 
-#: app/static/app/js/components/TaskList.jsx:53
+#: app/static/app/js/components/TaskList.jsx:71
 #, python-format
 msgid "Could not load task list: %(error)s"
 msgstr "Nije bilo moguće učitati popis zadataka: %(error)s"
 
-#: app/static/app/js/components/TaskList.jsx:84
+#: app/static/app/js/components/TaskList.jsx:145
 #, python-format
 msgid "Error: %(error)s"
 msgstr "Greška: %(error)s"
 
-#: app/static/app/js/components/TaskList.jsx:84
+#: app/static/app/js/components/TaskList.jsx:145
 msgid "Try again"
 msgstr "Pokušaj ponovo"
 
-#: app/static/app/js/components/TaskListItem.jsx:260
+#: app/static/app/js/components/TaskList.jsx:153
+#: app/static/app/js/components/TaskListItem.jsx:519
+#, python-format
+msgid "Task #%(number)s"
+msgstr "Zadatak broj %(number)s"
+
+#: app/static/app/js/components/TaskListItem.jsx:321
 #, python-format
 msgid ""
 "It looks like there might be one of the following problems: %(problems)s You "
 "can read more about best practices for capturing good images %(link)s."
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:261
+#: app/static/app/js/components/TaskListItem.jsx:322
 msgid "Not enough images"
 msgstr "Nema dovoljno slika"
 
-#: app/static/app/js/components/TaskListItem.jsx:262
+#: app/static/app/js/components/TaskListItem.jsx:323
 msgid "Not enough overlap between images"
 msgstr "Nema dovoljno preklapanja slika"
 
-#: app/static/app/js/components/TaskListItem.jsx:263
+#: app/static/app/js/components/TaskListItem.jsx:324
 msgid "Images might be too blurry (common with phone cameras)"
 msgstr "Slike bi mogle biti previše mutne (često kod snimki kamerom mobitela)"
 
-#: app/static/app/js/components/TaskListItem.jsx:264
+#: app/static/app/js/components/TaskListItem.jsx:325
 msgid ""
 "The min-num-features task option is set too low, try increasing it by 25%"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:265
+#: app/static/app/js/components/TaskListItem.jsx:326
 msgid "here"
 msgstr "ovdje"
 
-#: app/static/app/js/components/TaskListItem.jsx:268
+#: app/static/app/js/components/TaskListItem.jsx:329
 #, python-format
 msgid ""
 "It looks like this computer might be too old. WebODM requires a computer "
@@ -905,136 +2033,177 @@ msgid ""
 "images. See %(link)s for more information."
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:268
+#: app/static/app/js/components/TaskListItem.jsx:329
 msgid "this page"
 msgstr "ova stranica"
 
-#: app/static/app/js/components/TaskListItem.jsx:270
+#: app/static/app/js/components/TaskListItem.jsx:331
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
-"This might indicate a corrupted installation. If you built OpenDroneMap, "
-"please check that all programs built without errors."
+"This might indicate a corrupted installation. If you built ODM, please check "
+"that all programs built without errors."
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:310
+#: app/static/app/js/components/TaskListItem.jsx:372
 #, python-format
 msgid "From %(stage)s"
 msgstr "Od %(stage)s"
 
-#: app/static/app/js/components/TaskListItem.jsx:322
+#: app/static/app/js/components/TaskListItem.jsx:384
 msgid "Resume Processing"
 msgstr "Nastavi obradu"
 
-#: app/static/app/js/components/TaskListItem.jsx:338
+#: app/static/app/js/components/TaskListItem.jsx:400
 msgid "Cannot restart task."
 msgstr "Nije moguće ponovo pokrenuti zadatak."
 
-#: app/static/app/js/components/TaskListItem.jsx:380
+#: app/static/app/js/components/TaskListItem.jsx:442
 msgid "Cannot restart task from (stage)s."
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:406
-#, python-format
-msgid "Task #%(number)s"
-msgstr "Zadatak broj %(number)s"
+#: app/static/app/js/components/TaskListItem.jsx:491
+msgid "GPS"
+msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:410
+#: app/static/app/js/components/TaskListItem.jsx:494
+#, fuzzy
+#| msgid "(GCPs)"
+msgid "GCP"
+msgstr "(Google Cloud platforme)"
+
+#: app/static/app/js/components/TaskListItem.jsx:523
 msgid "Sending images to processing node"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:412
+#: app/static/app/js/components/TaskListItem.jsx:525
 msgid "Waiting for a node..."
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:449
-msgid "View 3D Model"
+#: app/static/app/js/components/TaskListItem.jsx:556
+msgid "Map"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:565
+#, fuzzy
+#| msgid "View 3D Model"
+msgid "3D Model"
 msgstr "Prikaži 3D model"
 
-#: app/static/app/js/components/TaskListItem.jsx:464
-#: app/static/app/js/components/TaskListItem.jsx:680
-msgid "Cannot cancel task."
-msgstr "Nije moguće prekinuti zadatak."
-
-#: app/static/app/js/components/TaskListItem.jsx:477
-msgid "Restart"
-msgstr "Pokreni ponovo"
-
-#: app/static/app/js/components/TaskListItem.jsx:484
-#: app/static/app/js/components/TaskListItem.jsx:702
+#: app/static/app/js/components/TaskListItem.jsx:581
+#: app/static/app/js/components/TaskListItem.jsx:891
 msgid ""
 "All information related to this task, including images, maps and models will "
 "be deleted. Continue?"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:485
-#: app/static/app/js/components/TaskListItem.jsx:703
+#: app/static/app/js/components/TaskListItem.jsx:582
+#: app/static/app/js/components/TaskListItem.jsx:892
 msgid "Cannot delete task."
 msgstr "Nije moguće izbrisati zadatak."
 
-#: app/static/app/js/components/TaskListItem.jsx:538
+#: app/static/app/js/components/TaskListItem.jsx:590
+#: app/static/app/js/components/TaskListItem.jsx:854
+msgid "Cannot cancel task."
+msgstr "Nije moguće prekinuti zadatak."
+
+#: app/static/app/js/components/TaskListItem.jsx:607
+msgid "Restart"
+msgstr "Pokreni ponovo"
+
+#: app/static/app/js/components/TaskListItem.jsx:607
+#, fuzzy
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to restart this task?"
+msgstr "Sigurno želiš odustati?"
+
+#: app/static/app/js/components/TaskListItem.jsx:623
+msgid "Have all images been uploaded?"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:624
+#, fuzzy
+#| msgid "Cannot restart task."
+msgid "Cannot start processing task."
+msgstr "Nije moguće ponovo pokrenuti zadatak."
+
+#: app/static/app/js/components/TaskListItem.jsx:682
+#, fuzzy
+#| msgid "Task Output:"
+msgid "Task ID:"
+msgstr "Rezultat zadatka:"
+
+#: app/static/app/js/components/TaskListItem.jsx:683
+msgid "Copy to clipboard"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:686
 msgid "Created on:"
 msgstr "Stvoreno:"
 
-#: app/static/app/js/components/TaskListItem.jsx:542
+#: app/static/app/js/components/TaskListItem.jsx:690
 msgid "Processing Node:"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:543
+#: app/static/app/js/components/TaskListItem.jsx:691
 msgid "auto"
 msgstr "automatski"
 
-#: app/static/app/js/components/TaskListItem.jsx:543
+#: app/static/app/js/components/TaskListItem.jsx:691
 msgid "manual"
 msgstr "priručnik"
 
-#: app/static/app/js/components/TaskListItem.jsx:547
+#: app/static/app/js/components/TaskListItem.jsx:695
 msgid "Options:"
 msgstr "Opcije:"
 
-#: app/static/app/js/components/TaskListItem.jsx:552
+#: app/static/app/js/components/TaskListItem.jsx:700
 msgid "Average GSD:"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:557
-#: coreplugins/measure/public/MeasurePopup.jsx:142
+#: app/static/app/js/components/TaskListItem.jsx:705
+#: coreplugins/measure/public/MeasurePopup.jsx:186
 msgid "Area:"
 msgstr "Područje:"
 
-#: app/static/app/js/components/TaskListItem.jsx:562
-msgid "Reconstructed Points:"
+#: app/static/app/js/components/TaskListItem.jsx:710
+#, fuzzy
+#| msgid "Point size"
+msgid "Points:"
+msgstr "Veličina točki"
+
+#: app/static/app/js/components/TaskListItem.jsx:715
+msgid "Georeferencing:"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:566
+#: app/static/app/js/components/TaskListItem.jsx:725
+msgid "Disk Usage:"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:729
 msgid "Task Output:"
 msgstr "Rezultat zadatka:"
 
-#: app/static/app/js/components/TaskListItem.jsx:568
+#: app/static/app/js/components/TaskListItem.jsx:731
 msgid "On"
 msgstr "Uključeno"
 
-#: app/static/app/js/components/TaskListItem.jsx:569
+#: app/static/app/js/components/TaskListItem.jsx:732
 msgid "Off"
 msgstr "Isključeno"
 
-#: app/static/app/js/components/TaskListItem.jsx:589
-msgid ""
-"An orthophoto could not be generated. To generate one, make sure GPS "
-"information is embedded in the EXIF tags of your images, or use a Ground "
-"Control Points (GCP) file."
+#: app/static/app/js/components/TaskListItem.jsx:741
+msgid "Thumbnail"
 msgstr ""
-"Nije moguće generirati ortogonalnu aerofotografiju. Za generiranje slike, "
-"provjeri jesu li GPS informacije ugrađene u EXIF oznake tvojih slika ili "
-"koristi jednu GCP datoteku (datoteka s kontrolnim točkama na tlu)."
 
-#: app/static/app/js/components/TaskListItem.jsx:592
+#: app/static/app/js/components/TaskListItem.jsx:759
 msgid "enough RAM allocated"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:592
+#: app/static/app/js/components/TaskListItem.jsx:759
 msgid "cloud processing node"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:592
+#: app/static/app/js/components/TaskListItem.jsx:759
 #, python-format
 msgid ""
 "It looks like your processing node ran out of memory. If you are using "
@@ -1044,314 +2213,122 @@ msgid ""
 "from the task's options. You can also try to use a %(cloudlink)s."
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:599
-msgid "open a topic"
-msgstr ""
-
-#: app/static/app/js/components/TaskListItem.jsx:599
+#: app/static/app/js/components/TaskListItem.jsx:766
 #, python-format
 msgid ""
 "\"Process exited with code 1\" means that part of the processing failed. "
 "Sometimes it's a problem with the dataset, sometimes it can be solved by "
-"tweaking the Task Options and sometimes it might be a bug! If you need help, "
-"upload your images somewhere like %(link1)s or %(link2)s and "
-"%(open_a_topic)s on our community forum, making sure to include a copy of "
-"your task's output. Our awesome contributors will try to help you!"
+"tweaking the Task Options. Check the documentation at %(link)s"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:646
+#: app/static/app/js/components/TaskListItem.jsx:816
 msgid "Set a processing node"
 msgstr ""
 
-#: app/static/app/js/components/TaskListItem.jsx:651
-msgid "Waiting for image upload..."
-msgstr "Čekanje na prijenos slike …"
+#: app/static/app/js/components/TaskListItem.jsx:821
+#, fuzzy
+#| msgid "Start Processing"
+msgid "Waiting to start processing..."
+msgstr "Pokreni obradu"
 
-#: app/static/app/js/components/TaskListItem.jsx:690
+#: app/static/app/js/components/TaskListItem.jsx:872
 msgid "Move"
 msgstr "Premjesti"
 
-#: app/static/app/js/components/UploadProgressBar.jsx:29
+#: app/static/app/js/components/TaskListItem.jsx:884
+#, fuzzy
+#| msgid "Compass"
+msgid "Compact"
+msgstr "Kompas"
+
+#: app/static/app/js/components/TaskListItem.jsx:885
+msgid ""
+"Compacting will free disk space by permanently deleting the original images "
+"used for processing. It will no longer be possible to restart the task. Maps "
+"and models will remain in place. Continue?"
+msgstr ""
+
+#: app/static/app/js/components/TaskListItem.jsx:886
+#, fuzzy
+#| msgid "Cannot cancel task."
+msgid "Cannot compact task."
+msgstr "Nije moguće prekinuti zadatak."
+
+#: app/static/app/js/components/Toaster.jsx:14
+#, fuzzy
+#| msgid "Processing"
+msgid "Processed"
+msgstr "Obrađuje se"
+
+#: app/static/app/js/components/Toaster.jsx:15
+#, fuzzy
+#| msgid "Share"
+msgid "Shared"
+msgstr "Dijeli"
+
+#: app/static/app/js/components/Toaster.jsx:16
+#, fuzzy
+#| msgid "Export"
+msgid "Exported"
+msgstr "Izvoz"
+
+#: app/static/app/js/components/Toaster.jsx:20
+#, fuzzy
+#| msgid "Share"
+msgid "Sharing"
+msgstr "Dijeli"
+
+#: app/static/app/js/components/Toaster.jsx:21
+#, fuzzy
+#| msgid "Exporting..."
+msgid "Exporting"
+msgstr "Izvoz utijeku …"
+
+#: app/static/app/js/components/Toaster.jsx:243
+#: coreplugins/lightning/public/ShareDialog.jsx:259
+#, fuzzy
+#| msgid "Move Task"
+msgid "Task"
+msgstr "Premjesti zadatak"
+
+#: app/static/app/js/components/Toaster.jsx:268
+#, fuzzy
+#| msgid "Are you sure you want to cancel?"
+msgid "Are you sure you want to cancel the tasks?"
+msgstr "Sigurno želiš odustati?"
+
+#: app/static/app/js/components/UploadProgressBar.jsx:25
 #, python-format
 msgid "remaining to upload: %(bytes)s"
 msgstr ""
 
-#: app/static/app/js/components/UploadProgressBar.jsx:35
+#: app/static/app/js/components/UploadProgressBar.jsx:31
 #, python-format
 msgid "%(count)s files %(remaining)s"
 msgstr ""
 
-#: app/static/app/js/components/UploadProgressBar.jsx:36
+#: app/static/app/js/components/UploadProgressBar.jsx:32
 #, python-format
 msgid "%(count)s files uploaded successfully"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:3
-#, python-format
 msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
-"%(default)s"
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
 #, python-format
 msgid ""
-"Set a value in meters for the GPS Dilution of Precision (DOP) information "
-"for all images. If your images are tagged with high precision GPS "
-"information (RTK), this value will be automatically set accordingly. You can "
-"use this option to manually set it in case the reconstruction fails. "
-"Lowering this option can sometimes help control bowling-effects over large "
-"areas. Default: %(default)s"
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
+"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
+"Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
-msgid "show this help message and exit"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:6
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:7
-#, python-format
-msgid ""
-"Decimate the points before generating the DEM. 1 is no decimation (full "
-"quality). 100 decimates ~99%% of the points. Useful for speeding up "
-"generation of DEM results in very large datasets. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:8
-#, python-format
-msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:9
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:10
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
-msgstr ""
-"Postavi ovaj parametar ako želiš generirati Google Earth (KMZ) prikaz "
-"ortogonalne aerofotografije. Zadano: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"Classify the point cloud outputs using a Simple Morphological Filter. You "
-"can control the behavior of this option by tweaking the --dem-* parameters. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
-"mosaics with multiple overlapping orthophotos. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:14
-#, python-format
-msgid ""
-"Computes an euclidean raster map for each DEM. The map reports the distance "
-"from each cell to the nearest NODATA value (before any hole filling takes "
-"place). This can be useful to isolate the areas that have been filled. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:15
-#, python-format
-msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:16
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-"Generiraj statične pločice za ortogonalne aerofotografije i digitalne modele "
-"terena koji su prikladni za preglednike kao što su Leaflet ili OpenLayers. "
-"Zadano: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:17
-#, python-format
-msgid ""
-"Legacy option (use --feature-quality instead). Resizes images by the largest "
-"side for feature extraction purposes only. Set to -1 to disable. This does "
-"not affect the final orthophoto resolution quality and will not resize the "
-"original images. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:18
-#, python-format
-msgid ""
-"Path to the file containing the ground control points used for "
-"georeferencing. The file needs to use the following format: EPSG:<code> or <"
-"+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2]Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:19
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. Note that omega/phi/kappa are currently not "
-"supported (you can set them to 0). The file needs to use the following "
-"format: EPSG:<code> or <+proj definition>image_name geo_x geo_y geo_z [omega "
-"(degrees)] [phi (degrees)] [kappa (degrees)] [horz accuracy (meters)] [vert "
-"accuracy (meters)]Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:20
-#, python-format
-msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
-#, python-format
-msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrinked by N meters. Use 0 to disable cropping. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Radius of the overlap between submodels. After grouping images into "
-"clusters, images that are closer than this radius to a cluster are added to "
-"the cluster. This is done to ensure that neighboring submodels overlap. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:25
-#, python-format
-msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:26
-#, python-format
-msgid ""
-"When texturing the 3D mesh, for each triangle, choose to prioritize images "
-"with sharp features (gmi) or those that cover the largest area (area). "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:27
-#, python-format
-msgid ""
-"Choose what to merge in the merge step in a split dataset. By default all "
-"available outputs are merged. Options: %(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:28
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-"Koristi punu 3D mrežu za izračunavanje ortogonalne aerofotografije umjesto "
-"2,5D mreže. Ova je opcija malo brža i daje slične rezultate u ravnim "
-"područjima. Zadano: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
-#, python-format
-msgid ""
-"Reduce the memory usage needed for depthmap fusion by splitting large scenes "
-"into tiles. Turn this on if your machine doesn't have much RAM and/or you've "
-"set --pc-quality to high or ultra. Experimental. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
-#, python-format
-msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:34
-#, python-format
-msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:35
 #, python-format
 msgid ""
 "Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
@@ -1362,74 +2339,227 @@ msgstr ""
 "jednostavnog morfološkog filtra. Provjeri --dem* i --smrf* parametre za "
 "finije podešavanje. Zadano: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:36
-#, python-format
-msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
+#: app/static/app/js/translations/odm_autogenerated.js:6
+msgid "show this help message and exit"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:37
+#: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
 msgid ""
-"When processing multispectral datasets, ODM will automatically align the "
-"images for each band. If the images have been postprocessed and are already "
-"aligned, use this option. Default: %(default)s"
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:38
+#: app/static/app/js/translations/odm_autogenerated.js:8
 #, python-format
 msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:9
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:10
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
+msgstr ""
+"Postavi ovaj parametar ako želiš generirati prikaz ortogonalne "
+"aerofotografije u PNG formatu. Zadano: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:11
+#, python-format
+msgid ""
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:12
+#, python-format
+msgid ""
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:13
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
+"relative to the default behavior if set to true. Ordinarily, GSD estimates "
+"are used to cap the maximum resolution of image outputs and resizes images "
+"when necessary, resulting in faster processing and lower memory usage. Since "
+"GSD is an estimate, sometimes ignoring it can result in slightly better "
+"image output quality. Never set --ignore-gsd to true unless you are positive "
+"you need it, and even then: do not use it. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:15
+#, python-format
+msgid ""
+"Choose what to merge in the merge step in a split dataset. By default all "
+"available outputs are merged. Options: %(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:16
+#, python-format
+msgid ""
+"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
+"filling. Starting with a radius equal to the output resolution, N different "
+"DEMs are generated with progressively bigger radius using the inverse "
+"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
+"then merged using nearest neighbor interpolation. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:17
+#, python-format
+msgid ""
+"Generates a polygon around the cropping area that cuts the orthophoto around "
+"the edges of features. This polygon can be useful for stitching seamless "
+"mosaics with multiple overlapping orthophotos. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:18
+#, python-format
+msgid ""
+"Set a value in meters for the GPS Dilution of Precision (DOP) information "
+"for all images. If your images are tagged with high precision GPS "
+"information (RTK), this value will be automatically set accordingly. You can "
+"use this option to manually set it in case the reconstruction fails. "
+"Lowering this option can sometimes help control bowling-effects over large "
+"areas. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:19
+#, python-format
+msgid ""
+"Choose the structure from motion algorithm. For aerial datasets, if camera "
+"GPS positions and angles are available, triangulation can be faster. Planar "
+"is deprecated and will be removed in a future version. Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:20
+#, python-format
+msgid ""
+"Delete heavy intermediate files to optimize disk space usage. This affects "
+"the ability to restart the pipeline from an intermediate stage, but allows "
+"datasets to be processed on machines that don't have sufficient disk space "
+"available. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:21
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:22
+#, python-format
+msgid ""
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+msgstr ""
+"Automatski postavi granicu pomoću lokacija snimki kamere za ograničavanje "
+"područja rekonstrukcije. To može pomoći ukloniti udaljene pozadinske "
+"artefakte (nebo, krajolici u pozadini, itd.). Vidi također --boundary. "
+"Zadano: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:23
+#, python-format
+msgid ""
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:24
+#, python-format
+msgid ""
+"The maximum output resolution of extracted video frames in pixels. Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:39
+#: app/static/app/js/translations/odm_autogenerated.js:25
 #, python-format
 msgid ""
-"Ignore Ground Sampling Distance (GSD). GSD caps the maximum resolution of "
-"image outputs and resizes images when necessary, resulting in faster "
-"processing and lower memory usage. Since GSD is an estimate, sometimes "
-"ignoring it can result in slightly better image output quality. Default: "
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:26
+#, python-format
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:27
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:40
+#: app/static/app/js/translations/odm_autogenerated.js:28
 #, python-format
 msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
+"Run local bundle adjustment for every image added to the reconstruction and "
+"a global adjustment every 100 images. Speeds up reconstruction for very "
+"large datasets. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:41
+#: app/static/app/js/translations/odm_autogenerated.js:29
 #, python-format
-msgid "Generates a benchmark file with runtime info. Default: %(default)s"
+msgid ""
+"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:42
+#: app/static/app/js/translations/odm_autogenerated.js:30
 #, python-format
-msgid "Skip the blending of colors near seams. Default: %(default)s"
+msgid ""
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:43
+#: app/static/app/js/translations/odm_autogenerated.js:31
+#, python-format
+msgid ""
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
 #, python-format
 msgid ""
 "Octree depth used in the mesh reconstruction, increase to get more vertices, "
 "recommended values are 8-12. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:44
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr ""
-"Preskoči generiranje ortogonalne aerofotografije. Ovo može uštedjeti vrijeme "
-"ako trebaš samo 3D rezultate ili digitalne modele terena. Zadano: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:45
+#: app/static/app/js/translations/odm_autogenerated.js:33
 #, python-format
 msgid ""
 "Set the radiometric calibration to perform on images. When processing "
@@ -1443,76 +2573,101 @@ msgid ""
 "the sun. Can be one of: %(choices)s. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:46
+#: app/static/app/js/translations/odm_autogenerated.js:34
 #, python-format
 msgid ""
-"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
-"filling. Starting with a radius equal to the output resolution, N different "
-"DEMs are generated with progressively bigger radius using the inverse "
-"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
-"then merged using nearest neighbor interpolation. Default: %(default)s"
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:47
+#: app/static/app/js/translations/odm_autogenerated.js:35
 #, python-format
 msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped to 2x the "
-"ground sampling distance (GSD) estimate. To remove the cap, check --ignore-"
-"gsd also. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:48
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:50
-#, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"Run local bundle adjustment for every image added to the reconstruction and "
-"a global adjustment every 100 images. Speeds up reconstruction for very "
-"large datasets. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:53
+#: app/static/app/js/translations/odm_autogenerated.js:36
 #, python-format
+msgid ""
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:37
+#, python-format
+msgid ""
+"Path to the file containing the ground control points used for "
+"georeferencing. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
+"[extra2]Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:38
+#, python-format
+msgid ""
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:39
+#, python-format
+msgid ""
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:40
+#, python-format
+msgid ""
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:41
+#, python-format
+msgid ""
+"Name of dataset (i.e subfolder name within project folder). Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:42
+msgid ""
+"Permanently delete all previous results and rerun the processing pipeline."
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:43
+#, python-format
+msgid ""
+"Perform image matching with the nearest images based on GPS exif data. Set "
+"to 0 to match by triangulation. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, fuzzy, python-format
+#| msgid ""
+#| "Skips dense reconstruction and 3D model generation. It generates an "
+#| "orthophoto directly from the sparse reconstruction. If you just need an "
+#| "orthophoto and do not need a full 3D model, turn on this option. Default: "
+#| "%(default)s"
 msgid ""
 "Skips dense reconstruction and 3D model generation. It generates an "
-"orthophoto directly from the sparse reconstruction. If you just need an "
-"orthophoto and do not need a full 3D model, turn on this option. Default: "
-"%(default)s"
+"orthophoto directly from the sparse reconstruction. On flat terrain with no "
+"objects/structures, turn this on to save time. Default: %(default)s"
 msgstr ""
 "Preskače zbijenu rekonstrukciju i generiranje 3D modela. Generira "
 "ortogonalnu aerofotografiju izravno iz rijetke rekonstrukcije. Ako trebaš "
 "samo ortogonalnu aerofotografiju, a ne potpuni 3D model, uključi ovu opciju. "
 "Zadano: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
+#: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
 msgid ""
 "The maximum number of processes to use in various processes. Peak memory "
@@ -1520,70 +2675,51 @@ msgid ""
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:56
-#, python-format
-msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
-msgstr ""
-"Postavi ovaj parametar ako želiš generirati prikaz ortogonalne "
-"aerofotografije u PNG formatu. Zadano: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"Perform image matching with the nearest images based on GPS exif data. Set "
-"to 0 to match by triangulation. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
+#: app/static/app/js/translations/odm_autogenerated.js:46
 #, python-format
 msgid ""
 "Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
 "Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:62
+#: app/static/app/js/translations/odm_autogenerated.js:47
+#, python-format
 msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
 msgstr ""
+"Postavi ovaj parametar ako želiš generirati Google Earth (KMZ) prikaz "
+"ortogonalne aerofotografije. Zadano: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:63
+#: app/static/app/js/translations/odm_autogenerated.js:48
 #, python-format
-msgid "Print additional messages to the console. Default: %(default)s"
+msgid ""
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
 msgstr ""
+"Postavi komprimiranje za ortogonalne aerofotografije. Može biti jedno od: "
+"%(choices)s. Zadano: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:64
+#: app/static/app/js/translations/odm_autogenerated.js:49
 #, python-format
-msgid "Print debug messages. Default: %(default)s"
+msgid ""
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:65
+#: app/static/app/js/translations/odm_autogenerated.js:50
+msgid "Displays version number and exits. "
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:51
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:52
 #, python-format
 msgid ""
 "Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
@@ -1594,80 +2730,38 @@ msgstr ""
 "pomoću progresivnog morfološkog filtra. Provjeri --dem* parametre za finije "
 "podešavanje. Zadano: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:66
+#: app/static/app/js/translations/odm_autogenerated.js:53
+msgid "Copy output results to this folder after processing."
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
 #, python-format
 msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:67
+#: app/static/app/js/translations/odm_autogenerated.js:55
 #, python-format
 msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation threshold parameter (meters). Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:68
+#: app/static/app/js/translations/odm_autogenerated.js:57
 #, python-format
 msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Turn on gamma tone mapping or none for no tone mapping. Can be one of "
-"%(choices)s. Default: %(default)s "
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:72
-#, python-format
-msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
-"images are taken with a rolling shutter camera. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:73
-#, python-format
-msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate. To remove the cap, check --ignore-"
-"gsd also. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid ""
-"Improve the accuracy of the point cloud by computing geometrically "
-"consistent depthmaps. This increases processing time, but can improve "
-"results in urban scenes. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid ""
-"Simple Morphological Filter window radius parameter (meters). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
+#: app/static/app/js/translations/odm_autogenerated.js:58
 #, python-format
 msgid ""
 "Set point cloud quality. Higher quality generates better, denser point "
@@ -1676,45 +2770,187 @@ msgid ""
 "%(choices)s. Default: %(default)s"
 msgstr ""
 
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
+#, python-format
+msgid ""
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
+msgid ""
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, fuzzy, python-format
+#| msgid ""
+#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+#| "Default: %(default)s"
+msgid ""
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"Postavi komprimiranje za ortogonalne aerofotografije. Može biti jedno od: "
+"%(choices)s. Zadano: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:63
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:64
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:65
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:66
+#, python-format
+msgid ""
+"Decimate the points before generating the DEM. 1 is no decimation (full "
+"quality). 100 decimates ~99%% of the points. Useful for speeding up "
+"generation of DEM results in very large datasets. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid ""
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
+#, python-format
+msgid ""
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:70
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+"Koristi punu 3D mrežu za izračunavanje ortogonalne aerofotografije umjesto "
+"2,5D mreže. Ova je opcija malo brža i daje slične rezultate u ravnim "
+"područjima. Zadano: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Computes an euclidean raster map for each DEM. The map reports the distance "
+"from each cell to the nearest NODATA value (before any hole filling takes "
+"place). This can be useful to isolate the areas that have been filled. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
+msgstr ""
+
 #: app/static/app/js/translations/odm_autogenerated.js:77
 #, python-format
 msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:78
 #, python-format
 msgid ""
-"Build orthophoto overviews for faster display in programs such as QGIS. "
-"Default: %(default)s"
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
 msgstr ""
-"Izradi preglede ortogonalnih aerofotografija za brži prikaz u programima kao "
-"što je QGIS. Zadano: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:79
-msgid "Copy output results to this folder after processing."
+#, python-format
+msgid ""
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
+"%(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:80
 #, python-format
 msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
+"Perform image matching with the nearest N images based on image filename "
+"order. Can speed up processing of sequential images, such as those extracted "
+"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"disable. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:81
+#, python-format
 msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
+"Turn off camera parameter optimization during bundle adjustment. This can be "
+"sometimes useful for improving results that exhibit doming/bowling or when "
+"images are taken with a rolling shutter camera. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:82
-#, python-format
-msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:83
 #, python-format
 msgid ""
 "Skip generation of a full 3D model. This can save time if you only need 2D "
@@ -1724,83 +2960,89 @@ msgstr ""
 "trebaš samo 2D rezultate kao što su ortogonalne aerofotografije i digitalni "
 "modeli terena. Zadano: %(default)s"
 
+#: app/static/app/js/translations/odm_autogenerated.js:83
+#, python-format
+msgid ""
+"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
+"outputs should be automatically aligned to. Experimental. Default: "
+"%(default)s"
+msgstr ""
+
 #: app/static/app/js/translations/odm_autogenerated.js:84
 #, python-format
 msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
 msgstr ""
-"Automatski postavi granicu pomoću lokacija snimki kamere za ograničavanje "
-"područja rekonstrukcije. To može pomoći ukloniti udaljene pozadinske "
-"artefakte (nebo, krajolici u pozadini, itd.). Vidi također --boundary. "
-"Zadano: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:85
-msgid "Displays version number and exits. "
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
 msgstr ""
+"Generiraj statične pločice za ortogonalne aerofotografije i digitalne modele "
+"terena koji su prikladni za preglednike kao što su Leaflet ili OpenLayers. "
+"Zadano: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:86
 #, python-format
 msgid ""
-"Type of photometric outlier removal method. Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:87
 #, python-format
 msgid ""
-"Choose the structure from motion algorithm. For aerial datasets, if camera "
-"GPS positions and angles are available, triangulation can generate better "
-"results. For planar scenes captured at fixed altitude with nadir-only "
-"images, planar can be much faster. Can be one of: %(choices)s. Default: "
-"%(default)s"
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
 msgstr ""
+"Preskoči generiranje ortogonalne aerofotografije. Ovo može uštedjeti vrijeme "
+"ako trebaš samo 3D rezultate ili digitalne modele terena. Zadano: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:88
 #, python-format
 msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+"Simple Morphological Filter slope parameter (rise over run). Default: "
+"%(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:89
 #, python-format
 msgid ""
-"Controls the density of the point cloud by setting the resolution of the "
-"depthmap images. Higher values take longer to compute but produce denser "
-"point clouds. Overrides the value calculated by --pc-quality.Default: "
+"Simple Morphological Filter window radius parameter (meters). Default: "
 "%(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:90
 #, python-format
 msgid ""
-"Perform ground rectification on the point cloud. This means that wrongly "
-"classified ground points will be re-classified and gaps will be filled. "
-"Useful for generating DTMs. Default: %(default)s"
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
 msgstr ""
-"Izvrši ispravljanje tla na oblaku točaka. To znači da će se pogrešno "
-"klasificirane točke na tlu ponovo klasificirati i da će se praznine "
-"popuniti. Korisno za generiranje digitalnih modela terena. Zadano: %(default)"
-"s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
 msgid ""
-"Delete heavy intermediate files to optimize disk space usage. This affects "
-"the ability to restart the pipeline from an intermediate stage, but allows "
-"datasets to be processed on machines that don't have sufficient disk space "
-"available. Default: %(default)s"
+"Specify the distance between camera shot locations and the outer edge of the "
+"boundary when computing the boundary with --auto-boundary. Set to 0 to "
+"automatically choose a value. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:92
 #, python-format
 msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
 msgstr ""
-"Postavi komprimiranje za ortogonalne aerofotografije. Može biti jedno od: %"
-"(choices)s. Zadano: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:93
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgstr ""
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
 msgid "Compute volume, area and length measurements on Leaflet"
@@ -1873,12 +3115,8 @@ msgstr "Mjerenja"
 msgid "Clipping"
 msgstr "Rezanje"
 
-#: app/static/app/js/translations/potree_autogenerated.js:8
-msgid "Annotations"
-msgstr "Pribilješke"
-
 #: app/static/app/js/translations/potree_autogenerated.js:9
-#: app/static/app/js/translations/potree_autogenerated.js:54
+#: app/static/app/js/translations/potree_autogenerated.js:55
 msgid "Materials"
 msgstr "Materijali"
 
@@ -1931,7 +3169,7 @@ msgid "Volume measurement"
 msgstr "Mjerenje volumena"
 
 #: app/static/app/js/translations/potree_autogenerated.js:22
-#: app/static/app/js/translations/potree_autogenerated.js:78
+#: app/static/app/js/translations/potree_autogenerated.js:79
 msgid "Height profile"
 msgstr "Profil visine"
 
@@ -2036,152 +3274,407 @@ msgid "Camera Animation"
 msgstr ""
 
 #: app/static/app/js/translations/potree_autogenerated.js:48
-msgid "Point budget"
+msgid "Remove last camera animation"
 msgstr ""
 
 #: app/static/app/js/translations/potree_autogenerated.js:49
+msgid "Point budget"
+msgstr ""
+
+#: app/static/app/js/translations/potree_autogenerated.js:50
 msgid "Point size"
 msgstr "Veličina točki"
 
-#: app/static/app/js/translations/potree_autogenerated.js:50
+#: app/static/app/js/translations/potree_autogenerated.js:51
 msgid "Minimum size"
 msgstr "Minimalna veličina"
 
-#: app/static/app/js/translations/potree_autogenerated.js:51
-#: app/static/app/js/translations/potree_autogenerated.js:61
-msgid "Opacity"
-msgstr "Neprozirnost"
-
-#: app/static/app/js/translations/potree_autogenerated.js:52
+#: app/static/app/js/translations/potree_autogenerated.js:53
 msgid "Field of view"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:53
+#: app/static/app/js/translations/potree_autogenerated.js:54
 msgid "Point sizing"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:55
+#: app/static/app/js/translations/potree_autogenerated.js:56
 msgid "Elevation range"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:56
+#: app/static/app/js/translations/potree_autogenerated.js:57
 msgid "Scalar range"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:57
+#: app/static/app/js/translations/potree_autogenerated.js:58
 msgid "Quality"
 msgstr "Kvaliteta"
 
-#: app/static/app/js/translations/potree_autogenerated.js:58
+#: app/static/app/js/translations/potree_autogenerated.js:59
 msgid "Shape"
 msgstr "Oblik"
 
-#: app/static/app/js/translations/potree_autogenerated.js:59
+#: app/static/app/js/translations/potree_autogenerated.js:60
 msgid "Radius"
 msgstr "Radijus"
 
-#: app/static/app/js/translations/potree_autogenerated.js:60
+#: app/static/app/js/translations/potree_autogenerated.js:61
 msgid "Strength"
 msgstr "Jačina"
 
-#: app/static/app/js/translations/potree_autogenerated.js:63
+#: app/static/app/js/translations/potree_autogenerated.js:64
 msgid "Min node size"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:64
+#: app/static/app/js/translations/potree_autogenerated.js:65
 msgid "Clip mode"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:65
+#: app/static/app/js/translations/potree_autogenerated.js:66
 msgid "Speed"
 msgstr "Brzina"
 
-#: app/static/app/js/translations/potree_autogenerated.js:66
+#: app/static/app/js/translations/potree_autogenerated.js:67
 msgid "Sky"
 msgstr "Nebo"
 
-#: app/static/app/js/translations/potree_autogenerated.js:67
+#: app/static/app/js/translations/potree_autogenerated.js:68
 msgid "Keep above ground"
 msgstr "Drži iznad tla"
 
-#: app/static/app/js/translations/potree_autogenerated.js:68
+#: app/static/app/js/translations/potree_autogenerated.js:69
 msgid "Box"
 msgstr "Okvir"
 
-#: app/static/app/js/translations/potree_autogenerated.js:69
+#: app/static/app/js/translations/potree_autogenerated.js:70
 msgid "Length unit"
 msgstr "Jedinica duljine"
 
-#: app/static/app/js/translations/potree_autogenerated.js:70
+#: app/static/app/js/translations/potree_autogenerated.js:71
 msgid "Lock view"
 msgstr "Zaključaj prikaz"
 
-#: app/static/app/js/translations/potree_autogenerated.js:71
-#: app/static/app/js/translations/potree_autogenerated.js:88
+#: app/static/app/js/translations/potree_autogenerated.js:72
+#: app/static/app/js/translations/potree_autogenerated.js:89
 msgid "Language"
 msgstr "Jezik"
 
-#: app/static/app/js/translations/potree_autogenerated.js:72
+#: app/static/app/js/translations/potree_autogenerated.js:73
 msgid "Backface Culling"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:73
+#: app/static/app/js/translations/potree_autogenerated.js:74
 msgid "clip"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:74
+#: app/static/app/js/translations/potree_autogenerated.js:75
 msgid "show volume"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:75
+#: app/static/app/js/translations/potree_autogenerated.js:76
 msgid "show in 3D"
 msgstr "prikaži kao 3D"
 
-#: app/static/app/js/translations/potree_autogenerated.js:76
+#: app/static/app/js/translations/potree_autogenerated.js:77
 msgid "show on map"
 msgstr "prikaži na karti"
 
-#: app/static/app/js/translations/potree_autogenerated.js:77
+#: app/static/app/js/translations/potree_autogenerated.js:78
 msgid "Number of Points"
 msgstr "Broj točaka"
 
-#: app/static/app/js/translations/potree_autogenerated.js:79
+#: app/static/app/js/translations/potree_autogenerated.js:80
 msgid "Save LAS(3D)"
 msgstr "Spremi LAS(3D)"
 
-#: app/static/app/js/translations/potree_autogenerated.js:80
+#: app/static/app/js/translations/potree_autogenerated.js:81
 msgid "Save CSV(2D)"
 msgstr "Spremi CSV(2D)"
 
-#: app/static/app/js/translations/potree_autogenerated.js:81
+#: app/static/app/js/translations/potree_autogenerated.js:82
 msgid "Camera Position"
 msgstr "Pozicija kamere"
 
-#: app/static/app/js/translations/potree_autogenerated.js:82
+#: app/static/app/js/translations/potree_autogenerated.js:83
 msgid "Camera Target"
 msgstr "Cilj kamere"
 
-#: app/static/app/js/translations/potree_autogenerated.js:83
+#: app/static/app/js/translations/potree_autogenerated.js:84
 msgid "Return Number"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:84
+#: app/static/app/js/translations/potree_autogenerated.js:85
 msgid "Number of Returns"
 msgstr ""
 
-#: app/static/app/js/translations/potree_autogenerated.js:85
+#: app/static/app/js/translations/potree_autogenerated.js:86
 msgid "min"
 msgstr "min."
 
-#: app/static/app/js/translations/potree_autogenerated.js:86
+#: app/static/app/js/translations/potree_autogenerated.js:87
 msgid "max"
 msgstr "maks."
 
-#: app/static/app/js/translations/potree_autogenerated.js:87
+#: app/static/app/js/translations/potree_autogenerated.js:88
 msgid "GPS Time"
 msgstr "GPS vrijeme"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:57
+#: coreplugins/annotate/public/ElevationProfile.jsx:409
+msgid "Distance:"
+msgstr ""
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:409
+#: coreplugins/contours/public/ContoursPanel.jsx:178
+msgid "Elevation:"
+msgstr "Visina:"
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:412
+msgid "Reset"
+msgstr ""
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:415
+#: coreplugins/annotate/public/Toolbox.jsx:1210
+#, fuzzy
+#| msgid "Export to GeoJSON"
+msgid "Export to CSV"
+msgstr "Izvezi u GeoJSON"
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:418
+#: coreplugins/annotate/public/Volume3D.jsx:387
+msgid "Go Back"
+msgstr ""
+
+#: coreplugins/annotate/public/ElevationProfile.jsx:419
+#: coreplugins/annotate/public/Volume3D.jsx:388
+#, fuzzy
+#| msgid "Back view"
+msgid "Back"
+msgstr "Prikaz natrag"
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:92
+#: coreplugins/annotate/public/Toolbox.jsx:1208
+#, fuzzy
+#| msgid "Annotations"
+msgid "Annotations Report"
+msgstr "Pribilješke"
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:100
+msgid "Prepared by:"
+msgstr ""
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:106
+#, fuzzy
+#| msgid "Username"
+msgid "Enter name"
+msgstr "Korisničko ime"
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:110
+msgid "Notes:"
+msgstr ""
+
+#: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:117
+#, fuzzy
+#| msgid "Description (optional)"
+msgid "Additional notes (optional)"
+msgstr "Opsi (opcionalno)"
+
+#: coreplugins/annotate/public/Popup.jsx:313
+msgid "Invalid coordinates"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:886
+#: coreplugins/measure/public/MeasurePopup.jsx:178
+#, fuzzy
+#| msgid "Language"
+msgid "Triangulate"
+msgstr "Jezik"
+
+#: coreplugins/annotate/public/Popup.jsx:887
+#: coreplugins/measure/public/MeasurePopup.jsx:179
+msgid "Plane"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:888
+#: coreplugins/measure/public/MeasurePopup.jsx:180
+msgid "Average"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:889
+#: coreplugins/measure/public/MeasurePopup.jsx:181
+msgid "Highest"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:890
+#: coreplugins/measure/public/MeasurePopup.jsx:182
+msgid "Lowest"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:897
+#: coreplugins/annotate/public/Popup.jsx:1002
+#, fuzzy
+#| msgid "Strength"
+msgid "Length"
+msgstr "Jačina"
+
+#: coreplugins/annotate/public/Popup.jsx:903
+#: coreplugins/annotate/public/Popup.jsx:1036
+#: coreplugins/measure/public/app.jsx:26
+msgid "Area"
+msgstr "Područje"
+
+#: coreplugins/annotate/public/Popup.jsx:904
+#: coreplugins/annotate/public/Popup.jsx:1042
+#, fuzzy
+#| msgid "Volume:"
+msgid "Volume"
+msgstr "Volumen:"
+
+#: coreplugins/annotate/public/Popup.jsx:935
+msgid "Display"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:969
+msgid "Coordinates"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:993
+msgid "Temperature"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1006
+#, fuzzy
+#| msgid "Elevation:"
+msgid "Elevation Profile"
+msgstr "Visina:"
+
+#: coreplugins/annotate/public/Popup.jsx:1010
+#: coreplugins/annotate/public/Popup.jsx:1064
+msgid "DSM"
+msgstr "digitalni model površine"
+
+#: coreplugins/annotate/public/Popup.jsx:1011
+#: coreplugins/annotate/public/Popup.jsx:1065
+msgid "DTM"
+msgstr "digitalni model terena"
+
+#: coreplugins/annotate/public/Popup.jsx:1013
+#: coreplugins/annotate/public/Popup.jsx:1014
+msgid "Show"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1028
+msgid "Elevation profile error"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1039
+#: coreplugins/measure/public/app.jsx:27
+msgid "Perimeter"
+msgstr "Perimetar"
+
+#: coreplugins/annotate/public/Popup.jsx:1049
+#: coreplugins/annotate/public/Volume3D.jsx:383
+#, fuzzy
+#| msgid "Custom"
+msgid "Cut"
+msgstr "Priagođeno"
+
+#: coreplugins/annotate/public/Popup.jsx:1055
+#: coreplugins/annotate/public/Volume3D.jsx:384
+msgid "Fill"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1061
+#, fuzzy
+#| msgid "Surface Model"
+msgid "Surface"
+msgstr "Model površine"
+
+#: coreplugins/annotate/public/Popup.jsx:1071
+msgid "Base Surface"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1079
+#, fuzzy
+#| msgid "show in 3D"
+msgid "Show 3D"
+msgstr "prikaži kao 3D"
+
+#: coreplugins/annotate/public/Popup.jsx:1085
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom Z"
+msgstr "Priagođeno"
+
+#: coreplugins/annotate/public/Popup.jsx:1107
+msgid "3D view error"
+msgstr ""
+
+#: coreplugins/annotate/public/Popup.jsx:1117
+#, fuzzy
+#| msgid "Center on this location"
+msgid "No images found at this location"
+msgstr "Centriraj na ovu lokaciju"
+
+#: coreplugins/annotate/public/Popup.jsx:1139
+#, fuzzy
+#| msgid "Preview"
+msgid "Previous"
+msgstr "Pregled"
+
+#: coreplugins/annotate/public/Popup.jsx:1141
+msgid "Next"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1024
+#: coreplugins/annotate/public/Toolbox.jsx:1180
+#, fuzzy
+#| msgid "Point size"
+msgid "Point"
+msgstr "Veličina točki"
+
+#: coreplugins/annotate/public/Toolbox.jsx:1026
+#: coreplugins/annotate/public/Toolbox.jsx:1166
+msgid "Line"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1028
+#: coreplugins/annotate/public/Toolbox.jsx:1173
+msgid "Polygon"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1030
+msgid "Inspection"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1152
+msgid "Select"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1159
+msgid "Inspect"
+msgstr ""
+
+#: coreplugins/annotate/public/Toolbox.jsx:1187
+#, fuzzy
+#| msgid "Export to GeoJSON"
+msgid "Import GeoJSON"
+msgstr "Izvezi u GeoJSON"
+
+#: coreplugins/annotate/public/Toolbox.jsx:1197
+#, fuzzy
+#| msgid "Annotations"
+msgid "Export Annotations"
+msgstr "Pribilješke"
+
+#: coreplugins/annotate/public/Volume3D.jsx:385
+msgid "Base"
+msgstr ""
+
+#: coreplugins/contours/public/Contours.jsx:37
+#: coreplugins/contours/public/ContoursPanel.jsx:429
+msgid "Contours"
+msgstr "Izohipse"
+
+#: coreplugins/contours/public/ContoursPanel.jsx:74
 msgid ""
 "No DSM or DTM is available. To export contours, make sure to process a task "
 "with either the --dsm or --dtm option checked."
@@ -2189,93 +3682,123 @@ msgstr ""
 "Nijedan digitalni model površine ili digitalni model terena nije dostupan. "
 "Za izvoz izohipsa obradi zadatak s označenom opcijom --dsm ili --dtm."
 
-#: coreplugins/contours/public/ContoursPanel.jsx:61
+#: coreplugins/contours/public/ContoursPanel.jsx:78
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:51
 msgid ""
 "Cannot retrieve information for task. Are you are connected to the internet?"
 msgstr ""
 
-#: coreplugins/contours/public/ContoursPanel.jsx:131
-msgid "Elevation:"
-msgstr "Visina:"
+#: coreplugins/contours/public/ContoursPanel.jsx:290
+msgid "Minimal"
+msgstr ""
 
-#: coreplugins/contours/public/ContoursPanel.jsx:131
-msgid "meters"
-msgstr "metri"
-
-#: coreplugins/contours/public/ContoursPanel.jsx:227
-msgid "Do not simplify"
-msgstr "Nemoj pojednostavljivati"
-
-#: coreplugins/contours/public/ContoursPanel.jsx:229
+#: coreplugins/contours/public/ContoursPanel.jsx:292
 msgid "Aggressive"
 msgstr "Agresivno"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:242
+#: coreplugins/contours/public/ContoursPanel.jsx:318
 msgid "Interval:"
 msgstr "Interval:"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:245
-#: coreplugins/contours/public/ContoursPanel.jsx:254
-#: coreplugins/contours/public/ContoursPanel.jsx:272
-#: coreplugins/contours/public/ContoursPanel.jsx:281
-msgid "meter"
-msgstr "metar"
-
-#: coreplugins/contours/public/ContoursPanel.jsx:252
-#: coreplugins/contours/public/ContoursPanel.jsx:279
+#: coreplugins/contours/public/ContoursPanel.jsx:328
+#: coreplugins/contours/public/ContoursPanel.jsx:355
 msgid "Value:"
 msgstr "Vrijedonst:"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:260
+#: coreplugins/contours/public/ContoursPanel.jsx:336
 msgid "Layer:"
 msgstr "Sloj:"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:269
+#: coreplugins/contours/public/ContoursPanel.jsx:345
 msgid "Simplify:"
 msgstr "Pojednostavni:"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:314
+#: coreplugins/contours/public/ContoursPanel.jsx:363
+msgid "SRS:"
+msgstr ""
+
+#: coreplugins/contours/public/ContoursPanel.jsx:391
 msgid "Preview"
 msgstr "Pregled"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:319
+#: coreplugins/contours/public/ContoursPanel.jsx:396
 msgid "Export"
 msgstr "Izvoz"
 
-#: coreplugins/contours/public/ContoursPanel.jsx:352
-msgid "Contours"
-msgstr "Izohipse"
+#: coreplugins/lightning/public/CloudLogin.jsx:44
+#: coreplugins/lightning/public/CloudLogin.jsx:47
+#: coreplugins/lightning/public/ShareDialog.jsx:116
+#, fuzzy
+#| msgid "Invalid response: %(error)s"
+msgid "Invalid response. Try again later."
+msgstr "Neispravan odgovor: %(error)s"
 
-#: coreplugins/editshortlinks/public/SLControls.jsx:154
-#: coreplugins/shortlinks/public/SLCheckbox.jsx:69
-msgid "Short Link"
-msgstr "Kratka poveznica"
-
-#: coreplugins/editshortlinks/public/SLControls.jsx:178
-msgid "Suffix"
-msgstr "Sufiks"
-
-#: coreplugins/editshortlinks/public/SLControls.jsx:191
-msgid "Delete Short Link"
+#: coreplugins/lightning/public/CloudLogin.jsx:78
+msgid "Invalid password. Do you need to reset it?"
 msgstr ""
 
-#: coreplugins/lightning/public/CostEstimateItem.jsx:103
+#: coreplugins/lightning/public/CloudLogin.jsx:83
+#: coreplugins/lightning/public/Login.jsx:62
+msgid "Cannot login. Invalid response:"
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:86
+#: coreplugins/lightning/public/Login.jsx:66
+msgid ""
+"Cannot login. Please make sure you are connected to the internet, or try "
+"again in an hour."
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:106
+#, python-format
+msgid ""
+"Your Lightning cloud platform account is not active yet. To activate it, "
+"visit %(link)s and make sure you can access the cloud platform, then try "
+"again."
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:114
+msgid "Please confirm the password of your Lightning account to continue:"
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:118
+#: coreplugins/lightning/public/Login.jsx:103
+msgid "Password"
+msgstr "Lozinka"
+
+#: coreplugins/lightning/public/CloudLogin.jsx:119
+msgid "switch"
+msgstr ""
+
+#: coreplugins/lightning/public/CloudLogin.jsx:127
+#, fuzzy
+#| msgid "Forgot password?"
+msgid "Reset password"
+msgstr "Zaboravio/la si lozinku?"
+
+#: coreplugins/lightning/public/CloudLogin.jsx:133
+#, fuzzy
+#| msgid "Password"
+msgid "Confirm Password"
+msgstr "Lozinka"
+
+#: coreplugins/lightning/public/CostEstimateItem.jsx:113
 msgid "Cannot retrieve estimate. Try again later."
 msgstr ""
 
-#: coreplugins/lightning/public/CostEstimateItem.jsx:106
+#: coreplugins/lightning/public/CostEstimateItem.jsx:116
 msgid "Cannot retrieve estimate. Check parameters or try again later."
 msgstr ""
 
-#: coreplugins/lightning/public/CostEstimateItem.jsx:139
+#: coreplugins/lightning/public/CostEstimateItem.jsx:149
 msgid "Credits Estimate"
 msgstr ""
 
-#: coreplugins/lightning/public/Dashboard.jsx:39
+#: coreplugins/lightning/public/Dashboard.jsx:43
 msgid "Loading dashboard..."
 msgstr "Učitavanje pregledne ploče …"
 
-#: coreplugins/lightning/public/Dashboard.jsx:48
+#: coreplugins/lightning/public/Dashboard.jsx:61
 msgid ""
 "Cannot load lightning dashboard. Are you running the latest version of "
 "WebODM?"
@@ -2283,7 +3806,7 @@ msgstr ""
 "Nespjelo učitavanje lightning pregledne ploče. Koristiš li najnoviju WebODM "
 "verziju?"
 
-#: coreplugins/lightning/public/Dashboard.jsx:52
+#: coreplugins/lightning/public/Dashboard.jsx:65
 msgid ""
 "Cannot load lightning dashboard. Please make sure you are connected to the "
 "internet, or try again in an hour."
@@ -2291,106 +3814,202 @@ msgstr ""
 "Nespjelo učitavanje lightning pregledne ploče. Poveži se na internet ili "
 "pokušaj ponovo za sat vremena."
 
-#: coreplugins/lightning/public/Dashboard.jsx:75
+#: coreplugins/lightning/public/Dashboard.jsx:91
 msgid "Cannot sync nodes. Are you connected to the internet?"
 msgstr ""
 
-#: coreplugins/lightning/public/Dashboard.jsx:83
+#: coreplugins/lightning/public/Dashboard.jsx:99
 msgid "Logging out…"
 msgstr "Odjava …"
 
-#: coreplugins/lightning/public/Dashboard.jsx:89
-#: coreplugins/lightning/public/Dashboard.jsx:94
+#: coreplugins/lightning/public/Dashboard.jsx:105
+#: coreplugins/lightning/public/Dashboard.jsx:110
 msgid "Cannot logout:"
 msgstr "Neuspjela odjava:"
 
-#: coreplugins/lightning/public/Dashboard.jsx:115
+#: coreplugins/lightning/public/Dashboard.jsx:146
 msgid "credits"
 msgstr "zasluge"
 
-#: coreplugins/lightning/public/Dashboard.jsx:117
+#: coreplugins/lightning/public/Dashboard.jsx:148
 msgid "Unlimited"
 msgstr "Neograničeno"
 
-#: coreplugins/lightning/public/Dashboard.jsx:130
+#: coreplugins/lightning/public/Dashboard.jsx:161
 msgid "Balance:"
 msgstr "Saldo:"
 
-#: coreplugins/lightning/public/Dashboard.jsx:131
+#: coreplugins/lightning/public/Dashboard.jsx:162
 msgid "Buy Credits"
 msgstr ""
 
-#: coreplugins/lightning/public/Dashboard.jsx:132
+#: coreplugins/lightning/public/Dashboard.jsx:163
 msgid "Refresh Balance"
 msgstr ""
 
-#: coreplugins/lightning/public/Dashboard.jsx:135
+#: coreplugins/lightning/public/Dashboard.jsx:166
 msgid "Hello,"
 msgstr "Zdravo,"
 
-#: coreplugins/lightning/public/Dashboard.jsx:138
+#: coreplugins/lightning/public/Dashboard.jsx:171
 msgid "Synced Nodes"
 msgstr ""
 
-#: coreplugins/lightning/public/Dashboard.jsx:146
+#: coreplugins/lightning/public/Dashboard.jsx:179
 msgid "Resync"
 msgstr ""
 
-#: coreplugins/lightning/public/Dashboard.jsx:153
+#: coreplugins/lightning/public/Dashboard.jsx:185
+msgid "Share Buttons"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:187
+#, fuzzy
+#| msgid "Enabled"
+msgid "Disabled"
+msgstr "Aktivirano"
+
+#: coreplugins/lightning/public/Dashboard.jsx:189
+msgid "Toggle"
+msgstr ""
+
+#: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Dashboard"
 msgstr "Pregledna ploča"
 
-#: coreplugins/lightning/public/Dashboard.jsx:159
+#: coreplugins/lightning/public/Dashboard.jsx:204
 msgid "Logout"
 msgstr "Odjava"
 
-#: coreplugins/lightning/public/Login.jsx:56
-msgid "Cannot login. Invalid response:"
-msgstr ""
-
-#: coreplugins/lightning/public/Login.jsx:60
-msgid ""
-"Cannot login. Please make sure you are connected to the internet, or try "
-"again in an hour."
-msgstr ""
-
-#: coreplugins/lightning/public/Login.jsx:90
+#: coreplugins/lightning/public/Login.jsx:96
 msgid "E-mail Address"
 msgstr "E-mail adresa"
 
-#: coreplugins/lightning/public/Login.jsx:97
-msgid "Password"
-msgstr "Lozinka"
-
-#: coreplugins/lightning/public/Login.jsx:104
+#: coreplugins/lightning/public/Login.jsx:110
 msgid "Don't have an account?"
 msgstr "Nemaš račun?"
 
-#: coreplugins/lightning/public/Login.jsx:105
+#: coreplugins/lightning/public/Login.jsx:111
 msgid "Forgot password?"
 msgstr "Zaboravio/la si lozinku?"
 
-#: coreplugins/lightning/public/Login.jsx:110
+#: coreplugins/lightning/public/Login.jsx:116
 msgid "Login and Sync"
 msgstr "Prijava i sinkronizacija"
 
-#: coreplugins/lightning/public/app.jsx:39
-msgid "Lightning Network"
+#: coreplugins/lightning/public/ShareDialog.jsx:119
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot communicate with Lightning's cloud platform. Try again later."
+msgstr "Nije moguće stvoriti novi zadatak. Pokušaj ponovo kasnije."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:150
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot calculate size. Try again later."
+msgstr "Nije moguće stvoriti novi zadatak. Pokušaj ponovo kasnije."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:193
+msgid "Service not available. Try again later."
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:196
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot verify credentials. Try again later."
+msgstr "Nije moguće stvoriti novi zadatak. Pokušaj ponovo kasnije."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:263
+#, fuzzy
+#| msgid "Invalid response: %(error)s"
+msgid "Invalid response"
+msgstr "Neispravan odgovor: %(error)s"
+
+#: coreplugins/lightning/public/ShareDialog.jsx:266
+#, fuzzy
+#| msgid "Cannot create new task. Please try again later."
+msgid "Cannot share. Please try again in a bit."
+msgstr "Nije moguće stvoriti novi zadatak. Pokušaj ponovo kasnije."
+
+#: coreplugins/lightning/public/ShareDialog.jsx:278
+msgid "Checking your credentials..."
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:287
+#, fuzzy
+#| msgid "Creating project..."
+msgid "Retrieving your projects..."
+msgstr "Stvaranje projekta …"
+
+#: coreplugins/lightning/public/ShareDialog.jsx:301
+msgid ""
+"Your Lightning account does not have permanent cloud storage. You can still "
+"share, but data will be deleted shortly after upload."
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:313
+#, fuzzy
+#| msgid "Create Project"
+msgid "Create New"
+msgstr "Stvori projekt"
+
+#: coreplugins/lightning/public/ShareDialog.jsx:329
+msgid "All Assets + Original Images"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:330
+msgid "Only"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:342
+msgid "Size exceeds available storage quota"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:355
+msgid "Select All"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:359
+msgid "Deselect All"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:389
+msgid "Share with Lightning"
+msgstr ""
+
+#: coreplugins/lightning/public/ShareDialog.jsx:392
+#, fuzzy
+#| msgid "Saving..."
+msgid "Sharing..."
+msgstr "Spremanje u tijeku …"
+
+#: coreplugins/lightning/public/app.jsx:42
+#, fuzzy
+#| msgid "Lightning Network"
+msgid "Lightning"
 msgstr "Lightning mreža"
 
-#: coreplugins/lightning/public/app.jsx:40
+#: coreplugins/lightning/public/app.jsx:43
 msgid ""
-"Lightning is a service that allows you to quickly process small and large "
-"datasets using high performance servers in the cloud."
+"Lightning is a cloud service built by WebODM developers that allows you to:"
 msgstr ""
-"Lightning je usluga koja omogućuje brzu obradu malih i velikih skupova "
-"podataka koristeći visokoučinkovite servere u oblaku."
 
-#: coreplugins/lightning/public/app.jsx:41
+#: coreplugins/lightning/public/app.jsx:46
+#, python-format
+msgid ""
+"Quickly process datasets with high performance servers powered by the "
+"%(link)s photogrammetry engine"
+msgstr ""
+
+#: coreplugins/lightning/public/app.jsx:49
+msgid "Easily share public links to your datasets"
+msgstr ""
+
+#: coreplugins/lightning/public/app.jsx:51
 msgid "register"
 msgstr "registar"
 
-#: coreplugins/lightning/public/app.jsx:42
+#: coreplugins/lightning/public/app.jsx:52
 #, python-format
 msgid ""
 "Below you can enter your %(link)s credentials to sync your account and "
@@ -2398,133 +4017,208 @@ msgid ""
 "can %(register)s for free."
 msgstr ""
 
-#: coreplugins/measure/public/MeasurePopup.jsx:105
-#, python-format
-msgid "Invalid response: %(error)s"
-msgstr "Neispravan odgovor: %(error)s"
-
-#: coreplugins/measure/public/MeasurePopup.jsx:143
+#: coreplugins/measure/public/MeasurePopup.jsx:185
 msgid "Perimeter:"
 msgstr "Perimetar:"
 
-#: coreplugins/measure/public/MeasurePopup.jsx:144
-#: coreplugins/measure/public/MeasurePopup.jsx:145
-#: coreplugins/measure/public/MeasurePopup.jsx:146
+#: coreplugins/measure/public/MeasurePopup.jsx:187
+#: coreplugins/measure/public/MeasurePopup.jsx:190
+#: coreplugins/measure/public/MeasurePopup.jsx:200
 msgid "Volume:"
 msgstr "Volumen:"
 
-#: coreplugins/measure/public/MeasurePopup.jsx:144
+#: coreplugins/measure/public/MeasurePopup.jsx:187
 msgid "computing…"
 msgstr "izračunavanje u tijeku …"
 
-#: coreplugins/measure/public/MeasurePopup.jsx:145
-msgid "Cubic Meters"
-msgstr "Kubični metri"
+#: coreplugins/measure/public/MeasurePopup.jsx:191
+msgid "Base surface:"
+msgstr ""
 
-#: coreplugins/measure/public/MeasurePopup.jsx:145
-msgid "Cubic Feet"
-msgstr "Kubične stope"
-
-#: coreplugins/measure/public/MeasurePopup.jsx:147
-msgid "Export to GeoJSON"
-msgstr "Izvezi u GeoJSON"
-
-#: coreplugins/measure/public/app.jsx:18
+#: coreplugins/measure/public/app.jsx:19
 msgid "Measure volume, area and length"
 msgstr "Izmjeri volumen, površinu i duljinu"
 
-#: coreplugins/measure/public/app.jsx:19
+#: coreplugins/measure/public/app.jsx:20
 msgid "Measurement"
 msgstr "Mjerenje"
 
-#: coreplugins/measure/public/app.jsx:20
+#: coreplugins/measure/public/app.jsx:21
 msgid "Measure"
 msgstr "Izmjeri"
 
-#: coreplugins/measure/public/app.jsx:21
+#: coreplugins/measure/public/app.jsx:22
 msgid "Create a new measurement"
 msgstr "Izradi novo mjerenje"
 
-#: coreplugins/measure/public/app.jsx:22
+#: coreplugins/measure/public/app.jsx:23
 msgid "Start creating a measurement by adding points to the map"
 msgstr "Počni mjeriti dodavanjem točaka na kartu"
 
-#: coreplugins/measure/public/app.jsx:23
+#: coreplugins/measure/public/app.jsx:24
 msgid "Finish measurement"
 msgstr "Završi mjerenje"
 
-#: coreplugins/measure/public/app.jsx:24
+#: coreplugins/measure/public/app.jsx:25
 msgid "Last point"
 msgstr "Zadnja točka"
 
-#: coreplugins/measure/public/app.jsx:25
-msgid "Area"
-msgstr "Područje"
-
-#: coreplugins/measure/public/app.jsx:26
-msgid "Perimeter"
-msgstr "Perimetar"
-
-#: coreplugins/measure/public/app.jsx:27
+#: coreplugins/measure/public/app.jsx:28
 msgid "Point location"
 msgstr "Lokacija točke"
 
-#: coreplugins/measure/public/app.jsx:28
+#: coreplugins/measure/public/app.jsx:29
 msgid "Linear measurement"
 msgstr "Linearno mjerenje"
 
-#: coreplugins/measure/public/app.jsx:29
+#: coreplugins/measure/public/app.jsx:30
 msgid "Path distance"
 msgstr ""
 
-#: coreplugins/measure/public/app.jsx:30
+#: coreplugins/measure/public/app.jsx:31
 msgid "Center on this area"
 msgstr "Centriraj na ovo područje"
 
-#: coreplugins/measure/public/app.jsx:31
+#: coreplugins/measure/public/app.jsx:32
 msgid "Center on this line"
 msgstr "Centriraj na ovu liniju"
 
-#: coreplugins/measure/public/app.jsx:32
+#: coreplugins/measure/public/app.jsx:33
 msgid "Center on this location"
 msgstr "Centriraj na ovu lokaciju"
 
-#: coreplugins/measure/public/app.jsx:35
-msgid "Acres"
-msgstr "Ari"
-
-#: coreplugins/measure/public/app.jsx:36
-msgid "Feet"
-msgstr "Stope"
-
-#: coreplugins/measure/public/app.jsx:37
-msgid "Kilometers"
-msgstr "Kilometri"
-
-#: coreplugins/measure/public/app.jsx:38
-msgid "Hectares"
-msgstr "Hektari"
-
-#: coreplugins/measure/public/app.jsx:39
-msgid "Meters"
-msgstr "Metri"
-
-#: coreplugins/measure/public/app.jsx:40
-msgid "Miles"
-msgstr "Milje"
-
-#: coreplugins/measure/public/app.jsx:41
+#: coreplugins/measure/public/app.jsx:42
 msgid "Sq Feet"
 msgstr "Kvadratne stope"
 
-#: coreplugins/measure/public/app.jsx:42
+#: coreplugins/measure/public/app.jsx:43
 msgid "Sq Meters"
 msgstr "Kvadratni metri"
 
-#: coreplugins/measure/public/app.jsx:43
+#: coreplugins/measure/public/app.jsx:44
 msgid "Sq Miles"
 msgstr "Kvadratne milje"
 
-#: coreplugins/measure/public/app.jsx:55
+#: coreplugins/measure/public/app.jsx:65
 msgid "Export Measurements"
 msgstr "Izvezi mjerenja"
+
+#: coreplugins/objdetect/public/ObjDetect.jsx:37
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:221
+msgid "Object Detection"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:47
+msgid ""
+"No orthophoto is available. To use object detection you need an orthophoto."
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:93
+msgid "Label:"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:94
+msgid "Confidence:"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:178
+msgid "Cars"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:179
+msgid "Trees"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:180
+msgid "Athletic Facilities"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:181
+msgid "Boats"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:182
+msgid "Planes"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:199
+msgid "Detect"
+msgstr ""
+
+#: coreplugins/objdetect/public/ObjDetectPanel.jsx:204
+msgid "Count:"
+msgstr ""
+
+#~ msgid "Show Model"
+#~ msgstr "Pokaži model"
+
+#~ msgid "Google Maps Hybrid"
+#~ msgstr "Hibridne Google karte"
+
+#~ msgid "ESRI Satellite"
+#~ msgstr "ESRI satelit"
+
+#~ msgid "OSM Mapnik"
+#~ msgstr "OSM Mapnik"
+
+#~ msgid "Projection:"
+#~ msgstr "Projekcija:"
+
+#~ msgid "(Cameras)"
+#~ msgstr "(Kamere)"
+
+#~ msgid "Opacity:"
+#~ msgstr "Prozirnost:"
+
+#~ msgid ""
+#~ "An orthophoto could not be generated. To generate one, make sure GPS "
+#~ "information is embedded in the EXIF tags of your images, or use a Ground "
+#~ "Control Points (GCP) file."
+#~ msgstr ""
+#~ "Nije moguće generirati ortogonalnu aerofotografiju. Za generiranje slike, "
+#~ "provjeri jesu li GPS informacije ugrađene u EXIF oznake tvojih slika ili "
+#~ "koristi jednu GCP datoteku (datoteka s kontrolnim točkama na tlu)."
+
+#~ msgid "Waiting for image upload..."
+#~ msgstr "Čekanje na prijenos slike …"
+
+#, python-format
+#~ msgid ""
+#~ "Build orthophoto overviews for faster display in programs such as QGIS. "
+#~ "Default: %(default)s"
+#~ msgstr ""
+#~ "Izradi preglede ortogonalnih aerofotografija za brži prikaz u programima "
+#~ "kao što je QGIS. Zadano: %(default)s"
+
+#, python-format
+#~ msgid ""
+#~ "Perform ground rectification on the point cloud. This means that wrongly "
+#~ "classified ground points will be re-classified and gaps will be filled. "
+#~ "Useful for generating DTMs. Default: %(default)s"
+#~ msgstr ""
+#~ "Izvrši ispravljanje tla na oblaku točaka. To znači da će se pogrešno "
+#~ "klasificirane točke na tlu ponovo klasificirati i da će se praznine "
+#~ "popuniti. Korisno za generiranje digitalnih modela terena. Zadano: "
+#~ "%(default)s"
+
+#~ msgid "Do not simplify"
+#~ msgstr "Nemoj pojednostavljivati"
+
+#~ msgid "meter"
+#~ msgstr "metar"
+
+#~ msgid "Short Link"
+#~ msgstr "Kratka poveznica"
+
+#~ msgid "Suffix"
+#~ msgstr "Sufiks"
+
+#~ msgid ""
+#~ "Lightning is a service that allows you to quickly process small and large "
+#~ "datasets using high performance servers in the cloud."
+#~ msgstr ""
+#~ "Lightning je usluga koja omogućuje brzu obradu malih i velikih skupova "
+#~ "podataka koristeći visokoučinkovite servere u oblaku."
+
+#~ msgid "Cubic Feet"
+#~ msgstr "Kubične stope"
