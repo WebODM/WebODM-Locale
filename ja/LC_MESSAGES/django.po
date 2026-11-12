@@ -21,13 +21,11 @@ msgstr ""
 
 #: app/admin.py:104
 msgid "Cannot restore default logo"
-msgstr ""
+msgstr "デフォルトのロゴを復元できません"
 
 #: app/admin.py:118
-#, fuzzy
-#| msgid "Button Default"
 msgid "Restore Default"
-msgstr "初期設定ボタン"
+msgstr "デフォルトに戻す"
 
 #: app/admin.py:140
 msgid "Enter custom CSS"
@@ -119,13 +117,12 @@ msgstr "%(plugin)sプラグインを削除できません: %(message)s"
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
-msgstr ""
+msgstr "プラグイン %(plugin)s を更新しました。変更を適用するには WebODM を再起動してください。"
 
 #: app/admin.py:374
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "プラグインの追加に成功"
+msgstr "%(plugin)s をインストールしました"
 
 #: app/admin.py:378
 #, python-format
@@ -149,37 +146,33 @@ msgid "Actions"
 msgstr "行動"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid payload."
-msgstr "無効なアクション"
+msgstr "無効なペイロードです。"
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid signature."
-msgstr "無効なzipファイル"
+msgstr "無効な署名です。"
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
-msgstr ""
+msgstr "ユーザアカウントは無効です。"
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "無効な Authorization ヘッダーです。認証情報が指定されていません。"
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
-msgstr ""
+msgstr "無効な Authorization ヘッダーです。認証情報の文字列にスペースを含めることはできません。"
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "署名の有効期限が切れています。"
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "署名のデコード中にエラーが発生しました。"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -190,27 +183,19 @@ msgstr "正規化植生指標(NDVI)は植生の量を示します。"
 msgid ""
 "Normalized difference yellowness index (NDYI), best model variability in "
 "relative yield potential in Canola."
-msgstr ""
+msgstr "正規化差黄色度指数 (NDYI)。キャノーラの相対収量ポテンシャルの変動を最もよく表すモデルです。"
 
 #: app/api/formulas.py:22
-#, fuzzy
-#| msgid ""
-#| "Normalized Difference Vegetation Index shows the amount of green "
-#| "vegetation."
 msgid ""
 "Normalized Difference Red Edge Index shows the amount of green vegetation of "
 "permanent or later stage crops."
-msgstr "正規化植生指標(NDVI)は植生の量を示します。"
+msgstr "正規化差レッドエッジ指数。永年作物または生育後期の作物の緑色植生の量を示します。"
 
 #: app/api/formulas.py:27
-#, fuzzy
-#| msgid ""
-#| "Normalized Difference Vegetation Index shows the amount of green "
-#| "vegetation."
 msgid ""
 "Normalized Difference Water Index shows the amount of water content in water "
 "bodies."
-msgstr "正規化植生指標(NDVI)は植生の量を示します。"
+msgstr "正規化差水指数。水域の水分量を示します。"
 
 #: app/api/formulas.py:37
 msgid ""
@@ -234,7 +219,7 @@ msgstr "Visual Atmospheric Resistance Index は植生の範囲を示します。
 
 #: app/api/formulas.py:50
 msgid "Modified Photochemical Reflectance Index"
-msgstr ""
+msgstr "修正光化学反射指数"
 
 #: app/api/formulas.py:55
 msgid ""
@@ -328,43 +313,39 @@ msgstr ""
 msgid ""
 "Atmospherically Resistant Vegetation Index. Useful when working with imagery "
 "for regions with high atmospheric aerosol content."
-msgstr ""
+msgstr "大気抵抗植生指数。大気中のエアロゾル濃度が高い地域の画像を扱う際に有用です。"
 
 #: app/api/formulas.py:116
 msgid "Temperature in Celsius degrees."
-msgstr ""
+msgstr "摂氏温度。"
 
 #: app/api/formulas.py:120
 msgid "Temperature in Centikelvin degrees."
-msgstr ""
+msgstr "センチケルビン温度。"
 
 #: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
-msgstr ""
+msgstr "なりすましできません。ユーザはスーパーユーザではありません。"
 
 #: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
-msgstr ""
+msgstr "指定された認証情報でログインできません。"
 
 #: app/api/jwt.py:57
-#, fuzzy
-#| msgid "Enter a username and password."
 msgid "Must include \"username\" and \"password\"."
-msgstr "ユーザ名とパスワードを入力してください。"
+msgstr "\"username\" と \"password\" を含める必要があります。"
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "無効なアクション"
+msgstr "無効なトークンです。"
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "orig_iat フィールドは必須です。"
 
 #: app/api/jwt.py:78
 msgid "Refresh has expired."
-msgstr ""
+msgstr "リフレッシュの有効期限が切れています。"
 
 #: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
@@ -372,53 +353,47 @@ msgstr "ファイルがアップロードされていません"
 
 #: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
 #: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid uuid"
-msgstr "無効なアクション"
+msgstr "無効な UUID"
 
 #: app/api/media.py:158 app/api/splats.py:140
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "ファイルが許可された最大サイズを超えています"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "無効なオーバーレイ ID"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "ファイルがありません"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "%(file)s は %(size)s MB を超えています。"
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "無効なオーバーレイメタデータ"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid GeoJSON"
-msgstr "無効なアクション"
+msgstr "無効な GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "DXF または ZIP 圧縮された shapefile ではありません: %(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "無効な EPSG コード: %(value)s"
+msgstr "無効な EPSG コード"
 
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "%(file)s を変換できません: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -429,61 +404,49 @@ msgid "Invalid user in permissions list"
 msgstr "権限リストの無効なユーザー"
 
 #: app/api/projects.py:245
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "権限リストの無効なユーザー"
+msgstr "権限リストに無効なグループがあります"
 
 #: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr "無効な権限"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid image size"
-msgstr "無効なzipファイル"
+msgstr "無効な画像サイズ"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "タスクに %(asset)s がありません"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
-msgstr ""
+msgstr "エクスポートの準備ができていません"
 
 #: app/api/splats.py:52
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid export"
-msgstr "無効なアクション"
+msgstr "無効なエクスポート"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr ""
+msgstr "エクスポートの有効期限が切れました。新しく生成してください"
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
-msgstr ""
+msgstr "スプラットモデルをアップロードできません（タスクに点群データがありません）"
 
 #: app/api/splats.py:77
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "A single file must be uploaded"
-msgstr "ファイルがアップロードされていません"
+msgstr "ファイルは1つだけアップロードしてください"
 
 #: app/api/splats.py:82
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid filename"
-msgstr "無効なzipファイル"
+msgstr "無効なファイル名"
 
 #: app/api/splats.py:86 app/api/tasks.py:941
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type"
-msgstr "無効なzipファイル"
+msgstr "無効なファイル形式"
 
 #: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
 #: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
@@ -492,26 +455,20 @@ msgid "Asset does not exist"
 msgstr "アセットが存在しません"
 
 #: app/api/tasks.py:115
-#, fuzzy
-#| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, processing node is not valid"
-msgstr "タスクが作成できないので、少なくとも2つの画像が必要です"
+msgstr "タスクを作成できません。処理ノードが無効です"
 
 #: app/api/tasks.py:308
-#, fuzzy
-#| msgid "You need to upload at least 2 images before commit"
 msgid "You need to upload at least 1 file before commit"
-msgstr "実行前に少なくとも２つの画像をアップロードする必要があります"
+msgstr "コミットする前に少なくとも1つのファイルをアップロードしてください"
 
 #: app/api/tasks.py:393
 msgid "Cannot duplicate task"
 msgstr "タスクを複製できません"
 
 #: app/api/tasks.py:411
-#, fuzzy
-#| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, alignment task is not valid"
-msgstr "タスクが作成できないので、少なくとも2つの画像が必要です"
+msgstr "タスクを作成できません。位置合わせタスクが無効です"
 
 #: app/api/tasks.py:428
 msgid "Cannot create task, you need at least 2 images"
@@ -534,49 +491,43 @@ msgstr ""
 #: app/api/tasks.py:810
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
-msgstr ""
+msgstr "無効なURLです。%(hint)s のことですか？"
 
 #: app/api/tasks.py:952
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type (extension mismatch)"
-msgstr "無効なzipファイル"
+msgstr "無効なファイル形式（拡張子が一致しません）"
 
 #: app/api/tasks.py:976
 msgid "Some parameters are not integers"
-msgstr ""
+msgstr "一部のパラメータが整数ではありません"
 
 #: app/api/tasks.py:1037 app/api/tasks.py:1042
 msgid "GeoTIFF must have a valid CRS"
-msgstr ""
+msgstr "GeoTIFFには有効なCRSが必要です"
 
 #: app/api/tasks.py:1044
 msgid "Elevation model must have at most 2 band"
-msgstr ""
+msgstr "標高モデルのバンド数は最大2つまでです"
 
 #: app/api/tasks.py:1050
 msgid "Point cloud must be a valid LAZ/LAS file"
-msgstr ""
+msgstr "点群データは有効なLAZ/LASファイルである必要があります"
 
 #: app/api/tasks.py:1056
 msgid "Textured model must be a valid GLB file"
-msgstr ""
+msgstr "テクスチャモデルは有効なGLBファイルである必要があります"
 
 #: app/api/tasks.py:1060
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "No assets uploaded"
-msgstr "ファイルがアップロードされていません"
+msgstr "アセットがアップロードされていません"
 
 #: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
 msgstr "無効な境界線パラメータ"
 
 #: app/api/tiler.py:404
-#, fuzzy
-#| msgid "Invalid boundaries parameter"
 msgid "Invalid tile size parameter"
-msgstr "無効な境界線パラメータ"
+msgstr "無効なタイルサイズパラメータ"
 
 #: app/api/tiler.py:437 app/api/tiler.py:521
 msgid "Outside of bounds"
@@ -616,10 +567,9 @@ msgid "Unsupported format: %(value)s"
 msgstr "サポートされていない形式：%(value)s"
 
 #: app/api/tiler.py:676
-#, fuzzy, python-format
-#| msgid "Invalid rescale value: %(value)s"
+#, python-format
 msgid "Invalid resample value: %(value)s"
-msgstr "無効な再スケール値：%(value)s"
+msgstr "無効なリサンプル値: %(value)s"
 
 #: app/api/tiler.py:682
 #, python-format
@@ -627,10 +577,9 @@ msgid "Invalid EPSG code: %(value)s"
 msgstr "無効な EPSG コード: %(value)s"
 
 #: app/api/tiler.py:688 app/api/tiler.py:690
-#, fuzzy, python-format
-#| msgid "Invalid EPSG code: %(value)s"
+#, python-format
 msgid "Invalid PROJ string: %(value)s"
-msgstr "無効な EPSG コード: %(value)s"
+msgstr "無効なPROJ文字列: %(value)s"
 
 #: app/api/tiler.py:693
 msgid "Both formula and bands parameters are required"
@@ -648,15 +597,15 @@ msgstr "無効な陰影起伏値：%(value)s"
 
 #: app/api/tiler.py:735
 msgid "Cannot use epsg on non-georeferenced dataset"
-msgstr ""
+msgstr "ジオリファレンスされていないデータセットではepsgを使用できません"
 
 #: app/models/basemap.py:14
 msgid "Type"
-msgstr ""
+msgstr "タイプ"
 
 #: app/models/basemap.py:15
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:32
@@ -665,45 +614,43 @@ msgstr "ラベル"
 
 #: app/models/basemap.py:17
 msgid "Attribution"
-msgstr ""
+msgstr "帰属"
 
 #: app/models/basemap.py:20
 msgid "Max zoom"
-msgstr ""
+msgstr "最高ズーム"
 
 #: app/models/basemap.py:23
 msgid "Min zoom"
-msgstr ""
+msgstr "最低ズーム"
 
 #: app/models/basemap.py:24
 msgid "Subdomains"
-msgstr ""
+msgstr "サブドメイン"
 
 #: app/models/basemap.py:25
 msgid "Layers"
-msgstr ""
+msgstr "レイヤー"
 
 #: app/models/basemap.py:26
 msgid "Styles"
-msgstr ""
+msgstr "スタイル"
 
 #: app/models/basemap.py:31
 msgid "Format"
-msgstr ""
+msgstr "フォーマット"
 
 #: app/models/basemap.py:32
-#, fuzzy
-#| msgid "Button Default"
 msgid "Default"
-msgstr "初期設定ボタン"
+msgstr "デフォルト"
 
 #: app/models/basemap.py:35
 msgid "Basemap"
-msgstr ""
+msgstr "ベースマップ"
 
 #: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "ベースマップ"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -821,29 +768,27 @@ msgstr "プリセット"
 
 #: app/models/profile.py:15
 msgid "Maximum disk quota in megabytes"
-msgstr ""
+msgstr "最大ディスク容量（MB）"
 
 #: app/models/profile.py:15
 msgid "Quota"
-msgstr ""
+msgstr "容量制限"
 
 #: app/models/profile.py:16
 msgid "Cluster Id this user is assigned to"
-msgstr ""
+msgstr "このユーザが割り当てられているクラスタID"
 
 #: app/models/profile.py:16
 msgid "Cluster Id"
-msgstr ""
+msgstr "クラスタID"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
-msgstr ""
+msgstr "SSOに使用されるOIDCサブジェクト"
 
 #: app/models/profile.py:17
-#, fuzzy
-#| msgid "Objects"
 msgid "OIDC Subject"
-msgstr "オブジェクト"
+msgstr "OIDCサブジェクト"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -871,48 +816,36 @@ msgid "Deleting"
 msgstr "削除しています"
 
 #: app/models/project.py:32
-#, fuzzy
-#| msgid "Projects"
 msgid "Project tags"
-msgstr "プロジェクト"
+msgstr "プロジェクトタグ"
 
 #: app/models/project.py:32 app/models/task.py:286
 msgid "Tags"
-msgstr ""
+msgstr "タグ"
 
 #: app/models/project.py:33
-#, fuzzy
-#| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this project is available to the public"
-msgstr "このタスクが公開可能か示すフラグ"
+msgstr "このプロジェクトが一般公開されているかどうかを示すフラグ"
 
 #: app/models/project.py:33 app/models/task.py:263
 msgid "Public"
 msgstr "公開"
 
 #: app/models/project.py:34
-#, fuzzy
-#| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this public project can be edited"
-msgstr "このタスクが公開可能か示すフラグ"
+msgstr "この公開プロジェクトを編集可能かどうかを示すフラグ"
 
 #: app/models/project.py:34 app/models/task.py:264
-#, fuzzy
-#| msgid "Public"
 msgid "Public Edit"
-msgstr "公開"
+msgstr "公開編集"
 
 #: app/models/project.py:35 app/models/redirect.py:7
-#, fuzzy
-#| msgid "More in-depth description of the project"
 msgid "Public identifier of the project"
-msgstr "プロジェクトのより詳細な説明"
+msgstr "プロジェクトの公開識別子"
 
 #: app/models/project.py:35 app/models/redirect.py:7
-#, fuzzy
-#| msgid "Public"
 msgid "Public Id"
-msgstr "公開"
+msgstr "公開ID"
 
 #: app/models/project.py:108 app/models/task.py:484
 #, python-format
@@ -928,30 +861,24 @@ msgid "Projects"
 msgstr "プロジェクト"
 
 #: app/models/redirect.py:6
-#, fuzzy
-#| msgid "Project"
 msgid "Project Id"
-msgstr "プロジェクト"
+msgstr "プロジェクトID"
 
 #: app/models/redirect.py:8
-#, fuzzy
-#| msgid "Task"
 msgid "Task Id"
-msgstr "タスク"
+msgstr "タスクID"
 
 #: app/models/redirect.py:9
-#, fuzzy
-#| msgid "The person who owns this preset"
 msgid "The person associated with this redirect"
-msgstr "このプリセットを所有する者"
+msgstr "このリダイレクトに関連付けられたユーザー"
 
 #: app/models/redirect.py:23
 msgid "Redirect"
-msgstr ""
+msgstr "リダイレクト"
 
 #: app/models/redirect.py:24
 msgid "Redirects"
-msgstr ""
+msgstr "リダイレクト"
 
 #: app/models/setting.py:20
 msgid "The name of your application"
@@ -1091,20 +1018,16 @@ msgid "Orthophoto Extent"
 msgstr "オルソフォト範囲"
 
 #: app/models/task.py:256
-#, fuzzy
-#| msgid "Extent of the orthophoto"
 msgid "Extent of the DSM"
-msgstr "オルソフォトの範囲"
+msgstr "DSMの範囲"
 
 #: app/models/task.py:256
 msgid "DSM Extent"
 msgstr "DSM(数値表層モデル)範囲"
 
 #: app/models/task.py:257
-#, fuzzy
-#| msgid "Extent of the orthophoto"
 msgid "Extent of the DTM"
-msgstr "オルソフォトの範囲"
+msgstr "DTMの範囲"
 
 #: app/models/task.py:257
 msgid "DTM Extent"
@@ -1127,10 +1050,8 @@ msgid "A flag indicating whether this task is available to the public"
 msgstr "このタスクが公開可能か示すフラグ"
 
 #: app/models/task.py:264
-#, fuzzy
-#| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this public task can be edited"
-msgstr "このタスクが公開可能か示すフラグ"
+msgstr "この公開タスクを編集可能かどうかを示すフラグ"
 
 #: app/models/task.py:266
 msgid ""
@@ -1220,66 +1141,54 @@ msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "データセットのEPSGコード（地理参照されている場合）"
 
 #: app/models/task.py:285
-#, fuzzy
-#| msgid "EPSG code of the dataset (if georeferenced)"
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
-msgstr "データセットのEPSGコード（地理参照されている場合）"
+msgstr "データセットのWKT定義(ジオリファレンス済みでEPSGコードが利用できない場合)"
 
 #: app/models/task.py:286
-#, fuzzy
-#| msgid "Tasks"
 msgid "Task tags"
-msgstr "タスク"
+msgstr "タスクのタグ"
 
 #: app/models/task.py:287
-#, fuzzy
-#| msgid "Extent of the orthophoto"
 msgid "List of orthophoto bands"
-msgstr "オルソフォトの範囲"
+msgstr "オルソフォトのバンド一覧"
 
 #: app/models/task.py:287
-#, fuzzy
-#| msgid "Orthophoto Extent"
 msgid "Orthophoto Bands"
-msgstr "オルソフォト範囲"
+msgstr "オルソフォトバンド"
 
 #: app/models/task.py:288
 msgid "Size of the task on disk in megabytes"
-msgstr ""
+msgstr "ディスク上のタスクのサイズ(MB)"
 
 #: app/models/task.py:288
 msgid "Size"
-msgstr ""
+msgstr "サイズ"
 
 #: app/models/task.py:289
-#, fuzzy
-#| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this task was compacted"
-msgstr "このタスクが公開可能か示すフラグ"
+msgstr "このタスクが圧縮されたかどうかを示すフラグ"
 
 #: app/models/task.py:289
 msgid "Compact"
-msgstr ""
+msgstr "圧縮"
 
 #: app/models/task.py:290
 msgid "Polygon defining the crop area of this task"
-msgstr ""
+msgstr "このタスクのクロップ範囲を定義するポリゴン"
 
 #: app/models/task.py:290
 msgid "Crop Polygon"
-msgstr ""
+msgstr "クロップポリゴン"
 
 #: app/models/task.py:291
-#, fuzzy
-#| msgid "Number of images associated with this task"
 msgid "List of media files associated with this task"
-msgstr "このタスクに関連する画像の数"
+msgstr "このタスクに関連付けられたメディアファイルの一覧"
 
 #: app/models/task.py:291
 msgid "Media"
-msgstr ""
+msgstr "メディア"
 
 #: app/models/task.py:295
 msgid "Task"
@@ -1303,7 +1212,7 @@ msgstr "無効なzipファイル"
 
 #: app/models/task.py:677
 msgid "Unsupported compression method"
-msgstr ""
+msgstr "サポートされていない圧縮方式です"
 
 #: app/models/task.py:772
 #, python-format
@@ -1428,13 +1337,11 @@ msgstr "成功"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 アクセス禁止"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "あなたには編集する権限がありません。"
+msgstr "このページにアクセスする権限がありません。"
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1454,7 +1361,7 @@ msgstr "何かが起こりました。サーバーのログに詳細な情報が
 
 #: app/templates/app/about.html:26
 msgid "Minimize"
-msgstr ""
+msgstr "最小化"
 
 #: app/templates/app/about.html:30
 #, python-format
@@ -1475,10 +1382,8 @@ msgid "Page not found"
 msgstr "ページが見つかりません"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
-msgstr "残念ながら、リクエストされたページが見つかりません。"
+msgstr "申し訳ありませんが、要求されたページは見つかりませんでした。"
 
 #: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
 #: app/templates/app/admin/auth/user/change_password.html:15
@@ -1501,22 +1406,14 @@ msgid "Server error (500)"
 msgstr "サーバエラー（500）"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "サーバエラー（500）"
+msgstr "サーバエラー <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
-msgstr ""
-"エラー発生中です。サイトの管理者にメールで報告されており間もなく復旧します。"
-"しばらくお待ちください。"
+msgstr "エラーが発生しました。サイト管理者にメールで報告されたため、まもなく修正されます。しばらくお待ちください。"
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1541,25 +1438,17 @@ msgstr "選択解除"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "パンくずリスト"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
-msgstr ""
-"最初にユーザーネームとパスワードを入力してください. その後、より多くのユー"
-"ザーオプションを編集できます."
+msgstr "ユーザを作成した後、ユーザの設定をさらに編集できます。"
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "最新のエラー"
+msgstr "エラー:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1567,19 +1456,15 @@ msgid "Change password"
 msgstr "パスワードの変更"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "パスワードの変更"
+msgstr "パスワードを設定"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] "下記のエラーを修正してください。"
+msgstr[0] "以下のエラーを修正してください。"
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
@@ -1591,15 +1476,15 @@ msgstr ""
 msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
-msgstr ""
+msgstr "この動作により、このユーザのパスワード認証が<strong>有効</strong>になります。"
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "パスワード認証を無効にする"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "パスワード認証を有効にする"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1619,20 +1504,16 @@ msgid "Filter"
 msgstr "フィルタ"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "アカウント"
+msgstr "件数を非表示"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "アカウント"
+msgstr "件数を表示"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "すべてのフィルターをクリア"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1697,8 +1578,6 @@ msgstr "オブジェクト"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
 msgstr "はい、大丈夫です"
 
@@ -1747,7 +1626,7 @@ msgstr "変更"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "表示"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1781,38 +1660,27 @@ msgstr "使用可能スクリプトなし"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "追加:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "変更"
+msgstr "変更:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "削除"
+msgstr "削除:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "不明なコンテンツ"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
-"データベースのインストールに問題があります。適切なデータベーステーブルが作成"
-"されていることを確認し、データベースが適切なユーザーによって読めることを確認"
-"してください。"
+"データベースの設定に問題があります。適切なデータベーステーブルが作成されていること、適切なユーザがデータベースを読み込めることを確認してください。"
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1829,19 +1697,13 @@ msgstr "動作"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
+msgstr[0] "件"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
-msgstr ""
-"このオブジェクトには変更履歴がありません。この管理サイト経由で追加されたもの"
-"ではないと思われます。"
+msgstr "このオブジェクトには変更履歴がありません。おそらくこの管理サイトで追加されたものではありません。"
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1854,10 +1716,8 @@ msgid "Save"
 msgstr "保存"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "ポップアップを閉じています。。。"
+msgstr "ポップアップを閉じています…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1887,10 +1747,8 @@ msgid "Save and continue editing"
 msgstr "保存して編集を継続"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "新規保存"
+msgstr "保存して表示"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -1932,13 +1790,12 @@ msgstr ""
 
 #: app/templates/app/dashboard.html:35
 msgid "You need at least 5 images, but 16-32 is typically the minimum."
-msgstr ""
+msgstr "最低5枚の画像が必要ですが、通常は16〜32枚が最低限です。"
 
 #: app/templates/app/dashboard.html:36
-#, fuzzy, python-format
-#| msgid "Images must overlap by 65%% or more"
+#, python-format
 msgid "Images must overlap by 65%% or more. Aim for 70-72%%"
-msgstr "65%%以上のオーバーラップした画像"
+msgstr "画像は65%%以上重なっている必要があります。70〜72%%を目安にしてください"
 
 #: app/templates/app/dashboard.html:37
 #, python-format
@@ -1999,7 +1856,7 @@ msgstr "%(user)sさん、こんにちは！"
 #: app/templates/app/logged_in_base.html:30
 #, python-format
 msgid "%(used)s of %(total)s used"
-msgstr ""
+msgstr "%(total)s 中 %(used)s 使用済み"
 
 #: app/templates/app/logged_in_base.html:43
 msgid "Logout"
@@ -2089,13 +1946,15 @@ msgid ""
 "recent tasks will be automatically deleted %(when)s, until usage falls below "
 "%(total)s."
 msgstr ""
+"ディスク容量の上限を超えています（%(total)s 中 %(used)s 使用済み）。使用量が %(total)s を下回るまで、最新のタスクは "
+"%(when)s 自動的に削除されます。"
 
 #: app/templates/app/quota.html:14
 #, python-format
 msgid ""
 "Your account does not have a storage quota. Any new task will be "
 "automatically deleted %(when)s"
-msgstr ""
+msgstr "お使いのアカウントにはストレージ容量がありません。新しいタスクは %(when)s 自動的に削除されます"
 
 #: app/templates/app/welcome.html:224
 msgid "Uh oh! Could you please check the errors below?"
@@ -2104,7 +1963,7 @@ msgstr "Uh oh! 以下のエラーを確認していただけますか？"
 #: app/templates/app/welcome.html:228
 msgid ""
 "Before we get started, we need to create an administrator account for you:"
-msgstr ""
+msgstr "始める前に、管理者アカウントを作成する必要があります:"
 
 #: app/templates/app/welcome.html:237
 msgid "Create Account"
@@ -2113,21 +1972,21 @@ msgstr "アカウントを作成"
 #: app/templatetags/settings.py:74
 #, python-format
 msgid "in %(num)s days"
-msgstr ""
+msgstr "%(num)s 日後"
 
 #: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s hours"
-msgstr ""
+msgstr "%(num)s 時間後"
 
 #: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s minutes"
-msgstr ""
+msgstr "%(num)s 分後"
 
 #: app/templatetags/settings.py:80
 msgid "very soon"
-msgstr ""
+msgstr "まもなく"
 
 #: app/translations/plugin_manifest_autogenerated.py:4
 msgid "Compute, preview and export contours from DEMs"
@@ -2143,7 +2002,7 @@ msgstr "2Dマップ表示にフルスクリーンボタンを追加"
 
 #: app/translations/plugin_manifest_autogenerated.py:7
 msgid "Process in the cloud with webodm.net"
-msgstr ""
+msgstr "webodm.net でクラウド処理"
 
 #: app/translations/plugin_manifest_autogenerated.py:8
 msgid "Compute volume, area and length measurements on Leaflet"
@@ -2156,23 +2015,23 @@ msgstr "画像からGCPファイルを作るためのプラグイン"
 
 #: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Annotate and measure on 2D maps with ease"
-msgstr ""
+msgstr "2Dマップ上で簡単に注釈と計測"
 
 #: app/translations/plugin_manifest_autogenerated.py:12
 msgid "Detect objects using AI in orthophotos"
-msgstr ""
+msgstr "AIでオルソフォトからオブジェクトを検出"
 
 #: app/translations/plugin_manifest_autogenerated.py:13
 msgid "An example plugin for development"
-msgstr ""
+msgstr "開発用のサンプルプラグイン"
 
 #: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
-msgstr ""
+msgstr "マップや3Dモデルのスナップショットを撮るボタンを追加するプラグインです。"
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "ログアウトしました"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2192,11 +2051,13 @@ msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
+"%(node)s は非推奨となり、将来のバージョンで動作しなくなる可能性があります。アップグレードするには %(link_start)s 移行ガイド "
+"%(link_end)s を参照してください。"
 
 #: app/views/app.py:150
 #, python-format
 msgid "%(node)s seems to be offline."
-msgstr ""
+msgstr "%(node)s はオフラインのようです。"
 
 #: app/views/app.py:188
 msgid "Welcome"
@@ -2216,28 +2077,28 @@ msgstr "無効なアクション"
 
 #: app/views/oidc.py:53 app/views/oidc.py:90
 msgid "Invalid SSO provider. Please try again."
-msgstr ""
+msgstr "無効なSSOプロバイダーです。再試行してください。"
 
 #: app/views/oidc.py:95 app/views/oidc.py:128 app/views/oidc.py:134
 #: app/views/oidc.py:150 app/views/oidc.py:157 app/views/oidc.py:174
 msgid "SSO login failed."
-msgstr ""
+msgstr "SSOログインに失敗しました。"
 
 #: app/views/oidc.py:101
 msgid "Invalid SSO state. Please try again."
-msgstr ""
+msgstr "無効なSSO状態です。再試行してください。"
 
 #: app/views/oidc.py:106
 msgid "Missing SSO authorization code."
-msgstr ""
+msgstr "SSO認証コードがありません。"
 
 #: app/views/oidc.py:186
 msgid "Cannot create user. A username already exists with the same e-mail."
-msgstr ""
+msgstr "ユーザを作成できません。同じメールアドレスのユーザー名が既に存在します。"
 
 #: app/views/oidc.py:190
 msgid "This account is disabled. Please contact an administrator."
-msgstr ""
+msgstr "このアカウントは無効です。管理者に連絡してください。"
 
 #: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
 #: coreplugins/annotate/dist/annotate/api.py:61
@@ -2254,44 +2115,34 @@ msgstr ""
 #: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
 #: coreplugins/annotate/dist/annotate/api.py:64
 #: coreplugins/annotate/dist/annotate/api.py:104
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"有効な表層モデルがありません。ダッシュボードでこのタスクを選択し、編集を押"
-"し、オプションから\"dsm\"にチェックがあることを確認してから、Restart --> "
-"From DEMを押してください。"
+"地形モデルがありません。ダッシュボードでこのタスクを選択し、編集を押して設定で \"dtm\" にチェックを入れ、再起動 --> From DEM "
+"を押してください。"
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
 #: coreplugins/annotate/dist/annotate/api.py:106
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid surface model"
-msgstr "無効なzipファイル"
+msgstr "無効な表層モデル"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid line"
-msgstr "無効なzipファイル"
+msgstr "無効なライン"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128
 msgid "A digital surface model is required to compute elevation values."
-msgstr ""
+msgstr "標高値を計算するには数値表層モデル(DSM)が必要です。"
 
 #: coreplugins/annotate/api.py:162
 #: coreplugins/annotate/dist/annotate/api.py:162
 msgid "An orthophoto is required to compute temperature values."
-msgstr ""
+msgstr "温度値を計算するにはオルソフォトが必要です。"
 
 #: coreplugins/contours/api.py:121
 msgid "No DSM layer is available."
@@ -2361,22 +2212,16 @@ msgid "Note!"
 msgstr "注意！"
 
 #: coreplugins/diagnostic/templates/diagnostic.html:33
-#, fuzzy, python-format
-#| msgid ""
-#| "These values might be relative to the virtualization environment in which "
-#| "the application is running, not necessarily the values of the your "
-#| "machine. See instructions for %(win_link)s and %(mac_link)s for changing "
-#| "these values in a Docker setup."
+#, python-format
 msgid ""
 "These values might be relative to the virtualization environment in which "
 "the application is running, not necessarily the values of the your machine. "
 "See instructions for %(win_hyperv_link)s, %(win_wsl2_link)s, and "
 "%(mac_link)s for changing these values in a Docker setup."
 msgstr ""
-"この値は必ずしもあなたのマシンによるものではなく、アプリケーションが動作して"
-"いる仮想化環境に関係している可能性があります。Dockerセットアップでこの値を変"
-"更するには、%(win_link)sや%(mac_link)sのインストラクションを参照してくださ"
-"い。"
+"これらの値は、アプリケーションが実行されている仮想化環境のものであり、お使いのマシンの値とは限りません。Docker "
+"環境でこれらの値を変更する方法については、%(win_hyperv_link)s、%(win_wsl2_link)s、%(mac_link)s "
+"の手順を参照してください。"
 
 #: coreplugins/diagnostic/templates/diagnostic.html:47
 #: coreplugins/diagnostic/templates/diagnostic.html:82
@@ -2385,19 +2230,15 @@ msgstr "ディスク容量"
 
 #: coreplugins/hello-world/plugin.py:10
 msgid "Hello World"
-msgstr ""
+msgstr "Hello World"
 
 #: coreplugins/lightning/plugin.py:28
-#, fuzzy
-#| msgid "Lightning Network"
 msgid "Lightning"
-msgstr "ライトニングネットワーク"
+msgstr "Lightning"
 
 #: coreplugins/objdetect/api.py:57
-#, fuzzy
-#| msgid "No DSM layer is available."
 msgid "No orthophoto is available."
-msgstr "使用可能なDSMレイヤがありません。"
+msgstr "利用可能なオルソフォトがありません。"
 
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"

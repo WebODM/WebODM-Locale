@@ -21,13 +21,11 @@ msgstr ""
 
 #: app/admin.py:104
 msgid "Cannot restore default logo"
-msgstr ""
+msgstr "无法恢复默认标志"
 
 #: app/admin.py:118
-#, fuzzy
-#| msgid "Button Default"
 msgid "Restore Default"
-msgstr "默认按钮"
+msgstr "恢复默认"
 
 #: app/admin.py:140
 msgid "Enter custom CSS"
@@ -114,13 +112,12 @@ msgstr "无法删除插件%(plugin)s:%(message)s"
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
-msgstr ""
+msgstr "插件 %(plugin)s 更新成功。请重启 WebODM 以应用更改。"
 
 #: app/admin.py:374
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "插件添加成功"
+msgstr "%(plugin)s 安装成功"
 
 #: app/admin.py:378
 #, python-format
@@ -144,37 +141,33 @@ msgid "Actions"
 msgstr "动作"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid payload."
-msgstr "无效动作"
+msgstr "无效的载荷。"
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid signature."
-msgstr "无效的文件类型"
+msgstr "无效的签名。"
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
-msgstr ""
+msgstr "用户账户已被禁用。"
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "无效的 Authorization 标头。未提供凭据。"
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
-msgstr ""
+msgstr "无效的 Authorization 标头。凭据字符串不应包含空格。"
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "签名已过期。"
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "解码签名时出错。"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -317,31 +310,27 @@ msgstr "以开尔文（Centikelvin）为单位的温度。"
 
 #: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
-msgstr ""
+msgstr "无法模拟登录，用户不是超级用户。"
 
 #: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
-msgstr ""
+msgstr "无法使用提供的凭据登录。"
 
 #: app/api/jwt.py:57
-#, fuzzy
-#| msgid "Enter a username and password."
 msgid "Must include \"username\" and \"password\"."
-msgstr "请输入用户名和密码。"
+msgstr "必须包含“username”和“password”。"
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "无效动作"
+msgstr "无效的令牌。"
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "orig_iat 字段是必需的。"
 
 #: app/api/jwt.py:78
 msgid "Refresh has expired."
-msgstr ""
+msgstr "刷新已过期。"
 
 #: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
@@ -358,42 +347,38 @@ msgstr "文件超过允许的最大大小"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "无效的叠加层 ID"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "缺少文件"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "%(file)s 大于 %(size)s MB。"
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "无效的叠加层元数据"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid GeoJSON"
-msgstr "无效动作"
+msgstr "无效的GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "不是 DXF 或压缩的 shapefile：%(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "无效的EPSG代码：%(value)s"
+msgstr "无效的EPSG代码"
 
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "无法转换 %(file)s：%(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -412,45 +397,37 @@ msgid "Invalid permissions"
 msgstr "无效权限"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid image size"
-msgstr "无效的zip文件"
+msgstr "无效的图片尺寸"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "任务缺少 %(asset)s"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
-msgstr ""
+msgstr "导出尚未就绪"
 
 #: app/api/splats.py:52
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid export"
-msgstr "无效动作"
+msgstr "无效的导出"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr ""
+msgstr "导出已过期，请重新生成"
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
-msgstr ""
+msgstr "无法上传 splats 模型（任务缺少点云）"
 
 #: app/api/splats.py:77
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "A single file must be uploaded"
-msgstr "没有文件可上传"
+msgstr "必须上传单个文件"
 
 #: app/api/splats.py:82
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid filename"
-msgstr "无效的文件类型"
+msgstr "无效的文件名"
 
 #: app/api/splats.py:86 app/api/tasks.py:941
 msgid "Invalid file type"
@@ -463,10 +440,8 @@ msgid "Asset does not exist"
 msgstr "资源不存在"
 
 #: app/api/tasks.py:115
-#, fuzzy
-#| msgid "Cannot create task, alignment task is not valid"
 msgid "Cannot create task, processing node is not valid"
-msgstr "无法创建任务，对齐任务无效"
+msgstr "无法创建任务，处理节点无效"
 
 #: app/api/tasks.py:308
 msgid "You need to upload at least 1 file before commit"
@@ -1330,13 +1305,11 @@ msgstr "成功"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 禁止访问"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "您没有编辑任何内容的权限。"
+msgstr "您没有权限访问本页。"
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1356,7 +1329,7 @@ msgstr "发生事件。服务器日志中有详细信息。"
 
 #: app/templates/app/about.html:26
 msgid "Minimize"
-msgstr ""
+msgstr "最小化"
 
 #: app/templates/app/about.html:30
 #, python-format
@@ -1376,10 +1349,8 @@ msgid "Page not found"
 msgstr "页面丢失"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
-msgstr "很遗憾，找不到请求的页面。"
+msgstr "很抱歉，找不到请求的页面。"
 
 #: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
 #: app/templates/app/admin/auth/user/change_password.html:15
@@ -1402,20 +1373,14 @@ msgid "Server error (500)"
 msgstr "服务器错误（500）"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "服务器错误（500）"
+msgstr "服务器错误 <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
-msgstr "发生错误。它已通过电子邮件报告给站点管理员，应该很快修复。请稍等一下。"
+msgstr "出现了一个错误。已通过电子邮件报告给站点管理员，应会很快修复。感谢您的耐心。"
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1440,23 +1405,17 @@ msgstr "清除已选"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "导航路径"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
-msgstr "请先输入用户名和密码，然后可以编辑更多的用户选项。"
+msgstr "创建用户后，您可以编辑更多用户选项。"
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "最新错误"
+msgstr "错误："
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1464,19 +1423,15 @@ msgid "Change password"
 msgstr "更换密码"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "更换密码"
+msgstr "设置密码"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] "请修正以下错误。"
+msgstr[0] "请更正下列错误。"
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
@@ -1487,15 +1442,15 @@ msgstr "请输入用户<strong>%(username)s</strong>的新密码。"
 msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
-msgstr ""
+msgstr "此操作将为该用户<strong>启用</strong>基于密码的身份验证。"
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "禁用基于密码的身份验证"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "启用基于密码的身份验证"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1515,20 +1470,16 @@ msgid "Filter"
 msgstr "筛选"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "账户"
+msgstr "隐藏计数"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "账户"
+msgstr "显示计数"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "清除所有过滤"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1590,10 +1541,8 @@ msgstr "对象"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
-msgstr "是的，我确认"
+msgstr "是的，我确定"
 
 #: app/templates/app/admin/delete_confirmation.html:45
 #: app/templates/app/admin/delete_selected_confirmation.html:43
@@ -1636,7 +1585,7 @@ msgstr "改变"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "查看"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1670,36 +1619,26 @@ msgstr "无可用脚本"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "已添加："
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "改变"
+msgstr "已修改："
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "删除"
+msgstr "已删除："
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "未知内容"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
-msgstr ""
-"数据库安装有问题。确保已创建适当的数据库表，并确保适当的用户可以读取数据库。"
+msgstr "你的数据库安装有误。请确保已创建相应的数据库表，并确保相应用户可以读取该数据库。"
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1716,17 +1655,13 @@ msgstr "操作"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
+msgstr[0] "条记录"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
-msgstr "此对象没有更改历史记录。它可能不是通过这个管理站点添加的。"
+msgstr "此对象没有修改历史。它可能不是通过此管理站点添加的。"
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1739,10 +1674,8 @@ msgid "Save"
 msgstr "保存"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "正在关闭弹窗。。。"
+msgstr "弹窗关闭中…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1772,10 +1705,8 @@ msgid "Save and continue editing"
 msgstr "保存并继续编辑"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "新增保存"
+msgstr "保存并查看"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -2053,7 +1984,7 @@ msgstr "一个插件，可以添加一个按钮，用于创建地图或3D模型�
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "已退出登录"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2072,7 +2003,7 @@ msgstr "三维模型显示"
 msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
-msgstr ""
+msgstr "%(node)s 已弃用，可能在未来版本中停止工作。请参阅%(link_start)s迁移指南%(link_end)s进行升级。"
 
 #: app/views/app.py:150
 #, python-format
@@ -2134,33 +2065,22 @@ msgstr ""
 #: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
 #: coreplugins/annotate/dist/annotate/api.py:64
 #: coreplugins/annotate/dist/annotate/api.py:104
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
-msgstr ""
-"没有可用的曲面模型。从仪表板中选择此任务，按Edit，从选项中确保选中“dsm”，然后"
-"按Restart-->From DEM。"
+msgstr "没有可用的地形模型。请在任务列表中选择此任务，点击编辑，在选项中确保勾选 \"dtm\"，然后点击重启 --> 从 DEM 开始。"
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
 #: coreplugins/annotate/dist/annotate/api.py:106
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid surface model"
-msgstr "无效的文件类型"
+msgstr "无效的地表模型"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid line"
-msgstr "无效的文件类型"
+msgstr "无效的线"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128

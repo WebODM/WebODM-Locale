@@ -21,13 +21,11 @@ msgstr ""
 
 #: app/admin.py:104
 msgid "Cannot restore default logo"
-msgstr ""
+msgstr "기본 로고를 복원할 수 없습니다"
 
 #: app/admin.py:118
-#, fuzzy
-#| msgid "Button Default"
 msgid "Restore Default"
-msgstr "버튼 기본값"
+msgstr "기본값 복원"
 
 #: app/admin.py:140
 msgid "Enter custom CSS"
@@ -119,13 +117,12 @@ msgstr "플러그인 %(plugin)s를 삭제할 수 없습니다: %(message)s"
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
-msgstr ""
+msgstr "플러그인 %(plugin)s이(가) 업데이트되었습니다. 변경 사항을 적용하려면 WebODM을 재시작하세요."
 
 #: app/admin.py:374
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "플러그인이 성공적으로 추가되었습니다"
+msgstr "%(plugin)s 설치 완료"
 
 #: app/admin.py:378
 #, python-format
@@ -149,37 +146,33 @@ msgid "Actions"
 msgstr "행동"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid payload."
-msgstr "잘못된 작업"
+msgstr "잘못된 페이로드입니다."
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid signature."
-msgstr "잘못된 zip 파일"
+msgstr "잘못된 서명입니다."
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
-msgstr ""
+msgstr "사용자 계정이 비활성화되었습니다."
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "잘못된 Authorization 헤더입니다. 자격 증명이 제공되지 않았습니다."
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
-msgstr ""
+msgstr "잘못된 Authorization 헤더입니다. 자격 증명 문자열에 공백이 포함되면 안 됩니다."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "서명이 만료되었습니다."
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "서명 디코딩 중 오류가 발생했습니다."
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -345,31 +338,27 @@ msgstr "켈빈 단위로 환산된 온도는 보통 켈빈(K)으로 표현됩니
 
 #: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
-msgstr ""
+msgstr "대리 로그인할 수 없습니다. 사용자가 슈퍼유저가 아닙니다."
 
 #: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
-msgstr ""
+msgstr "제공된 자격 증명으로 로그인할 수 없습니다."
 
 #: app/api/jwt.py:57
-#, fuzzy
-#| msgid "Enter a username and password."
 msgid "Must include \"username\" and \"password\"."
-msgstr "사용자명과 암호를 입력하세요."
+msgstr "\"username\"과 \"password\"를 포함해야 합니다."
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "잘못된 작업"
+msgstr "잘못된 토큰입니다."
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "orig_iat 필드가 필요합니다."
 
 #: app/api/jwt.py:78
 msgid "Refresh has expired."
-msgstr ""
+msgstr "갱신 기한이 만료되었습니다."
 
 #: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
@@ -377,53 +366,47 @@ msgstr "업로드된 파일이 없습니다"
 
 #: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
 #: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid uuid"
-msgstr "잘못된 작업"
+msgstr "잘못된 UUID"
 
 #: app/api/media.py:158 app/api/splats.py:140
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "파일이 허용된 최대 크기를 초과합니다"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "잘못된 오버레이 ID"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "파일 누락"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "%(file)s 파일이 %(size)s MB보다 큽니다."
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "잘못된 오버레이 메타데이터"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid GeoJSON"
-msgstr "잘못된 작업"
+msgstr "잘못된 GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "DXF 또는 압축된 shapefile이 아닙니다: %(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "잘못된 EPSG 코드: %(value)s"
+msgstr "잘못된 EPSG 코드"
 
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "%(file)s 파일을 변환할 수 없습니다: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -434,61 +417,49 @@ msgid "Invalid user in permissions list"
 msgstr "사용 권한 목록에서 잘못된 사용자"
 
 #: app/api/projects.py:245
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "사용 권한 목록에서 잘못된 사용자"
+msgstr "권한 목록에 잘못된 그룹이 있습니다"
 
 #: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr "잘못된 권한"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid image size"
-msgstr "잘못된 zip 파일"
+msgstr "잘못된 이미지 크기"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "작업에 %(asset)s 파일이 없습니다"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
-msgstr ""
+msgstr "내보내기가 준비되지 않았습니다"
 
 #: app/api/splats.py:52
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid export"
-msgstr "잘못된 작업"
+msgstr "잘못된 내보내기"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr ""
+msgstr "내보내기가 만료되었습니다. 새로 생성하세요"
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
-msgstr ""
+msgstr "splats 모델을 업로드할 수 없습니다 (작업에 포인트 클라우드가 없습니다)"
 
 #: app/api/splats.py:77
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "A single file must be uploaded"
-msgstr "업로드된 파일이 없습니다"
+msgstr "파일 하나만 업로드해야 합니다"
 
 #: app/api/splats.py:82
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid filename"
-msgstr "잘못된 zip 파일"
+msgstr "잘못된 파일 이름"
 
 #: app/api/splats.py:86 app/api/tasks.py:941
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type"
-msgstr "잘못된 zip 파일"
+msgstr "잘못된 파일 형식"
 
 #: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
 #: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
@@ -497,10 +468,8 @@ msgid "Asset does not exist"
 msgstr "애셋이 존재하지 않습니다"
 
 #: app/api/tasks.py:115
-#, fuzzy
-#| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, processing node is not valid"
-msgstr "작업을 생성할 수 없습니다, 최소 2장 이상의 이미지가 필요합니다"
+msgstr "작업을 생성할 수 없습니다. 프로세싱 노드가 유효하지 않습니다"
 
 #: app/api/tasks.py:308
 msgid "You need to upload at least 1 file before commit"
@@ -511,10 +480,8 @@ msgid "Cannot duplicate task"
 msgstr "작업을 복제할 수 없습니다"
 
 #: app/api/tasks.py:411
-#, fuzzy
-#| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, alignment task is not valid"
-msgstr "작업을 생성할 수 없습니다, 최소 2장 이상의 이미지가 필요합니다"
+msgstr "작업을 생성할 수 없습니다. 정렬 작업이 유효하지 않습니다"
 
 #: app/api/tasks.py:428
 msgid "Cannot create task, you need at least 2 images"
@@ -536,39 +503,35 @@ msgstr ""
 #: app/api/tasks.py:810
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
-msgstr ""
+msgstr "잘못된 URL입니다. %(hint)s 을(를) 의미하셨나요?"
 
 #: app/api/tasks.py:952
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type (extension mismatch)"
-msgstr "잘못된 zip 파일"
+msgstr "잘못된 파일 형식 (확장자 불일치)"
 
 #: app/api/tasks.py:976
 msgid "Some parameters are not integers"
-msgstr ""
+msgstr "일부 매개변수가 정수가 아닙니다"
 
 #: app/api/tasks.py:1037 app/api/tasks.py:1042
 msgid "GeoTIFF must have a valid CRS"
-msgstr ""
+msgstr "GeoTIFF에 유효한 CRS가 있어야 합니다"
 
 #: app/api/tasks.py:1044
 msgid "Elevation model must have at most 2 band"
-msgstr ""
+msgstr "고도 모델은 최대 2개의 밴드만 가질 수 있습니다"
 
 #: app/api/tasks.py:1050
 msgid "Point cloud must be a valid LAZ/LAS file"
-msgstr ""
+msgstr "포인트 클라우드는 유효한 LAZ/LAS 파일이어야 합니다"
 
 #: app/api/tasks.py:1056
 msgid "Textured model must be a valid GLB file"
-msgstr ""
+msgstr "텍스쳐된 모델은 유효한 GLB 파일이어야 합니다"
 
 #: app/api/tasks.py:1060
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "No assets uploaded"
-msgstr "업로드된 파일이 없습니다"
+msgstr "업로드된 에셋이 없습니다"
 
 #: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
@@ -615,10 +578,9 @@ msgid "Unsupported format: %(value)s"
 msgstr "지원되지 않는 형식: %(value)s"
 
 #: app/api/tiler.py:676
-#, fuzzy, python-format
-#| msgid "Invalid rescale value: %(value)s"
+#, python-format
 msgid "Invalid resample value: %(value)s"
-msgstr "잘못된 재조정 값: %(value)s"
+msgstr "잘못된 리샘플 값: %(value)s"
 
 #: app/api/tiler.py:682
 #, python-format
@@ -626,10 +588,9 @@ msgid "Invalid EPSG code: %(value)s"
 msgstr "잘못된 EPSG 코드: %(value)s"
 
 #: app/api/tiler.py:688 app/api/tiler.py:690
-#, fuzzy, python-format
-#| msgid "Invalid EPSG code: %(value)s"
+#, python-format
 msgid "Invalid PROJ string: %(value)s"
-msgstr "잘못된 EPSG 코드: %(value)s"
+msgstr "잘못된 PROJ 문자열: %(value)s"
 
 #: app/api/tiler.py:693
 msgid "Both formula and bands parameters are required"
@@ -651,11 +612,11 @@ msgstr "지리 참조되지 않은 데이터 세트에서 epsg를 사용할 수 
 
 #: app/models/basemap.py:14
 msgid "Type"
-msgstr ""
+msgstr "유형"
 
 #: app/models/basemap.py:15
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:32
@@ -664,45 +625,43 @@ msgstr "레이블"
 
 #: app/models/basemap.py:17
 msgid "Attribution"
-msgstr ""
+msgstr "저작자 표시"
 
 #: app/models/basemap.py:20
 msgid "Max zoom"
-msgstr ""
+msgstr "최대 줌"
 
 #: app/models/basemap.py:23
 msgid "Min zoom"
-msgstr ""
+msgstr "최소 줌"
 
 #: app/models/basemap.py:24
 msgid "Subdomains"
-msgstr ""
+msgstr "서브도메인"
 
 #: app/models/basemap.py:25
 msgid "Layers"
-msgstr ""
+msgstr "레이어"
 
 #: app/models/basemap.py:26
 msgid "Styles"
-msgstr ""
+msgstr "스타일"
 
 #: app/models/basemap.py:31
 msgid "Format"
-msgstr ""
+msgstr "형식"
 
 #: app/models/basemap.py:32
-#, fuzzy
-#| msgid "Button Default"
 msgid "Default"
-msgstr "버튼 기본값"
+msgstr "기본값"
 
 #: app/models/basemap.py:35
 msgid "Basemap"
-msgstr ""
+msgstr "베이스맵"
 
 #: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "베이스맵"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -827,21 +786,19 @@ msgstr "디스크 공간"
 
 #: app/models/profile.py:16
 msgid "Cluster Id this user is assigned to"
-msgstr ""
+msgstr "이 사용자가 할당된 클러스터 ID"
 
 #: app/models/profile.py:16
 msgid "Cluster Id"
-msgstr ""
+msgstr "클러스터 ID"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
-msgstr ""
+msgstr "SSO에 사용되는 OIDC Subject"
 
 #: app/models/profile.py:17
-#, fuzzy
-#| msgid "Objects"
 msgid "OIDC Subject"
-msgstr "객체"
+msgstr "OIDC Subject"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -877,38 +834,28 @@ msgid "Tags"
 msgstr "태그"
 
 #: app/models/project.py:33
-#, fuzzy
-#| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this project is available to the public"
-msgstr "이 작업을 대중에게 공개할 수 있는지 여부를 나타내는 플래그"
+msgstr "이 프로젝트의 공용 여부를 나타내는 플래그"
 
 #: app/models/project.py:33 app/models/task.py:263
 msgid "Public"
 msgstr "공용"
 
 #: app/models/project.py:34
-#, fuzzy
-#| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this public project can be edited"
-msgstr "이 작업을 대중에게 공개할 수 있는지 여부를 나타내는 플래그"
+msgstr "이 공용 프로젝트의 편집 가능 여부를 나타내는 플래그"
 
 #: app/models/project.py:34 app/models/task.py:264
-#, fuzzy
-#| msgid "Public"
 msgid "Public Edit"
-msgstr "공용"
+msgstr "공용 편집"
 
 #: app/models/project.py:35 app/models/redirect.py:7
-#, fuzzy
-#| msgid "More in-depth description of the project"
 msgid "Public identifier of the project"
-msgstr "프로젝트에 대한 자세한 설명"
+msgstr "프로젝트의 공용 식별자"
 
 #: app/models/project.py:35 app/models/redirect.py:7
-#, fuzzy
-#| msgid "Public"
 msgid "Public Id"
-msgstr "공용"
+msgstr "공용 ID"
 
 #: app/models/project.py:108 app/models/task.py:484
 #, python-format
@@ -924,30 +871,24 @@ msgid "Projects"
 msgstr "프로젝트"
 
 #: app/models/redirect.py:6
-#, fuzzy
-#| msgid "Project"
 msgid "Project Id"
-msgstr "프로젝트"
+msgstr "프로젝트 ID"
 
 #: app/models/redirect.py:8
-#, fuzzy
-#| msgid "Task"
 msgid "Task Id"
-msgstr "작업"
+msgstr "작업 ID"
 
 #: app/models/redirect.py:9
-#, fuzzy
-#| msgid "The person who owns this preset"
 msgid "The person associated with this redirect"
-msgstr "이 프리셋을 소유한 사람"
+msgstr "이 리디렉션과 연결된 사람"
 
 #: app/models/redirect.py:23
 msgid "Redirect"
-msgstr ""
+msgstr "리디렉션"
 
 #: app/models/redirect.py:24
 msgid "Redirects"
-msgstr ""
+msgstr "리디렉션"
 
 #: app/models/setting.py:20
 msgid "The name of your application"
@@ -1087,20 +1028,16 @@ msgid "Orthophoto Extent"
 msgstr "정사 영상 범위"
 
 #: app/models/task.py:256
-#, fuzzy
-#| msgid "Extent of the orthophoto"
 msgid "Extent of the DSM"
-msgstr "정사 영상의 범위"
+msgstr "DSM 범위"
 
 #: app/models/task.py:256
 msgid "DSM Extent"
 msgstr "DSM 범위"
 
 #: app/models/task.py:257
-#, fuzzy
-#| msgid "Extent of the orthophoto"
 msgid "Extent of the DTM"
-msgstr "정사 영상의 범위"
+msgstr "DTM 범위"
 
 #: app/models/task.py:257
 msgid "DTM Extent"
@@ -1123,10 +1060,8 @@ msgid "A flag indicating whether this task is available to the public"
 msgstr "이 작업을 대중에게 공개할 수 있는지 여부를 나타내는 플래그"
 
 #: app/models/task.py:264
-#, fuzzy
-#| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this public task can be edited"
-msgstr "이 작업을 대중에게 공개할 수 있는지 여부를 나타내는 플래그"
+msgstr "이 공용 작업의 편집 가능 여부를 나타내는 플래그"
 
 #: app/models/task.py:266
 msgid ""
@@ -1215,12 +1150,10 @@ msgid "EPSG code of the dataset (if georeferenced)"
 msgstr "데이터세트의 EPSG 코드(지리참조된 경우)"
 
 #: app/models/task.py:285
-#, fuzzy
-#| msgid "EPSG code of the dataset (if georeferenced)"
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
-msgstr "데이터세트의 EPSG 코드(지리참조된 경우)"
+msgstr "데이터셋의 WKT 정의 (지리참조되어 있고 EPSG 코드가 없는 경우)"
 
 #: app/models/task.py:286
 msgid "Task tags"
@@ -1245,32 +1178,28 @@ msgid "Size"
 msgstr "크기"
 
 #: app/models/task.py:289
-#, fuzzy
-#| msgid "A flag indicating whether this task is available to the public"
 msgid "A flag indicating whether this task was compacted"
-msgstr "이 작업을 대중에게 공개할 수 있는지 여부를 나타내는 플래그"
+msgstr "이 작업의 압축 여부를 나타내는 플래그"
 
 #: app/models/task.py:289
 msgid "Compact"
-msgstr ""
+msgstr "압축"
 
 #: app/models/task.py:290
 msgid "Polygon defining the crop area of this task"
-msgstr ""
+msgstr "이 작업의 자르기 영역을 정의하는 폴리곤"
 
 #: app/models/task.py:290
 msgid "Crop Polygon"
-msgstr ""
+msgstr "자르기 폴리곤"
 
 #: app/models/task.py:291
-#, fuzzy
-#| msgid "Number of images associated with this task"
 msgid "List of media files associated with this task"
-msgstr "이 작업과 관련된 이미지 수"
+msgstr "이 작업과 연결된 미디어 파일 목록"
 
 #: app/models/task.py:291
 msgid "Media"
-msgstr ""
+msgstr "미디어"
 
 #: app/models/task.py:295
 msgid "Task"
@@ -1294,7 +1223,7 @@ msgstr "잘못된 zip 파일"
 
 #: app/models/task.py:677
 msgid "Unsupported compression method"
-msgstr ""
+msgstr "지원되지 않는 압축 방식"
 
 #: app/models/task.py:772
 #, python-format
@@ -1419,13 +1348,11 @@ msgstr "성공"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 접근 금지"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "아무 것도 수정할 수있는 권한이 없습니다."
+msgstr "이 페이지에 접근할 권한이 없습니다."
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1445,7 +1372,7 @@ msgstr "문제가 발생했습니다. 서버 로그에는 자세한 정보가 �
 
 #: app/templates/app/about.html:26
 msgid "Minimize"
-msgstr ""
+msgstr "최소화"
 
 #: app/templates/app/about.html:30
 #, python-format
@@ -1466,8 +1393,6 @@ msgid "Page not found"
 msgstr "페이지를 찾을 수 없습니다"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
 msgstr "죄송합니다. 요청한 페이지를 찾을 수 없습니다."
 
@@ -1492,22 +1417,14 @@ msgid "Server error (500)"
 msgstr "서버 오류(500)"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "서버 오류(500)"
+msgstr "서버 오류 <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
-msgstr ""
-"오류가 발생했습니다. 이메일을 통해 사이트 관리자에게 보고되었으며 곧 수정해"
-"야 합니다. 인내심을 가져 주셔서 감사합니다."
+msgstr "오류가 발생했습니다. 이메일을 통해 사이트 관리자에게 보고되었으며 곧 수정될 예정입니다. 기다려 주셔서 감사합니다."
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1532,25 +1449,17 @@ msgstr "선택 항목 지우기"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "탐색 경로"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
-msgstr ""
-"먼저 사용자 이름과 비밀번호를 입력합니다. 그러면 더 많은 사용자 옵션을 편집"
-"할 수 있습니다."
+msgstr "사용자를 생성한 후에 더 많은 사용자 옵션을 편집할 수 있습니다."
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "마지막 오류"
+msgstr "오류:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1558,19 +1467,15 @@ msgid "Change password"
 msgstr "비밀번호 변경"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "비밀번호 변경"
+msgstr "비밀번호 설정"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] "아래의 오류를 확인하십시오."
+msgstr[0] "아래 오류를 수정해 주세요."
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
@@ -1581,15 +1486,15 @@ msgstr "사용자 <strong>%(username)s</strong>의 새 암호를 입력합니다
 msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
-msgstr ""
+msgstr "이 활동은 이 사용자의 비밀번호 기반 인증을 <strong>활성화</strong>합니다."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "비밀번호 기반 인증 비활성화"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "비밀번호 기반 인증 활성화"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1609,20 +1514,16 @@ msgid "Filter"
 msgstr "필터"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "계정"
+msgstr "개수 숨기기"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "계정"
+msgstr "개수 표시"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "모든 필터 지우기"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1686,10 +1587,8 @@ msgstr "객체"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
-msgstr "예, 확신합니다"
+msgstr "예, 확실합니다"
 
 #: app/templates/app/admin/delete_confirmation.html:45
 #: app/templates/app/admin/delete_selected_confirmation.html:43
@@ -1735,7 +1634,7 @@ msgstr "변경"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "보기"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1769,37 +1668,27 @@ msgstr "사용 가능한 스크립트가 없음"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "추가됨:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "변경"
+msgstr "변경됨:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "삭제"
+msgstr "삭제됨:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "알 수없는 콘텐츠"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
-"데이터베이스 설치에 문제가 있습니다. 적절한 데이터베이스 테이블이 작성되었는"
-"지 확인하고 적절한 사용자가 데이터베이스를 읽을 수 있는지 확인하십시오."
+"데이터베이스 설치에 문제가 있습니다. 해당 데이터베이스 테이블이 생성되었는지, 해당 사용자가 데이터베이스를 읽을 수 있는지 확인하세요."
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1816,19 +1705,13 @@ msgstr "활동"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
+msgstr[0] "항목"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
-msgstr ""
-"이 개체에는 변경 내역이 없습니다. 아마도 이 관리 사이트를 통해 추가되지 않았"
-"을 것입니다."
+msgstr "이 객체에는 변경 기록이 없습니다. 이 관리 사이트를 통해 추가되지 않은 것 같습니다."
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1841,10 +1724,8 @@ msgid "Save"
 msgstr "저장"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "팝업 닫는 중..."
+msgstr "팝업 닫는 중…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1874,10 +1755,8 @@ msgid "Save and continue editing"
 msgstr "저장하고 계속 편집"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "저장하고 새로 만들기"
+msgstr "저장 후 보기"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -2150,19 +2029,19 @@ msgstr "쉽게 2D 지도에 주석을 추가하고 측정해보세요"
 
 #: app/translations/plugin_manifest_autogenerated.py:12
 msgid "Detect objects using AI in orthophotos"
-msgstr ""
+msgstr "AI로 정사영상에서 객체 감지"
 
 #: app/translations/plugin_manifest_autogenerated.py:13
 msgid "An example plugin for development"
-msgstr ""
+msgstr "개발용 예제 플러그인"
 
 #: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
-msgstr ""
+msgstr "지도 또는 3D 모델의 스냅샷을 찍는 버튼을 추가하는 플러그인입니다."
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "로그아웃됨"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2182,6 +2061,8 @@ msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
+"%(node)s은(는) 더 이상 사용되지 않으며 향후 버전에서 작동하지 않을 수 있습니다. 업그레이드하려면 %(link_start)s "
+"마이그레이션 가이드 %(link_end)s를 참조하세요."
 
 #: app/views/app.py:150
 #, python-format
@@ -2206,28 +2087,28 @@ msgstr "잘못된 작업"
 
 #: app/views/oidc.py:53 app/views/oidc.py:90
 msgid "Invalid SSO provider. Please try again."
-msgstr ""
+msgstr "잘못된 SSO 제공자입니다. 다시 시도하세요."
 
 #: app/views/oidc.py:95 app/views/oidc.py:128 app/views/oidc.py:134
 #: app/views/oidc.py:150 app/views/oidc.py:157 app/views/oidc.py:174
 msgid "SSO login failed."
-msgstr ""
+msgstr "SSO 로그인에 실패했습니다."
 
 #: app/views/oidc.py:101
 msgid "Invalid SSO state. Please try again."
-msgstr ""
+msgstr "잘못된 SSO 상태입니다. 다시 시도하세요."
 
 #: app/views/oidc.py:106
 msgid "Missing SSO authorization code."
-msgstr ""
+msgstr "SSO 인증 코드가 없습니다."
 
 #: app/views/oidc.py:186
 msgid "Cannot create user. A username already exists with the same e-mail."
-msgstr ""
+msgstr "사용자를 생성할 수 없습니다. 같은 이메일을 가진 사용자명이 이미 있습니다."
 
 #: app/views/oidc.py:190
 msgid "This account is disabled. Please contact an administrator."
-msgstr ""
+msgstr "이 계정은 비활성화되었습니다. 관리자에게 문의하세요."
 
 #: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
 #: coreplugins/annotate/dist/annotate/api.py:61
@@ -2243,33 +2124,24 @@ msgstr ""
 #: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
 #: coreplugins/annotate/dist/annotate/api.py:64
 #: coreplugins/annotate/dist/annotate/api.py:104
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"사용 가능한 표면 모델이 없습니다. 대시보드에서 이 작업을 선택하고 편집을 누르"
-"고 옵션에서 \"dsm\"을 선택한 다음 다시 시작 --> DEM에서를 누릅니다."
+"사용 가능한 지형 모델이 없습니다. 대쉬보드에서 이 작업을 선택하고 편집을 누른 뒤, 옵션에서 \"dtm\"을 체크하고 재시작 --> "
+"From DEM을 누르세요."
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
 #: coreplugins/annotate/dist/annotate/api.py:106
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid surface model"
-msgstr "잘못된 zip 파일"
+msgstr "잘못된 표면 모델"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid line"
-msgstr "잘못된 zip 파일"
+msgstr "잘못된 선"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128
@@ -2278,10 +2150,8 @@ msgstr "고도 값을 계산하기 위해 디지털 표면 모델이 필요합�
 
 #: coreplugins/annotate/api.py:162
 #: coreplugins/annotate/dist/annotate/api.py:162
-#, fuzzy
-#| msgid "A digital surface model is required to compute elevation values."
 msgid "An orthophoto is required to compute temperature values."
-msgstr "고도 값을 계산하기 위해 디지털 표면 모델이 필요합니다."
+msgstr "온도 값을 계산하려면 정사영상이 필요합니다."
 
 #: coreplugins/contours/api.py:121
 msgid "No DSM layer is available."
@@ -2370,17 +2240,15 @@ msgstr "디스크 공간"
 
 #: coreplugins/hello-world/plugin.py:10
 msgid "Hello World"
-msgstr ""
+msgstr "Hello World"
 
 #: coreplugins/lightning/plugin.py:28
 msgid "Lightning"
 msgstr "라이트닝"
 
 #: coreplugins/objdetect/api.py:57
-#, fuzzy
-#| msgid "No DSM layer is available."
 msgid "No orthophoto is available."
-msgstr "사용 가능한 DSM 레이어가 없습니다."
+msgstr "사용 가능한 정사영상이 없습니다."
 
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"

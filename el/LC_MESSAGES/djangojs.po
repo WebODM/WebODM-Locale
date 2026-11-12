@@ -84,7 +84,7 @@ msgstr "Μοντέλο εδάφους"
 
 #: app/static/app/js/MapView.jsx:155
 msgid "A map is not available for this task or project."
-msgstr ""
+msgstr "Δεν υπάρχει διαθέσιμος χάρτης για αυτή την εργασία ή το έργο."
 
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
@@ -109,15 +109,15 @@ msgid "Size"
 msgstr "Μέγεθος"
 
 #: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load splats renderer"
-msgstr "Δεν είναι δυνατή η φόρτωση δικαιωμάτων."
+msgstr "Δεν είναι δυνατή η φόρτωση του προγράμματος απόδοσης splats"
 
 #: app/static/app/js/ModelView.jsx:818
 msgid ""
 "Could not load splats. This task doesn't seem to have a valid splats file."
 msgstr ""
+"Δεν ήταν δυνατή η φόρτωση των splats. Αυτή η εργασία δεν φαίνεται να έχει "
+"έγκυρο αρχείο splats."
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
@@ -136,13 +136,11 @@ msgstr "Μοντέλο υφής"
 #: app/static/app/js/classes/AssetDownloads.js:63
 #: app/static/app/js/components/TaskListItem.jsx:866
 msgid "Splats"
-msgstr ""
+msgstr "Splats"
 
 #: app/static/app/js/ModelView.jsx:981
-#, fuzzy
-#| msgid "Loading..."
 msgid "Loading splats..."
-msgstr "Φόρτωση..."
+msgstr "Φόρτωση splats..."
 
 #: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
@@ -150,67 +148,63 @@ msgstr "Φόρτωση μοντέλου υφής..."
 
 #: app/static/app/js/PluginBrowser.jsx:57
 msgid "Installed"
-msgstr ""
+msgstr "Εγκατεστημένο"
 
 #: app/static/app/js/PluginBrowser.jsx:61
 #, python-format
 msgid "Requires WebODM %(version)s"
-msgstr ""
+msgstr "Απαιτεί WebODM %(version)s"
 
 #: app/static/app/js/PluginBrowser.jsx:65
 msgid "Update"
-msgstr ""
+msgstr "Ενημέρωση"
 
 #: app/static/app/js/PluginBrowser.jsx:69
 msgid "Install"
-msgstr ""
+msgstr "Εγκατάσταση"
 
 #: app/static/app/js/PluginBrowser.jsx:80
-#, fuzzy
-#| msgid "Imperial"
 msgid "Experimental"
-msgstr "Επιβλητικό"
+msgstr "Πειραματικό"
 
 #: app/static/app/js/PluginBrowser.jsx:81
-#, fuzzy
-#| msgid "Duplicate"
 msgid "Deprecated"
-msgstr "Διπλασιασμός"
+msgstr "Καταργημένο"
 
 #: app/static/app/js/PluginBrowser.jsx:82
 #, python-format
 msgid "by %(author)s"
-msgstr ""
+msgstr "από %(author)s"
 
 #: app/static/app/js/PluginBrowser.jsx:159
 msgid "The plugin repository returned an error:"
-msgstr ""
+msgstr "Το αποθετήριο πρόσθετων επέστρεψε σφάλμα:"
 
 #: app/static/app/js/PluginBrowser.jsx:161
 #: app/static/app/js/PluginBrowser.jsx:167
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid ""
 "The plugin repository returned an invalid response. Please try again later."
 msgstr ""
-"Δεν είναι δυνατή η δημιουργία νέας εργασίας. Προσπαθήστε ξανά αργότερα."
+"Το αποθετήριο πρόσθετων επέστρεψε μη έγκυρη απόκριση. Δοκιμάστε ξανά "
+"αργότερα."
 
 #: app/static/app/js/PluginBrowser.jsx:164
 msgid ""
 "Cannot connect to the plugin repository. Check that this server has internet "
 "access and that the connection is not blocked by a firewall or proxy."
 msgstr ""
+"Δεν είναι δυνατή η σύνδεση στο αποθετήριο πρόσθετων. Ελέγξτε ότι ο "
+"διακομιστής έχει πρόσβαση στο διαδίκτυο και ότι η σύνδεση δεν μπλοκάρεται "
+"από τείχος προστασίας ή διακομιστή μεσολάβησης."
 
 #: app/static/app/js/PluginBrowser.jsx:187
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Downloading…"
 msgid "Downloading..."
-msgstr "Λήψη…"
+msgstr "Λήψη..."
 
 #: app/static/app/js/PluginBrowser.jsx:191
 msgid "The plugin repository returned an error while downloading the plugin:"
-msgstr ""
+msgstr "Το αποθετήριο πρόσθετων επέστρεψε σφάλμα κατά τη λήψη του πρόσθετου:"
 
 #: app/static/app/js/PluginBrowser.jsx:193
 #: app/static/app/js/PluginBrowser.jsx:196
@@ -218,27 +212,29 @@ msgid ""
 "Cannot download the plugin. The connection to the plugin repository failed "
 "or was interrupted."
 msgstr ""
+"Δεν είναι δυνατή η λήψη του πρόσθετου. Η σύνδεση με το αποθετήριο πρόσθετων "
+"απέτυχε ή διακόπηκε."
 
 #: app/static/app/js/PluginBrowser.jsx:199
-#, fuzzy
-#| msgid "Restarting..."
 msgid "Installing..."
-msgstr "Επανεκκίνηση..."
+msgstr "Εγκατάσταση..."
 
 #: app/static/app/js/PluginBrowser.jsx:215
 #: app/static/app/js/PluginBrowser.jsx:217
 msgid "WebODM could not install the plugin:"
-msgstr ""
+msgstr "Το WebODM δεν μπόρεσε να εγκαταστήσει το πρόσθετο:"
 
 #: app/static/app/js/PluginBrowser.jsx:220
 msgid ""
 "Cannot send the plugin to WebODM. The connection was interrupted or the "
 "server is not responding."
 msgstr ""
+"Δεν είναι δυνατή η αποστολή του πρόσθετου στο WebODM. Η σύνδεση διακόπηκε ή "
+"ο διακομιστής δεν αποκρίνεται."
 
 #: app/static/app/js/PluginBrowser.jsx:253
 msgid "No plugins found."
-msgstr ""
+msgstr "Δεν βρέθηκαν πρόσθετα."
 
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
@@ -256,13 +252,11 @@ msgstr "Κλείσιμο"
 #: app/static/app/js/PluginBrowser.jsx:277
 #: app/static/app/js/PluginBrowser.jsx:325
 msgid "Install Plugins"
-msgstr ""
+msgstr "Εγκατάσταση πρόσθετων"
 
 #: app/static/app/js/PluginBrowser.jsx:287
-#, fuzzy
-#| msgid "Search"
 msgid "Search plugins"
-msgstr "Αναζήτηση"
+msgstr "Αναζήτηση πρόσθετων"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -368,10 +362,9 @@ msgid "Gray"
 msgstr "Γκρι"
 
 #: app/static/app/js/classes/OverlayLayer.js:14
-#, fuzzy, python-format
-#| msgid "%(file)s is bigger than 5 MB."
+#, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr "Το %(file)s είναι μεγαλύτερο από 5 MB."
+msgstr "Το %(file)s είναι μεγαλύτερο από %(size)s MB."
 
 #: app/static/app/js/classes/OverlayLayer.js:23
 #, python-format
@@ -492,7 +485,7 @@ msgstr "Πόδια"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Ίντσες"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -596,10 +589,8 @@ msgid "No Access"
 msgstr "Δεν υπάρχει πρόσβαση"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Enter name"
 msgid "Group name"
-msgstr "Εισαγάγετε όνομα"
+msgstr "Όνομα ομάδας"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -610,52 +601,44 @@ msgid "Permissions"
 msgstr "Δικαιώματα"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "Προσθήκη ετικετών"
+msgstr "Προσθήκη χρήστη"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "Προσθήκη έργου"
+msgstr "Προσθήκη ομάδας"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:22
-#, fuzzy
-#| msgid "Start Processing"
 msgid "Input & Preprocessing"
-msgstr "Έναρξη επεξεργασίας"
+msgstr "Είσοδος & Προεπεξεργασία"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:25
-#, fuzzy
-#| msgid "Camera Animation"
 msgid "Camera Configuration"
-msgstr "Κάμερα Animation"
+msgstr "Διαμόρφωση κάμερας"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Masking"
-msgstr ""
+msgstr "Μάσκες"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Multispectral"
-msgstr ""
+msgstr "Πολυφασματικό"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:29
 msgid "Video Input"
-msgstr ""
+msgstr "Είσοδος βίντεο"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:34
 msgid "Bounds & Cropping"
-msgstr ""
+msgstr "Όρια & Περικοπή"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:37
 msgid "Boundary"
-msgstr ""
+msgstr "Όριο"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:42
 msgid "Coordinate Reference System"
-msgstr ""
+msgstr "Σύστημα συντεταγμένων αναφοράς"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:45
 #: app/static/app/js/components/EditTaskForm.jsx:626
@@ -665,115 +648,91 @@ msgstr "Επιλογές"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:53
 msgid "Feature Extraction"
-msgstr ""
+msgstr "Εξαγωγή χαρακτηριστικών"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:54
 msgid "Feature Matching"
-msgstr ""
+msgstr "Αντιστοίχιση χαρακτηριστικών"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:55
-#, fuzzy
-#| msgid "Reconstructed Points:"
 msgid "Reconstruction"
-msgstr "Ανακατασκευασμένα σημεία:"
+msgstr "Ανακατασκευή"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:64
-#, fuzzy
-#| msgid "Elevation"
 msgid "Generation"
-msgstr "Ανύψωση"
+msgstr "Δημιουργία"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:65
-#, fuzzy
-#| msgid "Filter"
 msgid "Filtering"
-msgstr "Φίλτρο"
+msgstr "Φιλτράρισμα"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:66
-#, fuzzy
-#| msgid "Processing"
 msgid "Post-Processing"
-msgstr "Επεξεργασία"
+msgstr "Μετεπεξεργασία"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:74
 msgid "Mesh Generation"
-msgstr ""
+msgstr "Δημιουργία πλέγματος"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:82
-#, fuzzy
-#| msgid "Texturing"
 msgid "Texture Options"
-msgstr "Υφοποίηση"
+msgstr "Επιλογές υφής"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:87
 msgid "Digital Elevation Models"
-msgstr ""
+msgstr "Ψηφιακά μοντέλα ανύψωσης"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:90
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Outputs"
-msgstr "Έξοδος εργασιών:"
+msgstr "Αποτελέσματα"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:91
 msgid "Resolution & Sampling"
-msgstr ""
+msgstr "Ανάλυση & δειγματοληψία"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:92
-#, fuzzy
-#| msgid "Classification filter"
 msgid "Ground Classification (SMRF)"
-msgstr "Φίλτρο ταξινόμησης"
+msgstr "Ταξινόμηση εδάφους (SMRF)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:100
-#, fuzzy
-#| msgid "Orthophoto Cutline"
 msgid "Orthophoto Options"
-msgstr "Ορθοφωτογραμμή κοπής"
+msgstr "Επιλογές ορθοφωτογραφίας"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:105
-#, fuzzy
-#| msgid "Miles"
 msgid "Tiles"
-msgstr "Μίλια"
+msgstr "Πλακίδια"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:108
-#, fuzzy
-#| msgid "Options"
 msgid "Tiles Options"
-msgstr "Επιλογές"
+msgstr "Επιλογές πλακιδίων"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:113
 msgid "System & Pipeline Control"
-msgstr ""
+msgstr "Σύστημα & έλεγχος ροής εργασιών"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:116
 msgid "Performance"
-msgstr ""
+msgstr "Απόδοση"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:117
-#, fuzzy
-#| msgid "Helicopter control"
 msgid "Pipeline Control"
-msgstr "Έλεγχος ελικοπτέρου"
+msgstr "Έλεγχος ροής εργασιών"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:122
 msgid "Split/Merge"
-msgstr ""
+msgstr "Διαχωρισμός/Συγχώνευση"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:125
 msgid "Splitting"
-msgstr ""
+msgstr "Διαχωρισμός"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:126
 msgid "Merging"
-msgstr ""
+msgstr "Συγχώνευση"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:520
-#, fuzzy
-#| msgid "Other settings"
 msgid "Other Options"
-msgstr "Άλλες ρυθμίσεις"
+msgstr "Άλλες επιλογές"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:557
 #: app/static/app/js/components/EditTaskForm.jsx:572
@@ -798,23 +757,23 @@ msgstr "Αναζήτηση"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:574
 msgid "Flat View"
-msgstr ""
+msgstr "Επίπεδη προβολή"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:574
 msgid "Grouped View"
-msgstr ""
+msgstr "Ομαδοποιημένη προβολή"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:578
 msgid "Expand"
-msgstr ""
+msgstr "Ανάπτυξη"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:578
 msgid "Collapse"
-msgstr ""
+msgstr "Σύμπτυξη"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:588
 msgid "Search options..."
-msgstr ""
+msgstr "Αναζήτηση επιλογών..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -1119,46 +1078,40 @@ msgid "Download Image"
 msgstr "Λήψη εικόνας"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:114
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid ""
 "Upload failed after multiple retries. Please check your connection and try "
 "again."
 msgstr ""
-"Δεν είναι δυνατή η μεταφόρτωση αρχείου. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο "
+"Η μεταφόρτωση απέτυχε μετά από πολλαπλές προσπάθειες. Ελέγξτε τη σύνδεσή σας "
 "και δοκιμάστε ξανά."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:206
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Failed to complete upload. Try again later."
-msgstr "Δεν είναι δυνατή η ανάκτηση της εκτίμησης. Δοκιμάστε ξανά αργότερα."
+msgstr "Αποτυχία ολοκλήρωσης της μεταφόρτωσης. Δοκιμάστε ξανά αργότερα."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:216
 msgid "Select at least one file to upload."
-msgstr ""
+msgstr "Επιλέξτε τουλάχιστον ένα αρχείο για μεταφόρτωση."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:223
 msgid "A textured model requires also a point cloud to be properly displayed."
-msgstr ""
+msgstr "Ένα μοντέλο υφής απαιτεί επίσης νέφος σημείων για να εμφανιστεί σωστά."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:247
 msgid "Failed to initialize upload. Try again later."
-msgstr ""
+msgstr "Αποτυχία έναρξης της μεταφόρτωσης. Δοκιμάστε ξανά αργότερα."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:286
-#, fuzzy
-#| msgid "Import Existing Assets"
 msgid "Import External Data"
-msgstr "Εισαγωγή υφιστάμενων πόρων"
+msgstr "Εισαγωγή εξωτερικών δεδομένων"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:287
 msgid "Select files. At least one file is required."
-msgstr ""
+msgstr "Επιλέξτε αρχεία. Απαιτείται τουλάχιστον ένα αρχείο."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:307
 msgid "Remove"
-msgstr ""
+msgstr "Αφαίρεση"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
@@ -1166,10 +1119,8 @@ msgid "Cancel Upload"
 msgstr "Ακύρωση μεταφόρτωσης"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:333
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload"
-msgstr "Μεταφορτώστε ένα αρχείο"
+msgstr "Μεταφόρτωση"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
@@ -1282,10 +1233,8 @@ msgid "Color:"
 msgstr "Χρώμα:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:470
-#, fuzzy
-#| msgid "Display"
 msgid "Display:"
-msgstr "Προβολή"
+msgstr "Προβολή:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:473
 #: coreplugins/annotate/public/Popup.jsx:984
@@ -1294,7 +1243,7 @@ msgstr "Ανύψωση"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:474
 msgid "Slope"
-msgstr ""
+msgstr "Κλίση"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:481
 msgid "Shading:"
@@ -1319,13 +1268,11 @@ msgstr "Εξωθημένο"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:57
 msgid "Change color"
-msgstr ""
+msgstr "Αλλαγή χρώματος"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:206
-#, fuzzy
-#| msgid "Moving..."
 msgid "Converting..."
-msgstr "Μετακίνηση..."
+msgstr "Μετατροπή..."
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:216
 #: app/static/app/js/components/Map.jsx:1730
@@ -1335,14 +1282,12 @@ msgid "Opacity"
 msgstr "Αδιαφάνεια"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:218
-#, fuzzy
-#| msgid "Saving…"
 msgid "Syncing…"
-msgstr "Αποθήκευση…"
+msgstr "Συγχρονισμός…"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:294
 msgid "Overlays"
-msgstr ""
+msgstr "Επικαλύψεις"
 
 #: app/static/app/js/components/LayersControlPanel.jsx:42
 #: app/static/app/js/components/NewTaskPanel.jsx:359
@@ -1380,92 +1325,75 @@ msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:247
 #: app/static/app/js/components/SplatsDialog.jsx:235
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
-msgstr ""
-"Δεν είναι δυνατή η μεταφόρτωση αρχείου. Ελέγξτε τη σύνδεσή σας στο διαδίκτυο "
-"και δοκιμάστε ξανά."
+msgstr "Η μεταφόρτωση απέτυχε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:271
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "Δεν είναι δυνατή η φόρτωση δικαιωμάτων."
+msgstr "Δεν είναι δυνατή η φόρτωση των πολυμέσων."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:288
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε το \"%(preset)s\";"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε το %(filename)s;"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:318
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "Δεν είναι δυνατή η διαγραφή εργασίας."
+msgstr "Δεν είναι δυνατή η διαγραφή του αρχείου."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:356
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "Δεν μπορεί να ολοκληρωθεί η λειτουργία."
+msgstr "Δεν είναι δυνατή η ενημέρωση της περιγραφής."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:371
 msgid "Video"
-msgstr ""
+msgstr "Βίντεο"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:372
 msgid "Panorama"
-msgstr ""
+msgstr "Πανόραμα"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:373
 msgid "Photo"
-msgstr ""
+msgstr "Φωτογραφία"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "Μεταφορτώστε ένα αρχείο"
+msgstr "Μεταφόρτωση αρχείων"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:403
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
 msgstr ""
+"Οι γεωαναφερμένες φωτογραφίες, πανοράματα και βίντεο θα εμφανίζονται στον "
+"χάρτη."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:412
 #: app/static/app/js/components/SplatsDialog.jsx:527
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "Ολοκλήρωση... παρακαλώ περιμένετε"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:433
 msgid "No media files."
-msgstr ""
+msgstr "Δεν υπάρχουν αρχεία πολυμέσων."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:445
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "Δεξιά όψη"
+msgstr "Προβολή πλέγματος"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:452
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "Αριστερή όψη"
+msgstr "Προβολή λίστας"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:516
 #: app/static/app/js/components/Map.jsx:542
 #: app/static/app/js/components/TaskListItem.jsx:865
 msgid "Media"
-msgstr ""
+msgstr "Πολυμέσα"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:558
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "Όνομα χρήστη"
+msgstr "Όνομα αρχείου"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:559
 #: coreplugins/annotate/public/Popup.jsx:947
@@ -1485,10 +1413,8 @@ msgstr "{z}, {x}, {y} για το σύστημα πλακιδίων Z/X/Y"
 
 #: app/static/app/js/components/Map.jsx:795
 #: app/static/app/js/components/MapPreview.jsx:116
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
 msgid "{−y} for flipped TMS-style Y coordinates"
-msgstr "{-y} για ανεστραμμένες συντεταγμένες Υ τύπου TMS"
+msgstr "{−y} για αντεστραμμένες συντεταγμένες Y τύπου TMS"
 
 #: app/static/app/js/components/Map.jsx:797
 #: app/static/app/js/components/MapPreview.jsx:118
@@ -1496,10 +1422,8 @@ msgid "Example:"
 msgstr "Παράδειγμα:"
 
 #: app/static/app/js/components/Map.jsx:881
-#, fuzzy
-#| msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
 msgid "Add a GeoJSON (.json), ShapeFile (.zip) or AutoCAD (.dxf) overlay"
-msgstr "Προσθήκη προσωρινής επικάλυψης GeoJSON (.json) ή ShapeFile (.zip)"
+msgstr "Προσθήκη επικάλυψης GeoJSON (.json), ShapeFile (.zip) ή AutoCAD (.dxf)"
 
 #: app/static/app/js/components/Map.jsx:942
 msgid "Cannot set cropping area. Check your internet connection."
@@ -1518,31 +1442,29 @@ msgstr "Σφάλμα: δεν είναι δυνατή η φόρτωση της λ
 #: app/static/app/js/components/Map.jsx:1142
 msgid "Cannot import overlay: no task is loaded."
 msgstr ""
+"Δεν είναι δυνατή η εισαγωγή επικάλυψης: δεν έχει φορτωθεί καμία εργασία."
 
 #: app/static/app/js/components/Map.jsx:1230
 #: app/static/app/js/components/Map.jsx:1263
 #: app/static/app/js/components/Map.jsx:1281
 #, python-format
 msgid "Cannot save overlay %(name)s"
-msgstr ""
+msgstr "Δεν είναι δυνατή η αποθήκευση της επικάλυψης %(name)s"
 
 #: app/static/app/js/components/Map.jsx:1296
 #: app/static/app/js/components/Map.jsx:1336
 msgid "Overlay"
-msgstr ""
+msgstr "Επικάλυψη"
 
 #: app/static/app/js/components/Map.jsx:1388
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid EPSG code"
-msgstr "Μη έγκυρη ανταπόκριση: %(error)s"
+msgstr "Μη έγκυρος κωδικός EPSG"
 
 #: app/static/app/js/components/Map.jsx:1456
 #: app/static/app/js/components/Map.jsx:1465
-#, fuzzy, python-format
-#| msgid "Cannot delete task."
+#, python-format
 msgid "Cannot convert %(file)s"
-msgstr "Δεν είναι δυνατή η διαγραφή εργασίας."
+msgstr "Δεν είναι δυνατή η μετατροπή του %(file)s"
 
 #: app/static/app/js/components/Map.jsx:1734
 #: app/static/app/js/components/NewTaskPanel.jsx:302
@@ -1551,10 +1473,8 @@ msgid "Loading..."
 msgstr "Φόρτωση..."
 
 #: app/static/app/js/components/Map.jsx:1740
-#, fuzzy
-#| msgid "Import"
 msgid "Import DXF"
-msgstr "Εισαγωγή"
+msgstr "Εισαγωγή DXF"
 
 #: app/static/app/js/components/MapPreview.jsx:172
 msgid "Set Reconstruction Area (optional)"
@@ -1706,10 +1626,8 @@ msgid "Sort"
 msgstr "Ταξινόμηση"
 
 #: app/static/app/js/components/Paginator.jsx:157
-#, fuzzy
-#| msgid "this page"
 msgid "Items per page"
-msgstr "αυτή τη σελίδα"
+msgstr "Στοιχεία ανά σελίδα"
 
 #: app/static/app/js/components/Paginator.jsx:172
 msgid "Search results for:"
@@ -1784,14 +1702,12 @@ msgid "Select Images and GCP"
 msgstr "Επιλογή εικόνων και GCP"
 
 #: app/static/app/js/components/ProjectListItem.jsx:779
-#, fuzzy
-#| msgid "Import Assets or Backups"
 msgid "Assets / Backups"
-msgstr "Εισαγωγή στοιχείων ή αντιγράφων ασφαλείας"
+msgstr "Στοιχεία / Αντίγραφα ασφαλείας"
 
 #: app/static/app/js/components/ProjectListItem.jsx:780
 msgid "External Data"
-msgstr ""
+msgstr "Εξωτερικά δεδομένα"
 
 #: app/static/app/js/components/ProjectListItem.jsx:812
 #, python-format
@@ -1815,10 +1731,13 @@ msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
+"Εντοπίστηκε ασταθής σύνδεση. Αν η μεταφόρτωση κολλήσει, πατήστε το παρακάτω "
+"κουμπί για να ενεργοποιήσετε τη σταθερή λειτουργία. Στη συνέχεια θα "
+"χρειαστεί να επανεκκινήσετε τη μεταφόρτωση."
 
 #: app/static/app/js/components/ProjectListItem.jsx:886
 msgid "Enable Stable Mode"
-msgstr ""
+msgstr "Ενεργοποίηση σταθερής λειτουργίας"
 
 #: app/static/app/js/components/ShareButton.jsx:72
 #: app/static/app/js/components/ShareButton.jsx:74
@@ -1889,7 +1808,7 @@ msgstr "Αύξουσα"
 
 #: app/static/app/js/components/SplatsDialog.jsx:137
 msgid "Please upload a single file."
-msgstr ""
+msgstr "Μεταφορτώστε ένα μόνο αρχείο."
 
 #: app/static/app/js/components/SplatsDialog.jsx:330
 #: coreplugins/annotate/public/Popup.jsx:287
@@ -1905,27 +1824,23 @@ msgid "Invalid response: %(error)s"
 msgstr "Μη έγκυρη ανταπόκριση: %(error)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:333
-#, fuzzy
-#| msgid "Cannot start processing task."
 msgid "Cannot export training data."
-msgstr "Δεν είναι δυνατή η έναρξη της επεξεργασίας της εργασίας."
+msgstr "Δεν είναι δυνατή η εξαγωγή των δεδομένων εκπαίδευσης."
 
 #: app/static/app/js/components/SplatsDialog.jsx:338
-#, fuzzy
-#| msgid "Are you sure you want to delete this?"
 msgid "Are you sure you want to delete the splats model?"
-msgstr "Είστε σίγουροι ότι θέλετε να το διαγράψετε αυτό;"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε το μοντέλο splats;"
 
 #: app/static/app/js/components/SplatsDialog.jsx:352
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete splats model."
-msgstr "Δεν είναι δυνατή η διαγραφή εργασίας."
+msgstr "Δεν είναι δυνατή η διαγραφή του μοντέλου splats."
 
 #: app/static/app/js/components/SplatsDialog.jsx:389
 msgid ""
 "This task is missing camera information. Training data cannot be downloaded."
 msgstr ""
+"Λείπουν οι πληροφορίες κάμερας από αυτή την εργασία. Δεν είναι δυνατή η λήψη "
+"των δεδομένων εκπαίδευσης."
 
 #: app/static/app/js/components/SplatsDialog.jsx:394
 msgid ""
@@ -1933,12 +1848,18 @@ msgid ""
 "point cloud. Some training software might not work properly without one. "
 "Uploading a splats model requires a point cloud."
 msgstr ""
+"Λείπει το νέφος σημείων από αυτή την εργασία. Τα δεδομένα εκπαίδευσης θα "
+"περιλαμβάνουν ένα κενό νέφος σημείων. Ορισμένα λογισμικά εκπαίδευσης ίσως "
+"δεν λειτουργούν σωστά χωρίς αυτό. Η μεταφόρτωση μοντέλου splats απαιτεί "
+"νέφος σημείων."
 
 #: app/static/app/js/components/SplatsDialog.jsx:399
 msgid ""
 "This task is missing camera information and a point cloud. No splats can be "
 "downloaded or uploaded."
 msgstr ""
+"Λείπουν οι πληροφορίες κάμερας και το νέφος σημείων από αυτή την εργασία. "
+"Δεν είναι δυνατή η λήψη ή μεταφόρτωση splats."
 
 #: app/static/app/js/components/SplatsDialog.jsx:404
 msgid ""
@@ -1946,57 +1867,56 @@ msgid ""
 "download. After extracting the .zip file, copy the original images into the "
 "\"images\" folder before training."
 msgstr ""
+"Οι εικόνες αυτής της εργασίας δεν είναι διαθέσιμες, οπότε δεν θα "
+"συμπεριληφθούν στη λήψη. Μετά την αποσυμπίεση του αρχείου .zip, αντιγράψτε "
+"τις αρχικές εικόνες στον φάκελο \"images\" πριν από την εκπαίδευση."
 
 #: app/static/app/js/components/SplatsDialog.jsx:409
 msgid ""
 "Most images in this dataset are nadir. Splats typically require obliques and/"
 "or orbits for good results."
 msgstr ""
+"Οι περισσότερες εικόνες αυτού του συνόλου δεδομένων είναι κατακόρυφες "
+"(nadir). Τα splats συνήθως απαιτούν πλάγιες λήψεις ή/και τροχιές για καλά "
+"αποτελέσματα."
 
 #: app/static/app/js/components/SplatsDialog.jsx:421
 msgid "A splats model has been added."
-msgstr ""
+msgstr "Προστέθηκε ένα μοντέλο splats."
 
 #: app/static/app/js/components/SplatsDialog.jsx:424
-#, fuzzy
-#| msgid "show in 3D"
 msgid "View in 3D"
-msgstr "προβολή σε 3D"
+msgstr "Προβολή σε 3D"
 
 #: app/static/app/js/components/SplatsDialog.jsx:428
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload New"
-msgstr "Μεταφορτώστε ένα αρχείο"
+msgstr "Μεταφόρτωση νέου"
 
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Download Image"
 msgid "Download Training Data"
-msgstr "Λήψη εικόνας"
+msgstr "Λήψη δεδομένων εκπαίδευσης"
 
 #: app/static/app/js/components/SplatsDialog.jsx:497
 #, python-format
 msgid "Train a model using %(link_start)s compatible software %(link_end)s"
 msgstr ""
+"Εκπαιδεύστε ένα μοντέλο με %(link_start)s συμβατό λογισμικό %(link_end)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:507
 msgid "You don't have permission to upload a splats model to this task."
-msgstr ""
+msgstr "Δεν έχετε δικαίωμα να ανεβάσετε μοντέλο splats σε αυτή την εργασία."
 
 #: app/static/app/js/components/SplatsDialog.jsx:516
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Splats Model"
-msgstr "Μεταφορτώστε ένα αρχείο"
+msgstr "Μεταφόρτωση μοντέλου splats"
 
 #: app/static/app/js/components/SplatsDialog.jsx:560
 msgid "Gaussian Splats"
-msgstr ""
+msgstr "Gaussian Splats"
 
 #: app/static/app/js/components/SplatsDialog.jsx:566
 msgid "Processing splats model... this might take a bit"
-msgstr ""
+msgstr "Επεξεργασία μοντέλου splats... μπορεί να διαρκέσει λίγο"
 
 #: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
@@ -2080,20 +2000,15 @@ msgid "this page"
 msgstr "αυτή τη σελίδα"
 
 #: app/static/app/js/components/TaskListItem.jsx:331
-#, fuzzy
-#| msgid ""
-#| "The processing node is missing a program necessary to complete the task. "
-#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
-#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
 "This might indicate a corrupted installation. If you built ODM, please check "
 "that all programs built without errors."
 msgstr ""
-"Από τον κόμβο επεξεργασίας λείπει ένα πρόγραμμα που είναι απαραίτητο για την "
-"ολοκλήρωση της εργασίας. Αυτό μπορεί να υποδηλώνει μια κατεστραμμένη "
-"εγκατάσταση. Εάν κατασκευάσατε το OpenDroneMap, ελέγξτε ότι όλα τα "
-"προγράμματα κατασκευάστηκαν χωρίς σφάλματα."
+"Από τον κόμβο επεξεργασίας λείπει ένα πρόγραμμα απαραίτητο για την "
+"ολοκλήρωση της εργασίας. Αυτό μπορεί να υποδεικνύει κατεστραμμένη "
+"εγκατάσταση. Αν κάνατε μεταγλώττιση του ODM, ελέγξτε ότι όλα τα προγράμματα "
+"μεταγλωττίστηκαν χωρίς σφάλματα."
 
 #: app/static/app/js/components/TaskListItem.jsx:372
 #, python-format
@@ -2304,47 +2219,33 @@ msgid "Cannot compact task."
 msgstr "Δεν είναι δυνατή η συμπύκνωση της εργασίας."
 
 #: app/static/app/js/components/Toaster.jsx:14
-#, fuzzy
-#| msgid "Processing"
 msgid "Processed"
-msgstr "Επεξεργασία"
+msgstr "Επεξεργάστηκε"
 
 #: app/static/app/js/components/Toaster.jsx:15
-#, fuzzy
-#| msgid "Share"
 msgid "Shared"
-msgstr "Κοινοποίηση"
+msgstr "Κοινοποιήθηκε"
 
 #: app/static/app/js/components/Toaster.jsx:16
-#, fuzzy
-#| msgid "Export"
 msgid "Exported"
-msgstr "Εξαγωγή"
+msgstr "Εξήχθη"
 
 #: app/static/app/js/components/Toaster.jsx:20
-#, fuzzy
-#| msgid "Share"
 msgid "Sharing"
 msgstr "Κοινοποίηση"
 
 #: app/static/app/js/components/Toaster.jsx:21
-#, fuzzy
-#| msgid "Exporting..."
 msgid "Exporting"
-msgstr "Εξαγωγή..."
+msgstr "Εξαγωγή"
 
 #: app/static/app/js/components/Toaster.jsx:243
 #: coreplugins/lightning/public/ShareDialog.jsx:259
-#, fuzzy
-#| msgid "Task ID:"
 msgid "Task"
-msgstr "Αναγνωριστικό εργασίας:"
+msgstr "Εργασία"
 
 #: app/static/app/js/components/Toaster.jsx:268
-#, fuzzy
-#| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to cancel the tasks?"
-msgstr "Είστε βέβαιοι ότι θέλετε να ακυρώσετε?"
+msgstr "Είστε βέβαιοι ότι θέλετε να ακυρώσετε τις εργασίες;"
 
 #: app/static/app/js/components/UploadProgressBar.jsx:25
 #, python-format
@@ -2371,12 +2272,7 @@ msgstr ""
 "πρέπει να έχει ένα φάκελο \"\"images\"\"."
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
-#, fuzzy, python-format
-#| msgid ""
-#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
-#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
-#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
-#| "one of: %(choices)s. Default: %(default)s"
+#, python-format
 msgid ""
 "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
 "Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
@@ -2384,11 +2280,12 @@ msgid ""
 "faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
 "Default: %(default)s"
 msgstr ""
-"Αλγόριθμος Matcher, γρήγορη βιβλιοθήκη για προσεγγιστικούς πλησιέστερους "
-"γείτονες ή σακούλα λέξεων. Ο FLANN είναι πιο αργός, αλλά πιο σταθερός. Ο BOW "
-"είναι ταχύτερος, αλλά μερικές φορές μπορεί να χάσει έγκυρες αντιστοιχίες. Ο "
-"BRUTEFORCE είναι πολύ αργός αλλά σταθερός.Μπορεί να είναι ένα από τα εξής: "
-"%(choices)s. Προεπιλογή: %(default)s"
+"Αλγόριθμος αντιστοίχισης, Fast Library for Approximate Nearest Neighbors ή "
+"Bag of Words. Ο FLANN είναι πιο αργός, αλλά πιο σταθερός. Ο BOW είναι πιο "
+"γρήγορος, αλλά μερικές φορές μπορεί να χάσει έγκυρες αντιστοιχίες. Ο "
+"BRUTEFORCE είναι πολύ αργός αλλά αξιόπιστος. Ο HAMMING είναι πολύ πιο "
+"γρήγορος σε μεγάλα σύνολα δεδομένων αλλά απαιτεί GPU. Μπορεί να είναι ένα "
+"από: %(choices)s. Προεπιλεγμένη τιμή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
@@ -2541,14 +2438,7 @@ msgstr ""
 "πολλαπλές επικαλυπτόμενες ορθοφωτογραφίες. Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:18
-#, fuzzy, python-format
-#| msgid ""
-#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
-#| "for all images. If your images are tagged with high precision GPS "
-#| "information (RTK), this value will be automatically set accordingly. You "
-#| "can use this option to manually set it in case the reconstruction fails. "
-#| "Lowering this option can sometimes help control bowling-effects over "
-#| "large areas. Default: %(default)s"
+#, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
 "for all images. If your images are tagged with high precision GPS "
@@ -2557,34 +2447,27 @@ msgid ""
 "Lowering this option can sometimes help control bowling-effects over large "
 "areas. Default: %(default)s"
 msgstr ""
-"Ορίστε μια τιμή σε μέτρα για τις πληροφορίες DOP (Dilution of Precision) του "
-"GPS για όλες τις εικόνες. Εάν οι εικόνες σας έχουν επισημανθεί με "
-"πληροφορίες GPS υψηλής ακρίβειας (RTK), αυτή η τιμή θα οριστεί αυτόματα "
-"αναλόγως. Μπορείτε να χρησιμοποιήσετε αυτήν την επιλογή για να την ορίσετε "
-"χειροκίνητα σε περίπτωση που η ανακατασκευή αποτύχει. Η μείωση αυτής της "
-"επιλογής μπορεί μερικές φορές να βοηθήσει στον έλεγχο των φαινομένων "
-"κύρτωσης σε μεγάλες περιοχές. Προεπιλογή: %(default)s"
+"Ορίστε μια τιμή σε μέτρα για την πληροφορία GPS Dilution of Precision (DOP) "
+"όλων των εικόνων. Αν οι εικόνες σας έχουν πληροφορίες GPS υψηλής ακρίβειας "
+"(RTK), η τιμή αυτή θα οριστεί αυτόματα. Μπορείτε να χρησιμοποιήσετε αυτή την "
+"επιλογή για να την ορίσετε χειροκίνητα σε περίπτωση που η ανακατασκευή "
+"αποτύχει. Η μείωση αυτής της τιμής μπορεί μερικές φορές να βοηθήσει στον "
+"έλεγχο του φαινομένου καμπύλωσης (bowling) σε μεγάλες περιοχές. "
+"Προεπιλεγμένη τιμή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:19
-#, fuzzy, python-format
-#| msgid ""
-#| "Choose the structure from motion algorithm. For aerial datasets, if "
-#| "camera GPS positions and angles are available, triangulation can generate "
-#| "better results. For planar scenes captured at fixed altitude with nadir-"
-#| "only images, planar can be much faster. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Choose the structure from motion algorithm. For aerial datasets, if camera "
 "GPS positions and angles are available, triangulation can be faster. Planar "
 "is deprecated and will be removed in a future version. Can be one of: "
 "%(choices)s. Default: %(default)s"
 msgstr ""
-"Επιλέξτε τη δομή από τον αλγόριθμο κίνησης. Για σύνολα δεδομένων από αέρος, "
-"εάν είναι διαθέσιμες οι θέσεις και οι γωνίες GPS της κάμερας, ο τριγωνισμός "
-"μπορεί να παράγει καλύτερα αποτελέσματα. Για επίπεδες σκηνές που έχουν "
-"καταγραφεί σε σταθερό ύψος με εικόνες μόνο από το ναδίρ, η επίπεδη μπορεί να "
-"είναι πολύ πιο γρήγορη. Μπορεί να είναι ένα από τα εξής: %(choices)s. "
-"Προεπιλογή: %(default)s"
+"Επιλέξτε τον αλγόριθμο δομής από κίνηση. Για εναέρια σύνολα δεδομένων, αν "
+"είναι διαθέσιμες οι θέσεις GPS και οι γωνίες της κάμερας, ο τριγωνισμός "
+"μπορεί να είναι πιο γρήγορος. Το Planar έχει καταργηθεί και θα αφαιρεθεί σε "
+"μελλοντική έκδοση. Μπορεί να είναι ένα από: %(choices)s. Προεπιλεγμένη τιμή: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:20
 #, python-format
@@ -2869,21 +2752,16 @@ msgstr ""
 "Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:44
-#, fuzzy, python-format
-#| msgid ""
-#| "Skips dense reconstruction and 3D model generation. It generates an "
-#| "orthophoto directly from the sparse reconstruction. If you just need an "
-#| "orthophoto and do not need a full 3D model, turn on this option. Default: "
-#| "%(default)s"
+#, python-format
 msgid ""
 "Skips dense reconstruction and 3D model generation. It generates an "
 "orthophoto directly from the sparse reconstruction. On flat terrain with no "
 "objects/structures, turn this on to save time. Default: %(default)s"
 msgstr ""
-"Παραλείπει την πυκνή ανακατασκευή και τη δημιουργία τρισδιάστατου μοντέλου. "
-"Δημιουργεί μια ορθοφωτογραφία απευθείας από την αραιή ανακατασκευή. Εάν "
-"χρειάζεστε μόνο μια ορθοφωτογραφία και δεν χρειάζεστε ένα πλήρες "
-"τρισδιάστατο μοντέλο, ενεργοποιήστε αυτή την επιλογή. Προεπιλογή: %(default)s"
+"Παραλείπει την πυκνή ανακατασκευή και τη δημιουργία 3D μοντέλου. Δημιουργεί "
+"ορθοφωτογραφία απευθείας από την αραιή ανακατασκευή. Σε επίπεδο έδαφος χωρίς "
+"αντικείμενα/κατασκευές, ενεργοποιήστε το για εξοικονόμηση χρόνου. "
+"Προεπιλεγμένη τιμή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
@@ -3047,17 +2925,15 @@ msgstr ""
 "αναπαριστά τα περιεχόμενα ενός αρχείου cameras.json. Προεπιλογή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:62
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Set the units of the PDF report. By default the vertical units of the "
 "coordinate reference system are used. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"Ορίστε τη συμπίεση που θα χρησιμοποιείται για τις ορθοφωτογραφίες. Μπορεί να "
-"είναι ένα από τα εξής: %(choices)s. Προεπιλογή: %(default)s"
+"Ορίστε τις μονάδες της αναφοράς PDF. Από προεπιλογή χρησιμοποιούνται οι "
+"κατακόρυφες μονάδες του συστήματος συντεταγμένων αναφοράς. Μπορεί να είναι "
+"ένα από: %(choices)s. Προεπιλεγμένη τιμή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:63
 #, python-format
@@ -3332,20 +3208,16 @@ msgstr ""
 "%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:90
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
+#, python-format
 msgid ""
 "When processing multispectral datasets, automatically align the images for "
 "each band. If the images have been postprocessed and are already aligned, "
 "use this option. Default: %(default)s"
 msgstr ""
-"Κατά την επεξεργασία πολυφασματικών συνόλων δεδομένων, το ODM θα "
-"ευθυγραμμίσει αυτόματα τις εικόνες για κάθε ζώνη. Εάν οι εικόνες έχουν "
-"υποστεί μετεπεξεργασία και είναι ήδη ευθυγραμμισμένες, χρησιμοποιήστε αυτή "
-"την επιλογή. Προεπιλογή: %(default)s"
+"Κατά την επεξεργασία πολυφασματικών συνόλων δεδομένων, ευθυγραμμίζει "
+"αυτόματα τις εικόνες κάθε ζώνης. Αν οι εικόνες έχουν υποστεί μεταεπεξεργασία "
+"και είναι ήδη ευθυγραμμισμένες, χρησιμοποιήστε αυτή την επιλογή. "
+"Προεπιλεγμένη τιμή: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
@@ -3760,10 +3632,8 @@ msgid "GPS Time"
 msgstr "Ώρα GPS"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:409
-#, fuzzy
-#| msgid "Path distance"
 msgid "Distance:"
-msgstr "Απόσταση διαδρομής"
+msgstr "Απόσταση:"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:409
 #: coreplugins/contours/public/ContoursPanel.jsx:178
@@ -3772,7 +3642,7 @@ msgstr "Ανύψωση:"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:412
 msgid "Reset"
-msgstr ""
+msgstr "Επαναφορά"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:415
 #: coreplugins/annotate/public/Toolbox.jsx:1210
@@ -3781,17 +3651,13 @@ msgstr "Εξαγωγή σε CSV"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:418
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "Backup"
+msgstr "Επιστροφή"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:419
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "Backup"
+msgstr "Πίσω"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:92
 #: coreplugins/annotate/public/Toolbox.jsx:1208
@@ -3815,10 +3681,8 @@ msgid "Additional notes (optional)"
 msgstr "Πρόσθετες σημειώσεις (προαιρετικά)"
 
 #: coreplugins/annotate/public/Popup.jsx:313
-#, fuzzy
-#| msgid "Coordinates"
 msgid "Invalid coordinates"
-msgstr "Συντεταγμένες"
+msgstr "Μη έγκυρες συντεταγμένες"
 
 #: coreplugins/annotate/public/Popup.jsx:886
 #: coreplugins/measure/public/MeasurePopup.jsx:178
@@ -3874,10 +3738,8 @@ msgid "Temperature"
 msgstr "Θερμοκρασία"
 
 #: coreplugins/annotate/public/Popup.jsx:1006
-#, fuzzy
-#| msgid "Elevation range"
 msgid "Elevation Profile"
-msgstr "Εύρος ανύψωσης"
+msgstr "Προφίλ ανύψωσης"
 
 #: coreplugins/annotate/public/Popup.jsx:1010
 #: coreplugins/annotate/public/Popup.jsx:1064
@@ -3891,16 +3753,12 @@ msgstr "DTM"
 
 #: coreplugins/annotate/public/Popup.jsx:1013
 #: coreplugins/annotate/public/Popup.jsx:1014
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show"
-msgstr "προβολή σε 3D"
+msgstr "Εμφάνιση"
 
 #: coreplugins/annotate/public/Popup.jsx:1028
-#, fuzzy
-#| msgid "Elevation range"
 msgid "Elevation profile error"
-msgstr "Εύρος ανύψωσης"
+msgstr "Σφάλμα προφίλ ανύψωσης"
 
 #: coreplugins/annotate/public/Popup.jsx:1039
 #: coreplugins/measure/public/app.jsx:27
@@ -3918,30 +3776,24 @@ msgid "Fill"
 msgstr "Συμπληρώνω"
 
 #: coreplugins/annotate/public/Popup.jsx:1061
-#, fuzzy
-#| msgid "Base Surface"
 msgid "Surface"
-msgstr "Βασική επιφάνεια"
+msgstr "Επιφάνεια"
 
 #: coreplugins/annotate/public/Popup.jsx:1071
 msgid "Base Surface"
 msgstr "Βασική επιφάνεια"
 
 #: coreplugins/annotate/public/Popup.jsx:1079
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
-msgstr "προβολή σε 3D"
+msgstr "Εμφάνιση 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:1085
-#, fuzzy
-#| msgid "Custom"
 msgid "Custom Z"
-msgstr "Προσαρμοσμένο"
+msgstr "Προσαρμοσμένο Z"
 
 #: coreplugins/annotate/public/Popup.jsx:1107
 msgid "3D view error"
-msgstr ""
+msgstr "Σφάλμα προβολής 3D"
 
 #: coreplugins/annotate/public/Popup.jsx:1117
 msgid "No images found at this location"
@@ -3992,7 +3844,7 @@ msgstr "Εξαγωγή σχολίων"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "Βάση"
 
 #: coreplugins/contours/public/Contours.jsx:37
 #: coreplugins/contours/public/ContoursPanel.jsx:429
@@ -4055,14 +3907,12 @@ msgstr "Εξαγωγή"
 #: coreplugins/lightning/public/CloudLogin.jsx:44
 #: coreplugins/lightning/public/CloudLogin.jsx:47
 #: coreplugins/lightning/public/ShareDialog.jsx:116
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Invalid response. Try again later."
-msgstr "Δεν είναι δυνατή η ανάκτηση της εκτίμησης. Δοκιμάστε ξανά αργότερα."
+msgstr "Μη έγκυρη απόκριση. Δοκιμάστε ξανά αργότερα."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:78
 msgid "Invalid password. Do you need to reset it?"
-msgstr ""
+msgstr "Μη έγκυρος κωδικός πρόσβασης. Χρειάζεται να τον επαναφέρετε;"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:83
 #: coreplugins/lightning/public/Login.jsx:62
@@ -4085,10 +3935,15 @@ msgid ""
 "visit %(link)s and make sure you can access the cloud platform, then try "
 "again."
 msgstr ""
+"Ο λογαριασμός σας στην πλατφόρμα cloud Lightning δεν είναι ακόμη ενεργός. "
+"Για να τον ενεργοποιήσετε, επισκεφθείτε το %(link)s και βεβαιωθείτε ότι "
+"έχετε πρόσβαση στην πλατφόρμα cloud, και έπειτα δοκιμάστε ξανά."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:114
 msgid "Please confirm the password of your Lightning account to continue:"
 msgstr ""
+"Επιβεβαιώστε τον κωδικό πρόσβασης του λογαριασμού σας Lightning για να "
+"συνεχίσετε:"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:118
 #: coreplugins/lightning/public/Login.jsx:103
@@ -4097,19 +3952,15 @@ msgstr "Κωδικός πρόσβασης"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:119
 msgid "switch"
-msgstr ""
+msgstr "αλλαγή"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:127
-#, fuzzy
-#| msgid "Forgot password?"
 msgid "Reset password"
-msgstr "Ξεχάσατε τον κωδικό πρόσβασης;"
+msgstr "Επαναφορά κωδικού πρόσβασης"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:133
-#, fuzzy
-#| msgid "Password"
 msgid "Confirm Password"
-msgstr "Κωδικός πρόσβασης"
+msgstr "Επιβεβαίωση κωδικού πρόσβασης"
 
 #: coreplugins/lightning/public/CostEstimateItem.jsx:113
 msgid "Cannot retrieve estimate. Try again later."
@@ -4194,17 +4045,15 @@ msgstr "Επανασυντονισμός"
 
 #: coreplugins/lightning/public/Dashboard.jsx:185
 msgid "Share Buttons"
-msgstr ""
+msgstr "Κουμπιά κοινοποίησης"
 
 #: coreplugins/lightning/public/Dashboard.jsx:187
-#, fuzzy
-#| msgid "Enabled"
 msgid "Disabled"
-msgstr "Ενεργοποιημένο"
+msgstr "Απενεργοποιημένα"
 
 #: coreplugins/lightning/public/Dashboard.jsx:189
 msgid "Toggle"
-msgstr ""
+msgstr "Εναλλαγή"
 
 #: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Dashboard"
@@ -4231,98 +4080,80 @@ msgid "Login and Sync"
 msgstr "Σύνδεση και συγχρονισμός"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:119
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot communicate with Lightning's cloud platform. Try again later."
 msgstr ""
-"Δεν είναι δυνατή η δημιουργία νέας εργασίας. Προσπαθήστε ξανά αργότερα."
+"Δεν είναι δυνατή η επικοινωνία με την πλατφόρμα cloud του Lightning. "
+"Δοκιμάστε ξανά αργότερα."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:150
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot calculate size. Try again later."
-msgstr "Δεν είναι δυνατή η ανάκτηση της εκτίμησης. Δοκιμάστε ξανά αργότερα."
+msgstr "Δεν είναι δυνατός ο υπολογισμός του μεγέθους. Δοκιμάστε ξανά αργότερα."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:193
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Service not available. Try again later."
-msgstr "Δεν είναι δυνατή η ανάκτηση της εκτίμησης. Δοκιμάστε ξανά αργότερα."
+msgstr "Η υπηρεσία δεν είναι διαθέσιμη. Δοκιμάστε ξανά αργότερα."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:196
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot verify credentials. Try again later."
-msgstr "Δεν είναι δυνατή η ανάκτηση της εκτίμησης. Δοκιμάστε ξανά αργότερα."
+msgstr ""
+"Δεν είναι δυνατή η επαλήθευση των διαπιστευτηρίων. Δοκιμάστε ξανά αργότερα."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:263
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid response"
-msgstr "Μη έγκυρη ανταπόκριση: %(error)s"
+msgstr "Μη έγκυρη απόκριση"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:266
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot share. Please try again in a bit."
-msgstr ""
-"Δεν είναι δυνατή η δημιουργία νέας εργασίας. Προσπαθήστε ξανά αργότερα."
+msgstr "Δεν είναι δυνατή η κοινοποίηση. Δοκιμάστε ξανά σε λίγο."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:278
 msgid "Checking your credentials..."
-msgstr ""
+msgstr "Έλεγχος των διαπιστευτηρίων σας..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:287
-#, fuzzy
-#| msgid "Creating project..."
 msgid "Retrieving your projects..."
-msgstr "Δημιουργία έργου..."
+msgstr "Ανάκτηση των έργων σας..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:301
 msgid ""
 "Your Lightning account does not have permanent cloud storage. You can still "
 "share, but data will be deleted shortly after upload."
 msgstr ""
+"Ο λογαριασμός σας Lightning δεν διαθέτει μόνιμο χώρο αποθήκευσης στο cloud. "
+"Μπορείτε να κοινοποιήσετε, αλλά τα δεδομένα θα διαγραφούν λίγο μετά τη "
+"μεταφόρτωση."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:313
-#, fuzzy
-#| msgid "Created on"
 msgid "Create New"
-msgstr "Δημιουργήθηκε στις"
+msgstr "Δημιουργία νέου"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:329
 msgid "All Assets + Original Images"
-msgstr ""
+msgstr "Όλοι οι πόροι + αρχικές εικόνες"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:330
 msgid "Only"
-msgstr ""
+msgstr "Μόνο"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:342
 msgid "Size exceeds available storage quota"
-msgstr ""
+msgstr "Το μέγεθος υπερβαίνει το διαθέσιμο ποσοστό αποθήκευσης"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:355
-#, fuzzy
-#| msgid "Select"
 msgid "Select All"
-msgstr "Διαλέγω"
+msgstr "Επιλογή όλων"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:359
 msgid "Deselect All"
-msgstr ""
+msgstr "Αποεπιλογή όλων"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:389
-#, fuzzy
-#| msgid "Lightning"
 msgid "Share with Lightning"
-msgstr "Lightning ⚡"
+msgstr "Κοινοποίηση με Lightning"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:392
-#, fuzzy
-#| msgid "Saving..."
 msgid "Sharing..."
-msgstr "Αποθήκευση..."
+msgstr "Κοινοποίηση..."
 
 #: coreplugins/lightning/public/app.jsx:42
 msgid "Lightning"
@@ -4332,6 +4163,8 @@ msgstr "Lightning ⚡"
 msgid ""
 "Lightning is a cloud service built by WebODM developers that allows you to:"
 msgstr ""
+"Το Lightning είναι μια υπηρεσία cloud από τους προγραμματιστές του WebODM "
+"που σας επιτρέπει να:"
 
 #: coreplugins/lightning/public/app.jsx:46
 #, python-format
@@ -4339,10 +4172,12 @@ msgid ""
 "Quickly process datasets with high performance servers powered by the "
 "%(link)s photogrammetry engine"
 msgstr ""
+"Επεξεργάζεστε γρήγορα σύνολα δεδομένων σε servers υψηλών επιδόσεων με τη "
+"μηχανή φωτογραμμετρίας %(link)s"
 
 #: coreplugins/lightning/public/app.jsx:49
 msgid "Easily share public links to your datasets"
-msgstr ""
+msgstr "Κοινοποιείτε εύκολα δημόσιους συνδέσμους προς τα σύνολα δεδομένων σας"
 
 #: coreplugins/lightning/public/app.jsx:51
 msgid "register"

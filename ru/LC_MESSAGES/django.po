@@ -167,20 +167,22 @@ msgstr "Учётная запись пользователя отключена.
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "Неверный заголовок Authorization. Учётные данные не указаны."
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
 msgstr ""
+"Неверный заголовок Authorization. Строка учётных данных не должна содержать "
+"пробелов."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "Срок действия подписи истёк."
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "Ошибка декодирования подписи."
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -378,11 +380,11 @@ msgstr "Недопустимое действие"
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "Поле orig_iat обязательно."
 
 #: app/api/jwt.py:78
 msgid "Refresh has expired."
-msgstr ""
+msgstr "Срок обновления истёк."
 
 #: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
@@ -1390,7 +1392,7 @@ msgstr "Успешно"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 Доступ запрещён"
 
 #: app/templates/app/403.html:7
 #, fuzzy
@@ -1418,7 +1420,7 @@ msgstr ""
 
 #: app/templates/app/about.html:26
 msgid "Minimize"
-msgstr ""
+msgstr "Свернуть"
 
 #: app/templates/app/about.html:30
 #, python-format
@@ -1508,7 +1510,7 @@ msgstr "Очистить выбор"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Навигационная цепочка"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
 #, fuzzy
@@ -1560,14 +1562,16 @@ msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
 msgstr ""
+"Это действие <strong>включит</strong> аутентификацию по паролю для этого "
+"пользователя."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "Отключить аутентификацию по паролю"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "Включить аутентификацию по паролю"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1600,7 +1604,7 @@ msgstr "Аккаунты"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "Очистить все фильтры"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1716,7 +1720,7 @@ msgstr "Изменить"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "Просмотр"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1750,7 +1754,7 @@ msgstr "Нет доступных"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "Добавлено:"
 
 #: app/templates/app/admin/index.html:33
 #, fuzzy
@@ -1798,9 +1802,9 @@ msgstr "Действие"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "запись"
+msgstr[1] "записи"
+msgstr[2] "записей"
 
 #: app/templates/app/admin/object_history.html:52
 #, fuzzy
@@ -2154,7 +2158,7 @@ msgstr "Плагин для добавления кнопки для созда�
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "Выход выполнен"
 
 #: app/views/app.py:63
 msgid "First Project"

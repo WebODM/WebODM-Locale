@@ -117,12 +117,13 @@ msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
+"Plugin %(plugin)s atualizado com sucesso. Reinicie o WebODM para aplicar as "
+"alterações."
 
 #: app/admin.py:374
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "Plugin adicionado com sucesso"
+msgstr "%(plugin)s instalado com sucesso"
 
 #: app/admin.py:378
 #, python-format
@@ -146,16 +147,12 @@ msgid "Actions"
 msgstr "Ações"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid payload."
-msgstr "Ação Inválida"
+msgstr "Payload inválido."
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid signature."
-msgstr "Tipo do arquivo inválido"
+msgstr "Assinatura inválida."
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
@@ -163,20 +160,22 @@ msgstr "A Conta do Usuário está Desabilitada."
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "Cabeçalho Authorization inválido. Nenhuma credencial fornecida."
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
 msgstr ""
+"Cabeçalho Authorization inválido. A string de credenciais não deve conter "
+"espaços."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "A assinatura expirou."
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "Erro ao decodificar a assinatura."
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -363,18 +362,16 @@ msgid "Must include \"username\" and \"password\"."
 msgstr "É obrigatório inserir \"nome de usuário\" e \"senha\"."
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "Ação Inválida"
+msgstr "Token inválido."
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "O campo orig_iat é obrigatório."
 
 #: app/api/jwt.py:78
 msgid "Refresh has expired."
-msgstr ""
+msgstr "A atualização expirou."
 
 #: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
@@ -391,42 +388,38 @@ msgstr "O arquivo excede o tamanho máximo permitido"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "ID de sobreposição inválido"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "Arquivo ausente"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "%(file)s é maior que %(size)s MB."
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "Metadados de sobreposição inválidos"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid GeoJSON"
-msgstr "Ação Inválida"
+msgstr "GeoJSON inválido"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "Não é um DXF ou shapefile compactado: %(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "Código EPSG inválido: %(value)s"
+msgstr "Código EPSG inválido"
 
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "Não foi possível converter %(file)s: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -445,45 +438,39 @@ msgid "Invalid permissions"
 msgstr "Permissões inválidas"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid image size"
-msgstr "Arquivo zip inválido"
+msgstr "Tamanho de imagem inválido"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "A tarefa não possui %(asset)s"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
-msgstr ""
+msgstr "A exportação não está pronta"
 
 #: app/api/splats.py:52
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid export"
-msgstr "Ação Inválida"
+msgstr "Exportação inválida"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr ""
+msgstr "A exportação expirou, gere uma nova"
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
 msgstr ""
+"Não é possível enviar um modelo de splats (a tarefa não possui nuvem de "
+"pontos)"
 
 #: app/api/splats.py:77
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "A single file must be uploaded"
-msgstr "Nenhum arquivo carregado"
+msgstr "Apenas um arquivo deve ser enviado"
 
 #: app/api/splats.py:82
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid filename"
-msgstr "Tipo do arquivo inválido"
+msgstr "Nome de arquivo inválido"
 
 #: app/api/splats.py:86 app/api/tasks.py:941
 msgid "Invalid file type"
@@ -1393,13 +1380,11 @@ msgstr "Sucesso"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 Proibido"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "Você não tem permissão para editar nada."
+msgstr "Você não tem permissão para acessar esta página."
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1419,7 +1404,7 @@ msgstr "Algo aconteceu. Os logs do servidor contêm mais informações."
 
 #: app/templates/app/about.html:26
 msgid "Minimize"
-msgstr ""
+msgstr "Minimizar"
 
 #: app/templates/app/about.html:30
 #, python-format
@@ -1441,8 +1426,6 @@ msgid "Page not found"
 msgstr "Página não encontrada"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
 msgstr "Desculpe, mas a página solicitada não foi encontrada."
 
@@ -1467,21 +1450,15 @@ msgid "Server error (500)"
 msgstr "Erro do servidor (500)"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "Erro do servidor (500)"
+msgstr "Erro no servidor <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
-"Ocorreu um erro. Isso foi relatado aos administradores do site por e-mail e "
+"Ocorreu um erro. Ele foi informado aos administradores do site por e-mail e "
 "deve ser corrigido em breve. Obrigado pela sua paciência."
 
 #: app/templates/app/admin/actions.html:8
@@ -1507,25 +1484,17 @@ msgstr "Limpar seleção"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Trilha de navegação"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
-msgstr ""
-"Primeiro, insira um nome de usuário e uma senha. Então, você poderá editar "
-"mais opções do usuário."
+msgstr "Depois de criar um usuário, você poderá editar mais opções do usuário."
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "Último Erro"
+msgstr "Erro:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1533,20 +1502,16 @@ msgid "Change password"
 msgstr "Alterar senha"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "Alterar senha"
+msgstr "Definir senha"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] "Por favor corrigir o erro abaixo."
-msgstr[1] "Por favor corrigir o erro abaixo."
+msgstr[0] "Por favor, corrija o erro abaixo."
+msgstr[1] "Por favor, corrija os erros abaixo."
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
@@ -1558,14 +1523,16 @@ msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
 msgstr ""
+"Esta ação irá <strong>ativar</strong> a autenticação por senha para este "
+"usuário."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "Desabilitar autenticação por senha"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "Ativar autenticação por senha"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1585,20 +1552,16 @@ msgid "Filter"
 msgstr "Filtro"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "Contas"
+msgstr "Ocultar contagens"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "Contas"
+msgstr "Mostrar contagens"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "Limpar todos os filtros"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1663,10 +1626,8 @@ msgstr "Objetos"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
-msgstr "Sim, eu tenho certeza"
+msgstr "Sim, tenho certeza"
 
 #: app/templates/app/admin/delete_confirmation.html:45
 #: app/templates/app/admin/delete_selected_confirmation.html:43
@@ -1714,7 +1675,7 @@ msgstr "Alterar"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "Visualizar"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1748,38 +1709,29 @@ msgstr "Nenhum disponível"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "Adicionado:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "Alterar"
+msgstr "Alterado:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "Excluir"
+msgstr "Excluído:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "Conteúdo desconhecido"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
-"Algo está errado com a instalação do seu banco de dados. Certifique-se de "
-"que as tabelas de banco de dados apropriadas tenham sido criadas e que o "
-"banco de dados possa ser lido pelo usuário apropriado."
+"Há algo errado com a instalação do seu banco de dados. Verifique se as "
+"tabelas apropriadas do banco de dados foram criadas e se o banco de dados "
+"pode ser lido pelo usuário apropriado."
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1796,20 +1748,16 @@ msgstr "Ação"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "entrada"
+msgstr[1] "entradas"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
 "Este objeto não tem um histórico de alterações. Provavelmente não foi "
-"adicionado por meio da administração do site."
+"adicionado por este site de administração."
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1822,10 +1770,8 @@ msgid "Save"
 msgstr "Salvar"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "Fechando pop-up ..."
+msgstr "Fechando popup…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1856,10 +1802,8 @@ msgid "Save and continue editing"
 msgstr "Salvar e continuar editando"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "Salvar como novo"
+msgstr "Salvar e visualizar"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -2150,7 +2094,7 @@ msgstr ""
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "Desconectado"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2170,6 +2114,8 @@ msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
+"%(node)s está obsoleto e pode parar de funcionar em uma versão futura. "
+"Consulte o %(link_start)s guia de migração %(link_end)s para atualizar."
 
 #: app/views/app.py:150
 #, python-format
@@ -2236,34 +2182,25 @@ msgstr ""
 #: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
 #: coreplugins/annotate/dist/annotate/api.py:64
 #: coreplugins/annotate/dist/annotate/api.py:104
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"Nenhum modelo de superfície disponível. No Painel de controle, selecione "
-"esta tarefa, pressione Editar, nas opções certifique-se de marcar \"dsm\" e "
-"pressione reiniciar --> do MDE."
+"Nenhum modelo de terreno disponível. No Painel, selecione esta tarefa, "
+"clique em Editar, nas opções marque \"dtm\" e depois clique em Reiniciar --> "
+"A partir do MDE."
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
 #: coreplugins/annotate/dist/annotate/api.py:106
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid surface model"
-msgstr "Tipo do arquivo inválido"
+msgstr "Modelo de superfície inválido"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid line"
-msgstr "Tipo do arquivo inválido"
+msgstr "Linha inválida"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128

@@ -84,7 +84,7 @@ msgstr "지형 모델"
 
 #: app/static/app/js/MapView.jsx:155
 msgid "A map is not available for this task or project."
-msgstr ""
+msgstr "이 작업 또는 프로젝트에 사용할 수 있는 지도가 없습니다."
 
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
@@ -106,18 +106,16 @@ msgstr "카메라 보기"
 #: app/static/app/js/components/ManageMediaDialog.jsx:560
 #: coreplugins/lightning/public/ShareDialog.jsx:336
 msgid "Size"
-msgstr ""
+msgstr "크기"
 
 #: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load splats renderer"
-msgstr "권한을 불러올 수 없습니다."
+msgstr "스플랫 렌더러를 불러올 수 없습니다"
 
 #: app/static/app/js/ModelView.jsx:818
 msgid ""
 "Could not load splats. This task doesn't seem to have a valid splats file."
-msgstr ""
+msgstr "스플랫을 불러올 수 없습니다. 이 작업에 유효한 스플랫 파일이 없는 것 같습니다."
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
@@ -136,13 +134,11 @@ msgstr "텍스쳐된 모델"
 #: app/static/app/js/classes/AssetDownloads.js:63
 #: app/static/app/js/components/TaskListItem.jsx:866
 msgid "Splats"
-msgstr ""
+msgstr "스플랫"
 
 #: app/static/app/js/ModelView.jsx:981
-#, fuzzy
-#| msgid "Loading..."
 msgid "Loading splats..."
-msgstr "불러오는 중..."
+msgstr "스플랫 불러오는 중..."
 
 #: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
@@ -150,94 +146,85 @@ msgstr "텍스쳐된 모델 불러오는 중..."
 
 #: app/static/app/js/PluginBrowser.jsx:57
 msgid "Installed"
-msgstr ""
+msgstr "설치됨"
 
 #: app/static/app/js/PluginBrowser.jsx:61
 #, python-format
 msgid "Requires WebODM %(version)s"
-msgstr ""
+msgstr "WebODM %(version)s 필요"
 
 #: app/static/app/js/PluginBrowser.jsx:65
 msgid "Update"
-msgstr ""
+msgstr "업데이트"
 
 #: app/static/app/js/PluginBrowser.jsx:69
 msgid "Install"
-msgstr ""
+msgstr "설치"
 
 #: app/static/app/js/PluginBrowser.jsx:80
-#, fuzzy
-#| msgid "Imperial"
 msgid "Experimental"
-msgstr "영미단위계"
+msgstr "실험적"
 
 #: app/static/app/js/PluginBrowser.jsx:81
-#, fuzzy
-#| msgid "Duplicate"
 msgid "Deprecated"
-msgstr "복제"
+msgstr "지원 중단"
 
 #: app/static/app/js/PluginBrowser.jsx:82
 #, python-format
 msgid "by %(author)s"
-msgstr ""
+msgstr "작성자: %(author)s"
 
 #: app/static/app/js/PluginBrowser.jsx:159
 msgid "The plugin repository returned an error:"
-msgstr ""
+msgstr "플러그인 저장소에서 오류를 반환했습니다:"
 
 #: app/static/app/js/PluginBrowser.jsx:161
 #: app/static/app/js/PluginBrowser.jsx:167
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid ""
 "The plugin repository returned an invalid response. Please try again later."
-msgstr "새 작업을 생성할 수 없습니다. 잠시후 다시 시도해주세요."
+msgstr "플러그인 저장소에서 잘못된 응답을 반환했습니다. 나중에 다시 시도하세요."
 
 #: app/static/app/js/PluginBrowser.jsx:164
 msgid ""
 "Cannot connect to the plugin repository. Check that this server has internet "
 "access and that the connection is not blocked by a firewall or proxy."
 msgstr ""
+"플러그인 저장소에 연결할 수 없습니다. 이 서버가 인터넷에 연결되어 있고 방화벽이나 프록시가 연결을 차단하지 않는지 확인하세요."
 
 #: app/static/app/js/PluginBrowser.jsx:187
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Downloading…"
 msgid "Downloading..."
-msgstr "내려받는 중…"
+msgstr "다운로드 중..."
 
 #: app/static/app/js/PluginBrowser.jsx:191
 msgid "The plugin repository returned an error while downloading the plugin:"
-msgstr ""
+msgstr "플러그인을 다운로드하는 중 플러그인 저장소에서 오류를 반환했습니다:"
 
 #: app/static/app/js/PluginBrowser.jsx:193
 #: app/static/app/js/PluginBrowser.jsx:196
 msgid ""
 "Cannot download the plugin. The connection to the plugin repository failed "
 "or was interrupted."
-msgstr ""
+msgstr "플러그인을 다운로드할 수 없습니다. 플러그인 저장소 연결에 실패했거나 연결이 중단되었습니다."
 
 #: app/static/app/js/PluginBrowser.jsx:199
-#, fuzzy
-#| msgid "Restarting..."
 msgid "Installing..."
-msgstr "재시작 중..."
+msgstr "설치 중..."
 
 #: app/static/app/js/PluginBrowser.jsx:215
 #: app/static/app/js/PluginBrowser.jsx:217
 msgid "WebODM could not install the plugin:"
-msgstr ""
+msgstr "WebODM에서 플러그인을 설치할 수 없습니다:"
 
 #: app/static/app/js/PluginBrowser.jsx:220
 msgid ""
 "Cannot send the plugin to WebODM. The connection was interrupted or the "
 "server is not responding."
-msgstr ""
+msgstr "플러그인을 WebODM으로 보낼 수 없습니다. 연결이 끊겼거나 서버가 응답하지 않습니다."
 
 #: app/static/app/js/PluginBrowser.jsx:253
 msgid "No plugins found."
-msgstr ""
+msgstr "플러그인을 찾을 수 없습니다."
 
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
@@ -255,13 +242,11 @@ msgstr "닫기"
 #: app/static/app/js/PluginBrowser.jsx:277
 #: app/static/app/js/PluginBrowser.jsx:325
 msgid "Install Plugins"
-msgstr ""
+msgstr "플러그인 설치"
 
 #: app/static/app/js/PluginBrowser.jsx:287
-#, fuzzy
-#| msgid "Search"
 msgid "Search plugins"
-msgstr "검색"
+msgstr "플러그인 검색"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -272,10 +257,8 @@ msgid "Orthophoto (Tiles)"
 msgstr "정사영상 (Tiles)"
 
 #: app/static/app/js/classes/AssetDownloads.js:49
-#, fuzzy
-#| msgid "Orthophoto (Tiles)"
 msgid "Orthophoto Cutline"
-msgstr "정사영상 (Tiles)"
+msgstr "정사영상 절단선"
 
 #: app/static/app/js/classes/AssetDownloads.js:51
 msgid "Terrain Model (Tiles)"
@@ -320,20 +303,18 @@ msgid "All Assets"
 msgstr "모든 자산들"
 
 #: app/static/app/js/classes/Gcp.js:18
-#, fuzzy, python-format
-#| msgid "Invalid response: %(error)s"
+#, python-format
 msgid "Invalid CRS: %(line)s"
-msgstr "잘못된 응답: %(error)s"
+msgstr "잘못된 CRS: %(line)s"
 
 #: app/static/app/js/classes/Gcp.js:34 app/static/app/js/classes/Gcp.js:38
-#, fuzzy, python-format
-#| msgid "Invalid response: %(error)s"
+#, python-format
 msgid "Invalid line %(num)s: %(line)s"
-msgstr "잘못된 응답: %(error)s"
+msgstr "잘못된 줄 %(num)s: %(line)s"
 
 #: app/static/app/js/classes/Gcp.js:44
 msgid "Empty GCP file"
-msgstr ""
+msgstr "빈 GCP 파일"
 
 #: app/static/app/js/classes/OverlayColors.js:5
 #: coreplugins/annotate/public/markers.js:6
@@ -371,10 +352,9 @@ msgid "Gray"
 msgstr "회색"
 
 #: app/static/app/js/classes/OverlayLayer.js:14
-#, fuzzy, python-format
-#| msgid "%(file)s is bigger than 5 MB."
+#, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr "%(file)s 이 5MB 보다 큽니다."
+msgstr "%(file)s 파일이 %(size)s MB보다 큽니다."
 
 #: app/static/app/js/classes/OverlayLayer.js:23
 #, python-format
@@ -404,10 +384,8 @@ msgid "Importing..."
 msgstr "불러오는 중..."
 
 #: app/static/app/js/classes/PendingActions.js:27
-#, fuzzy
-#| msgid "Importing..."
 msgid "Compacting..."
-msgstr "불러오는 중..."
+msgstr "압축 중..."
 
 #: app/static/app/js/classes/PipelineSteps.js:7
 msgid "Load Dataset"
@@ -497,7 +475,7 @@ msgstr "피트"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "인치"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -550,11 +528,11 @@ msgstr "입방야드"
 
 #: app/static/app/js/classes/Units.js:158
 msgid "Celsius"
-msgstr ""
+msgstr "섭씨"
 
 #: app/static/app/js/classes/Units.js:168
 msgid "Fahrenheit"
-msgstr ""
+msgstr "화씨"
 
 #: app/static/app/js/classes/Units.js:286
 msgid "Metric"
@@ -582,7 +560,7 @@ msgstr "백업"
 
 #: app/static/app/js/components/CropButton.jsx:16
 msgid "Crop"
-msgstr ""
+msgstr "자르기"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:63
 msgid "Cannot load permissions."
@@ -601,10 +579,8 @@ msgid "No Access"
 msgstr "접근 없음"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Username"
 msgid "Group name"
-msgstr "사용자명"
+msgstr "그룹 이름"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -615,52 +591,44 @@ msgid "Permissions"
 msgstr "권한"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "태그 추가"
+msgstr "사용자 추가"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "프로젝트 추가"
+msgstr "그룹 추가"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:22
-#, fuzzy
-#| msgid "Start Processing"
 msgid "Input & Preprocessing"
-msgstr "처리 시작"
+msgstr "입력 및 전처리"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:25
-#, fuzzy
-#| msgid "Camera Animation"
 msgid "Camera Configuration"
-msgstr "카메라 애니메이션"
+msgstr "카메라 구성"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Masking"
-msgstr ""
+msgstr "마스킹"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Multispectral"
-msgstr ""
+msgstr "멀티스펙트럴"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:29
 msgid "Video Input"
-msgstr ""
+msgstr "비디오 입력"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:34
 msgid "Bounds & Cropping"
-msgstr ""
+msgstr "경계 및 자르기"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:37
 msgid "Boundary"
-msgstr ""
+msgstr "경계"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:42
 msgid "Coordinate Reference System"
-msgstr ""
+msgstr "좌표 참조 시스템"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:45
 #: app/static/app/js/components/EditTaskForm.jsx:626
@@ -670,115 +638,91 @@ msgstr "옵션"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:53
 msgid "Feature Extraction"
-msgstr ""
+msgstr "특징점 추출"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:54
 msgid "Feature Matching"
-msgstr ""
+msgstr "특징점 매칭"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:55
-#, fuzzy
-#| msgid "Reconstructed Points:"
 msgid "Reconstruction"
-msgstr "재구성된 점들:"
+msgstr "재구성"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:64
-#, fuzzy
-#| msgid "Elevation"
 msgid "Generation"
-msgstr "고도"
+msgstr "생성"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:65
-#, fuzzy
-#| msgid "Filter"
 msgid "Filtering"
-msgstr "필터"
+msgstr "필터링"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:66
-#, fuzzy
-#| msgid "Processing"
 msgid "Post-Processing"
-msgstr "프로세싱"
+msgstr "후처리"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:74
 msgid "Mesh Generation"
-msgstr ""
+msgstr "메시 생성"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:82
-#, fuzzy
-#| msgid "Texturing"
 msgid "Texture Options"
-msgstr "텍스쳐 생성 중"
+msgstr "텍스처 옵션"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:87
 msgid "Digital Elevation Models"
-msgstr ""
+msgstr "수치 고도 모델"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:90
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Outputs"
-msgstr "작업 출력:"
+msgstr "출력"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:91
 msgid "Resolution & Sampling"
-msgstr ""
+msgstr "해상도 및 샘플링"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:92
-#, fuzzy
-#| msgid "Classification filter"
 msgid "Ground Classification (SMRF)"
-msgstr "분류 필터"
+msgstr "지면 분류 (SMRF)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:100
-#, fuzzy
-#| msgid "Orthophoto (Tiles)"
 msgid "Orthophoto Options"
-msgstr "정사영상 (Tiles)"
+msgstr "정사영상 옵션"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:105
-#, fuzzy
-#| msgid "Miles"
 msgid "Tiles"
-msgstr "마일"
+msgstr "타일"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:108
-#, fuzzy
-#| msgid "Options"
 msgid "Tiles Options"
-msgstr "옵션"
+msgstr "타일 옵션"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:113
 msgid "System & Pipeline Control"
-msgstr ""
+msgstr "시스템 및 파이프라인 제어"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:116
 msgid "Performance"
-msgstr ""
+msgstr "성능"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:117
-#, fuzzy
-#| msgid "Helicopter control"
 msgid "Pipeline Control"
-msgstr "헬리콥터 제어"
+msgstr "파이프라인 제어"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:122
 msgid "Split/Merge"
-msgstr ""
+msgstr "분할/병합"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:125
 msgid "Splitting"
-msgstr ""
+msgstr "분할"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:126
 msgid "Merging"
-msgstr ""
+msgstr "병합"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:520
-#, fuzzy
-#| msgid "Other settings"
 msgid "Other Options"
-msgstr "그 외 설정"
+msgstr "기타 옵션"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:557
 #: app/static/app/js/components/EditTaskForm.jsx:572
@@ -803,23 +747,23 @@ msgstr "검색"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:574
 msgid "Flat View"
-msgstr ""
+msgstr "목록 보기"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:574
 msgid "Grouped View"
-msgstr ""
+msgstr "그룹 보기"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:578
 msgid "Expand"
-msgstr ""
+msgstr "펼치기"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:578
 msgid "Collapse"
-msgstr ""
+msgstr "접기"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:588
 msgid "Search options..."
-msgstr ""
+msgstr "옵션 검색..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -1026,7 +970,7 @@ msgstr "유효하지 않은 JSON 응답:%(error)s"
 #: app/static/app/js/components/ExportAssetPanel.jsx:234
 #: app/static/app/js/components/TaskListItem.jsx:720
 msgid "CRS:"
-msgstr ""
+msgstr "좌표계:"
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:238
 #: coreplugins/contours/public/ContoursPanel.jsx:367
@@ -1043,10 +987,9 @@ msgid "Format:"
 msgstr "형식:"
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:274
-#, fuzzy, python-format
-#| msgid "(meters)"
+#, python-format
 msgid "Resample (%(unit)s):"
-msgstr "(미터)"
+msgstr "리샘플 (%(unit)s):"
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:282
 msgid "Export:"
@@ -1107,51 +1050,45 @@ msgstr "최대:"
 
 #: app/static/app/js/components/ImagePopup.jsx:254
 msgid "Altitude"
-msgstr ""
+msgstr "고도"
 
 #: app/static/app/js/components/ImagePopup.jsx:262
 msgid "Download Image"
 msgstr "이미지 다운로드"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:114
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid ""
 "Upload failed after multiple retries. Please check your connection and try "
 "again."
-msgstr "파일을 올릴 수 없습니다. 인터넷 연결상태를 확인하시고 다시 시도하세요."
+msgstr "여러 번 재시도했지만 업로드에 실패했습니다. 연결을 확인하고 다시 시도하세요."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:206
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Failed to complete upload. Try again later."
-msgstr "견적을 검색할 수 없습니다. 나중에 다시 시도하세요."
+msgstr "업로드를 완료하지 못했습니다. 나중에 다시 시도하세요."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:216
 msgid "Select at least one file to upload."
-msgstr ""
+msgstr "업로드할 파일을 하나 이상 선택하세요."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:223
 msgid "A textured model requires also a point cloud to be properly displayed."
-msgstr ""
+msgstr "텍스쳐된 모델을 제대로 표시하려면 포인트 클라우드도 필요합니다."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:247
 msgid "Failed to initialize upload. Try again later."
-msgstr ""
+msgstr "업로드를 초기화하지 못했습니다. 나중에 다시 시도하세요."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:286
-#, fuzzy
-#| msgid "Import Existing Assets"
 msgid "Import External Data"
-msgstr "존재하는 에셋을 불러오기"
+msgstr "외부 데이터 가져오기"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:287
 msgid "Select files. At least one file is required."
-msgstr ""
+msgstr "파일을 선택하세요. 파일이 하나 이상 필요합니다."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:307
 msgid "Remove"
-msgstr ""
+msgstr "제거"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
@@ -1159,10 +1096,8 @@ msgid "Cancel Upload"
 msgstr "올리기 취소"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:333
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload"
-msgstr "파일 올리기"
+msgstr "업로드"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
@@ -1186,16 +1121,11 @@ msgid "Import Assets or Backups"
 msgstr "자산을 불러오거나 보관하기"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:167
-#, fuzzy, python-format
-#| msgid ""
-#| "You can import .zip files that have been exported from existing tasks via "
-#| "Download Assets %(arrow)s All Assets | Backup."
+#, python-format
 msgid ""
 "You can import .zip files that have been exported from existing tasks via "
 "Download %(arrow)s All Assets | Backup."
-msgstr ""
-"기존 작업에서 내보낸 .zip 파일은 '자산 다운로드' %(arrow)s '모든 자산| 보"
-"관'을 통해 가져올 수 있습니다."
+msgstr "다운로드 %(arrow)s 모든 자산들 | 백업을 통해 기존 작업에서 내보낸 .zip 파일을 가져올 수 있습니다."
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:174
 msgid "Upload a File"
@@ -1238,7 +1168,7 @@ msgstr "GeoJSON으로 내보내기"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:411
 msgid "Side By Side"
-msgstr ""
+msgstr "나란히 보기"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:411
 msgid "Zoom To"
@@ -1272,10 +1202,8 @@ msgid "Color:"
 msgstr "색상:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:470
-#, fuzzy
-#| msgid "Display"
 msgid "Display:"
-msgstr "디스플레이"
+msgstr "디스플레이:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:473
 #: coreplugins/annotate/public/Popup.jsx:984
@@ -1284,7 +1212,7 @@ msgstr "고도"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:474
 msgid "Slope"
-msgstr ""
+msgstr "경사"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:481
 msgid "Shading:"
@@ -1309,13 +1237,11 @@ msgstr "돌출"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:57
 msgid "Change color"
-msgstr ""
+msgstr "색상 변경"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:206
-#, fuzzy
-#| msgid "Moving..."
 msgid "Converting..."
-msgstr "이동 중..."
+msgstr "변환 중..."
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:216
 #: app/static/app/js/components/Map.jsx:1730
@@ -1325,14 +1251,12 @@ msgid "Opacity"
 msgstr "불투명도"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:218
-#, fuzzy
-#| msgid "Saving…"
 msgid "Syncing…"
-msgstr "저장 중…"
+msgstr "동기화 중…"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:294
 msgid "Overlays"
-msgstr ""
+msgstr "오버레이"
 
 #: app/static/app/js/components/LayersControlPanel.jsx:42
 #: app/static/app/js/components/NewTaskPanel.jsx:359
@@ -1346,7 +1270,7 @@ msgstr "불러오는 중…"
 #: app/static/app/js/components/SplatsDialog.jsx:178
 #, python-format
 msgid "%(filename)s is not a valid file"
-msgstr ""
+msgstr "%(filename)s은(는) 유효한 파일이 아닙니다"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:174
 #: app/static/app/js/components/ProjectListItem.jsx:335
@@ -1370,90 +1294,73 @@ msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:247
 #: app/static/app/js/components/SplatsDialog.jsx:235
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
-msgstr "파일을 올릴 수 없습니다. 인터넷 연결상태를 확인하시고 다시 시도하세요."
+msgstr "업로드에 실패했습니다. 연결을 확인하고 다시 시도하세요."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:271
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "권한을 불러올 수 없습니다."
+msgstr "미디어를 불러올 수 없습니다."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:288
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "\"%(preset)s\" 삭제를 정말로 하시겠습니까?"
+msgstr "%(filename)s을(를) 삭제하시겠습니까?"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:318
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "작업을 삭제할 수 없습니다."
+msgstr "파일을 삭제할 수 없습니다."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:356
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "명령을 완료할 수 없습니다."
+msgstr "설명을 업데이트할 수 없습니다."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:371
 msgid "Video"
-msgstr ""
+msgstr "동영상"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:372
 msgid "Panorama"
-msgstr ""
+msgstr "파노라마"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:373
 msgid "Photo"
-msgstr ""
+msgstr "사진"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "파일 올리기"
+msgstr "파일 업로드"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:403
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
-msgstr ""
+msgstr "지리 참조된 사진, 파노라마 및 동영상이 지도에 표시됩니다."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:412
 #: app/static/app/js/components/SplatsDialog.jsx:527
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "마무리 중... 잠시 기다려 주세요"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:433
 msgid "No media files."
-msgstr ""
+msgstr "미디어 파일이 없습니다."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:445
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "오른쪽 보기"
+msgstr "그리드 보기"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:452
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "왼쪽 보기"
+msgstr "목록 보기"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:516
 #: app/static/app/js/components/Map.jsx:542
 #: app/static/app/js/components/TaskListItem.jsx:865
 msgid "Media"
-msgstr ""
+msgstr "미디어"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:558
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "사용자명"
+msgstr "파일 이름"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:559
 #: coreplugins/annotate/public/Popup.jsx:947
@@ -1473,10 +1380,8 @@ msgstr "Z/X/Y 타일 스키마를 위한 {z}, {x}, {y}"
 
 #: app/static/app/js/components/Map.jsx:795
 #: app/static/app/js/components/MapPreview.jsx:116
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
 msgid "{−y} for flipped TMS-style Y coordinates"
-msgstr "플립된 TMS 스타일의 Y 좌표는 {-y} 를 이용"
+msgstr "{−y}: 뒤집힌 TMS 방식 Y 좌표"
 
 #: app/static/app/js/components/Map.jsx:797
 #: app/static/app/js/components/MapPreview.jsx:118
@@ -1484,22 +1389,16 @@ msgid "Example:"
 msgstr "예시:"
 
 #: app/static/app/js/components/Map.jsx:881
-#, fuzzy
-#| msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
 msgid "Add a GeoJSON (.json), ShapeFile (.zip) or AutoCAD (.dxf) overlay"
-msgstr "임시 GeoJSON(.json) 또는 쉐이프파일(.zip) 오버레이 추가"
+msgstr "GeoJSON (.json), ShapeFile (.zip) 또는 AutoCAD (.dxf) 오버레이 추가"
 
 #: app/static/app/js/components/Map.jsx:942
-#, fuzzy
-#| msgid "Cannot import from URL. Check your internet connection."
 msgid "Cannot set cropping area. Check your internet connection."
-msgstr "URL으로부터 불러올 수 없습니다. 인터넷 연결을 확인하세요."
+msgstr "자르기 영역을 설정할 수 없습니다. 인터넷 연결을 확인하세요."
 
 #: app/static/app/js/components/Map.jsx:968
-#, fuzzy
-#| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to set a new crop area?"
-msgstr "정말로 취소하기를 원합니까?"
+msgstr "새 자르기 영역을 설정하시겠습니까?"
 
 #: app/static/app/js/components/Map.jsx:1037
 msgid "Error: cannot load assets list."
@@ -1507,32 +1406,29 @@ msgstr "오류: 자산 목록을 불러올 수 없음."
 
 #: app/static/app/js/components/Map.jsx:1142
 msgid "Cannot import overlay: no task is loaded."
-msgstr ""
+msgstr "오버레이를 가져올 수 없습니다: 불러온 작업이 없습니다."
 
 #: app/static/app/js/components/Map.jsx:1230
 #: app/static/app/js/components/Map.jsx:1263
 #: app/static/app/js/components/Map.jsx:1281
 #, python-format
 msgid "Cannot save overlay %(name)s"
-msgstr ""
+msgstr "오버레이 %(name)s을(를) 저장할 수 없습니다"
 
 #: app/static/app/js/components/Map.jsx:1296
 #: app/static/app/js/components/Map.jsx:1336
 msgid "Overlay"
-msgstr ""
+msgstr "오버레이"
 
 #: app/static/app/js/components/Map.jsx:1388
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid EPSG code"
-msgstr "잘못된 응답: %(error)s"
+msgstr "잘못된 EPSG 코드"
 
 #: app/static/app/js/components/Map.jsx:1456
 #: app/static/app/js/components/Map.jsx:1465
-#, fuzzy, python-format
-#| msgid "Cannot delete task."
+#, python-format
 msgid "Cannot convert %(file)s"
-msgstr "작업을 삭제할 수 없습니다."
+msgstr "%(file)s을(를) 변환할 수 없습니다"
 
 #: app/static/app/js/components/Map.jsx:1734
 #: app/static/app/js/components/NewTaskPanel.jsx:302
@@ -1541,49 +1437,38 @@ msgid "Loading..."
 msgstr "불러오는 중..."
 
 #: app/static/app/js/components/Map.jsx:1740
-#, fuzzy
-#| msgid "Import"
 msgid "Import DXF"
-msgstr "가져오기"
+msgstr "DXF 가져오기"
 
 #: app/static/app/js/components/MapPreview.jsx:172
-#, fuzzy
-#| msgid "Description (optional)"
 msgid "Set Reconstruction Area (optional)"
-msgstr "설명 (선택)"
+msgstr "재구성 영역 설정 (선택 사항)"
 
 #: app/static/app/js/components/MapPreview.jsx:326
-#, fuzzy, python-format
-#| msgid "Cannot restart task from (stage)s."
+#, python-format
 msgid "Cannot extract GPS data from %(file)s"
-msgstr "(stage)에서 작업을 다시 시작할 수 없습니다."
+msgstr "%(file)s에서 GPS 데이터를 추출할 수 없습니다"
 
 #: app/static/app/js/components/MapPreview.jsx:449
-#, fuzzy
-#| msgid "Point location"
 msgid "Plotting GPS locations..."
-msgstr "점 위치"
+msgstr "GPS 위치 표시 중..."
 
 #: app/static/app/js/components/MapPreview.jsx:454
 #, python-format
 msgid "For performance reasons, only %(num)s images are plotted"
-msgstr ""
+msgstr "성능상의 이유로 %(num)s개의 이미지만 표시됩니다"
 
 #: app/static/app/js/components/MapPreview.jsx:465
-#, fuzzy
-#| msgid "Import GeoJSON"
 msgid "GeoJSON"
-msgstr "GeoJSON 불러오기"
+msgstr "GeoJSON"
 
 #: app/static/app/js/components/MapPreview.jsx:466
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: app/static/app/js/components/MapPreview.jsx:467
-#, fuzzy
-#| msgid "Download To File"
 msgid "Geolocation File"
-msgstr "파일 다운로드"
+msgstr "지리 위치 파일"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:9
 msgid "Move Task"
@@ -1614,28 +1499,24 @@ msgid "Are you sure you want to cancel?"
 msgstr "정말로 취소하기를 원합니까?"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:239
-#, fuzzy, python-format
-#| msgid "%(count)s files uploaded successfully"
+#, python-format
 msgid "%(count)s files selected."
-msgstr "%(count)s 파일이 성공적으로 업로드되었습니다"
+msgstr "%(count)s개 파일이 선택되었습니다."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:242
 #, python-format
 msgid "%(count)s files and GCP file (%(name)s) selected."
-msgstr ""
+msgstr "%(count)s개 파일과 GCP 파일(%(name)s)이 선택되었습니다."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:249
-#, fuzzy
-#| msgid "%(count)s files selected. Please check these additional options:"
 msgid "Please check these additional options:"
-msgstr ""
-"%(count)s 파일들이 선택되었습니다. 다음의 추가적인 옵션들을 확인하세요:"
+msgstr "다음 추가 옵션을 확인하세요:"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:253
 msgid ""
 "Did you forget any images? When images exceed 1000, they are often stored "
 "inside multiple folders on the SD card."
-msgstr ""
+msgstr "이미지를 빠뜨리지 않으셨나요? 이미지가 1000장을 넘으면 SD 카드의 여러 폴더에 나뉘어 저장되는 경우가 많습니다."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:260
 #, python-format
@@ -1643,10 +1524,11 @@ msgid ""
 "Whoops! It looks like your GCP file is not formatted properly: %(errors)s "
 "See %(link)s for information on the GCP file format"
 msgstr ""
+"GCP 파일 형식이 올바르지 않은 것 같습니다: %(errors)s GCP 파일 형식에 대한 정보는 %(link)s을(를) 참조하세요"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:261
 msgid "GCP File"
-msgstr ""
+msgstr "GCP 파일"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:269
 #, python-format
@@ -1660,7 +1542,7 @@ msgstr ""
 #: app/static/app/js/components/NewTaskPanel.jsx:299
 #: app/static/app/js/components/TaskListItem.jsx:487
 msgid "Alignment"
-msgstr ""
+msgstr "정렬"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:315
 #: app/static/app/js/components/SplatsDialog.jsx:461
@@ -1696,10 +1578,8 @@ msgid "Owner"
 msgstr "소유자"
 
 #: app/static/app/js/components/Paginator.jsx:142
-#, fuzzy
-#| msgid "Search names or #tags"
 msgid "Search names, #tags or @user"
-msgstr "이름이나 #태그 검색"
+msgstr "이름, #태그 또는 @사용자 검색"
 
 #: app/static/app/js/components/Paginator.jsx:153
 #: app/static/app/js/components/ProjectListItem.jsx:851
@@ -1707,10 +1587,8 @@ msgid "Sort"
 msgstr "정렬"
 
 #: app/static/app/js/components/Paginator.jsx:157
-#, fuzzy
-#| msgid "this page"
 msgid "Items per page"
-msgstr "이 페이지"
+msgstr "페이지당 항목 수"
 
 #: app/static/app/js/components/Paginator.jsx:172
 msgid "Search results for:"
@@ -1781,14 +1659,12 @@ msgid "Select Images and GCP"
 msgstr "이미지와 GCP를 선택"
 
 #: app/static/app/js/components/ProjectListItem.jsx:779
-#, fuzzy
-#| msgid "Import Assets or Backups"
 msgid "Assets / Backups"
-msgstr "자산을 불러오거나 보관하기"
+msgstr "에셋 / 백업"
 
 #: app/static/app/js/components/ProjectListItem.jsx:780
 msgid "External Data"
-msgstr ""
+msgstr "외부 데이터"
 
 #: app/static/app/js/components/ProjectListItem.jsx:812
 #, python-format
@@ -1811,11 +1687,11 @@ msgstr "지도 보기"
 msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
-msgstr ""
+msgstr "연결이 불안정합니다. 업로드가 멈추면 아래 버튼을 눌러 안정 모드를 활성화하세요. 그런 다음 업로드를 재시작해야 합니다."
 
 #: app/static/app/js/components/ProjectListItem.jsx:886
 msgid "Enable Stable Mode"
-msgstr ""
+msgstr "안정 모드 활성화"
 
 #: app/static/app/js/components/ShareButton.jsx:72
 #: app/static/app/js/components/ShareButton.jsx:74
@@ -1834,10 +1710,8 @@ msgid "Share This Task"
 msgstr "이 작업을 공유하기"
 
 #: app/static/app/js/components/SharePopup.jsx:180
-#, fuzzy
-#| msgid "Share This Task"
 msgid "Share This Project"
-msgstr "이 작업을 공유하기"
+msgstr "이 프로젝트 공유하기"
 
 #: app/static/app/js/components/SharePopup.jsx:186
 msgid "QR"
@@ -1850,11 +1724,11 @@ msgstr "활성화됨"
 
 #: app/static/app/js/components/SharePopup.jsx:223
 msgid "Allow Edits"
-msgstr ""
+msgstr "편집 허용"
 
 #: app/static/app/js/components/SharePopup.jsx:230
 msgid "Dismiss"
-msgstr ""
+msgstr "닫기"
 
 #: app/static/app/js/components/SharePopup.jsx:232
 #, python-format
@@ -1862,12 +1736,11 @@ msgid ""
 "The link below is accessible only within your local network. To share a link "
 "with others online, use a %(service)s"
 msgstr ""
+"아래 링크는 로컬 네트워크 내에서만 접근할 수 있습니다. 다른 사람과 온라인으로 링크를 공유하려면 %(service)s를 사용하세요"
 
 #: app/static/app/js/components/SharePopup.jsx:232
-#, fuzzy
-#| msgid "Path distance"
 msgid "hosted instance"
-msgstr "경로 거리"
+msgstr "호스팅 인스턴스"
 
 #: app/static/app/js/components/SharePopup.jsx:238
 msgid "Link:"
@@ -1887,7 +1760,7 @@ msgstr "오름차순"
 
 #: app/static/app/js/components/SplatsDialog.jsx:137
 msgid "Please upload a single file."
-msgstr ""
+msgstr "파일을 하나만 업로드하세요."
 
 #: app/static/app/js/components/SplatsDialog.jsx:330
 #: coreplugins/annotate/public/Popup.jsx:287
@@ -1903,27 +1776,21 @@ msgid "Invalid response: %(error)s"
 msgstr "잘못된 응답: %(error)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:333
-#, fuzzy
-#| msgid "Cannot restart task."
 msgid "Cannot export training data."
-msgstr "작업을 다시 시작할 수 없음."
+msgstr "학습 데이터를 내보낼 수 없습니다."
 
 #: app/static/app/js/components/SplatsDialog.jsx:338
-#, fuzzy
-#| msgid "Are you sure you want to delete this?"
 msgid "Are you sure you want to delete the splats model?"
-msgstr "이것을 정말로 삭제하시겠습니까?"
+msgstr "스플랫 모델을 삭제하시겠습니까?"
 
 #: app/static/app/js/components/SplatsDialog.jsx:352
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete splats model."
-msgstr "작업을 삭제할 수 없습니다."
+msgstr "스플랫 모델을 삭제할 수 없습니다."
 
 #: app/static/app/js/components/SplatsDialog.jsx:389
 msgid ""
 "This task is missing camera information. Training data cannot be downloaded."
-msgstr ""
+msgstr "이 작업에는 카메라 정보가 없습니다. 학습 데이터를 다운로드할 수 없습니다."
 
 #: app/static/app/js/components/SplatsDialog.jsx:394
 msgid ""
@@ -1931,12 +1798,14 @@ msgid ""
 "point cloud. Some training software might not work properly without one. "
 "Uploading a splats model requires a point cloud."
 msgstr ""
+"이 작업에는 포인트 클라우드가 없습니다. 학습 데이터에 빈 포인트 클라우드가 포함됩니다. 일부 학습 소프트웨어는 포인트 클라우드 없이 "
+"제대로 작동하지 않을 수 있습니다. 스플랫 모델을 업로드하려면 포인트 클라우드가 필요합니다."
 
 #: app/static/app/js/components/SplatsDialog.jsx:399
 msgid ""
 "This task is missing camera information and a point cloud. No splats can be "
 "downloaded or uploaded."
-msgstr ""
+msgstr "이 작업에는 카메라 정보와 포인트 클라우드가 없습니다. 스플랫을 다운로드하거나 업로드할 수 없습니다."
 
 #: app/static/app/js/components/SplatsDialog.jsx:404
 msgid ""
@@ -1944,57 +1813,52 @@ msgid ""
 "download. After extracting the .zip file, copy the original images into the "
 "\"images\" folder before training."
 msgstr ""
+"이 작업의 이미지를 사용할 수 없으므로 다운로드에 포함되지 않습니다. .zip 파일의 압축을 푼 후 학습 전에 원본 이미지를 "
+"\"images\" 폴더에 복사하세요."
 
 #: app/static/app/js/components/SplatsDialog.jsx:409
 msgid ""
 "Most images in this dataset are nadir. Splats typically require obliques and/"
 "or orbits for good results."
 msgstr ""
+"이 데이터셋의 이미지 대부분이 수직 촬영(nadir)입니다. 스플랫은 좋은 결과를 위해 보통 경사 촬영 및/또는 궤도 촬영이 필요합니다."
 
 #: app/static/app/js/components/SplatsDialog.jsx:421
 msgid "A splats model has been added."
-msgstr ""
+msgstr "스플랫 모델이 추가되었습니다."
 
 #: app/static/app/js/components/SplatsDialog.jsx:424
-#, fuzzy
-#| msgid "show in 3D"
 msgid "View in 3D"
-msgstr "3D로 표시"
+msgstr "3D로 보기"
 
 #: app/static/app/js/components/SplatsDialog.jsx:428
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload New"
-msgstr "파일 올리기"
+msgstr "새로 업로드"
 
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Download Image"
 msgid "Download Training Data"
-msgstr "이미지 다운로드"
+msgstr "학습 데이터 다운로드"
 
 #: app/static/app/js/components/SplatsDialog.jsx:497
 #, python-format
 msgid "Train a model using %(link_start)s compatible software %(link_end)s"
-msgstr ""
+msgstr "%(link_start)s호환 소프트웨어%(link_end)s를 사용하여 모델을 학습시키세요"
 
 #: app/static/app/js/components/SplatsDialog.jsx:507
 msgid "You don't have permission to upload a splats model to this task."
-msgstr ""
+msgstr "이 작업에 스플랫 모델을 업로드할 권한이 없습니다."
 
 #: app/static/app/js/components/SplatsDialog.jsx:516
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Splats Model"
-msgstr "파일 올리기"
+msgstr "Splats 모델 업로드"
 
 #: app/static/app/js/components/SplatsDialog.jsx:560
 msgid "Gaussian Splats"
-msgstr ""
+msgstr "Gaussian Splats"
 
 #: app/static/app/js/components/SplatsDialog.jsx:566
 msgid "Processing splats model... this might take a bit"
-msgstr ""
+msgstr "Splats 모델 프로세싱 중... 시간이 다소 걸릴 수 있습니다"
 
 #: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
@@ -2072,19 +1936,13 @@ msgid "this page"
 msgstr "이 페이지"
 
 #: app/static/app/js/components/TaskListItem.jsx:331
-#, fuzzy
-#| msgid ""
-#| "The processing node is missing a program necessary to complete the task. "
-#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
-#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
 "This might indicate a corrupted installation. If you built ODM, please check "
 "that all programs built without errors."
 msgstr ""
-"프로세싱노드가 작업을 완료하는 데 필요한 프로그램이 없습니다. 이는 손상된 설"
-"치를 의미할 수 있습니다. OpenDroneMap을 빌드했다면 모든 프로그램이 오류없이 "
-"빌드되었는지 확인하세요."
+"프로세싱 노드에 작업 완료에 필요한 프로그램이 없습니다. 설치가 손상되었을 수 있습니다. ODM을 직접 빌드한 경우 모든 프로그램이 오류 "
+"없이 빌드되었는지 확인하세요."
 
 #: app/static/app/js/components/TaskListItem.jsx:372
 #, python-format
@@ -2105,13 +1963,11 @@ msgstr "(stage)에서 작업을 다시 시작할 수 없습니다."
 
 #: app/static/app/js/components/TaskListItem.jsx:491
 msgid "GPS"
-msgstr ""
+msgstr "GPS"
 
 #: app/static/app/js/components/TaskListItem.jsx:494
-#, fuzzy
-#| msgid "(GCPs)"
 msgid "GCP"
-msgstr "(GCP들)"
+msgstr "GCP"
 
 #: app/static/app/js/components/TaskListItem.jsx:523
 msgid "Sending images to processing node"
@@ -2123,13 +1979,11 @@ msgstr "노드를 기다리는 중..."
 
 #: app/static/app/js/components/TaskListItem.jsx:556
 msgid "Map"
-msgstr ""
+msgstr "지도"
 
 #: app/static/app/js/components/TaskListItem.jsx:565
-#, fuzzy
-#| msgid "View 3D Model"
 msgid "3D Model"
-msgstr "3D 모델 보기"
+msgstr "3D 모델"
 
 #: app/static/app/js/components/TaskListItem.jsx:581
 #: app/static/app/js/components/TaskListItem.jsx:891
@@ -2160,13 +2014,11 @@ msgstr "이 작업을 정말로 다시 시작하시겠습니까?"
 
 #: app/static/app/js/components/TaskListItem.jsx:623
 msgid "Have all images been uploaded?"
-msgstr ""
+msgstr "모든 이미지가 업로드되었습니까?"
 
 #: app/static/app/js/components/TaskListItem.jsx:624
-#, fuzzy
-#| msgid "Cannot restart task."
 msgid "Cannot start processing task."
-msgstr "작업을 다시 시작할 수 없음."
+msgstr "작업 처리를 시작할 수 없습니다."
 
 #: app/static/app/js/components/TaskListItem.jsx:682
 msgid "Task ID:"
@@ -2174,7 +2026,7 @@ msgstr "작업 ID:"
 
 #: app/static/app/js/components/TaskListItem.jsx:683
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "클립보드에 복사"
 
 #: app/static/app/js/components/TaskListItem.jsx:686
 msgid "Created on:"
@@ -2206,16 +2058,12 @@ msgid "Area:"
 msgstr "면적:"
 
 #: app/static/app/js/components/TaskListItem.jsx:710
-#, fuzzy
-#| msgid "Point"
 msgid "Points:"
-msgstr "점"
+msgstr "포인트:"
 
 #: app/static/app/js/components/TaskListItem.jsx:715
-#, fuzzy
-#| msgid "Georeferencing"
 msgid "Georeferencing:"
-msgstr "지오레퍼런싱"
+msgstr "지오레퍼런싱:"
 
 #: app/static/app/js/components/TaskListItem.jsx:725
 msgid "Disk Usage:"
@@ -2235,7 +2083,7 @@ msgstr "끔"
 
 #: app/static/app/js/components/TaskListItem.jsx:741
 msgid "Thumbnail"
-msgstr ""
+msgstr "썸네일"
 
 #: app/static/app/js/components/TaskListItem.jsx:759
 msgid "enough RAM allocated"
@@ -2276,20 +2124,16 @@ msgid "Set a processing node"
 msgstr "프로세싱 노드 설정"
 
 #: app/static/app/js/components/TaskListItem.jsx:821
-#, fuzzy
-#| msgid "Waiting for a node..."
 msgid "Waiting to start processing..."
-msgstr "노드를 기다리는 중..."
+msgstr "처리 시작 대기 중..."
 
 #: app/static/app/js/components/TaskListItem.jsx:872
 msgid "Move"
 msgstr "이동"
 
 #: app/static/app/js/components/TaskListItem.jsx:884
-#, fuzzy
-#| msgid "Compass"
 msgid "Compact"
-msgstr "나침반"
+msgstr "압축"
 
 #: app/static/app/js/components/TaskListItem.jsx:885
 msgid ""
@@ -2297,55 +2141,41 @@ msgid ""
 "used for processing. It will no longer be possible to restart the task. Maps "
 "and models will remain in place. Continue?"
 msgstr ""
+"압축하면 처리에 사용된 원본 이미지를 영구 삭제하여 디스크 공간을 확보합니다. 이후 작업을 재시작할 수 없습니다. 지도와 모델은 그대로 "
+"유지됩니다. 계속하시겠습니까?"
 
 #: app/static/app/js/components/TaskListItem.jsx:886
-#, fuzzy
-#| msgid "Cannot cancel task."
 msgid "Cannot compact task."
-msgstr "작업을 취소할 수 없습니다."
+msgstr "작업을 압축할 수 없습니다."
 
 #: app/static/app/js/components/Toaster.jsx:14
-#, fuzzy
-#| msgid "Processing"
 msgid "Processed"
-msgstr "프로세싱"
+msgstr "처리됨"
 
 #: app/static/app/js/components/Toaster.jsx:15
-#, fuzzy
-#| msgid "Share"
 msgid "Shared"
-msgstr "공유하기"
+msgstr "공유됨"
 
 #: app/static/app/js/components/Toaster.jsx:16
-#, fuzzy
-#| msgid "Export"
 msgid "Exported"
-msgstr "내보내기"
+msgstr "내보냄"
 
 #: app/static/app/js/components/Toaster.jsx:20
-#, fuzzy
-#| msgid "Share"
 msgid "Sharing"
-msgstr "공유하기"
+msgstr "공유 중"
 
 #: app/static/app/js/components/Toaster.jsx:21
-#, fuzzy
-#| msgid "Exporting..."
 msgid "Exporting"
-msgstr "내보내는 중..."
+msgstr "내보내는 중"
 
 #: app/static/app/js/components/Toaster.jsx:243
 #: coreplugins/lightning/public/ShareDialog.jsx:259
-#, fuzzy
-#| msgid "Task ID:"
 msgid "Task"
-msgstr "작업 ID:"
+msgstr "작업"
 
 #: app/static/app/js/components/Toaster.jsx:268
-#, fuzzy
-#| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to cancel the tasks?"
-msgstr "정말로 취소하기를 원합니까?"
+msgstr "작업을 취소하시겠습니까?"
 
 #: app/static/app/js/components/UploadProgressBar.jsx:25
 #, python-format
@@ -2371,12 +2201,7 @@ msgstr ""
 "어야 합니다. 각 데이터 세트에는 \"이미지\" 폴더가 있어야 합니다."
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
-#, fuzzy, python-format
-#| msgid ""
-#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
-#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
-#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
-#| "one of: %(choices)s. Default: %(default)s"
+#, python-format
 msgid ""
 "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
 "Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
@@ -2384,10 +2209,10 @@ msgid ""
 "faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
 "Default: %(default)s"
 msgstr ""
-"Matcher 알고리즘, Approximate Nearest Neighbors 또는 Bag of Words에 대한 빠"
-"른 라이브러리. FLANN은 느리지만 더 안정적입니다. BOW는 더 빠르지만 때때로 유"
-"효한 일치를 놓칠 수 있습니다. BRUTEFORCE는 매우 느리지만 강력합니다. "
-"%(choices)s 중 하나일 수 있습니다. 기본값: %(default)s"
+"매처 알고리즘, Fast Library for Approximate Nearest Neighbors 또는 Bag of Words. "
+"FLANN은 느리지만 더 안정적입니다. BOW는 더 빠르지만 유효한 매칭을 놓칠 수 있습니다. BRUTEFORCE는 매우 느리지만 "
+"견고합니다. HAMMING은 대규모 데이터셋에서 훨씬 빠르지만 GPU가 필요합니다. 다음 중 하나: %(choices)s. 기본값: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
@@ -2450,21 +2275,15 @@ msgstr ""
 "대한 URL입니다. 기본값 : %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:12
-#, fuzzy, python-format
-#| msgid ""
-#| "Radius of the overlap between submodels. After grouping images into "
-#| "clusters, images that are closer than this radius to a cluster are added "
-#| "to the cluster. This is done to ensure that neighboring submodels "
-#| "overlap. Default: %(default)s"
+#, python-format
 msgid ""
 "Radius of the overlap between submodels in meters. After grouping images "
 "into clusters, images that are closer than this radius to a cluster are "
 "added to the cluster. This is done to ensure that neighboring submodels "
 "overlap. All imagesneed GPS information. Default: %(default)s"
 msgstr ""
-"하위 모델 간의 겹침 반경입니다. 이미지를 클러스터로 그룹화한 후 이 반경보다 "
-"클러스터에 더 가까운 이미지가 클러스터에 추가됩니다. 이는 인접 하위 모델이 겹"
-"치도록 하기 위해 수행됩니다. 기본값: %(default)s"
+"서브모델 간 중첩 반경(미터). 이미지를 클러스터로 묶은 후, 이 반경보다 클러스터에 가까운 이미지는 클러스터에 추가됩니다. 이는 인접한 "
+"서브모델이 서로 겹치도록 하기 위함입니다. 모든 이미지에 GPS 정보가 필요합니다. 기본값: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:13
 #, python-format
@@ -2531,14 +2350,7 @@ msgstr ""
 "는 데 유용 할 수 있습니다. 기본값 : %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:18
-#, fuzzy, python-format
-#| msgid ""
-#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
-#| "for all images. If your images are tagged with high precision GPS "
-#| "information (RTK), this value will be automatically set accordingly. You "
-#| "can use this option to manually set it in case the reconstruction fails. "
-#| "Lowering this option can sometimes help control bowling-effects over "
-#| "large areas. Default: %(default)s"
+#, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
 "for all images. If your images are tagged with high precision GPS "
@@ -2547,30 +2359,21 @@ msgid ""
 "Lowering this option can sometimes help control bowling-effects over large "
 "areas. Default: %(default)s"
 msgstr ""
-"모든 이미지에 대한 GPS DOP(Dilution of Precision) 정보의 값을 미터 단위로 설"
-"정합니다. 이미지에 고정밀 GPS 정보(RTK)가 태그된 경우 이 값이 그에 따라 자동"
-"으로 설정됩니다. 재구성에 실패한 경우 이 옵션을 사용하여 수동으로 설정할 수 "
-"있습니다. 이 옵션을 낮추면 때때로 넓은 영역에서 볼링 효과를 제어하는 데 도움"
-"이 될 수 있습니다. 기본값: %(default)s"
+"모든 이미지에 대한 GPS 정밀도 저하율(DOP) 값을 미터 단위로 설정합니다. 이미지에 고정밀 GPS 정보(RTK)가 태그되어 있으면 "
+"이 값은 자동으로 설정됩니다. 재구성이 실패할 경우 이 옵션으로 수동 설정할 수 있습니다. 이 값을 낮추면 넓은 지역에서 그릇 모양 "
+"왜곡(bowling effect)을 줄이는 데 도움이 될 수 있습니다. 기본값: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:19
-#, fuzzy, python-format
-#| msgid ""
-#| "Choose the structure from motion algorithm. For aerial datasets, if "
-#| "camera GPS positions and angles are available, triangulation can generate "
-#| "better results. For planar scenes captured at fixed altitude with nadir-"
-#| "only images, planar can be much faster. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Choose the structure from motion algorithm. For aerial datasets, if camera "
 "GPS positions and angles are available, triangulation can be faster. Planar "
 "is deprecated and will be removed in a future version. Can be one of: "
 "%(choices)s. Default: %(default)s"
 msgstr ""
-"모션 알고리즘에서 구조를 선택합니다. 항공 데이터 세트의 경우 카메라 GPS 위치 "
-"및 각도를 사용할 수 있는 경우 삼각 측량이 더 나은 결과를 생성할 수 있습니다. "
-"천저 전용 이미지로 고정된 고도에서 캡처한 평면 장면의 경우 평면이 훨씬 더 빠"
-"를 수 있습니다. %(choices)s 중 하나일 수 있습니다. 기본값: %(default)s"
+"모션으로부터 구조화 알고리즘을 선택합니다. 항공 데이터셋의 경우 카메라 GPS 위치와 각도를 사용할 수 있으면 triangulation이 "
+"더 빠를 수 있습니다. Planar는 더 이상 사용되지 않으며 향후 버전에서 제거됩니다. 다음 중 하나: %(choices)s. 기본값: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:20
 #, python-format
@@ -2829,20 +2632,14 @@ msgstr ""
 "각 측량으로 일치시키려면 0으로 설정하십시오. 기본값: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:44
-#, fuzzy, python-format
-#| msgid ""
-#| "Skips dense reconstruction and 3D model generation. It generates an "
-#| "orthophoto directly from the sparse reconstruction. If you just need an "
-#| "orthophoto and do not need a full 3D model, turn on this option. Default: "
-#| "%(default)s"
+#, python-format
 msgid ""
 "Skips dense reconstruction and 3D model generation. It generates an "
 "orthophoto directly from the sparse reconstruction. On flat terrain with no "
 "objects/structures, turn this on to save time. Default: %(default)s"
 msgstr ""
-"조밀한 재구성 및 3D 모델 생성을 건너뜁니다. 희소 재구성에서 직접 정사광을 생"
-"성합니다. 정사 사진만 필요하고 전체 3D 모델이 필요하지 않은 경우 이 옵션을 켜"
-"십시오. 기본값: %(default)s"
+"고밀도 재구성과 3D 모델 생성을 건너뜁니다. 희소 재구성에서 바로 정사영상을 생성합니다. 객체/구조물이 없는 평탄한 지형에서는 이 "
+"옵션을 켜서 시간을 절약하세요. 기본값: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
@@ -2994,17 +2791,14 @@ msgstr ""
 "로 지정할 수 있습니다. 기본값 : %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:62
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Set the units of the PDF report. By default the vertical units of the "
 "coordinate reference system are used. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"정사 사진에 사용할 압축을 설정합니다. %(choices)s 중 하나일 수 있습니다. 기본"
-"값: %(default)s"
+"PDF 보고서의 단위를 설정합니다. 기본적으로 좌표 참조 시스템의 수직 단위가 사용됩니다. 다음 중 하나: %(choices)s. "
+"기본값: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:63
 #, python-format
@@ -3128,6 +2922,8 @@ msgid ""
 "GCPs. This can be useful for example when adjusting from ellipsoidal to "
 "orthometric height. Default: %(default)s"
 msgstr ""
+"GPS EXIF 데이터의 고도 값에 더하여 수직축(Z)의 GPS 오프셋을 미터 단위로 설정합니다. GCP 값은 변경되지 않습니다. 예를 "
+"들어 타원체고에서 정표고로 변환할 때 유용합니다. 기본값: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:77
 #, python-format
@@ -3254,19 +3050,14 @@ msgid ""
 msgstr "단순 형태 필터 창 반경 매개변수(미터). 기본값: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:90
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
+#, python-format
 msgid ""
 "When processing multispectral datasets, automatically align the images for "
 "each band. If the images have been postprocessed and are already aligned, "
 "use this option. Default: %(default)s"
 msgstr ""
-"다중 스펙트럼 데이터 세트를 처리 할 때 ODM은 각 밴드에 대한 이미지를 자동으"
-"로 정렬합니다. 이미지가 후 처리되었고 이미 정렬 된 경우이 옵션을 사용하십시"
-"오. 기본값 : %(default)s"
+"멀티스펙트럴 데이터셋 처리 시 각 밴드의 이미지를 자동으로 정렬합니다. 이미지가 후처리되어 이미 정렬된 경우 이 옵션을 사용하세요. "
+"기본값: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
@@ -3672,10 +3463,8 @@ msgid "GPS Time"
 msgstr "GPS 시간"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:409
-#, fuzzy
-#| msgid "Path distance"
 msgid "Distance:"
-msgstr "경로 거리"
+msgstr "거리:"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:409
 #: coreplugins/contours/public/ContoursPanel.jsx:178
@@ -3684,61 +3473,47 @@ msgstr "고도:"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:412
 msgid "Reset"
-msgstr ""
+msgstr "초기화"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:415
 #: coreplugins/annotate/public/Toolbox.jsx:1210
-#, fuzzy
-#| msgid "Export to GeoJSON"
 msgid "Export to CSV"
-msgstr "GeoJSON으로 내보내기"
+msgstr "CSV로 내보내기"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:418
 #: coreplugins/annotate/public/Volume3D.jsx:387
-#, fuzzy
-#| msgid "Backup"
 msgid "Go Back"
-msgstr "백업"
+msgstr "돌아가기"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:419
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Backup"
 msgid "Back"
-msgstr "백업"
+msgstr "뒤로"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:92
 #: coreplugins/annotate/public/Toolbox.jsx:1208
-#, fuzzy
-#| msgid "Annotations"
 msgid "Annotations Report"
-msgstr "주석"
+msgstr "주석 보고서"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:100
 msgid "Prepared by:"
-msgstr ""
+msgstr "작성자:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:106
-#, fuzzy
-#| msgid "Username"
 msgid "Enter name"
-msgstr "사용자명"
+msgstr "이름 입력"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:110
 msgid "Notes:"
-msgstr ""
+msgstr "메모:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:117
-#, fuzzy
-#| msgid "Description (optional)"
 msgid "Additional notes (optional)"
-msgstr "설명 (선택)"
+msgstr "추가 메모 (선택 사항)"
 
 #: coreplugins/annotate/public/Popup.jsx:313
-#, fuzzy
-#| msgid "Coordinates"
 msgid "Invalid coordinates"
-msgstr "좌표"
+msgstr "잘못된 좌표"
 
 #: coreplugins/annotate/public/Popup.jsx:886
 #: coreplugins/measure/public/MeasurePopup.jsx:178
@@ -3791,13 +3566,11 @@ msgstr "좌표"
 
 #: coreplugins/annotate/public/Popup.jsx:993
 msgid "Temperature"
-msgstr ""
+msgstr "온도"
 
 #: coreplugins/annotate/public/Popup.jsx:1006
-#, fuzzy
-#| msgid "Elevation range"
 msgid "Elevation Profile"
-msgstr "고도 범위"
+msgstr "고도 프로파일"
 
 #: coreplugins/annotate/public/Popup.jsx:1010
 #: coreplugins/annotate/public/Popup.jsx:1064
@@ -3811,16 +3584,12 @@ msgstr "DTM"
 
 #: coreplugins/annotate/public/Popup.jsx:1013
 #: coreplugins/annotate/public/Popup.jsx:1014
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show"
-msgstr "3D로 표시"
+msgstr "보기"
 
 #: coreplugins/annotate/public/Popup.jsx:1028
-#, fuzzy
-#| msgid "Elevation range"
 msgid "Elevation profile error"
-msgstr "고도 범위"
+msgstr "고도 프로파일 오류"
 
 #: coreplugins/annotate/public/Popup.jsx:1039
 #: coreplugins/measure/public/app.jsx:27
@@ -3829,41 +3598,33 @@ msgstr "둘레"
 
 #: coreplugins/annotate/public/Popup.jsx:1049
 #: coreplugins/annotate/public/Volume3D.jsx:383
-#, fuzzy
-#| msgid "Custom"
 msgid "Cut"
-msgstr "사용자 설정"
+msgstr "절토"
 
 #: coreplugins/annotate/public/Popup.jsx:1055
 #: coreplugins/annotate/public/Volume3D.jsx:384
 msgid "Fill"
-msgstr ""
+msgstr "성토"
 
 #: coreplugins/annotate/public/Popup.jsx:1061
-#, fuzzy
-#| msgid "Base Surface"
 msgid "Surface"
-msgstr "기본표면"
+msgstr "표면"
 
 #: coreplugins/annotate/public/Popup.jsx:1071
 msgid "Base Surface"
 msgstr "기본표면"
 
 #: coreplugins/annotate/public/Popup.jsx:1079
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
-msgstr "3D로 표시"
+msgstr "3D 보기"
 
 #: coreplugins/annotate/public/Popup.jsx:1085
-#, fuzzy
-#| msgid "Custom"
 msgid "Custom Z"
-msgstr "사용자 설정"
+msgstr "사용자 설정 Z"
 
 #: coreplugins/annotate/public/Popup.jsx:1107
 msgid "3D view error"
-msgstr ""
+msgstr "3D 보기 오류"
 
 #: coreplugins/annotate/public/Popup.jsx:1117
 msgid "No images found at this location"
@@ -3909,14 +3670,12 @@ msgid "Import GeoJSON"
 msgstr "GeoJSON 불러오기"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1197
-#, fuzzy
-#| msgid "Annotations"
 msgid "Export Annotations"
-msgstr "주석"
+msgstr "주석 내보내기"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "기준면"
 
 #: coreplugins/contours/public/Contours.jsx:37
 #: coreplugins/contours/public/ContoursPanel.jsx:429
@@ -3939,7 +3698,7 @@ msgstr "작업에 대한 정보를 검색할 수 없습니다. 인터넷에 연�
 
 #: coreplugins/contours/public/ContoursPanel.jsx:290
 msgid "Minimal"
-msgstr ""
+msgstr "최소"
 
 #: coreplugins/contours/public/ContoursPanel.jsx:292
 msgid "Aggressive"
@@ -3964,7 +3723,7 @@ msgstr "단순화:"
 
 #: coreplugins/contours/public/ContoursPanel.jsx:363
 msgid "SRS:"
-msgstr ""
+msgstr "SRS:"
 
 #: coreplugins/contours/public/ContoursPanel.jsx:391
 msgid "Preview"
@@ -3977,14 +3736,12 @@ msgstr "내보내기"
 #: coreplugins/lightning/public/CloudLogin.jsx:44
 #: coreplugins/lightning/public/CloudLogin.jsx:47
 #: coreplugins/lightning/public/ShareDialog.jsx:116
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Invalid response. Try again later."
-msgstr "견적을 검색할 수 없습니다. 나중에 다시 시도하세요."
+msgstr "잘못된 응답입니다. 나중에 다시 시도하세요."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:78
 msgid "Invalid password. Do you need to reset it?"
-msgstr ""
+msgstr "비밀번호가 올바르지 않습니다. 재설정하시겠습니까?"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:83
 #: coreplugins/lightning/public/Login.jsx:62
@@ -4007,10 +3764,12 @@ msgid ""
 "visit %(link)s and make sure you can access the cloud platform, then try "
 "again."
 msgstr ""
+"Lightning 클라우드 플랫폼 계정이 아직 활성화되지 않았습니다. 활성화하려면 %(link)s 페이지를 방문하여 클라우드 플랫폼에 "
+"접속할 수 있는지 확인한 후 다시 시도하세요."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:114
 msgid "Please confirm the password of your Lightning account to continue:"
-msgstr ""
+msgstr "계속하려면 Lightning 계정의 비밀번호를 확인하세요:"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:118
 #: coreplugins/lightning/public/Login.jsx:103
@@ -4019,19 +3778,15 @@ msgstr "비밀번호"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:119
 msgid "switch"
-msgstr ""
+msgstr "전환"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:127
-#, fuzzy
-#| msgid "Forgot password?"
 msgid "Reset password"
-msgstr "비밀번호를 잊으셨나요?"
+msgstr "비밀번호 재설정"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:133
-#, fuzzy
-#| msgid "Password"
 msgid "Confirm Password"
-msgstr "비밀번호"
+msgstr "비밀번호 확인"
 
 #: coreplugins/lightning/public/CostEstimateItem.jsx:113
 msgid "Cannot retrieve estimate. Try again later."
@@ -4113,17 +3868,15 @@ msgstr "재동기화"
 
 #: coreplugins/lightning/public/Dashboard.jsx:185
 msgid "Share Buttons"
-msgstr ""
+msgstr "공유 버튼"
 
 #: coreplugins/lightning/public/Dashboard.jsx:187
-#, fuzzy
-#| msgid "Enabled"
 msgid "Disabled"
-msgstr "활성화됨"
+msgstr "비활성화됨"
 
 #: coreplugins/lightning/public/Dashboard.jsx:189
 msgid "Toggle"
-msgstr ""
+msgstr "전환"
 
 #: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Dashboard"
@@ -4150,96 +3903,74 @@ msgid "Login and Sync"
 msgstr "로그인과 동기화"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:119
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot communicate with Lightning's cloud platform. Try again later."
-msgstr "새 작업을 생성할 수 없습니다. 잠시후 다시 시도해주세요."
+msgstr "Lightning 클라우드 플랫폼과 통신할 수 없습니다. 나중에 다시 시도하세요."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:150
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot calculate size. Try again later."
-msgstr "견적을 검색할 수 없습니다. 나중에 다시 시도하세요."
+msgstr "크기를 계산할 수 없습니다. 나중에 다시 시도하세요."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:193
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Service not available. Try again later."
-msgstr "견적을 검색할 수 없습니다. 나중에 다시 시도하세요."
+msgstr "서비스를 사용할 수 없습니다. 나중에 다시 시도하세요."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:196
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot verify credentials. Try again later."
-msgstr "견적을 검색할 수 없습니다. 나중에 다시 시도하세요."
+msgstr "자격 증명을 확인할 수 없습니다. 나중에 다시 시도하세요."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:263
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid response"
-msgstr "잘못된 응답: %(error)s"
+msgstr "잘못된 응답"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:266
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot share. Please try again in a bit."
-msgstr "새 작업을 생성할 수 없습니다. 잠시후 다시 시도해주세요."
+msgstr "공유할 수 없습니다. 잠시 후 다시 시도하세요."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:278
 msgid "Checking your credentials..."
-msgstr ""
+msgstr "자격 증명 확인 중..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:287
-#, fuzzy
-#| msgid "Creating project..."
 msgid "Retrieving your projects..."
-msgstr "프로젝트 생성 중..."
+msgstr "프로젝트를 불러오는 중..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:301
 msgid ""
 "Your Lightning account does not have permanent cloud storage. You can still "
 "share, but data will be deleted shortly after upload."
-msgstr ""
+msgstr "Lightning 계정에 영구 클라우드 저장 공간이 없습니다. 공유는 가능하지만, 업로드 후 곧 데이터가 삭제됩니다."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:313
-#, fuzzy
-#| msgid "Created on"
 msgid "Create New"
-msgstr "생성됨"
+msgstr "새로 만들기"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:329
 msgid "All Assets + Original Images"
-msgstr ""
+msgstr "모든 자산들 + 원본 이미지"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:330
 msgid "Only"
-msgstr ""
+msgstr "다음만"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:342
 msgid "Size exceeds available storage quota"
-msgstr ""
+msgstr "크기가 사용 가능한 디스크 공간을 초과합니다"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:355
-#, fuzzy
-#| msgid "Select"
 msgid "Select All"
-msgstr "선택"
+msgstr "모두 선택"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:359
 msgid "Deselect All"
-msgstr ""
+msgstr "모두 선택 해제"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:389
-#, fuzzy
-#| msgid "Lightning"
 msgid "Share with Lightning"
-msgstr "라이트닝"
+msgstr "라이트닝으로 공유하기"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:392
-#, fuzzy
-#| msgid "Saving..."
 msgid "Sharing..."
-msgstr "저장 중..."
+msgstr "공유 중..."
 
 #: coreplugins/lightning/public/app.jsx:42
 msgid "Lightning"
@@ -4248,18 +3979,18 @@ msgstr "라이트닝"
 #: coreplugins/lightning/public/app.jsx:43
 msgid ""
 "Lightning is a cloud service built by WebODM developers that allows you to:"
-msgstr ""
+msgstr "라이트닝은 WebODM 개발자가 만든 클라우드 서비스로, 다음과 같은 기능을 제공합니다:"
 
 #: coreplugins/lightning/public/app.jsx:46
 #, python-format
 msgid ""
 "Quickly process datasets with high performance servers powered by the "
 "%(link)s photogrammetry engine"
-msgstr ""
+msgstr "%(link)s 사진측량 엔진 기반의 고성능 서버로 데이터셋을 빠르게 처리"
 
 #: coreplugins/lightning/public/app.jsx:49
 msgid "Easily share public links to your datasets"
-msgstr ""
+msgstr "데이터셋의 공용 링크를 손쉽게 공유"
 
 #: coreplugins/lightning/public/app.jsx:51
 msgid "register"
@@ -4364,50 +4095,48 @@ msgstr "측정 내보내기"
 #: coreplugins/objdetect/public/ObjDetect.jsx:37
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:221
 msgid "Object Detection"
-msgstr ""
+msgstr "객체 탐지"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:47
 msgid ""
 "No orthophoto is available. To use object detection you need an orthophoto."
-msgstr ""
+msgstr "사용 가능한 정사영상이 없습니다. 객체 탐지를 사용하려면 정사영상이 필요합니다."
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:93
 msgid "Label:"
-msgstr ""
+msgstr "레이블:"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:94
 msgid "Confidence:"
-msgstr ""
+msgstr "신뢰도:"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:178
 msgid "Cars"
-msgstr ""
+msgstr "자동차"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:179
 msgid "Trees"
-msgstr ""
+msgstr "나무"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:180
 msgid "Athletic Facilities"
-msgstr ""
+msgstr "운동 시설"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:181
 msgid "Boats"
-msgstr ""
+msgstr "선박"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:182
-#, fuzzy
-#| msgid "Plane"
 msgid "Planes"
-msgstr "평면"
+msgstr "비행기"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:199
 msgid "Detect"
-msgstr ""
+msgstr "탐지"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:204
 msgid "Count:"
-msgstr ""
+msgstr "개수:"
 
 #~ msgid "Short Link"
 #~ msgstr "짧은 링크"

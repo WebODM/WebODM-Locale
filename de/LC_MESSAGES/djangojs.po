@@ -85,7 +85,7 @@ msgstr "Geländemodell"
 
 #: app/static/app/js/MapView.jsx:155
 msgid "A map is not available for this task or project."
-msgstr ""
+msgstr "Für diese Aufgabe oder dieses Projekt ist keine Karte verfügbar."
 
 #: app/static/app/js/ModelView.jsx:42
 msgid "Cannot set initial camera view"
@@ -107,18 +107,18 @@ msgstr "Kameras anzeigen"
 #: app/static/app/js/components/ManageMediaDialog.jsx:560
 #: coreplugins/lightning/public/ShareDialog.jsx:336
 msgid "Size"
-msgstr ""
+msgstr "Größe"
 
 #: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load splats renderer"
-msgstr "Berechtigungen können nicht geladen werden."
+msgstr "Splats-Renderer kann nicht geladen werden"
 
 #: app/static/app/js/ModelView.jsx:818
 msgid ""
 "Could not load splats. This task doesn't seem to have a valid splats file."
 msgstr ""
+"Splats konnten nicht geladen werden. Diese Aufgabe scheint keine gültige "
+"Splats-Datei zu haben."
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
@@ -137,13 +137,11 @@ msgstr "Struktur-Modell"
 #: app/static/app/js/classes/AssetDownloads.js:63
 #: app/static/app/js/components/TaskListItem.jsx:866
 msgid "Splats"
-msgstr ""
+msgstr "Splats"
 
 #: app/static/app/js/ModelView.jsx:981
-#, fuzzy
-#| msgid "Loading..."
 msgid "Loading splats..."
-msgstr "Wird geladen…"
+msgstr "Splats werden geladen..."
 
 #: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
@@ -151,66 +149,65 @@ msgstr "Strukturiertes Modell wird geladen ..."
 
 #: app/static/app/js/PluginBrowser.jsx:57
 msgid "Installed"
-msgstr ""
+msgstr "Installiert"
 
 #: app/static/app/js/PluginBrowser.jsx:61
 #, python-format
 msgid "Requires WebODM %(version)s"
-msgstr ""
+msgstr "Erfordert WebODM %(version)s"
 
 #: app/static/app/js/PluginBrowser.jsx:65
 msgid "Update"
-msgstr ""
+msgstr "Aktualisieren"
 
 #: app/static/app/js/PluginBrowser.jsx:69
 msgid "Install"
-msgstr ""
+msgstr "Installieren"
 
 #: app/static/app/js/PluginBrowser.jsx:80
 msgid "Experimental"
-msgstr ""
+msgstr "Experimentell"
 
 #: app/static/app/js/PluginBrowser.jsx:81
-#, fuzzy
-#| msgid "Duplicate"
 msgid "Deprecated"
-msgstr "Duplikat"
+msgstr "Veraltet"
 
 #: app/static/app/js/PluginBrowser.jsx:82
 #, python-format
 msgid "by %(author)s"
-msgstr ""
+msgstr "von %(author)s"
 
 #: app/static/app/js/PluginBrowser.jsx:159
 msgid "The plugin repository returned an error:"
-msgstr ""
+msgstr "Das Plugin-Repository hat einen Fehler zurückgegeben:"
 
 #: app/static/app/js/PluginBrowser.jsx:161
 #: app/static/app/js/PluginBrowser.jsx:167
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid ""
 "The plugin repository returned an invalid response. Please try again later."
 msgstr ""
-"Neue Aufgabe kann nicht erstellt werden. Bitte versuchen Sie es später noch "
-"einmal."
+"Das Plugin-Repository hat eine ungültige Antwort zurückgegeben. Bitte "
+"versuchen Sie es später erneut."
 
 #: app/static/app/js/PluginBrowser.jsx:164
 msgid ""
 "Cannot connect to the plugin repository. Check that this server has internet "
 "access and that the connection is not blocked by a firewall or proxy."
 msgstr ""
+"Keine Verbindung zum Plugin-Repository möglich. Prüfen Sie, ob dieser Server "
+"Internetzugang hat und die Verbindung nicht durch eine Firewall oder einen "
+"Proxy blockiert wird."
 
 #: app/static/app/js/PluginBrowser.jsx:187
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Downloading…"
 msgid "Downloading..."
-msgstr "Wird geladen…"
+msgstr "Wird heruntergeladen..."
 
 #: app/static/app/js/PluginBrowser.jsx:191
 msgid "The plugin repository returned an error while downloading the plugin:"
 msgstr ""
+"Das Plugin-Repository hat beim Herunterladen des Plugins einen Fehler "
+"zurückgegeben:"
 
 #: app/static/app/js/PluginBrowser.jsx:193
 #: app/static/app/js/PluginBrowser.jsx:196
@@ -218,27 +215,29 @@ msgid ""
 "Cannot download the plugin. The connection to the plugin repository failed "
 "or was interrupted."
 msgstr ""
+"Das Plugin kann nicht heruntergeladen werden. Die Verbindung zum "
+"Plugin-Repository ist fehlgeschlagen oder wurde unterbrochen."
 
 #: app/static/app/js/PluginBrowser.jsx:199
-#, fuzzy
-#| msgid "Restarting..."
 msgid "Installing..."
-msgstr "Neustart..."
+msgstr "Wird installiert..."
 
 #: app/static/app/js/PluginBrowser.jsx:215
 #: app/static/app/js/PluginBrowser.jsx:217
 msgid "WebODM could not install the plugin:"
-msgstr ""
+msgstr "WebODM konnte das Plugin nicht installieren:"
 
 #: app/static/app/js/PluginBrowser.jsx:220
 msgid ""
 "Cannot send the plugin to WebODM. The connection was interrupted or the "
 "server is not responding."
 msgstr ""
+"Das Plugin kann nicht an WebODM gesendet werden. Die Verbindung wurde "
+"unterbrochen oder der Server antwortet nicht."
 
 #: app/static/app/js/PluginBrowser.jsx:253
 msgid "No plugins found."
-msgstr ""
+msgstr "Keine Plugins gefunden."
 
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
@@ -256,13 +255,11 @@ msgstr "Schließen"
 #: app/static/app/js/PluginBrowser.jsx:277
 #: app/static/app/js/PluginBrowser.jsx:325
 msgid "Install Plugins"
-msgstr ""
+msgstr "Plugins installieren"
 
 #: app/static/app/js/PluginBrowser.jsx:287
-#, fuzzy
-#| msgid "Search"
 msgid "Search plugins"
-msgstr "Suche"
+msgstr "Plugins suchen"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -273,10 +270,8 @@ msgid "Orthophoto (Tiles)"
 msgstr "Orthophoto (Kacheln)"
 
 #: app/static/app/js/classes/AssetDownloads.js:49
-#, fuzzy
-#| msgid "Orthophoto (Tiles)"
 msgid "Orthophoto Cutline"
-msgstr "Orthophoto (Kacheln)"
+msgstr "Orthofoto-Schnittlinie"
 
 #: app/static/app/js/classes/AssetDownloads.js:51
 msgid "Terrain Model (Tiles)"
@@ -291,10 +286,8 @@ msgid "Point Cloud (3D Tiles)"
 msgstr "Punktwolke (3D Kacheln)"
 
 #: app/static/app/js/classes/AssetDownloads.js:57
-#, fuzzy
-#| msgid "Terrain Model (Tiles)"
 msgid "Textured Model (3D Tiles)"
-msgstr "Geländemodell (Kacheln)"
+msgstr "Struktur-Modell (3D Tiles)"
 
 #: app/static/app/js/classes/AssetDownloads.js:58
 msgid "Textured Model (glTF)"
@@ -323,65 +316,58 @@ msgid "All Assets"
 msgstr "Alle Dateien"
 
 #: app/static/app/js/classes/Gcp.js:18
-#, fuzzy, python-format
-#| msgid "Invalid response: %(error)s"
+#, python-format
 msgid "Invalid CRS: %(line)s"
-msgstr "Ungültige Antwort: %(error)s"
+msgstr "Ungültiges KBS: %(line)s"
 
 #: app/static/app/js/classes/Gcp.js:34 app/static/app/js/classes/Gcp.js:38
-#, fuzzy, python-format
-#| msgid "Invalid response: %(error)s"
+#, python-format
 msgid "Invalid line %(num)s: %(line)s"
-msgstr "Ungültige Antwort: %(error)s"
+msgstr "Ungültige Zeile %(num)s: %(line)s"
 
 #: app/static/app/js/classes/Gcp.js:44
 msgid "Empty GCP file"
-msgstr ""
+msgstr "Leere GCP-Datei"
 
 #: app/static/app/js/classes/OverlayColors.js:5
 #: coreplugins/annotate/public/markers.js:6
 msgid "Blue"
-msgstr ""
+msgstr "Blau"
 
 #: app/static/app/js/classes/OverlayColors.js:9
 #: coreplugins/annotate/public/markers.js:10
-#, fuzzy
-#| msgid "Read"
 msgid "Red"
-msgstr "Lesen"
+msgstr "Rot"
 
 #: app/static/app/js/classes/OverlayColors.js:13
 #: coreplugins/annotate/public/markers.js:14
 msgid "Green"
-msgstr ""
+msgstr "Grün"
 
 #: app/static/app/js/classes/OverlayColors.js:17
 #: coreplugins/annotate/public/markers.js:18
-#, fuzzy
-#| msgid "Hello,"
 msgid "Yellow"
-msgstr "Hallo,"
+msgstr "Gelb"
 
 #: app/static/app/js/classes/OverlayColors.js:21
 #: coreplugins/annotate/public/markers.js:22
 msgid "Pink"
-msgstr ""
+msgstr "Pink"
 
 #: app/static/app/js/classes/OverlayColors.js:25
 #: coreplugins/annotate/public/markers.js:26
 msgid "Orange"
-msgstr ""
+msgstr "Orange"
 
 #: app/static/app/js/classes/OverlayColors.js:29
 #: coreplugins/annotate/public/markers.js:30
 msgid "Gray"
-msgstr ""
+msgstr "Grau"
 
 #: app/static/app/js/classes/OverlayLayer.js:14
-#, fuzzy, python-format
-#| msgid "%(file)s is bigger than 5 MB."
+#, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr "%(file)s ist größer als 5 MB."
+msgstr "%(file)s ist größer als %(size)s MB."
 
 #: app/static/app/js/classes/OverlayLayer.js:23
 #, python-format
@@ -411,10 +397,8 @@ msgid "Importing..."
 msgstr "Importieren ..."
 
 #: app/static/app/js/classes/PendingActions.js:27
-#, fuzzy
-#| msgid "Importing..."
 msgid "Compacting..."
-msgstr "Importieren ..."
+msgstr "Wird komprimiert..."
 
 #: app/static/app/js/classes/PipelineSteps.js:7
 msgid "Load Dataset"
@@ -504,7 +488,7 @@ msgstr "Füße"
 
 #: app/static/app/js/classes/Units.js:43
 msgid "Inches"
-msgstr ""
+msgstr "Zoll"
 
 #: app/static/app/js/classes/Units.js:50 coreplugins/measure/public/app.jsx:39
 msgid "Hectares"
@@ -521,10 +505,8 @@ msgid "Kilometers"
 msgstr "Kilometer"
 
 #: app/static/app/js/classes/Units.js:71
-#, fuzzy
-#| msgid "meters"
 msgid "Centimeters"
-msgstr "Meter"
+msgstr "Zentimeter"
 
 #: app/static/app/js/classes/Units.js:78 app/static/app/js/classes/Units.js:85
 #: coreplugins/measure/public/app.jsx:41
@@ -532,27 +514,19 @@ msgid "Miles"
 msgstr "Meilen"
 
 #: app/static/app/js/classes/Units.js:92 app/static/app/js/classes/Units.js:99
-#, fuzzy
-#| msgid "Sq Feet"
 msgid "Square Feet"
-msgstr "Quadratfuß Zoll"
+msgstr "Quadratfuß"
 
 #: app/static/app/js/classes/Units.js:106
-#, fuzzy
-#| msgid "Sq Meters"
 msgid "Square Meters"
 msgstr "Quadratmeter"
 
 #: app/static/app/js/classes/Units.js:113
-#, fuzzy
-#| msgid "Kilometers"
 msgid "Square Kilometers"
-msgstr "Kilometer"
+msgstr "Quadratkilometer"
 
 #: app/static/app/js/classes/Units.js:120
 #: app/static/app/js/classes/Units.js:127
-#, fuzzy
-#| msgid "Sq Miles"
 msgid "Square Miles"
 msgstr "Quadratmeilen"
 
@@ -562,30 +536,28 @@ msgstr "Kubikmeter"
 
 #: app/static/app/js/classes/Units.js:141
 #: app/static/app/js/classes/Units.js:148
-#, fuzzy
-#| msgid "Cubic Meters"
 msgid "Cubic Yards"
-msgstr "Kubikmeter"
+msgstr "Kubikyard"
 
 #: app/static/app/js/classes/Units.js:158
 msgid "Celsius"
-msgstr ""
+msgstr "Celsius"
 
 #: app/static/app/js/classes/Units.js:168
 msgid "Fahrenheit"
-msgstr ""
+msgstr "Fahrenheit"
 
 #: app/static/app/js/classes/Units.js:286
 msgid "Metric"
-msgstr ""
+msgstr "Metrisch"
 
 #: app/static/app/js/classes/Units.js:321
 msgid "Imperial"
-msgstr ""
+msgstr "Imperial"
 
 #: app/static/app/js/classes/Units.js:385
 msgid "Imperial (US)"
-msgstr ""
+msgstr "Imperial (US)"
 
 #: app/static/app/js/components/AssetDownloadButtons.jsx:79
 #: app/static/app/js/components/ExportAssetDialog.jsx:41
@@ -597,11 +569,11 @@ msgstr "Herunterladen"
 
 #: app/static/app/js/components/AssetDownloadButtons.jsx:111
 msgid "Backup"
-msgstr ""
+msgstr "Sicherung"
 
 #: app/static/app/js/components/CropButton.jsx:16
 msgid "Crop"
-msgstr ""
+msgstr "Zuschneiden"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:63
 msgid "Cannot load permissions."
@@ -620,10 +592,8 @@ msgid "No Access"
 msgstr "Kein Zugriff"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:278
-#, fuzzy
-#| msgid "Username"
 msgid "Group name"
-msgstr "Benutzername"
+msgstr "Gruppenname"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:283
 msgid "Username"
@@ -634,52 +604,44 @@ msgid "Permissions"
 msgstr "Zugriffsrechte"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:327
-#, fuzzy
-#| msgid "Add tags"
 msgid "Add user"
-msgstr "Tag hinzufügen"
+msgstr "Benutzer hinzufügen"
 
 #: app/static/app/js/components/EditPermissionsPanel.jsx:328
-#, fuzzy
-#| msgid "Add Project"
 msgid "Add group"
-msgstr "Projekt hinzufügen"
+msgstr "Gruppe hinzufügen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:22
-#, fuzzy
-#| msgid "Start Processing"
 msgid "Input & Preprocessing"
-msgstr "Starten Sie die Verarbeitung"
+msgstr "Eingabe & Vorverarbeitung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:25
-#, fuzzy
-#| msgid "Camera Animation"
 msgid "Camera Configuration"
-msgstr "Kameraanimation"
+msgstr "Kamerakonfiguration"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:26
 msgid "Masking"
-msgstr ""
+msgstr "Maskierung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:27
 msgid "Multispectral"
-msgstr ""
+msgstr "Multispektral"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:29
 msgid "Video Input"
-msgstr ""
+msgstr "Videoeingabe"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:34
 msgid "Bounds & Cropping"
-msgstr ""
+msgstr "Grenzen & Zuschnitt"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:37
 msgid "Boundary"
-msgstr ""
+msgstr "Begrenzung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:42
 msgid "Coordinate Reference System"
-msgstr ""
+msgstr "Koordinatenreferenzsystem"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:45
 #: app/static/app/js/components/EditTaskForm.jsx:626
@@ -689,115 +651,91 @@ msgstr "Optionen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:53
 msgid "Feature Extraction"
-msgstr ""
+msgstr "Merkmalsextraktion"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:54
 msgid "Feature Matching"
-msgstr ""
+msgstr "Merkmalsabgleich"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:55
-#, fuzzy
-#| msgid "Reconstructed Points:"
 msgid "Reconstruction"
-msgstr "Rekonstruierte Punkte:"
+msgstr "Rekonstruktion"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:64
-#, fuzzy
-#| msgid "Elevation:"
 msgid "Generation"
-msgstr "Erhebung:"
+msgstr "Generierung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:65
-#, fuzzy
-#| msgid "Filter"
 msgid "Filtering"
-msgstr "Filter"
+msgstr "Filterung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:66
-#, fuzzy
-#| msgid "Processing"
 msgid "Post-Processing"
-msgstr "Verarbeitung"
+msgstr "Nachbearbeitung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:74
 msgid "Mesh Generation"
-msgstr ""
+msgstr "Mesh-Generierung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:82
-#, fuzzy
-#| msgid "Texturing"
 msgid "Texture Options"
-msgstr "Texturierung"
+msgstr "Texturoptionen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:87
 msgid "Digital Elevation Models"
-msgstr ""
+msgstr "Digitale Höhenmodelle"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:90
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Outputs"
-msgstr "Aufgabenausgabe:"
+msgstr "Ausgaben"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:91
 msgid "Resolution & Sampling"
-msgstr ""
+msgstr "Auflösung & Abtastung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:92
-#, fuzzy
-#| msgid "Classification filter"
 msgid "Ground Classification (SMRF)"
-msgstr "Klassifizierungsfilter"
+msgstr "Bodenklassifizierung (SMRF)"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:100
-#, fuzzy
-#| msgid "Orthophoto (Tiles)"
 msgid "Orthophoto Options"
-msgstr "Orthophoto (Kacheln)"
+msgstr "Orthofoto-Optionen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:105
-#, fuzzy
-#| msgid "Miles"
 msgid "Tiles"
-msgstr "Meilen"
+msgstr "Kacheln"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:108
-#, fuzzy
-#| msgid "Options"
 msgid "Tiles Options"
-msgstr "Optionen"
+msgstr "Kacheloptionen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:113
 msgid "System & Pipeline Control"
-msgstr ""
+msgstr "System- & Pipeline-Steuerung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:116
 msgid "Performance"
-msgstr ""
+msgstr "Leistung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:117
-#, fuzzy
-#| msgid "Helicopter control"
 msgid "Pipeline Control"
-msgstr "Hubschraubersteuerung"
+msgstr "Pipeline-Steuerung"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:122
 msgid "Split/Merge"
-msgstr ""
+msgstr "Aufteilen/Zusammenführen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:125
 msgid "Splitting"
-msgstr ""
+msgstr "Aufteilen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:126
 msgid "Merging"
-msgstr ""
+msgstr "Zusammenführen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:520
-#, fuzzy
-#| msgid "Other settings"
 msgid "Other Options"
-msgstr "Andere Einstellungen"
+msgstr "Weitere Optionen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:557
 #: app/static/app/js/components/EditTaskForm.jsx:572
@@ -822,23 +760,23 @@ msgstr "Suche"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:574
 msgid "Flat View"
-msgstr ""
+msgstr "Flache Ansicht"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:574
 msgid "Grouped View"
-msgstr ""
+msgstr "Gruppierte Ansicht"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:578
 msgid "Expand"
-msgstr ""
+msgstr "Ausklappen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:578
 msgid "Collapse"
-msgstr ""
+msgstr "Einklappen"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:588
 msgid "Search options..."
-msgstr ""
+msgstr "Optionen suchen..."
 
 #: app/static/app/js/components/EditProjectDialog.jsx:16
 msgid "New Project"
@@ -1020,12 +958,10 @@ msgid "Loading processing nodes and presets..."
 msgstr "Laden von Verarbeitungsknoten und Voreinstellungen ..."
 
 #: app/static/app/js/components/EditTaskPanel.jsx:56
-#, fuzzy
-#| msgid "Could not update task information. Plese try again."
 msgid "Could not update task information. Please try again."
 msgstr ""
-"Aufgabeninformationen konnten nicht aktualisiert werden. Bitte versuchen Sie "
-"es erneut."
+"Aufgabeninformationen konnten nicht aktualisiert werden. Versuchen Sie es "
+"nochmal."
 
 #: app/static/app/js/components/EditTaskPanel.jsx:75
 #: app/static/app/js/components/FormDialog.jsx:207
@@ -1060,7 +996,7 @@ msgstr "Ungültige JSON-Antwort:%(error)s"
 #: app/static/app/js/components/ExportAssetPanel.jsx:234
 #: app/static/app/js/components/TaskListItem.jsx:720
 msgid "CRS:"
-msgstr ""
+msgstr "KBS:"
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:238
 #: coreplugins/contours/public/ContoursPanel.jsx:367
@@ -1077,10 +1013,9 @@ msgid "Format:"
 msgstr "Format:"
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:274
-#, fuzzy, python-format
-#| msgid "(meters)"
+#, python-format
 msgid "Resample (%(unit)s):"
-msgstr "(Meter)"
+msgstr "Neu abtasten (%(unit)s):"
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:282
 msgid "Export:"
@@ -1141,54 +1076,49 @@ msgstr "Max:"
 
 #: app/static/app/js/components/ImagePopup.jsx:254
 msgid "Altitude"
-msgstr ""
+msgstr "Höhe"
 
 #: app/static/app/js/components/ImagePopup.jsx:262
 msgid "Download Image"
 msgstr "Bild herunterladen"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:114
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid ""
 "Upload failed after multiple retries. Please check your connection and try "
 "again."
 msgstr ""
-"Datei kann nicht hochgeladen werden. Überprüfen Sie Ihre Internetverbindung "
-"und versuchen Sie es erneut."
+"Hochladen nach mehreren Versuchen gescheitert. Bitte überprüfen Sie Ihre "
+"Verbindung und versuchen Sie es nochmal."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:206
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Failed to complete upload. Try again later."
 msgstr ""
-"Schätzung kann nicht abgerufen werden. Versuchen Sie es später noch einmal."
+"Hochladen konnte nicht abgeschlossen werden. Versuchen Sie es später nochmal."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:216
 msgid "Select at least one file to upload."
-msgstr ""
+msgstr "Wählen Sie mindestens eine Datei zum Hochladen aus."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:223
 msgid "A textured model requires also a point cloud to be properly displayed."
 msgstr ""
+"Ein Struktur-Modell benötigt zur korrekten Anzeige auch eine Punktwolke."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:247
 msgid "Failed to initialize upload. Try again later."
-msgstr ""
+msgstr "Upload konnte nicht gestartet werden. Versuchen Sie es später nochmal."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:286
-#, fuzzy
-#| msgid "Import Existing Assets"
 msgid "Import External Data"
-msgstr "Vorhandene Dateien importieren"
+msgstr "Externe Daten importieren"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:287
 msgid "Select files. At least one file is required."
-msgstr ""
+msgstr "Wählen Sie Dateien aus. Mindestens eine Datei ist erforderlich."
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:307
 msgid "Remove"
-msgstr ""
+msgstr "Entfernen"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
@@ -1196,10 +1126,8 @@ msgid "Cancel Upload"
 msgstr "Upload abbrechen"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:333
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload"
-msgstr "Eine Datei hochladen"
+msgstr "Hochladen"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:65
 msgid "Cannot upload file. Check your internet connection and try again."
@@ -1225,19 +1153,16 @@ msgstr ""
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:166
 msgid "Import Assets or Backups"
-msgstr ""
+msgstr "Assets oder Backups importieren"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:167
-#, fuzzy, python-format
-#| msgid ""
-#| "You can import .zip files that have been exported from existing tasks via "
-#| "Download Assets %(arrow)s All Assets."
+#, python-format
 msgid ""
 "You can import .zip files that have been exported from existing tasks via "
 "Download %(arrow)s All Assets | Backup."
 msgstr ""
-"Sie können ZIP-Dateien importieren, die aus vorhandenen Aufgaben exportiert "
-"wurden, indem Sie Dateien %(arrow)s alle Dateien herunterladen."
+"Sie können .zip-Dateien importieren, die aus bestehenden Aufgaben über "
+"Herunterladen %(arrow)s Alle Dateien | Sicherung exportiert wurden."
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:174
 msgid "Upload a File"
@@ -1263,10 +1188,8 @@ msgstr "Schichten"
 #: app/static/app/js/components/LayersControlOverlays.jsx:108
 #: app/static/app/js/components/LayersControlOverlays.jsx:184
 #: coreplugins/annotate/public/Popup.jsx:767
-#, fuzzy
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
 msgid "Are you sure you want to delete this?"
-msgstr "Möchten Sie wirklich \"%(preset)s\" löschen?"
+msgstr "Sind Sie sicher, dass Sie dies löschen möchten?"
 
 #: app/static/app/js/components/LayersControlAnnotations.jsx:149
 #: app/static/app/js/translations/potree_autogenerated.js:8
@@ -1282,11 +1205,11 @@ msgstr "Exportieren als GeoJSON"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:411
 msgid "Side By Side"
-msgstr ""
+msgstr "Nebeneinander"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:411
 msgid "Zoom To"
-msgstr ""
+msgstr "Zoomen auf"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:430
 msgid "Algorithm:"
@@ -1294,21 +1217,23 @@ msgstr "Algorithmus:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:442
 msgid "Bands:"
-msgstr ""
+msgstr "Bänder:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:447
 #: app/static/app/js/components/NewTaskPanel.jsx:302
 msgid "Automatic"
-msgstr ""
+msgstr "Automatisch"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:451
 #, python-format
 msgid "Not every band for %(name)s could be automatically identified."
-msgstr ""
+msgstr "Nicht alle Bänder für %(name)s konnten automatisch erkannt werden."
 
 #: app/static/app/js/components/LayersControlLayer.jsx:451
 msgid "Your sensor might not have the proper bands for using this algorithm."
 msgstr ""
+"Ihr Sensor verfügt möglicherweise nicht über die richtigen Bänder für diesen "
+"Algorithmus."
 
 #: app/static/app/js/components/LayersControlLayer.jsx:458
 msgid "Color:"
@@ -1316,18 +1241,16 @@ msgstr "Farbe:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:470
 msgid "Display:"
-msgstr ""
+msgstr "Anzeige:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:473
 #: coreplugins/annotate/public/Popup.jsx:984
-#, fuzzy
-#| msgid "Elevation:"
 msgid "Elevation"
-msgstr "Erhebung:"
+msgstr "Höhe"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:474
 msgid "Slope"
-msgstr ""
+msgstr "Neigung"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:481
 msgid "Shading:"
@@ -1352,13 +1275,11 @@ msgstr "Extrudiert"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:57
 msgid "Change color"
-msgstr ""
+msgstr "Farbe ändern"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:206
-#, fuzzy
-#| msgid "Moving..."
 msgid "Converting..."
-msgstr "Verschiebe..."
+msgstr "Konvertiere..."
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:216
 #: app/static/app/js/components/Map.jsx:1730
@@ -1368,14 +1289,12 @@ msgid "Opacity"
 msgstr "Deckkraft"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:218
-#, fuzzy
-#| msgid "Saving…"
 msgid "Syncing…"
-msgstr "Speichern…"
+msgstr "Synchronisiere…"
 
 #: app/static/app/js/components/LayersControlOverlays.jsx:294
 msgid "Overlays"
-msgstr ""
+msgstr "Überlagerungen"
 
 #: app/static/app/js/components/LayersControlPanel.jsx:42
 #: app/static/app/js/components/NewTaskPanel.jsx:359
@@ -1389,7 +1308,7 @@ msgstr "Wird geladen…"
 #: app/static/app/js/components/SplatsDialog.jsx:178
 #, python-format
 msgid "%(filename)s is not a valid file"
-msgstr ""
+msgstr "%(filename)s ist keine gültige Datei"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:174
 #: app/static/app/js/components/ProjectListItem.jsx:335
@@ -1403,112 +1322,91 @@ msgstr ""
 #: app/static/app/js/components/ManageMediaDialog.jsx:186
 #: app/static/app/js/components/ProjectListItem.jsx:347
 #: app/static/app/js/components/SplatsDialog.jsx:202
-#, fuzzy, python-format
-#| msgid ""
-#| "Cannot upload %(filename)s, File too Large! Default MaxFileSize is "
-#| "%(maxFileSize)s MB!"
+#, python-format
 msgid ""
 "Cannot upload %(filename)s, file is too large! Default MaxFileSize is "
 "%(maxFileSize)s MB!"
 msgstr ""
-"%(filename)s ist zu groß und kann nicht hochgeladen werden! Der Standard für "
-"MaxFileSize ist %(maxFileSize)s MB!"
+"%(filename)s kann nicht hochgeladen werden, die Datei ist zu groß! "
+"Standard-MaxFileSize ist %(maxFileSize)s MB!"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:247
 #: app/static/app/js/components/SplatsDialog.jsx:235
-#, fuzzy
-#| msgid "Cannot upload file. Check your internet connection and try again."
 msgid "Upload failed. Check your connection and try again."
 msgstr ""
-"Datei kann nicht hochgeladen werden. Überprüfen Sie Ihre Internetverbindung "
-"und versuchen Sie es erneut."
+"Hochladen gescheitert. Überprüfen Sie Ihre Verbindung und versuchen Sie es "
+"nochmal."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:271
-#, fuzzy
-#| msgid "Cannot load permissions."
 msgid "Cannot load media."
-msgstr "Berechtigungen können nicht geladen werden."
+msgstr "Medien können nicht geladen werden."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:288
-#, fuzzy, python-format
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
+#, python-format
 msgid "Are you sure you want to delete %(filename)s ?"
-msgstr "Möchten Sie wirklich \"%(preset)s\" löschen?"
+msgstr "Sind Sie sicher, dass Sie %(filename)s löschen möchten?"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:318
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete file."
-msgstr "Aufgabe kann nicht gelöscht werden."
+msgstr "Datei kann nicht gelöscht werden."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:356
-#, fuzzy
-#| msgid "Cannot complete operation."
 msgid "Cannot update description."
-msgstr "Vorgang kann nicht abgeschlossen werden."
+msgstr "Beschreibung kann nicht aktualisiert werden."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:371
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:372
 msgid "Panorama"
-msgstr ""
+msgstr "Panorama"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:373
 msgid "Photo"
-msgstr ""
+msgstr "Foto"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:401
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Files"
-msgstr "Eine Datei hochladen"
+msgstr "Dateien hochladen"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:403
 msgid ""
 "Georeferenced photos, panoramas and videos will be displayed on the map."
 msgstr ""
+"Georeferenzierte Fotos, Panoramen und Videos werden auf der Karte angezeigt."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:412
 #: app/static/app/js/components/SplatsDialog.jsx:527
 msgid "Finalizing... please wait"
-msgstr ""
+msgstr "Wird abgeschlossen... bitte warten"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:433
 msgid "No media files."
-msgstr ""
+msgstr "Keine Mediendateien."
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:445
-#, fuzzy
-#| msgid "Righ view"
 msgid "Grid view"
-msgstr "Rechte Ansicht"
+msgstr "Rasteransicht"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:452
-#, fuzzy
-#| msgid "Left view"
 msgid "List view"
-msgstr "Linke Ansicht"
+msgstr "Listenansicht"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:516
 #: app/static/app/js/components/Map.jsx:542
 #: app/static/app/js/components/TaskListItem.jsx:865
 msgid "Media"
-msgstr ""
+msgstr "Medien"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:558
-#, fuzzy
-#| msgid "Username"
 msgid "Filename"
-msgstr "Benutzername"
+msgstr "Dateiname"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:559
 #: coreplugins/annotate/public/Popup.jsx:947
-#, fuzzy
-#| msgid "Description (optional)"
 msgid "Description"
-msgstr "Beschreibung (optional)"
+msgstr "Beschreibung"
 
 #: app/static/app/js/components/Map.jsx:793
 #: app/static/app/js/components/MapPreview.jsx:114
@@ -1523,10 +1421,8 @@ msgstr "{z}, {x}, {y} für das Z / X / Y-Kachelschema"
 
 #: app/static/app/js/components/Map.jsx:795
 #: app/static/app/js/components/MapPreview.jsx:116
-#, fuzzy
-#| msgid "{-y} for flipped TMS-style Y coordinates"
 msgid "{−y} for flipped TMS-style Y coordinates"
-msgstr "{-y} für gespiegelte Y-Koordinaten im TMS-Stil"
+msgstr "{−y} für gespiegelte Y-Koordinaten im TMS-Stil"
 
 #: app/static/app/js/components/Map.jsx:797
 #: app/static/app/js/components/MapPreview.jsx:118
@@ -1534,25 +1430,20 @@ msgid "Example:"
 msgstr "Beispiel:"
 
 #: app/static/app/js/components/Map.jsx:881
-#, fuzzy
-#| msgid "Add a temporary GeoJSON (.json) or ShapeFile (.zip) overlay"
 msgid "Add a GeoJSON (.json), ShapeFile (.zip) or AutoCAD (.dxf) overlay"
 msgstr ""
-"Fügen Sie eine temporäre GeoJSON- (.json) oder ShapeFile- (.zip) "
-"Überlagerung hinzu"
+"GeoJSON- (.json), ShapeFile- (.zip) oder AutoCAD-Overlay (.dxf) hinzufügen"
 
 #: app/static/app/js/components/Map.jsx:942
-#, fuzzy
-#| msgid "Cannot import from URL. Check your internet connection."
 msgid "Cannot set cropping area. Check your internet connection."
 msgstr ""
-"Kann nicht von URL importieren. Bitte prüfen Sie ihre Internetverbindung."
+"Zuschneidebereich kann nicht festgelegt werden. Überprüfen Sie Ihre "
+"Internetverbindung."
 
 #: app/static/app/js/components/Map.jsx:968
-#, fuzzy
-#| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to set a new crop area?"
-msgstr "Möchten Sie wirklich abbrechen?"
+msgstr ""
+"Sind Sie sicher, dass Sie einen neuen Zuschneidebereich festlegen möchten?"
 
 #: app/static/app/js/components/Map.jsx:1037
 msgid "Error: cannot load assets list."
@@ -1560,32 +1451,29 @@ msgstr "Fehler: Datei-Liste kann nicht geladen werden."
 
 #: app/static/app/js/components/Map.jsx:1142
 msgid "Cannot import overlay: no task is loaded."
-msgstr ""
+msgstr "Überlagerung kann nicht importiert werden: Keine Aufgabe geladen."
 
 #: app/static/app/js/components/Map.jsx:1230
 #: app/static/app/js/components/Map.jsx:1263
 #: app/static/app/js/components/Map.jsx:1281
 #, python-format
 msgid "Cannot save overlay %(name)s"
-msgstr ""
+msgstr "Overlay %(name)s kann nicht gespeichert werden"
 
 #: app/static/app/js/components/Map.jsx:1296
 #: app/static/app/js/components/Map.jsx:1336
 msgid "Overlay"
-msgstr ""
+msgstr "Overlay"
 
 #: app/static/app/js/components/Map.jsx:1388
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid EPSG code"
-msgstr "Ungültige Antwort: %(error)s"
+msgstr "Ungültiger EPSG-Code"
 
 #: app/static/app/js/components/Map.jsx:1456
 #: app/static/app/js/components/Map.jsx:1465
-#, fuzzy, python-format
-#| msgid "Cannot delete task."
+#, python-format
 msgid "Cannot convert %(file)s"
-msgstr "Aufgabe kann nicht gelöscht werden."
+msgstr "%(file)s kann nicht konvertiert werden"
 
 #: app/static/app/js/components/Map.jsx:1734
 #: app/static/app/js/components/NewTaskPanel.jsx:302
@@ -1594,49 +1482,38 @@ msgid "Loading..."
 msgstr "Wird geladen…"
 
 #: app/static/app/js/components/Map.jsx:1740
-#, fuzzy
-#| msgid "Import"
 msgid "Import DXF"
-msgstr "Importieren"
+msgstr "DXF importieren"
 
 #: app/static/app/js/components/MapPreview.jsx:172
-#, fuzzy
-#| msgid "Description (optional)"
 msgid "Set Reconstruction Area (optional)"
-msgstr "Beschreibung (optional)"
+msgstr "Rekonstruktionsbereich festlegen (optional)"
 
 #: app/static/app/js/components/MapPreview.jsx:326
-#, fuzzy, python-format
-#| msgid "Cannot restart task from (stage)s."
+#, python-format
 msgid "Cannot extract GPS data from %(file)s"
-msgstr "Aufgabe kann nicht neu gestartet werden."
+msgstr "GPS-Daten können nicht aus %(file)s extrahiert werden"
 
 #: app/static/app/js/components/MapPreview.jsx:449
-#, fuzzy
-#| msgid "Point location"
 msgid "Plotting GPS locations..."
-msgstr "Punktposition"
+msgstr "GPS-Positionen werden dargestellt..."
 
 #: app/static/app/js/components/MapPreview.jsx:454
 #, python-format
 msgid "For performance reasons, only %(num)s images are plotted"
-msgstr ""
+msgstr "Aus Leistungsgründen werden nur %(num)s Bilder dargestellt"
 
 #: app/static/app/js/components/MapPreview.jsx:465
-#, fuzzy
-#| msgid "Export to GeoJSON"
 msgid "GeoJSON"
-msgstr "Exportieren als GeoJSON"
+msgstr "GeoJSON"
 
 #: app/static/app/js/components/MapPreview.jsx:466
 msgid "CSV"
-msgstr ""
+msgstr "CSV"
 
 #: app/static/app/js/components/MapPreview.jsx:467
-#, fuzzy
-#| msgid "Download To File"
 msgid "Geolocation File"
-msgstr "In Datei herunterladen"
+msgstr "Geolokalisierungsdatei"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:9
 msgid "Move Task"
@@ -1667,29 +1544,26 @@ msgid "Are you sure you want to cancel?"
 msgstr "Möchten Sie wirklich abbrechen?"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:239
-#, fuzzy, python-format
-#| msgid "%(count)s files uploaded successfully"
+#, python-format
 msgid "%(count)s files selected."
-msgstr "%(count)s Dateien wurden erfolgreich hochgeladen"
+msgstr "%(count)s Dateien ausgewählt."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:242
 #, python-format
 msgid "%(count)s files and GCP file (%(name)s) selected."
-msgstr ""
+msgstr "%(count)s Dateien und GCP-Datei (%(name)s) ausgewählt."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:249
-#, fuzzy
-#| msgid "%(count)s files selected. Please check these additional options:"
 msgid "Please check these additional options:"
-msgstr ""
-"%(count)s Dateien ausgewählt. Bitte überprüfen Sie diese zusätzlichen "
-"Optionen:"
+msgstr "Bitte überprüfen Sie diese zusätzlichen Optionen:"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:253
 msgid ""
 "Did you forget any images? When images exceed 1000, they are often stored "
 "inside multiple folders on the SD card."
 msgstr ""
+"Haben Sie Bilder vergessen? Bei mehr als 1000 Bildern werden diese oft in "
+"mehreren Ordnern auf der SD-Karte gespeichert."
 
 #: app/static/app/js/components/NewTaskPanel.jsx:260
 #, python-format
@@ -1697,10 +1571,12 @@ msgid ""
 "Whoops! It looks like your GCP file is not formatted properly: %(errors)s "
 "See %(link)s for information on the GCP file format"
 msgstr ""
+"Hoppla! Ihre GCP-Datei scheint nicht korrekt formatiert zu sein: %(errors)s "
+"Informationen zum GCP-Dateiformat finden Sie unter %(link)s"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:261
 msgid "GCP File"
-msgstr ""
+msgstr "GCP-Datei"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:269
 #, python-format
@@ -1714,7 +1590,7 @@ msgstr ""
 #: app/static/app/js/components/NewTaskPanel.jsx:299
 #: app/static/app/js/components/TaskListItem.jsx:487
 msgid "Alignment"
-msgstr ""
+msgstr "Ausrichtung"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:315
 #: app/static/app/js/components/SplatsDialog.jsx:461
@@ -1737,10 +1613,8 @@ msgstr "Starten Sie die Verarbeitung"
 
 #: app/static/app/js/components/OverlayFeaturePopup.jsx:33
 #: coreplugins/annotate/public/Popup.jsx:952
-#, fuzzy
-#| msgid "Color:"
 msgid "Color"
-msgstr "Farbe:"
+msgstr "Farbe"
 
 #: app/static/app/js/components/Paginator.jsx:26
 #: app/static/app/js/components/ProjectListItem.jsx:59
@@ -1753,7 +1627,7 @@ msgstr "Besitzer"
 
 #: app/static/app/js/components/Paginator.jsx:142
 msgid "Search names, #tags or @user"
-msgstr ""
+msgstr "Namen, #Tags oder @Benutzer suchen"
 
 #: app/static/app/js/components/Paginator.jsx:153
 #: app/static/app/js/components/ProjectListItem.jsx:851
@@ -1761,18 +1635,16 @@ msgid "Sort"
 msgstr "Sortieren"
 
 #: app/static/app/js/components/Paginator.jsx:157
-#, fuzzy
-#| msgid "this page"
 msgid "Items per page"
-msgstr "diese Seite"
+msgstr "Einträge pro Seite"
 
 #: app/static/app/js/components/Paginator.jsx:172
 msgid "Search results for:"
-msgstr ""
+msgstr "Suchergebnisse für:"
 
 #: app/static/app/js/components/ProcessingNodeOption.jsx:8
 msgid "You might run out of memory if you use this option."
-msgstr ""
+msgstr "Bei Verwendung dieser Option kann der Speicher knapp werden."
 
 #: app/static/app/js/components/ProcessingNodeOption.jsx:166
 #: app/static/app/js/translations/potree_autogenerated.js:63
@@ -1780,10 +1652,8 @@ msgid "Enable"
 msgstr "Aktivieren"
 
 #: app/static/app/js/components/ProcessingNodeOption.jsx:175
-#, fuzzy
-#| msgid "Click to import a .JSON file"
 msgid "Click to import a JSON file"
-msgstr "Klicken Sie hier, um eine JSON-Datei zu importieren"
+msgstr "Klicken, um eine JSON-Datei zu importieren"
 
 #: app/static/app/js/components/ProcessingNodeOption.jsx:196
 msgid "Reset to default"
@@ -1843,11 +1713,11 @@ msgstr "Wählen Sie Bilder und GCP"
 
 #: app/static/app/js/components/ProjectListItem.jsx:779
 msgid "Assets / Backups"
-msgstr ""
+msgstr "Assets / Backups"
 
 #: app/static/app/js/components/ProjectListItem.jsx:780
 msgid "External Data"
-msgstr ""
+msgstr "Externe Daten"
 
 #: app/static/app/js/components/ProjectListItem.jsx:812
 #, python-format
@@ -1860,7 +1730,7 @@ msgstr "Filter"
 
 #: app/static/app/js/components/ProjectListItem.jsx:845
 msgid "Clear"
-msgstr ""
+msgstr "Leeren"
 
 #: app/static/app/js/components/ProjectListItem.jsx:860
 msgid "View Map"
@@ -1871,10 +1741,13 @@ msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
+"Instabile Verbindung erkannt. Falls der Upload hängen bleibt, klicken Sie "
+"unten, um den stabilen Modus zu aktivieren. Danach müssen Sie den Upload neu "
+"starten."
 
 #: app/static/app/js/components/ProjectListItem.jsx:886
 msgid "Enable Stable Mode"
-msgstr ""
+msgstr "Stabilen Modus aktivieren"
 
 #: app/static/app/js/components/ShareButton.jsx:72
 #: app/static/app/js/components/ShareButton.jsx:74
@@ -1895,10 +1768,8 @@ msgid "Share This Task"
 msgstr "Teilen Sie diese Aufgabe"
 
 #: app/static/app/js/components/SharePopup.jsx:180
-#, fuzzy
-#| msgid "Share This Task"
 msgid "Share This Project"
-msgstr "Teilen Sie diese Aufgabe"
+msgstr "Dieses Projekt teilen"
 
 #: app/static/app/js/components/SharePopup.jsx:186
 msgid "QR"
@@ -1911,11 +1782,11 @@ msgstr "Aktiviert"
 
 #: app/static/app/js/components/SharePopup.jsx:223
 msgid "Allow Edits"
-msgstr ""
+msgstr "Bearbeitung erlauben"
 
 #: app/static/app/js/components/SharePopup.jsx:230
 msgid "Dismiss"
-msgstr ""
+msgstr "Schließen"
 
 #: app/static/app/js/components/SharePopup.jsx:232
 #, python-format
@@ -1923,12 +1794,12 @@ msgid ""
 "The link below is accessible only within your local network. To share a link "
 "with others online, use a %(service)s"
 msgstr ""
+"Der folgende Link ist nur in Ihrem lokalen Netzwerk erreichbar. Um einen "
+"Link online mit anderen zu teilen, verwenden Sie einen %(service)s"
 
 #: app/static/app/js/components/SharePopup.jsx:232
-#, fuzzy
-#| msgid "Path distance"
 msgid "hosted instance"
-msgstr "Pfadlänge"
+msgstr "gehostete Instanz"
 
 #: app/static/app/js/components/SharePopup.jsx:238
 msgid "Link:"
@@ -1948,7 +1819,7 @@ msgstr "Aufsteigend"
 
 #: app/static/app/js/components/SplatsDialog.jsx:137
 msgid "Please upload a single file."
-msgstr ""
+msgstr "Bitte laden Sie eine einzelne Datei hoch."
 
 #: app/static/app/js/components/SplatsDialog.jsx:330
 #: coreplugins/annotate/public/Popup.jsx:287
@@ -1964,27 +1835,23 @@ msgid "Invalid response: %(error)s"
 msgstr "Ungültige Antwort: %(error)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:333
-#, fuzzy
-#| msgid "Cannot restart task."
 msgid "Cannot export training data."
-msgstr "Aufgabe kann nicht neu gestartet werden."
+msgstr "Trainingsdaten können nicht exportiert werden."
 
 #: app/static/app/js/components/SplatsDialog.jsx:338
-#, fuzzy
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
 msgid "Are you sure you want to delete the splats model?"
-msgstr "Möchten Sie wirklich \"%(preset)s\" löschen?"
+msgstr "Sind Sie sicher, dass Sie das Splats-Modell löschen möchten?"
 
 #: app/static/app/js/components/SplatsDialog.jsx:352
-#, fuzzy
-#| msgid "Cannot delete task."
 msgid "Cannot delete splats model."
-msgstr "Aufgabe kann nicht gelöscht werden."
+msgstr "Splats-Modell kann nicht gelöscht werden."
 
 #: app/static/app/js/components/SplatsDialog.jsx:389
 msgid ""
 "This task is missing camera information. Training data cannot be downloaded."
 msgstr ""
+"Für diese Aufgabe fehlen Kamerainformationen. Trainingsdaten können nicht "
+"heruntergeladen werden."
 
 #: app/static/app/js/components/SplatsDialog.jsx:394
 msgid ""
@@ -1992,12 +1859,18 @@ msgid ""
 "point cloud. Some training software might not work properly without one. "
 "Uploading a splats model requires a point cloud."
 msgstr ""
+"Für diese Aufgabe fehlt eine Punktwolke. Die Trainingsdaten enthalten eine "
+"leere Punktwolke. Manche Trainingssoftware funktioniert ohne Punktwolke "
+"möglicherweise nicht richtig. Zum Hochladen eines Splats-Modells ist eine "
+"Punktwolke erforderlich."
 
 #: app/static/app/js/components/SplatsDialog.jsx:399
 msgid ""
 "This task is missing camera information and a point cloud. No splats can be "
 "downloaded or uploaded."
 msgstr ""
+"Für diese Aufgabe fehlen Kamerainformationen und eine Punktwolke. Es können "
+"keine Splats heruntergeladen oder hochgeladen werden."
 
 #: app/static/app/js/components/SplatsDialog.jsx:404
 msgid ""
@@ -2005,57 +1878,58 @@ msgid ""
 "download. After extracting the .zip file, copy the original images into the "
 "\"images\" folder before training."
 msgstr ""
+"Die Bilder dieser Aufgabe sind nicht verfügbar und daher nicht im Download "
+"enthalten. Kopieren Sie nach dem Entpacken der .zip-Datei die Originalbilder "
+"vor dem Training in den Ordner \"images\"."
 
 #: app/static/app/js/components/SplatsDialog.jsx:409
 msgid ""
 "Most images in this dataset are nadir. Splats typically require obliques and/"
 "or orbits for good results."
 msgstr ""
+"Die meisten Bilder in diesem Datensatz sind Nadiraufnahmen. Splats benötigen "
+"für gute Ergebnisse meist Schrägaufnahmen und/oder Orbits."
 
 #: app/static/app/js/components/SplatsDialog.jsx:421
 msgid "A splats model has been added."
-msgstr ""
+msgstr "Ein Splats-Modell wurde hinzugefügt."
 
 #: app/static/app/js/components/SplatsDialog.jsx:424
-#, fuzzy
-#| msgid "show in 3D"
 msgid "View in 3D"
-msgstr "in 3D anzeigen"
+msgstr "In 3D ansehen"
 
 #: app/static/app/js/components/SplatsDialog.jsx:428
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload New"
-msgstr "Eine Datei hochladen"
+msgstr "Neu hochladen"
 
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Download Image"
 msgid "Download Training Data"
-msgstr "Bild herunterladen"
+msgstr "Trainingsdaten herunterladen"
 
 #: app/static/app/js/components/SplatsDialog.jsx:497
 #, python-format
 msgid "Train a model using %(link_start)s compatible software %(link_end)s"
 msgstr ""
+"Trainieren Sie ein Modell mit %(link_start)s kompatibler Software "
+"%(link_end)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:507
 msgid "You don't have permission to upload a splats model to this task."
 msgstr ""
+"Sie haben keine Berechtigung, ein Splats-Modell zu dieser Aufgabe "
+"hochzuladen."
 
 #: app/static/app/js/components/SplatsDialog.jsx:516
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Splats Model"
-msgstr "Eine Datei hochladen"
+msgstr "Splats-Modell hochladen"
 
 #: app/static/app/js/components/SplatsDialog.jsx:560
 msgid "Gaussian Splats"
-msgstr ""
+msgstr "Gaussian Splats"
 
 #: app/static/app/js/components/SplatsDialog.jsx:566
 msgid "Processing splats model... this might take a bit"
-msgstr ""
+msgstr "Splats-Modell wird verarbeitet... dies kann etwas dauern"
 
 #: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
@@ -2138,20 +2012,15 @@ msgid "this page"
 msgstr "diese Seite"
 
 #: app/static/app/js/components/TaskListItem.jsx:331
-#, fuzzy
-#| msgid ""
-#| "The processing node is missing a program necessary to complete the task. "
-#| "This might indicate a corrupted installation. If you built OpenDroneMap, "
-#| "please check that all programs built without errors."
 msgid ""
 "The processing node is missing a program necessary to complete the task. "
 "This might indicate a corrupted installation. If you built ODM, please check "
 "that all programs built without errors."
 msgstr ""
-"Dem Verarbeitungsknoten fehlt ein Programm, das zur Ausführung der Aufgabe "
+"Dem Verarbeitungsknoten fehlt ein Programm, das zum Abschließen der Aufgabe "
 "erforderlich ist. Dies kann auf eine beschädigte Installation hinweisen. "
-"Wenn Sie OpenDroneMap erstellt haben, überprüfen Sie bitte, ob alle "
-"Programme fehlerfrei erstellt wurden."
+"Wenn Sie ODM selbst kompiliert haben, prüfen Sie bitte, ob alle Programme "
+"ohne Fehler kompiliert wurden."
 
 #: app/static/app/js/components/TaskListItem.jsx:372
 #, python-format
@@ -2172,13 +2041,11 @@ msgstr "Aufgabe kann nicht neu gestartet werden."
 
 #: app/static/app/js/components/TaskListItem.jsx:491
 msgid "GPS"
-msgstr ""
+msgstr "GPS"
 
 #: app/static/app/js/components/TaskListItem.jsx:494
-#, fuzzy
-#| msgid "(GCPs)"
 msgid "GCP"
-msgstr "(BKPe)"
+msgstr "GCP"
 
 #: app/static/app/js/components/TaskListItem.jsx:523
 msgid "Sending images to processing node"
@@ -2190,13 +2057,11 @@ msgstr "Warten auf einen Knoten ..."
 
 #: app/static/app/js/components/TaskListItem.jsx:556
 msgid "Map"
-msgstr ""
+msgstr "Karte"
 
 #: app/static/app/js/components/TaskListItem.jsx:565
-#, fuzzy
-#| msgid "View 3D Model"
 msgid "3D Model"
-msgstr "3D-Modell anzeigen"
+msgstr "3D-Modell"
 
 #: app/static/app/js/components/TaskListItem.jsx:581
 #: app/static/app/js/components/TaskListItem.jsx:891
@@ -2222,30 +2087,24 @@ msgid "Restart"
 msgstr "Neu starten"
 
 #: app/static/app/js/components/TaskListItem.jsx:607
-#, fuzzy
-#| msgid "Are you sure you want to delete \"%(preset)s\"?"
 msgid "Are you sure you want to restart this task?"
-msgstr "Möchten Sie wirklich \"%(preset)s\" löschen?"
+msgstr "Sind Sie sicher, dass Sie diese Aufgabe neu starten möchten?"
 
 #: app/static/app/js/components/TaskListItem.jsx:623
 msgid "Have all images been uploaded?"
-msgstr ""
+msgstr "Wurden alle Bilder hochgeladen?"
 
 #: app/static/app/js/components/TaskListItem.jsx:624
-#, fuzzy
-#| msgid "Cannot restart task."
 msgid "Cannot start processing task."
-msgstr "Aufgabe kann nicht neu gestartet werden."
+msgstr "Verarbeitung der Aufgabe kann nicht gestartet werden."
 
 #: app/static/app/js/components/TaskListItem.jsx:682
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Task ID:"
-msgstr "Aufgabenausgabe:"
+msgstr "Aufgaben-ID:"
 
 #: app/static/app/js/components/TaskListItem.jsx:683
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "In die Zwischenablage kopieren"
 
 #: app/static/app/js/components/TaskListItem.jsx:686
 msgid "Created on:"
@@ -2260,9 +2119,8 @@ msgid "auto"
 msgstr "auto"
 
 #: app/static/app/js/components/TaskListItem.jsx:691
-#, fuzzy
 msgid "manual"
-msgstr "Handbuch"
+msgstr "manuell"
 
 #: app/static/app/js/components/TaskListItem.jsx:695
 msgid "Options:"
@@ -2278,16 +2136,12 @@ msgid "Area:"
 msgstr "Areal:"
 
 #: app/static/app/js/components/TaskListItem.jsx:710
-#, fuzzy
-#| msgid "Point size"
 msgid "Points:"
-msgstr "Punktgröße"
+msgstr "Punkte:"
 
 #: app/static/app/js/components/TaskListItem.jsx:715
-#, fuzzy
-#| msgid "Georeferencing"
 msgid "Georeferencing:"
-msgstr "Georeferenzierung"
+msgstr "Georeferenzierung:"
 
 #: app/static/app/js/components/TaskListItem.jsx:725
 msgid "Disk Usage:"
@@ -2307,7 +2161,7 @@ msgstr "Deaktiviert"
 
 #: app/static/app/js/components/TaskListItem.jsx:741
 msgid "Thumbnail"
-msgstr ""
+msgstr "Vorschaubild"
 
 #: app/static/app/js/components/TaskListItem.jsx:759
 msgid "enough RAM allocated"
@@ -2335,40 +2189,31 @@ msgstr ""
 "versuchen, ein %(cloudlink)s zu verwenden."
 
 #: app/static/app/js/components/TaskListItem.jsx:766
-#, fuzzy, python-format
-#| msgid ""
-#| "\"Process exited with code 1\" means that part of the processing failed. "
-#| "Sometimes it's a problem with the dataset, sometimes it can be solved by "
-#| "tweaking the Task Options. Check the documentation at %(link)"
+#, python-format
 msgid ""
 "\"Process exited with code 1\" means that part of the processing failed. "
 "Sometimes it's a problem with the dataset, sometimes it can be solved by "
 "tweaking the Task Options. Check the documentation at %(link)s"
 msgstr ""
-"\"Prozess mit Code 1 beendet\" bedeutet, dass ein Teil der Verarbeitung "
-"fehlgeschlagen ist. Manchmal ist es ein Problem mit dem Datensatz, manchmal "
-"kann es durch Optimieren der Aufgabenoptionen behoben werden! Beachten Sie "
-"die Dokumentation unter %(link)"
+"\"Process exited with code 1\" bedeutet, dass ein Teil der Verarbeitung "
+"gescheitert ist. Manchmal liegt es am Datensatz, manchmal lässt es sich "
+"durch Anpassen der Aufgabenoptionen lösen. Siehe Dokumentation unter %(link)s"
 
 #: app/static/app/js/components/TaskListItem.jsx:816
 msgid "Set a processing node"
 msgstr "Legen Sie einen Verarbeitungsknoten fest"
 
 #: app/static/app/js/components/TaskListItem.jsx:821
-#, fuzzy
-#| msgid "Waiting for a node..."
 msgid "Waiting to start processing..."
-msgstr "Warten auf einen Knoten ..."
+msgstr "Warte auf Start der Verarbeitung..."
 
 #: app/static/app/js/components/TaskListItem.jsx:872
 msgid "Move"
 msgstr "Bewegen"
 
 #: app/static/app/js/components/TaskListItem.jsx:884
-#, fuzzy
-#| msgid "Compass"
 msgid "Compact"
-msgstr "Kompass"
+msgstr "Komprimieren"
 
 #: app/static/app/js/components/TaskListItem.jsx:885
 msgid ""
@@ -2376,55 +2221,43 @@ msgid ""
 "used for processing. It will no longer be possible to restart the task. Maps "
 "and models will remain in place. Continue?"
 msgstr ""
+"Beim Komprimieren wird Speicherplatz freigegeben, indem die für die "
+"Verarbeitung verwendeten Originalbilder dauerhaft gelöscht werden. Die "
+"Aufgabe kann danach nicht mehr neu gestartet werden. Karten und Modelle "
+"bleiben erhalten. Fortfahren?"
 
 #: app/static/app/js/components/TaskListItem.jsx:886
-#, fuzzy
-#| msgid "Cannot cancel task."
 msgid "Cannot compact task."
-msgstr "Aufgabe kann nicht abgebrochen werden."
+msgstr "Aufgabe kann nicht komprimiert werden."
 
 #: app/static/app/js/components/Toaster.jsx:14
-#, fuzzy
-#| msgid "Processing"
 msgid "Processed"
-msgstr "Verarbeitung"
+msgstr "Verarbeitet"
 
 #: app/static/app/js/components/Toaster.jsx:15
-#, fuzzy
-#| msgid "Share"
 msgid "Shared"
-msgstr "Teilen"
+msgstr "Geteilt"
 
 #: app/static/app/js/components/Toaster.jsx:16
-#, fuzzy
-#| msgid "Export"
 msgid "Exported"
-msgstr "Export"
+msgstr "Exportiert"
 
 #: app/static/app/js/components/Toaster.jsx:20
-#, fuzzy
-#| msgid "Share"
 msgid "Sharing"
-msgstr "Teilen"
+msgstr "Wird geteilt"
 
 #: app/static/app/js/components/Toaster.jsx:21
-#, fuzzy
-#| msgid "Exporting..."
 msgid "Exporting"
-msgstr "Exportieren..."
+msgstr "Wird exportiert"
 
 #: app/static/app/js/components/Toaster.jsx:243
 #: coreplugins/lightning/public/ShareDialog.jsx:259
-#, fuzzy
-#| msgid "Task Output:"
 msgid "Task"
-msgstr "Aufgabenausgabe:"
+msgstr "Aufgabe"
 
 #: app/static/app/js/components/Toaster.jsx:268
-#, fuzzy
-#| msgid "Are you sure you want to cancel?"
 msgid "Are you sure you want to cancel the tasks?"
-msgstr "Möchten Sie wirklich abbrechen?"
+msgstr "Sind Sie sicher, dass Sie die Aufgaben abbrechen möchten?"
 
 #: app/static/app/js/components/UploadProgressBar.jsx:25
 #, python-format
@@ -2451,12 +2284,7 @@ msgstr ""
 "\"images\" beinhalten."
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
-#, fuzzy, python-format
-#| msgid ""
-#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
-#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
-#| "sometimes miss valid matches. Can be one of: %(choices)s. Default: "
-#| "%(default)s"
+#, python-format
 msgid ""
 "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
 "Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
@@ -2464,11 +2292,11 @@ msgid ""
 "faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
 "Default: %(default)s"
 msgstr ""
-"Matcher-Algorithmus, Schnelle Library for \"Approximate Nearest Neighbors\" "
-"oder \"Bag of Words\". FLANN ist langsamer, aber stabiler. BOW ist "
-"schneller, kann aber manchmal gültige Übereinstimmungen übersehen. "
-"BRUTEFORCE ist sehr langsam, aber stabil und kann eines der folgenden sein: "
-"%(choices)s. Standard: %(default)s"
+"Matcher-Algorithmus, Fast Library for Approximate Nearest Neighbors oder Bag "
+"of Words. FLANN ist langsamer, aber stabiler. BOW ist schneller, kann aber "
+"manchmal gültige Übereinstimmungen übersehen. BRUTEFORCE ist sehr langsam, "
+"aber robust. HAMMING ist bei großen Datensätzen viel schneller, benötigt "
+"aber eine GPU. Mögliche Werte: %(choices)s. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
@@ -2500,6 +2328,8 @@ msgid ""
 "Generate OBJs that have a single material and a single texture file instead "
 "of multiple ones. Default:  %(default)s"
 msgstr ""
+"Erzeugt OBJs mit einem einzigen Material und einer einzigen Texturdatei "
+"statt mehreren. Standard:  %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
@@ -2507,6 +2337,9 @@ msgid ""
 "Do not attempt to merge partial reconstructions. This can happen when images "
 "do not have sufficient overlap or are isolated. Default: %(default)s"
 msgstr ""
+"Nicht versuchen, Teilrekonstruktionen zusammenzuführen. Dies kann vorkommen, "
+"wenn Bilder nicht ausreichend überlappen oder isoliert sind. Standard: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:10
 #, python-format
@@ -2527,22 +2360,18 @@ msgstr ""
 "Workflows auf mehrere Knoten. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:12
-#, fuzzy, python-format
-#| msgid ""
-#| "Radius of the overlap between submodels. After grouping images into "
-#| "clusters, images that are closer than this radius to a cluster are added "
-#| "to the cluster. This is done to ensure that neighboring submodels "
-#| "overlap. Default: %(default)s"
+#, python-format
 msgid ""
 "Radius of the overlap between submodels in meters. After grouping images "
 "into clusters, images that are closer than this radius to a cluster are "
 "added to the cluster. This is done to ensure that neighboring submodels "
 "overlap. All imagesneed GPS information. Default: %(default)s"
 msgstr ""
-"Radius der Überlappung zwischen Untermodellen. Nach dem Gruppieren von "
-"Bildern in Cluster werden Bilder, die näher als dieser Radius zu einem "
-"Cluster liegen, zum Cluster hinzugefügt. Dies geschieht, um sicherzustellen, "
-"dass benachbarte Submodelle überlappen. Standard: %(default)s"
+"Radius der Überlappung zwischen Teilmodellen in Metern. Nach dem Gruppieren "
+"der Bilder in Cluster werden Bilder, die näher als dieser Radius an einem "
+"Cluster liegen, dem Cluster hinzugefügt. So wird sichergestellt, dass sich "
+"benachbarte Teilmodelle überlappen. Alle Bilder benötigen GPS-Informationen. "
+"Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:13
 #, python-format
@@ -2556,13 +2385,7 @@ msgstr ""
 "eine der folgenden sein: %(choices)s. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:14
-#, fuzzy, python-format
-#| msgid ""
-#| "Ignore Ground Sampling Distance (GSD). GSD caps the maximum resolution of "
-#| "image outputs and resizes images when necessary, resulting in faster "
-#| "processing and lower memory usage. Since GSD is an estimate, sometimes "
-#| "ignoring it can result in slightly better image output quality. Default: "
-#| "%(default)s"
+#, python-format
 msgid ""
 "Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
 "relative to the default behavior if set to true. Ordinarily, GSD estimates "
@@ -2572,12 +2395,15 @@ msgid ""
 "image output quality. Never set --ignore-gsd to true unless you are positive "
 "you need it, and even then: do not use it. Default: %(default)s"
 msgstr ""
-"ignorieren Sie den Ground Sampling Distance (GSD). GSD begrenzt die maximale "
-"Auflösung der Bildausgaben und ändert bei Bedarf die Größe der Bilder, was "
-"zu einer schnelleren Verarbeitung und einer geringeren Speichernutzung "
-"führt. Da es sich bei GSD um eine Schätzung handelt, kann das Ignorieren "
-"manchmal zu einer etwas besseren Bildausgabequalität führen. Standard: "
-"%(default)s"
+"Bodenauflösung (GSD) ignorieren. Eine speicher- und prozessorintensive "
+"Änderung gegenüber dem Standardverhalten, wenn auf true gesetzt. "
+"Normalerweise werden GSD-Schätzungen verwendet, um die maximale Auflösung "
+"der Bildausgaben zu begrenzen, und Bilder werden bei Bedarf verkleinert, was "
+"zu schnellerer Verarbeitung und geringerem Speicherverbrauch führt. Da die "
+"GSD eine Schätzung ist, kann das Ignorieren manchmal zu einer etwas besseren "
+"Bildqualität führen. Setzen Sie --ignore-gsd niemals auf true, außer Sie "
+"sind sicher, dass Sie es brauchen, und selbst dann: Verwenden Sie es nicht. "
+"Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:15
 #, python-format
@@ -2618,14 +2444,7 @@ msgstr ""
 "überlappenden Orthofotos zu erstellen. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:18
-#, fuzzy, python-format
-#| msgid ""
-#| "Set a value in meters for the GPS Dilution of Precision (DOP) information "
-#| "for all images. If your images are tagged with high precision GPS "
-#| "information (RTK), this value will be automatically set accordingly. You "
-#| "can use this option to manually set it in case the reconstruction fails. "
-#| "Lowering this option can sometimes help control bowling-effects over "
-#| "large areas. Default: %(default)s"
+#, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
 "for all images. If your images are tagged with high precision GPS "
@@ -2634,28 +2453,25 @@ msgid ""
 "Lowering this option can sometimes help control bowling-effects over large "
 "areas. Default: %(default)s"
 msgstr ""
-"Stellen Sie einen Wert in Metern für die GPS-DOP-Informationen (Dilution of "
-"Precision) für alle Bilder ein. Wenn Ihre Bilder mit hochpräzisen GPS-"
-"Informationen (RTK) versehen sind, wird dieser Wert automatisch entsprechend "
-"eingestellt. Sie können diese Option manuell setzten sollte die "
-"Rekonstruktion fehlschlagen. Das Verringern dieser Option kann manchmal dazu "
-"beitragen, Bowling-Effekte über große Flächen zu kontrollieren. Standard: "
-"%(default)s"
+"Legen Sie einen Wert in Metern für die GPS-Genauigkeitsabschwächung (DOP) "
+"aller Bilder fest. Wenn Ihre Bilder mit hochpräzisen GPS-Informationen (RTK) "
+"versehen sind, wird dieser Wert automatisch entsprechend gesetzt. Mit dieser "
+"Option können Sie ihn manuell festlegen, falls die Rekonstruktion "
+"fehlschlägt. Ein niedrigerer Wert kann manchmal helfen, Schüsseleffekte über "
+"große Flächen zu verringern. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:19
-#, fuzzy, python-format
-#| msgid ""
-#| "Choose the algorithm for extracting keypoints and computing descriptors. "
-#| "Can be one of: %(choices)s. Default: %(default)s"
+#, python-format
 msgid ""
 "Choose the structure from motion algorithm. For aerial datasets, if camera "
 "GPS positions and angles are available, triangulation can be faster. Planar "
 "is deprecated and will be removed in a future version. Can be one of: "
 "%(choices)s. Default: %(default)s"
 msgstr ""
-"Wähle den Algorithums aus, der zum Extrahieren von Schlüsselpunkten und zur "
-"Berechnung von Beschreibungen genutzt werden soll. Kann einer von "
-"%(choices)s sein. Standard: %(default)s"
+"Wählen Sie den Struktur-aus-Bewegung-Algorithmus. Bei Luftbild-Datensätzen "
+"kann die Triangulation schneller sein, wenn GPS-Positionen und Winkel der "
+"Kamera verfügbar sind. Planar ist veraltet und wird in einer zukünftigen "
+"Version entfernt. Mögliche Werte: %(choices)s. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:20
 #, python-format
@@ -2701,13 +2517,13 @@ msgstr ""
 "möchten. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:24
-#, fuzzy, python-format
-#| msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+#, python-format
 msgid ""
 "The maximum output resolution of extracted video frames in pixels. Default: "
 "%(default)s"
 msgstr ""
-"Die maximale Scheitelpunktzahl des Ausgabegitters. Standard: %(default)s"
+"Die maximale Ausgabeauflösung extrahierter Videobilder in Pixeln. Standard: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:25
 #, python-format
@@ -2734,19 +2550,15 @@ msgstr ""
 "GCPs vorhanden sind. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:27
-#, fuzzy, python-format
-#| msgid ""
-#| "Automatically crop image outputs by creating a smooth buffer around the "
-#| "dataset boundaries, shrinked by N meters. Use 0 to disable cropping. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Automatically crop image outputs by creating a smooth buffer around the "
 "dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
 "%(default)s"
 msgstr ""
-"Schneidet Bildausgaben automatisch zu, indem ein glatten Puffer um die "
-"Datensatzgrenzen erstellt wird, der um N Meter verkleinert wird. Verwenden "
-"Sie 0, um das Zuschneiden zu deaktivieren. Standard: %(default)s"
+"Bildausgaben automatisch zuschneiden, indem ein glatter Puffer um die "
+"Datensatzgrenzen erzeugt wird, der um N Meter verkleinert ist. 0 deaktiviert "
+"das Zuschneiden. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:28
 #, python-format
@@ -2769,14 +2581,7 @@ msgstr ""
 "Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:30
-#, fuzzy, python-format
-#| msgid ""
-#| "Path to the image geolocation file containing the camera center "
-#| "coordinates used for georeferencing. Note that omega/phi/kappa are "
-#| "currently not supported (you can set them to 0). The file needs to use "
-#| "the following format: EPSG:<code> or <+proj definition>image_name geo_x "
-#| "geo_y geo_z [omega (degrees)] [phi (degrees)] [kappa (degrees)] [horz "
-#| "accuracy (meters)] [vert accuracy (meters)]Default: %(default)s"
+#, python-format
 msgid ""
 "Path to the image geolocation file containing the camera center coordinates "
 "used for georeferencing. If you don't have values for yaw/pitch/roll you can "
@@ -2785,13 +2590,12 @@ msgid ""
 "(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
 "(meters)]Default: %(default)s"
 msgstr ""
-"Pfad zur Bild-Geolokalisierungsdatei mit den für die Georeferenzierung "
-"verwendeten Kamera-Center-Koordinaten. Beachten Sie, dass Omega / Phi / "
-"Kappa derzeit nicht unterstützt werden (Sie können sie auf 0 setzen). Die "
-"Datei muss mit dem folgende Format aufgebaut sein: EPSG: <code> oder <+ "
-"projekt definition> Bildname geo_x geo_y geo_z [Omega (Grad)] [Phi (Grad)] "
-"[Kappa (Grad)] [Horizontale-Genauigkeit (Meter)] [ Vertikale-Genauigkeit "
-"(Meter)] Standard: %(default)s"
+"Pfad zur Bild-Geolokalisierungsdatei mit den Koordinaten der Kamerazentren, "
+"die zur Georeferenzierung verwendet werden. Wenn Sie keine Werte für "
+"Gieren/Nicken/Rollen haben, können Sie diese auf 0 setzen. Die Datei muss "
+"folgendes Format verwenden: EPSG:<code> or <+proj definition>image_name "
+"geo_x geo_y geo_z [yaw (degrees)] [pitch (degrees)] [roll (degrees)] [horz "
+"accuracy (meters)] [vert accuracy (meters)]Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:31
 #, python-format
@@ -2864,18 +2668,13 @@ msgstr ""
 "durchschnittlich sein sollten. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:36
-#, fuzzy, python-format
-#| msgid ""
-#| "Classify the point cloud outputs using a Simple Morphological Filter. You "
-#| "can control the behavior of this option by tweaking the --dem-* "
-#| "parameters. Default: %(default)s"
+#, python-format
 msgid ""
 "Classify the point cloud outputs. You can control the behavior of this "
 "option by tweaking the --dem-* parameters. Default: %(default)s"
 msgstr ""
-"Klassifizieren Sie die Punktwolkenausgaben mithilfe eines einfachen "
-"morphologischen Filters. Sie können das Verhalten dieser Option steuern, "
-"indem Sie die Parameter --dem-* anpassen. Standard: %(default)s"
+"Klassifiziert die Punktwolken-Ausgaben. Das Verhalten dieser Option können "
+"Sie über die --dem-* Parameter anpassen. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:37
 #, python-format
@@ -2898,6 +2697,10 @@ msgid ""
 "that not all cameras are present in the database. Set to 0 to use the "
 "database value. Default: %(default)s"
 msgstr ""
+"Überschreibt die Rolling-Shutter-Auslesezeit Ihres Kamerasensors (in "
+"Millisekunden), statt die Rolling-Shutter-Auslesedatenbank zu verwenden. "
+"Beachten Sie, dass nicht alle Kameras in der Datenbank enthalten sind. Auf 0 "
+"setzen, um den Datenbankwert zu verwenden. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:39
 #, python-format
@@ -2940,35 +2743,25 @@ msgstr ""
 "Verarbeitungspipeline erneut aus."
 
 #: app/static/app/js/translations/odm_autogenerated.js:43
-#, fuzzy, python-format
-#| msgid ""
-#| "Number of nearest images to pre-match based on GPS exif data. Set to 0 to "
-#| "skip pre-matching. Neighbors works together with Distance parameter, set "
-#| "both to 0 to not use pre-matching. Default: %(default)s"
+#, python-format
 msgid ""
 "Perform image matching with the nearest images based on GPS exif data. Set "
 "to 0 to match by triangulation. Default: %(default)s"
 msgstr ""
-"Anzahl der nächstgelegenen Bilder für den Vorababgleich auf der Grundlage "
-"der GPS-Exif-Daten. Setzen Sie den Wert auf 0, um die Vorabgleiche zu "
-"überspringen. Voreinstellung: %(default)s"
+"Bildabgleich mit den nächstgelegenen Bildern anhand der GPS-EXIF-Daten "
+"durchführen. 0 setzen, um per Triangulation abzugleichen. Standard: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:44
-#, fuzzy, python-format
-#| msgid ""
-#| "Skips dense reconstruction and 3D model generation. It generates an "
-#| "orthophoto directly from the sparse reconstruction. If you just need an "
-#| "orthophoto and do not need a full 3D model, turn on this option. Default: "
-#| "%(default)s"
+#, python-format
 msgid ""
 "Skips dense reconstruction and 3D model generation. It generates an "
 "orthophoto directly from the sparse reconstruction. On flat terrain with no "
 "objects/structures, turn this on to save time. Default: %(default)s"
 msgstr ""
-"Überspringt die dichte Rekonstruktion und die Erzeugung von 3D-Modellen. Ein "
-"Orthofoto wird direkt aus den spärlichen Daten rekonstruiert. Wenn Sie nur "
-"ein Orthofoto benötigen und kein vollständiges 3D-Modell, aktivieren Sie "
-"diese Option. Standard: %(default)s"
+"Überspringt die dichte Rekonstruktion und die 3D-Modellerstellung. Erzeugt "
+"ein Orthofoto direkt aus der dünnen Rekonstruktion. Bei flachem Gelände ohne "
+"Objekte/Strukturen aktivieren, um Zeit zu sparen. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
@@ -3009,16 +2802,13 @@ msgstr ""
 "sein: %(choices)s. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:49
-#, fuzzy, python-format
-#| msgid ""
-#| "Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
 "format. Default: %(default)s"
 msgstr ""
-"Exportieren Sie die georeferenzierte Punktwolke im EPT-Format (Entwine Point "
-"Tile). Standard: %(default)s"
+"Georeferenzierte Punktwolke im Format Cloud Optimized Point Cloud (COPC) "
+"speichern. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:50
 msgid "Displays version number and exits. "
@@ -3111,18 +2901,13 @@ msgstr ""
 "%(choices)s. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:60
-#, fuzzy, python-format
-#| msgid ""
-#| "DSM/DTM resolution in cm / pixel. Note that this value is capped by a "
-#| "ground sampling distance (GSD) estimate. To remove the cap, check --"
-#| "ignore-gsd also. Default: %(default)s"
+#, python-format
 msgid ""
 "DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
 "sampling distance (GSD) estimate. Default: %(default)s"
 msgstr ""
-"DSM / DTM-Auflösung in cm / Pixel. Beachten Sie, dass dieser Wert durch eine "
-"Schätzung der Bodenabtastentfernung (GSD) begrenzt wird. Um die Deckelung zu "
-"entfernen, überprüfen Sie den Parameter --ignore-gsd. Standard: %(default)s"
+"DSM/DTM-Auflösung in cm / Pixel. Beachten Sie, dass dieser Wert durch eine "
+"Schätzung der Bodenauflösung (GSD) begrenzt wird. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:61
 #, python-format
@@ -3138,17 +2923,15 @@ msgstr ""
 "json-Datei darstellt. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:62
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
+#, python-format
 msgid ""
 "Set the units of the PDF report. By default the vertical units of the "
 "coordinate reference system are used. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"Stellen Sie die Komprimierung für Orthofotos ein. Kann eine der folgenden "
-"sein: %(choices)s. Standard: %(default)s"
+"Legt die Einheiten des PDF-Berichts fest. Standardmäßig werden die "
+"vertikalen Einheiten des Koordinatenreferenzsystems verwendet. Mögliche "
+"Werte: %(choices)s. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:63
 #, python-format
@@ -3159,13 +2942,12 @@ msgstr ""
 "Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:64
-#, fuzzy, python-format
-#| msgid "Generates a benchmark file with runtime info. Default: %(default)s"
+#, python-format
 msgid ""
 "Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
 msgstr ""
-"Generiert eine Benchmark-Datei mit Laufzeitinformationen. Standard: "
-"%(default)s"
+"Texturierte Modelle als einzelne Binary-glTF-Datei (GLB) erzeugen. Standard: "
+" %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:65
 #, python-format
@@ -3271,12 +3053,9 @@ msgstr ""
 "Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:75
-#, fuzzy, python-format
-#| msgid "Generates a benchmark file with runtime info. Default: %(default)s"
+#, python-format
 msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr ""
-"Generiert eine Benchmark-Datei mit Laufzeitinformationen. Standard: "
-"%(default)s"
+msgstr "OGC-3D-Tiles-Ausgaben erzeugen. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:76
 #, python-format
@@ -3286,6 +3065,10 @@ msgid ""
 "GCPs. This can be useful for example when adjusting from ellipsoidal to "
 "orthometric height. Default: %(default)s"
 msgstr ""
+"Legt einen GPS-Versatz in Metern für die vertikale Achse (Z) fest, indem er "
+"zum Höhenwert der GPS-EXIF-Daten addiert wird. Dies ändert nicht den Wert "
+"von GCPs. Dies kann z. B. bei der Umrechnung von ellipsoidischer zu "
+"orthometrischer Höhe nützlich sein. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:77
 #, python-format
@@ -3296,20 +3079,16 @@ msgstr ""
 "Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:78
-#, fuzzy, python-format
-#| msgid ""
-#| "Improve the accuracy of the point cloud by computing geometrically "
-#| "consistent depthmaps. This increases processing time, but can improve "
-#| "results in urban scenes. Default: %(default)s"
+#, python-format
 msgid ""
 "Geometric estimates improve the accuracy of the point cloud by computing "
 "geometrically consistent depthmaps but may not be usable in larger datasets. "
 "This flag disables geometric estimates. Default: %(default)s"
 msgstr ""
-"Verbessern Sie die Genauigkeit der Punktwolke, indem Sie geometrisch "
-"konsistente Tiefenkarten berechnen. Dies erhöht die Verarbeitungszeit, kann "
-"jedoch die Ergebnisse in städtischen Bereichen verbessern. Standard: "
-"%(default)s"
+"Geometrische Schätzungen verbessern die Genauigkeit der Punktwolke durch "
+"geometrisch konsistente Tiefenkarten, sind bei größeren Datensätzen aber "
+"eventuell nicht nutzbar. Diese Option deaktiviert geometrische Schätzungen. "
+"Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:79
 #, python-format
@@ -3319,22 +3098,24 @@ msgid ""
 "accuracy of the results. See also --rolling-shutter-readout. Default: "
 "%(default)s"
 msgstr ""
+"Aktiviert die Rolling-Shutter-Korrektur. Wenn die Kamera einen Rolling "
+"Shutter hat und die Bilder in Bewegung aufgenommen wurden, können Sie diese "
+"Option aktivieren, um die Genauigkeit der Ergebnisse zu verbessern. Siehe "
+"auch --rolling-shutter-readout. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:80
-#, fuzzy, python-format
-#| msgid ""
-#| "Number of nearest images to pre-match based on GPS exif data. Set to 0 to "
-#| "skip pre-matching. Neighbors works together with Distance parameter, set "
-#| "both to 0 to not use pre-matching. Default: %(default)s"
+#, python-format
 msgid ""
 "Perform image matching with the nearest N images based on image filename "
 "order. Can speed up processing of sequential images, such as those extracted "
 "from video. It is applied only on non-georeferenced datasets. Set to 0 to "
 "disable. Default: %(default)s"
 msgstr ""
-"Anzahl der nächstgelegenen Bilder für den Vorababgleich auf der Grundlage "
-"der GPS-Exif-Daten. Setzen Sie den Wert auf 0, um die Vorabgleiche zu "
-"überspringen. Voreinstellung: %(default)s"
+"Bildabgleich mit den nächsten N Bildern anhand der Reihenfolge der "
+"Dateinamen durchführen. Kann die Verarbeitung sequenzieller Bilder "
+"beschleunigen, z. B. aus Videos extrahierter Bilder. Wird nur bei nicht "
+"georeferenzierten Datensätzen angewendet. 0 zum Deaktivieren. Standard: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:81
 #, python-format
@@ -3365,6 +3146,9 @@ msgid ""
 "outputs should be automatically aligned to. Experimental. Default: "
 "%(default)s"
 msgstr ""
+"Pfad zu einem GeoTIFF-DEM oder einer LAS/LAZ-Punktwolke, an der die "
+"Rekonstruktionsergebnisse automatisch ausgerichtet werden sollen. "
+"Experimentell. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:84
 #, python-format
@@ -3390,18 +3174,17 @@ msgid ""
 "Maximum number of frames to extract from video files for processing. Set to "
 "0 for no limit. Default: %(default)s"
 msgstr ""
+"Maximale Anzahl an Frames, die zur Verarbeitung aus Videodateien extrahiert "
+"werden. 0 für keine Begrenzung. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:87
-#, fuzzy, python-format
-#| msgid ""
-#| "Skip generation of PDF report. This can save time if you don't need a "
-#| "report. Default: %(default)s"
+#, python-format
 msgid ""
 "Skip generation of the orthophoto. This can save time if you only need 3D "
 "results or DEMs. Default: %(default)s"
 msgstr ""
-"Überspringen Sie die Erstellung des Orthofotos. Dies kann Zeit sparen, wenn "
-"Sie nur 3D-Ergebnisse oder DEMs benötigen. Standard: %(default)s"
+"Erzeugung des Orthofotos überspringen. Spart Zeit, wenn nur 3D-Ergebnisse "
+"oder DEMs benötigt werden. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:88
 #, python-format
@@ -3422,19 +3205,15 @@ msgstr ""
 "(Meter). Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:90
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
+#, python-format
 msgid ""
 "When processing multispectral datasets, automatically align the images for "
 "each band. If the images have been postprocessed and are already aligned, "
 "use this option. Default: %(default)s"
 msgstr ""
-"Bei der Multispektralanalyse wird ODM die Datensätze automatisch ausrichten. "
-"Nutze diese Option, falls die Datensätze vorher schon ausgerichtet wurden. "
-"Standard: %(default)s"
+"Bei der Verarbeitung multispektraler Datensätze die Bilder für jedes Band "
+"automatisch ausrichten. Wenn die Bilder nachbearbeitet und bereits "
+"ausgerichtet sind, diese Option verwenden. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
@@ -3443,18 +3222,18 @@ msgid ""
 "boundary when computing the boundary with --auto-boundary. Set to 0 to "
 "automatically choose a value. Default: %(default)s"
 msgstr ""
+"Legt den Abstand zwischen den Aufnahmepositionen der Kamera und dem äußeren "
+"Rand der Begrenzung fest, wenn die Begrenzung mit --auto-boundary berechnet "
+"wird. 0 für automatische Wahl eines Wertes. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:92
-#, fuzzy, python-format
-#| msgid ""
-#| "Skip normalization of colors across all images. Useful when processing "
-#| "radiometric data. Default: %(default)s"
+#, python-format
 msgid ""
 "Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
 "very large datasets. Default: %(default)s"
 msgstr ""
-"Überspringen der Normalisierung der Farben über alle Bilder hinweg. Nützlich "
-"bei der Verarbeitung von radiometrisch Daten. Standard: %(default)s"
+"Ausrichtung der Teilmodelle bei Split-Merge überspringen. Nützlich, wenn GPS "
+"bei sehr großen Datensätzen genau genug ist. Standard: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:93
 #, python-format
@@ -3703,10 +3482,8 @@ msgid "Camera Animation"
 msgstr "Kameraanimation"
 
 #: app/static/app/js/translations/potree_autogenerated.js:48
-#, fuzzy
-#| msgid "Camera Animation"
 msgid "Remove last camera animation"
-msgstr "Kameraanimation"
+msgstr "Letzte Kameraanimation entfernen"
 
 #: app/static/app/js/translations/potree_autogenerated.js:49
 msgid "Point budget"
@@ -3850,10 +3627,8 @@ msgid "GPS Time"
 msgstr "GPS Zeit"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:409
-#, fuzzy
-#| msgid "Path distance"
 msgid "Distance:"
-msgstr "Pfadlänge"
+msgstr "Distanz:"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:409
 #: coreplugins/contours/public/ContoursPanel.jsx:178
@@ -3862,95 +3637,77 @@ msgstr "Erhebung:"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:412
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:415
 #: coreplugins/annotate/public/Toolbox.jsx:1210
-#, fuzzy
-#| msgid "Export to GeoJSON"
 msgid "Export to CSV"
-msgstr "Exportieren als GeoJSON"
+msgstr "Als CSV exportieren"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:418
 #: coreplugins/annotate/public/Volume3D.jsx:387
 msgid "Go Back"
-msgstr ""
+msgstr "Zurück"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:419
 #: coreplugins/annotate/public/Volume3D.jsx:388
-#, fuzzy
-#| msgid "Back view"
 msgid "Back"
-msgstr "Rückansicht"
+msgstr "Zurück"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:92
 #: coreplugins/annotate/public/Toolbox.jsx:1208
-#, fuzzy
-#| msgid "Annotations"
 msgid "Annotations Report"
-msgstr "Anmerkungen"
+msgstr "Anmerkungsbericht"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:100
 msgid "Prepared by:"
-msgstr ""
+msgstr "Erstellt von:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:106
-#, fuzzy
-#| msgid "Username"
 msgid "Enter name"
-msgstr "Benutzername"
+msgstr "Name eingeben"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:110
 msgid "Notes:"
-msgstr ""
+msgstr "Notizen:"
 
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:117
-#, fuzzy
-#| msgid "Description (optional)"
 msgid "Additional notes (optional)"
-msgstr "Beschreibung (optional)"
+msgstr "Zusätzliche Notizen (optional)"
 
 #: coreplugins/annotate/public/Popup.jsx:313
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid coordinates"
-msgstr "Ungültige Antwort: %(error)s"
+msgstr "Ungültige Koordinaten"
 
 #: coreplugins/annotate/public/Popup.jsx:886
 #: coreplugins/measure/public/MeasurePopup.jsx:178
-#, fuzzy
-#| msgid "Language"
 msgid "Triangulate"
-msgstr "Sprache"
+msgstr "Triangulieren"
 
 #: coreplugins/annotate/public/Popup.jsx:887
 #: coreplugins/measure/public/MeasurePopup.jsx:179
 msgid "Plane"
-msgstr ""
+msgstr "Ebene"
 
 #: coreplugins/annotate/public/Popup.jsx:888
 #: coreplugins/measure/public/MeasurePopup.jsx:180
-#, fuzzy
-#| msgid "Average GSD:"
 msgid "Average"
-msgstr "Durchnittlicher GSD:"
+msgstr "Durchschnitt"
 
 #: coreplugins/annotate/public/Popup.jsx:889
 #: coreplugins/measure/public/MeasurePopup.jsx:181
 msgid "Highest"
-msgstr ""
+msgstr "Höchster"
 
 #: coreplugins/annotate/public/Popup.jsx:890
 #: coreplugins/measure/public/MeasurePopup.jsx:182
 msgid "Lowest"
-msgstr ""
+msgstr "Niedrigster"
 
 #: coreplugins/annotate/public/Popup.jsx:897
 #: coreplugins/annotate/public/Popup.jsx:1002
-#, fuzzy
-#| msgid "Strength"
 msgid "Length"
-msgstr "Stärke"
+msgstr "Länge"
 
 #: coreplugins/annotate/public/Popup.jsx:903
 #: coreplugins/annotate/public/Popup.jsx:1036
@@ -3960,28 +3717,24 @@ msgstr "Fläche"
 
 #: coreplugins/annotate/public/Popup.jsx:904
 #: coreplugins/annotate/public/Popup.jsx:1042
-#, fuzzy
-#| msgid "Volume:"
 msgid "Volume"
-msgstr "Volumen:"
+msgstr "Volumen"
 
 #: coreplugins/annotate/public/Popup.jsx:935
 msgid "Display"
-msgstr ""
+msgstr "Anzeige"
 
 #: coreplugins/annotate/public/Popup.jsx:969
 msgid "Coordinates"
-msgstr ""
+msgstr "Koordinaten"
 
 #: coreplugins/annotate/public/Popup.jsx:993
 msgid "Temperature"
-msgstr ""
+msgstr "Temperatur"
 
 #: coreplugins/annotate/public/Popup.jsx:1006
-#, fuzzy
-#| msgid "Elevation range"
 msgid "Elevation Profile"
-msgstr "Höhenbereich"
+msgstr "Höhenprofil"
 
 #: coreplugins/annotate/public/Popup.jsx:1010
 #: coreplugins/annotate/public/Popup.jsx:1064
@@ -3995,16 +3748,12 @@ msgstr "DTM"
 
 #: coreplugins/annotate/public/Popup.jsx:1013
 #: coreplugins/annotate/public/Popup.jsx:1014
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show"
-msgstr "in 3D anzeigen"
+msgstr "Anzeigen"
 
 #: coreplugins/annotate/public/Popup.jsx:1028
-#, fuzzy
-#| msgid "Elevation range"
 msgid "Elevation profile error"
-msgstr "Höhenbereich"
+msgstr "Fehler beim Höhenprofil"
 
 #: coreplugins/annotate/public/Popup.jsx:1039
 #: coreplugins/measure/public/app.jsx:27
@@ -4013,104 +3762,84 @@ msgstr "Umfang"
 
 #: coreplugins/annotate/public/Popup.jsx:1049
 #: coreplugins/annotate/public/Volume3D.jsx:383
-#, fuzzy
-#| msgid "Custom"
 msgid "Cut"
-msgstr "Benutzerdefiniert"
+msgstr "Abtrag"
 
 #: coreplugins/annotate/public/Popup.jsx:1055
 #: coreplugins/annotate/public/Volume3D.jsx:384
 msgid "Fill"
-msgstr ""
+msgstr "Auftrag"
 
 #: coreplugins/annotate/public/Popup.jsx:1061
-#, fuzzy
-#| msgid "Surface Model"
 msgid "Surface"
-msgstr "Oberflächenmodell"
+msgstr "Oberfläche"
 
 #: coreplugins/annotate/public/Popup.jsx:1071
 msgid "Base Surface"
-msgstr ""
+msgstr "Basisfläche"
 
 #: coreplugins/annotate/public/Popup.jsx:1079
-#, fuzzy
-#| msgid "show in 3D"
 msgid "Show 3D"
-msgstr "in 3D anzeigen"
+msgstr "3D anzeigen"
 
 #: coreplugins/annotate/public/Popup.jsx:1085
-#, fuzzy
-#| msgid "Custom"
 msgid "Custom Z"
-msgstr "Benutzerdefiniert"
+msgstr "Benutzerdefiniertes Z"
 
 #: coreplugins/annotate/public/Popup.jsx:1107
 msgid "3D view error"
-msgstr ""
+msgstr "Fehler in der 3D-Ansicht"
 
 #: coreplugins/annotate/public/Popup.jsx:1117
-#, fuzzy
-#| msgid "Center on this location"
 msgid "No images found at this location"
-msgstr "Fokus auf diesen Ort legen"
+msgstr "An diesem Ort wurden keine Bilder gefunden"
 
 #: coreplugins/annotate/public/Popup.jsx:1139
-#, fuzzy
-#| msgid "Preview"
 msgid "Previous"
-msgstr "Vorschau"
+msgstr "Zurück"
 
 #: coreplugins/annotate/public/Popup.jsx:1141
 msgid "Next"
-msgstr ""
+msgstr "Weiter"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1024
 #: coreplugins/annotate/public/Toolbox.jsx:1180
-#, fuzzy
-#| msgid "Point size"
 msgid "Point"
-msgstr "Punktgröße"
+msgstr "Punkt"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1026
 #: coreplugins/annotate/public/Toolbox.jsx:1166
 msgid "Line"
-msgstr ""
+msgstr "Linie"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1028
 #: coreplugins/annotate/public/Toolbox.jsx:1173
-#, fuzzy
-#| msgid "Polygon clip"
 msgid "Polygon"
-msgstr "Polygon Clip"
+msgstr "Polygon"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1030
 msgid "Inspection"
-msgstr ""
+msgstr "Inspektion"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1152
 msgid "Select"
-msgstr ""
+msgstr "Auswählen"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1159
 msgid "Inspect"
-msgstr ""
+msgstr "Untersuchen"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1187
-#, fuzzy
-#| msgid "Export to GeoJSON"
 msgid "Import GeoJSON"
-msgstr "Exportieren als GeoJSON"
+msgstr "GeoJSON importieren"
 
 #: coreplugins/annotate/public/Toolbox.jsx:1197
-#, fuzzy
-#| msgid "Annotations"
 msgid "Export Annotations"
-msgstr "Anmerkungen"
+msgstr "Anmerkungen exportieren"
 
 #: coreplugins/annotate/public/Volume3D.jsx:385
 msgid "Base"
-msgstr ""
+msgstr "Basis"
 
 #: coreplugins/contours/public/Contours.jsx:37
 #: coreplugins/contours/public/ContoursPanel.jsx:429
@@ -4136,7 +3865,7 @@ msgstr ""
 
 #: coreplugins/contours/public/ContoursPanel.jsx:290
 msgid "Minimal"
-msgstr ""
+msgstr "Minimal"
 
 #: coreplugins/contours/public/ContoursPanel.jsx:292
 msgid "Aggressive"
@@ -4161,7 +3890,7 @@ msgstr "Vereinfachen:"
 
 #: coreplugins/contours/public/ContoursPanel.jsx:363
 msgid "SRS:"
-msgstr ""
+msgstr "SRS:"
 
 #: coreplugins/contours/public/ContoursPanel.jsx:391
 msgid "Preview"
@@ -4174,15 +3903,12 @@ msgstr "Export"
 #: coreplugins/lightning/public/CloudLogin.jsx:44
 #: coreplugins/lightning/public/CloudLogin.jsx:47
 #: coreplugins/lightning/public/ShareDialog.jsx:116
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Invalid response. Try again later."
-msgstr ""
-"Schätzung kann nicht abgerufen werden. Versuchen Sie es später noch einmal."
+msgstr "Ungültige Antwort. Versuchen Sie es später nochmal."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:78
 msgid "Invalid password. Do you need to reset it?"
-msgstr ""
+msgstr "Ungültiges Passwort. Möchten Sie es zurücksetzen?"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:83
 #: coreplugins/lightning/public/Login.jsx:62
@@ -4205,10 +3931,14 @@ msgid ""
 "visit %(link)s and make sure you can access the cloud platform, then try "
 "again."
 msgstr ""
+"Ihr Lightning-Cloud-Konto ist noch nicht aktiv. Um es zu aktivieren, "
+"besuchen Sie %(link)s und stellen Sie sicher, dass Sie auf die "
+"Cloud-Plattform zugreifen können. Versuchen Sie es dann nochmal."
 
 #: coreplugins/lightning/public/CloudLogin.jsx:114
 msgid "Please confirm the password of your Lightning account to continue:"
 msgstr ""
+"Bitte bestätigen Sie das Passwort Ihres Lightning-Kontos, um fortzufahren:"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:118
 #: coreplugins/lightning/public/Login.jsx:103
@@ -4217,19 +3947,15 @@ msgstr "Passwort"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:119
 msgid "switch"
-msgstr ""
+msgstr "wechseln"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:127
-#, fuzzy
-#| msgid "Forgot password?"
 msgid "Reset password"
-msgstr "Passwort vergessen?"
+msgstr "Passwort zurücksetzen"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:133
-#, fuzzy
-#| msgid "Password"
 msgid "Confirm Password"
-msgstr "Passwort"
+msgstr "Passwort bestätigen"
 
 #: coreplugins/lightning/public/CostEstimateItem.jsx:113
 msgid "Cannot retrieve estimate. Try again later."
@@ -4316,17 +4042,15 @@ msgstr "Neu synchronisieren"
 
 #: coreplugins/lightning/public/Dashboard.jsx:185
 msgid "Share Buttons"
-msgstr ""
+msgstr "Teilen-Schaltflächen"
 
 #: coreplugins/lightning/public/Dashboard.jsx:187
-#, fuzzy
-#| msgid "Enabled"
 msgid "Disabled"
-msgstr "Aktiviert"
+msgstr "Deaktiviert"
 
 #: coreplugins/lightning/public/Dashboard.jsx:189
 msgid "Toggle"
-msgstr ""
+msgstr "Umschalten"
 
 #: coreplugins/lightning/public/Dashboard.jsx:198
 msgid "Dashboard"
@@ -4353,112 +4077,88 @@ msgid "Login and Sync"
 msgstr "Anmelden und synchronisieren"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:119
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot communicate with Lightning's cloud platform. Try again later."
 msgstr ""
-"Neue Aufgabe kann nicht erstellt werden. Bitte versuchen Sie es später noch "
-"einmal."
+"Keine Verbindung zur Cloud-Plattform von Lightning möglich. Versuchen Sie es "
+"später nochmal."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:150
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot calculate size. Try again later."
-msgstr ""
-"Schätzung kann nicht abgerufen werden. Versuchen Sie es später noch einmal."
+msgstr "Größe kann nicht berechnet werden. Versuchen Sie es später nochmal."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:193
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Service not available. Try again later."
-msgstr ""
-"Schätzung kann nicht abgerufen werden. Versuchen Sie es später noch einmal."
+msgstr "Dienst nicht verfügbar. Versuchen Sie es später nochmal."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:196
-#, fuzzy
-#| msgid "Cannot retrieve estimate. Try again later."
 msgid "Cannot verify credentials. Try again later."
 msgstr ""
-"Schätzung kann nicht abgerufen werden. Versuchen Sie es später noch einmal."
+"Anmeldedaten können nicht überprüft werden. Versuchen Sie es später nochmal."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:263
-#, fuzzy
-#| msgid "Invalid response: %(error)s"
 msgid "Invalid response"
-msgstr "Ungültige Antwort: %(error)s"
+msgstr "Ungültige Antwort"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:266
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid "Cannot share. Please try again in a bit."
-msgstr ""
-"Neue Aufgabe kann nicht erstellt werden. Bitte versuchen Sie es später noch "
-"einmal."
+msgstr "Teilen nicht möglich. Bitte versuchen Sie es gleich nochmal."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:278
 msgid "Checking your credentials..."
-msgstr ""
+msgstr "Zugangsdaten werden überprüft..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:287
-#, fuzzy
-#| msgid "Creating project..."
 msgid "Retrieving your projects..."
-msgstr "Projekt wird erstellt..."
+msgstr "Ihre Projekte werden abgerufen..."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:301
 msgid ""
 "Your Lightning account does not have permanent cloud storage. You can still "
 "share, but data will be deleted shortly after upload."
 msgstr ""
+"Ihr Lightning-Konto hat keinen dauerhaften Cloud-Speicher. Sie können "
+"trotzdem teilen, aber die Daten werden kurz nach dem Hochladen gelöscht."
 
 #: coreplugins/lightning/public/ShareDialog.jsx:313
-#, fuzzy
-#| msgid "Created on"
 msgid "Create New"
-msgstr "Erstellt am"
+msgstr "Neu erstellen"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:329
 msgid "All Assets + Original Images"
-msgstr ""
+msgstr "Alle Dateien + Originalbilder"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:330
 msgid "Only"
-msgstr ""
+msgstr "Nur"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:342
 msgid "Size exceeds available storage quota"
-msgstr ""
+msgstr "Größe überschreitet verfügbares Speicherkontingent"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:355
 msgid "Select All"
-msgstr ""
+msgstr "Alle auswählen"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:359
 msgid "Deselect All"
-msgstr ""
+msgstr "Alle abwählen"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:389
-#, fuzzy
-#| msgid "Lightning Network"
 msgid "Share with Lightning"
-msgstr "Lightning Netzwerk"
+msgstr "Mit Lightning teilen"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:392
-#, fuzzy
-#| msgid "Saving..."
 msgid "Sharing..."
-msgstr "Speichern..."
+msgstr "Wird geteilt..."
 
 #: coreplugins/lightning/public/app.jsx:42
-#, fuzzy
-#| msgid "Lightning Network"
 msgid "Lightning"
-msgstr "Lightning Netzwerk"
+msgstr "Lightning"
 
 #: coreplugins/lightning/public/app.jsx:43
 msgid ""
 "Lightning is a cloud service built by WebODM developers that allows you to:"
-msgstr ""
+msgstr "Lightning ist ein Cloud-Dienst der WebODM-Entwickler, mit dem Sie:"
 
 #: coreplugins/lightning/public/app.jsx:46
 #, python-format
@@ -4466,10 +4166,12 @@ msgid ""
 "Quickly process datasets with high performance servers powered by the "
 "%(link)s photogrammetry engine"
 msgstr ""
+"Datensätze schnell auf Hochleistungsservern mit der Photogrammetrie-Engine "
+"%(link)s verarbeiten"
 
 #: coreplugins/lightning/public/app.jsx:49
 msgid "Easily share public links to your datasets"
-msgstr ""
+msgstr "Öffentliche Links zu Ihren Datensätzen einfach teilen"
 
 #: coreplugins/lightning/public/app.jsx:51
 msgid "register"
@@ -4503,7 +4205,7 @@ msgstr "Berechne …"
 
 #: coreplugins/measure/public/MeasurePopup.jsx:191
 msgid "Base surface:"
-msgstr ""
+msgstr "Basisfläche:"
 
 #: coreplugins/measure/public/app.jsx:19
 msgid "Measure volume, area and length"
@@ -4576,48 +4278,50 @@ msgstr "Messungen exportieren"
 #: coreplugins/objdetect/public/ObjDetect.jsx:37
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:221
 msgid "Object Detection"
-msgstr ""
+msgstr "Objekterkennung"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:47
 msgid ""
 "No orthophoto is available. To use object detection you need an orthophoto."
 msgstr ""
+"Kein Orthofoto verfügbar. Für die Objekterkennung wird ein Orthofoto "
+"benötigt."
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:93
 msgid "Label:"
-msgstr ""
+msgstr "Label:"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:94
 msgid "Confidence:"
-msgstr ""
+msgstr "Konfidenz:"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:178
 msgid "Cars"
-msgstr ""
+msgstr "Autos"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:179
 msgid "Trees"
-msgstr ""
+msgstr "Bäume"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:180
 msgid "Athletic Facilities"
-msgstr ""
+msgstr "Sportanlagen"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:181
 msgid "Boats"
-msgstr ""
+msgstr "Boote"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:182
 msgid "Planes"
-msgstr ""
+msgstr "Flugzeuge"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:199
 msgid "Detect"
-msgstr ""
+msgstr "Erkennen"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:204
 msgid "Count:"
-msgstr ""
+msgstr "Anzahl:"
 
 #~ msgid "Short Link"
 #~ msgstr "Kurzlink"

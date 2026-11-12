@@ -21,11 +21,11 @@ msgstr ""
 
 #: app/admin.py:104
 msgid "Cannot restore default logo"
-msgstr ""
+msgstr "Standardlogo kann nicht wiederhergestellt werden"
 
 #: app/admin.py:118
 msgid "Restore Default"
-msgstr ""
+msgstr "Standard wiederherstellen"
 
 #: app/admin.py:140
 msgid "Enter custom CSS"
@@ -118,12 +118,13 @@ msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
+"Plugin %(plugin)s erfolgreich aktualisiert. Bitte starten Sie WebODM neu, um "
+"die Änderungen zu übernehmen."
 
 #: app/admin.py:374
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "Plugin erfolgreich hinzugefügt"
+msgstr "%(plugin)s erfolgreich installiert"
 
 #: app/admin.py:378
 #, python-format
@@ -147,37 +148,35 @@ msgid "Actions"
 msgstr "Aktionen"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid boundaries"
 msgid "Invalid payload."
-msgstr "Ungültige Grenzen"
+msgstr "Ungültige Nutzdaten."
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid rescale value"
 msgid "Invalid signature."
-msgstr "Ungültiger Skalierungswert"
+msgstr "Ungültige Signatur."
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
-msgstr ""
+msgstr "Benutzerkonto ist deaktiviert."
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "Ungültiger Authorization-Header. Keine Anmeldedaten angegeben."
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
 msgstr ""
+"Ungültiger Authorization-Header. Anmeldedaten dürfen keine Leerzeichen "
+"enthalten."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "Signatur ist abgelaufen."
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "Fehler beim Dekodieren der Signatur."
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -204,16 +203,11 @@ msgstr ""
 "Wachstumsstatium an."
 
 #: app/api/formulas.py:27
-#, fuzzy
-#| msgid ""
-#| "Normalized Difference Vegetation Index shows the amount of green "
-#| "vegetation."
 msgid ""
 "Normalized Difference Water Index shows the amount of water content in water "
 "bodies."
 msgstr ""
-"Der normalisierte Differenzvegetationsindex zeigt die Menge an grüner "
-"Vegetation."
+"Der Normalized Difference Water Index zeigt den Wassergehalt in Gewässern."
 
 #: app/api/formulas.py:37
 msgid ""
@@ -280,52 +274,71 @@ msgid ""
 "Soil Adjusted Vegetation Index is similar to NDVI but attempts to remove the "
 "effects of soil areas using an adjustment factor (0.5)."
 msgstr ""
+"Der Soil Adjusted Vegetation Index ähnelt dem NDVI, versucht aber, die "
+"Einflüsse von Bodenflächen mit einem Korrekturfaktor (0,5) zu entfernen."
 
 #: app/api/formulas.py:81
 msgid ""
 "Modified Non-Linear Index improves the Non-Linear Index algorithm to account "
 "for soil areas."
 msgstr ""
+"Der Modified Non-Linear Index verbessert den Non-Linear-Index-Algorithmus, "
+"um Bodenflächen zu berücksichtigen."
 
 #: app/api/formulas.py:85
 msgid ""
 "Modified Simple Ratio is an improvement of the Simple Ratio (SR) index to be "
 "more sensitive to vegetation."
 msgstr ""
+"Die Modified Simple Ratio ist eine Verbesserung des Simple-Ratio-Index (SR), "
+"die empfindlicher auf Vegetation reagiert."
 
 #: app/api/formulas.py:89
 msgid ""
 "Renormalized Difference Vegetation Index uses the difference between near-IR "
 "and red, plus NDVI to show areas of healthy vegetation."
 msgstr ""
+"Der Renormalized Difference Vegetation Index nutzt die Differenz zwischen "
+"Nahinfrarot und Rot sowie den NDVI, um Flächen mit gesunder Vegetation "
+"anzuzeigen."
 
 #: app/api/formulas.py:93
 msgid ""
 "Transformed Difference Vegetation Index highlights vegetation cover in urban "
 "environments."
 msgstr ""
+"Der Transformed Difference Vegetation Index hebt die Vegetationsbedeckung in "
+"städtischen Gebieten hervor."
 
 #: app/api/formulas.py:97
 msgid ""
 "Optimized Soil Adjusted Vegetation Index is based on SAVI, but tends to work "
 "better in areas with little vegetation where soil is visible."
 msgstr ""
+"Der Optimized Soil Adjusted Vegetation Index basiert auf SAVI, funktioniert "
+"aber meist besser in Gebieten mit wenig Vegetation, in denen der Boden "
+"sichtbar ist."
 
 #: app/api/formulas.py:101
 msgid "Leaf Area Index estimates foliage areas and predicts crop yields."
-msgstr ""
+msgstr "Der Leaf Area Index schätzt Blattflächen und sagt Ernteerträge voraus."
 
 #: app/api/formulas.py:106
 msgid ""
 "Enhanced Vegetation Index is useful in areas where NDVI might saturate, by "
 "using blue wavelengths to correct soil signals."
 msgstr ""
+"Der Enhanced Vegetation Index ist nützlich in Gebieten, in denen der NDVI "
+"sättigen könnte, da er blaue Wellenlängen zur Korrektur von Bodensignalen "
+"nutzt."
 
 #: app/api/formulas.py:111
 msgid ""
 "Atmospherically Resistant Vegetation Index. Useful when working with imagery "
 "for regions with high atmospheric aerosol content."
 msgstr ""
+"Atmospherically Resistant Vegetation Index. Nützlich bei Bildern von "
+"Regionen mit hohem atmosphärischem Aerosolgehalt."
 
 #: app/api/formulas.py:116
 msgid "Temperature in Celsius degrees."
@@ -337,29 +350,27 @@ msgstr "Temperatur in Hundertstel Grad Kelvin."
 
 #: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
-msgstr ""
+msgstr "Identitätswechsel nicht möglich, Benutzer ist kein Superuser."
 
 #: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
-msgstr ""
+msgstr "Anmeldung mit den angegebenen Anmeldedaten nicht möglich."
 
 #: app/api/jwt.py:57
 msgid "Must include \"username\" and \"password\"."
-msgstr ""
+msgstr "Muss \"username\" und \"password\" enthalten."
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid rescale value"
 msgid "Invalid token."
-msgstr "Ungültiger Skalierungswert"
+msgstr "Ungültiges Token."
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "Das Feld orig_iat ist erforderlich."
 
 #: app/api/jwt.py:78
 msgid "Refresh has expired."
-msgstr ""
+msgstr "Die Aktualisierung ist abgelaufen."
 
 #: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
@@ -368,7 +379,7 @@ msgstr "Keine Dateien geladen"
 #: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
 #: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
 msgid "Invalid uuid"
-msgstr ""
+msgstr "Ungültige UUID"
 
 #: app/api/media.py:158 app/api/splats.py:140
 msgid "File exceeds maximum allowed size"
@@ -376,40 +387,38 @@ msgstr "Maximale Dateigröße überschritten"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "Ungültige Overlay-ID"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "Datei fehlt"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "%(file)s ist größer als %(size)s MB."
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "Ungültige Overlay-Metadaten"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
 msgid "Invalid GeoJSON"
-msgstr ""
+msgstr "Ungültiges GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "Keine DXF-Datei oder gezippte Shapefile: %(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "Ungültiger EPSG Code: %(value)s"
+msgstr "Ungültiger EPSG-Code"
 
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "%(file)s kann nicht konvertiert werden: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -417,62 +426,54 @@ msgstr "Projekt kann nicht dupliziert werden"
 
 #: app/api/projects.py:243
 msgid "Invalid user in permissions list"
-msgstr ""
+msgstr "Ungültiger Benutzer in der Liste der Zugriffsrechte"
 
 #: app/api/projects.py:245
-#, fuzzy
-#| msgid "Invalid permissions"
 msgid "Invalid group in permissions list"
-msgstr "Ungültige Berechtigungen"
+msgstr "Ungültige Gruppe in der Liste der Zugriffsrechte"
 
 #: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr "Ungültige Berechtigungen"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid rescale value"
 msgid "Invalid image size"
-msgstr "Ungültiger Skalierungswert"
+msgstr "Ungültige Bildgröße"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "Der Aufgabe fehlt %(asset)s"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
-msgstr ""
+msgstr "Export ist noch nicht bereit"
 
 #: app/api/splats.py:52
-#, fuzzy
-#| msgid "Invalid boundaries"
 msgid "Invalid export"
-msgstr "Ungültige Grenzen"
+msgstr "Ungültiger Export"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr ""
+msgstr "Export ist abgelaufen, bitte erstellen Sie einen neuen"
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
 msgstr ""
+"Splats-Modell kann nicht hochgeladen werden (der Aufgabe fehlt eine "
+"Punktwolke)"
 
 #: app/api/splats.py:77
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "A single file must be uploaded"
-msgstr "Keine Dateien geladen"
+msgstr "Es muss genau eine Datei hochgeladen werden"
 
 #: app/api/splats.py:82
-#, fuzzy
-#| msgid "Invalid rescale value"
 msgid "Invalid filename"
-msgstr "Ungültiger Skalierungswert"
+msgstr "Ungültiger Dateiname"
 
 #: app/api/splats.py:86 app/api/tasks.py:941
 msgid "Invalid file type"
-msgstr ""
+msgstr "Ungültiger Dateityp"
 
 #: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
 #: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
@@ -481,10 +482,8 @@ msgid "Asset does not exist"
 msgstr "Asset existiert nicht"
 
 #: app/api/tasks.py:115
-#, fuzzy
-#| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, processing node is not valid"
-msgstr "Man benötigt mindestens 2 Bilder"
+msgstr "Aufgabe kann nicht erstellt werden, Verarbeitungsknoten ist ungültig"
 
 #: app/api/tasks.py:308
 msgid "You need to upload at least 1 file before commit"
@@ -495,10 +494,8 @@ msgid "Cannot duplicate task"
 msgstr "Aufgabe kann nicht dupliziert werden"
 
 #: app/api/tasks.py:411
-#, fuzzy
-#| msgid "Cannot create task, you need at least 2 images"
 msgid "Cannot create task, alignment task is not valid"
-msgstr "Man benötigt mindestens 2 Bilder"
+msgstr "Aufgabe kann nicht erstellt werden, Ausrichtungsaufgabe ist ungültig"
 
 #: app/api/tasks.py:428
 msgid "Cannot create task, you need at least 2 images"
@@ -523,31 +520,31 @@ msgstr ""
 #: app/api/tasks.py:810
 #, python-format
 msgid "Invalid URL. Did you mean %(hint)s ?"
-msgstr ""
+msgstr "Ungültige URL. Meinten Sie %(hint)s ?"
 
 #: app/api/tasks.py:952
 msgid "Invalid file type (extension mismatch)"
-msgstr ""
+msgstr "Ungültiger Dateityp (Dateiendung passt nicht)"
 
 #: app/api/tasks.py:976
 msgid "Some parameters are not integers"
-msgstr ""
+msgstr "Einige Parameter sind keine Ganzzahlen"
 
 #: app/api/tasks.py:1037 app/api/tasks.py:1042
 msgid "GeoTIFF must have a valid CRS"
-msgstr ""
+msgstr "GeoTIFF muss ein gültiges KBS haben"
 
 #: app/api/tasks.py:1044
 msgid "Elevation model must have at most 2 band"
-msgstr ""
+msgstr "Höhenmodell darf höchstens 2 Bänder haben"
 
 #: app/api/tasks.py:1050
 msgid "Point cloud must be a valid LAZ/LAS file"
-msgstr ""
+msgstr "Punktwolke muss eine gültige LAZ/LAS-Datei sein"
 
 #: app/api/tasks.py:1056
 msgid "Textured model must be a valid GLB file"
-msgstr ""
+msgstr "Struktur-Modell muss eine gültige GLB-Datei sein"
 
 #: app/api/tasks.py:1060
 msgid "No assets uploaded"
@@ -555,15 +552,15 @@ msgstr "Keine Dateien geladen"
 
 #: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
-msgstr ""
+msgstr "Ungültiger Grenzen-Parameter"
 
 #: app/api/tiler.py:404
 msgid "Invalid tile size parameter"
-msgstr ""
+msgstr "Ungültiger Kachelgrößen-Parameter"
 
 #: app/api/tiler.py:437 app/api/tiler.py:521
 msgid "Outside of bounds"
-msgstr ""
+msgstr "Außerhalb der Grenzen"
 
 #: app/api/tiler.py:448
 msgid "Invalid boundaries"
@@ -579,16 +576,19 @@ msgstr "Ungültiger Skalierungswert"
 
 #: app/api/tiler.py:567
 msgid "Invalid hillshade value"
-msgstr ""
+msgstr "Ungültiger Schummerungswert"
 
 #: app/api/tiler.py:570
 msgid "Cannot compute hillshade of non-elevation raster (multiple bands found)"
 msgstr ""
+"Schummerung für Nicht-Höhenraster nicht berechenbar (mehrere Bänder gefunden)"
 
 #: app/api/tiler.py:594
 msgid ""
 "Cannot process tile: intensity image provided, but no RGB data was computed."
 msgstr ""
+"Kachel kann nicht verarbeitet werden: Intensitätsbild angegeben, aber keine "
+"RGB-Daten berechnet."
 
 #: app/api/tiler.py:652 app/api/tiler.py:654
 #, python-format
@@ -596,10 +596,9 @@ msgid "Unsupported format: %(value)s"
 msgstr "Nicht unterstütztes Format: %(value)s"
 
 #: app/api/tiler.py:676
-#, fuzzy, python-format
-#| msgid "Invalid EPSG code: %(value)s"
+#, python-format
 msgid "Invalid resample value: %(value)s"
-msgstr "Ungültiger EPSG Code: %(value)s"
+msgstr "Ungültiger Resampling-Wert: %(value)s"
 
 #: app/api/tiler.py:682
 #, python-format
@@ -607,36 +606,36 @@ msgid "Invalid EPSG code: %(value)s"
 msgstr "Ungültiger EPSG Code: %(value)s"
 
 #: app/api/tiler.py:688 app/api/tiler.py:690
-#, fuzzy, python-format
-#| msgid "Invalid EPSG code: %(value)s"
+#, python-format
 msgid "Invalid PROJ string: %(value)s"
-msgstr "Ungültiger EPSG Code: %(value)s"
+msgstr "Ungültiger PROJ-String: %(value)s"
 
 #: app/api/tiler.py:693
 msgid "Both formula and bands parameters are required"
-msgstr ""
+msgstr "Die Parameter formula und bands sind beide erforderlich"
 
 #: app/api/tiler.py:716
 #, python-format
 msgid "Invalid rescale value: %(value)s"
-msgstr ""
+msgstr "Ungültiger Skalierungswert: %(value)s"
 
 #: app/api/tiler.py:724
 #, python-format
 msgid "Invalid hillshade value: %(value)s"
-msgstr ""
+msgstr "Ungültiger Schummerungswert: %(value)s"
 
 #: app/api/tiler.py:735
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
+"EPSG kann bei nicht georeferenzierten Datensätzen nicht verwendet werden"
 
 #: app/models/basemap.py:14
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: app/models/basemap.py:15
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:32
@@ -645,43 +644,43 @@ msgstr "Label"
 
 #: app/models/basemap.py:17
 msgid "Attribution"
-msgstr ""
+msgstr "Quellenangabe"
 
 #: app/models/basemap.py:20
 msgid "Max zoom"
-msgstr ""
+msgstr "Max. Zoom"
 
 #: app/models/basemap.py:23
 msgid "Min zoom"
-msgstr ""
+msgstr "Min. Zoom"
 
 #: app/models/basemap.py:24
 msgid "Subdomains"
-msgstr ""
+msgstr "Subdomains"
 
 #: app/models/basemap.py:25
 msgid "Layers"
-msgstr ""
+msgstr "Ebenen"
 
 #: app/models/basemap.py:26
 msgid "Styles"
-msgstr ""
+msgstr "Stile"
 
 #: app/models/basemap.py:31
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #: app/models/basemap.py:32
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: app/models/basemap.py:35
 msgid "Basemap"
-msgstr ""
+msgstr "Basiskarte"
 
 #: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "Basiskarten"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -694,7 +693,7 @@ msgstr "Name"
 
 #: app/models/plugin.py:6
 msgid "Whether this plugin is turned on."
-msgstr ""
+msgstr "Ob dieses Plugin aktiviert ist."
 
 #: app/models/plugin.py:6
 msgid "Enabled"
@@ -710,7 +709,7 @@ msgstr "Plugins"
 
 #: app/models/plugin_datum.py:6
 msgid "Setting key"
-msgstr ""
+msgstr "Einstellungsschlüssel"
 
 #: app/models/plugin_datum.py:6
 msgid "Key"
@@ -736,7 +735,7 @@ msgstr "Dezimalzahl"
 
 #: app/models/plugin_datum.py:10
 msgid "Bool value"
-msgstr ""
+msgstr "Bool-Wert"
 
 #: app/models/plugin_datum.py:11
 msgid "String value"
@@ -744,7 +743,7 @@ msgstr "Alphanumerischer Wert"
 
 #: app/models/plugin_datum.py:12
 msgid "JSON value"
-msgstr ""
+msgstr "JSON-Wert"
 
 #: app/models/plugin_datum.py:18 app/models/plugin_datum.py:19
 msgid "Plugin Datum"
@@ -760,11 +759,13 @@ msgstr "Besitzer"
 
 #: app/models/preset.py:9
 msgid "A label used to describe the preset"
-msgstr ""
+msgstr "Ein Label zur Beschreibung der Voreinstellung"
 
 #: app/models/preset.py:10
 msgid "Options that define this preset (same format as in a Task's options)."
 msgstr ""
+"Optionen, die diese Voreinstellung definieren (gleiches Format wie die "
+"Optionen einer Aufgabe)."
 
 #: app/models/preset.py:10 app/models/task.py:252
 msgid "Options"
@@ -800,27 +801,27 @@ msgstr "Voreinstellungen"
 
 #: app/models/profile.py:15
 msgid "Maximum disk quota in megabytes"
-msgstr ""
+msgstr "Maximales Speicherkontingent in Megabyte"
 
 #: app/models/profile.py:15
 msgid "Quota"
-msgstr ""
+msgstr "Kontingent"
 
 #: app/models/profile.py:16
 msgid "Cluster Id this user is assigned to"
-msgstr ""
+msgstr "Cluster-Id, der dieser Benutzer zugewiesen ist"
 
 #: app/models/profile.py:16
 msgid "Cluster Id"
-msgstr ""
+msgstr "Cluster-Id"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
-msgstr ""
+msgstr "Für SSO verwendetes OIDC-Subject"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject"
-msgstr ""
+msgstr "OIDC-Subject"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -828,7 +829,7 @@ msgstr "Die Person, die das Projekt erstellt hat"
 
 #: app/models/project.py:28
 msgid "A label used to describe the project"
-msgstr ""
+msgstr "Ein Label zur Beschreibung des Projekts"
 
 #: app/models/project.py:29
 msgid "More in-depth description of the project"
@@ -840,6 +841,9 @@ msgid ""
 "running tasks need to wait for tasks to be properly cleaned up before they "
 "can be deleted."
 msgstr ""
+"Ob dieses Projekt zum Löschen markiert wurde. Projekte mit laufenden "
+"Aufgaben müssen warten, bis die Aufgaben ordnungsgemäß bereinigt wurden, "
+"bevor sie gelöscht werden können."
 
 #: app/models/project.py:31
 msgid "Deleting"
@@ -855,29 +859,28 @@ msgstr "Tags"
 
 #: app/models/project.py:33
 msgid "A flag indicating whether this project is available to the public"
-msgstr ""
+msgstr "Kennzeichen, ob dieses Projekt öffentlich verfügbar ist"
 
 #: app/models/project.py:33 app/models/task.py:263
 msgid "Public"
-msgstr ""
+msgstr "Öffentlich"
 
 #: app/models/project.py:34
 msgid "A flag indicating whether this public project can be edited"
 msgstr ""
+"Ein Flag, das angibt, ob dieses öffentliche Projekt bearbeitet werden kann"
 
 #: app/models/project.py:34 app/models/task.py:264
 msgid "Public Edit"
-msgstr ""
+msgstr "Öffentlich bearbeitbar"
 
 #: app/models/project.py:35 app/models/redirect.py:7
-#, fuzzy
-#| msgid "More in-depth description of the project"
 msgid "Public identifier of the project"
-msgstr "Ausführliche Beschreibung des Projekts"
+msgstr "Öffentliche Kennung des Projekts"
 
 #: app/models/project.py:35 app/models/redirect.py:7
 msgid "Public Id"
-msgstr ""
+msgstr "Öffentliche Id"
 
 #: app/models/project.py:108 app/models/task.py:484
 #, python-format
@@ -893,30 +896,24 @@ msgid "Projects"
 msgstr "Projekte"
 
 #: app/models/redirect.py:6
-#, fuzzy
-#| msgid "Project"
 msgid "Project Id"
-msgstr "Projekt"
+msgstr "Projekt-Id"
 
 #: app/models/redirect.py:8
-#, fuzzy
-#| msgid "Task"
 msgid "Task Id"
-msgstr "Aufgabe"
+msgstr "Aufgaben-Id"
 
 #: app/models/redirect.py:9
-#, fuzzy
-#| msgid "The person who owns this preset"
 msgid "The person associated with this redirect"
-msgstr "Die Person, die diese Voreinstellung besitzt"
+msgstr "Die mit dieser Weiterleitung verknüpfte Person"
 
 #: app/models/redirect.py:23
 msgid "Redirect"
-msgstr ""
+msgstr "Weiterleitung"
 
 #: app/models/redirect.py:24
 msgid "Redirects"
-msgstr ""
+msgstr "Weiterleitungen"
 
 #: app/models/setting.py:20
 msgid "The name of your application"
@@ -924,7 +921,7 @@ msgstr "Der Name Ihrer Anwendung"
 
 #: app/models/setting.py:20
 msgid "App name"
-msgstr ""
+msgstr "App-Name"
 
 #: app/models/setting.py:21
 msgid "A 512x512 logo of your application (.png or .jpeg)"
@@ -944,7 +941,7 @@ msgstr "Organisationsname"
 
 #: app/models/setting.py:32
 msgid "The website URL of your organization"
-msgstr ""
+msgstr "Die Website-URL Ihrer Organisation"
 
 #: app/models/setting.py:32
 msgid "Organization website"
@@ -957,7 +954,7 @@ msgstr "Thema"
 
 #: app/models/setting.py:34
 msgid "Active theme"
-msgstr ""
+msgstr "Aktives Thema"
 
 #: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
 msgid "Application"
@@ -973,7 +970,7 @@ msgstr "Id"
 
 #: app/models/task.py:244
 msgid "Identifier of the task (as returned by NodeODM API)"
-msgstr ""
+msgstr "Kennung der Aufgabe (wie von der NodeODM-API zurückgegeben)"
 
 #: app/models/task.py:244
 msgid "UUID"
@@ -985,23 +982,27 @@ msgstr "Projekt, zu dem diese Aufgabe gehört"
 
 #: app/models/task.py:246
 msgid "A label for the task"
-msgstr ""
+msgstr "Ein Label für die Aufgabe"
 
 #: app/models/task.py:247
 msgid ""
 "Number of milliseconds that elapsed since the beginning of this task (-1 "
 "indicates that no information is available)"
 msgstr ""
+"Anzahl der Millisekunden seit Beginn dieser Aufgabe (-1 bedeutet, dass keine "
+"Informationen verfügbar sind)"
 
 #: app/models/task.py:247
 msgid "Processing Time"
-msgstr ""
+msgstr "Verarbeitungszeit"
 
 #: app/models/task.py:248
 msgid ""
 "Processing node assigned to this task (or null if this task has not been "
 "associated yet)"
 msgstr ""
+"Dieser Aufgabe zugewiesener Verarbeitungsknoten (oder null, falls die "
+"Aufgabe noch nicht zugeordnet wurde)"
 
 #: app/models/task.py:248 app/views/app.py:154 nodeodm/models.py:36
 msgid "Processing Node"
@@ -1012,80 +1013,85 @@ msgid ""
 "A flag indicating whether this task should be automatically assigned a "
 "processing node"
 msgstr ""
+"Ein Flag, das angibt, ob dieser Aufgabe automatisch ein Verarbeitungsknoten "
+"zugewiesen werden soll"
 
 #: app/models/task.py:249
 msgid "Auto Processing Node"
-msgstr ""
+msgstr "Automatischer Verarbeitungsknoten"
 
 #: app/models/task.py:250
 msgid "Current status of the task"
-msgstr ""
+msgstr "Aktueller Status der Aufgabe"
 
 #: app/models/task.py:250
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: app/models/task.py:251
 msgid "The last processing error received"
-msgstr ""
+msgstr "Der zuletzt erhaltene Verarbeitungsfehler"
 
 #: app/models/task.py:251
 msgid "Last Error"
-msgstr ""
+msgstr "Letzter Fehler"
 
 #: app/models/task.py:252
 msgid "Options that are being used to process this task"
-msgstr ""
+msgstr "Optionen, die zur Verarbeitung dieser Aufgabe verwendet werden"
 
 #: app/models/task.py:253
 msgid "List of available assets to download"
-msgstr ""
+msgstr "Liste der zum Herunterladen verfügbaren Dateien"
 
 #: app/models/task.py:253
 msgid "Available Assets"
-msgstr ""
+msgstr "Verfügbare Dateien"
 
 #: app/models/task.py:255
 msgid "Extent of the orthophoto"
-msgstr ""
+msgstr "Ausdehnung des Orthofotos"
 
 #: app/models/task.py:255
 msgid "Orthophoto Extent"
-msgstr ""
+msgstr "Ausdehnung des Orthofotos"
 
 #: app/models/task.py:256
 msgid "Extent of the DSM"
-msgstr ""
+msgstr "Ausdehnung des DSM"
 
 #: app/models/task.py:256
 msgid "DSM Extent"
-msgstr ""
+msgstr "DSM-Ausdehnung"
 
 #: app/models/task.py:257
 msgid "Extent of the DTM"
-msgstr ""
+msgstr "Ausdehnung des DTM"
 
 #: app/models/task.py:257
 msgid "DTM Extent"
-msgstr ""
+msgstr "DTM-Ausdehnung"
 
 #: app/models/task.py:261
 msgid ""
 "A requested action to be performed on the task. The selected action will be "
 "performed by the worker at the next iteration."
 msgstr ""
+"Eine angeforderte Aktion, die auf die Aufgabe angewendet werden soll. Die "
+"gewählte Aktion wird vom Worker bei der nächsten Iteration ausgeführt."
 
 #: app/models/task.py:261
 msgid "Pending Action"
-msgstr ""
+msgstr "Ausstehende Aktion"
 
 #: app/models/task.py:263
 msgid "A flag indicating whether this task is available to the public"
-msgstr ""
+msgstr "Ein Flag, das angibt, ob diese Aufgabe öffentlich verfügbar ist"
 
 #: app/models/task.py:264
 msgid "A flag indicating whether this public task can be edited"
 msgstr ""
+"Ein Flag, das angibt, ob diese öffentliche Aufgabe bearbeitet werden kann"
 
 #: app/models/task.py:266
 msgid ""
@@ -1093,133 +1099,145 @@ msgid ""
 "task have been / will be resized to the size specified here before "
 "processing."
 msgstr ""
+"Wenn ein anderer Wert als -1 gesetzt ist, wurden/werden die Bilder dieser "
+"Aufgabe vor der Verarbeitung auf die hier angegebene Größe skaliert."
 
 #: app/models/task.py:266
 msgid "Resize To"
-msgstr ""
+msgstr "Skalieren auf"
 
 #: app/models/task.py:269
 msgid ""
 "Value between 0 and 1 indicating the upload progress of this task's files to "
 "the processing node"
 msgstr ""
+"Wert zwischen 0 und 1, der den Upload-Fortschritt der Dateien dieser Aufgabe "
+"zum Verarbeitungsknoten angibt"
 
 #: app/models/task.py:270
 msgid "Upload Progress"
-msgstr ""
+msgstr "Upload-Fortschritt"
 
 #: app/models/task.py:273
 msgid ""
 "Value between 0 and 1 indicating the resize progress of this task's images"
 msgstr ""
+"Wert zwischen 0 und 1, der den Skalierungsfortschritt der Bilder dieser "
+"Aufgabe angibt"
 
 #: app/models/task.py:274
 msgid "Resize Progress"
-msgstr ""
+msgstr "Skalierungsfortschritt"
 
 #: app/models/task.py:277
 msgid ""
 "Value between 0 and 1 indicating the running progress (estimated) of this "
 "task"
 msgstr ""
+"Wert zwischen 0 und 1, der den (geschätzten) Verarbeitungsfortschritt dieser "
+"Aufgabe angibt"
 
 #: app/models/task.py:278
 msgid "Running Progress"
-msgstr ""
+msgstr "Laufender Fortschritt"
 
 #: app/models/task.py:280
 msgid "URL this task is imported from (only for imported tasks)"
 msgstr ""
+"URL, von der diese Aufgabe importiert wurde (nur für importierte Aufgaben)"
 
 #: app/models/task.py:280
 msgid "Import URL"
-msgstr ""
+msgstr "Import-URL"
 
 #: app/models/task.py:281
 msgid "Number of images associated with this task"
-msgstr ""
+msgstr "Anzahl der Bilder, die dieser Aufgabe zugeordnet sind"
 
 #: app/models/task.py:281
 msgid "Images Count"
-msgstr ""
+msgstr "Anzahl Bilder"
 
 #: app/models/task.py:282
 msgid ""
 "A flag indicating whether this task is currently waiting for information or "
 "files to be uploaded before being considered for processing."
 msgstr ""
+"Ein Flag, das angibt, ob diese Aufgabe derzeit auf Informationen oder "
+"hochzuladende Dateien wartet, bevor sie für die Verarbeitung berücksichtigt "
+"wird."
 
 #: app/models/task.py:282
 msgid "Partial"
-msgstr ""
+msgstr "Teilweise"
 
 #: app/models/task.py:283
 msgid ""
 "Serialized potree scene information used to save/load measurements and "
 "camera view angle"
 msgstr ""
+"Serialisierte Potree-Szeneninformationen zum Speichern/Laden von Messungen "
+"und Kamerablickwinkel"
 
 #: app/models/task.py:283
 msgid "Potree Scene"
-msgstr ""
+msgstr "Potree-Szene"
 
 #: app/models/task.py:284
 msgid "EPSG code of the dataset (if georeferenced)"
-msgstr ""
+msgstr "EPSG-Code des Datensatzes (falls georeferenziert)"
 
 #: app/models/task.py:285
 msgid ""
 "WKT definition of the dataset (if georeferenced and EPSG code is not "
 "available)"
 msgstr ""
+"WKT-Definition des Datensatzes (falls georeferenziert und kein EPSG-Code "
+"verfügbar ist)"
 
 #: app/models/task.py:286
-#, fuzzy
-#| msgid "Task"
 msgid "Task tags"
-msgstr "Aufgabe"
+msgstr "Aufgaben-Tags"
 
 #: app/models/task.py:287
 msgid "List of orthophoto bands"
-msgstr ""
+msgstr "Liste der Orthofoto-Bänder"
 
 #: app/models/task.py:287
 msgid "Orthophoto Bands"
-msgstr ""
+msgstr "Orthofoto-Bänder"
 
 #: app/models/task.py:288
 msgid "Size of the task on disk in megabytes"
-msgstr ""
+msgstr "Größe der Aufgabe auf dem Datenträger in Megabyte"
 
 #: app/models/task.py:288
 msgid "Size"
-msgstr ""
+msgstr "Größe"
 
 #: app/models/task.py:289
 msgid "A flag indicating whether this task was compacted"
-msgstr ""
+msgstr "Ein Flag, das angibt, ob diese Aufgabe komprimiert wurde"
 
 #: app/models/task.py:289
 msgid "Compact"
-msgstr ""
+msgstr "Komprimiert"
 
 #: app/models/task.py:290
 msgid "Polygon defining the crop area of this task"
-msgstr ""
+msgstr "Polygon, das die Zuschnittfläche dieser Aufgabe festlegt"
 
 #: app/models/task.py:290
 msgid "Crop Polygon"
-msgstr ""
+msgstr "Zuschnittpolygon"
 
 #: app/models/task.py:291
-#, fuzzy
-#| msgid "The person who owns this preset"
 msgid "List of media files associated with this task"
-msgstr "Die Person, die diese Voreinstellung besitzt"
+msgstr "Liste der Mediendateien, die dieser Aufgabe zugeordnet sind"
 
 #: app/models/task.py:291
 msgid "Media"
-msgstr ""
+msgstr "Medien"
 
 #: app/models/task.py:295
 msgid "Task"
@@ -1227,132 +1245,132 @@ msgstr "Aufgabe"
 
 #: app/models/task.py:296
 msgid "Tasks"
-msgstr ""
+msgstr "Aufgaben"
 
 #: app/models/task.py:307
 msgid "unnamed"
-msgstr ""
+msgstr "unbenannt"
 
 #: app/models/task.py:620
 msgid "Importing assets..."
-msgstr ""
+msgstr "Importiere Assets..."
 
 #: app/models/task.py:675 app/models/task.py:954
 msgid "Invalid zip file"
-msgstr ""
+msgstr "Ungültige ZIP-Datei"
 
 #: app/models/task.py:677
 msgid "Unsupported compression method"
-msgstr ""
+msgstr "Nicht unterstützte Komprimierungsmethode"
 
 #: app/models/task.py:772
 #, python-format
 msgid "Connection error: %(error)s"
-msgstr ""
+msgstr "Verbindungsfehler: %(error)s"
 
 #: app/models/task.py:852
 msgid "Cannot restart a task that has no processing node"
-msgstr ""
+msgstr "Eine Aufgabe ohne Verarbeitungsknoten kann nicht neu gestartet werden"
 
 #: app/models/task.py:1057
 msgid "Done!"
-msgstr ""
+msgstr "Fertig!"
 
 #: app/models/theme.py:18
 msgid "Name of theme"
-msgstr ""
+msgstr "Name des Themas"
 
 #: app/models/theme.py:21
 msgid "Most text, icons, and borders."
-msgstr ""
+msgstr "Der meiste Text, Symbole und Rahmen."
 
 #: app/models/theme.py:21
 msgid "Primary"
-msgstr ""
+msgstr "Primär"
 
 #: app/models/theme.py:22
 msgid "The main background color, and text color of some buttons."
-msgstr ""
+msgstr "Die Haupthintergrundfarbe und Textfarbe einiger Schaltflächen."
 
 #: app/models/theme.py:22
 msgid "Secondary"
-msgstr ""
+msgstr "Sekundär"
 
 #: app/models/theme.py:23
 msgid "Navigation links."
-msgstr ""
+msgstr "Navigationslinks."
 
 #: app/models/theme.py:23
 msgid "Tertiary"
-msgstr ""
+msgstr "Tertiär"
 
 #: app/models/theme.py:25
 msgid "Primary button color."
-msgstr ""
+msgstr "Farbe der primären Schaltfläche."
 
 #: app/models/theme.py:25
 msgid "Button Primary"
-msgstr ""
+msgstr "Schaltfläche Primär"
 
 #: app/models/theme.py:26
 msgid "Default button color."
-msgstr ""
+msgstr "Farbe der Standard-Schaltfläche."
 
 #: app/models/theme.py:26
 msgid "Button Default"
-msgstr ""
+msgstr "Schaltfläche Standard"
 
 #: app/models/theme.py:27
 msgid "Delete button color."
-msgstr ""
+msgstr "Farbe der Löschen-Schaltfläche."
 
 #: app/models/theme.py:27
 msgid "Button Danger"
-msgstr ""
+msgstr "Schaltfläche Gefahr"
 
 #: app/models/theme.py:29
 msgid "Background color of the site's header."
-msgstr ""
+msgstr "Hintergrundfarbe der Kopfzeile der Seite."
 
 #: app/models/theme.py:29
 msgid "Header Background"
-msgstr ""
+msgstr "Kopfzeilenhintergrund"
 
 #: app/models/theme.py:30
 msgid "Text and icons in the site's header."
-msgstr ""
+msgstr "Text und Symbole in der Kopfzeile der Seite."
 
 #: app/models/theme.py:30
 msgid "Header Primary"
-msgstr ""
+msgstr "Kopfzeile Primär"
 
 #: app/models/theme.py:32
 msgid "The color of most borders."
-msgstr ""
+msgstr "Die Farbe der meisten Rahmen."
 
 #: app/models/theme.py:32
 msgid "Border"
-msgstr ""
+msgstr "Rahmen"
 
 #: app/models/theme.py:33
 msgid "The background color of panels and some borders."
-msgstr ""
+msgstr "Die Hintergrundfarbe von Bereichen und einigen Rahmen."
 
 #: app/models/theme.py:33
 msgid "Highlight"
-msgstr ""
+msgstr "Hervorhebung"
 
 #: app/models/theme.py:35
 msgid "The border color of warning dialogs."
-msgstr ""
+msgstr "Die Rahmenfarbe von Warndialogen."
 
 #: app/models/theme.py:35
 msgid "Dialog Warning"
-msgstr ""
+msgstr "Dialogwarnung"
 
 #: app/models/theme.py:37
 msgid "The background color of failed notifications."
-msgstr ""
+msgstr "Die Hintergrundfarbe von Fehlermeldungen."
 
 #: app/models/theme.py:37
 msgid "Failed"
@@ -1360,19 +1378,19 @@ msgstr "Gescheitert"
 
 #: app/models/theme.py:38
 msgid "The background color of success notifications."
-msgstr ""
+msgstr "Die Hintergrundfarbe von Erfolgsmeldungen."
 
 #: app/models/theme.py:38
 msgid "Success"
-msgstr ""
+msgstr "Erfolg"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 Verboten"
 
 #: app/templates/app/403.html:7
 msgid "You do not have permission to access this page."
-msgstr ""
+msgstr "Sie haben keine Berechtigung, auf diese Seite zuzugreifen."
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1380,7 +1398,7 @@ msgstr "404 Seite nicht gefunden"
 
 #: app/templates/app/404.html:7
 msgid "Are you sure the address is correct?"
-msgstr ""
+msgstr "Sind Sie sicher, dass die Adresse korrekt ist?"
 
 #: app/templates/app/500.html:5
 msgid "500 Internal Server Error"
@@ -1394,7 +1412,7 @@ msgstr ""
 
 #: app/templates/app/about.html:26
 msgid "Minimize"
-msgstr ""
+msgstr "Minimieren"
 
 #: app/templates/app/about.html:30
 #, python-format
@@ -1405,16 +1423,20 @@ msgid ""
 "option) any later version. See %(link_start)sthe GNU Affero General Public "
 "License%(link_end)s for more details."
 msgstr ""
+"Dieses Programm ist freie Software: Sie können es unter den Bedingungen der "
+"GNU Affero General Public License, wie von der Free Software Foundation "
+"veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 3 "
+"der Lizenz oder (nach Ihrer Wahl) jeder späteren Version. Weitere Details "
+"finden Sie in %(link_start)sder GNU Affero General Public "
+"License%(link_end)s."
 
 #: app/templates/app/admin/404.html:4 app/templates/app/admin/404.html:8
 msgid "Page not found"
 msgstr "Seite nicht gefunden"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
-msgstr "Die Angeforderte Seite konnte leider nicht gefunden werden."
+msgstr "Die angeforderte Seite konnte leider nicht gefunden werden."
 
 #: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
 #: app/templates/app/admin/auth/user/change_password.html:15
@@ -1426,7 +1448,7 @@ msgstr "Die Angeforderte Seite konnte leider nicht gefunden werden."
 #: app/templates/app/admin/invalid_setup.html:6
 #: app/templates/app/admin/object_history.html:6
 msgid "Home"
-msgstr ""
+msgstr "Start"
 
 #: app/templates/app/admin/500.html:7
 msgid "Server error"
@@ -1437,126 +1459,126 @@ msgid "Server error (500)"
 msgstr "interner Server Fehler (500)"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "interner Server Fehler (500)"
+msgstr "Serverfehler <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
+"Ein Fehler ist aufgetreten. Er wurde per E-Mail an die Administratoren der "
+"Website gemeldet und sollte bald behoben sein. Vielen Dank für Ihre Geduld."
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
-msgstr ""
+msgstr "Ausgewählte Aktion ausführen"
 
 #: app/templates/app/admin/actions.html:8
 msgid "Go"
-msgstr ""
+msgstr "Ausführen"
 
 #: app/templates/app/admin/actions.html:16
 msgid "Click here to select the objects across all pages"
-msgstr ""
+msgstr "Hier klicken, um die Objekte aller Seiten auszuwählen"
 
 #: app/templates/app/admin/actions.html:16
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
-msgstr ""
+msgstr "Alle %(total_count)s %(module_name)s auswählen"
 
 #: app/templates/app/admin/actions.html:18
 msgid "Clear selection"
-msgstr ""
+msgstr "Auswahl aufheben"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Navigationspfad"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
 msgid "After you’ve created a user, you’ll be able to edit more user options."
 msgstr ""
+"Nachdem Sie einen Benutzer angelegt haben, können Sie weitere "
+"Benutzeroptionen bearbeiten."
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
 msgid "Error:"
-msgstr ""
+msgstr "Fehler:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
 msgid "Change password"
-msgstr ""
+msgstr "Passwort ändern"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 msgid "Set password"
-msgstr ""
+msgstr "Passwort festlegen"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] "Bitte prüfen Sie die angezeigten Fehler."
-msgstr[1] "Bitte prüfen Sie die angezeigten Fehler."
+msgstr[0] "Bitte korrigieren Sie den unten aufgeführten Fehler."
+msgstr[1] "Bitte korrigieren Sie die unten aufgeführten Fehler."
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
 msgstr ""
+"Geben Sie ein neues Passwort für den Benutzer <strong>%(username)s</strong> "
+"ein."
 
 #: app/templates/app/admin/auth/user/change_password.html:36
 msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
 msgstr ""
+"Diese Aktion wird die passwortbasierte Anmeldung für diesen Benutzer "
+"<strong>aktivieren</strong>."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "Passwortbasierte Anmeldung deaktivieren"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "Passwortbasierte Anmeldung aktivieren"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
-msgstr ""
+msgstr "Django-Website-Verwaltung"
 
 #: app/templates/app/admin/base_site.html:6
 msgid "Django administration"
-msgstr ""
+msgstr "Django-Verwaltung"
 
 #: app/templates/app/admin/change_form.html:22
 #, python-format
 msgid "Add %(name)s"
-msgstr ""
+msgstr "%(name)s hinzufügen"
 
 #: app/templates/app/admin/change_list.html:78
 msgid "Filter"
 msgstr "Filter"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "Accounts"
+msgstr "Anzahl ausblenden"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "Accounts"
+msgstr "Anzahl anzeigen"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "Alle Filter zurücksetzen"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
-msgstr ""
+msgstr "Plugin laden (.zip)"
 
 #: app/templates/app/admin/change_list_plugin.html:33
 msgid "Manage Plugins"
@@ -1564,16 +1586,16 @@ msgstr "Plugins verwalten"
 
 #: app/templates/app/admin/change_list_results.html:16
 msgid "Remove from sorting"
-msgstr ""
+msgstr "Aus der Sortierung entfernen"
 
 #: app/templates/app/admin/change_list_results.html:17
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
-msgstr ""
+msgstr "Sortierpriorität: %(priority_number)s"
 
 #: app/templates/app/admin/change_list_results.html:18
 msgid "Toggle sorting"
-msgstr ""
+msgstr "Sortierung umschalten"
 
 #: app/templates/app/admin/delete_confirmation.html:18
 #: app/templates/app/admin/submit_line.html:14
@@ -1588,6 +1610,9 @@ msgid ""
 "related objects, but your account doesn't have permission to delete the "
 "following types of objects:"
 msgstr ""
+"Das Löschen von %(object_name)s „%(escaped_object)s“ würde verwandte Objekte "
+"löschen, aber Ihr Konto hat keine Berechtigung, folgende Objekttypen zu "
+"löschen:"
 
 #: app/templates/app/admin/delete_confirmation.html:30
 #, python-format
@@ -1595,6 +1620,8 @@ msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
 "following protected related objects:"
 msgstr ""
+"Das Löschen von %(object_name)s „%(escaped_object)s“ würde das Löschen "
+"folgender geschützter verwandter Objekte erfordern:"
 
 #: app/templates/app/admin/delete_confirmation.html:35
 #, python-format
@@ -1602,25 +1629,27 @@ msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
 msgstr ""
+"Sind Sie sicher, dass Sie %(object_name)s \"%(escaped_object)s\" löschen "
+"möchten? Alle folgenden verwandten Elemente werden gelöscht:"
 
 #: app/templates/app/admin/delete_confirmation.html:37
 #: app/templates/app/admin/delete_selected_confirmation.html:31
 msgid "Objects"
-msgstr ""
+msgstr "Objekte"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
 msgid "Yes, I’m sure"
-msgstr ""
+msgstr "Ja, ich bin sicher"
 
 #: app/templates/app/admin/delete_confirmation.html:45
 #: app/templates/app/admin/delete_selected_confirmation.html:43
 msgid "No, take me back"
-msgstr ""
+msgstr "Nein, zurück"
 
 #: app/templates/app/admin/delete_selected_confirmation.html:17
 msgid "Delete multiple objects"
-msgstr ""
+msgstr "Mehrere Objekte löschen"
 
 #: app/templates/app/admin/delete_selected_confirmation.html:23
 #, python-format
@@ -1629,6 +1658,9 @@ msgid ""
 "objects, but your account doesn't have permission to delete the following "
 "types of objects:"
 msgstr ""
+"Das Löschen der ausgewählten %(objects_name)s würde verwandte Objekte "
+"löschen, aber Ihr Konto hat keine Berechtigung, folgende Objekttypen zu "
+"löschen:"
 
 #: app/templates/app/admin/delete_selected_confirmation.html:26
 #, python-format
@@ -1636,6 +1668,8 @@ msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
 msgstr ""
+"Das Löschen der ausgewählten %(objects_name)s würde das Löschen folgender "
+"geschützter verwandter Objekte erfordern:"
 
 #: app/templates/app/admin/delete_selected_confirmation.html:29
 #, python-format
@@ -1643,21 +1677,23 @@ msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
 msgstr ""
+"Sind Sie sicher, dass Sie die ausgewählten %(objects_name)s löschen möchten? "
+"Alle folgenden Objekte und ihre verwandten Elemente werden gelöscht:"
 
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "Change"
-msgstr ""
+msgstr "Ändern"
 
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "Ansehen"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
 msgid "View on site"
-msgstr ""
+msgstr "Auf der Website ansehen"
 
 #: app/templates/app/admin/edit_inline/tabular.html:26
 msgid "Delete?"
@@ -1666,41 +1702,39 @@ msgstr "Löschen?"
 #: app/templates/app/admin/filter.html:4
 #, python-format
 msgid " By %(filter_title)s "
-msgstr ""
+msgstr " Nach %(filter_title)s "
 
 #: app/templates/app/admin/includes/object_delete_summary.html:2
 msgid "Summary"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #: app/templates/app/admin/index.html:23
 msgid "Recent actions"
-msgstr ""
+msgstr "Letzte Aktionen"
 
 #: app/templates/app/admin/index.html:24
 msgid "My actions"
-msgstr ""
+msgstr "Meine Aktionen"
 
 #: app/templates/app/admin/index.html:28
 msgid "None available"
-msgstr ""
+msgstr "Keine vorhanden"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "Hinzugefügt:"
 
 #: app/templates/app/admin/index.html:33
 msgid "Changed:"
-msgstr ""
+msgstr "Geändert:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "Löschen"
+msgstr "Gelöscht:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
-msgstr ""
+msgstr "Unbekannter Inhalt"
 
 #: app/templates/app/admin/invalid_setup.html:12
 msgid ""
@@ -1708,14 +1742,17 @@ msgid ""
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
+"Etwas stimmt nicht mit Ihrer Datenbankinstallation. Stellen Sie sicher, dass "
+"die entsprechenden Datenbanktabellen erstellt wurden und die Datenbank für "
+"den entsprechenden Benutzer lesbar ist."
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
-msgstr ""
+msgstr "Verlauf"
 
 #: app/templates/app/admin/object_history.html:22
 msgid "Date/time"
-msgstr ""
+msgstr "Datum/Uhrzeit"
 
 #: app/templates/app/admin/object_history.html:24
 msgid "Action"
@@ -1724,19 +1761,21 @@ msgstr "Aktion"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Eintrag"
+msgstr[1] "Einträge"
 
 #: app/templates/app/admin/object_history.html:52
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
+"Dieses Objekt hat keinen Änderungsverlauf. Es wurde wahrscheinlich nicht "
+"über diese Administrationsseite hinzugefügt."
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
 msgid "Show all"
-msgstr ""
+msgstr "Alle anzeigen"
 
 #: app/templates/app/admin/pagination.html:11
 #: app/templates/app/admin/submit_line.html:4
@@ -1745,7 +1784,7 @@ msgstr "Speichern"
 
 #: app/templates/app/admin/popup_response.html:3
 msgid "Popup closing…"
-msgstr ""
+msgstr "Popup wird geschlossen…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1755,29 +1794,29 @@ msgstr "Suche"
 #, python-format
 msgid "%(counter)s result"
 msgid_plural "%(counter)s results"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(counter)s Ergebnis"
+msgstr[1] "%(counter)s Ergebnisse"
 
 #: app/templates/app/admin/search_form.html:9
 #, python-format
 msgid "%(full_result_count)s total"
-msgstr ""
+msgstr "%(full_result_count)s gesamt"
 
 #: app/templates/app/admin/submit_line.html:5
 msgid "Save as new"
-msgstr ""
+msgstr "Als neu speichern"
 
 #: app/templates/app/admin/submit_line.html:6
 msgid "Save and add another"
-msgstr ""
+msgstr "Speichern und weiteres hinzufügen"
 
 #: app/templates/app/admin/submit_line.html:7
 msgid "Save and continue editing"
-msgstr ""
+msgstr "Speichern und weiter bearbeiten"
 
 #: app/templates/app/admin/submit_line.html:7
 msgid "Save and view"
-msgstr ""
+msgstr "Speichern und ansehen"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -1800,6 +1839,9 @@ msgid ""
 "running an instance of %(nodeodm_link)s or some other software implementing "
 "this %(api_link)s."
 msgstr ""
+"Um loszulegen, „%(add_processing_node)s“. Ein Verarbeitungsknoten ist ein "
+"Computer, auf dem eine Instanz von %(nodeodm_link)s oder eine andere "
+"Software läuft, die diese %(api_link)s implementiert."
 
 #: app/templates/app/dashboard.html:29
 msgid "Select Images and GCP"
@@ -1817,12 +1859,13 @@ msgstr ""
 #: app/templates/app/dashboard.html:35
 msgid "You need at least 5 images, but 16-32 is typically the minimum."
 msgstr ""
+"Sie benötigen mindestens 5 Bilder, typischerweise sind jedoch 16–32 das "
+"Minimum."
 
 #: app/templates/app/dashboard.html:36
-#, fuzzy, python-format
-#| msgid "Images must overlap by 65%% or more"
+#, python-format
 msgid "Images must overlap by 65%% or more. Aim for 70-72%%"
-msgstr "Bilder sollten mindestens 65%% überlappen"
+msgstr "Bilder müssen sich um 65%% oder mehr überlappen. Ideal sind 70-72%%"
 
 #: app/templates/app/dashboard.html:37
 #, python-format
@@ -1835,41 +1878,46 @@ msgid ""
 "A %(link_start)sGCP File%(link_end)s is optional, but can increase "
 "georeferencing accuracy"
 msgstr ""
+"Eine %(link_start)sGCP-Datei%(link_end)s ist optional, kann aber die "
+"Genauigkeit der Georeferenzierung erhöhen"
 
 #: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
 #: app/views/dev.py:78
 msgid "Developer Tools"
-msgstr ""
+msgstr "Entwicklertools"
 
 #: app/templates/app/dev_tools.html:14
 msgid "Current Locale:"
-msgstr ""
+msgstr "Aktuelles Gebietsschema:"
 
 #: app/templates/app/dev_tools.html:15
 msgid ""
 "To change locale, modify your browser's locale settings, then refresh the "
 "page, or use the set locale button below."
 msgstr ""
+"Um das Gebietsschema zu ändern, passen Sie die Spracheinstellungen Ihres "
+"Browsers an und laden Sie die Seite neu, oder verwenden Sie die Schaltfläche "
+"unten."
 
 #: app/templates/app/dev_tools.html:18
 msgid "Translation Files (.zip):"
-msgstr ""
+msgstr "Übersetzungsdateien (.zip):"
 
 #: app/templates/app/dev_tools.html:22
 msgid "Download and Replace Translation Files"
-msgstr ""
+msgstr "Übersetzungsdateien herunterladen und ersetzen"
 
 #: app/templates/app/dev_tools.html:27
 msgid "Set locale:"
-msgstr ""
+msgstr "Gebietsschema festlegen:"
 
 #: app/templates/app/dev_tools.html:29
 msgid "Apply"
-msgstr ""
+msgstr "Anwenden"
 
 #: app/templates/app/dev_tools.html:33
 msgid "Executing… do not refresh the page! This could take a while."
-msgstr ""
+msgstr "Wird ausgeführt… Seite nicht neu laden! Dies kann eine Weile dauern."
 
 #: app/templates/app/logged_in_base.html:16
 #, python-format
@@ -1879,7 +1927,7 @@ msgstr "Hallo, %(user)s!"
 #: app/templates/app/logged_in_base.html:30
 #, python-format
 msgid "%(used)s of %(total)s used"
-msgstr ""
+msgstr "%(used)s von %(total)s benutzt"
 
 #: app/templates/app/logged_in_base.html:43
 msgid "Logout"
@@ -1899,7 +1947,7 @@ msgstr "Neues Projekt"
 
 #: app/templates/app/logged_in_base.html:103
 msgid "Administration"
-msgstr ""
+msgstr "Administration"
 
 #: app/templates/app/logged_in_base.html:108
 msgid "Accounts"
@@ -1919,7 +1967,7 @@ msgstr "Über"
 
 #: app/templates/app/processing_node.html:11 nodeodm/models.py:23
 msgid "Hostname"
-msgstr ""
+msgstr "Hostname"
 
 #: app/templates/app/processing_node.html:15 nodeodm/models.py:24
 msgid "Port"
@@ -1931,11 +1979,11 @@ msgstr "API Version"
 
 #: app/templates/app/processing_node.html:23 nodeodm/models.py:33
 msgid "Engine"
-msgstr ""
+msgstr "Engine"
 
 #: app/templates/app/processing_node.html:27 nodeodm/models.py:31
 msgid "Engine Version"
-msgstr ""
+msgstr "Engine-Version"
 
 #: app/templates/app/processing_node.html:31 nodeodm/models.py:27
 msgid "Queue Count"
@@ -1969,6 +2017,9 @@ msgid ""
 "recent tasks will be automatically deleted %(when)s, until usage falls below "
 "%(total)s."
 msgstr ""
+"Das Speicherkontingent wird überschritten (%(used)s von %(total)s benutzt). "
+"Die neuesten Aufgaben werden %(when)s automatisch gelöscht, bis die Nutzung "
+"unter %(total)s fällt."
 
 #: app/templates/app/quota.html:14
 #, python-format
@@ -1976,6 +2027,8 @@ msgid ""
 "Your account does not have a storage quota. Any new task will be "
 "automatically deleted %(when)s"
 msgstr ""
+"Ihr Konto hat kein Speicherkontingent. Jede neue Aufgabe wird %(when)s "
+"automatisch gelöscht"
 
 #: app/templates/app/welcome.html:224
 msgid "Uh oh! Could you please check the errors below?"
@@ -1985,6 +2038,7 @@ msgstr "Uhoh! Könntest du bitte die folgenden Fehler überprüfen?"
 msgid ""
 "Before we get started, we need to create an administrator account for you:"
 msgstr ""
+"Bevor wir loslegen, müssen wir ein Administratorkonto für Sie erstellen:"
 
 #: app/templates/app/welcome.html:237
 msgid "Create Account"
@@ -1993,21 +2047,21 @@ msgstr "Erstelle Account"
 #: app/templatetags/settings.py:74
 #, python-format
 msgid "in %(num)s days"
-msgstr ""
+msgstr "in %(num)s Tagen"
 
 #: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s hours"
-msgstr ""
+msgstr "in %(num)s Stunden"
 
 #: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s minutes"
-msgstr ""
+msgstr "in %(num)s Minuten"
 
 #: app/templatetags/settings.py:80
 msgid "very soon"
-msgstr ""
+msgstr "in Kürze"
 
 #: app/translations/plugin_manifest_autogenerated.py:4
 msgid "Compute, preview and export contours from DEMs"
@@ -2025,7 +2079,7 @@ msgstr "Fügen Sie der 2D-Kartenansicht eine Vollbildschaltfläche hinzu"
 
 #: app/translations/plugin_manifest_autogenerated.py:7
 msgid "Process in the cloud with webodm.net"
-msgstr ""
+msgstr "In der Cloud mit webodm.net verarbeiten"
 
 #: app/translations/plugin_manifest_autogenerated.py:8
 msgid "Compute volume, area and length measurements on Leaflet"
@@ -2038,23 +2092,25 @@ msgstr "Ein Plugin zum Erstellen von GCP-Dateien aus Bildern"
 
 #: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Annotate and measure on 2D maps with ease"
-msgstr ""
+msgstr "Einfach auf 2D-Karten annotieren und messen"
 
 #: app/translations/plugin_manifest_autogenerated.py:12
 msgid "Detect objects using AI in orthophotos"
-msgstr ""
+msgstr "Objekte in Orthofotos mit KI erkennen"
 
 #: app/translations/plugin_manifest_autogenerated.py:13
 msgid "An example plugin for development"
-msgstr ""
+msgstr "Ein Beispiel-Plugin für die Entwicklung"
 
 #: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
+"Ein Plugin, das eine Schaltfläche für Schnappschüsse der Karte oder des "
+"3D-Modells hinzufügt."
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "Abgemeldet"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2074,11 +2130,14 @@ msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
+"%(node)s ist veraltet und könnte in einer zukünftigen Version nicht mehr "
+"funktionieren. Siehe die %(link_start)s Migrationsanleitung %(link_end)s zum "
+"Aktualisieren."
 
 #: app/views/app.py:150
 #, python-format
 msgid "%(node)s seems to be offline."
-msgstr ""
+msgstr "%(node)s scheint offline zu sein."
 
 #: app/views/app.py:188
 msgid "Welcome"
@@ -2086,40 +2145,43 @@ msgstr "Willkommen"
 
 #: app/views/dev.py:59
 msgid "Cannot find locale/ folder in .zip archive"
-msgstr ""
+msgstr "Ordner locale/ im .zip-Archiv nicht gefunden"
 
 #: app/views/dev.py:71
 msgid "Translation files reloaded!"
-msgstr ""
+msgstr "Übersetzungsdateien neu geladen!"
 
 #: app/views/dev.py:75
 msgid "Invalid action"
-msgstr ""
+msgstr "Ungültige Aktion"
 
 #: app/views/oidc.py:53 app/views/oidc.py:90
 msgid "Invalid SSO provider. Please try again."
-msgstr ""
+msgstr "Ungültiger SSO-Anbieter. Bitte versuchen Sie es nochmal."
 
 #: app/views/oidc.py:95 app/views/oidc.py:128 app/views/oidc.py:134
 #: app/views/oidc.py:150 app/views/oidc.py:157 app/views/oidc.py:174
 msgid "SSO login failed."
-msgstr ""
+msgstr "SSO-Anmeldung gescheitert."
 
 #: app/views/oidc.py:101
 msgid "Invalid SSO state. Please try again."
-msgstr ""
+msgstr "Ungültiger SSO-Status. Bitte versuchen Sie es nochmal."
 
 #: app/views/oidc.py:106
 msgid "Missing SSO authorization code."
-msgstr ""
+msgstr "SSO-Autorisierungscode fehlt."
 
 #: app/views/oidc.py:186
 msgid "Cannot create user. A username already exists with the same e-mail."
 msgstr ""
+"Benutzer kann nicht erstellt werden. Ein Benutzername mit derselben E-Mail "
+"existiert bereits."
 
 #: app/views/oidc.py:190
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
+"Dieses Konto ist deaktiviert. Bitte wenden Sie sich an einen Administrator."
 
 #: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
 #: coreplugins/annotate/dist/annotate/api.py:61
@@ -2136,52 +2198,45 @@ msgstr ""
 #: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
 #: coreplugins/annotate/dist/annotate/api.py:64
 #: coreplugins/annotate/dist/annotate/api.py:104
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"Kein Oberflächenmodell verfügbar. Wählen Sie im Dashboard diese Aufgabe aus, "
-"drücken Sie Bearbeiten. Aktivieren Sie in den Optionen \"dsm\" und drücken "
-"Sie dann Neustart -> Von DEM."
+"Kein Geländemodell verfügbar. Wählen Sie in der Übersicht diese Aufgabe aus, "
+"klicken Sie auf Bearbeiten, aktivieren Sie in den Optionen \"dtm\" und "
+"klicken Sie dann auf Neu starten --> Ab DEM."
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
 #: coreplugins/annotate/dist/annotate/api.py:106
-#, fuzzy
-#| msgid "Invalid rescale value"
 msgid "Invalid surface model"
-msgstr "Ungültiger Skalierungswert"
+msgstr "Ungültiges Oberflächenmodell"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid rescale value"
 msgid "Invalid line"
-msgstr "Ungültiger Skalierungswert"
+msgstr "Ungültige Linie"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128
 msgid "A digital surface model is required to compute elevation values."
 msgstr ""
+"Zur Berechnung von Höhenwerten ist ein digitales Oberflächenmodell "
+"erforderlich."
 
 #: coreplugins/annotate/api.py:162
 #: coreplugins/annotate/dist/annotate/api.py:162
 msgid "An orthophoto is required to compute temperature values."
-msgstr ""
+msgstr "Zur Berechnung von Temperaturwerten ist ein Orthofoto erforderlich."
 
 #: coreplugins/contours/api.py:121
 msgid "No DSM layer is available."
-msgstr ""
+msgstr "Keine DSM-Ebene verfügbar."
 
 #: coreplugins/contours/api.py:123
 msgid "No DTM layer is available."
-msgstr ""
+msgstr "Keine DTM-Ebene verfügbar."
 
 #: coreplugins/diagnostic/plugin.py:66
 msgid "Diagnostic"
@@ -2243,22 +2298,17 @@ msgid "Note!"
 msgstr "Hinweis!"
 
 #: coreplugins/diagnostic/templates/diagnostic.html:33
-#, fuzzy, python-format
-#| msgid ""
-#| "These values might be relative to the virtualization environment in which "
-#| "the application is running, not necessarily the values of the your "
-#| "machine. See instructions for %(win_link)s and %(mac_link)s for changing "
-#| "these values in a Docker setup."
+#, python-format
 msgid ""
 "These values might be relative to the virtualization environment in which "
 "the application is running, not necessarily the values of the your machine. "
 "See instructions for %(win_hyperv_link)s, %(win_wsl2_link)s, and "
 "%(mac_link)s for changing these values in a Docker setup."
 msgstr ""
-"Diese Werte beziehen sich möglicherweise auf die Virtualisierungsumgebung, "
-"in der die Anwendung ausgeführt wird, und nicht unbedingt auf die Werte "
-"Ihres Computers. Informationen zum Ändern dieser Werte in einem Docker-Setup "
-"finden Sie in den Anweisungen für %(win_link)s und %(mac_link)s."
+"Diese Werte können sich auf die Virtualisierungsumgebung beziehen, in der "
+"die Anwendung läuft, und entsprechen nicht unbedingt den Werten Ihres "
+"Rechners. Anleitungen zum Ändern dieser Werte in einer Docker-Umgebung "
+"finden Sie für %(win_hyperv_link)s, %(win_wsl2_link)s und %(mac_link)s."
 
 #: coreplugins/diagnostic/templates/diagnostic.html:47
 #: coreplugins/diagnostic/templates/diagnostic.html:82
@@ -2267,17 +2317,15 @@ msgstr "Speicherplatz"
 
 #: coreplugins/hello-world/plugin.py:10
 msgid "Hello World"
-msgstr ""
+msgstr "Hallo Welt"
 
 #: coreplugins/lightning/plugin.py:28
-#, fuzzy
-#| msgid "Lightning Network"
 msgid "Lightning"
-msgstr "Lightning Netzwerk"
+msgstr "Lightning"
 
 #: coreplugins/objdetect/api.py:57
 msgid "No orthophoto is available."
-msgstr ""
+msgstr "Kein Orthofoto verfügbar."
 
 #: coreplugins/posm-gcpi/plugin.py:9
 msgid "GCP Interface"
@@ -2288,7 +2336,6 @@ msgid "Node Management"
 msgstr "Knotenverwaltung"
 
 #: nodeodm/models.py:23
-#, fuzzy
 msgid ""
 "Hostname or IP address where the node is located (can be an internal "
 "hostname as well). If you are using Docker, this is never 127.0.0.1 or "
@@ -2296,10 +2343,9 @@ msgid ""
 "Linux or by checking your network settings."
 msgstr ""
 "Hostname oder IP-Adresse, unter der sich der Knoten befindet (kann auch ein "
-"interner Hostname sein). Wenn Sie Docker verwenden, ist dies niemals "
-"127.0.0.1 oder localhost. Ermitteln Sie die IP-Adresse Ihres Host-Rechners, "
-"indem Sie ifconfig unter Linux ausführen oder Ihre Netzwerkeinstellungen "
-"überprüfen."
+"interner Hostname sein). Wenn Sie Docker verwenden, ist dies nie 127.0.0.1 "
+"oder localhost. Die IP-Adresse Ihres Host-Rechners finden Sie, indem Sie "
+"unter Linux ifconfig ausführen oder Ihre Netzwerkeinstellungen prüfen."
 
 #: nodeodm/models.py:24
 msgid "Port that connects to the node's API"
@@ -2359,6 +2405,8 @@ msgid ""
 "Optional label for this node. When set, this label will be shown instead of "
 "the hostname:port name."
 msgstr ""
+"Optionales Label für diesen Knoten. Wenn gesetzt, wird dieses Label statt "
+"des Namens hostname:port angezeigt."
 
 #: nodeodm/models.py:33
 msgid "Engine used by the node."

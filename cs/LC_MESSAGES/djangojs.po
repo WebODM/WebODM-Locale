@@ -109,15 +109,13 @@ msgid "Size"
 msgstr "Velikost"
 
 #: app/static/app/js/ModelView.jsx:752 app/static/app/js/ModelView.jsx:754
-#, fuzzy
-#| msgid "Cannot load media."
 msgid "Cannot load splats renderer"
-msgstr "Nelze načíst médium."
+msgstr "Nelze načíst vykreslovač splatů"
 
 #: app/static/app/js/ModelView.jsx:818
 msgid ""
 "Could not load splats. This task doesn't seem to have a valid splats file."
-msgstr ""
+msgstr "Nelze načíst splaty. Tento úkol zřejmě nemá platný soubor splatů."
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
@@ -136,13 +134,11 @@ msgstr "Texturovaný model"
 #: app/static/app/js/classes/AssetDownloads.js:63
 #: app/static/app/js/components/TaskListItem.jsx:866
 msgid "Splats"
-msgstr ""
+msgstr "Splaty"
 
 #: app/static/app/js/ModelView.jsx:981
-#, fuzzy
-#| msgid "Loading..."
 msgid "Loading splats..."
-msgstr "Načítání..."
+msgstr "Načítání splatů..."
 
 #: app/static/app/js/ModelView.jsx:981
 msgid "Loading textured model..."
@@ -150,66 +146,63 @@ msgstr "Načítání texturovaného modelu..."
 
 #: app/static/app/js/PluginBrowser.jsx:57
 msgid "Installed"
-msgstr ""
+msgstr "Nainstalováno"
 
 #: app/static/app/js/PluginBrowser.jsx:61
 #, python-format
 msgid "Requires WebODM %(version)s"
-msgstr ""
+msgstr "Vyžaduje WebODM %(version)s"
 
 #: app/static/app/js/PluginBrowser.jsx:65
 msgid "Update"
-msgstr ""
+msgstr "Aktualizovat"
 
 #: app/static/app/js/PluginBrowser.jsx:69
 msgid "Install"
-msgstr ""
+msgstr "Instalovat"
 
 #: app/static/app/js/PluginBrowser.jsx:80
-#, fuzzy
-#| msgid "Imperial"
 msgid "Experimental"
-msgstr "Imperiální"
+msgstr "Experimentální"
 
 #: app/static/app/js/PluginBrowser.jsx:81
-#, fuzzy
-#| msgid "Duplicate"
 msgid "Deprecated"
-msgstr "Duplikovat"
+msgstr "Zastaralé"
 
 #: app/static/app/js/PluginBrowser.jsx:82
 #, python-format
 msgid "by %(author)s"
-msgstr ""
+msgstr "autor: %(author)s"
 
 #: app/static/app/js/PluginBrowser.jsx:159
 msgid "The plugin repository returned an error:"
-msgstr ""
+msgstr "Repozitář zásuvných modulů vrátil chybu:"
 
 #: app/static/app/js/PluginBrowser.jsx:161
 #: app/static/app/js/PluginBrowser.jsx:167
-#, fuzzy
-#| msgid "Cannot create new task. Please try again later."
 msgid ""
 "The plugin repository returned an invalid response. Please try again later."
-msgstr "Nelze vytvořit novou úlohu. Zkuste to prosím později."
+msgstr ""
+"Repozitář zásuvných modulů vrátil neplatnou odpověď. Zkuste to prosím znovu "
+"později."
 
 #: app/static/app/js/PluginBrowser.jsx:164
 msgid ""
 "Cannot connect to the plugin repository. Check that this server has internet "
 "access and that the connection is not blocked by a firewall or proxy."
 msgstr ""
+"Nelze se připojit k repozitáři zásuvných modulů. Zkontrolujte, zda má tento "
+"server přístup k internetu a zda připojení neblokuje firewall nebo proxy."
 
 #: app/static/app/js/PluginBrowser.jsx:187
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Downloading…"
 msgid "Downloading..."
-msgstr "Stahování…"
+msgstr "Stahování..."
 
 #: app/static/app/js/PluginBrowser.jsx:191
 msgid "The plugin repository returned an error while downloading the plugin:"
 msgstr ""
+"Repozitář zásuvných modulů vrátil při stahování zásuvného modulu chybu:"
 
 #: app/static/app/js/PluginBrowser.jsx:193
 #: app/static/app/js/PluginBrowser.jsx:196
@@ -217,27 +210,29 @@ msgid ""
 "Cannot download the plugin. The connection to the plugin repository failed "
 "or was interrupted."
 msgstr ""
+"Nelze stáhnout zásuvný modul. Připojení k repozitáři zásuvných modulů "
+"selhalo nebo bylo přerušeno."
 
 #: app/static/app/js/PluginBrowser.jsx:199
-#, fuzzy
-#| msgid "Restarting..."
 msgid "Installing..."
-msgstr "Restartování..."
+msgstr "Instalace..."
 
 #: app/static/app/js/PluginBrowser.jsx:215
 #: app/static/app/js/PluginBrowser.jsx:217
 msgid "WebODM could not install the plugin:"
-msgstr ""
+msgstr "WebODM nemohl nainstalovat zásuvný modul:"
 
 #: app/static/app/js/PluginBrowser.jsx:220
 msgid ""
 "Cannot send the plugin to WebODM. The connection was interrupted or the "
 "server is not responding."
 msgstr ""
+"Nelze odeslat zásuvný modul do WebODM. Připojení bylo přerušeno nebo server "
+"neodpovídá."
 
 #: app/static/app/js/PluginBrowser.jsx:253
 msgid "No plugins found."
-msgstr ""
+msgstr "Nebyly nalezeny žádné zásuvné moduly."
 
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
@@ -255,13 +250,11 @@ msgstr "Zavřít"
 #: app/static/app/js/PluginBrowser.jsx:277
 #: app/static/app/js/PluginBrowser.jsx:325
 msgid "Install Plugins"
-msgstr ""
+msgstr "Instalovat zásuvné moduly"
 
 #: app/static/app/js/PluginBrowser.jsx:287
-#, fuzzy
-#| msgid "Search options..."
 msgid "Search plugins"
-msgstr "Možnosti hledání..."
+msgstr "Hledat zásuvné moduly"
 
 #: app/static/app/js/classes/AssetDownloads.js:47
 msgid "Orthophoto (MBTiles)"
@@ -1223,10 +1216,8 @@ msgid "Color:"
 msgstr "Barva:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:470
-#, fuzzy
-#| msgid "Display"
 msgid "Display:"
-msgstr "Obrazovka"
+msgstr "Zobrazení:"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:473
 #: coreplugins/annotate/public/Popup.jsx:984
@@ -1235,7 +1226,7 @@ msgstr "Nadmořská výška"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:474
 msgid "Slope"
-msgstr ""
+msgstr "Sklon"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:481
 msgid "Shading:"
@@ -1613,10 +1604,8 @@ msgid "Sort"
 msgstr "Seřadit"
 
 #: app/static/app/js/components/Paginator.jsx:157
-#, fuzzy
-#| msgid "this page"
 msgid "Items per page"
-msgstr "na této straně"
+msgstr "Položek na stránku"
 
 #: app/static/app/js/components/Paginator.jsx:172
 msgid "Search results for:"
@@ -1792,7 +1781,7 @@ msgstr "Vzestupně"
 
 #: app/static/app/js/components/SplatsDialog.jsx:137
 msgid "Please upload a single file."
-msgstr ""
+msgstr "Nahrajte prosím jeden soubor."
 
 #: app/static/app/js/components/SplatsDialog.jsx:330
 #: coreplugins/annotate/public/Popup.jsx:287
@@ -1808,27 +1797,22 @@ msgid "Invalid response: %(error)s"
 msgstr "Neplatná odpověď: %(error)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:333
-#, fuzzy
-#| msgid "Cannot start processing task."
 msgid "Cannot export training data."
-msgstr "Nelze spustit zpracování úkolu."
+msgstr "Nelze exportovat trénovací data."
 
 #: app/static/app/js/components/SplatsDialog.jsx:338
-#, fuzzy
-#| msgid "Are you sure you want to delete this?"
 msgid "Are you sure you want to delete the splats model?"
-msgstr "Určitě to chcete smazat?"
+msgstr "Opravdu chcete smazat model splatů?"
 
 #: app/static/app/js/components/SplatsDialog.jsx:352
-#, fuzzy
-#| msgid "Cannot delete file."
 msgid "Cannot delete splats model."
-msgstr "Nelze smazat soubor."
+msgstr "Model splatů nelze smazat."
 
 #: app/static/app/js/components/SplatsDialog.jsx:389
 msgid ""
 "This task is missing camera information. Training data cannot be downloaded."
 msgstr ""
+"U tohoto úkolu chybí informace o kamerách. Trénovací data nelze stáhnout."
 
 #: app/static/app/js/components/SplatsDialog.jsx:394
 msgid ""
@@ -1836,12 +1820,17 @@ msgid ""
 "point cloud. Some training software might not work properly without one. "
 "Uploading a splats model requires a point cloud."
 msgstr ""
+"U tohoto úkolu chybí bodové mračno. Trénovací data budou obsahovat prázdné "
+"bodové mračno. Některý trénovací software bez něj nemusí správně fungovat. "
+"Nahrání modelu splatů vyžaduje bodové mračno."
 
 #: app/static/app/js/components/SplatsDialog.jsx:399
 msgid ""
 "This task is missing camera information and a point cloud. No splats can be "
 "downloaded or uploaded."
 msgstr ""
+"U tohoto úkolu chybí informace o kamerách a bodové mračno. Splaty nelze "
+"stáhnout ani nahrát."
 
 #: app/static/app/js/components/SplatsDialog.jsx:404
 msgid ""
@@ -1849,57 +1838,55 @@ msgid ""
 "download. After extracting the .zip file, copy the original images into the "
 "\"images\" folder before training."
 msgstr ""
+"Snímky pro tento úkol nejsou k dispozici, takže nebudou součástí stahování. "
+"Po rozbalení souboru .zip zkopírujte před trénováním původní snímky do "
+"složky \"images\"."
 
 #: app/static/app/js/components/SplatsDialog.jsx:409
 msgid ""
 "Most images in this dataset are nadir. Splats typically require obliques and/"
 "or orbits for good results."
 msgstr ""
+"Většina snímků v této sadě je nadirová. Splaty obvykle pro dobré výsledky "
+"vyžadují šikmé snímky a/nebo orbity."
 
 #: app/static/app/js/components/SplatsDialog.jsx:421
 msgid "A splats model has been added."
-msgstr ""
+msgstr "Model splatů byl přidán."
 
 #: app/static/app/js/components/SplatsDialog.jsx:424
-#, fuzzy
-#| msgid "show in 3D"
 msgid "View in 3D"
-msgstr "zobrazit ve 3D"
+msgstr "Zobrazit ve 3D"
 
 #: app/static/app/js/components/SplatsDialog.jsx:428
-#, fuzzy
-#| msgid "Upload"
 msgid "Upload New"
-msgstr "Nahrát"
+msgstr "Nahrát nový"
 
 #: app/static/app/js/components/SplatsDialog.jsx:452
-#, fuzzy
-#| msgid "Download Image"
 msgid "Download Training Data"
-msgstr "Stáhnout obrázek"
+msgstr "Stáhnout trénovací data"
 
 #: app/static/app/js/components/SplatsDialog.jsx:497
 #, python-format
 msgid "Train a model using %(link_start)s compatible software %(link_end)s"
 msgstr ""
+"Natrénujte model pomocí %(link_start)s kompatibilního softwaru %(link_end)s"
 
 #: app/static/app/js/components/SplatsDialog.jsx:507
 msgid "You don't have permission to upload a splats model to this task."
-msgstr ""
+msgstr "Nemáte oprávnění nahrát do tohoto úkolu model splatů."
 
 #: app/static/app/js/components/SplatsDialog.jsx:516
-#, fuzzy
-#| msgid "Upload a File"
 msgid "Upload Splats Model"
-msgstr "Nahrát soubor"
+msgstr "Nahrát model splatů"
 
 #: app/static/app/js/components/SplatsDialog.jsx:560
 msgid "Gaussian Splats"
-msgstr ""
+msgstr "Gaussovské splaty"
 
 #: app/static/app/js/components/SplatsDialog.jsx:566
 msgid "Processing splats model... this might take a bit"
-msgstr ""
+msgstr "Zpracování modelu splatů... může to chvíli trvat"
 
 #: app/static/app/js/components/SwitchModeButton.jsx:52
 msgid "3D"
@@ -3571,10 +3558,8 @@ msgid "GPS Time"
 msgstr "Čas GPS"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:409
-#, fuzzy
-#| msgid "Path distance"
 msgid "Distance:"
-msgstr "Vzdálenost cesty"
+msgstr "Vzdálenost:"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:409
 #: coreplugins/contours/public/ContoursPanel.jsx:178
@@ -3583,7 +3568,7 @@ msgstr "Výška:"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:412
 msgid "Reset"
-msgstr ""
+msgstr "Obnovit"
 
 #: coreplugins/annotate/public/ElevationProfile.jsx:415
 #: coreplugins/annotate/public/Toolbox.jsx:1210
@@ -3679,10 +3664,8 @@ msgid "Temperature"
 msgstr "Teplota"
 
 #: coreplugins/annotate/public/Popup.jsx:1006
-#, fuzzy
-#| msgid "Elevation range"
 msgid "Elevation Profile"
-msgstr "Výškový rozsah"
+msgstr "Výškový profil"
 
 #: coreplugins/annotate/public/Popup.jsx:1010
 #: coreplugins/annotate/public/Popup.jsx:1064
@@ -3696,16 +3679,12 @@ msgstr "DTM"
 
 #: coreplugins/annotate/public/Popup.jsx:1013
 #: coreplugins/annotate/public/Popup.jsx:1014
-#, fuzzy
-#| msgid "Show 3D"
 msgid "Show"
-msgstr "Zobrazit 3D"
+msgstr "Zobrazit"
 
 #: coreplugins/annotate/public/Popup.jsx:1028
-#, fuzzy
-#| msgid "Elevation range"
 msgid "Elevation profile error"
-msgstr "Výškový rozsah"
+msgstr "Chyba výškového profilu"
 
 #: coreplugins/annotate/public/Popup.jsx:1039
 #: coreplugins/measure/public/app.jsx:27

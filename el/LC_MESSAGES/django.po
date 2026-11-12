@@ -21,13 +21,11 @@ msgstr ""
 
 #: app/admin.py:104
 msgid "Cannot restore default logo"
-msgstr ""
+msgstr "Δεν είναι δυνατή η επαναφορά του προεπιλεγμένου λογότυπου"
 
 #: app/admin.py:118
-#, fuzzy
-#| msgid "Button Default"
 msgid "Restore Default"
-msgstr "Προεπιλογή Κουμπιού"
+msgstr "Επαναφορά προεπιλογής"
 
 #: app/admin.py:140
 msgid "Enter custom CSS"
@@ -122,12 +120,13 @@ msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
+"Το πρόσθετο %(plugin)s ενημερώθηκε επιτυχώς. Επανεκκινήστε το WebODM για να "
+"εφαρμοστούν οι αλλαγές."
 
 #: app/admin.py:374
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "Το πρόσθετο προστέθηκε με επιτυχία"
+msgstr "Το %(plugin)s εγκαταστάθηκε επιτυχώς"
 
 #: app/admin.py:378
 #, python-format
@@ -151,37 +150,35 @@ msgid "Actions"
 msgstr "Ενέργειες"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid payload."
-msgstr "Μη έγκυρη ενέργεια"
+msgstr "Μη έγκυρο payload."
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid signature."
-msgstr "Μη έγκυρο αρχείο zip"
+msgstr "Μη έγκυρη υπογραφή."
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
-msgstr ""
+msgstr "Ο λογαριασμός χρήστη είναι απενεργοποιημένος."
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "Μη έγκυρη κεφαλίδα Authorization. Δεν δόθηκαν διαπιστευτήρια."
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
 msgstr ""
+"Μη έγκυρη κεφαλίδα Authorization. Τα διαπιστευτήρια δεν πρέπει να περιέχουν "
+"κενά."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "Η υπογραφή έχει λήξει."
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "Σφάλμα κατά την αποκωδικοποίηση της υπογραφής."
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -360,31 +357,27 @@ msgstr "Θερμοκρασία σε βαθμούς εκατοντακελβίν.
 
 #: app/api/jwt.py:35
 msgid "Cannot impersonate, user is not superuser."
-msgstr ""
+msgstr "Δεν είναι δυνατή η πλαστοπροσωπία, ο χρήστης δεν είναι υπερχρήστης."
 
 #: app/api/jwt.py:47 app/api/jwt.py:55
 msgid "Unable to log in with provided credentials."
-msgstr ""
+msgstr "Δεν είναι δυνατή η σύνδεση με τα διαπιστευτήρια που δόθηκαν."
 
 #: app/api/jwt.py:57
-#, fuzzy
-#| msgid "Enter a username and password."
 msgid "Must include \"username\" and \"password\"."
-msgstr "Εισάγετε ένα όνομα χρήστη και έναν κωδικό πρόσβασης."
+msgstr "Πρέπει να περιλαμβάνει \"username\" και \"password\"."
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "Μη έγκυρη ενέργεια"
+msgstr "Μη έγκυρο κωδικό."
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "Το πεδίο orig_iat είναι υποχρεωτικό."
 
 #: app/api/jwt.py:78
 msgid "Refresh has expired."
-msgstr ""
+msgstr "Η ανανέωση έχει λήξει."
 
 #: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
@@ -392,53 +385,47 @@ msgstr "Δεν έχουν μεταφορτωθεί αρχεία"
 
 #: app/api/media.py:89 app/api/tasks.py:350 app/api/tasks.py:829
 #: app/api/tasks.py:917 app/api/tasks.py:920 app/api/tasks.py:979
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid uuid"
-msgstr "Μη έγκυρη ενέργεια"
+msgstr "Μη έγκυρο uuid"
 
 #: app/api/media.py:158 app/api/splats.py:140
 msgid "File exceeds maximum allowed size"
-msgstr ""
+msgstr "Το αρχείο υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "Μη έγκυρο ID επικάλυψης"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "Λείπει αρχείο"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
-msgstr ""
+msgstr "Το %(file)s είναι μεγαλύτερο από %(size)s MB."
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "Μη έγκυρα μεταδεδομένα επικάλυψης"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid GeoJSON"
-msgstr "Μη έγκυρη ενέργεια"
+msgstr "Μη έγκυρο GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "Δεν είναι DXF ή συμπιεσμένο shapefile: %(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
-#, fuzzy
-#| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
-msgstr "Μη έγκυρος κωδικός EPSG: %(value)s"
+msgstr "Μη έγκυρος κωδικός EPSG"
 
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "Αδυναμία μετατροπής του %(file)s: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -449,61 +436,50 @@ msgid "Invalid user in permissions list"
 msgstr "Μη έγκυρος χρήστης στη λίστα δικαιωμάτων"
 
 #: app/api/projects.py:245
-#, fuzzy
-#| msgid "Invalid user in permissions list"
 msgid "Invalid group in permissions list"
-msgstr "Μη έγκυρος χρήστης στη λίστα δικαιωμάτων"
+msgstr "Μη έγκυρη ομάδα στη λίστα δικαιωμάτων"
 
 #: app/api/projects.py:247
 msgid "Invalid permissions"
 msgstr "Μη έγκυρα δικαιώματα"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid image size"
-msgstr "Μη έγκυρο αρχείο zip"
+msgstr "Μη έγκυρο μέγεθος εικόνας"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "Από την εργασία λείπει το %(asset)s"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
-msgstr ""
+msgstr "Η εξαγωγή δεν είναι έτοιμη"
 
 #: app/api/splats.py:52
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid export"
-msgstr "Μη έγκυρη ενέργεια"
+msgstr "Μη έγκυρη εξαγωγή"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr ""
+msgstr "Η εξαγωγή έχει λήξει, δημιουργήστε μια νέα"
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
 msgstr ""
+"Αδυναμία μεταφόρτωσης μοντέλου splats (από την εργασία λείπει νέφος σημείων)"
 
 #: app/api/splats.py:77
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "A single file must be uploaded"
-msgstr "Δεν έχουν μεταφορτωθεί αρχεία"
+msgstr "Πρέπει να μεταφορτωθεί ένα μόνο αρχείο"
 
 #: app/api/splats.py:82
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid filename"
-msgstr "Μη έγκυρο αρχείο zip"
+msgstr "Μη έγκυρο όνομα αρχείου"
 
 #: app/api/splats.py:86 app/api/tasks.py:941
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type"
-msgstr "Μη έγκυρο αρχείο zip"
+msgstr "Μη έγκυρος τύπος αρχείου"
 
 #: app/api/splats.py:170 app/api/tasks.py:602 app/api/tasks.py:606
 #: app/api/tasks.py:746 app/api/tasks.py:749 app/api/tasks.py:782
@@ -512,10 +488,8 @@ msgid "Asset does not exist"
 msgstr "Ο Πόρος δεν υπάρχει"
 
 #: app/api/tasks.py:115
-#, fuzzy
-#| msgid "Cannot create task, alignment task is not valid"
 msgid "Cannot create task, processing node is not valid"
-msgstr "Δεν είναι δυνατή η δημιουργία εργασίας, η εργασία δεν είναι έγκυρη"
+msgstr "Αδυναμία δημιουργίας εργασίας, ο κόμβος επεξεργασίας δεν είναι έγκυρος"
 
 #: app/api/tasks.py:308
 msgid "You need to upload at least 1 file before commit"
@@ -554,36 +528,32 @@ msgid "Invalid URL. Did you mean %(hint)s ?"
 msgstr "Μη έγκυρη διεύθυνση URL. Εννοούσατε %(hint)s;"
 
 #: app/api/tasks.py:952
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid file type (extension mismatch)"
-msgstr "Μη έγκυρο αρχείο zip"
+msgstr "Μη έγκυρος τύπος αρχείου (η επέκταση δεν ταιριάζει)"
 
 #: app/api/tasks.py:976
 msgid "Some parameters are not integers"
-msgstr ""
+msgstr "Ορισμένες παράμετροι δεν είναι ακέραιοι"
 
 #: app/api/tasks.py:1037 app/api/tasks.py:1042
 msgid "GeoTIFF must have a valid CRS"
-msgstr ""
+msgstr "Το GeoTIFF πρέπει να έχει έγκυρο CRS"
 
 #: app/api/tasks.py:1044
 msgid "Elevation model must have at most 2 band"
-msgstr ""
+msgstr "Το μοντέλο ανύψωσης πρέπει να έχει το πολύ 2 ζώνες"
 
 #: app/api/tasks.py:1050
 msgid "Point cloud must be a valid LAZ/LAS file"
-msgstr ""
+msgstr "Το νέφος σημείων πρέπει να είναι έγκυρο αρχείο LAZ/LAS"
 
 #: app/api/tasks.py:1056
 msgid "Textured model must be a valid GLB file"
-msgstr ""
+msgstr "Το μοντέλο υφής πρέπει να είναι έγκυρο αρχείο GLB"
 
 #: app/api/tasks.py:1060
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "No assets uploaded"
-msgstr "Δεν έχουν μεταφορτωθεί αρχεία"
+msgstr "Δεν μεταφορτώθηκαν στοιχεία"
 
 #: app/api/tiler.py:385
 msgid "Invalid boundaries parameter"
@@ -666,11 +636,11 @@ msgstr "Δεν είναι δυνατή η χρήση του epsg σε σύνολ
 
 #: app/models/basemap.py:14
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 #: app/models/basemap.py:15
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: app/models/basemap.py:16 app/templates/app/processing_node.html:39
 #: nodeodm/models.py:32
@@ -679,45 +649,43 @@ msgstr "Σήμανση"
 
 #: app/models/basemap.py:17
 msgid "Attribution"
-msgstr ""
+msgstr "Απόδοση"
 
 #: app/models/basemap.py:20
 msgid "Max zoom"
-msgstr ""
+msgstr "Μέγιστο ζουμ"
 
 #: app/models/basemap.py:23
 msgid "Min zoom"
-msgstr ""
+msgstr "Ελάχιστο ζουμ"
 
 #: app/models/basemap.py:24
 msgid "Subdomains"
-msgstr ""
+msgstr "Υποτομείς"
 
 #: app/models/basemap.py:25
 msgid "Layers"
-msgstr ""
+msgstr "Επίπεδα"
 
 #: app/models/basemap.py:26
 msgid "Styles"
-msgstr ""
+msgstr "Στυλ"
 
 #: app/models/basemap.py:31
 msgid "Format"
-msgstr ""
+msgstr "Μορφή"
 
 #: app/models/basemap.py:32
-#, fuzzy
-#| msgid "Button Default"
 msgid "Default"
-msgstr "Προεπιλογή Κουμπιού"
+msgstr "Προεπιλογή"
 
 #: app/models/basemap.py:35
 msgid "Basemap"
-msgstr ""
+msgstr "Χάρτης βάσης"
 
 #: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
 msgid "Basemaps"
-msgstr ""
+msgstr "Χάρτες βάσης"
 
 #: app/models/plugin.py:5
 msgid "Plugin name"
@@ -855,13 +823,11 @@ msgstr "Αναγνωριστικό συμπλέγματος"
 
 #: app/models/profile.py:17
 msgid "OIDC Subject used for SSO"
-msgstr ""
+msgstr "Υποκείμενο OIDC που χρησιμοποιείται για SSO"
 
 #: app/models/profile.py:17
-#, fuzzy
-#| msgid "Objects"
 msgid "OIDC Subject"
-msgstr "Αντικείμενα"
+msgstr "Υποκείμενο OIDC"
 
 #: app/models/project.py:27
 msgid "The person who created the project"
@@ -1274,14 +1240,12 @@ msgid "Crop Polygon"
 msgstr "Περικοπή πολυγώνου"
 
 #: app/models/task.py:291
-#, fuzzy
-#| msgid "Number of images associated with this task"
 msgid "List of media files associated with this task"
-msgstr "Αριθμός εικόνων που σχετίζονται με αυτή την εργασία"
+msgstr "Λίστα αρχείων πολυμέσων που σχετίζονται με αυτή την εργασία"
 
 #: app/models/task.py:291
 msgid "Media"
-msgstr ""
+msgstr "Πολυμέσα"
 
 #: app/models/task.py:295
 msgid "Task"
@@ -1431,13 +1395,11 @@ msgstr "Επιτυχία"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 Απαγορεύεται"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "Δεν έχετε άδεια να επεξεργαστείτε κάτι."
+msgstr "Δεν έχετε δικαίωμα πρόσβασης σε αυτή τη σελίδα."
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1459,7 +1421,7 @@ msgstr ""
 
 #: app/templates/app/about.html:26
 msgid "Minimize"
-msgstr ""
+msgstr "Ελαχιστοποίηση"
 
 #: app/templates/app/about.html:30
 #, python-format
@@ -1482,10 +1444,8 @@ msgid "Page not found"
 msgstr "Η σελίδα δεν βρέθηκε"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
-msgstr "Λυπούμαστε, αλλά η ζητούμενη σελίδα δεν βρέθηκε."
+msgstr "Λυπούμαστε, αλλά η σελίδα που ζητήσατε δεν βρέθηκε."
 
 #: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
 #: app/templates/app/admin/auth/user/change_password.html:15
@@ -1508,22 +1468,16 @@ msgid "Server error (500)"
 msgstr "Σφάλμα διακομιστή (500)"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "Σφάλμα διακομιστή (500)"
+msgstr "Σφάλμα διακομιστή <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
-"Υπήρξε ένα σφάλμα. Έχει αναφερθεί στους διαχειριστές του ιστότοπου μέσω "
-"email και θα πρέπει να διορθωθεί σύντομα. Ευχαριστούμε για την υπομονή σας."
+"Παρουσιάστηκε σφάλμα. Αναφέρθηκε στους διαχειριστές του ιστότοπου μέσω email "
+"και θα διορθωθεί σύντομα. Ευχαριστούμε για την υπομονή σας."
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1548,25 +1502,19 @@ msgstr "Εκκαθάριση επιλογής"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Διαδρομή πλοήγησης"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
 msgstr ""
-"Αρχικά, εισάγετε ένα όνομα χρήστη και έναν κωδικό πρόσβασης. Στη συνέχεια, "
-"θα μπορέσετε να επεξεργαστείτε περισσότερες επιλογές χρήστη."
+"Αφού δημιουργήσετε έναν χρήστη, θα μπορείτε να επεξεργαστείτε περισσότερες "
+"επιλογές χρήστη."
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "Τελευταίο σφάλμα"
+msgstr "Σφάλμα:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1574,20 +1522,16 @@ msgid "Change password"
 msgstr "Αλλαγή κωδικού πρόσβασης"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "Αλλαγή κωδικού πρόσβασης"
+msgstr "Ορισμός κωδικού πρόσβασης"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] "Παρακαλώ διορθώστε το παρακάτω σφάλμα."
-msgstr[1] "Παρακαλώ διορθώστε το παρακάτω σφάλμα."
+msgstr[0] "Διορθώστε το παρακάτω σφάλμα."
+msgstr[1] "Διορθώστε τα παρακάτω σφάλματα."
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
@@ -1601,14 +1545,16 @@ msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
 msgstr ""
+"Αυτή η ενέργεια θα <strong>ενεργοποιήσει</strong> τον έλεγχο ταυτότητας με "
+"κωδικό πρόσβασης για αυτόν τον χρήστη."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "Απενεργοποίηση ελέγχου ταυτότητας με κωδικό πρόσβασης"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "Ενεργοποίηση ελέγχου ταυτότητας με κωδικό πρόσβασης"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1628,20 +1574,16 @@ msgid "Filter"
 msgstr "Φίλτρο"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "Λογαριασμοί"
+msgstr "Απόκρυψη πλήθους"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "Λογαριασμοί"
+msgstr "Εμφάνιση πλήθους"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "Εκκαθάριση όλων των φίλτρων"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1706,10 +1648,8 @@ msgstr "Αντικείμενα"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
-msgstr "Ναι, είμαι βέβαιος"
+msgstr "Ναι, είμαι σίγουρος"
 
 #: app/templates/app/admin/delete_confirmation.html:45
 #: app/templates/app/admin/delete_selected_confirmation.html:43
@@ -1757,7 +1697,7 @@ msgstr "Αλλαγή"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "Προβολή"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1791,38 +1731,29 @@ msgstr "Καμία διαθέσιμη"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "Προστέθηκε:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "Αλλαγή"
+msgstr "Άλλαξε:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "Διαγραφή"
+msgstr "Διαγράφηκε:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "Άγνωστο περιεχόμενο"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
-"Κάτι δεν πάει καλά με την εγκατάσταση της βάσης δεδομένων σας. Βεβαιωθείτε "
-"ότι έχουν δημιουργηθεί οι κατάλληλοι πίνακες της βάσης δεδομένων και "
-"βεβαιωθείτε ότι η βάση δεδομένων είναι αναγνώσιμη από τον κατάλληλο χρήστη."
+"Υπάρχει πρόβλημα με την εγκατάσταση της βάσης δεδομένων. Βεβαιωθείτε ότι "
+"έχουν δημιουργηθεί οι κατάλληλοι πίνακες και ότι η βάση δεδομένων είναι "
+"αναγνώσιμη από τον κατάλληλο χρήστη."
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1839,20 +1770,16 @@ msgstr "Ενέργεια"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "καταχώριση"
+msgstr[1] "καταχωρίσεις"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
 "Αυτό το αντικείμενο δεν έχει ιστορικό αλλαγών. Πιθανώς δεν προστέθηκε μέσω "
-"αυτής της τοποθεσίας διαχείρισης."
+"αυτού του ιστότοπου διαχείρισης."
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1865,10 +1792,8 @@ msgid "Save"
 msgstr "Αποθήκευση"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "Κλείσιμο αναδυόμενου παραθύρου..."
+msgstr "Κλείσιμο αναδυόμενου…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1899,10 +1824,8 @@ msgid "Save and continue editing"
 msgstr "Αποθήκευση και συνέχιση της επεξεργασίας"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "Αποθήκευση εκ νέου"
+msgstr "Αποθήκευση και προβολή"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -2196,10 +2119,12 @@ msgstr "Ένα παράδειγμα πρόσθετου για ανάπτυξη"
 #: app/translations/plugin_manifest_autogenerated.py:14
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
+"Ένα πρόσθετο που προσθέτει κουμπί για λήψη στιγμιότυπου του χάρτη ή του 3D "
+"μοντέλου."
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "Αποσυνδεθήκατε"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2219,6 +2144,9 @@ msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
+"Το %(node)s έχει καταργηθεί και ενδέχεται να σταματήσει να λειτουργεί σε "
+"μελλοντική έκδοση. Δείτε τον %(link_start)s οδηγό μετάβασης %(link_end)s για "
+"αναβάθμιση."
 
 #: app/views/app.py:150
 #, python-format
@@ -2243,28 +2171,32 @@ msgstr "Μη έγκυρη ενέργεια"
 
 #: app/views/oidc.py:53 app/views/oidc.py:90
 msgid "Invalid SSO provider. Please try again."
-msgstr ""
+msgstr "Μη έγκυρος πάροχος SSO. Δοκιμάστε ξανά."
 
 #: app/views/oidc.py:95 app/views/oidc.py:128 app/views/oidc.py:134
 #: app/views/oidc.py:150 app/views/oidc.py:157 app/views/oidc.py:174
 msgid "SSO login failed."
-msgstr ""
+msgstr "Η σύνδεση SSO απέτυχε."
 
 #: app/views/oidc.py:101
 msgid "Invalid SSO state. Please try again."
-msgstr ""
+msgstr "Μη έγκυρη κατάσταση SSO. Δοκιμάστε ξανά."
 
 #: app/views/oidc.py:106
 msgid "Missing SSO authorization code."
-msgstr ""
+msgstr "Λείπει ο κωδικός εξουσιοδότησης SSO."
 
 #: app/views/oidc.py:186
 msgid "Cannot create user. A username already exists with the same e-mail."
 msgstr ""
+"Δεν είναι δυνατή η δημιουργία χρήστη. Υπάρχει ήδη όνομα χρήστη με το ίδιο "
+"e-mail."
 
 #: app/views/oidc.py:190
 msgid "This account is disabled. Please contact an administrator."
 msgstr ""
+"Αυτός ο λογαριασμός είναι απενεργοποιημένος. Επικοινωνήστε με έναν "
+"διαχειριστή."
 
 #: coreplugins/annotate/api.py:61 coreplugins/annotate/api.py:101
 #: coreplugins/annotate/dist/annotate/api.py:61
@@ -2281,34 +2213,25 @@ msgstr ""
 #: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
 #: coreplugins/annotate/dist/annotate/api.py:64
 #: coreplugins/annotate/dist/annotate/api.py:104
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"Δεν υπάρχει διαθέσιμο μοντέλο επιφάνειας. Από το ταμπλό, επιλέξτε αυτή την "
-"εργασία, πατήστε Επεξεργασία, από τις επιλογές βεβαιωθείτε ότι έχετε "
-"τσεκάρει το \"dsm\" και, στη συνέχεια, πατήστε Επανεκκίνηση --> Από DEM."
+"Δεν υπάρχει διαθέσιμο μοντέλο εδάφους. Από το Ταμπλό, επιλέξτε αυτή την "
+"εργασία, πατήστε Επεξεργασία, στις επιλογές βεβαιωθείτε ότι είναι επιλεγμένο "
+"το \"dtm\" και μετά πατήστε Επανεκκίνηση --> Από DEM."
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
 #: coreplugins/annotate/dist/annotate/api.py:106
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid surface model"
-msgstr "Μη έγκυρο αρχείο zip"
+msgstr "Μη έγκυρο μοντέλο επιφάνειας"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid line"
-msgstr "Μη έγκυρο αρχείο zip"
+msgstr "Μη έγκυρη γραμμή"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128

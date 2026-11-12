@@ -117,12 +117,13 @@ msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
+"Zásuvný modul %(plugin)s byl úspěšně aktualizován. Pro použití změn "
+"restartujte WebODM."
 
 #: app/admin.py:374
-#, fuzzy, python-format
-#| msgid "Plugin added successfully"
+#, python-format
 msgid "%(plugin)s installed successfully"
-msgstr "Plugin byl úspěšně přidán"
+msgstr "%(plugin)s byl úspěšně nainstalován"
 
 #: app/admin.py:378
 #, python-format
@@ -146,16 +147,12 @@ msgid "Actions"
 msgstr "Akce"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid payload."
-msgstr "Neplatná akce"
+msgstr "Neplatná data."
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid signature."
-msgstr "Chybný typ souboru"
+msgstr "Neplatný podpis."
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
@@ -163,20 +160,22 @@ msgstr "Uživatelský účet je deaktivován."
 
 #: app/api/authentication.py:61
 msgid "Invalid Authorization header. No credentials provided."
-msgstr ""
+msgstr "Neplatná hlavička Authorization. Nebyly zadány přihlašovací údaje."
 
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
 msgstr ""
+"Neplatná hlavička Authorization. Řetězec přihlašovacích údajů nesmí "
+"obsahovat mezery."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "Platnost podpisu vypršela."
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
-msgstr ""
+msgstr "Chyba při dekódování podpisu."
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -355,18 +354,16 @@ msgid "Must include \"username\" and \"password\"."
 msgstr "Musí obsahovat „uživatelské jméno“ a „heslo“."
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "Neplatná akce"
+msgstr "Neplatný token."
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
-msgstr ""
+msgstr "Pole orig_iat je povinné."
 
 #: app/api/jwt.py:78
 msgid "Refresh has expired."
-msgstr ""
+msgstr "Platnost obnovení vypršela."
 
 #: app/api/media.py:72 app/api/tasks.py:333
 msgid "No files uploaded"
@@ -383,11 +380,11 @@ msgstr "Soubor překračuje maximální povolenou velikost"
 
 #: app/api/overlays.py:38
 msgid "Invalid overlay ID"
-msgstr ""
+msgstr "Neplatné ID překryvu"
 
 #: app/api/overlays.py:82 app/api/overlays.py:234
 msgid "Missing file"
-msgstr ""
+msgstr "Chybí soubor"
 
 #: app/api/overlays.py:85 app/api/overlays.py:242
 #, python-format
@@ -396,18 +393,16 @@ msgstr "%(file)s je větší než %(size)s MB."
 
 #: app/api/overlays.py:93 app/api/overlays.py:169
 msgid "Invalid overlay metadata"
-msgstr ""
+msgstr "Neplatná metadata překryvu"
 
 #: app/api/overlays.py:104 app/api/overlays.py:185
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid GeoJSON"
-msgstr "Neplatná akce"
+msgstr "Neplatný GeoJSON"
 
 #: app/api/overlays.py:240
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
-msgstr ""
+msgstr "Nejedná se o DXF ani zazipovaný shapefile: %(file)s"
 
 #: app/api/overlays.py:251 app/api/overlays.py:253
 msgid "Invalid EPSG code"
@@ -416,7 +411,7 @@ msgstr "Neplatný kód EPSG"
 #: app/api/overlays.py:283 app/api/overlays.py:290
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
-msgstr ""
+msgstr "Nelze převést %(file)s: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -435,45 +430,37 @@ msgid "Invalid permissions"
 msgstr "Neplatná oprávnění"
 
 #: app/api/splats.py:29 app/api/splats.py:31
-#, fuzzy
-#| msgid "Invalid zip file"
 msgid "Invalid image size"
-msgstr "Chybný soubor zip"
+msgstr "Neplatná velikost obrázku"
 
 #: app/api/splats.py:35
 #, python-format
 msgid "Task is missing %(asset)s"
-msgstr ""
+msgstr "Úkolu chybí %(asset)s"
 
 #: app/api/splats.py:48
 msgid "Export is not ready"
-msgstr ""
+msgstr "Export není připraven"
 
 #: app/api/splats.py:52
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid export"
-msgstr "Neplatná akce"
+msgstr "Neplatný export"
 
 #: app/api/splats.py:57
 msgid "Export has expired, please generate a new one"
-msgstr ""
+msgstr "Platnost exportu vypršela, vygenerujte prosím nový"
 
 #: app/api/splats.py:73
 msgid "Cannot upload a splats model (task is missing a point cloud)"
-msgstr ""
+msgstr "Splats model nelze nahrát (úkolu chybí bodové mračno)"
 
 #: app/api/splats.py:77
-#, fuzzy
-#| msgid "No files uploaded"
 msgid "A single file must be uploaded"
-msgstr "Nebyly nahrány žádné soubory"
+msgstr "Musí být nahrán právě jeden soubor"
 
 #: app/api/splats.py:82
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid filename"
-msgstr "Chybný typ souboru"
+msgstr "Neplatný název souboru"
 
 #: app/api/splats.py:86 app/api/tasks.py:941
 msgid "Invalid file type"
@@ -1377,13 +1364,11 @@ msgstr "Úspěšné"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 Přístup odepřen"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "Nemáte oprávnění cokoli upravovat."
+msgstr "Nemáte oprávnění k přístupu na tuto stránku."
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1403,7 +1388,7 @@ msgstr "Něco se stalo. Další informace jsou uvedeny v protokolech serveru."
 
 #: app/templates/app/about.html:26
 msgid "Minimize"
-msgstr ""
+msgstr "Minimalizovat"
 
 #: app/templates/app/about.html:30
 #, python-format
@@ -1425,10 +1410,8 @@ msgid "Page not found"
 msgstr "Stránka nenalezena"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
-msgstr "Je nám líto, ale požadovanou stránku se nepodařilo najít."
+msgstr "Je nám líto, ale požadovaná stránka nebyla nalezena."
 
 #: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
 #: app/templates/app/admin/auth/user/change_password.html:15
@@ -1451,22 +1434,16 @@ msgid "Server error (500)"
 msgstr "Chyba serveru (500)"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "Chyba serveru (500)"
+msgstr "Chyba serveru <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
 "Došlo k chybě. Byla nahlášena správcům webu e-mailem a měla by být brzy "
-"opravena. Děkujeme za vaši trpělivost."
+"opravena. Děkujeme za trpělivost."
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1491,25 +1468,17 @@ msgstr "Vymazat výběr"
 
 #: app/templates/app/admin/app_index.html:8
 msgid "Breadcrumbs"
-msgstr ""
+msgstr "Drobečková navigace"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
-msgstr ""
-"Nejprve zadejte uživatelské jméno a heslo. Poté budete moci upravit další "
-"možnosti uživatele."
+msgstr "Po vytvoření uživatele budete moci upravit další možnosti uživatele."
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "Poslední chyba"
+msgstr "Chyba:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1517,21 +1486,17 @@ msgid "Change password"
 msgstr "Změnit heslo"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "Změnit heslo"
+msgstr "Nastavit heslo"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
 msgstr[0] "Opravte prosím níže uvedenou chybu."
-msgstr[1] "Opravte prosím níže uvedenou chybu."
-msgstr[2] "Opravte prosím níže uvedenou chybu."
+msgstr[1] "Opravte prosím níže uvedené chyby."
+msgstr[2] "Opravte prosím níže uvedené chyby."
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
@@ -1543,14 +1508,15 @@ msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
 msgstr ""
+"Tato akce <strong>zapne</strong> ověřování heslem pro tohoto uživatele."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "Vypnout ověřování heslem"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "Zapnout ověřování heslem"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1570,20 +1536,16 @@ msgid "Filter"
 msgstr "Filtr"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "Účty"
+msgstr "Skrýt počty"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "Účty"
+msgstr "Zobrazit počty"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "Vymazat všechny filtry"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1648,8 +1610,6 @@ msgstr "Objekty"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
 msgstr "Ano, jsem si jistý"
 
@@ -1698,7 +1658,7 @@ msgstr "Změnit"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "Zobrazit"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1732,38 +1692,29 @@ msgstr "Nejsou k dispozici"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "Přidáno:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "Změnit"
+msgstr "Změněno:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "Smazat"
+msgstr "Smazáno:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "Neznámý obsah"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
-"Něco je špatně s instalací databáze. Ujistěte se, že byly vytvořeny "
-"příslušné databázové tabulky, a zkontrolujte, zda je databáze čitelná pro "
-"příslušného uživatele."
+"Něco není v pořádku s instalací databáze. Ujistěte se, že byly vytvořeny "
+"příslušné databázové tabulky a že databáze je čitelná pro příslušného "
+"uživatele."
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1780,21 +1731,17 @@ msgstr "Akce"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "záznam"
+msgstr[1] "záznamy"
+msgstr[2] "záznamů"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
-"Tento objekt nemá historii změn. Pravděpodobně nebyl přidán prostřednictvím "
-"této stránky správce."
+"Tento objekt nemá historii změn. Pravděpodobně nebyl přidán přes tuto "
+"administraci."
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1807,10 +1754,8 @@ msgid "Save"
 msgstr "Uložit"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "Zavírání vyskakovacího okna..."
+msgstr "Zavírání vyskakovacího okna…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1842,10 +1787,8 @@ msgid "Save and continue editing"
 msgstr "Uložit a pokračovat v úpravách"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "Uložit jako nový"
+msgstr "Uložit a zobrazit"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -2131,7 +2074,7 @@ msgstr "Plugin pro přidání tlačítka pro fotografování mapy nebo 3D modelu
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "Odhlášeno"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2151,6 +2094,8 @@ msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
+"%(node)s je zastaralý a v budoucí verzi může přestat fungovat. Pro upgrade "
+"si přečtěte %(link_start)s průvodce migrací %(link_end)s."
 
 #: app/views/app.py:150
 #, python-format
@@ -2214,34 +2159,25 @@ msgstr ""
 #: coreplugins/annotate/api.py:64 coreplugins/annotate/api.py:104
 #: coreplugins/annotate/dist/annotate/api.py:64
 #: coreplugins/annotate/dist/annotate/api.py:104
-#, fuzzy
-#| msgid ""
-#| "No surface model available. From the Dashboard, select this task, press "
-#| "Edit, from the options make sure to check \"dsm\", then press Restart --> "
-#| "From DEM."
 msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"Není k dispozici žádný povrchový model. Na ovládacím panelu vyberte tuto "
-"úlohu, stiskněte tlačítko Upravit, v možnostech nezapomeňte zaškrtnout "
-"\"dsm\" a poté stiskněte tlačítko Restartovat --> Z DEM."
+"Model terénu není k dispozici. Na Ovládacím panelu vyberte tento úkol, "
+"stiskněte Upravit, v možnostech zaškrtněte \"dtm\" a poté stiskněte Restart "
+"--> From DEM."
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
 #: coreplugins/annotate/dist/annotate/api.py:106
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid surface model"
-msgstr "Chybný typ souboru"
+msgstr "Neplatný model povrchu"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid file type"
 msgid "Invalid line"
-msgstr "Chybný typ souboru"
+msgstr "Neplatná čára"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128
