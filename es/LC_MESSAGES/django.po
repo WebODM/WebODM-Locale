@@ -119,11 +119,12 @@ msgid ""
 "changes."
 msgstr ""
 
+# Translated by claude-opus-5-5
 #: app/admin.py:374
 #, fuzzy, python-format
 #| msgid "Plugin added successfully"
 msgid "%(plugin)s installed successfully"
-msgstr "Complemento agregado exitosamente"
+msgstr "%(plugin)s instalado correctamente"
 
 #: app/admin.py:378
 #, python-format
