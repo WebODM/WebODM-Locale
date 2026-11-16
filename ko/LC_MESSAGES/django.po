@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-03-05 19:39+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/webodm/webodm/ko/"
@@ -84,7 +84,7 @@ msgstr "버전"
 msgid "Author"
 msgstr "작성자"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
@@ -112,14 +112,37 @@ msgstr "플러그인 %(plugin)s를 비활성화할 수 없음: %(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "플러그인 %(plugin)s를 삭제할 수 없습니다: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr "체크섬이 일치하지 않습니다. 다운로드한 파일이 손상되었을 수 있습니다."
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr "플러그인에 루트 디렉터리가 2개 이상 있습니다 (하나만 있어야 합니다)"
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr "플러그인이 아닌 것 같습니다. plugin.py 및 manifest.json 파일이 올바른 위치에 있습니까?"
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr "%(plugin)s 이름의 플러그인이 이미 존재합니다. 같은 이름의 플러그인을 업로드하기 전에 기존 플러그인을 제거하십시오."
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
-msgstr "플러그인 %(plugin)s이(가) 업데이트되었습니다. 변경 사항을 적용하려면 WebODM을 재시작하세요."
+msgstr ""
+"플러그인 %(plugin)s이(가) 업데이트되었습니다. 변경 사항을 적용하려면 WebODM"
+"을 재시작하세요."
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "%(plugin)s 설치 완료"
@@ -133,15 +156,20 @@ msgstr "플러그인을 불러올 수 없습니다: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "Zip 파일을 올려야 합니다"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "비활성화"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "활성화"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr "%(plugin)s을(를) 삭제하시겠습니까?"
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "행동"
 
@@ -164,7 +192,9 @@ msgstr "잘못된 Authorization 헤더입니다. 자격 증명이 제공되지 �
 #: app/api/authentication.py:63
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
-msgstr "잘못된 Authorization 헤더입니다. 자격 증명 문자열에 공백이 포함되면 안 됩니다."
+msgstr ""
+"잘못된 Authorization 헤더입니다. 자격 증명 문자열에 공백이 포함되면 안 됩니"
+"다."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
@@ -173,6 +203,10 @@ msgstr "서명이 만료되었습니다."
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr "서명 디코딩 중 오류가 발생했습니다."
+
+#: app/api/externalauth.py:37
+msgid "Invalid credentials"
+msgstr "잘못된 자격 증명"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -403,7 +437,7 @@ msgstr "DXF 또는 압축된 shapefile이 아닙니다: %(file)s"
 msgid "Invalid EPSG code"
 msgstr "잘못된 EPSG 코드"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "%(file)s 파일을 변환할 수 없습니다: %(reason)s"
@@ -610,6 +644,11 @@ msgstr "잘못된 힐쉐이드 값: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "지리 참조되지 않은 데이터 세트에서 epsg를 사용할 수 없습니다"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "응용프로그램"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "유형"
@@ -659,7 +698,7 @@ msgstr "기본값"
 msgid "Basemap"
 msgstr "베이스맵"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "베이스맵"
 
@@ -684,7 +723,7 @@ msgstr "활성화됨"
 msgid "Plugin"
 msgstr "플러그인"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "플러그인"
 
@@ -923,17 +962,13 @@ msgid "Organization website"
 msgstr "조직 웹사이트"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "테마"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "활성 테마"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "응용프로그램"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1424,7 +1459,9 @@ msgstr "서버 오류 <em>(500)</em>"
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
-msgstr "오류가 발생했습니다. 이메일을 통해 사이트 관리자에게 보고되었으며 곧 수정될 예정입니다. 기다려 주셔서 감사합니다."
+msgstr ""
+"오류가 발생했습니다. 이메일을 통해 사이트 관리자에게 보고되었으며 곧 수정될 "
+"예정입니다. 기다려 주셔서 감사합니다."
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1486,7 +1523,8 @@ msgstr "사용자 <strong>%(username)s</strong>의 새 암호를 입력합니다
 msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
-msgstr "이 활동은 이 사용자의 비밀번호 기반 인증을 <strong>활성화</strong>합니다."
+msgstr ""
+"이 활동은 이 사용자의 비밀번호 기반 인증을 <strong>활성화</strong>합니다."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
@@ -1688,7 +1726,8 @@ msgid ""
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
-"데이터베이스 설치에 문제가 있습니다. 해당 데이터베이스 테이블이 생성되었는지, 해당 사용자가 데이터베이스를 읽을 수 있는지 확인하세요."
+"데이터베이스 설치에 문제가 있습니다. 해당 데이터베이스 테이블이 생성되었는"
+"지, 해당 사용자가 데이터베이스를 읽을 수 있는지 확인하세요."
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1711,7 +1750,9 @@ msgstr[0] "항목"
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
-msgstr "이 객체에는 변경 기록이 없습니다. 이 관리 사이트를 통해 추가되지 않은 것 같습니다."
+msgstr ""
+"이 객체에는 변경 기록이 없습니다. 이 관리 사이트를 통해 추가되지 않은 것 같습"
+"니다."
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1818,7 +1859,7 @@ msgstr ""
 "%(link_start)sGCP 파일%(link_end)s는 선택 사항이지만 지리 참조 정확도를 높일 "
 "수 있습니다"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "개발자 도구"
@@ -1865,39 +1906,43 @@ msgstr "안녕하세요, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "%(total)s 중 %(used)s 사용 됨"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr "언어"
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "로그아웃"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "대쉬보드"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "프로세싱 노드"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "새로 추가"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "관리"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "계정"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "그룹"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "브랜드"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "소개"
 
@@ -1979,22 +2024,22 @@ msgstr "시작하기 전에 관리자 계정을 만들어야 합니다:"
 msgid "Create Account"
 msgstr "계정 생성"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "%(num)s일 전"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "%(num)s 시간 전"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "%(num)s 분 전"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "금방"
 
@@ -2019,23 +2064,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "전단지에서 부피, 면적 및 길이 측정 계산"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "이미지로부터 GCP 파일을 생성하는 플러그인"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "쉽게 2D 지도에 주석을 추가하고 측정해보세요"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "AI로 정사영상에서 객체 감지"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "개발용 예제 플러그인"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr "지도 또는 3D 모델의 스냅샷을 찍는 버튼을 추가하는 플러그인입니다."
 
@@ -2061,8 +2105,9 @@ msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
 msgstr ""
-"%(node)s은(는) 더 이상 사용되지 않으며 향후 버전에서 작동하지 않을 수 있습니다. 업그레이드하려면 %(link_start)s "
-"마이그레이션 가이드 %(link_end)s를 참조하세요."
+"%(node)s은(는) 더 이상 사용되지 않으며 향후 버전에서 작동하지 않을 수 있습니"
+"다. 업그레이드하려면 %(link_start)s 마이그레이션 가이드 %(link_end)s를 참조하"
+"세요."
 
 #: app/views/app.py:150
 #, python-format
@@ -2104,7 +2149,8 @@ msgstr "SSO 인증 코드가 없습니다."
 
 #: app/views/oidc.py:186
 msgid "Cannot create user. A username already exists with the same e-mail."
-msgstr "사용자를 생성할 수 없습니다. 같은 이메일을 가진 사용자명이 이미 있습니다."
+msgstr ""
+"사용자를 생성할 수 없습니다. 같은 이메일을 가진 사용자명이 이미 있습니다."
 
 #: app/views/oidc.py:190
 msgid "This account is disabled. Please contact an administrator."
@@ -2129,8 +2175,8 @@ msgid ""
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
 msgstr ""
-"사용 가능한 지형 모델이 없습니다. 대쉬보드에서 이 작업을 선택하고 편집을 누른 뒤, 옵션에서 \"dtm\"을 체크하고 재시작 --> "
-"From DEM을 누르세요."
+"사용 가능한 지형 모델이 없습니다. 대쉬보드에서 이 작업을 선택하고 편집을 누"
+"른 뒤, 옵션에서 \"dtm\"을 체크하고 재시작 --> From DEM을 누르세요."
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
@@ -2330,6 +2376,10 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "노드에서 사용하는 엔진입니다."
+
+#: webodm/urls.py:33
+msgid "WebODM Administration"
+msgstr "WebODM 관리"
 
 #, python-format
 #~ msgid ""

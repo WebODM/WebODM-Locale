@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-08-17 08:51+0000\n"
 "Last-Translator: Jiří Podhorecký <j.podhorecky@volny.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/webodm/webodm/cs/"
@@ -84,7 +84,7 @@ msgstr "Verze"
 msgid "Author"
 msgstr "Autor"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
@@ -111,7 +111,32 @@ msgstr "Nelze zakázat zásuvný modul %(plugin)s: %(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Nelze odstranit zásuvný modul %(plugin)s: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr "Kontrolní součet nesouhlasí. Stažený soubor může být poškozený."
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr "Zásuvný modul má více než 1 kořenový adresář (měl by mít pouze jeden)"
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+"Toto nevypadá jako zásuvný modul. Jsou plugin.py a manifest.json na správném "
+"místě?"
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+"Zásuvný modul s názvem %(plugin)s již existuje. Před nahráním modulu se "
+"stejným názvem jej prosím odeberte."
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
@@ -120,7 +145,7 @@ msgstr ""
 "Zásuvný modul %(plugin)s byl úspěšně aktualizován. Pro použití změn "
 "restartujte WebODM."
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "%(plugin)s byl úspěšně nainstalován"
@@ -134,15 +159,20 @@ msgstr "Nelze načíst zásuvný modul: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "Musíte nahrát soubor zip"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Vypnout"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Zapnout"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr "Opravdu chcete smazat %(plugin)s?"
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Akce"
 
@@ -176,6 +206,10 @@ msgstr "Platnost podpisu vypršela."
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr "Chyba při dekódování podpisu."
+
+#: app/api/externalauth.py:37
+msgid "Invalid credentials"
+msgstr "Neplatné přihlašovací údaje"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -408,7 +442,7 @@ msgstr "Nejedná se o DXF ani zazipovaný shapefile: %(file)s"
 msgid "Invalid EPSG code"
 msgstr "Neplatný kód EPSG"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "Nelze převést %(file)s: %(reason)s"
@@ -616,6 +650,11 @@ msgstr "Neplatná hodnota hillshade: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Nelze použít epsg na negeoreferencované datové sadě"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Aplikace"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Typ"
@@ -665,7 +704,7 @@ msgstr "Výchozí"
 msgid "Basemap"
 msgstr "Podkladová mapa"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Podkladové mapy"
 
@@ -690,7 +729,7 @@ msgstr "Povoleno"
 msgid "Plugin"
 msgstr "Zásuvný modul"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Zásuvné moduly"
 
@@ -932,17 +971,13 @@ msgid "Organization website"
 msgstr "Webová stránka organizace"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Téma"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Aktivní téma"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Aplikace"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1851,7 +1886,7 @@ msgstr ""
 "Soubor %(link_start)sGCP%(link_end)s je nepovinný, ale může zvýšit přesnost "
 "georeferencování"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Vývojářské nástroje"
@@ -1898,39 +1933,43 @@ msgstr "Dobrý den, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "%(used)s z %(total)s využito"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr "Jazyk"
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Odhlášení"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Ovládací panel"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Zpracovatelské uzly"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Přidat nový"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "Administrace"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Účty"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "Skupiny"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "Značka"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "O software"
 
@@ -2012,22 +2051,22 @@ msgstr "Než začneme, musíme pro vás vytvořit účet správce:"
 msgid "Create Account"
 msgstr "Vytvořit účet"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "za %(num)s dní"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "v %(num)s hodinách"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "v %(num)s minutách"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "již brzy"
 
@@ -2052,23 +2091,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Výpočet objemu, plochy a délky na Leaflet"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Zásuvný modul pro vytváření souborů GCP z obrázků"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Snadné vytváření poznámek a měření na 2D mapách"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "Detekce objektů pomocí AI na ortofotomapách"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "Příklad pluginu pro vývoj"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr "Plugin pro přidání tlačítka pro fotografování mapy nebo 3D modelu."
 
@@ -2369,6 +2407,10 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Engine používaný uzlem."
+
+#: webodm/urls.py:33
+msgid "WebODM Administration"
+msgstr "Administrace WebODM"
 
 #, python-format
 #~ msgid ""

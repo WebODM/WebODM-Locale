@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-11-02 17:51+0000\n"
 "Last-Translator: djp1-hub <djp1-hub@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/webodm/webodm/ru/"
@@ -85,7 +85,7 @@ msgstr "Версия"
 msgid "Author"
 msgstr "Автор"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
@@ -114,7 +114,32 @@ msgstr "Невозможно выключить плагин %(plugin)s: %(messa
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Невозможно удалить плагин %(plugin)s: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr "Несовпадение контрольной суммы. Загруженный файл может быть повреждён."
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr "У плагина более одного корневого каталога (должен быть только один)"
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+"Это не похоже на плагин. Файлы plugin.py и manifest.json находятся в нужном "
+"месте?"
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+"Плагин с именем %(plugin)s уже существует. Удалите его перед загрузкой "
+"плагина с таким же именем."
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
@@ -123,7 +148,7 @@ msgstr ""
 "Плагин %(plugin)s успешно обновлён. Перезапустите WebODM, чтобы применить "
 "изменения."
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "Плагин %(plugin)s успешно установлен"
@@ -137,29 +162,30 @@ msgstr "Не удалось загрузить плагин: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "Необходимо загрузить .zip файл"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Отключить"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Включить"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr "Вы уверены, что хотите удалить %(plugin)s?"
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Действия"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid export"
 msgid "Invalid payload."
-msgstr "Некорректные данные экспорта"
+msgstr "Недопустимые данные."
 
 #: app/api/authentication.py:47
-#, fuzzy
-#| msgid "Invalid filename"
 msgid "Invalid signature."
-msgstr "Недопустимое имя файла"
+msgstr "Недействительная подпись."
 
 #: app/api/authentication.py:49 app/api/jwt.py:30 app/api/jwt.py:39
 msgid "User account is disabled."
@@ -183,6 +209,10 @@ msgstr "Срок действия подписи истёк."
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr "Ошибка декодирования подписи."
+
+#: app/api/externalauth.py:37
+msgid "Invalid credentials"
+msgstr "Неверные учётные данные"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -373,10 +403,8 @@ msgid "Must include \"username\" and \"password\"."
 msgstr "Необходимо указать «username» и «password»."
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "Недопустимое действие"
+msgstr "Недействительный токен."
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
@@ -429,7 +457,7 @@ msgstr "Файл %(file)s не является DXF или ZIP-архивом с
 msgid "Invalid EPSG code"
 msgstr "Некорректный код EPSG"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "Не удалось преобразовать %(file)s: %(reason)s"
@@ -639,6 +667,11 @@ msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 "Невозможно использовать epsg для набора данных без географической привязки"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Приложение"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Тип"
@@ -688,7 +721,7 @@ msgstr "По умолчанию"
 msgid "Basemap"
 msgstr "Базовая карта"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Базовые карты"
 
@@ -713,7 +746,7 @@ msgstr "Включено"
 msgid "Plugin"
 msgstr "Плагин"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Плагины"
 
@@ -956,17 +989,13 @@ msgid "Organization website"
 msgstr "Веб-сайт организации"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Тема"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Активная тема"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Приложение"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1395,10 +1424,8 @@ msgid "403 Forbidden"
 msgstr "403 Доступ запрещён"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "У вас нет разрешения что-либо редактировать."
+msgstr "У вас нет прав доступа к этой странице."
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1443,10 +1470,8 @@ msgid "Page not found"
 msgstr "Страница не найдена"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
-msgstr "Приносим свои извинения, но запрашиваемая страница не найдена."
+msgstr "К сожалению, запрошенная страница не найдена."
 
 #: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
 #: app/templates/app/admin/auth/user/change_password.html:15
@@ -1469,23 +1494,16 @@ msgid "Server error (500)"
 msgstr "Ошибка сервера (500)"
 
 #: app/templates/app/admin/500.html:14
-#, fuzzy
-#| msgid "Server Error (500)"
 msgid "Server Error <em>(500)</em>"
-msgstr "Ошибка сервера (500)"
+msgstr "Ошибка сервера <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
-"Произошла ошибка. Об этом было сообщено администраторам сайта по электронной "
-"почте, и это должно быть исправлено в ближайшее время. Спасибо за ваше "
-"терпение."
+"Произошла ошибка. Администраторы сайта уведомлены по электронной почте, и "
+"она будет исправлена в ближайшее время. Спасибо за терпение."
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1513,22 +1531,14 @@ msgid "Breadcrumbs"
 msgstr "Навигационная цепочка"
 
 #: app/templates/app/admin/auth/user/add_form.html:6
-#, fuzzy
-#| msgid ""
-#| "First, enter a username and password. Then, you'll be able to edit more "
-#| "user options."
 msgid "After you’ve created a user, you’ll be able to edit more user options."
-msgstr ""
-"Сначала введите имя пользователя и пароль. Затем вы сможете редактировать "
-"дополнительные параметры пользователя."
+msgstr "После создания пользователя вы сможете изменить другие его параметры."
 
 #: app/templates/app/admin/auth/user/change_password.html:5
 #: app/templates/app/admin/change_form.html:4
 #: app/templates/app/admin/change_list.html:4
-#, fuzzy
-#| msgid "Last Error"
 msgid "Error:"
-msgstr "Последняя ошибка"
+msgstr "Ошибка:"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
 #: app/templates/app/admin/auth/user/change_password.html:71
@@ -1536,21 +1546,17 @@ msgid "Change password"
 msgstr "Изменить пароль"
 
 #: app/templates/app/admin/auth/user/change_password.html:19
-#, fuzzy
-#| msgid "Change password"
 msgid "Set password"
-msgstr "Изменить пароль"
+msgstr "Задать пароль"
 
 #: app/templates/app/admin/auth/user/change_password.html:30
 #: app/templates/app/admin/change_form.html:44
 #: app/templates/app/admin/change_list.html:53
-#, fuzzy
-#| msgid "Please correct the error below."
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] "Пожалуйста, исправьте приведенную ниже ошибку."
-msgstr[1] "Пожалуйста, исправьте приведенную ниже ошибку."
-msgstr[2] "Пожалуйста, исправьте приведенную ниже ошибку."
+msgstr[0] "Пожалуйста, исправьте ошибку ниже."
+msgstr[1] "Пожалуйста, исправьте ошибки ниже."
+msgstr[2] "Пожалуйста, исправьте ошибки ниже."
 
 #: app/templates/app/admin/auth/user/change_password.html:34
 #, python-format
@@ -1591,16 +1597,12 @@ msgid "Filter"
 msgstr "Фильтр"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "Аккаунты"
+msgstr "Скрыть количество"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "Аккаунты"
+msgstr "Показать количество"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
@@ -1669,8 +1671,6 @@ msgstr "Объекты"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
 msgstr "Да, я уверен"
 
@@ -1757,35 +1757,25 @@ msgid "Added:"
 msgstr "Добавлено:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "Изменить"
+msgstr "Изменено:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "Удалить"
+msgstr "Удалено:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "Неизвестный контент"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
-"Что-то не так с вашей установкой базы данных. Убедитесь, что созданы "
-"соответствующие таблицы базы данных и что база данных доступна для чтения "
-"соответствующему пользователю."
+"Что-то не так с установкой базы данных. Убедитесь, что нужные таблицы "
+"созданы и что база данных доступна для чтения соответствующему пользователю."
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1807,16 +1797,12 @@ msgstr[1] "записи"
 msgstr[2] "записей"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
-"У этого объекта нет истории изменений. Вероятно, он не был добавлен через "
-"этот сайт администратора."
+"У этого объекта нет истории изменений. Вероятно, он был добавлен не через "
+"этот административный сайт."
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1829,10 +1815,8 @@ msgid "Save"
 msgstr "Сохранить"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "Всплывающее окно закрывается..."
+msgstr "Закрытие окна…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1864,10 +1848,8 @@ msgid "Save and continue editing"
 msgstr "Сохранить и продолжить редактирование"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "Сохранить как новый"
+msgstr "Сохранить и просмотреть"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -1931,7 +1913,7 @@ msgstr ""
 "%(link_start)s GCP-файл %(link_end)s необязателен, но может повысить "
 "точность геопривязки"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Инструменты разработчика"
@@ -1978,39 +1960,43 @@ msgstr "Привет, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "%(used)s из %(total)s использовано"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr "Язык"
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Выйти"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Панель управления"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Обрабатывающие узлы"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Добавить новый"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "Администрирование"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Аккаунты"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "Группы"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "Бренд"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "О программе"
 
@@ -2094,22 +2080,22 @@ msgstr ""
 msgid "Create Account"
 msgstr "Создать аккаунт"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "через %(num)s дня(-ей)"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "через %(num)s часа(ов)"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "через %(num)s минут(ы)"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "очень скоро"
 
@@ -2136,23 +2122,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Вычисление объема, площади и длины на Leaflet"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Плагин для создания файлов GCP из изображений"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "С легкостью делайте пометки и измерения на 2D-картах"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "Обнаружение объектов с помощью ИИ на ортофото"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "Пример плагина для разработки"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr "Плагин для добавления кнопки для создания снимка карты или 3D-модели."
 
@@ -2261,10 +2246,8 @@ msgstr "Некорректная цифровая модель поверхно�
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid filename"
 msgid "Invalid line"
-msgstr "Недопустимое имя файла"
+msgstr "Недопустимая линия"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128
@@ -2457,6 +2440,10 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Движок, используемый узлом."
+
+#: webodm/urls.py:33
+msgid "WebODM Administration"
+msgstr "Администрирование WebODM"
 
 #, python-format
 #~ msgid ""

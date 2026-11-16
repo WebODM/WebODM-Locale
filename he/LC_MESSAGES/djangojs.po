@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-03-05 19:48+0000\n"
 "Last-Translator: בנימין זיידמן <4140276@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/webodm/react-ui/"
@@ -241,11 +241,13 @@ msgstr ""
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
 #: app/static/app/js/components/ImportExternalPanel.jsx:283
+#: app/static/app/js/components/ImportTaskPanel.jsx:165
 #: app/static/app/js/components/ManageMediaDialog.jsx:599
 #: app/static/app/js/components/NewTaskPanel.jsx:252
 #: app/static/app/js/components/NewTaskPanel.jsx:259
-#: app/static/app/js/components/ProjectListItem.jsx:882
-#: app/static/app/js/components/ProjectListItem.jsx:895
+#: app/static/app/js/components/PdfPopup.jsx:38
+#: app/static/app/js/components/ProjectListItem.jsx:979
+#: app/static/app/js/components/ProjectListItem.jsx:992
 #: app/static/app/js/components/SplatsDialog.jsx:580
 #: app/static/app/js/components/Toaster.jsx:317
 msgid "Close"
@@ -585,7 +587,7 @@ msgstr ""
 
 #: app/static/app/js/components/AssetDownloadButtons.jsx:79
 #: app/static/app/js/components/ExportAssetDialog.jsx:41
-#: app/static/app/js/components/MapPreview.jsx:460
+#: app/static/app/js/components/MapPreview.jsx:466
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:94
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:208
 msgid "Download"
@@ -593,6 +595,10 @@ msgstr "הורדה"
 
 #: app/static/app/js/components/AssetDownloadButtons.jsx:111
 msgid "Backup"
+msgstr ""
+
+#: app/static/app/js/components/ClipboardInput.jsx:38
+msgid "Copied to clipboard"
 msgstr ""
 
 #: app/static/app/js/components/CropButton.jsx:16
@@ -802,7 +808,7 @@ msgstr "עריכת אפשרויות משימה"
 #: app/static/app/js/components/EditProjectDialog.jsx:169
 #: app/static/app/js/components/EditTaskForm.jsx:659
 #: app/static/app/js/components/Paginator.jsx:29
-#: app/static/app/js/components/ProjectListItem.jsx:62
+#: app/static/app/js/components/ProjectListItem.jsx:65
 #: coreplugins/annotate/public/Popup.jsx:898
 #: coreplugins/annotate/public/Popup.jsx:905
 #: coreplugins/annotate/public/Popup.jsx:931
@@ -856,7 +862,7 @@ msgstr "לא ניתן להשלים את הפעולה."
 #: app/static/app/js/components/EditProjectDialog.jsx:153
 #: app/static/app/js/components/EditTaskForm.jsx:605
 #: app/static/app/js/components/Paginator.jsx:32
-#: app/static/app/js/components/ProjectListItem.jsx:65
+#: app/static/app/js/components/ProjectListItem.jsx:68
 msgid "Tags"
 msgstr "תגיות"
 
@@ -874,6 +880,14 @@ msgstr "הוסף תגיות"
 #: app/static/app/js/components/EditProjectDialog.jsx:179
 msgid "Description (optional)"
 msgstr "תיאור (אופציונלי)"
+
+#: app/static/app/js/components/EditTaskForm.jsx:43
+#: app/static/app/js/components/ImportExternalPanel.jsx:153
+#: app/static/app/js/components/ImportTaskPanel.jsx:36
+#, fuzzy, python-format
+#| msgid "Task #%(number)s"
+msgid "Task of %(date)s"
+msgstr "משימה #%(number)s"
 
 #: app/static/app/js/components/EditTaskForm.jsx:116
 msgid ""
@@ -923,6 +937,7 @@ msgstr "מותאם אישית"
 
 #: app/static/app/js/components/EditTaskForm.jsx:240
 #: app/static/app/js/components/EditTaskForm.jsx:392
+#: app/static/app/js/components/TaskListItem.jsx:266
 msgid "Default"
 msgstr "בְּרִירַת מֶחדָל"
 
@@ -961,7 +976,7 @@ msgstr "נסה שוב"
 #: app/static/app/js/components/EditTaskForm.jsx:573
 #: app/static/app/js/components/EditTaskForm.jsx:580
 #: app/static/app/js/components/ManageMediaDialog.jsx:496
-#: app/static/app/js/components/ProjectListItem.jsx:866
+#: app/static/app/js/components/ProjectListItem.jsx:963
 #: app/static/app/js/components/TaskListItem.jsx:614
 #: app/static/app/js/components/TaskListItem.jsx:859
 #: coreplugins/annotate/public/Popup.jsx:948
@@ -985,7 +1000,7 @@ msgstr "לשמור"
 #: app/static/app/js/components/ManageMediaDialog.jsx:544
 #: app/static/app/js/components/ManageMediaDialog.jsx:582
 #: app/static/app/js/components/MapPreview.jsx:194
-#: app/static/app/js/components/ProjectListItem.jsx:872
+#: app/static/app/js/components/ProjectListItem.jsx:969
 #: app/static/app/js/components/TaskListItem.jsx:580
 #: app/static/app/js/components/TaskListItem.jsx:890
 #: coreplugins/annotate/public/Popup.jsx:1156
@@ -1087,7 +1102,7 @@ msgid "Could not apply changes"
 msgstr "לא ניתן היה להחיל את השינויים"
 
 #: app/static/app/js/components/FormDialog.jsx:159
-#: app/static/app/js/components/ProjectListItem.jsx:560
+#: app/static/app/js/components/ProjectListItem.jsx:639
 msgid "Could not delete item"
 msgstr "לא ניתן היה למחוק את הפריט"
 
@@ -1167,6 +1182,7 @@ msgstr ""
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
+#: app/static/app/js/components/ProjectListItem.jsx:891
 msgid "Cancel Upload"
 msgstr "ביטול העלאה"
 
@@ -1214,7 +1230,7 @@ msgstr "ייבוא מכתובת URL"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:191
 #: app/static/app/js/components/Map.jsx:1741
-#: app/static/app/js/components/ProjectListItem.jsx:776
+#: app/static/app/js/components/ProjectListItem.jsx:873
 msgid "Import"
 msgstr "יְבוּא"
 
@@ -1350,14 +1366,14 @@ msgid "Loading…"
 msgstr "טוען…"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:306
+#: app/static/app/js/components/ProjectListItem.jsx:314
 #: app/static/app/js/components/SplatsDialog.jsx:178
 #, python-format
 msgid "%(filename)s is not a valid file"
 msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:174
-#: app/static/app/js/components/ProjectListItem.jsx:335
+#: app/static/app/js/components/ProjectListItem.jsx:343
 #: app/static/app/js/components/SplatsDialog.jsx:195
 #, python-format
 msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
@@ -1366,7 +1382,7 @@ msgstr ""
 "(%(max_retries)s)"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:186
-#: app/static/app/js/components/ProjectListItem.jsx:347
+#: app/static/app/js/components/ProjectListItem.jsx:355
 #: app/static/app/js/components/SplatsDialog.jsx:202
 #, fuzzy, python-format
 #| msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
@@ -1471,6 +1487,14 @@ msgstr "שם משתמש"
 msgid "Description"
 msgstr "תיאור (אופציונלי)"
 
+#: app/static/app/js/components/Map.jsx:453
+msgid "Opacity:"
+msgstr "אטימות:"
+
+#: app/static/app/js/components/Map.jsx:454
+msgid "Bounds:"
+msgstr ""
+
 #: app/static/app/js/components/Map.jsx:793
 #: app/static/app/js/components/MapPreview.jsx:114
 msgid "Enter a tile URL template. Valid coordinates are:"
@@ -1560,32 +1584,32 @@ msgstr "יְבוּא"
 msgid "Set Reconstruction Area (optional)"
 msgstr "תיאור (אופציונלי)"
 
-#: app/static/app/js/components/MapPreview.jsx:326
+#: app/static/app/js/components/MapPreview.jsx:332
 #, fuzzy, python-format
 #| msgid "Cannot restart task from (stage)s."
 msgid "Cannot extract GPS data from %(file)s"
 msgstr "לא ניתן להפעיל מחדש משימה משלבים אלה."
 
-#: app/static/app/js/components/MapPreview.jsx:449
+#: app/static/app/js/components/MapPreview.jsx:455
 #, fuzzy
 #| msgid "Point location"
 msgid "Plotting GPS locations..."
 msgstr "מיקום נקודה"
 
-#: app/static/app/js/components/MapPreview.jsx:454
+#: app/static/app/js/components/MapPreview.jsx:460
 #, python-format
 msgid "For performance reasons, only %(num)s images are plotted"
 msgstr ""
 
-#: app/static/app/js/components/MapPreview.jsx:465
+#: app/static/app/js/components/MapPreview.jsx:471
 msgid "GeoJSON"
 msgstr ""
 
-#: app/static/app/js/components/MapPreview.jsx:466
+#: app/static/app/js/components/MapPreview.jsx:472
 msgid "CSV"
 msgstr ""
 
-#: app/static/app/js/components/MapPreview.jsx:467
+#: app/static/app/js/components/MapPreview.jsx:473
 #, fuzzy
 #| msgid "Download To File"
 msgid "Geolocation File"
@@ -1596,7 +1620,7 @@ msgid "Move Task"
 msgstr "העברת משימה"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:10
-#: app/static/app/js/components/ProjectListItem.jsx:745
+#: app/static/app/js/components/ProjectListItem.jsx:830
 msgid "Save Changes"
 msgstr "שמירת שינויים"
 
@@ -1692,7 +1716,7 @@ msgid "Color"
 msgstr "צבע:"
 
 #: app/static/app/js/components/Paginator.jsx:26
-#: app/static/app/js/components/ProjectListItem.jsx:59
+#: app/static/app/js/components/ProjectListItem.jsx:62
 msgid "Created on"
 msgstr "נוצר ב-"
 
@@ -1705,7 +1729,7 @@ msgid "Search names, #tags or @user"
 msgstr ""
 
 #: app/static/app/js/components/Paginator.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:851
+#: app/static/app/js/components/ProjectListItem.jsx:948
 msgid "Sort"
 msgstr "מיון"
 
@@ -1736,12 +1760,12 @@ msgstr ""
 msgid "Reset to default"
 msgstr "איפוס לברירת מחדל"
 
-#: app/static/app/js/components/ProjectListItem.jsx:198
-#: app/static/app/js/components/ProjectListItem.jsx:533
+#: app/static/app/js/components/ProjectListItem.jsx:201
+#: app/static/app/js/components/ProjectListItem.jsx:611
 msgid "Cannot create new task. Please try again later."
 msgstr "לא ניתן ליצור משימה חדשה. אנא נסה שוב מאוחר יותר."
 
-#: app/static/app/js/components/ProjectListItem.jsx:224
+#: app/static/app/js/components/ProjectListItem.jsx:227
 #, python-format
 msgid ""
 "%(count)s files cannot be uploaded. As a reminder, only images (.jpg, .tif, ."
@@ -1750,12 +1774,12 @@ msgstr ""
 "לא ניתן להעלות %(count)s קבצים. כתזכורת, ניתן להעלות רק תמונות (.jpg, .tif, ."
 "png) וקבצי GCP (.txt). נסה שנית."
 
-#: app/static/app/js/components/ProjectListItem.jsx:529
+#: app/static/app/js/components/ProjectListItem.jsx:607
 #, python-format
 msgid "Cannot create new task. Invalid response from server: %(error)s"
 msgstr "לא ניתן ליצור משימה חדשה. תגובה לא חוקית מהשרת: %(error)s"
 
-#: app/static/app/js/components/ProjectListItem.jsx:731
+#: app/static/app/js/components/ProjectListItem.jsx:816
 msgid ""
 "All tasks, images and models associated with this project will be "
 "permanently deleted. Are you sure you want to continue?"
@@ -1763,57 +1787,57 @@ msgstr ""
 "כל המשימות, התמונות והמודלים המשויכים לפרויקט זה יימחקו לצמיתות. האם אתה "
 "בטוח שברצונך להמשיך?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:732
+#: app/static/app/js/components/ProjectListItem.jsx:817
 msgid ""
 "This project was shared with you. It will not be deleted, but simply hidden "
 "from your dashboard. Continue?"
 msgstr ""
 "פרויקט זה שותף איתך. הוא לא יימחק, אלא רק יוסתר מלוח הבקרה שלך. להמשיך?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:744
+#: app/static/app/js/components/ProjectListItem.jsx:829
 msgid "Edit Project"
 msgstr "עריכת פרויקט"
 
-#: app/static/app/js/components/ProjectListItem.jsx:746
+#: app/static/app/js/components/ProjectListItem.jsx:831
 msgid "Saving changes..."
 msgstr "שומר שינויים..."
 
-#: app/static/app/js/components/ProjectListItem.jsx:771
+#: app/static/app/js/components/ProjectListItem.jsx:857
 msgid "Select Images and GCP"
 msgstr "בחירת תמונות ו-GCP"
 
-#: app/static/app/js/components/ProjectListItem.jsx:779
+#: app/static/app/js/components/ProjectListItem.jsx:876
 msgid "Assets / Backups"
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:780
+#: app/static/app/js/components/ProjectListItem.jsx:877
 msgid "External Data"
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:812
+#: app/static/app/js/components/ProjectListItem.jsx:909
 #, python-format
 msgid "%(count)s Tasks"
 msgstr "%(count)s משימות"
 
-#: app/static/app/js/components/ProjectListItem.jsx:825
+#: app/static/app/js/components/ProjectListItem.jsx:922
 msgid "Filter"
 msgstr "סינון"
 
-#: app/static/app/js/components/ProjectListItem.jsx:845
+#: app/static/app/js/components/ProjectListItem.jsx:942
 msgid "Clear"
 msgstr "נקה"
 
-#: app/static/app/js/components/ProjectListItem.jsx:860
+#: app/static/app/js/components/ProjectListItem.jsx:957
 msgid "View Map"
 msgstr "הצג מפה"
 
-#: app/static/app/js/components/ProjectListItem.jsx:883
+#: app/static/app/js/components/ProjectListItem.jsx:980
 msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:886
+#: app/static/app/js/components/ProjectListItem.jsx:983
 msgid "Enable Stable Mode"
 msgstr ""
 
@@ -2096,8 +2120,16 @@ msgid "Cannot restart task."
 msgstr "לא ניתן להפעיל מחדש את המשימה."
 
 #: app/static/app/js/components/TaskListItem.jsx:442
-msgid "Cannot restart task from (stage)s."
+#, fuzzy, python-format
+#| msgid "Cannot restart task from (stage)s."
+msgid "Cannot restart task from %(stage)s."
 msgstr "לא ניתן להפעיל מחדש משימה משלבים אלה."
+
+#: app/static/app/js/components/TaskListItem.jsx:442
+#, fuzzy
+#| msgid "Restart"
+msgid "the start"
+msgstr "הפעלה מחדש"
 
 #: app/static/app/js/components/TaskListItem.jsx:491
 msgid "GPS"
@@ -2357,47 +2389,94 @@ msgstr "%(count)s קבצים הועלו בהצלחה"
 
 #: app/static/app/js/translations/odm_autogenerated.js:3
 msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
+"Permanently delete all previous results and rerun the processing pipeline."
 msgstr ""
-"נתיב לתיקיית הפרויקט. תיקיית הפרויקט שלך צריכה להכיל תת-תיקיות עבור כל סט "
-"נתונים. כל סט נתונים צריך להכיל תיקיית \"images\"."
+"מחק לצמיתות את כל התוצאות הקודמות והרץ מחדש את צינור עיבוד הנתונים "
+"(pipeline)."
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
-#, fuzzy, python-format
-#| msgid ""
-#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
-#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
-#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
-#| "one of: %(choices)s. Default: %(default)s"
+#, python-format
 msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
-"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
 msgstr ""
-"אלגוריתם ההתאמה (Matcher algorithm): ספרייה מהירה לשכנים הקרובים ביותר "
-"(FLANN) או שק מילים (Bag of Words - BOW). FLANN איטי יותר, אך יציב יותר. BOW "
-"מהיר יותר, אך לעיתים יכול לפספס התאמות תקינות. BRUTEFORCE איטי מאוד אך חזק "
-"(robust). יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
+"נתיב לקובץ קבוצות התמונות השולט באופן חלוקת התמונות לקבוצות. הקובץ צריך "
+"להשתמש בפורמט הבא: image_name group_nameDefault: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
 msgid ""
-"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
-"simple morphological filter. Check the --dem* and --smrf* parameters for "
-"finer tuning. Default: %(default)s"
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
 msgstr ""
-"השתמש בתג זה לבניית DTM (מודל שטח דיגיטלי, קרקע בלבד) באמצעות מסנן מורפולוגי "
-"פשוט. בדוק את הפרמטרים dem*-- ו-smrf*-- לכוונון עדין יותר. ברירת מחדל: "
-"%(default)s"
+"מספר מינימלי של מאפיינים לחילוץ לכל תמונה. יותר מאפיינים יכולים להיות "
+"שימושיים למציאת התאמות נוספות בין תמונות, מה שעשוי לאפשר שחזור של אזורים עם "
+"חפיפה מועטה או מאפיינים לא מספקים. יותר מאפיינים גם מאטים את העיבוד. ברירת "
+"מחדל: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:6
-msgid "show this help message and exit"
-msgstr "הצג הודעת עזרה זו וצא"
+#, python-format
+msgid ""
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
+"כאשר מעבדים סטים של נתונים מולטיספקטרליים, ניתן לציין את שם הרצועה הראשית "
+"שתשמש לשחזור. מומלץ לבחור רצועה בעלת פרטים חדים וממוקדת. ברירת מחדל: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:7
+#, python-format
+msgid ""
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
+msgstr ""
+"בצע סיווג לענני הנקודות המופקים. באפשרותך לשלוט על התנהגות אפשרות זו על ידי "
+"כוונון הפרמטרים --dem-*. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:8
+#, python-format
+msgid ""
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:9
+#, python-format
+msgid ""
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
+msgstr ""
+"בחר את האלגוריתם לחילוץ נקודות מפתח (keypoints) וחישוב מתארים (descriptors). "
+"יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:10
+#, python-format
+msgid ""
+"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
+"relative to the default behavior if set to true. Ordinarily, GSD estimates "
+"are used to cap the maximum resolution of image outputs and resizes images "
+"when necessary, resulting in faster processing and lower memory usage. Since "
+"GSD is an estimate, sometimes ignoring it can result in slightly better "
+"image output quality. Never set --ignore-gsd to true unless you are positive "
+"you need it, and even then: do not use it. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:11
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"קבע את איכות חילוץ המאפיינים. איכות גבוהה יותר מייצרת מאפיינים טובים יותר, "
+"אך דורשת יותר זיכרון ולוקחת זמן רב יותר. יכול להיות אחד מ: %(choices)s. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:12
 #, python-format
 msgid ""
 "Skip generation of PDF report. This can save time if you don't need a "
@@ -2406,43 +2485,199 @@ msgstr ""
 "דלג על יצירת דוח PDF. זה יכול לחסוך זמן אם אינך זקוק לדוח. ברירת מחדל: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:8
+#: app/static/app/js/translations/odm_autogenerated.js:13
 #, python-format
 msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
 msgstr ""
-"צור קובצי OBJ בעלי חומר יחיד וקובץ טקסטורה יחיד, במקום מרובים. ברירת מחדל: "
+"מספר הפריימים המקסימלי לחילוץ מקובצי וידאו לעיבוד. הגדר ל-0 כדי לא להגביל. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgstr "פרמטר סקאלר גובה של מסנן מורפולוגי פשוט. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:15
+#, python-format
+msgid ""
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"%(default)s"
+msgstr ""
+"מסנן את ענן הנקודות על ידי הסרת נקודות החורגות ביותר מ-N סטיות תקן מהממוצע "
+"המקומי. הגדר ל-0 כדי לבטל את הסינון. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:16
+#, python-format
+msgid ""
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"קבע את סוג הדחיסה לשימוש עבור אורתופוטו. יכול להיות אחד מאלה: %(choices)s. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:17
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+"דלג על יצירת מודל תלת-ממד מלא. פעולה זו יכולה לחסוך זמן אם אתה זקוק רק "
+"לתוצאות דו-ממדיות כגון אורתופוטו ומודלי גובה דיגיטליים (DEMs). ברירת מחדל: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:9
+#: app/static/app/js/translations/odm_autogenerated.js:18
 #, python-format
 msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
+"%(default)s"
 msgstr ""
-"אל תנסה למזג שחזורים חלקיים. מצב כזה יכול לקרות כאשר לתמונות אין חפיפה מספקת "
-"או שהן מבודדות. ברירת מחדל: %(default)s"
+"מספר התמונות הממוצע לתת-מודל. בעת פיצול סט נתונים גדול לתת-מודלים קטנים "
+"יותר, תמונות מקובצות לאשכולות. ערך זה מווסת את מספר התמונות שצריך להיות "
+"בממוצע בכל אשכול. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:10
+#: app/static/app/js/translations/odm_autogenerated.js:19
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr ""
+"מספר הקודקודים (vertices) המקסימלי של רשת הפלט. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:20
+msgid "show this help message and exit"
+msgstr "הצג הודעת עזרה זו וצא"
+
+#: app/static/app/js/translations/odm_autogenerated.js:21
 #, python-format
 msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
+"The maximum output resolution of extracted video frames in pixels. Default: "
+"%(default)s"
 msgstr ""
-"הגדר פרמטר זה אם ברצונך ליצור עיבוד PNG של האורתופוטו. ברירת מחדל: "
+"רזולוציית הפלט המרבית של פריימים שחולצו מוידאו, בפיקסלים. ברירת מחדל: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:11
+#: app/static/app/js/translations/odm_autogenerated.js:22
 #, python-format
 msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
 msgstr ""
-"כתובת URL למופע ClusterODM לצורך פיזור תהליך עבודה של פיצול-מיזוג על פני "
-"מספר צמתים במקביל. ברירת מחדל: %(default)s"
+"שמור את ענן הנקודות הממוקם גיאוגרפית (georeferenced point cloud) בפורמט "
+"Cloud Optimized Point Cloud (COPC). ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:12
+#: app/static/app/js/translations/odm_autogenerated.js:23
+#, python-format
+msgid ""
+"Set point cloud quality. Higher quality generates better, denser point "
+"clouds, but requires more memory and takes longer. Each step up in quality "
+"increases processing time roughly by a factor of 4x.Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+"קבע את איכות ענן הנקודות. איכות גבוהה יותר מייצרת ענני נקודות טובים וצפופים "
+"יותר, אך דורשת יותר זיכרון ולוקחת זמן רב יותר. כל עלייה באיכות מגדילה את זמן "
+"העיבוד בערך פי 4. יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:24
+msgid "Copy output results to this folder after processing."
+msgstr "העתק את תוצאות הפלט לתיקייה זו לאחר העיבוד."
+
+#: app/static/app/js/translations/odm_autogenerated.js:25
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
+"Default: %(default)s"
+msgstr ""
+"ייצא את ענן הנקודות הממוקם גיאוגרפית בפורמט Entwine Point Tile ‏(EPT). ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:26
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+"צור מודלים תלת-ממדיים עם טקסטורות בקובץ Binary glTF (GLB) יחיד. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:27
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+"צור קובצי GeoTIFF אופטימליים לענן (COG) במקום קובצי GeoTIFF רגילים. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:28
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+"הגדר פרמטר זה אם ברצונך ליצור עיבוד של האורתופוטו בפורמט Google Earth (KMZ). "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:29
+#, python-format
+msgid ""
+"Octree depth used in the mesh reconstruction, increase to get more vertices, "
+"recommended values are 8-12. Default: %(default)s"
+msgstr ""
+"עומק ה-Octree (עץ אוקטלי) המשמש בשחזור הרשת. הגדל את הערך כדי לקבל יותר "
+"קודקודים (vertices). הערכים המומלצים הם 8-12. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:30
+msgid ""
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
+msgstr ""
+"נתיב לתיקיית הפרויקט. תיקיית הפרויקט שלך צריכה להכיל תת-תיקיות עבור כל סט "
+"נתונים. כל סט נתונים צריך להכיל תיקיית \"images\"."
+
+#: app/static/app/js/translations/odm_autogenerated.js:31
+#, python-format
+msgid ""
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
+msgstr ""
+"דרוס את זמן קריאת התריס המתגלגל עבור חיישן המצלמה שלך (באלפיות שנייה), במקום "
+"להשתמש במסד הנתונים של זמני קריאת תריס מתגלגל. שים לב שלא כל המצלמות קיימות "
+"במסד הנתונים. הגדר ל-0 כדי להשתמש בערך מברירת המחדל של מסד הנתונים. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
+#, python-format
+msgid ""
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+msgstr ""
+"קבע אוטומטית גבול באמצעות מיקומי צילום של המצלמה כדי להגביל את אזור השחזור. "
+"זה יכול לעזור להסיר עצמים מרוחקים ברקע (שמיים, נופי רקע וכו'). ראה גם --"
+"boundary. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:33
+#, python-format
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr "צור פלטים מסוג OGC 3D Tiles. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:34
+#, python-format
+msgid ""
+"Generates a polygon around the cropping area that cuts the orthophoto around "
+"the edges of features. This polygon can be useful for stitching seamless "
+"mosaics with multiple overlapping orthophotos. Default: %(default)s"
+msgstr ""
+"יוצר פוליגון סביב אזור החיתוך, החותך את האורתופוטו מסביב לקצוות של תוואי "
+"השטח. פוליגון זה יכול להיות שימושי לתפירת פסיפסים חלקים עם מספר אורתופוטו "
+"חופפים. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:35
 #, fuzzy, python-format
 #| msgid ""
 #| "Radius of the overlap between submodels. After grouping images into "
@@ -2459,81 +2694,28 @@ msgstr ""
 "קרובות יותר מרדיוס זה לאשכול מתווספות לאשכול. זאת על מנת להבטיח שתת-מודלים "
 "שכנים יחפפו. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:13
+#: app/static/app/js/translations/odm_autogenerated.js:36
 #, python-format
 msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
 msgstr ""
-"קבע את איכות חילוץ המאפיינים. איכות גבוהה יותר מייצרת מאפיינים טובים יותר, "
-"אך דורשת יותר זיכרון ולוקחת זמן רב יותר. יכול להיות אחד מ: %(choices)s. "
-"ברירת מחדל: %(default)s"
+"השתמש בפרמטרי המצלמה שחושבו ממערך נתונים אחר במקום לחשב אותם מחדש. ניתן "
+"לציין זאת כנתיב לקובץ cameras.json או כמחרוזת JSON המייצגת את תוכנו של קובץ "
+"cameras.json. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:14
+#: app/static/app/js/translations/odm_autogenerated.js:37
 #, python-format
 msgid ""
-"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
-"relative to the default behavior if set to true. Ordinarily, GSD estimates "
-"are used to cap the maximum resolution of image outputs and resizes images "
-"when necessary, resulting in faster processing and lower memory usage. Since "
-"GSD is an estimate, sometimes ignoring it can result in slightly better "
-"image output quality. Never set --ignore-gsd to true unless you are positive "
-"you need it, and even then: do not use it. Default: %(default)s"
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
 msgstr ""
+"הפעל מחדש את העיבוד החל משלב זה. אפשרויות: %(choices)s. ברירת מחדל: "
+"%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:15
-#, python-format
-msgid ""
-"Choose what to merge in the merge step in a split dataset. By default all "
-"available outputs are merged. Options: %(choices)s. Default: %(default)s"
-msgstr ""
-"בחר מה למזג בשלב המיזוג בסט נתונים מפוצל. כברירת מחדל, כל הפלטים הזמינים "
-"ממוזגים. אפשרויות: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:16
-#, python-format
-msgid ""
-"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
-"filling. Starting with a radius equal to the output resolution, N different "
-"DEMs are generated with progressively bigger radius using the inverse "
-"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
-"then merged using nearest neighbor interpolation. Default: %(default)s"
-msgstr ""
-"מספר השלבים המשמשים למילוי אזורים עם רווחים. הגדר ל-0 כדי לבטל מילוי רווחים. "
-"החל מרדיוס השווה לרזולוציית הפלט, נוצרים N מודלי גובה דיגיטליים (DEM) שונים "
-"עם רדיוס הולך וגדל באמצעות אלגוריתם IDW (Inverse Distance Weighted) וממוזגים "
-"יחד. רווחים שנותרו ממוזגים לאחר מכן באמצעות אינטרפולציה של השכן הקרוב ביותר. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:17
-#, python-format
-msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
-"mosaics with multiple overlapping orthophotos. Default: %(default)s"
-msgstr ""
-"יוצר פוליגון סביב אזור החיתוך, החותך את האורתופוטו מסביב לקצוות של תוואי "
-"השטח. פוליגון זה יכול להיות שימושי לתפירת פסיפסים חלקים עם מספר אורתופוטו "
-"חופפים. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:18
-#, python-format
-msgid ""
-"Set a value in meters for the GPS Dilution of Precision (DOP) information "
-"for all images. If your images are tagged with high precision GPS "
-"information (RTK), this value will be automatically set accordingly. You can "
-"use this option to manually set it in case the reconstruction fails. "
-"Lowering this option can sometimes help control bowling-effects over large "
-"areas. Default: %(default)s"
-msgstr ""
-"הגדר ערך במטרים עבור מידע דילול דיוק ג'יפיאס (DOP) לכל התמונות. אם התמונות "
-"שלך מתויגות במידע GPS בדיוק גבוה (RTK), ערך זה יוגדר באופן אוטומטי בהתאם. "
-"באפשרותך להשתמש באפשרות זו כדי להגדיר אותו ידנית במקרה שהשחזור נכשל. הורדת "
-"ערך זה יכולה לעיתים לעזור לשלוט ב'אפקטי קערה' (Bowling Effects) על פני שטחים "
-"גדולים. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:19
+#: app/static/app/js/translations/odm_autogenerated.js:38
 #, fuzzy, python-format
 #| msgid ""
 #| "Choose the structure from motion algorithm. For aerial datasets, if "
@@ -2553,86 +2735,71 @@ msgstr ""
 "(Nadir image) בלבד, מישורי יכול להיות מהיר בהרבה. יכול להיות אחד מ: "
 "%(choices)s. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:20
+#: app/static/app/js/translations/odm_autogenerated.js:39
 #, python-format
 msgid ""
-"Delete heavy intermediate files to optimize disk space usage. This affects "
-"the ability to restart the pipeline from an intermediate stage, but allows "
-"datasets to be processed on machines that don't have sufficient disk space "
-"available. Default: %(default)s"
+"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
+"filling. Starting with a radius equal to the output resolution, N different "
+"DEMs are generated with progressively bigger radius using the inverse "
+"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
+"then merged using nearest neighbor interpolation. Default: %(default)s"
 msgstr ""
-"מחק קבצי ביניים כבדים כדי לייעל את ניצול שטח הדיסק. פעולה זו משפיעה על "
-"היכולת להפעיל מחדש את תהליך העבודה משלב ביניים, אך מאפשרת לעבד סטים של "
-"נתונים במחשבים שאין להם מספיק מקום פנוי בדיסק. ברירת מחדל: %(default)s"
+"מספר השלבים המשמשים למילוי אזורים עם רווחים. הגדר ל-0 כדי לבטל מילוי רווחים. "
+"החל מרדיוס השווה לרזולוציית הפלט, נוצרים N מודלי גובה דיגיטליים (DEM) שונים "
+"עם רדיוס הולך וגדל באמצעות אלגוריתם IDW (Inverse Distance Weighted) וממוזגים "
+"יחד. רווחים שנותרו ממוזגים לאחר מכן באמצעות אינטרפולציה של השכן הקרוב ביותר. "
+"ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr ""
-"מספר הקודקודים (vertices) המקסימלי של רשת הפלט. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
+#: app/static/app/js/translations/odm_autogenerated.js:40
 #, python-format
 msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
-msgstr ""
-"קבע אוטומטית גבול באמצעות מיקומי צילום של המצלמה כדי להגביל את אזור השחזור. "
-"זה יכול לעזור להסיר עצמים מרוחקים ברקע (שמיים, נופי רקע וכו'). ראה גם --"
-"boundary. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-"השתמש באפשרות זו אם יש לך קובץ GCP אך ברצונך להשתמש במידע EXIF למיקום "
-"גיאוגרפי (georeferencing) במקום זאת. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"The maximum output resolution of extracted video frames in pixels. Default: "
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
 "%(default)s"
 msgstr ""
-"רזולוציית הפלט המרבית של פריימים שחולצו מוידאו, בפיקסלים. ברירת מחדל: "
-"%(default)s"
+"הפעל תיקון תריס מתגלגל. אם למצלמה יש תריס מתגלגל (rolling shutter) והתמונות "
+"צולמו בתנועה, תוכל להפעיל אפשרות זו כדי לשפר את דיוק התוצאות. ראה גם --"
+"rolling-shutter-readout. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:25
+#: app/static/app/js/translations/odm_autogenerated.js:41
 #, python-format
 msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
-msgstr ""
-"כאשר מעבדים סטים של נתונים מולטיספקטרליים, ניתן לציין את שם הרצועה הראשית "
-"שתשמש לשחזור. מומלץ לבחור רצועה בעלת פרטים חדים וממוקדת. ברירת מחדל: "
-"%(default)s"
+"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
+msgstr "שמור פאות ברשת (mesh) שאינן נראות באף מצלמה. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:26
+#: app/static/app/js/translations/odm_autogenerated.js:42
 #, python-format
 msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
 msgstr ""
-"השתמש בנתוני ה-GPS מתוך ה-Exif של התמונות לצורך השחזור, גם אם קיימות נקודות "
-"בקרה קרקעיות (GCPs). דגל זה שימושי במיוחד אם יש לך מדידות GPS בדיוק גבוה. אם "
-"אין נקודות בקרה קרקעיות, דגל זה לא ישפיע. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:27
+#: app/static/app/js/translations/odm_autogenerated.js:43
 #, python-format
 msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
-"%(default)s"
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
 msgstr ""
-"חתוך אוטומטית את יציאות התמונה על ידי יצירת חיץ חלק סביב גבולות סט הנתונים, "
-"מכווץ ב-N מטרים. השתמש ב-0 כדי לבטל את החיתוך. ברירת מחדל: %(default)s"
+"דלג על יצירת האורתופוטו. זה יכול לחסוך זמן אם אתה זקוק רק לתוצאות תלת-ממד או "
+"למודלי גובה דיגיטליים (DEMs). ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:28
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, fuzzy, python-format
+#| msgid ""
+#| "When processing multispectral datasets, ODM will automatically align the "
+#| "images for each band. If the images have been postprocessed and are "
+#| "already aligned, use this option. Default: %(default)s"
+msgid ""
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
+msgstr ""
+"בעת עיבוד סטים של נתונים מולטיספקטרליים, ODM מיישר אוטומטית את התמונות עבור "
+"כל רצועה. אם התמונות עברו עיבוד מקדים וכבר מיושרות, השתמש באפשרות זו. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
 msgid ""
 "Run local bundle adjustment for every image added to the reconstruction and "
@@ -2643,52 +2810,7 @@ msgstr ""
 "וכיוון אלומות גלובלי כל 100 תמונות. מאיץ את השחזור עבור סטים גדולים מאוד של "
 "נתונים. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
-msgstr "שמור פאות ברשת (mesh) שאינן נראות באף מצלמה. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
-msgstr ""
-"תיב לקובץ מיקום גיאוגרפי של תמונות המכיל את קואורדינטות מרכז המצלמה המשמשות "
-"למיקום גיאוגרפי (georeferencing). אם אין לך ערכים עבור זווית "
-"צידוד/עלרוד/גלגול (yaw/pitch/roll), תוכל להגדיר אותם ל-0. הקובץ צריך להשתמש "
-"בפורמט הבא:EPSG:<code> or <+proj definition>image_name geo_x geo_y geo_z "
-"[yaw (degrees)] [pitch (degrees)] [roll (degrees)] [horz accuracy (meters)] "
-"[vert accuracy (meters)] ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-"מספר מינימלי של מאפיינים לחילוץ לכל תמונה. יותר מאפיינים יכולים להיות "
-"שימושיים למציאת התאמות נוספות בין תמונות, מה שעשוי לאפשר שחזור של אזורים עם "
-"חפיפה מועטה או מאפיינים לא מספקים. יותר מאפיינים גם מאטים את העיבוד. ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
-msgstr ""
-"עומק ה-Octree (עץ אוקטלי) המשמש בשחזור הרשת. הגדל את הערך כדי לקבל יותר "
-"קודקודים (vertices). הערכים המומלצים הם 8-12. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
+#: app/static/app/js/translations/odm_autogenerated.js:46
 #, python-format
 msgid ""
 "Set the radiometric calibration to perform on images. When processing "
@@ -2710,35 +2832,103 @@ msgstr ""
 "באמצעות חיישן אור כלפי מטה (DLS), תוך התחשבות בזווית השמש. יכול להיות אחד מ: "
 "%(choices)s. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:34
+#: app/static/app/js/translations/odm_autogenerated.js:47
 #, python-format
 msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate.Default: %(default)s"
+"Set a value in meters for the GPS Dilution of Precision (DOP) information "
+"for all images. If your images are tagged with high precision GPS "
+"information (RTK), this value will be automatically set accordingly. You can "
+"use this option to manually set it in case the reconstruction fails. "
+"Lowering this option can sometimes help control bowling-effects over large "
+"areas. Default: %(default)s"
 msgstr ""
+"הגדר ערך במטרים עבור מידע דילול דיוק ג'יפיאס (DOP) לכל התמונות. אם התמונות "
+"שלך מתויגות במידע GPS בדיוק גבוה (RTK), ערך זה יוגדר באופן אוטומטי בהתאם. "
+"באפשרותך להשתמש באפשרות זו כדי להגדיר אותו ידנית במקרה שהשחזור נכשל. הורדת "
+"ערך זה יכולה לעיתים לעזור לשלוט ב'אפקטי קערה' (Bowling Effects) על פני שטחים "
+"גדולים. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:35
+#: app/static/app/js/translations/odm_autogenerated.js:48
 #, python-format
 msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
+msgstr ""
+"ייצא את ענן הנקודות הממוקם גיאוגרפית (georeferenced) בפורמט LAS. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:49
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+"אל תנסה למזג שחזורים חלקיים. מצב כזה יכול לקרות כאשר לתמונות אין חפיפה מספקת "
+"או שהן מבודדות. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:50
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+"צור אריחים סטטיים עבור אורתופוטו ומודלי גובה דיגיטליים (DEM) המתאימים לצופים "
+"כמו Leaflet או OpenLayers. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:51
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"מספר התמונות הממוצע לתת-מודל. בעת פיצול סט נתונים גדול לתת-מודלים קטנים "
-"יותר, תמונות מקובצות לאשכולות. ערך זה מווסת את מספר התמונות שצריך להיות "
-"בממוצע בכל אשכול. ברירת מחדל: %(default)s"
+"הפעל שלב זה בלבד ועצור. יכול להיות אחד מהבאים: %(choices)s. ברירת מחדל: "
+"%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:36
+#: app/static/app/js/translations/odm_autogenerated.js:52
+#, fuzzy, python-format
+#| msgid ""
+#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+#| "Default: %(default)s"
+msgid ""
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"קבע את סוג הדחיסה לשימוש עבור אורתופוטו. יכול להיות אחד מאלה: %(choices)s. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:53
 #, python-format
 msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
+"Name of dataset (i.e subfolder name within project folder). Default: "
+"%(default)s"
 msgstr ""
-"בצע סיווג לענני הנקודות המופקים. באפשרותך לשלוט על התנהגות אפשרות זו על ידי "
-"כוונון הפרמטרים --dem-*. ברירת מחדל: %(default)s"
+"שם מערך הנתונים (כלומר, שם תת-התיקייה בתוך תיקיית הפרויקט). ברירת מחדל: "
+"%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:37
+#: app/static/app/js/translations/odm_autogenerated.js:54
+#, python-format
+msgid ""
+"Delete heavy intermediate files to optimize disk space usage. This affects "
+"the ability to restart the pipeline from an intermediate stage, but allows "
+"datasets to be processed on machines that don't have sufficient disk space "
+"available. Default: %(default)s"
+msgstr ""
+"מחק קבצי ביניים כבדים כדי לייעל את ניצול שטח הדיסק. פעולה זו משפיעה על "
+"היכולת להפעיל מחדש את תהליך העבודה משלב ביניים, אך מאפשרת לעבד סטים של "
+"נתונים במחשבים שאין להם מספיק מקום פנוי בדיסק. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+"השתמש ברשת תלת-ממדית (3D mesh) מלאה לחישוב האורתופוטו במקום ברשת דו-ממדית "
+"וחצי (2.5D mesh). אפשרות זו מהירה יותר ומספקת תוצאות דומות באזורים מישוריים. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
 #, python-format
 msgid ""
 "Path to the file containing the ground control points used for "
@@ -2751,58 +2941,78 @@ msgstr ""
 "geo_z im_x im_y image_name [gcp_name] [extra1] [extra2] ברירת מחדל: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:38
+#: app/static/app/js/translations/odm_autogenerated.js:57
 #, python-format
 msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
+"Simple Morphological Filter slope parameter (rise over run). Default: "
+"%(default)s"
 msgstr ""
-"דרוס את זמן קריאת התריס המתגלגל עבור חיישן המצלמה שלך (באלפיות שנייה), במקום "
-"להשתמש במסד הנתונים של זמני קריאת תריס מתגלגל. שים לב שלא כל המצלמות קיימות "
-"במסד הנתונים. הגדר ל-0 כדי להשתמש בערך מברירת המחדל של מסד הנתונים. ברירת "
+"פרמטר שיפוע של מסנן מורפולוגי פשוט (עלייה חלקי ריצה). ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:58
+#, python-format
+msgid ""
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
+msgstr ""
+"השתמש באפשרות זו אם יש לך קובץ GCP אך ברצונך להשתמש במידע EXIF למיקום "
+"גיאוגרפי (georeferencing) במקום זאת. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
+msgstr ""
+"השתמש בנתוני ה-GPS מתוך ה-Exif של התמונות לצורך השחזור, גם אם קיימות נקודות "
+"בקרה קרקעיות (GCPs). דגל זה שימושי במיוחד אם יש לך מדידות GPS בדיוק גבוה. אם "
+"אין נקודות בקרה קרקעיות, דגל זה לא ישפיע. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
+#, python-format
+msgid ""
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
+msgstr ""
+"אומדנים גיאומטריים משפרים את דיוק ענן הנקודות על ידי חישוב מפות עומק עקביות "
+"גיאומטרית, אך ייתכן שלא יהיו שמישים במערכי נתונים גדולים יותר. מתג זה מבטל "
+"אומדנים גיאומטריים. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
+msgid ""
+"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
+"simple morphological filter. Check the --dem* and --smrf* parameters for "
+"finer tuning. Default: %(default)s"
+msgstr ""
+"השתמש בתג זה לבניית DTM (מודל שטח דיגיטלי, קרקע בלבד) באמצעות מסנן מורפולוגי "
+"פשוט. בדוק את הפרמטרים dem*-- ו-smrf*-- לכוונון עדין יותר. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, python-format
+msgid ""
+"Turn off camera parameter optimization during bundle adjustment. This can be "
+"sometimes useful for improving results that exhibit doming/bowling or when "
+"images are taken with a rolling shutter camera. Default: %(default)s"
+msgstr ""
+"כבה אופטימיזציה של פרמטרי מצלמה במהלך כיוון אלומות (bundle adjustment). זה "
+"יכול להיות שימושי לפעמים לשיפור תוצאות המציגות עיוותי כיפה/קערה (doming/"
+"bowling) או כאשר תמונות צולמו במצלמה עם תריס גלגול (rolling shutter). ברירת "
 "מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:39
+#: app/static/app/js/translations/odm_autogenerated.js:63
 #, python-format
 msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
-"%(default)s"
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
 msgstr ""
-"מסנן את ענן הנקודות על ידי הסרת נקודות החורגות ביותר מ-N סטיות תקן מהממוצע "
-"המקומי. הגדר ל-0 כדי לבטל את הסינון. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:40
-#, python-format
-msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"קבע את סוג היטל המצלמה. קביעה ידנית של ערך יכולה לעזור לשפר את הסרת העיוותים "
-"הגיאומטריים. כברירת מחדל, היישום מנסה לקבוע את סוג העדשה מתוך מטא-הנתונים של "
-"התמונות. יכול להיות אחד מהבאים: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:41
-#, python-format
-msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
-msgstr ""
-"שם מערך הנתונים (כלומר, שם תת-התיקייה בתוך תיקיית הפרויקט). ברירת מחדל: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:42
-msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
-msgstr ""
-"מחק לצמיתות את כל התוצאות הקודמות והרץ מחדש את צינור עיבוד הנתונים "
-"(pipeline)."
-
-#: app/static/app/js/translations/odm_autogenerated.js:43
+#: app/static/app/js/translations/odm_autogenerated.js:64
 #, python-format
 msgid ""
 "Perform image matching with the nearest images based on GPS exif data. Set "
@@ -2811,7 +3021,121 @@ msgstr ""
 "בצע התאמת תמונות עם התמונות הקרובות ביותר בהתבסס על נתוני GPS בפורמט Exif. "
 "הגדר ל-0 כדי להתאים לפי טריאנגולציה. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:44
+#: app/static/app/js/translations/odm_autogenerated.js:65
+#, python-format
+msgid ""
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
+msgstr ""
+"כתובת URL למופע ClusterODM לצורך פיזור תהליך עבודה של פיצול-מיזוג על פני "
+"מספר צמתים במקביל. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:66
+#, python-format
+msgid ""
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+"דלג על יישור תת-מודלים בתהליך פיצול-מיזוג (split-merge). שימושי אם ה-GPS "
+"מדויק מספיק במערכי נתונים גדולים מאוד. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
+msgstr ""
+"דלג על נרמול הצבעים בכל התמונות. שימושי בעת עיבוד נתונים רדיומטריים. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+"חשב מסכות תמונה אוטומטית באמצעות AI כדי להסיר את השמיים. ניסיוני. ברירת "
+"מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
+#, python-format
+msgid ""
+"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
+"a progressive morphological filter. Check the --dem* parameters for finer "
+"tuning. Default: %(default)s"
+msgstr ""
+"השתמש בתג זה כדי לבנות מודל שטח דיגיטלי (DSM) (קרקע + עצמים) באמצעות מסנן "
+"מורפולוגי פרוגרסיבי. בדוק את הפרמטרים המתחילים ב--dem לכוונון עדין יותר. "
+"ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:70
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation threshold parameter (meters). Default: "
+"%(default)s"
+msgstr "פרמטר סף גובה של מסנן מורפולוגי פשוט (מטרים). ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Perform image matching with the nearest N images based on image filename "
+"order. Can speed up processing of sequential images, such as those extracted "
+"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"disable. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+"חשב אוטומטית מסכות תמונה באמצעות AI להסרת הרקע. ניסיוני. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+"צור קובצי OBJ בעלי חומר יחיד וקובץ טקסטורה יחיד, במקום מרובים. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+"פוליגון GeoJSON המגביל את אזור השחזור. ניתן לציין אותו כנתיב לקובץ GeoJSON "
+"או כמחרוזת JSON המייצגת את תוכנו של קובץ GeoJSON. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid ""
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
+msgstr ""
+"המספר המקסימלי של תהליכים לשימוש בתהליכים שונים. דרישת זיכרון שיא היא בערך "
+"1GB לכל תהליך ורזולוציית תמונה של 2 מגה-פיקסל. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"עצור את העיבוד בשלב זה. יכול להיות אחד מ: %(choices)s. ברירת מחדל: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+msgid "Displays version number and exits. "
+msgstr "מציג את מספר הגרסה ויוצא. "
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
 #, fuzzy, python-format
 #| msgid ""
 #| "Skips dense reconstruction and 3D model generation. It generates an "
@@ -2827,189 +3151,7 @@ msgstr ""
 "מהשחזור הדליל. אם אתה זקוק רק לאורתופוטו ואינך זקוק למודל תלת-ממד מלא, הפעל "
 "אפשרות זו. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:45
-#, python-format
-msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
-"%(default)s"
-msgstr ""
-"המספר המקסימלי של תהליכים לשימוש בתהליכים שונים. דרישת זיכרון שיא היא בערך "
-"1GB לכל תהליך ורזולוציית תמונה של 2 מגה-פיקסל. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:46
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
-"Default: %(default)s"
-msgstr ""
-"ייצא את ענן הנקודות הממוקם גיאוגרפית בפורמט Entwine Point Tile ‏(EPT). ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:47
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
-msgstr ""
-"הגדר פרמטר זה אם ברצונך ליצור עיבוד של האורתופוטו בפורמט Google Earth (KMZ). "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:48
-#, python-format
-msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"קבע את סוג הדחיסה לשימוש עבור אורתופוטו. יכול להיות אחד מאלה: %(choices)s. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-#, python-format
-msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
-msgstr ""
-"שמור את ענן הנקודות הממוקם גיאוגרפית (georeferenced point cloud) בפורמט "
-"Cloud Optimized Point Cloud (COPC). ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:50
-msgid "Displays version number and exits. "
-msgstr "מציג את מספר הגרסה ויוצא. "
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-"פוליגון GeoJSON המגביל את אזור השחזור. ניתן לציין אותו כנתיב לקובץ GeoJSON "
-"או כמחרוזת JSON המייצגת את תוכנו של קובץ GeoJSON. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
-#, python-format
-msgid ""
-"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
-"a progressive morphological filter. Check the --dem* parameters for finer "
-"tuning. Default: %(default)s"
-msgstr ""
-"השתמש בתג זה כדי לבנות מודל שטח דיגיטלי (DSM) (קרקע + עצמים) באמצעות מסנן "
-"מורפולוגי פרוגרסיבי. בדוק את הפרמטרים המתחילים ב--dem לכוונון עדין יותר. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:53
-msgid "Copy output results to this folder after processing."
-msgstr "העתק את תוצאות הפלט לתיקייה זו לאחר העיבוד."
-
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"הפעל מחדש את העיבוד החל משלב זה. אפשרויות: %(choices)s. ברירת מחדל: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr "אל תשתמש בהאצת GPU, גם אם היא זמינה. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:56
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
-"%(default)s"
-msgstr "פרמטר סף גובה של מסנן מורפולוגי פשוט (מטרים). ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-"בחר את האלגוריתם לחילוץ נקודות מפתח (keypoints) וחישוב מתארים (descriptors). "
-"יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-#, python-format
-msgid ""
-"Set point cloud quality. Higher quality generates better, denser point "
-"clouds, but requires more memory and takes longer. Each step up in quality "
-"increases processing time roughly by a factor of 4x.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-"קבע את איכות ענן הנקודות. איכות גבוהה יותר מייצרת ענני נקודות טובים וצפופים "
-"יותר, אך דורשת יותר זיכרון ולוקחת זמן רב יותר. כל עלייה באיכות מגדילה את זמן "
-"העיבוד בערך פי 4. יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"עצור את העיבוד בשלב זה. יכול להיות אחד מ: %(choices)s. ברירת מחדל: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-"השתמש בפרמטרי המצלמה שחושבו ממערך נתונים אחר במקום לחשב אותם מחדש. ניתן "
-"לציין זאת כנתיב לקובץ cameras.json או כמחרוזת JSON המייצגת את תוכנו של קובץ "
-"cameras.json. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
-msgid ""
-"Set the units of the PDF report. By default the vertical units of the "
-"coordinate reference system are used. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"קבע את סוג הדחיסה לשימוש עבור אורתופוטו. יכול להיות אחד מאלה: %(choices)s. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
-msgstr "פרמטר סקאלר גובה של מסנן מורפולוגי פשוט. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr ""
-"צור מודלים תלת-ממדיים עם טקסטורות בקובץ Binary glTF (GLB) יחיד. ברירת מחדל: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"הפעל שלב זה בלבד ועצור. יכול להיות אחד מהבאים: %(choices)s. ברירת מחדל: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:66
+#: app/static/app/js/translations/odm_autogenerated.js:79
 #, python-format
 msgid ""
 "Decimate the points before generating the DEM. 1 is no decimation (full "
@@ -3020,67 +3162,32 @@ msgstr ""
 "(איכות מלאה). 100 מדלל כ-99%% מהנקודות. שימושי להאצת יצירת תוצאות DEM במערכי "
 "נתונים גדולים מאוד. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:67
+#: app/static/app/js/translations/odm_autogenerated.js:80
 #, python-format
 msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
-"%(default)s"
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
 msgstr ""
-"צור קובצי GeoTIFF אופטימליים לענן (COG) במקום קובצי GeoTIFF רגילים. ברירת "
-"מחדל: %(default)s"
+"ייצא את ענן הנקודות שעבר התאמה גיאוגרפית לפורמט CSV. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:68
+#: app/static/app/js/translations/odm_autogenerated.js:81
 #, python-format
 msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
 msgstr ""
-"נתיב לקובץ קבוצות התמונות השולט באופן חלוקת התמונות לקבוצות. הקובץ צריך "
-"להשתמש בפורמט הבא: image_name group_nameDefault: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
-msgstr ""
-"מסנן את ענן הנקודות על ידי שמירת נקודה בודדת בלבד סביב רדיוס N (במטרים). זה "
-"יכול להיות שימושי להגבלת רזולוציית הפלט של ענן הנקודות ולהסרת נקודות כפולות. "
-"הגדר ל-0 כדי לבטל את הדגימה. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-"השתמש ברשת תלת-ממדית (3D mesh) מלאה לחישוב האורתופוטו במקום ברשת דו-ממדית "
-"וחצי (2.5D mesh). אפשרות זו מהירה יותר ומספקת תוצאות דומות באזורים מישוריים. "
-"ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
-msgstr ""
-"חשב אוטומטית מסכות תמונה באמצעות AI להסרת הרקע. ניסיוני. ברירת מחדל: "
+"הגדר פרמטר זה אם ברצונך ליצור עיבוד PNG של האורתופוטו. ברירת מחדל: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:72
+#: app/static/app/js/translations/odm_autogenerated.js:82
 #, python-format
 msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
+"Choose what to merge in the merge step in a split dataset. By default all "
+"available outputs are merged. Options: %(choices)s. Default: %(default)s"
 msgstr ""
-"חשב מסכות תמונה אוטומטית באמצעות AI כדי להסיר את השמיים. ניסיוני. ברירת "
-"מחדל: %(default)s"
+"בחר מה למזג בשלב המיזוג בסט נתונים מפוצל. כברירת מחדל, כל הפלטים הזמינים "
+"ממוזגים. אפשרויות: %(choices)s. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:73
+#: app/static/app/js/translations/odm_autogenerated.js:83
 #, python-format
 msgid ""
 "Computes an euclidean raster map for each DEM. The map reports the distance "
@@ -3092,89 +3199,19 @@ msgstr ""
 "מכל תא לערך ה-NODATA הקרוב ביותר (לפני מילוי חורים). זה יכול להיות שימושי "
 "לבידוד אזורים שמולאו. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
-msgstr ""
-"הגדר פרמטר זה אם ברצונך ליצור קובץ GeoTIFF מפוספס. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr "צור פלטים מסוג OGC 3D Tiles. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
+#: app/static/app/js/translations/odm_autogenerated.js:84
 #, python-format
 msgid ""
-"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
-"altitude value of the GPS EXIF data. This does not change the value of any "
-"GCPs. This can be useful for example when adjusting from ellipsoidal to "
-"orthometric height. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-"ייצא את ענן הנקודות הממוקם גיאוגרפית (georeferenced) בפורמט LAS. ברירת מחדל: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:78
-#, python-format
-msgid ""
-"Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
-msgstr ""
-"אומדנים גיאומטריים משפרים את דיוק ענן הנקודות על ידי חישוב מפות עומק עקביות "
-"גיאומטרית, אך ייתכן שלא יהיו שמישים במערכי נתונים גדולים יותר. מתג זה מבטל "
-"אומדנים גיאומטריים. ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:79
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
 "%(default)s"
 msgstr ""
-"הפעל תיקון תריס מתגלגל. אם למצלמה יש תריס מתגלגל (rolling shutter) והתמונות "
-"צולמו בתנועה, תוכל להפעיל אפשרות זו כדי לשפר את דיוק התוצאות. ראה גם --"
-"rolling-shutter-readout. ברירת מחדל: %(default)s"
+"מסנן את ענן הנקודות על ידי שמירת נקודה בודדת בלבד סביב רדיוס N (במטרים). זה "
+"יכול להיות שימושי להגבלת רזולוציית הפלט של ענן הנקודות ולהסרת נקודות כפולות. "
+"הגדר ל-0 כדי לבטל את הדגימה. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:80
-#, python-format
-msgid ""
-"Perform image matching with the nearest N images based on image filename "
-"order. Can speed up processing of sequential images, such as those extracted "
-"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
-"disable. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:81
-#, python-format
-msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
-"images are taken with a rolling shutter camera. Default: %(default)s"
-msgstr ""
-"כבה אופטימיזציה של פרמטרי מצלמה במהלך כיוון אלומות (bundle adjustment). זה "
-"יכול להיות שימושי לפעמים לשיפור תוצאות המציגות עיוותי כיפה/קערה (doming/"
-"bowling) או כאשר תמונות צולמו במצלמה עם תריס גלגול (rolling shutter). ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:82
-#, python-format
-msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
-msgstr ""
-"דלג על יצירת מודל תלת-ממד מלא. פעולה זו יכולה לחסוך זמן אם אתה זקוק רק "
-"לתוצאות דו-ממדיות כגון אורתופוטו ומודלי גובה דיגיטליים (DEMs). ברירת מחדל: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:83
+#: app/static/app/js/translations/odm_autogenerated.js:85
 #, python-format
 msgid ""
 "Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
@@ -3184,73 +3221,24 @@ msgstr ""
 "תיב לקובץ GeoTIFF DEM או ענן נקודות LAS/LAZ שאליו יישורי הפלט של השחזור "
 "באופן אוטומטי. ניסיוני. ברירת מחדל: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:84
-#, python-format
-msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
-msgstr ""
-"דלג על נרמול הצבעים בכל התמונות. שימושי בעת עיבוד נתונים רדיומטריים. ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:85
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-"צור אריחים סטטיים עבור אורתופוטו ומודלי גובה דיגיטליים (DEM) המתאימים לצופים "
-"כמו Leaflet או OpenLayers. ברירת מחדל: %(default)s"
-
 #: app/static/app/js/translations/odm_autogenerated.js:86
 #, python-format
 msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
 msgstr ""
-"מספר הפריימים המקסימלי לחילוץ מקובצי וידאו לעיבוד. הגדר ל-0 כדי לא להגביל. "
-"ברירת מחדל: %(default)s"
+"תיב לקובץ מיקום גיאוגרפי של תמונות המכיל את קואורדינטות מרכז המצלמה המשמשות "
+"למיקום גיאוגרפי (georeferencing). אם אין לך ערכים עבור זווית "
+"צידוד/עלרוד/גלגול (yaw/pitch/roll), תוכל להגדיר אותם ל-0. הקובץ צריך להשתמש "
+"בפורמט הבא:EPSG:<code> or <+proj definition>image_name geo_x geo_y geo_z "
+"[yaw (degrees)] [pitch (degrees)] [roll (degrees)] [horz accuracy (meters)] "
+"[vert accuracy (meters)] ברירת מחדל: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:87
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr ""
-"דלג על יצירת האורתופוטו. זה יכול לחסוך זמן אם אתה זקוק רק לתוצאות תלת-ממד או "
-"למודלי גובה דיגיטליים (DEMs). ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:88
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
-"%(default)s"
-msgstr ""
-"פרמטר שיפוע של מסנן מורפולוגי פשוט (עלייה חלקי ריצה). ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:89
-#, python-format
-msgid ""
-"Simple Morphological Filter window radius parameter (meters). Default: "
-"%(default)s"
-msgstr "רדיוס חלון של מסנן מורפולוגי פשוט (במטרים). ברירת מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:90
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
-msgid ""
-"When processing multispectral datasets, automatically align the images for "
-"each band. If the images have been postprocessed and are already aligned, "
-"use this option. Default: %(default)s"
-msgstr ""
-"בעת עיבוד סטים של נתונים מולטיספקטרליים, ODM מיישר אוטומטית את התמונות עבור "
-"כל רצועה. אם התמונות עברו עיבוד מקדים וכבר מיושרות, השתמש באפשרות זו. ברירת "
-"מחדל: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
 msgid ""
 "Specify the distance between camera shot locations and the outer edge of the "
@@ -3261,21 +3249,65 @@ msgstr ""
 "באמצעות --auto-boundary. הגדר ל-0 כדי לבחור ערך באופן אוטומטי. ברירת מחדל: "
 "%(default)s"
 
+#: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgstr ""
+"הגדר פרמטר זה אם ברצונך ליצור קובץ GeoTIFF מפוספס. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"%(default)s"
+msgstr ""
+"חתוך אוטומטית את יציאות התמונה על ידי יצירת חיץ חלק סביב גבולות סט הנתונים, "
+"מכווץ ב-N מטרים. השתמש ב-0 כדי לבטל את החיתוך. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:90
+#, fuzzy, python-format
+#| msgid ""
+#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
+#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
+#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
+#| "one of: %(choices)s. Default: %(default)s"
+msgid ""
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
+"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"אלגוריתם ההתאמה (Matcher algorithm): ספרייה מהירה לשכנים הקרובים ביותר "
+"(FLANN) או שק מילים (Bag of Words - BOW). FLANN איטי יותר, אך יציב יותר. BOW "
+"מהיר יותר, אך לעיתים יכול לפספס התאמות תקינות. BRUTEFORCE איטי מאוד אך חזק "
+"(robust). יכול להיות אחד מ: %(choices)s. ברירת מחדל: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:91
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr "אל תשתמש בהאצת GPU, גם אם היא זמינה. ברירת מחדל: %(default)s"
+
 #: app/static/app/js/translations/odm_autogenerated.js:92
 #, python-format
 msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
 msgstr ""
-"דלג על יישור תת-מודלים בתהליך פיצול-מיזוג (split-merge). שימושי אם ה-GPS "
-"מדויק מספיק במערכי נתונים גדולים מאוד. ברירת מחדל: %(default)s"
+"קבע את סוג היטל המצלמה. קביעה ידנית של ערך יכולה לעזור לשפר את הסרת העיוותים "
+"הגיאומטריים. כברירת מחדל, היישום מנסה לקבוע את סוג העדשה מתוך מטא-הנתונים של "
+"התמונות. יכול להיות אחד מהבאים: %(choices)s. ברירת מחדל: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:93
 #, python-format
 msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
-msgstr ""
-"ייצא את ענן הנקודות שעבר התאמה גיאוגרפית לפורמט CSV. ברירת מחדל: %(default)s"
+"Simple Morphological Filter window radius parameter (meters). Default: "
+"%(default)s"
+msgstr "רדיוס חלון של מסנן מורפולוגי פשוט (במטרים). ברירת מחדל: %(default)s"
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
 msgid "Compute volume, area and length measurements on Leaflet"
@@ -3838,6 +3870,7 @@ msgid "Base Surface"
 msgstr ""
 
 #: coreplugins/annotate/public/Popup.jsx:1079
+#: coreplugins/annotate/public/Popup.jsx:1080
 #, fuzzy
 #| msgid "show in 3D"
 msgid "Show 3D"
@@ -4417,9 +4450,6 @@ msgstr ""
 
 #~ msgid "Projection:"
 #~ msgstr "הקרנה:"
-
-#~ msgid "Opacity:"
-#~ msgstr "אטימות:"
 
 #~ msgid ""
 #~ "An orthophoto could not be generated. To generate one, make sure GPS "

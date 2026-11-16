@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-11-01 08:51+0000\n"
 "Last-Translator: Erdem <gnserdem13@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/react-ui/"
@@ -244,11 +244,13 @@ msgstr ""
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
 #: app/static/app/js/components/ImportExternalPanel.jsx:283
+#: app/static/app/js/components/ImportTaskPanel.jsx:165
 #: app/static/app/js/components/ManageMediaDialog.jsx:599
 #: app/static/app/js/components/NewTaskPanel.jsx:252
 #: app/static/app/js/components/NewTaskPanel.jsx:259
-#: app/static/app/js/components/ProjectListItem.jsx:882
-#: app/static/app/js/components/ProjectListItem.jsx:895
+#: app/static/app/js/components/PdfPopup.jsx:38
+#: app/static/app/js/components/ProjectListItem.jsx:979
+#: app/static/app/js/components/ProjectListItem.jsx:992
 #: app/static/app/js/components/SplatsDialog.jsx:580
 #: app/static/app/js/components/Toaster.jsx:317
 msgid "Close"
@@ -576,7 +578,7 @@ msgstr "Emperyal (US)"
 
 #: app/static/app/js/components/AssetDownloadButtons.jsx:79
 #: app/static/app/js/components/ExportAssetDialog.jsx:41
-#: app/static/app/js/components/MapPreview.jsx:460
+#: app/static/app/js/components/MapPreview.jsx:466
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:94
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:208
 msgid "Download"
@@ -585,6 +587,10 @@ msgstr "İndir"
 #: app/static/app/js/components/AssetDownloadButtons.jsx:111
 msgid "Backup"
 msgstr "Yedekle"
+
+#: app/static/app/js/components/ClipboardInput.jsx:38
+msgid "Copied to clipboard"
+msgstr ""
 
 #: app/static/app/js/components/CropButton.jsx:16
 msgid "Crop"
@@ -789,7 +795,7 @@ msgstr "Görev Opsiyonlarını Düzenle"
 #: app/static/app/js/components/EditProjectDialog.jsx:169
 #: app/static/app/js/components/EditTaskForm.jsx:659
 #: app/static/app/js/components/Paginator.jsx:29
-#: app/static/app/js/components/ProjectListItem.jsx:62
+#: app/static/app/js/components/ProjectListItem.jsx:65
 #: coreplugins/annotate/public/Popup.jsx:898
 #: coreplugins/annotate/public/Popup.jsx:905
 #: coreplugins/annotate/public/Popup.jsx:931
@@ -843,7 +849,7 @@ msgstr "İşlem tamamlanamıyor."
 #: app/static/app/js/components/EditProjectDialog.jsx:153
 #: app/static/app/js/components/EditTaskForm.jsx:605
 #: app/static/app/js/components/Paginator.jsx:32
-#: app/static/app/js/components/ProjectListItem.jsx:65
+#: app/static/app/js/components/ProjectListItem.jsx:68
 msgid "Tags"
 msgstr "Etiketler"
 
@@ -861,6 +867,14 @@ msgstr "Etiket Ekle"
 #: app/static/app/js/components/EditProjectDialog.jsx:179
 msgid "Description (optional)"
 msgstr "Tanımlama (İsteğe bağlı)"
+
+#: app/static/app/js/components/EditTaskForm.jsx:43
+#: app/static/app/js/components/ImportExternalPanel.jsx:153
+#: app/static/app/js/components/ImportTaskPanel.jsx:36
+#, fuzzy, python-format
+#| msgid "Task #%(number)s"
+msgid "Task of %(date)s"
+msgstr "Görev #%(number)s"
 
 #: app/static/app/js/components/EditTaskForm.jsx:116
 msgid ""
@@ -909,6 +923,7 @@ msgstr "Özel"
 
 #: app/static/app/js/components/EditTaskForm.jsx:240
 #: app/static/app/js/components/EditTaskForm.jsx:392
+#: app/static/app/js/components/TaskListItem.jsx:266
 msgid "Default"
 msgstr "Varsayılan"
 
@@ -948,7 +963,7 @@ msgstr "Tekrar dene"
 #: app/static/app/js/components/EditTaskForm.jsx:573
 #: app/static/app/js/components/EditTaskForm.jsx:580
 #: app/static/app/js/components/ManageMediaDialog.jsx:496
-#: app/static/app/js/components/ProjectListItem.jsx:866
+#: app/static/app/js/components/ProjectListItem.jsx:963
 #: app/static/app/js/components/TaskListItem.jsx:614
 #: app/static/app/js/components/TaskListItem.jsx:859
 #: coreplugins/annotate/public/Popup.jsx:948
@@ -972,7 +987,7 @@ msgstr "Sakla"
 #: app/static/app/js/components/ManageMediaDialog.jsx:544
 #: app/static/app/js/components/ManageMediaDialog.jsx:582
 #: app/static/app/js/components/MapPreview.jsx:194
-#: app/static/app/js/components/ProjectListItem.jsx:872
+#: app/static/app/js/components/ProjectListItem.jsx:969
 #: app/static/app/js/components/TaskListItem.jsx:580
 #: app/static/app/js/components/TaskListItem.jsx:890
 #: coreplugins/annotate/public/Popup.jsx:1156
@@ -1075,7 +1090,7 @@ msgid "Could not apply changes"
 msgstr "Değişiklikler uygulanamıyor"
 
 #: app/static/app/js/components/FormDialog.jsx:159
-#: app/static/app/js/components/ProjectListItem.jsx:560
+#: app/static/app/js/components/ProjectListItem.jsx:639
 msgid "Could not delete item"
 msgstr "Öge silinemedi"
 
@@ -1161,6 +1176,7 @@ msgstr "Sil"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
+#: app/static/app/js/components/ProjectListItem.jsx:891
 msgid "Cancel Upload"
 msgstr "Yüklemeyi İptal Et"
 
@@ -1212,7 +1228,7 @@ msgstr "URL'den İçe Aktar"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:191
 #: app/static/app/js/components/Map.jsx:1741
-#: app/static/app/js/components/ProjectListItem.jsx:776
+#: app/static/app/js/components/ProjectListItem.jsx:873
 msgid "Import"
 msgstr "İçe Aktar"
 
@@ -1350,14 +1366,14 @@ msgid "Loading…"
 msgstr "Yükleniyor…"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:306
+#: app/static/app/js/components/ProjectListItem.jsx:314
 #: app/static/app/js/components/SplatsDialog.jsx:178
 #, python-format
 msgid "%(filename)s is not a valid file"
 msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:174
-#: app/static/app/js/components/ProjectListItem.jsx:335
+#: app/static/app/js/components/ProjectListItem.jsx:343
 #: app/static/app/js/components/SplatsDialog.jsx:195
 #, python-format
 msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
@@ -1366,7 +1382,7 @@ msgstr ""
 "(%(max_retries)s)"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:186
-#: app/static/app/js/components/ProjectListItem.jsx:347
+#: app/static/app/js/components/ProjectListItem.jsx:355
 #: app/static/app/js/components/SplatsDialog.jsx:202
 #, python-format
 msgid ""
@@ -1471,6 +1487,16 @@ msgstr "Kullanıcı Adı"
 msgid "Description"
 msgstr "Tanımlama"
 
+#: app/static/app/js/components/Map.jsx:453
+msgid "Opacity:"
+msgstr "Şeffaflık:"
+
+#: app/static/app/js/components/Map.jsx:454
+#, fuzzy
+#| msgid "Bands:"
+msgid "Bounds:"
+msgstr "Bantlar:"
+
 #: app/static/app/js/components/Map.jsx:793
 #: app/static/app/js/components/MapPreview.jsx:114
 msgid "Enter a tile URL template. Valid coordinates are:"
@@ -1562,34 +1588,34 @@ msgstr "İçe Aktar"
 msgid "Set Reconstruction Area (optional)"
 msgstr "Tanımlama (İsteğe bağlı)"
 
-#: app/static/app/js/components/MapPreview.jsx:326
+#: app/static/app/js/components/MapPreview.jsx:332
 #, fuzzy, python-format
 #| msgid "Cannot restart task from (stage)s."
 msgid "Cannot extract GPS data from %(file)s"
 msgstr "Görev (stage)s 'den yeniden başlatılamıyor."
 
-#: app/static/app/js/components/MapPreview.jsx:449
+#: app/static/app/js/components/MapPreview.jsx:455
 #, fuzzy
 #| msgid "Point location"
 msgid "Plotting GPS locations..."
 msgstr "Nokta Konumu"
 
-#: app/static/app/js/components/MapPreview.jsx:454
+#: app/static/app/js/components/MapPreview.jsx:460
 #, python-format
 msgid "For performance reasons, only %(num)s images are plotted"
 msgstr "Performans nedenleriyle, yalnızca %(num)s görüntü çizilecektir"
 
-#: app/static/app/js/components/MapPreview.jsx:465
+#: app/static/app/js/components/MapPreview.jsx:471
 #, fuzzy
 #| msgid "Import GeoJSON"
 msgid "GeoJSON"
 msgstr "GeoJSON İçe Aktar"
 
-#: app/static/app/js/components/MapPreview.jsx:466
+#: app/static/app/js/components/MapPreview.jsx:472
 msgid "CSV"
 msgstr ""
 
-#: app/static/app/js/components/MapPreview.jsx:467
+#: app/static/app/js/components/MapPreview.jsx:473
 #, fuzzy
 #| msgid "Download To File"
 msgid "Geolocation File"
@@ -1600,7 +1626,7 @@ msgid "Move Task"
 msgstr "Görevi Taşı"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:10
-#: app/static/app/js/components/ProjectListItem.jsx:745
+#: app/static/app/js/components/ProjectListItem.jsx:830
 msgid "Save Changes"
 msgstr "Değişiklikleri Kaydet"
 
@@ -1696,7 +1722,7 @@ msgid "Color"
 msgstr "Renk"
 
 #: app/static/app/js/components/Paginator.jsx:26
-#: app/static/app/js/components/ProjectListItem.jsx:59
+#: app/static/app/js/components/ProjectListItem.jsx:62
 msgid "Created on"
 msgstr "Şu tarihte oluşturuldu"
 
@@ -1711,7 +1737,7 @@ msgid "Search names, #tags or @user"
 msgstr "Adları veya Etiketleri Arayın"
 
 #: app/static/app/js/components/Paginator.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:851
+#: app/static/app/js/components/ProjectListItem.jsx:948
 msgid "Sort"
 msgstr "Sırala"
 
@@ -1744,12 +1770,12 @@ msgstr "Bir .JSON dosyasını içe aktarmak için tıklayın"
 msgid "Reset to default"
 msgstr "Varsayılana sıfırla"
 
-#: app/static/app/js/components/ProjectListItem.jsx:198
-#: app/static/app/js/components/ProjectListItem.jsx:533
+#: app/static/app/js/components/ProjectListItem.jsx:201
+#: app/static/app/js/components/ProjectListItem.jsx:611
 msgid "Cannot create new task. Please try again later."
 msgstr "Yeni görev oluşturulamıyor. Lütfen daha sonra tekrar deneyiniz."
 
-#: app/static/app/js/components/ProjectListItem.jsx:224
+#: app/static/app/js/components/ProjectListItem.jsx:227
 #, python-format
 msgid ""
 "%(count)s files cannot be uploaded. As a reminder, only images (.jpg, .tif, ."
@@ -1758,12 +1784,12 @@ msgstr ""
 "%(count)s dosya yüklenemiyor. Hatırlatma olarak, yalnızca resimler (.jpg, ."
 "tif, .png) ve GCP dosyaları (.txt) yüklenebilir. Tekrar deneyin."
 
-#: app/static/app/js/components/ProjectListItem.jsx:529
+#: app/static/app/js/components/ProjectListItem.jsx:607
 #, python-format
 msgid "Cannot create new task. Invalid response from server: %(error)s"
 msgstr "Yeni görev oluşturulamıyor. Sunucudan geçersiz yanıt: %(error)s"
 
-#: app/static/app/js/components/ProjectListItem.jsx:731
+#: app/static/app/js/components/ProjectListItem.jsx:816
 msgid ""
 "All tasks, images and models associated with this project will be "
 "permanently deleted. Are you sure you want to continue?"
@@ -1771,7 +1797,7 @@ msgstr ""
 "Bu proje ile ilişkili tüm resimler, modeller, kalıcı olarak silinecek, hala "
 "devam etmek istiyor musunuz?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:732
+#: app/static/app/js/components/ProjectListItem.jsx:817
 msgid ""
 "This project was shared with you. It will not be deleted, but simply hidden "
 "from your dashboard. Continue?"
@@ -1779,50 +1805,50 @@ msgstr ""
 "Bu proje sizinle paylaşıldı. Silinmeyecek, sadece kontrol panelinizden "
 "gizlenecektir. Devam ediyor musunuz?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:744
+#: app/static/app/js/components/ProjectListItem.jsx:829
 msgid "Edit Project"
 msgstr "Projeyi Düzenle"
 
-#: app/static/app/js/components/ProjectListItem.jsx:746
+#: app/static/app/js/components/ProjectListItem.jsx:831
 msgid "Saving changes..."
 msgstr "Değişiklikler kaydediliyor..."
 
-#: app/static/app/js/components/ProjectListItem.jsx:771
+#: app/static/app/js/components/ProjectListItem.jsx:857
 msgid "Select Images and GCP"
 msgstr "Görselleri ve GCP'yi seçin"
 
-#: app/static/app/js/components/ProjectListItem.jsx:779
+#: app/static/app/js/components/ProjectListItem.jsx:876
 msgid "Assets / Backups"
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:780
+#: app/static/app/js/components/ProjectListItem.jsx:877
 msgid "External Data"
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:812
+#: app/static/app/js/components/ProjectListItem.jsx:909
 #, python-format
 msgid "%(count)s Tasks"
 msgstr "%(count)s Görev"
 
-#: app/static/app/js/components/ProjectListItem.jsx:825
+#: app/static/app/js/components/ProjectListItem.jsx:922
 msgid "Filter"
 msgstr "Filtre"
 
-#: app/static/app/js/components/ProjectListItem.jsx:845
+#: app/static/app/js/components/ProjectListItem.jsx:942
 msgid "Clear"
 msgstr "Temizle"
 
-#: app/static/app/js/components/ProjectListItem.jsx:860
+#: app/static/app/js/components/ProjectListItem.jsx:957
 msgid "View Map"
 msgstr "Haritayı Görüntüle"
 
-#: app/static/app/js/components/ProjectListItem.jsx:883
+#: app/static/app/js/components/ProjectListItem.jsx:980
 msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:886
+#: app/static/app/js/components/ProjectListItem.jsx:983
 msgid "Enable Stable Mode"
 msgstr ""
 
@@ -2113,8 +2139,16 @@ msgid "Cannot restart task."
 msgstr "Görev yeniden başlatılamıyor."
 
 #: app/static/app/js/components/TaskListItem.jsx:442
-msgid "Cannot restart task from (stage)s."
+#, fuzzy, python-format
+#| msgid "Cannot restart task from (stage)s."
+msgid "Cannot restart task from %(stage)s."
 msgstr "Görev (stage)s 'den yeniden başlatılamıyor."
+
+#: app/static/app/js/components/TaskListItem.jsx:442
+#, fuzzy
+#| msgid "Restart"
+msgid "the start"
+msgstr "Yeniden Başlat"
 
 #: app/static/app/js/components/TaskListItem.jsx:491
 msgid "GPS"
@@ -2377,115 +2411,66 @@ msgstr "%(count)s dosya başarıyla yüklendi"
 
 #: app/static/app/js/translations/odm_autogenerated.js:3
 msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
+"Permanently delete all previous results and rerun the processing pipeline."
 msgstr ""
+"Önceki tüm sonuçları kalıcı olarak silin ve işleme hattını yeniden "
+"çalıştırın."
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
 #, python-format
 msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
-"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
 msgstr ""
-"Eşleştirme algoritması: Yaklaşık En Yakın Komşular için Hızlı Kütüphane "
-"(FLANN) veya Kelime Torbası (BOW). FLANN daha yavaştır ancak daha "
-"kararlıdır. BOW daha hızlıdır ancak bazen geçerli eşleşmeleri gözden "
-"kaçırabilir. BRUTEFORCE (Kaba Kuvvet Yöntemi) çok yavaştır ancak "
-"güvenilirdir. HAMMING (Hamming Uzaklığı), büyük veri kümelerinde çok daha "
-"hızlıdır ancak GPU gerektirir. Şu değerlerden biri olabilir: %(choices)s. "
-"Varsayılan değer: %(default)s"
+"Görüntülerin gruplara nasıl ayrılacağını belirleyen görüntü grupları "
+"dosyasının yolu. Dosya aşağıdaki biçimi kullanmalıdır: image_name "
+"group_name. Varsayılan değer: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
 msgid ""
-"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
-"simple morphological filter. Check the --dem* and --smrf* parameters for "
-"finer tuning. Default: %(default)s"
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
 msgstr ""
-"Basit morfolojik filtre kullanarak DTM (Sayısal Arazi Modeli, yalnızca "
-"zemin) oluşturmak için bu etiketi kullanın. Daha hassas ayarlamalar için --"
-"dem* ve --smrf* parametrelerini inceleyin. Varsayılan değer: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:6
-msgid "show this help message and exit"
-msgstr "Bu yardım mesajını göster ve çık"
+#, python-format
+msgid ""
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
 msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
 msgstr ""
-"PDF raporu oluşturmayı atlayın. Bu, bir rapora ihtiyacınız yoksa zaman "
-"kazandırabilir. Varsayılan: %(default)s"
+"Nokta bulutu çıktılarını sınıflandırır. Bu seçeneğin davranışını --dem-* "
+"parametrelerini değiştirerek kontrol edebilirsiniz. Varsayılan değer: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
 #, python-format
 msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
 msgstr ""
-"Birden fazla malzeme ve doku dosyası yerine tek bir malzeme ve tek bir doku "
-"dosyası içeren OBJ dosyaları oluşturur. Varsayılan değer: %(default)s"
+"Ortofotoğraf çözünürlüğü (cm/piksel). Bu değerin, yer örnekleme mesafesi "
+"(GSD) tahminiyle sınırlandırıldığını unutmayın. Varsayılan değer: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
 msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
 msgstr ""
-"Kısmi rekonstrüksiyonları birleştirmeye çalışmayın. Bu, görüntüler yeterli "
-"örtüşmeye sahip olmadığında veya izole edildiğinde meydana gelebilir. "
-"Varsayılan: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:10
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
-msgstr ""
-"Ortofotodan bir PNG görselleştirmesi oluşturmak istiyorsanız bu parametreyi "
-"ayarlayın. Varsayılan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
-msgstr ""
-"Bölme-birleştirme (split-merge) iş akışını birden fazla düğümde paralel "
-"olarak dağıtmak için ClusterODM örneğinin URL'si. Varsayılan değer: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-#, python-format
-msgid ""
-"Radius of the overlap between submodels in meters. After grouping images "
-"into clusters, images that are closer than this radius to a cluster are "
-"added to the cluster. This is done to ensure that neighboring submodels "
-"overlap. All imagesneed GPS information. Default: %(default)s"
-msgstr ""
-"Alt modeller arasındaki örtüşme yarıçapı (metre cinsinden). Görüntüler "
-"kümeler hâlinde gruplandırıldıktan sonra, bir kümeye bu yarıçaptan daha "
-"yakın olan görüntüler kümeye eklenir. Bu işlem, komşu alt modellerin "
-"birbiriyle örtüşmesini sağlamak için yapılır. Tüm görüntülerin GPS bilgisi "
-"içermesi gerekir. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"Özellik çıkarma kalitesini belirler. Daha yüksek kalite, daha iyi özellikler "
-"üretir ancak daha fazla bellek gerektirir ve daha uzun sürer. Şu değerlerden "
-"biri olabilir: %(choices)s. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:14
 #, python-format
 msgid ""
 "Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
@@ -2506,27 +2491,200 @@ msgstr ""
 "olmadığınız sürece `--ignore-gsd` parametresini `true` olarak ayarlamayın; "
 "emin olsanız bile kullanmayın. Varsayılan değer: %(default)s"
 
+#: app/static/app/js/translations/odm_autogenerated.js:11
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"Özellik çıkarma kalitesini belirler. Daha yüksek kalite, daha iyi özellikler "
+"üretir ancak daha fazla bellek gerektirir ve daha uzun sürer. Şu değerlerden "
+"biri olabilir: %(choices)s. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:12
+#, python-format
+msgid ""
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
+msgstr ""
+"PDF raporu oluşturmayı atlayın. Bu, bir rapora ihtiyacınız yoksa zaman "
+"kazandırabilir. Varsayılan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:13
+#, python-format
+msgid ""
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgstr ""
+"Basit Morfolojik Filtre yükseklik ölçek parametresi. Varsayılan değer: "
+"%(default)s"
+
 #: app/static/app/js/translations/odm_autogenerated.js:15
 #, python-format
 msgid ""
-"Choose what to merge in the merge step in a split dataset. By default all "
-"available outputs are merged. Options: %(choices)s. Default: %(default)s"
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"%(default)s"
 msgstr ""
-"Bölünmüş bir veri kümesinde birleştirme adımında neyin birleştirileceğini "
-"seçin. Varsayılan olarak mevcut tüm çıktılar birleştirilir. Seçenekler: "
-"%(choices)s. Varsayılan: %(default)s"
+"Yerel ortalamadan N standart sapmadan daha fazla sapan noktaları kaldırarak "
+"nokta bulutunu filtreler. Filtrelemeyi devre dışı bırakmak için 0 olarak "
+"ayarlayın. Varsayılan değer: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:16
 #, python-format
 msgid ""
-"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
-"filling. Starting with a radius equal to the output resolution, N different "
-"DEMs are generated with progressively bigger radius using the inverse "
-"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
-"then merged using nearest neighbor interpolation. Default: %(default)s"
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
 msgstr ""
+"Ortofotoğraflar için kullanılacak sıkıştırma türünü belirler. Şu değerlerden "
+"biri olabilir: %(choices)s. Varsayılan değer: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:17
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+"Tam bir 3B model oluşturulmasını atlar. Yalnızca ortofotoğraf ve Sayısal "
+"Yükseklik Modeli (DEM) gibi 2B sonuçlara ihtiyacınız varsa bu seçenek işlem "
+"süresinden tasarruf etmenizi sağlar. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:18
+#, python-format
+msgid ""
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
+"%(default)s"
+msgstr ""
+"Alt model başına ortalama görüntü sayısı. Büyük bir veri kümesi daha küçük "
+"alt modellere bölünürken görüntüler kümeler hâlinde gruplandırılır. Bu "
+"değer, her kümede ortalama kaç görüntü bulunması gerektiğini belirler. "
+"Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:19
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr ""
+"Çıktı ağındaki (mesh) maksimum köşe noktası sayısı. Varsayılan değer: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:20
+msgid "show this help message and exit"
+msgstr "Bu yardım mesajını göster ve çık"
+
+#: app/static/app/js/translations/odm_autogenerated.js:21
+#, python-format
+msgid ""
+"The maximum output resolution of extracted video frames in pixels. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:22
+#, python-format
+msgid ""
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
+msgstr ""
+"Coğrafi referanslı nokta bulutunu Bulut için Optimize Edilmiş Nokta Bulutu "
+"(COPC) biçiminde kaydeder. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:23
+#, python-format
+msgid ""
+"Set point cloud quality. Higher quality generates better, denser point "
+"clouds, but requires more memory and takes longer. Each step up in quality "
+"increases processing time roughly by a factor of 4x.Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:24
+msgid "Copy output results to this folder after processing."
+msgstr "İşlemden sonra çıktı sonuçlarını bu klasöre kopyalayın."
+
+#: app/static/app/js/translations/odm_autogenerated.js:25
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
+"Default: %(default)s"
+msgstr ""
+"Coğrafi referanslı nokta bulutunu Entwine Point Tile (EPT) formatında dışa "
+"aktarın. Varsayılan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:26
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+"Dokulu modelleri tek bir ikili glTF (GLB) dosyası olarak oluşturur. "
+"Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:27
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+"Normal GeoTIFF dosyaları yerine Bulut için Optimize Edilmiş GeoTIFF (COG) "
+"dosyaları oluşturur. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:28
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:29
+#, python-format
+msgid ""
+"Octree depth used in the mesh reconstruction, increase to get more vertices, "
+"recommended values are 8-12. Default: %(default)s"
+msgstr ""
+"Ağ (mesh) yeniden yapılandırmasında kullanılan sekizli ağaç (octree) "
+"derinliği. Daha fazla köşe noktası elde etmek için bu değeri artırın. "
+"Önerilen değerler 8-12 arasındadır. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:30
+msgid ""
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:31
+#, python-format
+msgid ""
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
+msgstr ""
+"Kamera sensörünüzün satır taramalı deklanşör okuma süresini (milisaniye "
+"cinsinden), veritabanındaki değer yerine manuel olarak belirler. "
+"Veritabanında tüm kameraların bulunmadığını unutmayın. Veritabanındaki "
+"değeri kullanmak için 0 olarak ayarlayın. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
+#, python-format
+msgid ""
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:33
+#, python-format
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:34
 #, python-format
 msgid ""
 "Generates a polygon around the cropping area that cuts the orthophoto around "
@@ -2534,24 +2692,39 @@ msgid ""
 "mosaics with multiple overlapping orthophotos. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:18
+#: app/static/app/js/translations/odm_autogenerated.js:35
 #, python-format
 msgid ""
-"Set a value in meters for the GPS Dilution of Precision (DOP) information "
-"for all images. If your images are tagged with high precision GPS "
-"information (RTK), this value will be automatically set accordingly. You can "
-"use this option to manually set it in case the reconstruction fails. "
-"Lowering this option can sometimes help control bowling-effects over large "
-"areas. Default: %(default)s"
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
 msgstr ""
-"Tüm görüntüler için GPS Hassasiyet Azalması (DOP) değerini metre cinsinden "
-"belirler. Görüntüleriniz yüksek hassasiyetli GPS bilgileriyle (RTK) "
-"etiketlenmişse bu değer otomatik olarak uygun şekilde ayarlanır. Yeniden "
-"yapılandırma başarısız olursa bu seçeneği kullanarak değeri manuel olarak "
-"belirleyebilirsiniz. Bu değeri düşürmek, geniş alanlarda görülen çanaklaşma "
-"etkilerini kontrol etmeye yardımcı olabilir. Varsayılan değer: %(default)s"
+"Alt modeller arasındaki örtüşme yarıçapı (metre cinsinden). Görüntüler "
+"kümeler hâlinde gruplandırıldıktan sonra, bir kümeye bu yarıçaptan daha "
+"yakın olan görüntüler kümeye eklenir. Bu işlem, komşu alt modellerin "
+"birbiriyle örtüşmesini sağlamak için yapılır. Tüm görüntülerin GPS bilgisi "
+"içermesi gerekir. Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:19
+#: app/static/app/js/translations/odm_autogenerated.js:36
+#, python-format
+msgid ""
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:37
+#, python-format
+msgid ""
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"İşlemi bu aşamadan itibaren yeniden başlatır. Şu değerlerden biri olabilir: "
+"%(choices)s. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:38
 #, python-format
 msgid ""
 "Choose the structure from motion algorithm. For aerial datasets, if camera "
@@ -2565,76 +2738,59 @@ msgstr ""
 "kaldırılmıştır ve gelecekteki bir sürümde kaldırılacaktır. Şu değerlerden "
 "biri olabilir: %(choices)s. Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:20
+#: app/static/app/js/translations/odm_autogenerated.js:39
 #, python-format
 msgid ""
-"Delete heavy intermediate files to optimize disk space usage. This affects "
-"the ability to restart the pipeline from an intermediate stage, but allows "
-"datasets to be processed on machines that don't have sufficient disk space "
-"available. Default: %(default)s"
+"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
+"filling. Starting with a radius equal to the output resolution, N different "
+"DEMs are generated with progressively bigger radius using the inverse "
+"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
+"then merged using nearest neighbor interpolation. Default: %(default)s"
 msgstr ""
-"Disk alanı kullanımını optimize etmek için büyük boyutlu ara dosyaları "
-"siler. Bu işlem, işlem hattının ara bir aşamadan yeniden başlatılmasını "
-"engelleyebilir ancak yeterli disk alanı bulunmayan makinelerde veri "
-"kümelerinin işlenmesini sağlar. Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr ""
-"Çıktı ağındaki (mesh) maksimum köşe noktası sayısı. Varsayılan değer: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
+#: app/static/app/js/translations/odm_autogenerated.js:40
 #, python-format
 msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"The maximum output resolution of extracted video frames in pixels. Default: "
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:25
+#: app/static/app/js/translations/odm_autogenerated.js:41
 #, python-format
 msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
+"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:26
-#, fuzzy, python-format
-msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
-msgstr ""
-"Mevcut GCP'ler olsa bile, yeniden yapılandırma için görüntülerin GPS exif "
-"verilerini kullanın. Bu flag, yüksek hassasiyetli GPS ölçümleriniz varsa "
-"kullanışlıdır. GCP yoksa bu flag hiçbir şey yapmaz. Varsayılan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:27
+#: app/static/app/js/translations/odm_autogenerated.js:42
 #, python-format
 msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
+msgstr ""
+"DSM/DTM çözünürlüğü (cm/piksel). Bu değerin, yer örnekleme mesafesi (GSD) "
+"tahminiyle sınırlandırıldığını unutmayın. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:43
+#, python-format
+msgid ""
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
+msgstr ""
+"Ortofoto oluşturmayı atlayın. Yalnızca 3D sonuçlara veya SAY'lara (DEM) "
+"ihtiyacınız varsa bu işlem zaman tasarrufu sağlayabilir. Varsayılan: "
 "%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, python-format
+msgid ""
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:28
+#: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
 msgid ""
 "Run local bundle adjustment for every image added to the reconstruction and "
@@ -2646,49 +2802,7 @@ msgstr ""
 "kümelerinde yeniden yapılandırma işlemini hızlandırır. Varsayılan değer: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
-msgstr ""
-"Coğrafi referanslama için kullanılan kamera merkezi koordinatlarını içeren "
-"görüntü coğrafi konum dosyasının yolu. Yaw/pitch/roll değerlerine sahip "
-"değilseniz bunları 0 olarak ayarlayabilirsiniz. Dosya aşağıdaki biçimi "
-"kullanmalıdır: EPSG:<code> veya <+proj tanımı> image_name geo_x geo_y geo_z "
-"[yaw (derece)] [pitch (derece)] [roll (derece)] [yatay doğruluk (metre)] "
-"[dikey doğruluk (metre)] Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
-msgstr ""
-"Ağ (mesh) yeniden yapılandırmasında kullanılan sekizli ağaç (octree) "
-"derinliği. Daha fazla köşe noktası elde etmek için bu değeri artırın. "
-"Önerilen değerler 8-12 arasındadır. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
+#: app/static/app/js/translations/odm_autogenerated.js:46
 #, python-format
 msgid ""
 "Set the radiometric calibration to perform on images. When processing "
@@ -2712,39 +2826,92 @@ msgstr ""
 "sensörü (DLS) tarafından kaydedilen spektral ışınımı telafi eder. Şu "
 "değerlerden biri olabilir: %(choices)s. Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:34
+#: app/static/app/js/translations/odm_autogenerated.js:47
 #, python-format
 msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate.Default: %(default)s"
+"Set a value in meters for the GPS Dilution of Precision (DOP) information "
+"for all images. If your images are tagged with high precision GPS "
+"information (RTK), this value will be automatically set accordingly. You can "
+"use this option to manually set it in case the reconstruction fails. "
+"Lowering this option can sometimes help control bowling-effects over large "
+"areas. Default: %(default)s"
 msgstr ""
-"Ortofotoğraf çözünürlüğü (cm/piksel). Bu değerin, yer örnekleme mesafesi "
-"(GSD) tahminiyle sınırlandırıldığını unutmayın. Varsayılan değer: %(default)s"
+"Tüm görüntüler için GPS Hassasiyet Azalması (DOP) değerini metre cinsinden "
+"belirler. Görüntüleriniz yüksek hassasiyetli GPS bilgileriyle (RTK) "
+"etiketlenmişse bu değer otomatik olarak uygun şekilde ayarlanır. Yeniden "
+"yapılandırma başarısız olursa bu seçeneği kullanarak değeri manuel olarak "
+"belirleyebilirsiniz. Bu değeri düşürmek, geniş alanlarda görülen çanaklaşma "
+"etkilerini kontrol etmeye yardımcı olabilir. Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:35
+#: app/static/app/js/translations/odm_autogenerated.js:48
 #, python-format
 msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:49
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+"Kısmi rekonstrüksiyonları birleştirmeye çalışmayın. Bu, görüntüler yeterli "
+"örtüşmeye sahip olmadığında veya izole edildiğinde meydana gelebilir. "
+"Varsayılan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:50
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+"Leaflet veya OpenLayers gibi görüntüleyiciler için uygun olan ortofotolar ve "
+"DEM'ler için statik kutucuklar oluşturun. Varsayılan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:51
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"Alt model başına ortalama görüntü sayısı. Büyük bir veri kümesi daha küçük "
-"alt modellere bölünürken görüntüler kümeler hâlinde gruplandırılır. Bu "
-"değer, her kümede ortalama kaç görüntü bulunması gerektiğini belirler. "
-"Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:36
+#: app/static/app/js/translations/odm_autogenerated.js:52
 #, python-format
 msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
-msgstr ""
-"Nokta bulutu çıktılarını sınıflandırır. Bu seçeneğin davranışını --dem-* "
-"parametrelerini değiştirerek kontrol edebilirsiniz. Varsayılan değer: "
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
 "%(default)s"
+msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:37
+#: app/static/app/js/translations/odm_autogenerated.js:53
+#, python-format
+msgid ""
+"Name of dataset (i.e subfolder name within project folder). Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
+#, python-format
+msgid ""
+"Delete heavy intermediate files to optimize disk space usage. This affects "
+"the ability to restart the pipeline from an intermediate stage, but allows "
+"datasets to be processed on machines that don't have sufficient disk space "
+"available. Default: %(default)s"
+msgstr ""
+"Disk alanı kullanımını optimize etmek için büyük boyutlu ara dosyaları "
+"siler. Bu işlem, işlem hattının ara bir aşamadan yeniden başlatılmasını "
+"engelleyebilir ancak yeterli disk alanı bulunmayan makinelerde veri "
+"kümelerinin işlenmesini sağlar. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
 #, python-format
 msgid ""
 "Path to the file containing the ground control points used for "
@@ -2753,59 +2920,75 @@ msgid ""
 "[extra2]Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:38
+#: app/static/app/js/translations/odm_autogenerated.js:57
 #, python-format
 msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
-msgstr ""
-"Kamera sensörünüzün satır taramalı deklanşör okuma süresini (milisaniye "
-"cinsinden), veritabanındaki değer yerine manuel olarak belirler. "
-"Veritabanında tüm kameraların bulunmadığını unutmayın. Veritabanındaki "
-"değeri kullanmak için 0 olarak ayarlayın. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:39
-#, python-format
-msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"Simple Morphological Filter slope parameter (rise over run). Default: "
 "%(default)s"
 msgstr ""
-"Yerel ortalamadan N standart sapmadan daha fazla sapan noktaları kaldırarak "
-"nokta bulutunu filtreler. Filtrelemeyi devre dışı bırakmak için 0 olarak "
-"ayarlayın. Varsayılan değer: %(default)s"
+"Basit Morfolojik Filtre eğim parametresi (çalışma üzerinde yükselme). "
+"Varsayılan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:40
+#: app/static/app/js/translations/odm_autogenerated.js:58
 #, python-format
 msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
-"%(default)s"
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
 msgstr ""
-"Kamera projeksiyon türünü belirler. Bir değerin manuel olarak ayarlanması, "
-"geometrik bozulma düzeltmesinin iyileştirilmesine yardımcı olabilir. "
-"Varsayılan olarak uygulama, görüntülerin meta verilerinden lens türünü "
-"belirlemeye çalışır. Şu değerlerden biri olabilir: %(choices)s. Varsayılan "
-"değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:41
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, fuzzy, python-format
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
+msgstr ""
+"Mevcut GCP'ler olsa bile, yeniden yapılandırma için görüntülerin GPS exif "
+"verilerini kullanın. Bu flag, yüksek hassasiyetli GPS ölçümleriniz varsa "
+"kullanışlıdır. GCP yoksa bu flag hiçbir şey yapmaz. Varsayılan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
 #, python-format
 msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:42
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
 msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
+"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
+"simple morphological filter. Check the --dem* and --smrf* parameters for "
+"finer tuning. Default: %(default)s"
 msgstr ""
-"Önceki tüm sonuçları kalıcı olarak silin ve işleme hattını yeniden "
-"çalıştırın."
+"Basit morfolojik filtre kullanarak DTM (Sayısal Arazi Modeli, yalnızca "
+"zemin) oluşturmak için bu etiketi kullanın. Daha hassas ayarlamalar için --"
+"dem* ve --smrf* parametrelerini inceleyin. Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:43
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, python-format
+msgid ""
+"Turn off camera parameter optimization during bundle adjustment. This can be "
+"sometimes useful for improving results that exhibit doming/bowling or when "
+"images are taken with a rolling shutter camera. Default: %(default)s"
+msgstr ""
+"Demet dengeleme (bundle adjustment) sırasında kamera parametrelerinin "
+"optimizasyonunu devre dışı bırakır. Bu seçenek, kubbeleşme veya çanaklaşma "
+"etkileri görülen sonuçları iyileştirmek ya da görüntülerin satır taramalı "
+"deklanşöre (rolling shutter) sahip bir kamerayla çekildiği durumlarda "
+"yararlı olabilir. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:63
+#, python-format
+msgid ""
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:64
 #, python-format
 msgid ""
 "Perform image matching with the nearest images based on GPS exif data. Set "
@@ -2815,72 +2998,43 @@ msgstr ""
 "yöntemiyle eşleştirme yapmak için 0 olarak ayarlayın. Varsayılan değer: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:44
+#: app/static/app/js/translations/odm_autogenerated.js:65
 #, python-format
 msgid ""
-"Skips dense reconstruction and 3D model generation. It generates an "
-"orthophoto directly from the sparse reconstruction. On flat terrain with no "
-"objects/structures, turn this on to save time. Default: %(default)s"
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
 msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:45
-#, python-format
-msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"Bölme-birleştirme (split-merge) iş akışını birden fazla düğümde paralel "
+"olarak dağıtmak için ClusterODM örneğinin URL'si. Varsayılan değer: "
 "%(default)s"
-msgstr ""
-"Çeşitli işlemlerde kullanılacak maksimum işlem sayısı. Tepe bellek "
-"gereksinimi, 2 megapiksel görüntü çözünürlüğünde iş parçacığı başına "
-"yaklaşık 1 GB'tır. Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:46
+#: app/static/app/js/translations/odm_autogenerated.js:66
 #, python-format
 msgid ""
-"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+"Bölme-birleştirme (split-merge) işleminde alt modellerin hizalanmasını "
+"atlar. GPS verilerinin yeterince doğru olduğu çok büyük veri kümelerinde "
+"yararlıdır. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
+msgstr ""
+"Tüm görüntülerde renk normalizasyonunu atlar. Radyometrik veriler işlenirken "
+"kullanışlıdır. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
 "Default: %(default)s"
 msgstr ""
-"Coğrafi referanslı nokta bulutunu Entwine Point Tile (EPT) formatında dışa "
-"aktarın. Varsayılan: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:47
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:48
-#, python-format
-msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"Ortofotoğraflar için kullanılacak sıkıştırma türünü belirler. Şu değerlerden "
-"biri olabilir: %(choices)s. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-#, python-format
-msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
-msgstr ""
-"Coğrafi referanslı nokta bulutunu Bulut için Optimize Edilmiş Nokta Bulutu "
-"(COPC) biçiminde kaydeder. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:50
-msgid "Displays version number and exits. "
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
+#: app/static/app/js/translations/odm_autogenerated.js:69
 #, python-format
 msgid ""
 "Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
@@ -2888,26 +3042,7 @@ msgid ""
 "tuning. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:53
-msgid "Copy output results to this folder after processing."
-msgstr "İşlemden sonra çıktı sonuçlarını bu klasöre kopyalayın."
-
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"İşlemi bu aşamadan itibaren yeniden başlatır. Şu değerlerden biri olabilir: "
-"%(choices)s. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:56
+#: app/static/app/js/translations/odm_autogenerated.js:70
 #, python-format
 msgid ""
 "Simple Morphological Filter elevation threshold parameter (meters). Default: "
@@ -2916,202 +3051,7 @@ msgstr ""
 "Basit Morfolojik Filtre yükseklik eşiği parametresi (metre cinsinden). "
 "Varsayılan değer: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-#, python-format
-msgid ""
-"Set point cloud quality. Higher quality generates better, denser point "
-"clouds, but requires more memory and takes longer. Each step up in quality "
-"increases processing time roughly by a factor of 4x.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
-msgstr ""
-"DSM/DTM çözünürlüğü (cm/piksel). Bu değerin, yer örnekleme mesafesi (GSD) "
-"tahminiyle sınırlandırıldığını unutmayın. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, python-format
-msgid ""
-"Set the units of the PDF report. By default the vertical units of the "
-"coordinate reference system are used. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
-msgstr ""
-"Basit Morfolojik Filtre yükseklik ölçek parametresi. Varsayılan değer: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr ""
-"Dokulu modelleri tek bir ikili glTF (GLB) dosyası olarak oluşturur. "
-"Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:66
-#, python-format
-msgid ""
-"Decimate the points before generating the DEM. 1 is no decimation (full "
-"quality). 100 decimates ~99%% of the points. Useful for speeding up "
-"generation of DEM results in very large datasets. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:67
-#, python-format
-msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
-"%(default)s"
-msgstr ""
-"Normal GeoTIFF dosyaları yerine Bulut için Optimize Edilmiş GeoTIFF (COG) "
-"dosyaları oluşturur. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:68
-#, python-format
-msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
-msgstr ""
-"Görüntülerin gruplara nasıl ayrılacağını belirleyen görüntü grupları "
-"dosyasının yolu. Dosya aşağıdaki biçimi kullanmalıdır: image_name "
-"group_name. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
-msgstr ""
-"N yarıçapı (metre cinsinden) içindeki noktalardan yalnızca birini tutarak "
-"nokta bulutunu filtreler. Bu işlem, nokta bulutunun çıktı çözünürlüğünü "
-"sınırlandırmak ve yinelenen noktaları kaldırmak için kullanılabilir. "
-"Örneklemeyi devre dışı bırakmak için 0 olarak ayarlayın. Varsayılan değer: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-
 #: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
-msgstr ""
-"Arka planı kaldırmak için görüntü maskelerini yapay zeka kullanarak otomatik "
-"olarak oluşturur. Deneyseldir. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:72
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:73
-#, python-format
-msgid ""
-"Computes an euclidean raster map for each DEM. The map reports the distance "
-"from each cell to the nearest NODATA value (before any hole filling takes "
-"place). This can be useful to isolate the areas that have been filled. "
-"Default: %(default)s"
-msgstr ""
-"Her DEM için bir öklid raster haritası hesaplar. Harita, her hücreden en "
-"yakın NODATA değerine olan mesafeyi bildirir (herhangi bir delik doldurma "
-"işlemi gerçekleşmeden önce). Bu, doldurulan alanları izole etmek için "
-"yararlı olabilir. Varsayılan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
-msgstr ""
-"Çizgili bir GeoTIFF oluşturmak istiyorsanız bu parametreyi ayarlayın. "
-"Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
-#, python-format
-msgid ""
-"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
-"altitude value of the GPS EXIF data. This does not change the value of any "
-"GCPs. This can be useful for example when adjusting from ellipsoidal to "
-"orthometric height. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:78
-#, python-format
-msgid ""
-"Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:79
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:80
 #, python-format
 msgid ""
 "Perform image matching with the nearest N images based on image filename "
@@ -3125,30 +3065,125 @@ msgstr ""
 "uygulanır. Devre dışı bırakmak için 0 olarak ayarlayın. Varsayılan değer: "
 "%(default)s"
 
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+"Arka planı kaldırmak için görüntü maskelerini yapay zeka kullanarak otomatik "
+"olarak oluşturur. Deneyseldir. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+"Birden fazla malzeme ve doku dosyası yerine tek bir malzeme ve tek bir doku "
+"dosyası içeren OBJ dosyaları oluşturur. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid ""
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
+msgstr ""
+"Çeşitli işlemlerde kullanılacak maksimum işlem sayısı. Tepe bellek "
+"gereksinimi, 2 megapiksel görüntü çözünürlüğünde iş parçacığı başına "
+"yaklaşık 1 GB'tır. Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+msgid "Displays version number and exits. "
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
+#, python-format
+msgid ""
+"Skips dense reconstruction and 3D model generation. It generates an "
+"orthophoto directly from the sparse reconstruction. On flat terrain with no "
+"objects/structures, turn this on to save time. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:79
+#, python-format
+msgid ""
+"Decimate the points before generating the DEM. 1 is no decimation (full "
+"quality). 100 decimates ~99%% of the points. Useful for speeding up "
+"generation of DEM results in very large datasets. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:80
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgstr ""
+"Coğrafi referanslı nokta bulutunu CSV biçiminde dışa aktarır. Varsayılan "
+"değer: %(default)s"
+
 #: app/static/app/js/translations/odm_autogenerated.js:81
 #, python-format
 msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
-"images are taken with a rolling shutter camera. Default: %(default)s"
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
 msgstr ""
-"Demet dengeleme (bundle adjustment) sırasında kamera parametrelerinin "
-"optimizasyonunu devre dışı bırakır. Bu seçenek, kubbeleşme veya çanaklaşma "
-"etkileri görülen sonuçları iyileştirmek ya da görüntülerin satır taramalı "
-"deklanşöre (rolling shutter) sahip bir kamerayla çekildiği durumlarda "
-"yararlı olabilir. Varsayılan değer: %(default)s"
+"Ortofotodan bir PNG görselleştirmesi oluşturmak istiyorsanız bu parametreyi "
+"ayarlayın. Varsayılan: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:82
 #, python-format
 msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
+"Choose what to merge in the merge step in a split dataset. By default all "
+"available outputs are merged. Options: %(choices)s. Default: %(default)s"
 msgstr ""
-"Tam bir 3B model oluşturulmasını atlar. Yalnızca ortofotoğraf ve Sayısal "
-"Yükseklik Modeli (DEM) gibi 2B sonuçlara ihtiyacınız varsa bu seçenek işlem "
-"süresinden tasarruf etmenizi sağlar. Varsayılan değer: %(default)s"
+"Bölünmüş bir veri kümesinde birleştirme adımında neyin birleştirileceğini "
+"seçin. Varsayılan olarak mevcut tüm çıktılar birleştirilir. Seçenekler: "
+"%(choices)s. Varsayılan: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:83
+#, python-format
+msgid ""
+"Computes an euclidean raster map for each DEM. The map reports the distance "
+"from each cell to the nearest NODATA value (before any hole filling takes "
+"place). This can be useful to isolate the areas that have been filled. "
+"Default: %(default)s"
+msgstr ""
+"Her DEM için bir öklid raster haritası hesaplar. Harita, her hücreden en "
+"yakın NODATA değerine olan mesafeyi bildirir (herhangi bir delik doldurma "
+"işlemi gerçekleşmeden önce). Bu, doldurulan alanları izole etmek için "
+"yararlı olabilir. Varsayılan: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:84
+#, python-format
+msgid ""
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
+"%(default)s"
+msgstr ""
+"N yarıçapı (metre cinsinden) içindeki noktalardan yalnızca birini tutarak "
+"nokta bulutunu filtreler. Bu işlem, nokta bulutunun çıktı çözünürlüğünü "
+"sınırlandırmak ve yinelenen noktaları kaldırmak için kullanılabilir. "
+"Örneklemeyi devre dışı bırakmak için 0 olarak ayarlayın. Varsayılan değer: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:85
 #, python-format
 msgid ""
 "Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
@@ -3159,68 +3194,24 @@ msgstr ""
 "GeoTIFF DEM veya bir LAS/LAZ nokta bulutuna giden yol. Deneysel. Varsayılan: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:84
-#, python-format
-msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
-msgstr ""
-"Tüm görüntülerde renk normalizasyonunu atlar. Radyometrik veriler işlenirken "
-"kullanışlıdır. Varsayılan değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:85
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-"Leaflet veya OpenLayers gibi görüntüleyiciler için uygun olan ortofotolar ve "
-"DEM'ler için statik kutucuklar oluşturun. Varsayılan: %(default)s"
-
 #: app/static/app/js/translations/odm_autogenerated.js:86
 #, python-format
 msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
 msgstr ""
+"Coğrafi referanslama için kullanılan kamera merkezi koordinatlarını içeren "
+"görüntü coğrafi konum dosyasının yolu. Yaw/pitch/roll değerlerine sahip "
+"değilseniz bunları 0 olarak ayarlayabilirsiniz. Dosya aşağıdaki biçimi "
+"kullanmalıdır: EPSG:<code> veya <+proj tanımı> image_name geo_x geo_y geo_z "
+"[yaw (derece)] [pitch (derece)] [roll (derece)] [yatay doğruluk (metre)] "
+"[dikey doğruluk (metre)] Varsayılan değer: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:87
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr ""
-"Ortofoto oluşturmayı atlayın. Yalnızca 3D sonuçlara veya SAY'lara (DEM) "
-"ihtiyacınız varsa bu işlem zaman tasarrufu sağlayabilir. Varsayılan: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:88
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
-"%(default)s"
-msgstr ""
-"Basit Morfolojik Filtre eğim parametresi (çalışma üzerinde yükselme). "
-"Varsayılan: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:89
-#, python-format
-msgid ""
-"Simple Morphological Filter window radius parameter (meters). Default: "
-"%(default)s"
-msgstr ""
-"Basit Morfolojik Filtre pencere yarıçapı parametresi (metre). Varsayılan "
-"değer: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:90
-#, python-format
-msgid ""
-"When processing multispectral datasets, automatically align the images for "
-"each band. If the images have been postprocessed and are already aligned, "
-"use this option. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
 msgid ""
 "Specify the distance between camera shot locations and the outer edge of the "
@@ -3231,22 +3222,65 @@ msgstr ""
 "dış kenarı arasındaki mesafeyi belirtir. Bir değerin otomatik olarak "
 "seçilmesi için 0 olarak ayarlayın. Varsayılan değer: %(default)s"
 
+#: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgstr ""
+"Çizgili bir GeoTIFF oluşturmak istiyorsanız bu parametreyi ayarlayın. "
+"Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:90
+#, python-format
+msgid ""
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
+"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"Eşleştirme algoritması: Yaklaşık En Yakın Komşular için Hızlı Kütüphane "
+"(FLANN) veya Kelime Torbası (BOW). FLANN daha yavaştır ancak daha "
+"kararlıdır. BOW daha hızlıdır ancak bazen geçerli eşleşmeleri gözden "
+"kaçırabilir. BRUTEFORCE (Kaba Kuvvet Yöntemi) çok yavaştır ancak "
+"güvenilirdir. HAMMING (Hamming Uzaklığı), büyük veri kümelerinde çok daha "
+"hızlıdır ancak GPU gerektirir. Şu değerlerden biri olabilir: %(choices)s. "
+"Varsayılan değer: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:91
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr ""
+
 #: app/static/app/js/translations/odm_autogenerated.js:92
 #, python-format
 msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
 msgstr ""
-"Bölme-birleştirme (split-merge) işleminde alt modellerin hizalanmasını "
-"atlar. GPS verilerinin yeterince doğru olduğu çok büyük veri kümelerinde "
-"yararlıdır. Varsayılan değer: %(default)s"
+"Kamera projeksiyon türünü belirler. Bir değerin manuel olarak ayarlanması, "
+"geometrik bozulma düzeltmesinin iyileştirilmesine yardımcı olabilir. "
+"Varsayılan olarak uygulama, görüntülerin meta verilerinden lens türünü "
+"belirlemeye çalışır. Şu değerlerden biri olabilir: %(choices)s. Varsayılan "
+"değer: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:93
 #, python-format
 msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+"Simple Morphological Filter window radius parameter (meters). Default: "
+"%(default)s"
 msgstr ""
-"Coğrafi referanslı nokta bulutunu CSV biçiminde dışa aktarır. Varsayılan "
+"Basit Morfolojik Filtre pencere yarıçapı parametresi (metre). Varsayılan "
 "değer: %(default)s"
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
@@ -3806,6 +3840,7 @@ msgid "Base Surface"
 msgstr "Alt Yüzey"
 
 #: coreplugins/annotate/public/Popup.jsx:1079
+#: coreplugins/annotate/public/Popup.jsx:1080
 #, fuzzy
 #| msgid "show in 3D"
 msgid "Show 3D"
@@ -4418,9 +4453,6 @@ msgstr "Sayı:"
 
 #~ msgid "Longitude"
 #~ msgstr "Boylam"
-
-#~ msgid "Opacity:"
-#~ msgstr "Şeffaflık:"
 
 #~ msgid "Waiting for image upload..."
 #~ msgstr "Resim yüklenmesi bekleniyor..."

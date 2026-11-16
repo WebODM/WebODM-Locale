@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-03-05 19:51+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/webodm/react-ui/ta/"
@@ -240,11 +240,13 @@ msgstr ""
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
 #: app/static/app/js/components/ImportExternalPanel.jsx:283
+#: app/static/app/js/components/ImportTaskPanel.jsx:165
 #: app/static/app/js/components/ManageMediaDialog.jsx:599
 #: app/static/app/js/components/NewTaskPanel.jsx:252
 #: app/static/app/js/components/NewTaskPanel.jsx:259
-#: app/static/app/js/components/ProjectListItem.jsx:882
-#: app/static/app/js/components/ProjectListItem.jsx:895
+#: app/static/app/js/components/PdfPopup.jsx:38
+#: app/static/app/js/components/ProjectListItem.jsx:979
+#: app/static/app/js/components/ProjectListItem.jsx:992
 #: app/static/app/js/components/SplatsDialog.jsx:580
 #: app/static/app/js/components/Toaster.jsx:317
 msgid "Close"
@@ -568,7 +570,7 @@ msgstr "இம்பீரியல் (எங்களை)"
 
 #: app/static/app/js/components/AssetDownloadButtons.jsx:79
 #: app/static/app/js/components/ExportAssetDialog.jsx:41
-#: app/static/app/js/components/MapPreview.jsx:460
+#: app/static/app/js/components/MapPreview.jsx:466
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:94
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:208
 msgid "Download"
@@ -577,6 +579,10 @@ msgstr "பதிவிறக்கம்"
 #: app/static/app/js/components/AssetDownloadButtons.jsx:111
 msgid "Backup"
 msgstr "காப்புப்பிரதி"
+
+#: app/static/app/js/components/ClipboardInput.jsx:38
+msgid "Copied to clipboard"
+msgstr ""
 
 #: app/static/app/js/components/CropButton.jsx:16
 msgid "Crop"
@@ -785,7 +791,7 @@ msgstr "பணி விருப்பங்களைத் திருத்�
 #: app/static/app/js/components/EditProjectDialog.jsx:169
 #: app/static/app/js/components/EditTaskForm.jsx:659
 #: app/static/app/js/components/Paginator.jsx:29
-#: app/static/app/js/components/ProjectListItem.jsx:62
+#: app/static/app/js/components/ProjectListItem.jsx:65
 #: coreplugins/annotate/public/Popup.jsx:898
 #: coreplugins/annotate/public/Popup.jsx:905
 #: coreplugins/annotate/public/Popup.jsx:931
@@ -839,7 +845,7 @@ msgstr "செயல்பாட்டை முடிக்க முடிய�
 #: app/static/app/js/components/EditProjectDialog.jsx:153
 #: app/static/app/js/components/EditTaskForm.jsx:605
 #: app/static/app/js/components/Paginator.jsx:32
-#: app/static/app/js/components/ProjectListItem.jsx:65
+#: app/static/app/js/components/ProjectListItem.jsx:68
 msgid "Tags"
 msgstr "குறிச்சொற்கள்"
 
@@ -857,6 +863,14 @@ msgstr "குறிச்சொற்களைச் சேர்க்கவ�
 #: app/static/app/js/components/EditProjectDialog.jsx:179
 msgid "Description (optional)"
 msgstr "விளக்கம் (விரும்பினால்)"
+
+#: app/static/app/js/components/EditTaskForm.jsx:43
+#: app/static/app/js/components/ImportExternalPanel.jsx:153
+#: app/static/app/js/components/ImportTaskPanel.jsx:36
+#, fuzzy, python-format
+#| msgid "Task #%(number)s"
+msgid "Task of %(date)s"
+msgstr "பணி #%(number)s"
 
 #: app/static/app/js/components/EditTaskForm.jsx:116
 msgid ""
@@ -907,6 +921,7 @@ msgstr "தனிப்பயன்"
 
 #: app/static/app/js/components/EditTaskForm.jsx:240
 #: app/static/app/js/components/EditTaskForm.jsx:392
+#: app/static/app/js/components/TaskListItem.jsx:266
 msgid "Default"
 msgstr "இயல்புநிலை"
 
@@ -945,7 +960,7 @@ msgstr "மீண்டும் முயற்சிக்கவும்"
 #: app/static/app/js/components/EditTaskForm.jsx:573
 #: app/static/app/js/components/EditTaskForm.jsx:580
 #: app/static/app/js/components/ManageMediaDialog.jsx:496
-#: app/static/app/js/components/ProjectListItem.jsx:866
+#: app/static/app/js/components/ProjectListItem.jsx:963
 #: app/static/app/js/components/TaskListItem.jsx:614
 #: app/static/app/js/components/TaskListItem.jsx:859
 #: coreplugins/annotate/public/Popup.jsx:948
@@ -969,7 +984,7 @@ msgstr "சேமி"
 #: app/static/app/js/components/ManageMediaDialog.jsx:544
 #: app/static/app/js/components/ManageMediaDialog.jsx:582
 #: app/static/app/js/components/MapPreview.jsx:194
-#: app/static/app/js/components/ProjectListItem.jsx:872
+#: app/static/app/js/components/ProjectListItem.jsx:969
 #: app/static/app/js/components/TaskListItem.jsx:580
 #: app/static/app/js/components/TaskListItem.jsx:890
 #: coreplugins/annotate/public/Popup.jsx:1156
@@ -1069,7 +1084,7 @@ msgid "Could not apply changes"
 msgstr "மாற்றங்களைப் பயன்படுத்த முடியவில்லை"
 
 #: app/static/app/js/components/FormDialog.jsx:159
-#: app/static/app/js/components/ProjectListItem.jsx:560
+#: app/static/app/js/components/ProjectListItem.jsx:639
 msgid "Could not delete item"
 msgstr "உருப்படியை நீக்க முடியவில்லை"
 
@@ -1149,6 +1164,7 @@ msgstr ""
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
+#: app/static/app/js/components/ProjectListItem.jsx:891
 msgid "Cancel Upload"
 msgstr "பதிவேற்றத்தை ரத்துசெய்"
 
@@ -1201,7 +1217,7 @@ msgstr "முகவரி இலிருந்து இறக்குமத�
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:191
 #: app/static/app/js/components/Map.jsx:1741
-#: app/static/app/js/components/ProjectListItem.jsx:776
+#: app/static/app/js/components/ProjectListItem.jsx:873
 msgid "Import"
 msgstr "இறக்குமதி"
 
@@ -1336,14 +1352,14 @@ msgid "Loading…"
 msgstr "ஏற்றுகிறது…"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:306
+#: app/static/app/js/components/ProjectListItem.jsx:314
 #: app/static/app/js/components/SplatsDialog.jsx:178
 #, python-format
 msgid "%(filename)s is not a valid file"
 msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:174
-#: app/static/app/js/components/ProjectListItem.jsx:335
+#: app/static/app/js/components/ProjectListItem.jsx:343
 #: app/static/app/js/components/SplatsDialog.jsx:195
 #, python-format
 msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
@@ -1351,7 +1367,7 @@ msgstr ""
 "%(filename)s ஐ பதிவேற்ற முடியாது, அதிகபட்ச முயற்சிகளை மீறியது (%(max_retries)s)"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:186
-#: app/static/app/js/components/ProjectListItem.jsx:347
+#: app/static/app/js/components/ProjectListItem.jsx:355
 #: app/static/app/js/components/SplatsDialog.jsx:202
 #, python-format
 msgid ""
@@ -1453,6 +1469,16 @@ msgstr "பயனர்பெயர்"
 msgid "Description"
 msgstr "விவரம்"
 
+#: app/static/app/js/components/Map.jsx:453
+msgid "Opacity:"
+msgstr "ஒளிபுகாநிலை:"
+
+#: app/static/app/js/components/Map.jsx:454
+#, fuzzy
+#| msgid "Bands:"
+msgid "Bounds:"
+msgstr "பட்டைகள்:"
+
 #: app/static/app/js/components/Map.jsx:793
 #: app/static/app/js/components/MapPreview.jsx:114
 msgid "Enter a tile URL template. Valid coordinates are:"
@@ -1542,34 +1568,34 @@ msgstr "இறக்குமதி"
 msgid "Set Reconstruction Area (optional)"
 msgstr "விளக்கம் (விரும்பினால்)"
 
-#: app/static/app/js/components/MapPreview.jsx:326
+#: app/static/app/js/components/MapPreview.jsx:332
 #, fuzzy, python-format
 #| msgid "Cannot restart task from (stage)s."
 msgid "Cannot extract GPS data from %(file)s"
 msgstr "(மேடையில்) இருந்து பணியை மறுதொடக்கம் செய்ய முடியாது."
 
-#: app/static/app/js/components/MapPreview.jsx:449
+#: app/static/app/js/components/MapPreview.jsx:455
 #, fuzzy
 #| msgid "Point location"
 msgid "Plotting GPS locations..."
 msgstr "புள்ளி இடம்"
 
-#: app/static/app/js/components/MapPreview.jsx:454
+#: app/static/app/js/components/MapPreview.jsx:460
 #, python-format
 msgid "For performance reasons, only %(num)s images are plotted"
 msgstr ""
 
-#: app/static/app/js/components/MapPreview.jsx:465
+#: app/static/app/js/components/MapPreview.jsx:471
 #, fuzzy
 #| msgid "Import GeoJSON"
 msgid "GeoJSON"
 msgstr "இறக்குமதி சியோச்சன்"
 
-#: app/static/app/js/components/MapPreview.jsx:466
+#: app/static/app/js/components/MapPreview.jsx:472
 msgid "CSV"
 msgstr ""
 
-#: app/static/app/js/components/MapPreview.jsx:467
+#: app/static/app/js/components/MapPreview.jsx:473
 #, fuzzy
 #| msgid "Download To File"
 msgid "Geolocation File"
@@ -1580,7 +1606,7 @@ msgid "Move Task"
 msgstr "பணியை நகர்த்தவும்"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:10
-#: app/static/app/js/components/ProjectListItem.jsx:745
+#: app/static/app/js/components/ProjectListItem.jsx:830
 msgid "Save Changes"
 msgstr "மாற்றங்களைச் சேமிக்கவும்"
 
@@ -1676,7 +1702,7 @@ msgid "Color"
 msgstr "நிறம்"
 
 #: app/static/app/js/components/Paginator.jsx:26
-#: app/static/app/js/components/ProjectListItem.jsx:59
+#: app/static/app/js/components/ProjectListItem.jsx:62
 msgid "Created on"
 msgstr "உருவாக்கப்பட்டது"
 
@@ -1689,7 +1715,7 @@ msgid "Search names, #tags or @user"
 msgstr ""
 
 #: app/static/app/js/components/Paginator.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:851
+#: app/static/app/js/components/ProjectListItem.jsx:948
 msgid "Sort"
 msgstr "வரிசைப்படுத்து"
 
@@ -1720,12 +1746,12 @@ msgstr "சாதொபொகு கோப்பை இறக்குமதி 
 msgid "Reset to default"
 msgstr "இயல்புநிலைக்கு மீட்டமைக்கவும்"
 
-#: app/static/app/js/components/ProjectListItem.jsx:198
-#: app/static/app/js/components/ProjectListItem.jsx:533
+#: app/static/app/js/components/ProjectListItem.jsx:201
+#: app/static/app/js/components/ProjectListItem.jsx:611
 msgid "Cannot create new task. Please try again later."
 msgstr "புதிய பணியை உருவாக்க முடியாது. தயவுசெய்து பின்னர் மீண்டும் முயற்சிக்கவும்."
 
-#: app/static/app/js/components/ProjectListItem.jsx:224
+#: app/static/app/js/components/ProjectListItem.jsx:227
 #, python-format
 msgid ""
 "%(count)s files cannot be uploaded. As a reminder, only images (.jpg, .tif, ."
@@ -1734,12 +1760,12 @@ msgstr ""
 "%(count)sோப்புகளை பதிவேற்ற முடியாது. ஒரு நினைவூட்டலாக, படங்கள் (.jpg, .tif, .png) "
 "மற்றும் GCP கோப்புகள் (.txt) மட்டுமே பதிவேற்ற முடியும். மீண்டும் முயற்சிக்கவும்."
 
-#: app/static/app/js/components/ProjectListItem.jsx:529
+#: app/static/app/js/components/ProjectListItem.jsx:607
 #, python-format
 msgid "Cannot create new task. Invalid response from server: %(error)s"
 msgstr "புதிய பணியை உருவாக்க முடியாது. சேவையகத்திலிருந்து தவறான பதில்: %(error)s"
 
-#: app/static/app/js/components/ProjectListItem.jsx:731
+#: app/static/app/js/components/ProjectListItem.jsx:816
 msgid ""
 "All tasks, images and models associated with this project will be "
 "permanently deleted. Are you sure you want to continue?"
@@ -1747,7 +1773,7 @@ msgstr ""
 "இந்த திட்டத்துடன் தொடர்புடைய அனைத்து பணிகள், படங்கள் மற்றும் மாதிரிகள் நிரந்தரமாக "
 "நீக்கப்படும். நீங்கள் தொடர விரும்புகிறீர்களா?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:732
+#: app/static/app/js/components/ProjectListItem.jsx:817
 msgid ""
 "This project was shared with you. It will not be deleted, but simply hidden "
 "from your dashboard. Continue?"
@@ -1755,52 +1781,52 @@ msgstr ""
 "இந்த திட்டம் உங்களுடன் பகிரப்பட்டது. இது நீக்கப்படாது, ஆனால் உங்கள் டாச்போர்டில் இருந்து "
 "மறைக்கப்படுகிறது. தொடரவா?"
 
-#: app/static/app/js/components/ProjectListItem.jsx:744
+#: app/static/app/js/components/ProjectListItem.jsx:829
 msgid "Edit Project"
 msgstr "திட்டத்தைத் திருத்து"
 
-#: app/static/app/js/components/ProjectListItem.jsx:746
+#: app/static/app/js/components/ProjectListItem.jsx:831
 msgid "Saving changes..."
 msgstr "மாற்றங்களைச் சேமித்தல் ..."
 
-#: app/static/app/js/components/ProjectListItem.jsx:771
+#: app/static/app/js/components/ProjectListItem.jsx:857
 msgid "Select Images and GCP"
 msgstr "படங்கள் மற்றும் சி.சி.பி என்பதைத் தேர்ந்தெடுக்கவும்"
 
-#: app/static/app/js/components/ProjectListItem.jsx:779
+#: app/static/app/js/components/ProjectListItem.jsx:876
 #, fuzzy
 #| msgid "Import Assets or Backups"
 msgid "Assets / Backups"
 msgstr "சொத்துக்கள் அல்லது காப்புப்பிரதிகளை இறக்குமதி செய்க"
 
-#: app/static/app/js/components/ProjectListItem.jsx:780
+#: app/static/app/js/components/ProjectListItem.jsx:877
 msgid "External Data"
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:812
+#: app/static/app/js/components/ProjectListItem.jsx:909
 #, python-format
 msgid "%(count)s Tasks"
 msgstr "%(count)s பணிகள்"
 
-#: app/static/app/js/components/ProjectListItem.jsx:825
+#: app/static/app/js/components/ProjectListItem.jsx:922
 msgid "Filter"
 msgstr "வடிப்பி"
 
-#: app/static/app/js/components/ProjectListItem.jsx:845
+#: app/static/app/js/components/ProjectListItem.jsx:942
 msgid "Clear"
 msgstr "தெளிவான"
 
-#: app/static/app/js/components/ProjectListItem.jsx:860
+#: app/static/app/js/components/ProjectListItem.jsx:957
 msgid "View Map"
 msgstr "வரைபடத்தைக் காண்க"
 
-#: app/static/app/js/components/ProjectListItem.jsx:883
+#: app/static/app/js/components/ProjectListItem.jsx:980
 msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
 
-#: app/static/app/js/components/ProjectListItem.jsx:886
+#: app/static/app/js/components/ProjectListItem.jsx:983
 msgid "Enable Stable Mode"
 msgstr ""
 
@@ -2087,8 +2113,16 @@ msgid "Cannot restart task."
 msgstr "பணியை மறுதொடக்கம் செய்ய முடியாது."
 
 #: app/static/app/js/components/TaskListItem.jsx:442
-msgid "Cannot restart task from (stage)s."
+#, fuzzy, python-format
+#| msgid "Cannot restart task from (stage)s."
+msgid "Cannot restart task from %(stage)s."
 msgstr "(மேடையில்) இருந்து பணியை மறுதொடக்கம் செய்ய முடியாது."
+
+#: app/static/app/js/components/TaskListItem.jsx:442
+#, fuzzy
+#| msgid "Restart"
+msgid "the start"
+msgstr "மறுதொடக்கம்"
 
 #: app/static/app/js/components/TaskListItem.jsx:491
 msgid "GPS"
@@ -2350,121 +2384,73 @@ msgstr "%(count)s கோப்புகள் வெற்றிகரமாக 
 
 #: app/static/app/js/translations/odm_autogenerated.js:3
 msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
+"Permanently delete all previous results and rerun the processing pipeline."
 msgstr ""
-"திட்ட கோப்புறைக்கான பாதை. உங்கள் திட்ட கோப்புறையில் ஒவ்வொரு தரவுத்தொகுப்பிற்கும் துணை "
-"கோப்புறைகள் இருக்க வேண்டும். ஒவ்வொரு தரவுத்தொகுப்பிலும் \"படங்கள்\" கோப்புறை இருக்க "
-"வேண்டும்."
+"முந்தைய எல்லா முடிவுகளையும் நிரந்தரமாக நீக்கி, செயலாக்க குழாய்த்திட்டத்தை மீண்டும் இயக்கவும்."
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
-#, fuzzy, python-format
-#| msgid ""
-#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
-#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
-#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
-#| "one of: %(choices)s. Default: %(default)s"
+#, python-format
 msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
-"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
 msgstr ""
-"மேட்சர் அல்காரிதம், தோராயமான அருகிலுள்ள அண்டை நாடுகளுக்கான வேகமான நூலகம் அல்லது "
-"சொற்களின் பை. ஃபிளான் மெதுவானது, ஆனால் இன்னும் நிலையானது. வில் வேகமாக உள்ளது, ஆனால் "
-"சில நேரங்களில் செல்லுபடியாகும் போட்டிகளை இழக்க நேரிடும். ப்ரூட்ஃபோர்ச் மிகவும் மெதுவாக "
-"உள்ளது, ஆனால் வலுவானது. இதில் ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
+"படக் குழுக்களுக்கான பாதை படங்களை எவ்வாறு குழுக்களாகப் பிரிக்க வேண்டும் என்பதைக் "
+"கட்டுப்படுத்துகிறது. கோப்பு பின்வரும் வடிவமைப்பைப் பயன்படுத்த வேண்டும்: image_name "
+"group_namedefault: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
 msgid ""
-"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
-"simple morphological filter. Check the --dem* and --smrf* parameters for "
-"finer tuning. Default: %(default)s"
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
 msgstr ""
-"எளிய உருவவியல் வடிகட்டியைப் பயன்படுத்தி ஒரு டிடிஎம் (டிசிட்டல் நிலப்பரப்பு மாதிரி, தரை "
-"மட்டும்) உருவாக்க இந்த குறிச்சொல்லைப் பயன்படுத்தவும். சிறந்த ட்யூனிங்கிற்கான --dem* மற்றும் "
-"- -smrf* அளவுருக்களை சரிபார்க்கவும். இயல்புநிலை: %(default)s"
+"ஒரு படத்திற்கு பிரித்தெடுக்க குறைந்தபட்ச நற்பொருத்தங்கள். படங்களுக்கு இடையில் கூடுதல் "
+"போட்டிகளைக் கண்டறிய கூடுதல் நற்பொருத்தங்கள் பயனுள்ளதாக இருக்கும், இது சிறிய ஒன்றுடன் ஒன்று "
+"அல்லது போதுமான அம்சங்களைக் கொண்ட பகுதிகளை புனரமைக்க அனுமதிக்கும். மேலும் நற்பொருத்தங்கள் "
+"செயலாக்கத்தை மெதுவாக்குகின்றன. இயல்புநிலை: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:6
-msgid "show this help message and exit"
-msgstr "இந்த உதவி செய்தியைக் காட்டி வெளியேறவும்"
+#, python-format
+msgid ""
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
+"மல்டிச்பெக்ட்ரல் தரவுத்தொகுப்புகளை செயலாக்கும்போது, புனரமைப்புக்கு பயன்படுத்தப்படும் முதன்மை "
+"இசைக்குழுவின் பெயரை நீங்கள் குறிப்பிடலாம். கூர்மையான விவரங்களைக் கொண்ட ஒரு இசைக்குழுவைத் "
+"தேர்வுசெய்ய பரிந்துரைக்கப்படுகிறது மற்றும் கவனம் செலுத்துகிறது. இயல்புநிலை: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
 msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
 msgstr ""
-"PDF அறிக்கையின் தலைமுறையைத் தவிர்க்கவும். உங்களுக்கு அறிக்கை தேவையில்லை என்றால் இது "
-"நேரத்தை மிச்சப்படுத்தும். இயல்புநிலை: %(default)s"
+"புள்ளி மேகக்கணி வெளியீடுகளை வகைப்படுத்தவும். --Dem-* அளவுருக்களை மாற்றுவதன் மூலம் இந்த "
+"விருப்பத்தின் நடத்தையை நீங்கள் கட்டுப்படுத்தலாம். இயல்புநிலை: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
 #, python-format
 msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
 msgstr ""
-"பலவற்றிற்கு பதிலாக ஒற்றை பொருள் மற்றும் ஒற்றை அமைப்பு கோப்பைக் கொண்ட OBJ களை "
-"உருவாக்கவும். இயல்புநிலை: %(default)s"
+"சி.எம் / பிக்சலில் ஆர்த்தோஃபோட்டோ தீர்மானம். இந்த மதிப்பு ஒரு தரை மாதிரி தூரம் (சி.எச்."
+"டி) மதிப்பீட்டால் மூடப்பட்டிருக்கிறது என்பதை நினைவில் கொள்க. டெஃபால்ட்: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
 msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
 msgstr ""
-"பகுதி புனரமைப்புகளை இணைக்க முயற்சிக்காதீர்கள். படங்களுக்கு போதுமான ஒன்றுடன் ஒன்று "
-"இல்லாதபோது அல்லது தனிமைப்படுத்தப்படும்போது இது நிகழலாம். இயல்புநிலை: %(default)s"
+"விசைப்பலகைகள் மற்றும் கம்ப்யூட்டிங் டிச்கிரிப்டர்களைப் பிரித்தெடுப்பதற்கான வழிமுறையைத் "
+"தேர்வுசெய்க. ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:10
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
-msgstr ""
-"ஆர்த்தோஃபோட்டோவின் பி.என்.சி வழங்குதல் உருவாக்க விரும்பினால் இந்த அளவுருவை அமைக்கவும். "
-"இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
-msgstr ""
-"இணையாக பல முனைகளில் பிளவு-மெர்ச் பணிப்பாய்வுகளை விநியோகிப்பதற்கான ஒரு கிளச்டரோட்எம் "
-"உதாரணத்திற்கு முகவரி. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-#, fuzzy, python-format
-#| msgid ""
-#| "Radius of the overlap between submodels. After grouping images into "
-#| "clusters, images that are closer than this radius to a cluster are added "
-#| "to the cluster. This is done to ensure that neighboring submodels "
-#| "overlap. Default: %(default)s"
-msgid ""
-"Radius of the overlap between submodels in meters. After grouping images "
-"into clusters, images that are closer than this radius to a cluster are "
-"added to the cluster. This is done to ensure that neighboring submodels "
-"overlap. All imagesneed GPS information. Default: %(default)s"
-msgstr ""
-"சப்மோடல்களுக்கு இடையில் ஒன்றுடன் ஒன்று ஆரம். படங்களை கிளச்டர்களாக தொகுத்த பிறகு, இந்த ஆரம் "
-"ஒரு கிளச்டருக்கு நெருக்கமான படங்கள் கொத்துக்கு சேர்க்கப்படுகின்றன. அண்டை துணை நபர்கள் "
-"ஒன்றுடன் ஒன்று இருப்பதை உறுதி செய்வதற்காக இது செய்யப்படுகிறது. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"நற்பொருத்தம் பிரித்தெடுத்தல் தரத்தை அமைக்கவும். உயர் தகுதி சிறந்த அம்சங்களை "
-"உருவாக்குகிறது, ஆனால் அதிக நினைவகம் தேவைப்படுகிறது மற்றும் அதிக நேரம் எடுக்கும். "
-"ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:14
 #, python-format
 msgid ""
 "Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
@@ -2483,32 +2469,211 @@ msgstr ""
 "அதைப் புறக்கணித்து சற்று சிறந்த பட வெளியீட்டு தரத்தை ஏற்படுத்தும். உங்களுக்கு நேர்மறையாக "
 "இல்லாவிட்டால்-ஐஎன்சோர்-சி.எச்.டி. இயல்புநிலை: %(default)s"
 
+#: app/static/app/js/translations/odm_autogenerated.js:11
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"நற்பொருத்தம் பிரித்தெடுத்தல் தரத்தை அமைக்கவும். உயர் தகுதி சிறந்த அம்சங்களை "
+"உருவாக்குகிறது, ஆனால் அதிக நினைவகம் தேவைப்படுகிறது மற்றும் அதிக நேரம் எடுக்கும். "
+"ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:12
+#, python-format
+msgid ""
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
+msgstr ""
+"PDF அறிக்கையின் தலைமுறையைத் தவிர்க்கவும். உங்களுக்கு அறிக்கை தேவையில்லை என்றால் இது "
+"நேரத்தை மிச்சப்படுத்தும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:13
+#, python-format
+msgid ""
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
+msgstr ""
+"செயலாக்கத்திற்கான வீடியோ கோப்புகளிலிருந்து பிரித்தெடுக்க அதிகபட்ச பிரேம்கள். வரம்பிற்கு 0 "
+"என அமைக்கவும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgstr "எளிய உருவவியல் வடிகட்டி உயரம் அளவிடுதல் அளவுரு. இயல்புநிலை: %(default)s"
+
 #: app/static/app/js/translations/odm_autogenerated.js:15
 #, python-format
 msgid ""
-"Choose what to merge in the merge step in a split dataset. By default all "
-"available outputs are merged. Options: %(choices)s. Default: %(default)s"
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"%(default)s"
 msgstr ""
-"பிளவு தரவுத்தொகுப்பில் ஒன்றிணைக்கும் படியில் என்ன ஒன்றிணைக்க வேண்டும் என்பதைத் தேர்வுசெய்க. "
-"இயல்பாகவே கிடைக்கக்கூடிய அனைத்து வெளியீடுகளும் இணைக்கப்படுகின்றன. விருப்பங்கள்: "
-"%(choices)s. இயல்புநிலை: %(default)s"
+"உள்ளக சராசரியிலிருந்து N நிலையான விலகல்களை விட அதிகமாக விலகும் புள்ளிகளை அகற்றுவதன் "
+"மூலம் புள்ளி மேகத்தை வடிகட்டுகிறது. வடிகட்டலை முடக்க 0 என அமைக்கவும். இயல்புநிலை: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:16
 #, python-format
 msgid ""
-"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
-"filling. Starting with a radius equal to the output resolution, N different "
-"DEMs are generated with progressively bigger radius using the inverse "
-"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
-"then merged using nearest neighbor interpolation. Default: %(default)s"
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
 msgstr ""
-"இடைவெளிகளுடன் பகுதிகளை நிரப்ப பயன்படுத்தப்படும் படிகளின் எண்ணிக்கை. இடைவெளி நிரப்புதலை "
-"முடக்க 0 என அமைக்கவும். வெளியீட்டுத் தீர்மானத்திற்கு சமமான ஒரு சுற்றளவில் தொடங்கி, தலைகீழ் "
-"தூர எடையுள்ள (ஐ.டி.டபிள்யூ) வழிமுறையைப் பயன்படுத்தி படிப்படியாக பெரிய ஆரம் கொண்டு "
-"வெவ்வேறு டெம் உருவாக்கப்பட்டு ஒன்றாக இணைக்கப்படுகிறது. மீதமுள்ள இடைவெளிகள் பின்னர் "
-"அருகிலுள்ள அண்டை இடைக்கணிப்பைப் பயன்படுத்தி இணைக்கப்படுகின்றன. இயல்புநிலை: %(default)s"
+"ஆர்த்தோஃபோட்டோசுக்குப் பயன்படுத்த சுருக்கத்தை அமைக்கவும். ஒன்று: %(choices)s. இயல்புநிலை: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:17
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+"முழு 3D மாதிரியின் தலைமுறையைத் தவிர்க்கவும். ஆர்த்தோஃபோட்டோச் மற்றும் டெம்ச் போன்ற 2 டி "
+"முடிவுகள் மட்டுமே உங்களுக்குத் தேவைப்பட்டால் இது நேரத்தை மிச்சப்படுத்தும். இயல்புநிலை: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:18
+#, python-format
+msgid ""
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
+"%(default)s"
+msgstr ""
+"சப்மோடலுக்கு ஒரு படங்களின் சராசரி எண்ணிக்கை. ஒரு பெரிய தரவுத்தொகுப்பை சிறிய "
+"சப்மோடல்களாகப் பிரிக்கும்போது, படங்கள் கொத்தாக தொகுக்கப்படுகின்றன. இந்த மதிப்பு ஒவ்வொரு "
+"கிளச்டருக்கும் சராசரியாக இருக்க வேண்டிய படங்களின் எண்ணிக்கையை கட்டுப்படுத்துகிறது. "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:19
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr "வெளியீட்டு கண்ணி அதிகபட்ச வெர்டெக்ச் எண்ணிக்கை. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:20
+msgid "show this help message and exit"
+msgstr "இந்த உதவி செய்தியைக் காட்டி வெளியேறவும்"
+
+#: app/static/app/js/translations/odm_autogenerated.js:21
+#, python-format
+msgid ""
+"The maximum output resolution of extracted video frames in pixels. Default: "
+"%(default)s"
+msgstr ""
+"பிக்சல்களில் பிரித்தெடுக்கப்பட்ட வீடியோ பிரேம்களின் அதிகபட்ச வெளியீட்டு தீர்மானம். "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:22
+#, python-format
+msgid ""
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
+msgstr ""
+"மேகக்கணி உகந்த புள்ளி மேகக்கணி (COPC) வடிவத்தில் புவிசார் புள்ளி மேகத்தை சேமிக்கவும். "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:23
+#, python-format
+msgid ""
+"Set point cloud quality. Higher quality generates better, denser point "
+"clouds, but requires more memory and takes longer. Each step up in quality "
+"increases processing time roughly by a factor of 4x.Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+"புள்ளி மேக தரத்தை அமைக்கவும். உயர் தகுதி சிறந்த, அடர்த்தியான புள்ளி மேகங்களை "
+"உருவாக்குகிறது, ஆனால் அதிக நினைவகம் தேவைப்படுகிறது மற்றும் அதிக நேரம் எடுக்கும். "
+"தரத்தின் ஒவ்வொரு அடியும் 4x.can இன் காரணியால் செயலாக்க நேரத்தை அதிகரிக்கிறது: "
+"%(choices)s. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:24
+msgid "Copy output results to this folder after processing."
+msgstr "செயலாக்கத்திற்குப் பிறகு இந்த கோப்புறையில் வெளியீட்டு முடிவுகளை நகலெடுக்கவும்."
+
+#: app/static/app/js/translations/odm_autogenerated.js:25
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
+"Default: %(default)s"
+msgstr ""
+"புவிசார் புள்ளி மேகத்தை என்ட்வைன் பாயிண்ட் டைல் (ஈபிடி) வடிவத்தில் ஏற்றுமதி செய்யுங்கள். "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:26
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+"ஒற்றை கோப்பு பைனரி GLTF (GLB) கடினமான மாதிரிகளை உருவாக்குங்கள். இயல்புநிலை: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:27
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+"சாதாரண சியோடிஃப்களுக்கு பதிலாக கிளவுட்-உகந்த சியோடிஃப்களை உருவாக்கவும். இயல்புநிலை: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:28
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+"ஆர்த்தோஃபோட்டோவின் கூகிள் எர்த் (KMZ) வழங்குதல் உருவாக்க விரும்பினால் இந்த அளவுருவை "
+"அமைக்கவும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:29
+#, python-format
+msgid ""
+"Octree depth used in the mesh reconstruction, increase to get more vertices, "
+"recommended values are 8-12. Default: %(default)s"
+msgstr ""
+"கண்ணி புனரமைப்பில் பயன்படுத்தப்படும் ஆக்ட்ரீ ஆழம், அதிக செங்குத்துகளைப் பெற அதிகரிப்பு, "
+"பரிந்துரைக்கப்பட்ட மதிப்புகள் 8-12 ஆகும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:30
+msgid ""
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
+msgstr ""
+"திட்ட கோப்புறைக்கான பாதை. உங்கள் திட்ட கோப்புறையில் ஒவ்வொரு தரவுத்தொகுப்பிற்கும் துணை "
+"கோப்புறைகள் இருக்க வேண்டும். ஒவ்வொரு தரவுத்தொகுப்பிலும் \"படங்கள்\" கோப்புறை இருக்க "
+"வேண்டும்."
+
+#: app/static/app/js/translations/odm_autogenerated.js:31
+#, python-format
+msgid ""
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
+msgstr ""
+"ரோலிங் சட்டர் ரீட்அவுட் தரவுத்தளத்தைப் பயன்படுத்துவதற்குப் பதிலாக, உங்கள் கேமரா சென்சாருக்கான "
+"(மில்லி விநாடிகளில்) ரோலிங் சட்டர் ரீட்அவுட் நேரத்தை மேலெழுதவும். எல்லா கேமராக்களும் "
+"தரவுத்தளத்தில் இல்லை என்பதை நினைவில் கொள்க. தரவுத்தள மதிப்பைப் பயன்படுத்த 0 என அமைக்கவும். "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
+#, python-format
+msgid ""
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+msgstr ""
+"புனரமைப்பின் பகுதியைக் கட்டுப்படுத்த கேமரா காட்சி இருப்பிடங்களைப் பயன்படுத்தி தானாக ஒரு "
+"எல்லையை அமைக்கவும். இது தொலைதூர பின்னணி கலைப்பொருட்களை (வானம், பின்னணி நிலப்பரப்புகள் "
+"போன்றவை) அகற்ற உதவும். மேலும் காண்க -அற்பமான. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:33
+#, python-format
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr "OGC 3D ஓடுகள் வெளியீடுகளை உருவாக்குங்கள். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:34
 #, python-format
 msgid ""
 "Generates a polygon around the cropping area that cuts the orthophoto around "
@@ -2519,23 +2684,45 @@ msgstr ""
 "பலகோணத்தை உருவாக்குகிறது. இந்த பலகோணம் பல ஒன்றுடன் ஒன்று ஆர்த்தோஃபோட்டோக்களுடன் தடையற்ற "
 "மொசைக்சை தைக்க பயனுள்ளதாக இருக்கும். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:18
+#: app/static/app/js/translations/odm_autogenerated.js:35
+#, fuzzy, python-format
+#| msgid ""
+#| "Radius of the overlap between submodels. After grouping images into "
+#| "clusters, images that are closer than this radius to a cluster are added "
+#| "to the cluster. This is done to ensure that neighboring submodels "
+#| "overlap. Default: %(default)s"
+msgid ""
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
+msgstr ""
+"சப்மோடல்களுக்கு இடையில் ஒன்றுடன் ஒன்று ஆரம். படங்களை கிளச்டர்களாக தொகுத்த பிறகு, இந்த ஆரம் "
+"ஒரு கிளச்டருக்கு நெருக்கமான படங்கள் கொத்துக்கு சேர்க்கப்படுகின்றன. அண்டை துணை நபர்கள் "
+"ஒன்றுடன் ஒன்று இருப்பதை உறுதி செய்வதற்காக இது செய்யப்படுகிறது. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:36
 #, python-format
 msgid ""
-"Set a value in meters for the GPS Dilution of Precision (DOP) information "
-"for all images. If your images are tagged with high precision GPS "
-"information (RTK), this value will be automatically set accordingly. You can "
-"use this option to manually set it in case the reconstruction fails. "
-"Lowering this option can sometimes help control bowling-effects over large "
-"areas. Default: %(default)s"
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
 msgstr ""
-"அனைத்து படங்களுக்கும் சி.பி.எச். உங்கள் படங்கள் அதிக துல்லியமான சி.பி.எச் செய்தி (ஆர்.டி."
-"கே) உடன் குறிக்கப்பட்டால், இந்த மதிப்பு தானாகவே அதற்கேற்ப அமைக்கப்படும். புனரமைப்பு "
-"தோல்வியுற்றால் அதை கைமுறையாக அமைக்க இந்த விருப்பத்தைப் பயன்படுத்தலாம். இந்த விருப்பத்தை "
-"குறைப்பது சில நேரங்களில் பெரிய பகுதிகளில் பந்துவீச்சு-விளைவுகளை கட்டுப்படுத்த உதவும். "
-"இயல்புநிலை: %(default)s"
+"கணக்கிடுவதற்கு பதிலாக மற்றொரு தரவுத்தொகுப்பிலிருந்து கணக்கிடப்பட்ட கேமரா அளவுருக்களைப் "
+"பயன்படுத்தவும். ஒரு கேமராக்கள்.சான் கோப்பிற்கான பாதையாக அல்லது ஒரு கேமராக்களின் "
+"உள்ளடக்கங்களைக் குறிக்கும் சாதொபொகு சரம் என குறிப்பிடலாம். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:19
+#: app/static/app/js/translations/odm_autogenerated.js:37
+#, python-format
+msgid ""
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"இந்த கட்டத்திலிருந்து செயலாக்கத்தை மீண்டும் இயக்கவும். ஒன்று: %(choices)s. இயல்புநிலை: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:38
 #, fuzzy, python-format
 #| msgid ""
 #| "Choose the structure from motion algorithm. For aerial datasets, if "
@@ -2555,88 +2742,74 @@ msgstr ""
 "காட்சிகளுக்கு, பிளானர் மிக வேகமாக இருக்கும். ஒன்று: %(choices)s. இயல்புநிலை: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:20
+#: app/static/app/js/translations/odm_autogenerated.js:39
 #, python-format
 msgid ""
-"Delete heavy intermediate files to optimize disk space usage. This affects "
-"the ability to restart the pipeline from an intermediate stage, but allows "
-"datasets to be processed on machines that don't have sufficient disk space "
-"available. Default: %(default)s"
+"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
+"filling. Starting with a radius equal to the output resolution, N different "
+"DEMs are generated with progressively bigger radius using the inverse "
+"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
+"then merged using nearest neighbor interpolation. Default: %(default)s"
 msgstr ""
-"வட்டு இட பயன்பாட்டை மேம்படுத்த கனமான இடைநிலை கோப்புகளை நீக்கவும். இது ஒரு இடைநிலை "
-"கட்டத்திலிருந்து குழாய்த்திட்டத்தை மறுதொடக்கம் செய்யும் திறனை பாதிக்கிறது, ஆனால் போதுமான "
-"வட்டு இடம் இல்லாத இயந்திரங்களில் தரவுத்தொகுப்புகளை செயலாக்க அனுமதிக்கிறது. இயல்புநிலை: "
-"%(default)s"
+"இடைவெளிகளுடன் பகுதிகளை நிரப்ப பயன்படுத்தப்படும் படிகளின் எண்ணிக்கை. இடைவெளி நிரப்புதலை "
+"முடக்க 0 என அமைக்கவும். வெளியீட்டுத் தீர்மானத்திற்கு சமமான ஒரு சுற்றளவில் தொடங்கி, தலைகீழ் "
+"தூர எடையுள்ள (ஐ.டி.டபிள்யூ) வழிமுறையைப் பயன்படுத்தி படிப்படியாக பெரிய ஆரம் கொண்டு "
+"வெவ்வேறு டெம் உருவாக்கப்பட்டு ஒன்றாக இணைக்கப்படுகிறது. மீதமுள்ள இடைவெளிகள் பின்னர் "
+"அருகிலுள்ள அண்டை இடைக்கணிப்பைப் பயன்படுத்தி இணைக்கப்படுகின்றன. இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr "வெளியீட்டு கண்ணி அதிகபட்ச வெர்டெக்ச் எண்ணிக்கை. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
+#: app/static/app/js/translations/odm_autogenerated.js:40
 #, python-format
 msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
-msgstr ""
-"புனரமைப்பின் பகுதியைக் கட்டுப்படுத்த கேமரா காட்சி இருப்பிடங்களைப் பயன்படுத்தி தானாக ஒரு "
-"எல்லையை அமைக்கவும். இது தொலைதூர பின்னணி கலைப்பொருட்களை (வானம், பின்னணி நிலப்பரப்புகள் "
-"போன்றவை) அகற்ற உதவும். மேலும் காண்க -அற்பமான. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-"உங்களிடம் GCP கோப்பு இருந்தால் இந்த குறிச்சொல்லைப் பயன்படுத்தவும், ஆனால் அதற்கு பதிலாக "
-"புவிநாரத்திற்கான EXIF தகவலைப் பயன்படுத்த விரும்பினால். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"The maximum output resolution of extracted video frames in pixels. Default: "
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
 "%(default)s"
 msgstr ""
-"பிக்சல்களில் பிரித்தெடுக்கப்பட்ட வீடியோ பிரேம்களின் அதிகபட்ச வெளியீட்டு தீர்மானம். "
-"இயல்புநிலை: %(default)s"
+"உருட்டல் சட்டர் திருத்தத்தை இயக்கவும். கேமராவில் உருட்டல் சட்டர் இருந்தால், படங்கள் இயக்கத்தில் "
+"எடுக்கப்பட்டிருந்தால், முடிவுகளின் துல்லியத்தை மேம்படுத்த இந்த விருப்பத்தை இயக்கலாம். -"
+"ரோலிங்-சட்டர்-ரீட்அவுட்டையும் காண்க. இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:25
+#: app/static/app/js/translations/odm_autogenerated.js:41
 #, python-format
 msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
+"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
 msgstr ""
-"மல்டிச்பெக்ட்ரல் தரவுத்தொகுப்புகளை செயலாக்கும்போது, புனரமைப்புக்கு பயன்படுத்தப்படும் முதன்மை "
-"இசைக்குழுவின் பெயரை நீங்கள் குறிப்பிடலாம். கூர்மையான விவரங்களைக் கொண்ட ஒரு இசைக்குழுவைத் "
-"தேர்வுசெய்ய பரிந்துரைக்கப்படுகிறது மற்றும் கவனம் செலுத்துகிறது. இயல்புநிலை: %(default)s"
+"எந்த கேமராவிலும் காணப்படாத கண்ணில் முகங்களை வைத்திருங்கள். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:26
+#: app/static/app/js/translations/odm_autogenerated.js:42
 #, python-format
 msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
 msgstr ""
-"சி.சி.பி கள் இருந்தாலும், புனரமைப்புக்கு படங்களின் சி.பி.எச் எக்சிஃப் தரவைப் "
-"பயன்படுத்தவும். உங்களிடம் அதிக துல்லியமான சி.பி.எச் அளவீடுகள் இருந்தால் இந்த கொடி "
-"பயனுள்ளதாக இருக்கும். சி.சி.பி.எச் இல்லை என்றால், இந்த கொடி எதுவும் செய்யாது. "
-"இயல்புநிலை: %(default)s"
+"செ.மீ / பிக்சலில் டி.எச்.எம் / டி.டி.எம் தீர்மானம். இந்த மதிப்பு ஒரு தரை மாதிரி தூரம் "
+"(சி.எச்.டி) மதிப்பீட்டால் மூடப்பட்டுள்ளது என்பதை நினைவில் கொள்க. இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:27
+#: app/static/app/js/translations/odm_autogenerated.js:43
 #, python-format
 msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
-"%(default)s"
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
 msgstr ""
-"தரவுத்தொகுப்பு எல்லைகளைச் சுற்றி ஒரு மென்மையான இடையகத்தை உருவாக்குவதன் மூலம் தானாகவே "
-"படங்களை பயிர் செய்கிறது, n மீட்டர்களால் சுருங்குகிறது. பயிர் முடக்க 0 ஐப் பயன்படுத்தவும். "
-"இயல்புநிலை: %(default)s"
+"ஆர்த்தோஃபோட்டோவின் தலைமுறையைத் தவிர்க்கவும். உங்களுக்கு 3D முடிவுகள் அல்லது டெம் கள் "
+"மட்டுமே தேவைப்பட்டால் இது நேரத்தை மிச்சப்படுத்தும். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:28
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, fuzzy, python-format
+#| msgid ""
+#| "When processing multispectral datasets, ODM will automatically align the "
+#| "images for each band. If the images have been postprocessed and are "
+#| "already aligned, use this option. Default: %(default)s"
+msgid ""
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
+msgstr ""
+"மல்டிச்பெக்ட்ரல் தரவுத்தொகுப்புகளை செயலாக்கும்போது, ஒவ்வொரு இசைக்குழுவிற்கும் ODM தானாகவே "
+"படங்களை சீரமைக்கும். படங்கள் போச்ட்ரோச் செய்யப்பட்டு ஏற்கனவே சீரமைக்கப்பட்டிருந்தால், இந்த "
+"விருப்பத்தைப் பயன்படுத்தவும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
 msgid ""
 "Run local bundle adjustment for every image added to the reconstruction and "
@@ -2647,52 +2820,7 @@ msgstr ""
 "படத்திற்கும் உள்ளக மூட்டை சரிசெய்தலை இயக்கவும். மிகப் பெரிய தரவுத்தொகுப்புகளுக்கான "
 "புனரமைப்பு வேகத்தை அதிகரிக்கிறது. இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
-msgstr ""
-"எந்த கேமராவிலும் காணப்படாத கண்ணில் முகங்களை வைத்திருங்கள். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
-msgstr ""
-"புவிசார்ஃபெரன்சிங்கிற்கு பயன்படுத்தப்படும் கேமரா மைய ஒருங்கிணைப்புகளைக் கொண்ட பட "
-"புவிஇருப்பிட கோப்பிற்கான பாதை. உங்களிடம் YAW/பிட்ச்/ரோலுக்கான மதிப்புகள் இல்லையென்றால் "
-"அவற்றை 0 ஆக அமைக்கலாம். கோப்பு பின்வரும் வடிவமைப்பைப் பயன்படுத்த வேண்டும்: EPSG: <+proj "
-"வரையறை> படம்_பேம் GEO_X GEO_Y GEO_Z [YAW (டிகிரி)] [சுருதி (டிகிரி)] [ரோல் "
-"(டிகிரி)] [ஆர்ச் அக்யூரச்) [மெட்டர்ச்) இயல்புநிலை:%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-"ஒரு படத்திற்கு பிரித்தெடுக்க குறைந்தபட்ச நற்பொருத்தங்கள். படங்களுக்கு இடையில் கூடுதல் "
-"போட்டிகளைக் கண்டறிய கூடுதல் நற்பொருத்தங்கள் பயனுள்ளதாக இருக்கும், இது சிறிய ஒன்றுடன் ஒன்று "
-"அல்லது போதுமான அம்சங்களைக் கொண்ட பகுதிகளை புனரமைக்க அனுமதிக்கும். மேலும் நற்பொருத்தங்கள் "
-"செயலாக்கத்தை மெதுவாக்குகின்றன. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
-msgstr ""
-"கண்ணி புனரமைப்பில் பயன்படுத்தப்படும் ஆக்ட்ரீ ஆழம், அதிக செங்குத்துகளைப் பெற அதிகரிப்பு, "
-"பரிந்துரைக்கப்பட்ட மதிப்புகள் 8-12 ஆகும். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
+#: app/static/app/js/translations/odm_autogenerated.js:46
 #, python-format
 msgid ""
 "Set the radiometric calibration to perform on images. When processing "
@@ -2710,38 +2838,102 @@ msgstr ""
 "அமைக்க வேண்டும் (இல்லையெனில் நீங்கள் டிசிட்டல் எண் மதிப்புகளைப் பெறுவீர்கள்). . . ஒன்று: "
 "%(choices)s. இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:34
+#: app/static/app/js/translations/odm_autogenerated.js:47
 #, python-format
 msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate.Default: %(default)s"
+"Set a value in meters for the GPS Dilution of Precision (DOP) information "
+"for all images. If your images are tagged with high precision GPS "
+"information (RTK), this value will be automatically set accordingly. You can "
+"use this option to manually set it in case the reconstruction fails. "
+"Lowering this option can sometimes help control bowling-effects over large "
+"areas. Default: %(default)s"
 msgstr ""
-"சி.எம் / பிக்சலில் ஆர்த்தோஃபோட்டோ தீர்மானம். இந்த மதிப்பு ஒரு தரை மாதிரி தூரம் (சி.எச்."
-"டி) மதிப்பீட்டால் மூடப்பட்டிருக்கிறது என்பதை நினைவில் கொள்க. டெஃபால்ட்: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:35
-#, python-format
-msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
-"%(default)s"
-msgstr ""
-"சப்மோடலுக்கு ஒரு படங்களின் சராசரி எண்ணிக்கை. ஒரு பெரிய தரவுத்தொகுப்பை சிறிய "
-"சப்மோடல்களாகப் பிரிக்கும்போது, படங்கள் கொத்தாக தொகுக்கப்படுகின்றன. இந்த மதிப்பு ஒவ்வொரு "
-"கிளச்டருக்கும் சராசரியாக இருக்க வேண்டிய படங்களின் எண்ணிக்கையை கட்டுப்படுத்துகிறது. "
+"அனைத்து படங்களுக்கும் சி.பி.எச். உங்கள் படங்கள் அதிக துல்லியமான சி.பி.எச் செய்தி (ஆர்.டி."
+"கே) உடன் குறிக்கப்பட்டால், இந்த மதிப்பு தானாகவே அதற்கேற்ப அமைக்கப்படும். புனரமைப்பு "
+"தோல்வியுற்றால் அதை கைமுறையாக அமைக்க இந்த விருப்பத்தைப் பயன்படுத்தலாம். இந்த விருப்பத்தை "
+"குறைப்பது சில நேரங்களில் பெரிய பகுதிகளில் பந்துவீச்சு-விளைவுகளை கட்டுப்படுத்த உதவும். "
 "இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:36
+#: app/static/app/js/translations/odm_autogenerated.js:48
 #, python-format
 msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
 msgstr ""
-"புள்ளி மேகக்கணி வெளியீடுகளை வகைப்படுத்தவும். --Dem-* அளவுருக்களை மாற்றுவதன் மூலம் இந்த "
-"விருப்பத்தின் நடத்தையை நீங்கள் கட்டுப்படுத்தலாம். இயல்புநிலை: %(default)s"
+"புவிசார் புள்ளி மேகத்தை LAS வடிவத்தில் ஏற்றுமதி செய்யுங்கள். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:37
+#: app/static/app/js/translations/odm_autogenerated.js:49
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+"பகுதி புனரமைப்புகளை இணைக்க முயற்சிக்காதீர்கள். படங்களுக்கு போதுமான ஒன்றுடன் ஒன்று "
+"இல்லாதபோது அல்லது தனிமைப்படுத்தப்படும்போது இது நிகழலாம். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:50
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+"துண்டுப்பிரசுரம் அல்லது ஓபன்லேயர்கள் போன்ற பார்வையாளர்களுக்கு ஏற்ற ஆர்த்தோஃபோட்டோக்கள் மற்றும் "
+"டெம்சிற்கான நிலையான ஓடுகளை உருவாக்குங்கள். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:51
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"இந்த கட்டத்தை மட்டும் மீண்டும் இயக்கவும். ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:52
+#, fuzzy, python-format
+#| msgid ""
+#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+#| "Default: %(default)s"
+msgid ""
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"ஆர்த்தோஃபோட்டோசுக்குப் பயன்படுத்த சுருக்கத்தை அமைக்கவும். ஒன்று: %(choices)s. இயல்புநிலை: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:53
+#, python-format
+msgid ""
+"Name of dataset (i.e subfolder name within project folder). Default: "
+"%(default)s"
+msgstr ""
+"தரவுத்தொகுப்பின் பெயர் (அதாவது திட்ட கோப்புறையில் துணை கோப்புறை பெயர்). இயல்புநிலை: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
+#, python-format
+msgid ""
+"Delete heavy intermediate files to optimize disk space usage. This affects "
+"the ability to restart the pipeline from an intermediate stage, but allows "
+"datasets to be processed on machines that don't have sufficient disk space "
+"available. Default: %(default)s"
+msgstr ""
+"வட்டு இட பயன்பாட்டை மேம்படுத்த கனமான இடைநிலை கோப்புகளை நீக்கவும். இது ஒரு இடைநிலை "
+"கட்டத்திலிருந்து குழாய்த்திட்டத்தை மறுதொடக்கம் செய்யும் திறனை பாதிக்கிறது, ஆனால் போதுமான "
+"வட்டு இடம் இல்லாத இயந்திரங்களில் தரவுத்தொகுப்புகளை செயலாக்க அனுமதிக்கிறது. இயல்புநிலை: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+"2.5 டி மெசுக்கு பதிலாக ஆர்த்தோஃபோட்டோவைக் கணக்கிட முழு 3D கண்ணி பயன்படுத்தவும். இந்த "
+"விருப்பம் சற்று வேகமானது மற்றும் பிளானர் பகுதிகளில் இதே போன்ற முடிவுகளை வழங்குகிறது. "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
 #, python-format
 msgid ""
 "Path to the file containing the ground control points used for "
@@ -2754,58 +2946,78 @@ msgstr ""
 "geo_y geo_z im_x im_y image_name [gcp_name] [கூடுதல் 1] [கூடுதல் 2] இயல்புநிலை: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:38
+#: app/static/app/js/translations/odm_autogenerated.js:57
 #, python-format
 msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
+"Simple Morphological Filter slope parameter (rise over run). Default: "
+"%(default)s"
+msgstr "எளிய உருவவியல் வடிகட்டி சாய்வு அளவுரு (ரன் ஓவர் ரன்). இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:58
+#, python-format
+msgid ""
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
 msgstr ""
-"ரோலிங் சட்டர் ரீட்அவுட் தரவுத்தளத்தைப் பயன்படுத்துவதற்குப் பதிலாக, உங்கள் கேமரா சென்சாருக்கான "
-"(மில்லி விநாடிகளில்) ரோலிங் சட்டர் ரீட்அவுட் நேரத்தை மேலெழுதவும். எல்லா கேமராக்களும் "
-"தரவுத்தளத்தில் இல்லை என்பதை நினைவில் கொள்க. தரவுத்தள மதிப்பைப் பயன்படுத்த 0 என அமைக்கவும். "
+"உங்களிடம் GCP கோப்பு இருந்தால் இந்த குறிச்சொல்லைப் பயன்படுத்தவும், ஆனால் அதற்கு பதிலாக "
+"புவிநாரத்திற்கான EXIF தகவலைப் பயன்படுத்த விரும்பினால். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
+msgstr ""
+"சி.சி.பி கள் இருந்தாலும், புனரமைப்புக்கு படங்களின் சி.பி.எச் எக்சிஃப் தரவைப் "
+"பயன்படுத்தவும். உங்களிடம் அதிக துல்லியமான சி.பி.எச் அளவீடுகள் இருந்தால் இந்த கொடி "
+"பயனுள்ளதாக இருக்கும். சி.சி.பி.எச் இல்லை என்றால், இந்த கொடி எதுவும் செய்யாது. "
 "இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:39
+#: app/static/app/js/translations/odm_autogenerated.js:60
 #, python-format
 msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
-"%(default)s"
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
 msgstr ""
-"உள்ளக சராசரியிலிருந்து N நிலையான விலகல்களை விட அதிகமாக விலகும் புள்ளிகளை அகற்றுவதன் "
-"மூலம் புள்ளி மேகத்தை வடிகட்டுகிறது. வடிகட்டலை முடக்க 0 என அமைக்கவும். இயல்புநிலை: "
+"வடிவியல் மதிப்பீடுகள் வடிவியல் ரீதியாக சீரான ஆழமான வரைபடங்களைக் கணக்கிடுவதன் மூலம் புள்ளி "
+"மேகத்தின் துல்லியத்தை மேம்படுத்துகின்றன, ஆனால் பெரிய தரவுத்தொகுப்புகளில் "
+"பயன்படுத்தப்படாது. இந்த கொடி வடிவியல் மதிப்பீடுகளை முடக்குகிறது. இயல்புநிலை: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:40
+#: app/static/app/js/translations/odm_autogenerated.js:61
 #, python-format
 msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
-"%(default)s"
+"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
+"simple morphological filter. Check the --dem* and --smrf* parameters for "
+"finer tuning. Default: %(default)s"
 msgstr ""
-"கேமரா திட்ட வகையை அமைக்கவும். ஒரு மதிப்பை கைமுறையாக அமைப்பது வடிவியல் மாறுபாட்டை "
-"மேம்படுத்த உதவும். முன்னிருப்பாக பயன்பாடு பட மெட்டாடேட்டாவிலிருந்து லென்ச் வகையைத் "
-"தீர்மானிக்க முயற்சிக்கிறது. ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
+"எளிய உருவவியல் வடிகட்டியைப் பயன்படுத்தி ஒரு டிடிஎம் (டிசிட்டல் நிலப்பரப்பு மாதிரி, தரை "
+"மட்டும்) உருவாக்க இந்த குறிச்சொல்லைப் பயன்படுத்தவும். சிறந்த ட்யூனிங்கிற்கான --dem* மற்றும் "
+"- -smrf* அளவுருக்களை சரிபார்க்கவும். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:41
+#: app/static/app/js/translations/odm_autogenerated.js:62
 #, python-format
 msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
+"Turn off camera parameter optimization during bundle adjustment. This can be "
+"sometimes useful for improving results that exhibit doming/bowling or when "
+"images are taken with a rolling shutter camera. Default: %(default)s"
 msgstr ""
-"தரவுத்தொகுப்பின் பெயர் (அதாவது திட்ட கோப்புறையில் துணை கோப்புறை பெயர்). இயல்புநிலை: "
-"%(default)s"
+"மூட்டை சரிசெய்தலின் போது கேமரா அளவுரு தேர்வுமுறை அணைக்கவும். டொமிங்/பந்துவீச்சை "
+"வெளிப்படுத்தும் முடிவுகளை மேம்படுத்துவதற்கு இது சில நேரங்களில் பயனுள்ளதாக இருக்கும் "
+"அல்லது உருட்டல் சட்டர் கேமராவுடன் படங்கள் எடுக்கப்படும் போது. இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:42
+#: app/static/app/js/translations/odm_autogenerated.js:63
+#, python-format
 msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
 msgstr ""
-"முந்தைய எல்லா முடிவுகளையும் நிரந்தரமாக நீக்கி, செயலாக்க குழாய்த்திட்டத்தை மீண்டும் இயக்கவும்."
 
-#: app/static/app/js/translations/odm_autogenerated.js:43
+#: app/static/app/js/translations/odm_autogenerated.js:64
 #, python-format
 msgid ""
 "Perform image matching with the nearest images based on GPS exif data. Set "
@@ -2814,7 +3026,124 @@ msgstr ""
 "சி.பி.எச் எக்சிஃப் தரவின் அடிப்படையில் அருகிலுள்ள படங்களுடன் பட பொருத்தத்தை செய்யுங்கள். "
 "முக்கோணத்தின் மூலம் பொருந்த 0 என அமைக்கவும். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:44
+#: app/static/app/js/translations/odm_autogenerated.js:65
+#, python-format
+msgid ""
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
+msgstr ""
+"இணையாக பல முனைகளில் பிளவு-மெர்ச் பணிப்பாய்வுகளை விநியோகிப்பதற்கான ஒரு கிளச்டரோட்எம் "
+"உதாரணத்திற்கு முகவரி. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:66
+#, python-format
+msgid ""
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+"பிளவு-மெர்சில் சப்மோடல்களின் சீரமைப்பைத் தவிர்க்கவும். மிகப் பெரிய தரவுத்தொகுப்புகளில் சி."
+"பி.எச் போதுமானதாக இருந்தால் பயனுள்ளதாக இருக்கும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
+msgstr ""
+"எல்லா படங்களிலும் வண்ணங்களை இயல்பாக்குவதைத் தவிர்க்கவும். ரேடியோமெட்ரிக் தரவை "
+"செயலாக்கும்போது பயனுள்ளதாக இருக்கும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+"வானத்தை அகற்ற AI ஐப் பயன்படுத்தி பட முகமூடிகளை தானாக கணக்கிடுங்கள். சோதனை. "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
+#, python-format
+msgid ""
+"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
+"a progressive morphological filter. Check the --dem* parameters for finer "
+"tuning. Default: %(default)s"
+msgstr ""
+"முற்போக்கான உருவவியல் வடிகட்டியைப் பயன்படுத்தி ஒரு டி.எச்.எம் (டிசிட்டல் மேற்பரப்பு "
+"மாதிரி, தரை + பொருள்கள்) உருவாக்க இந்த குறிச்சொல்லைப் பயன்படுத்தவும். சிறந்த "
+"ட்யூனிங்கிற்கான --dem* அளவுருக்களைச் சரிபார்க்கவும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:70
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation threshold parameter (meters). Default: "
+"%(default)s"
+msgstr "எளிய உருவவியல் வடிகட்டி உயர வாசல் அளவுரு (மீட்டர்). இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Perform image matching with the nearest N images based on image filename "
+"order. Can speed up processing of sequential images, such as those extracted "
+"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"disable. Default: %(default)s"
+msgstr ""
+"பட கோப்பு பெயர் வரிசையின் அடிப்படையில் அருகிலுள்ள N படங்களுடன் பட பொருத்தத்தை "
+"செய்யுங்கள். வீடியோவிலிருந்து பிரித்தெடுக்கப்பட்டவை போன்ற தொடர்ச்சியான படங்களின் "
+"செயலாக்கத்தை விரைவுபடுத்தலாம். இது பொறிக்காத தரவுத்தொகுப்புகளில் மட்டுமே "
+"பயன்படுத்தப்படுகிறது. முடக்க 0 என அமைக்கவும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+"பின்னணியை அகற்ற AI ஐப் பயன்படுத்தி பட முகமூடிகளை தானாக கணக்கிடுங்கள். சோதனை. "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+"பலவற்றிற்கு பதிலாக ஒற்றை பொருள் மற்றும் ஒற்றை அமைப்பு கோப்பைக் கொண்ட OBJ களை "
+"உருவாக்கவும். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+"சியோச்சன் பலகோணம் புனரமைப்பின் பகுதியைக் கட்டுப்படுத்துகிறது. சியோச்சன் கோப்பிற்கான "
+"பாதையாக அல்லது சியோச்சன் கோப்பின் உள்ளடக்கங்களைக் குறிக்கும் சாதொபொகு சரம் என "
+"குறிப்பிடலாம். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid ""
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
+msgstr ""
+"பல்வேறு செயல்முறைகளில் பயன்படுத்த அதிகபட்ச செயல்முறைகள். உச்ச நினைவக தேவை ஒரு நூலுக்கு "
+"~ 1 சிபி மற்றும் 2 மெகாபிக்சல் படத் தீர்மானம். இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr "இந்த கட்டத்தில் இறுதி செயலாக்கம். ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+msgid "Displays version number and exits. "
+msgstr "பதிப்பு எண் மற்றும் வெளியேறும். "
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
 #, fuzzy, python-format
 #| msgid ""
 #| "Skips dense reconstruction and 3D model generation. It generates an "
@@ -2831,190 +3160,7 @@ msgstr ""
 "ஆர்த்தோஃபோட்டோ தேவைப்பட்டால், முழு 3D மாதிரி தேவையில்லை என்றால், இந்த விருப்பத்தை "
 "இயக்கவும். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:45
-#, python-format
-msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
-"%(default)s"
-msgstr ""
-"பல்வேறு செயல்முறைகளில் பயன்படுத்த அதிகபட்ச செயல்முறைகள். உச்ச நினைவக தேவை ஒரு நூலுக்கு "
-"~ 1 சிபி மற்றும் 2 மெகாபிக்சல் படத் தீர்மானம். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:46
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
-"Default: %(default)s"
-msgstr ""
-"புவிசார் புள்ளி மேகத்தை என்ட்வைன் பாயிண்ட் டைல் (ஈபிடி) வடிவத்தில் ஏற்றுமதி செய்யுங்கள். "
-"இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:47
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
-msgstr ""
-"ஆர்த்தோஃபோட்டோவின் கூகிள் எர்த் (KMZ) வழங்குதல் உருவாக்க விரும்பினால் இந்த அளவுருவை "
-"அமைக்கவும். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:48
-#, python-format
-msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"ஆர்த்தோஃபோட்டோசுக்குப் பயன்படுத்த சுருக்கத்தை அமைக்கவும். ஒன்று: %(choices)s. இயல்புநிலை: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-#, python-format
-msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
-msgstr ""
-"மேகக்கணி உகந்த புள்ளி மேகக்கணி (COPC) வடிவத்தில் புவிசார் புள்ளி மேகத்தை சேமிக்கவும். "
-"இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:50
-msgid "Displays version number and exits. "
-msgstr "பதிப்பு எண் மற்றும் வெளியேறும். "
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-"சியோச்சன் பலகோணம் புனரமைப்பின் பகுதியைக் கட்டுப்படுத்துகிறது. சியோச்சன் கோப்பிற்கான "
-"பாதையாக அல்லது சியோச்சன் கோப்பின் உள்ளடக்கங்களைக் குறிக்கும் சாதொபொகு சரம் என "
-"குறிப்பிடலாம். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
-#, python-format
-msgid ""
-"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
-"a progressive morphological filter. Check the --dem* parameters for finer "
-"tuning. Default: %(default)s"
-msgstr ""
-"முற்போக்கான உருவவியல் வடிகட்டியைப் பயன்படுத்தி ஒரு டி.எச்.எம் (டிசிட்டல் மேற்பரப்பு "
-"மாதிரி, தரை + பொருள்கள்) உருவாக்க இந்த குறிச்சொல்லைப் பயன்படுத்தவும். சிறந்த "
-"ட்யூனிங்கிற்கான --dem* அளவுருக்களைச் சரிபார்க்கவும். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:53
-msgid "Copy output results to this folder after processing."
-msgstr "செயலாக்கத்திற்குப் பிறகு இந்த கோப்புறையில் வெளியீட்டு முடிவுகளை நகலெடுக்கவும்."
-
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"இந்த கட்டத்திலிருந்து செயலாக்கத்தை மீண்டும் இயக்கவும். ஒன்று: %(choices)s. இயல்புநிலை: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr "GPU முடுக்கம் கிடைத்தாலும் அதைப் பயன்படுத்த வேண்டாம். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:56
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
-"%(default)s"
-msgstr "எளிய உருவவியல் வடிகட்டி உயர வாசல் அளவுரு (மீட்டர்). இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-"விசைப்பலகைகள் மற்றும் கம்ப்யூட்டிங் டிச்கிரிப்டர்களைப் பிரித்தெடுப்பதற்கான வழிமுறையைத் "
-"தேர்வுசெய்க. ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-#, python-format
-msgid ""
-"Set point cloud quality. Higher quality generates better, denser point "
-"clouds, but requires more memory and takes longer. Each step up in quality "
-"increases processing time roughly by a factor of 4x.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-"புள்ளி மேக தரத்தை அமைக்கவும். உயர் தகுதி சிறந்த, அடர்த்தியான புள்ளி மேகங்களை "
-"உருவாக்குகிறது, ஆனால் அதிக நினைவகம் தேவைப்படுகிறது மற்றும் அதிக நேரம் எடுக்கும். "
-"தரத்தின் ஒவ்வொரு அடியும் 4x.can இன் காரணியால் செயலாக்க நேரத்தை அதிகரிக்கிறது: "
-"%(choices)s. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr "இந்த கட்டத்தில் இறுதி செயலாக்கம். ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
-msgstr ""
-"செ.மீ / பிக்சலில் டி.எச்.எம் / டி.டி.எம் தீர்மானம். இந்த மதிப்பு ஒரு தரை மாதிரி தூரம் "
-"(சி.எச்.டி) மதிப்பீட்டால் மூடப்பட்டுள்ளது என்பதை நினைவில் கொள்க. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-"கணக்கிடுவதற்கு பதிலாக மற்றொரு தரவுத்தொகுப்பிலிருந்து கணக்கிடப்பட்ட கேமரா அளவுருக்களைப் "
-"பயன்படுத்தவும். ஒரு கேமராக்கள்.சான் கோப்பிற்கான பாதையாக அல்லது ஒரு கேமராக்களின் "
-"உள்ளடக்கங்களைக் குறிக்கும் சாதொபொகு சரம் என குறிப்பிடலாம். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, fuzzy, python-format
-#| msgid ""
-#| "Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-#| "Default: %(default)s"
-msgid ""
-"Set the units of the PDF report. By default the vertical units of the "
-"coordinate reference system are used. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"ஆர்த்தோஃபோட்டோசுக்குப் பயன்படுத்த சுருக்கத்தை அமைக்கவும். ஒன்று: %(choices)s. இயல்புநிலை: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
-msgstr "எளிய உருவவியல் வடிகட்டி உயரம் அளவிடுதல் அளவுரு. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr ""
-"ஒற்றை கோப்பு பைனரி GLTF (GLB) கடினமான மாதிரிகளை உருவாக்குங்கள். இயல்புநிலை: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"இந்த கட்டத்தை மட்டும் மீண்டும் இயக்கவும். ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:66
+#: app/static/app/js/translations/odm_autogenerated.js:79
 #, python-format
 msgid ""
 "Decimate the points before generating the DEM. 1 is no decimation (full "
@@ -3025,69 +3171,34 @@ msgstr ""
 "99 %% decimates. டெம் தலைமுறையை மிகப் பெரிய தரவுத்தொகுப்புகளில் விரைவுபடுத்துவதற்கு "
 "பயனுள்ளதாக இருக்கும். இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:67
+#: app/static/app/js/translations/odm_autogenerated.js:80
 #, python-format
 msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
-"%(default)s"
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
 msgstr ""
-"சாதாரண சியோடிஃப்களுக்கு பதிலாக கிளவுட்-உகந்த சியோடிஃப்களை உருவாக்கவும். இயல்புநிலை: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:68
-#, python-format
-msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
-msgstr ""
-"படக் குழுக்களுக்கான பாதை படங்களை எவ்வாறு குழுக்களாகப் பிரிக்க வேண்டும் என்பதைக் "
-"கட்டுப்படுத்துகிறது. கோப்பு பின்வரும் வடிவமைப்பைப் பயன்படுத்த வேண்டும்: image_name "
-"group_namedefault: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
-msgstr ""
-"ஒரு ஆரம் N ஐ (மீட்டரில்) ஒரு புள்ளியை மட்டுமே வைத்திருப்பதன் மூலம் புள்ளி மேகத்தை "
-"வடிகட்டுகிறது. புள்ளி மேகத்தின் வெளியீட்டு தீர்மானத்தை கட்டுப்படுத்தவும், நகல் புள்ளிகளை "
-"அகற்றவும் இது பயனுள்ளதாக இருக்கும். மாதிரியை முடக்க 0 ஆக அமைக்கவும். இயல்புநிலை: "
+"சி.எச்.வி வடிவத்தில் புவிசார் புள்ளி மேகத்தை ஏற்றுமதி செய்யுங்கள். இயல்புநிலை: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:70
+#: app/static/app/js/translations/odm_autogenerated.js:81
 #, python-format
 msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
 msgstr ""
-"2.5 டி மெசுக்கு பதிலாக ஆர்த்தோஃபோட்டோவைக் கணக்கிட முழு 3D கண்ணி பயன்படுத்தவும். இந்த "
-"விருப்பம் சற்று வேகமானது மற்றும் பிளானர் பகுதிகளில் இதே போன்ற முடிவுகளை வழங்குகிறது. "
+"ஆர்த்தோஃபோட்டோவின் பி.என்.சி வழங்குதல் உருவாக்க விரும்பினால் இந்த அளவுருவை அமைக்கவும். "
 "இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:71
+#: app/static/app/js/translations/odm_autogenerated.js:82
 #, python-format
 msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
+"Choose what to merge in the merge step in a split dataset. By default all "
+"available outputs are merged. Options: %(choices)s. Default: %(default)s"
 msgstr ""
-"பின்னணியை அகற்ற AI ஐப் பயன்படுத்தி பட முகமூடிகளை தானாக கணக்கிடுங்கள். சோதனை. "
-"இயல்புநிலை: %(default)s"
+"பிளவு தரவுத்தொகுப்பில் ஒன்றிணைக்கும் படியில் என்ன ஒன்றிணைக்க வேண்டும் என்பதைத் தேர்வுசெய்க. "
+"இயல்பாகவே கிடைக்கக்கூடிய அனைத்து வெளியீடுகளும் இணைக்கப்படுகின்றன. விருப்பங்கள்: "
+"%(choices)s. இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:72
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
-msgstr ""
-"வானத்தை அகற்ற AI ஐப் பயன்படுத்தி பட முகமூடிகளை தானாக கணக்கிடுங்கள். சோதனை. "
-"இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:73
+#: app/static/app/js/translations/odm_autogenerated.js:83
 #, python-format
 msgid ""
 "Computes an euclidean raster map for each DEM. The map reports the distance "
@@ -3100,93 +3211,20 @@ msgstr ""
 "நிரப்புதலுக்கும் முன்பு). நிரப்பப்பட்ட பகுதிகளை தனிமைப்படுத்த இது பயனுள்ளதாக இருக்கும். "
 "இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
-msgstr ""
-"நீங்கள் ஒரு கோடிட்ட சியோடிஃப் விரும்பினால் இந்த அளவுருவை அமைக்கவும். இயல்புநிலை: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr "OGC 3D ஓடுகள் வெளியீடுகளை உருவாக்குங்கள். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
+#: app/static/app/js/translations/odm_autogenerated.js:84
 #, python-format
 msgid ""
-"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
-"altitude value of the GPS EXIF data. This does not change the value of any "
-"GCPs. This can be useful for example when adjusting from ellipsoidal to "
-"orthometric height. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-"புவிசார் புள்ளி மேகத்தை LAS வடிவத்தில் ஏற்றுமதி செய்யுங்கள். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:78
-#, python-format
-msgid ""
-"Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
-msgstr ""
-"வடிவியல் மதிப்பீடுகள் வடிவியல் ரீதியாக சீரான ஆழமான வரைபடங்களைக் கணக்கிடுவதன் மூலம் புள்ளி "
-"மேகத்தின் துல்லியத்தை மேம்படுத்துகின்றன, ஆனால் பெரிய தரவுத்தொகுப்புகளில் "
-"பயன்படுத்தப்படாது. இந்த கொடி வடிவியல் மதிப்பீடுகளை முடக்குகிறது. இயல்புநிலை: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:79
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
 "%(default)s"
 msgstr ""
-"உருட்டல் சட்டர் திருத்தத்தை இயக்கவும். கேமராவில் உருட்டல் சட்டர் இருந்தால், படங்கள் இயக்கத்தில் "
-"எடுக்கப்பட்டிருந்தால், முடிவுகளின் துல்லியத்தை மேம்படுத்த இந்த விருப்பத்தை இயக்கலாம். -"
-"ரோலிங்-சட்டர்-ரீட்அவுட்டையும் காண்க. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:80
-#, python-format
-msgid ""
-"Perform image matching with the nearest N images based on image filename "
-"order. Can speed up processing of sequential images, such as those extracted "
-"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
-"disable. Default: %(default)s"
-msgstr ""
-"பட கோப்பு பெயர் வரிசையின் அடிப்படையில் அருகிலுள்ள N படங்களுடன் பட பொருத்தத்தை "
-"செய்யுங்கள். வீடியோவிலிருந்து பிரித்தெடுக்கப்பட்டவை போன்ற தொடர்ச்சியான படங்களின் "
-"செயலாக்கத்தை விரைவுபடுத்தலாம். இது பொறிக்காத தரவுத்தொகுப்புகளில் மட்டுமே "
-"பயன்படுத்தப்படுகிறது. முடக்க 0 என அமைக்கவும். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:81
-#, python-format
-msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
-"images are taken with a rolling shutter camera. Default: %(default)s"
-msgstr ""
-"மூட்டை சரிசெய்தலின் போது கேமரா அளவுரு தேர்வுமுறை அணைக்கவும். டொமிங்/பந்துவீச்சை "
-"வெளிப்படுத்தும் முடிவுகளை மேம்படுத்துவதற்கு இது சில நேரங்களில் பயனுள்ளதாக இருக்கும் "
-"அல்லது உருட்டல் சட்டர் கேமராவுடன் படங்கள் எடுக்கப்படும் போது. இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:82
-#, python-format
-msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
-msgstr ""
-"முழு 3D மாதிரியின் தலைமுறையைத் தவிர்க்கவும். ஆர்த்தோஃபோட்டோச் மற்றும் டெம்ச் போன்ற 2 டி "
-"முடிவுகள் மட்டுமே உங்களுக்குத் தேவைப்பட்டால் இது நேரத்தை மிச்சப்படுத்தும். இயல்புநிலை: "
+"ஒரு ஆரம் N ஐ (மீட்டரில்) ஒரு புள்ளியை மட்டுமே வைத்திருப்பதன் மூலம் புள்ளி மேகத்தை "
+"வடிகட்டுகிறது. புள்ளி மேகத்தின் வெளியீட்டு தீர்மானத்தை கட்டுப்படுத்தவும், நகல் புள்ளிகளை "
+"அகற்றவும் இது பயனுள்ளதாக இருக்கும். மாதிரியை முடக்க 0 ஆக அமைக்கவும். இயல்புநிலை: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:83
+#: app/static/app/js/translations/odm_autogenerated.js:85
 #, python-format
 msgid ""
 "Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
@@ -3196,72 +3234,23 @@ msgstr ""
 "புனரமைப்பு வெளியீடுகள் தானாகவே சீரமைக்கப்பட வேண்டிய சியோடிஃப் டெம் அல்லது லாசு/லாச் "
 "புள்ளி மேகத்திற்கான பாதை. சோதனை. இயல்புநிலை: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:84
-#, python-format
-msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
-msgstr ""
-"எல்லா படங்களிலும் வண்ணங்களை இயல்பாக்குவதைத் தவிர்க்கவும். ரேடியோமெட்ரிக் தரவை "
-"செயலாக்கும்போது பயனுள்ளதாக இருக்கும். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:85
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-"துண்டுப்பிரசுரம் அல்லது ஓபன்லேயர்கள் போன்ற பார்வையாளர்களுக்கு ஏற்ற ஆர்த்தோஃபோட்டோக்கள் மற்றும் "
-"டெம்சிற்கான நிலையான ஓடுகளை உருவாக்குங்கள். இயல்புநிலை: %(default)s"
-
 #: app/static/app/js/translations/odm_autogenerated.js:86
 #, python-format
 msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
 msgstr ""
-"செயலாக்கத்திற்கான வீடியோ கோப்புகளிலிருந்து பிரித்தெடுக்க அதிகபட்ச பிரேம்கள். வரம்பிற்கு 0 "
-"என அமைக்கவும். இயல்புநிலை: %(default)s"
+"புவிசார்ஃபெரன்சிங்கிற்கு பயன்படுத்தப்படும் கேமரா மைய ஒருங்கிணைப்புகளைக் கொண்ட பட "
+"புவிஇருப்பிட கோப்பிற்கான பாதை. உங்களிடம் YAW/பிட்ச்/ரோலுக்கான மதிப்புகள் இல்லையென்றால் "
+"அவற்றை 0 ஆக அமைக்கலாம். கோப்பு பின்வரும் வடிவமைப்பைப் பயன்படுத்த வேண்டும்: EPSG: <+proj "
+"வரையறை> படம்_பேம் GEO_X GEO_Y GEO_Z [YAW (டிகிரி)] [சுருதி (டிகிரி)] [ரோல் "
+"(டிகிரி)] [ஆர்ச் அக்யூரச்) [மெட்டர்ச்) இயல்புநிலை:%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:87
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr ""
-"ஆர்த்தோஃபோட்டோவின் தலைமுறையைத் தவிர்க்கவும். உங்களுக்கு 3D முடிவுகள் அல்லது டெம் கள் "
-"மட்டுமே தேவைப்பட்டால் இது நேரத்தை மிச்சப்படுத்தும். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:88
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
-"%(default)s"
-msgstr "எளிய உருவவியல் வடிகட்டி சாய்வு அளவுரு (ரன் ஓவர் ரன்). இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:89
-#, python-format
-msgid ""
-"Simple Morphological Filter window radius parameter (meters). Default: "
-"%(default)s"
-msgstr "எளிய உருவவியல் வடிகட்டி சாளர ஆரம் அளவுரு (மீட்டர்). இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:90
-#, fuzzy, python-format
-#| msgid ""
-#| "When processing multispectral datasets, ODM will automatically align the "
-#| "images for each band. If the images have been postprocessed and are "
-#| "already aligned, use this option. Default: %(default)s"
-msgid ""
-"When processing multispectral datasets, automatically align the images for "
-"each band. If the images have been postprocessed and are already aligned, "
-"use this option. Default: %(default)s"
-msgstr ""
-"மல்டிச்பெக்ட்ரல் தரவுத்தொகுப்புகளை செயலாக்கும்போது, ஒவ்வொரு இசைக்குழுவிற்கும் ODM தானாகவே "
-"படங்களை சீரமைக்கும். படங்கள் போச்ட்ரோச் செய்யப்பட்டு ஏற்கனவே சீரமைக்கப்பட்டிருந்தால், இந்த "
-"விருப்பத்தைப் பயன்படுத்தவும். இயல்புநிலை: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
 msgid ""
 "Specify the distance between camera shot locations and the outer edge of the "
@@ -3272,22 +3261,67 @@ msgstr ""
 "வெளிப்புற விளிம்பிற்கும் இடையிலான தூரத்தைக் குறிப்பிடவும். தானாக ஒரு மதிப்பைத் "
 "தேர்வுசெய்ய 0 என அமைக்கவும். இயல்புநிலை: %(default)s"
 
+#: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgstr ""
+"நீங்கள் ஒரு கோடிட்ட சியோடிஃப் விரும்பினால் இந்த அளவுருவை அமைக்கவும். இயல்புநிலை: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"%(default)s"
+msgstr ""
+"தரவுத்தொகுப்பு எல்லைகளைச் சுற்றி ஒரு மென்மையான இடையகத்தை உருவாக்குவதன் மூலம் தானாகவே "
+"படங்களை பயிர் செய்கிறது, n மீட்டர்களால் சுருங்குகிறது. பயிர் முடக்க 0 ஐப் பயன்படுத்தவும். "
+"இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:90
+#, fuzzy, python-format
+#| msgid ""
+#| "Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag "
+#| "of Words. FLANN is slower, but more stable. BOW is faster, but can "
+#| "sometimes miss valid matches. BRUTEFORCE is very slow but robust.Can be "
+#| "one of: %(choices)s. Default: %(default)s"
+msgid ""
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
+"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"மேட்சர் அல்காரிதம், தோராயமான அருகிலுள்ள அண்டை நாடுகளுக்கான வேகமான நூலகம் அல்லது "
+"சொற்களின் பை. ஃபிளான் மெதுவானது, ஆனால் இன்னும் நிலையானது. வில் வேகமாக உள்ளது, ஆனால் "
+"சில நேரங்களில் செல்லுபடியாகும் போட்டிகளை இழக்க நேரிடும். ப்ரூட்ஃபோர்ச் மிகவும் மெதுவாக "
+"உள்ளது, ஆனால் வலுவானது. இதில் ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:91
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr "GPU முடுக்கம் கிடைத்தாலும் அதைப் பயன்படுத்த வேண்டாம். இயல்புநிலை: %(default)s"
+
 #: app/static/app/js/translations/odm_autogenerated.js:92
 #, python-format
 msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
 msgstr ""
-"பிளவு-மெர்சில் சப்மோடல்களின் சீரமைப்பைத் தவிர்க்கவும். மிகப் பெரிய தரவுத்தொகுப்புகளில் சி."
-"பி.எச் போதுமானதாக இருந்தால் பயனுள்ளதாக இருக்கும். இயல்புநிலை: %(default)s"
+"கேமரா திட்ட வகையை அமைக்கவும். ஒரு மதிப்பை கைமுறையாக அமைப்பது வடிவியல் மாறுபாட்டை "
+"மேம்படுத்த உதவும். முன்னிருப்பாக பயன்பாடு பட மெட்டாடேட்டாவிலிருந்து லென்ச் வகையைத் "
+"தீர்மானிக்க முயற்சிக்கிறது. ஒன்று: %(choices)s. இயல்புநிலை: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:93
 #, python-format
 msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
-msgstr ""
-"சி.எச்.வி வடிவத்தில் புவிசார் புள்ளி மேகத்தை ஏற்றுமதி செய்யுங்கள். இயல்புநிலை: "
+"Simple Morphological Filter window radius parameter (meters). Default: "
 "%(default)s"
+msgstr "எளிய உருவவியல் வடிகட்டி சாளர ஆரம் அளவுரு (மீட்டர்). இயல்புநிலை: %(default)s"
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
 msgid "Compute volume, area and length measurements on Leaflet"
@@ -3843,6 +3877,7 @@ msgid "Base Surface"
 msgstr "அடிப்படை மேற்பரப்பு"
 
 #: coreplugins/annotate/public/Popup.jsx:1079
+#: coreplugins/annotate/public/Popup.jsx:1080
 #, fuzzy
 #| msgid "show in 3D"
 msgid "Show 3D"
@@ -4423,9 +4458,6 @@ msgstr ""
 
 #~ msgid "Projection:"
 #~ msgstr "கணிப்பு:"
-
-#~ msgid "Opacity:"
-#~ msgstr "ஒளிபுகாநிலை:"
 
 #~ msgid ""
 #~ "An orthophoto could not be generated. To generate one, make sure GPS "

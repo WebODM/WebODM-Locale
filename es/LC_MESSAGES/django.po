@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-06-23 13:01+0000\n"
 "Last-Translator: Matheus Rocha Pereira <matheusrp11@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/es/"
@@ -84,7 +84,7 @@ msgstr "Versión"
 msgid "Author"
 msgstr "Autor"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
@@ -112,7 +112,33 @@ msgstr "No se puede deshabilitar el complemento %(plugin)s: %(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "No se puede eliminar el complemento %(plugin)s: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr ""
+"Error de suma de verificación. El archivo descargado podría estar dañado."
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr "El complemento tiene más de 1 directorio raíz (solo debería tener uno)"
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+"Esto no parece un complemento. ¿Están plugin.py y manifest.json en el lugar "
+"correcto?"
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+"Ya existe un complemento con el nombre %(plugin)s. Quítelo antes de subir "
+"uno con el mismo nombre."
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
@@ -121,7 +147,7 @@ msgstr ""
 "Complemento %(plugin)s actualizado correctamente. Reinicie WebODM para "
 "aplicar los cambios."
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "%(plugin)s instalado correctamente"
@@ -135,15 +161,20 @@ msgstr "No se puede cargar el complemento: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "Necesita cargar un archivo zip"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Desactivar"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Activar"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr "¿Está seguro de que desea eliminar %(plugin)s?"
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Acciones"
 
@@ -177,6 +208,10 @@ msgstr "La firma ha caducado."
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr "Error al decodificar la firma."
+
+#: app/api/externalauth.py:37
+msgid "Invalid credentials"
+msgstr "Credenciales no válidas"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -416,7 +451,7 @@ msgstr "No es un DXF ni un shapefile comprimido: %(file)s"
 msgid "Invalid EPSG code"
 msgstr "Código EPSG no válido"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "No se puede convertir %(file)s: %(reason)s"
@@ -626,6 +661,11 @@ msgstr "Valor de sombreado no válido: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "No se puede usar epsg en un conjunto de datos no georreferenciado"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Aplicación"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Tipo"
@@ -675,7 +715,7 @@ msgstr "Por Defecto"
 msgid "Basemap"
 msgstr "Mapa base"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Mapas base"
 
@@ -700,7 +740,7 @@ msgstr "Activado"
 msgid "Plugin"
 msgstr "Complemento"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Complementos"
 
@@ -945,17 +985,13 @@ msgid "Organization website"
 msgstr "Sitio web de la organización"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Tema"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Tema activo"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Aplicación"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1871,7 +1907,7 @@ msgstr ""
 "Un %(link_start)sArchivo GCP%(link_end)s es opcional, pero puede incrementar "
 "la precisión de la georeferenciación"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Herramientas de desarrollo"
@@ -1919,39 +1955,43 @@ msgstr "¡Hola, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "%(used)s de %(total)s utilizado(s)"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr "Idioma"
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Cerrar sesión"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Tablero"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Nodos de procesamiento"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Agregar nuevo"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "Administración"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Cuentas"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "Grupos"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "Marca"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "Acerca de"
 
@@ -2034,22 +2074,22 @@ msgstr ""
 msgid "Create Account"
 msgstr "Crear cuenta"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "en %(num)s días"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "en %(num)s horas"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "en %(num)s minutos"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "muy pronto"
 
@@ -2076,23 +2116,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Calcule las medidas de volumen, área y longitud en el Leaflet"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Un complemento para crear archivos GCP a partir de imágenes"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Anota y mide en mapas 2D con facilidad"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "Detectar objetos en ortofotos utilizando IA"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "Un complemento de ejemplo para el desarrollo"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 "Un complemento para añadir un botón que permita hacer una captura de "
@@ -2397,6 +2436,10 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Motor utilizado por el nodo."
+
+#: webodm/urls.py:33
+msgid "WebODM Administration"
+msgstr "Administración de WebODM"
 
 #, python-format
 #~ msgid ""

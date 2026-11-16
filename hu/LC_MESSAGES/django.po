@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-08-15 22:29+0000\n"
 "Last-Translator: Faludi Zoltán <zoltan@faludi.info>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -86,7 +86,7 @@ msgstr "Verzió"
 msgid "Author"
 msgstr "Szerző"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
@@ -114,14 +114,35 @@ msgstr "A %(plugin)s bővítmény nem tiltható le: %(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "A %(plugin)s bővítmény nem törölhető: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr ""
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr ""
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, fuzzy, python-format
 #| msgid "Plugin added successfully"
 msgid "%(plugin)s installed successfully"
@@ -136,15 +157,20 @@ msgstr "Nem lehet betölteni a bővítményt: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "zip fájlt kell feltöltened"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Letiltás"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Engedélyezés"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr ""
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Műveletek"
 
@@ -180,6 +206,12 @@ msgstr ""
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr ""
+
+#: app/api/externalauth.py:37
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid credentials"
+msgstr "Hibás művelet"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -423,7 +455,7 @@ msgstr "Nem DXF vagy zip shapefile: %(file)s"
 msgid "Invalid EPSG code"
 msgstr "Érvénytelen EPSG-kód: %(value)s"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "Nem konvertálható %(file)s: %(reason)s"
@@ -653,6 +685,11 @@ msgstr "Érvénytelen dombárnyék érték: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Nem használható az epsg nem georeferált adatkészleten"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Alkalmazás"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Típus"
@@ -705,7 +742,7 @@ msgstr "Alapértelemezett gomb"
 msgid "Basemap"
 msgstr "Alaptérkép"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Alaptérképek"
 
@@ -730,7 +767,7 @@ msgstr "Engedélyezve"
 msgid "Plugin"
 msgstr "Bővítmény"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Bővítmények"
 
@@ -980,17 +1017,13 @@ msgid "Organization website"
 msgstr "Szervezet honlap"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Téma"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Aktív téma"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Alkalmazás"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1949,7 +1982,7 @@ msgstr ""
 "Egy %(link_start)sGCP fájl%(link_end)s opcionális, de növelheti a "
 "georeferálás pontosságát"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Fejlesztői eszközök"
@@ -1996,39 +2029,43 @@ msgstr "Helló, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "%(used)s / %(total)s felhasználva"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr ""
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Kijelentkezés"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Vezérlőpult"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Feldolgozási pont"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Új hozzáadása"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "Adminisztráció"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Fiókok"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "Csoportok"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "Arculat"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "Névjegy"
 
@@ -2110,22 +2147,22 @@ msgstr "Mielőtt elkezdenénk, létre kell hoznunk egy rendszergazdai fiókot:"
 msgid "Create Account"
 msgstr "Fiók létrehozása"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "%(num)s napon belül"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "%(num)s órán belül"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "%(num)s percen belül"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "Rövidesen"
 
@@ -2150,23 +2187,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Térfogat számítás , terület és hosszmérés Leaflet-en"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Modul a GCP fájlok létrehozására a képekből"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Jelöljön meg és mérjen 2D térképeken könnyedén"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "Objektumok detektálása mesterséges intelligenciával ortófotókon"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "Példa bővítmény fejlesztéshez"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 "Egy bővítmény, amely gombbal képernyőképet készít a térképről vagy 3D "
@@ -2479,6 +2515,12 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "A csomópont által használt motor."
+
+#: webodm/urls.py:33
+#, fuzzy
+#| msgid "Administration"
+msgid "WebODM Administration"
+msgstr "Adminisztráció"
 
 #, python-format
 #~ msgid ""

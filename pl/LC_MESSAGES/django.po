@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-11-06 07:51+0000\n"
 "Last-Translator: Marcin Sołoguba <czalaviek@users.noreply.hosted.weblate."
 "org>\n"
@@ -86,7 +86,7 @@ msgstr "Wersja"
 msgid "Author"
 msgstr "Autor"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
@@ -115,7 +115,32 @@ msgstr "Nie można wyłączyć wtyczki%(plugin)s: %(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Nie można usunąć wtyczki %(plugin)s: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr "Niezgodność sumy kontrolnej. Pobrany plik może być uszkodzony."
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr "Wtyczka ma więcej niż 1 katalog główny (powinna mieć tylko jeden)"
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+"To nie wygląda na wtyczkę. Czy plugin.py i manifest.json są we właściwym "
+"miejscu?"
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+"Wtyczka o nazwie %(plugin)s już istnieje. Usuń ją przed przesłaniem wtyczki "
+"o tej samej nazwie."
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
@@ -124,7 +149,7 @@ msgstr ""
 "Plugin %(plugin)s uaktualniono poprawnie. Proszę uruchomić ponownie WebODM "
 "by dokończyć wprowadzanie zmian."
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "Wtyczka %(plugin)s dodana pomyślnie"
@@ -138,23 +163,26 @@ msgstr "Nie można załadować wtyczki: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "Musisz przesłać plik zip"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Wyłącz"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Włącz"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr "Czy na pewno chcesz usunąć %(plugin)s?"
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Akcje"
 
 #: app/api/authentication.py:43
-#, fuzzy
-#| msgid "Invalid export"
 msgid "Invalid payload."
-msgstr "Nieprawidłowy eksport"
+msgstr "Nieprawidłowe dane."
 
 #: app/api/authentication.py:47
 msgid "Invalid signature."
@@ -174,14 +202,20 @@ msgstr ""
 msgid ""
 "Invalid Authorization header. Credentials string should not contain spaces."
 msgstr ""
+"Nieprawidłowy nagłówek Authorization. Ciąg poświadczeń nie powinien zawierać "
+"spacji."
 
 #: app/api/authentication.py:73 app/api/jwt.py:67
 msgid "Signature has expired."
-msgstr ""
+msgstr "Podpis wygasł."
 
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr "Błąd podczas dekodowania podpisu."
+
+#: app/api/externalauth.py:37
+msgid "Invalid credentials"
+msgstr "Nieprawidłowe dane logowania"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -370,10 +404,8 @@ msgid "Must include \"username\" and \"password\"."
 msgstr "Musi zawierać nazwę użytkownika i hasło."
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "Nieprawidłowe działanie"
+msgstr "Nieprawidłowy token."
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
@@ -426,7 +458,7 @@ msgstr "Nie DXF lub zipowany plik shape: %(file)s"
 msgid "Invalid EPSG code"
 msgstr "Nieprawidłowy kod EPSG"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "Nie można konwertować %(file)s: %(reason)s"
@@ -635,6 +667,11 @@ msgstr "Nieprawidłowa wartość zacienienia: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Nie można używać epsg w zbiorze danych bez georeferencji"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Aplikacja"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Typ"
@@ -684,7 +721,7 @@ msgstr "Domyślny"
 msgid "Basemap"
 msgstr "Mapa bazowa"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Mapy bazowe"
 
@@ -709,7 +746,7 @@ msgstr "Włączone"
 msgid "Plugin"
 msgstr "Wtyczka"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Wtyczki"
 
@@ -955,17 +992,13 @@ msgid "Organization website"
 msgstr "Witryna internetowa organizacji"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Motyw"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Motyw aktywny"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Aplikacja"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1394,13 +1427,11 @@ msgstr "Sukces"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 Brak dostępu"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "Nie masz uprawnień do edytowania czegokolwiek."
+msgstr "Nie masz uprawnień dostępu do tej strony."
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1443,10 +1474,8 @@ msgid "Page not found"
 msgstr "Nie znaleziono strony"
 
 #: app/templates/app/admin/404.html:10
-#, fuzzy
-#| msgid "We're sorry, but the requested page could not be found."
 msgid "We’re sorry, but the requested page could not be found."
-msgstr "Przepraszamy, nie można znaleźć żądanej strony."
+msgstr "Przepraszamy, ale żądana strona nie została znaleziona."
 
 #: app/templates/app/admin/500.html:6 app/templates/app/admin/app_index.html:10
 #: app/templates/app/admin/auth/user/change_password.html:15
@@ -1473,17 +1502,12 @@ msgid "Server Error <em>(500)</em>"
 msgstr "Błąd serwera <em>(500)</em>"
 
 #: app/templates/app/admin/500.html:15
-#, fuzzy
-#| msgid ""
-#| "There's been an error. It's been reported to the site administrators via "
-#| "email and should be fixed shortly. Thanks for your patience."
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
 msgstr ""
-"Wystąpił błąd. Został on zgłoszony do administratorów strony za "
-"pośrednictwem poczty elektronicznej i powinien zostać wkrótce naprawiony. "
-"Dziękujemy za cierpliwość."
+"Wystąpił błąd. Został zgłoszony administratorom strony przez e-mail i "
+"powinien zostać wkrótce naprawiony. Dziękujemy za cierpliwość."
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1550,14 +1574,16 @@ msgid ""
 "This action will <strong>enable</strong> password-based authentication for "
 "this user."
 msgstr ""
+"To działanie <strong>włączy</strong> uwierzytelnianie hasłem dla tego "
+"użytkownika."
 
 #: app/templates/app/admin/auth/user/change_password.html:72
 msgid "Disable password-based authentication"
-msgstr ""
+msgstr "Wyłącz uwierzytelnianie hasłem"
 
 #: app/templates/app/admin/auth/user/change_password.html:74
 msgid "Enable password-based authentication"
-msgstr ""
+msgstr "Włącz uwierzytelnianie hasłem"
 
 #: app/templates/app/admin/base_site.html:3
 msgid "Django site admin"
@@ -1577,20 +1603,16 @@ msgid "Filter"
 msgstr "Filtr"
 
 #: app/templates/app/admin/change_list.html:81
-#, fuzzy
-#| msgid "Accounts"
 msgid "Hide counts"
-msgstr "Konta"
+msgstr "Ukryj liczniki"
 
 #: app/templates/app/admin/change_list.html:82
-#, fuzzy
-#| msgid "Accounts"
 msgid "Show counts"
-msgstr "Konta"
+msgstr "Pokaż liczniki"
 
 #: app/templates/app/admin/change_list.html:85
 msgid "Clear all filters"
-msgstr ""
+msgstr "Wyczyść wszystkie filtry"
 
 #: app/templates/app/admin/change_list_plugin.html:29
 msgid "Load Plugin (.zip)"
@@ -1655,10 +1677,8 @@ msgstr "Obiekty"
 
 #: app/templates/app/admin/delete_confirmation.html:44
 #: app/templates/app/admin/delete_selected_confirmation.html:42
-#, fuzzy
-#| msgid "Yes, I'm sure"
 msgid "Yes, I’m sure"
-msgstr "Tak, potwierdź"
+msgstr "Tak, na pewno"
 
 #: app/templates/app/admin/delete_confirmation.html:45
 #: app/templates/app/admin/delete_selected_confirmation.html:43
@@ -1706,7 +1726,7 @@ msgstr "Zmień"
 #: app/templates/app/admin/edit_inline/stacked.html:20
 #: app/templates/app/admin/edit_inline/tabular.html:40
 msgid "View"
-msgstr ""
+msgstr "Zobacz"
 
 #: app/templates/app/admin/edit_inline/stacked.html:22
 #: app/templates/app/admin/edit_inline/tabular.html:42
@@ -1740,38 +1760,29 @@ msgstr "Żadnych dostępnych"
 
 #: app/templates/app/admin/index.html:33
 msgid "Added:"
-msgstr ""
+msgstr "Dodano:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Change"
 msgid "Changed:"
-msgstr "Zmień"
+msgstr "Zmieniono:"
 
 #: app/templates/app/admin/index.html:33
-#, fuzzy
-#| msgid "Delete"
 msgid "Deleted:"
-msgstr "Usuń"
+msgstr "Usunięto:"
 
 #: app/templates/app/admin/index.html:43
 msgid "Unknown content"
 msgstr "Zawartość nieznana"
 
 #: app/templates/app/admin/invalid_setup.html:12
-#, fuzzy
-#| msgid ""
-#| "Something's wrong with your database installation. Make sure the "
-#| "appropriate database tables have been created, and make sure the database "
-#| "is readable by the appropriate user."
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
-"Coś jest nie tak z instalacją bazy danych. Upewnij się, że zostały utworzone "
-"odpowiednie tabele bazy danych i upewnij się, że baza danych jest czytelna "
-"dla odpowiedniego użytkownika."
+"Coś jest nie tak z instalacją bazy danych. Upewnij się, że utworzono "
+"odpowiednie tabele w bazie danych i że baza danych jest dostępna do odczytu "
+"dla właściwego użytkownika."
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1788,21 +1799,17 @@ msgstr "Działanie"
 #: app/templates/app/admin/object_history.html:49
 msgid "entry"
 msgid_plural "entries"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "wpis"
+msgstr[1] "wpisy"
+msgstr[2] "wpisów"
 
 #: app/templates/app/admin/object_history.html:52
-#, fuzzy
-#| msgid ""
-#| "This object doesn't have a change history. It probably wasn't added via "
-#| "this admin site."
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
 msgstr ""
 "Ten obiekt nie ma historii zmian. Prawdopodobnie nie został dodany przez tę "
-"stronę administratora."
+"stronę administracyjną."
 
 #: app/templates/app/admin/pagination.html:10
 #: app/templates/app/admin/search_form.html:9
@@ -1815,10 +1822,8 @@ msgid "Save"
 msgstr "Zapisz"
 
 #: app/templates/app/admin/popup_response.html:3
-#, fuzzy
-#| msgid "Popup closing..."
 msgid "Popup closing…"
-msgstr "Zamykanie okienka..."
+msgstr "Zamykanie okna…"
 
 #: app/templates/app/admin/search_form.html:7
 msgid "Search"
@@ -1850,10 +1855,8 @@ msgid "Save and continue editing"
 msgstr "Zapisz i kontynuuj edycję"
 
 #: app/templates/app/admin/submit_line.html:7
-#, fuzzy
-#| msgid "Save as new"
 msgid "Save and view"
-msgstr "Zapisz jako nowy"
+msgstr "Zapisz i zobacz"
 
 #: app/templates/app/admin/submit_line.html:10
 #: app/templates/app/dev_tools.html:9
@@ -1917,7 +1920,7 @@ msgstr ""
 "Plik %(link_start)s GCP %(link_end)s jest opcjonalny, ale może zwiększyć "
 "dokładność georeferencji"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Narzędzia programistyczne"
@@ -1965,39 +1968,43 @@ msgstr "Cześć, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "używane %(used)s z %(total)s"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr "Język"
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Wyloguj"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Kokpit"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Węzły przetwarzania"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Dodaj nowe"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "Administracja"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Konta"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "Grupy"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "Marka"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "Opis"
 
@@ -2079,22 +2086,22 @@ msgstr "Zanim zaczniemy, musimy utworzyć dla Ciebie konto administratora:"
 msgid "Create Account"
 msgstr "Utwórz konto"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "w %(num)s dni"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "w %(num)s godziny"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "w %(num)s minuty"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "bardzo niedługo"
 
@@ -2120,30 +2127,29 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Obliczanie pomiarów objętości, powierzchni i długości na ulotce"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Plugin do tworzenia plików GCP z obrazów"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Z łatwością adnotuj i mierz na mapach 2D"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "Wykrywaj obiekty na ortofotomapie używając AI"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "Przykładowa wtyczka, tylko do programowania"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 "Wtyczka dodająca przycisk generujący zrzut ekranowy z mapą lub modelem 3D."
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "Wylogowano"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2246,10 +2252,8 @@ msgstr "Nieprawidłowy model powierzchni"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid filename"
 msgid "Invalid line"
-msgstr "Nieprawidłowa nazwa pliku"
+msgstr "Nieprawidłowa linia"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128
@@ -2441,6 +2445,10 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Silnik używany przez węzeł."
+
+#: webodm/urls.py:33
+msgid "WebODM Administration"
+msgstr "Administracja WebODM"
 
 #, python-format
 #~ msgid ""

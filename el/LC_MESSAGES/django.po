@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-03-05 19:39+0000\n"
 "Last-Translator: Christos Kanotidis <christoskanotidis@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/webodm/webodm/el/"
@@ -84,7 +84,7 @@ msgstr "Έκδοση"
 msgid "Author"
 msgstr "Συντάκτης"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
@@ -114,7 +114,36 @@ msgstr ""
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Δεν είναι δυνατή η διαγραφή του πρόσθετου %(plugin)s: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr ""
+"Αναντιστοιχία αθροίσματος ελέγχου. Το αρχείο που λήφθηκε μπορεί να είναι "
+"κατεστραμμένο."
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr ""
+"Το πρόσθετο έχει περισσότερους από 1 ριζικούς καταλόγους (θα πρέπει να έχει "
+"μόνο έναν)"
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+"Αυτό δεν μοιάζει με πρόσθετο. Βρίσκονται τα plugin.py και manifest.json στη "
+"σωστή θέση;"
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+"Υπάρχει ήδη ένα πρόσθετο με το όνομα %(plugin)s. Αφαιρέστε το πριν ανεβάσετε "
+"ένα με το ίδιο όνομα."
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
@@ -123,7 +152,7 @@ msgstr ""
 "Το πρόσθετο %(plugin)s ενημερώθηκε επιτυχώς. Επανεκκινήστε το WebODM για να "
 "εφαρμοστούν οι αλλαγές."
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "Το %(plugin)s εγκαταστάθηκε επιτυχώς"
@@ -137,15 +166,20 @@ msgstr "Δεν μπορεί να φορτώσει το πρόσθετο: %(messa
 msgid "You need to upload a zip file"
 msgstr "Πρέπει να ανεβάσετε ένα αρχείο zip"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Απενεργοποίηση"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Ενεργοποίηση"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε το %(plugin)s;"
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Ενέργειες"
 
@@ -179,6 +213,10 @@ msgstr "Η υπογραφή έχει λήξει."
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr "Σφάλμα κατά την αποκωδικοποίηση της υπογραφής."
+
+#: app/api/externalauth.py:37
+msgid "Invalid credentials"
+msgstr "Μη έγκυρα διαπιστευτήρια"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -422,7 +460,7 @@ msgstr "Δεν είναι DXF ή συμπιεσμένο shapefile: %(file)s"
 msgid "Invalid EPSG code"
 msgstr "Μη έγκυρος κωδικός EPSG"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "Αδυναμία μετατροπής του %(file)s: %(reason)s"
@@ -634,6 +672,11 @@ msgstr "Μη έγκυρη τιμή σκίασης λόφου: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Δεν είναι δυνατή η χρήση του epsg σε σύνολο δεδομένων χωρίς γεωαναφορά"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Εφαρμογή"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Τύπος"
@@ -683,7 +726,7 @@ msgstr "Προεπιλογή"
 msgid "Basemap"
 msgstr "Χάρτης βάσης"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Χάρτες βάσης"
 
@@ -708,7 +751,7 @@ msgstr "Ενεργοποιημένο"
 msgid "Plugin"
 msgstr "Πρόσθετο"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Πρόσθετα"
 
@@ -955,17 +998,13 @@ msgid "Organization website"
 msgstr "Ιστοσελίδα Οργανισμού"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Θέμα"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Ενεργό θέμα"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Εφαρμογή"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1893,7 +1932,7 @@ msgstr ""
 "Ένα αρχείο %(link_start)sGCP File%(link_end)s είναι προαιρετικό, αλλά μπορεί "
 "να αυξήσει την ακρίβεια γεωαναφοράς"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Εργαλεία Προγραμματιστή"
@@ -1941,39 +1980,43 @@ msgstr "Γεια σας, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "%(used)s από %(total)s που χρησιμοποιήθηκαν"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Αποσύνδεση"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Ταμπλό"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Κόμβοι επεξεργασίας"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Προσθήκη νέου"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "Διαχείριση"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Λογαριασμοί"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "Ομάδες"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "Επωνυμία"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "Περί"
 
@@ -2057,22 +2100,22 @@ msgstr ""
 msgid "Create Account"
 msgstr "Δημιουργία λογαριασμού"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "σε %(num)s ημέρες"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "σε %(num)s ώρες"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "σε %(num)s λεπτά"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "πολύ σύντομα"
 
@@ -2099,24 +2142,23 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Υπολογίστε μετρήσεις όγκου, εμβαδού και μήκους στο Leaflet"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Ένα πρόσθετο για τη δημιουργία αρχείων GCP από εικόνες"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Σχολιάστε και μετρήστε εύκολα σε δισδιάστατους χάρτες"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr ""
 "Εντοπισμός αντικειμένων χρησιμοποιώντας Τεχνητή Νοημοσύνη σε ορθοφωτογραφίες"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "Ένα παράδειγμα πρόσθετου για ανάπτυξη"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 "Ένα πρόσθετο που προσθέτει κουμπί για λήψη στιγμιότυπου του χάρτη ή του 3D "
@@ -2189,8 +2231,8 @@ msgstr "Λείπει ο κωδικός εξουσιοδότησης SSO."
 #: app/views/oidc.py:186
 msgid "Cannot create user. A username already exists with the same e-mail."
 msgstr ""
-"Δεν είναι δυνατή η δημιουργία χρήστη. Υπάρχει ήδη όνομα χρήστη με το ίδιο "
-"e-mail."
+"Δεν είναι δυνατή η δημιουργία χρήστη. Υπάρχει ήδη όνομα χρήστη με το ίδιο e-"
+"mail."
 
 #: app/views/oidc.py:190
 msgid "This account is disabled. Please contact an administrator."
@@ -2428,6 +2470,10 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Μηχανή που χρησιμοποιείται από τον κόμβο."
+
+#: webodm/urls.py:33
+msgid "WebODM Administration"
+msgstr "Διαχείριση WebODM"
 
 #, python-format
 #~ msgid ""

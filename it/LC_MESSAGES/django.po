@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-11-09 09:51+0000\n"
 "Last-Translator: \"Luca P.\" <upa@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/webodm/webodm/it/"
@@ -84,7 +84,7 @@ msgstr "Versione"
 msgid "Author"
 msgstr "Autore"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr "Riavvio necessario. Riavviare WebODM per abilitare %(plugin)s"
@@ -111,7 +111,33 @@ msgstr "Impossibile disattivare il plugin %(plugin)s: %(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Impossibile cancellare il plugin %(plugin)s: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr ""
+"Checksum non corrispondente. Il file scaricato potrebbe essere corrotto."
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr "Il plugin ha più di una directory radice (dovrebbe averne solo una)"
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+"Questo non sembra un plugin. plugin.py e manifest.json sono nella posizione "
+"corretta?"
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+"Esiste già un plugin con il nome %(plugin)s. Rimuovilo prima di caricarne "
+"uno con lo stesso nome."
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
@@ -120,7 +146,7 @@ msgstr ""
 "Plugin %(plugin)s aggiornato con successo. Riavviare WebODM per applicare le "
 "modifiche."
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "%(plugin)s installato con successo"
@@ -134,15 +160,20 @@ msgstr "Impossibile caricare il plugin: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "Devi caricare un file zip"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Disattiva"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Abilita"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr "Sei sicuro di voler cancellare %(plugin)s?"
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Azioni"
 
@@ -176,6 +207,10 @@ msgstr "La firma è scaduta."
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr "Errore decodifica firma."
+
+#: app/api/externalauth.py:37
+msgid "Invalid credentials"
+msgstr "Credenziali non valide"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -362,10 +397,8 @@ msgid "Must include \"username\" and \"password\"."
 msgstr "Deve includere \"username\" e \"password\"."
 
 #: app/api/jwt.py:71
-#, fuzzy
-#| msgid "Invalid action"
 msgid "Invalid token."
-msgstr "Azione non valida"
+msgstr "Token non valido."
 
 #: app/api/jwt.py:76
 msgid "orig_iat field is required."
@@ -418,7 +451,7 @@ msgstr "Non è un DXF od uno shapefile zippato: %(file)s"
 msgid "Invalid EPSG code"
 msgstr "Codice EPSG non valido"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "Non posso convertire %(file)s: %(reason)s"
@@ -626,6 +659,11 @@ msgstr "Valore di ombreggiatura non valido: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Non è possibile usare epsg su dataset non georeferenziati"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Applicazione"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Tipo"
@@ -675,7 +713,7 @@ msgstr "Predefinito"
 msgid "Basemap"
 msgstr "Mappa di base"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Mappe di base"
 
@@ -700,7 +738,7 @@ msgstr "Abilitato"
 msgid "Plugin"
 msgstr "Plugin"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Plugins"
 
@@ -944,17 +982,13 @@ msgid "Organization website"
 msgstr "Sito web Organizzazione"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Tema"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Tema attivo"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Applicazione"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1383,13 +1417,11 @@ msgstr "Successo"
 
 #: app/templates/app/403.html:6
 msgid "403 Forbidden"
-msgstr ""
+msgstr "403 Accesso negato"
 
 #: app/templates/app/403.html:7
-#, fuzzy
-#| msgid "You don't have permission to edit anything."
 msgid "You do not have permission to access this page."
-msgstr "Non hai il permesso di modificare nulla."
+msgstr "Non hai i permessi per accedere a questa pagina."
 
 #: app/templates/app/404.html:6
 msgid "404 Page Not Found"
@@ -1875,7 +1907,7 @@ msgstr ""
 "Un %(link_start)sGCP File%(link_end)s è opzionale, ma aumenta la precisione "
 "della geo referenziazione"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Strumenti di sviluppo"
@@ -1923,39 +1955,43 @@ msgstr "Ciao, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "%(used)s di %(total)s usati"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr "Lingua"
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Esci"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Pannello di controllo"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Nodi di Elaborazione"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Aggiungi Nuovo"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "Amministrazione"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Account"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "Gruppi"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "Personalizza"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "Informazioni"
 
@@ -2037,22 +2073,22 @@ msgstr "Prima di iniziare, dobbiamo creare un account amministratore per te:"
 msgid "Create Account"
 msgstr "Crea Account"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "in %(num)s giorni"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "in %(num)s ore"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "in %(num)s minuti"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "molto presto"
 
@@ -2079,23 +2115,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Calcola il volume, l'area e le lunghezze con Leaflet"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Un plugin per creare GCP files dalle immagini"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Annota e misura su mappe 2D con facilita'"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "Rileva oggetti in ortofoto utilizzando AI"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "Un plugin di esempio per lo sviluppo"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 "Un plugin per aggiungere un pulsante per scattare uno snapshot della mappa o "
@@ -2103,7 +2138,7 @@ msgstr ""
 
 #: app/views/app.py:42
 msgid "Logged out"
-msgstr ""
+msgstr "Disconnesso"
 
 #: app/views/app.py:63
 msgid "First Project"
@@ -2204,10 +2239,8 @@ msgstr "Modello della superficie non valido"
 
 #: coreplugins/annotate/api.py:111
 #: coreplugins/annotate/dist/annotate/api.py:111
-#, fuzzy
-#| msgid "Invalid filename"
 msgid "Invalid line"
-msgstr "Nome file non valido"
+msgstr "Linea non valida"
 
 #: coreplugins/annotate/api.py:128
 #: coreplugins/annotate/dist/annotate/api.py:128
@@ -2404,6 +2437,10 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Motore usato dal nodo."
+
+#: webodm/urls.py:33
+msgid "WebODM Administration"
+msgstr "Amministrazione WebODM"
 
 #, python-format
 #~ msgid ""

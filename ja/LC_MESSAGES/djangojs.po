@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-03-05 19:54+0000\n"
 "Last-Translator: Kunihiro Yukawa <mx.vaio@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/webodm/react-ui/"
@@ -115,7 +115,9 @@ msgstr "スプラットレンダラーを読み込めません"
 #: app/static/app/js/ModelView.jsx:818
 msgid ""
 "Could not load splats. This task doesn't seem to have a valid splats file."
-msgstr "スプラットを読み込めませんでした。このタスクには有効なスプラットファイルがないようです。"
+msgstr ""
+"スプラットを読み込めませんでした。このタスクには有効なスプラットファイルがな"
+"いようです。"
 
 #: app/static/app/js/ModelView.jsx:925
 #: app/static/app/js/classes/AssetDownloads.js:54
@@ -182,13 +184,17 @@ msgstr "プラグインリポジトリがエラーを返しました:"
 #: app/static/app/js/PluginBrowser.jsx:167
 msgid ""
 "The plugin repository returned an invalid response. Please try again later."
-msgstr "プラグインリポジトリが無効な応答を返しました。後でもう一度お試しください。"
+msgstr ""
+"プラグインリポジトリが無効な応答を返しました。後でもう一度お試しください。"
 
 #: app/static/app/js/PluginBrowser.jsx:164
 msgid ""
 "Cannot connect to the plugin repository. Check that this server has internet "
 "access and that the connection is not blocked by a firewall or proxy."
-msgstr "プラグインリポジトリに接続できません。このサーバーがインターネットに接続できること、およびファイアウォールやプロキシによって接続がブロックされていないことを確認してください。"
+msgstr ""
+"プラグインリポジトリに接続できません。このサーバーがインターネットに接続でき"
+"ること、およびファイアウォールやプロキシによって接続がブロックされていないこ"
+"とを確認してください。"
 
 #: app/static/app/js/PluginBrowser.jsx:187
 #: app/static/app/js/components/SplatsDialog.jsx:452
@@ -204,7 +210,9 @@ msgstr "プラグインのダウンロード中にプラグインリポジトリ
 msgid ""
 "Cannot download the plugin. The connection to the plugin repository failed "
 "or was interrupted."
-msgstr "プラグインをダウンロードできません。プラグインリポジトリへの接続に失敗したか、中断されました。"
+msgstr ""
+"プラグインをダウンロードできません。プラグインリポジトリへの接続に失敗した"
+"か、中断されました。"
 
 #: app/static/app/js/PluginBrowser.jsx:199
 msgid "Installing..."
@@ -219,7 +227,9 @@ msgstr "WebODM はプラグインをインストールできませんでした:"
 msgid ""
 "Cannot send the plugin to WebODM. The connection was interrupted or the "
 "server is not responding."
-msgstr "プラグインを WebODM に送信できません。接続が中断されたか、サーバーが応答していません。"
+msgstr ""
+"プラグインを WebODM に送信できません。接続が中断されたか、サーバーが応答して"
+"いません。"
 
 #: app/static/app/js/PluginBrowser.jsx:253
 msgid "No plugins found."
@@ -228,11 +238,13 @@ msgstr "プラグインが見つかりません。"
 #: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
 #: app/static/app/js/components/ImportExternalPanel.jsx:283
+#: app/static/app/js/components/ImportTaskPanel.jsx:165
 #: app/static/app/js/components/ManageMediaDialog.jsx:599
 #: app/static/app/js/components/NewTaskPanel.jsx:252
 #: app/static/app/js/components/NewTaskPanel.jsx:259
-#: app/static/app/js/components/ProjectListItem.jsx:882
-#: app/static/app/js/components/ProjectListItem.jsx:895
+#: app/static/app/js/components/PdfPopup.jsx:38
+#: app/static/app/js/components/ProjectListItem.jsx:979
+#: app/static/app/js/components/ProjectListItem.jsx:992
 #: app/static/app/js/components/SplatsDialog.jsx:580
 #: app/static/app/js/components/Toaster.jsx:317
 msgid "Close"
@@ -547,7 +559,7 @@ msgstr "ヤード・ポンド法 (US)"
 
 #: app/static/app/js/components/AssetDownloadButtons.jsx:79
 #: app/static/app/js/components/ExportAssetDialog.jsx:41
-#: app/static/app/js/components/MapPreview.jsx:460
+#: app/static/app/js/components/MapPreview.jsx:466
 #: coreplugins/annotate/public/ExportAnnotationsDialog.jsx:94
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:208
 msgid "Download"
@@ -556,6 +568,12 @@ msgstr "ダウンロード"
 #: app/static/app/js/components/AssetDownloadButtons.jsx:111
 msgid "Backup"
 msgstr "バックアップ"
+
+#: app/static/app/js/components/ClipboardInput.jsx:38
+#, fuzzy
+#| msgid "Copy to clipboard"
+msgid "Copied to clipboard"
+msgstr "クリップボードにコピー"
 
 #: app/static/app/js/components/CropButton.jsx:16
 msgid "Crop"
@@ -732,7 +750,7 @@ msgstr "タスクオプションの編集"
 #: app/static/app/js/components/EditProjectDialog.jsx:169
 #: app/static/app/js/components/EditTaskForm.jsx:659
 #: app/static/app/js/components/Paginator.jsx:29
-#: app/static/app/js/components/ProjectListItem.jsx:62
+#: app/static/app/js/components/ProjectListItem.jsx:65
 #: coreplugins/annotate/public/Popup.jsx:898
 #: coreplugins/annotate/public/Popup.jsx:905
 #: coreplugins/annotate/public/Popup.jsx:931
@@ -786,7 +804,7 @@ msgstr "操作を完了できません。"
 #: app/static/app/js/components/EditProjectDialog.jsx:153
 #: app/static/app/js/components/EditTaskForm.jsx:605
 #: app/static/app/js/components/Paginator.jsx:32
-#: app/static/app/js/components/ProjectListItem.jsx:65
+#: app/static/app/js/components/ProjectListItem.jsx:68
 msgid "Tags"
 msgstr "タグ"
 
@@ -804,6 +822,14 @@ msgstr "タグを追加"
 #: app/static/app/js/components/EditProjectDialog.jsx:179
 msgid "Description (optional)"
 msgstr "記述（オプション）"
+
+#: app/static/app/js/components/EditTaskForm.jsx:43
+#: app/static/app/js/components/ImportExternalPanel.jsx:153
+#: app/static/app/js/components/ImportTaskPanel.jsx:36
+#, fuzzy, python-format
+#| msgid "Task #%(number)s"
+msgid "Task of %(date)s"
+msgstr "タスク #%(number)s"
 
 #: app/static/app/js/components/EditTaskForm.jsx:116
 msgid ""
@@ -852,6 +878,7 @@ msgstr "カスタム"
 
 #: app/static/app/js/components/EditTaskForm.jsx:240
 #: app/static/app/js/components/EditTaskForm.jsx:392
+#: app/static/app/js/components/TaskListItem.jsx:266
 msgid "Default"
 msgstr "デフォルト"
 
@@ -890,7 +917,7 @@ msgstr "リトライ"
 #: app/static/app/js/components/EditTaskForm.jsx:573
 #: app/static/app/js/components/EditTaskForm.jsx:580
 #: app/static/app/js/components/ManageMediaDialog.jsx:496
-#: app/static/app/js/components/ProjectListItem.jsx:866
+#: app/static/app/js/components/ProjectListItem.jsx:963
 #: app/static/app/js/components/TaskListItem.jsx:614
 #: app/static/app/js/components/TaskListItem.jsx:859
 #: coreplugins/annotate/public/Popup.jsx:948
@@ -914,7 +941,7 @@ msgstr "保存"
 #: app/static/app/js/components/ManageMediaDialog.jsx:544
 #: app/static/app/js/components/ManageMediaDialog.jsx:582
 #: app/static/app/js/components/MapPreview.jsx:194
-#: app/static/app/js/components/ProjectListItem.jsx:872
+#: app/static/app/js/components/ProjectListItem.jsx:969
 #: app/static/app/js/components/TaskListItem.jsx:580
 #: app/static/app/js/components/TaskListItem.jsx:890
 #: coreplugins/annotate/public/Popup.jsx:1156
@@ -1014,7 +1041,7 @@ msgid "Could not apply changes"
 msgstr "変更を適用できませんでした"
 
 #: app/static/app/js/components/FormDialog.jsx:159
-#: app/static/app/js/components/ProjectListItem.jsx:560
+#: app/static/app/js/components/ProjectListItem.jsx:639
 msgid "Could not delete item"
 msgstr "アイテムを削除できませんでした"
 
@@ -1058,7 +1085,9 @@ msgstr "画像をダウンロード"
 msgid ""
 "Upload failed after multiple retries. Please check your connection and try "
 "again."
-msgstr "複数回再試行しましたがアップロードに失敗しました。接続を確認して再試行してください。"
+msgstr ""
+"複数回再試行しましたがアップロードに失敗しました。接続を確認して再試行してく"
+"ださい。"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:206
 msgid "Failed to complete upload. Try again later."
@@ -1090,6 +1119,7 @@ msgstr "除去"
 
 #: app/static/app/js/components/ImportExternalPanel.jsx:323
 #: app/static/app/js/components/ImportTaskPanel.jsx:201
+#: app/static/app/js/components/ProjectListItem.jsx:891
 msgid "Cancel Upload"
 msgstr "アップロードを中止"
 
@@ -1125,7 +1155,9 @@ msgstr "アセットまたはバックアップをインポート"
 msgid ""
 "You can import .zip files that have been exported from existing tasks via "
 "Download %(arrow)s All Assets | Backup."
-msgstr "既存のタスクからダウンロード %(arrow)s 全てのアセット | バックアップ でエクスポートされた .zip ファイルをインポートできます。"
+msgstr ""
+"既存のタスクからダウンロード %(arrow)s 全てのアセット | バックアップ でエクス"
+"ポートされた .zip ファイルをインポートできます。"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:174
 msgid "Upload a File"
@@ -1137,7 +1169,7 @@ msgstr "URLからインポート"
 
 #: app/static/app/js/components/ImportTaskPanel.jsx:191
 #: app/static/app/js/components/Map.jsx:1741
-#: app/static/app/js/components/ProjectListItem.jsx:776
+#: app/static/app/js/components/ProjectListItem.jsx:873
 msgid "Import"
 msgstr "インポート"
 
@@ -1194,7 +1226,8 @@ msgstr "%(name)s のバンドの一部を自動的に識別できませんでし
 
 #: app/static/app/js/components/LayersControlLayer.jsx:451
 msgid "Your sensor might not have the proper bands for using this algorithm."
-msgstr "お使いのセンサーには、このアルゴリズムに必要なバンドがない可能性があります。"
+msgstr ""
+"お使いのセンサーには、このアルゴリズムに必要なバンドがない可能性があります。"
 
 #: app/static/app/js/components/LayersControlLayer.jsx:458
 msgid "Color:"
@@ -1265,14 +1298,14 @@ msgid "Loading…"
 msgstr "ロード中…"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:306
+#: app/static/app/js/components/ProjectListItem.jsx:314
 #: app/static/app/js/components/SplatsDialog.jsx:178
 #, python-format
 msgid "%(filename)s is not a valid file"
 msgstr "%(filename)s は有効なファイルではありません"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:174
-#: app/static/app/js/components/ProjectListItem.jsx:335
+#: app/static/app/js/components/ProjectListItem.jsx:343
 #: app/static/app/js/components/SplatsDialog.jsx:195
 #, python-format
 msgid "Cannot upload %(filename)s, exceeded max retries (%(max_retries)s)"
@@ -1281,13 +1314,15 @@ msgstr ""
 "きません"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:186
-#: app/static/app/js/components/ProjectListItem.jsx:347
+#: app/static/app/js/components/ProjectListItem.jsx:355
 #: app/static/app/js/components/SplatsDialog.jsx:202
 #, python-format
 msgid ""
 "Cannot upload %(filename)s, file is too large! Default MaxFileSize is "
 "%(maxFileSize)s MB!"
-msgstr "%(filename)s をアップロードできません。ファイルが大きすぎます！デフォルトの MaxFileSize は %(maxFileSize)s MB です！"
+msgstr ""
+"%(filename)s をアップロードできません。ファイルが大きすぎます！デフォルトの "
+"MaxFileSize は %(maxFileSize)s MB です！"
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:247
 #: app/static/app/js/components/SplatsDialog.jsx:235
@@ -1363,6 +1398,16 @@ msgstr "ファイル名"
 #: coreplugins/annotate/public/Popup.jsx:947
 msgid "Description"
 msgstr "説明"
+
+#: app/static/app/js/components/Map.jsx:453
+msgid "Opacity:"
+msgstr "不透過度:"
+
+#: app/static/app/js/components/Map.jsx:454
+#, fuzzy
+#| msgid "Bands:"
+msgid "Bounds:"
+msgstr "バンド:"
 
 #: app/static/app/js/components/Map.jsx:793
 #: app/static/app/js/components/MapPreview.jsx:114
@@ -1441,29 +1486,29 @@ msgstr "DXFをインポート"
 msgid "Set Reconstruction Area (optional)"
 msgstr "再構成範囲を設定 (任意)"
 
-#: app/static/app/js/components/MapPreview.jsx:326
+#: app/static/app/js/components/MapPreview.jsx:332
 #, python-format
 msgid "Cannot extract GPS data from %(file)s"
 msgstr "%(file)s からGPSデータを抽出できません"
 
-#: app/static/app/js/components/MapPreview.jsx:449
+#: app/static/app/js/components/MapPreview.jsx:455
 msgid "Plotting GPS locations..."
 msgstr "GPS位置をプロット中..."
 
-#: app/static/app/js/components/MapPreview.jsx:454
+#: app/static/app/js/components/MapPreview.jsx:460
 #, python-format
 msgid "For performance reasons, only %(num)s images are plotted"
 msgstr "パフォーマンス上の理由により、%(num)s 枚の画像のみプロットされます"
 
-#: app/static/app/js/components/MapPreview.jsx:465
+#: app/static/app/js/components/MapPreview.jsx:471
 msgid "GeoJSON"
 msgstr "GeoJSON"
 
-#: app/static/app/js/components/MapPreview.jsx:466
+#: app/static/app/js/components/MapPreview.jsx:472
 msgid "CSV"
 msgstr "CSV"
 
-#: app/static/app/js/components/MapPreview.jsx:467
+#: app/static/app/js/components/MapPreview.jsx:473
 msgid "Geolocation File"
 msgstr "位置情報ファイル"
 
@@ -1472,7 +1517,7 @@ msgid "Move Task"
 msgstr "タスクを移動"
 
 #: app/static/app/js/components/MoveTaskDialog.jsx:10
-#: app/static/app/js/components/ProjectListItem.jsx:745
+#: app/static/app/js/components/ProjectListItem.jsx:830
 msgid "Save Changes"
 msgstr "変更を保存"
 
@@ -1513,14 +1558,18 @@ msgstr "以下の追加オプションを確認してください:"
 msgid ""
 "Did you forget any images? When images exceed 1000, they are often stored "
 "inside multiple folders on the SD card."
-msgstr "画像を選択し忘れていませんか？画像が 1000 枚を超えると、SD カード内の複数のフォルダに保存されていることがよくあります。"
+msgstr ""
+"画像を選択し忘れていませんか？画像が 1000 枚を超えると、SD カード内の複数の"
+"フォルダに保存されていることがよくあります。"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:260
 #, python-format
 msgid ""
 "Whoops! It looks like your GCP file is not formatted properly: %(errors)s "
 "See %(link)s for information on the GCP file format"
-msgstr "GCP ファイルの書式が正しくないようです: %(errors)s GCP ファイルの書式については %(link)s を参照してください"
+msgstr ""
+"GCP ファイルの書式が正しくないようです: %(errors)s GCP ファイルの書式について"
+"は %(link)s を参照してください"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:261
 msgid "GCP File"
@@ -1531,7 +1580,9 @@ msgstr "GCP ファイル"
 msgid ""
 "Number of files selected exceeds the maximum of %(count)s allowed on this "
 "processing node."
-msgstr "選択したファイル数が、この処理ノードで許可されている最大数 %(count)s を超えています。"
+msgstr ""
+"選択したファイル数が、この処理ノードで許可されている最大数 %(count)s を超えて"
+"います。"
 
 #: app/static/app/js/components/NewTaskPanel.jsx:299
 #: app/static/app/js/components/TaskListItem.jsx:487
@@ -1563,7 +1614,7 @@ msgid "Color"
 msgstr "色"
 
 #: app/static/app/js/components/Paginator.jsx:26
-#: app/static/app/js/components/ProjectListItem.jsx:59
+#: app/static/app/js/components/ProjectListItem.jsx:62
 msgid "Created on"
 msgstr "作成日"
 
@@ -1576,7 +1627,7 @@ msgid "Search names, #tags or @user"
 msgstr "名称、#タグ、@ユーザで検索"
 
 #: app/static/app/js/components/Paginator.jsx:153
-#: app/static/app/js/components/ProjectListItem.jsx:851
+#: app/static/app/js/components/ProjectListItem.jsx:948
 msgid "Sort"
 msgstr "並べ替え"
 
@@ -1605,12 +1656,12 @@ msgstr "クリックして JSON ファイルをインポート"
 msgid "Reset to default"
 msgstr "デフォルト設定に戻す"
 
-#: app/static/app/js/components/ProjectListItem.jsx:198
-#: app/static/app/js/components/ProjectListItem.jsx:533
+#: app/static/app/js/components/ProjectListItem.jsx:201
+#: app/static/app/js/components/ProjectListItem.jsx:611
 msgid "Cannot create new task. Please try again later."
 msgstr "新規タスクを作成できません。後で再試行してください。"
 
-#: app/static/app/js/components/ProjectListItem.jsx:224
+#: app/static/app/js/components/ProjectListItem.jsx:227
 #, python-format
 msgid ""
 "%(count)s files cannot be uploaded. As a reminder, only images (.jpg, .tif, ."
@@ -1619,12 +1670,12 @@ msgstr ""
 "%(count)s ファイルがアップロードできません。画像 (.jpg, .tif, .png) と GCP"
 "ファイル (.txt) のみアップロード可能です。再試行してください。"
 
-#: app/static/app/js/components/ProjectListItem.jsx:529
+#: app/static/app/js/components/ProjectListItem.jsx:607
 #, python-format
 msgid "Cannot create new task. Invalid response from server: %(error)s"
 msgstr "新規タスクを作成できません。 サーバーからの応答が無効です: %(error)s"
 
-#: app/static/app/js/components/ProjectListItem.jsx:731
+#: app/static/app/js/components/ProjectListItem.jsx:816
 msgid ""
 "All tasks, images and models associated with this project will be "
 "permanently deleted. Are you sure you want to continue?"
@@ -1632,57 +1683,60 @@ msgstr ""
 "このプロジェクトに関連する全てのタスク、画像、モデルは完全に削除されます。続"
 "行しますか？"
 
-#: app/static/app/js/components/ProjectListItem.jsx:732
+#: app/static/app/js/components/ProjectListItem.jsx:817
 msgid ""
 "This project was shared with you. It will not be deleted, but simply hidden "
 "from your dashboard. Continue?"
-msgstr "このプロジェクトはあなたと共有されています。削除はされず、ダッシュボードから非表示になるだけです。続行しますか？"
+msgstr ""
+"このプロジェクトはあなたと共有されています。削除はされず、ダッシュボードから"
+"非表示になるだけです。続行しますか？"
 
-#: app/static/app/js/components/ProjectListItem.jsx:744
+#: app/static/app/js/components/ProjectListItem.jsx:829
 msgid "Edit Project"
 msgstr "プロジェクトを編集"
 
-#: app/static/app/js/components/ProjectListItem.jsx:746
+#: app/static/app/js/components/ProjectListItem.jsx:831
 msgid "Saving changes..."
 msgstr "変更を保存中..."
 
-#: app/static/app/js/components/ProjectListItem.jsx:771
+#: app/static/app/js/components/ProjectListItem.jsx:857
 msgid "Select Images and GCP"
 msgstr "画像とGCPを選択"
 
-#: app/static/app/js/components/ProjectListItem.jsx:779
+#: app/static/app/js/components/ProjectListItem.jsx:876
 msgid "Assets / Backups"
 msgstr "アセット / バックアップ"
 
-#: app/static/app/js/components/ProjectListItem.jsx:780
+#: app/static/app/js/components/ProjectListItem.jsx:877
 msgid "External Data"
 msgstr "外部データ"
 
-#: app/static/app/js/components/ProjectListItem.jsx:812
+#: app/static/app/js/components/ProjectListItem.jsx:909
 #, python-format
 msgid "%(count)s Tasks"
 msgstr "%(count)s個のタスク"
 
-#: app/static/app/js/components/ProjectListItem.jsx:825
+#: app/static/app/js/components/ProjectListItem.jsx:922
 msgid "Filter"
 msgstr "フィルター"
 
-#: app/static/app/js/components/ProjectListItem.jsx:845
+#: app/static/app/js/components/ProjectListItem.jsx:942
 msgid "Clear"
 msgstr "クリア"
 
-#: app/static/app/js/components/ProjectListItem.jsx:860
+#: app/static/app/js/components/ProjectListItem.jsx:957
 msgid "View Map"
 msgstr "マップを表示"
 
-#: app/static/app/js/components/ProjectListItem.jsx:883
+#: app/static/app/js/components/ProjectListItem.jsx:980
 msgid ""
 "Unstable connection detected. If the upload gets stuck, press the button "
 "below to enable stable mode. You will then need to restart the upload."
 msgstr ""
-"接続が不安定です。アップロードが止まった場合は、下のボタンを押して安定モードを有効にしてください。その後、アップロードを再起動する必要があります。"
+"接続が不安定です。アップロードが止まった場合は、下のボタンを押して安定モード"
+"を有効にしてください。その後、アップロードを再起動する必要があります。"
 
-#: app/static/app/js/components/ProjectListItem.jsx:886
+#: app/static/app/js/components/ProjectListItem.jsx:983
 msgid "Enable Stable Mode"
 msgstr "安定モードを有効にする"
 
@@ -1728,7 +1782,9 @@ msgstr "閉じる"
 msgid ""
 "The link below is accessible only within your local network. To share a link "
 "with others online, use a %(service)s"
-msgstr "下のリンクはローカルネットワーク内でのみアクセスできます。オンラインで他の人とリンクを共有するには、%(service)sを使用してください"
+msgstr ""
+"下のリンクはローカルネットワーク内でのみアクセスできます。オンラインで他の人"
+"とリンクを共有するには、%(service)sを使用してください"
 
 #: app/static/app/js/components/SharePopup.jsx:232
 msgid "hosted instance"
@@ -1782,7 +1838,9 @@ msgstr "スプラットモデルを削除できません。"
 #: app/static/app/js/components/SplatsDialog.jsx:389
 msgid ""
 "This task is missing camera information. Training data cannot be downloaded."
-msgstr "このタスクにはカメラ情報がありません。トレーニングデータをダウンロードできません。"
+msgstr ""
+"このタスクにはカメラ情報がありません。トレーニングデータをダウンロードできま"
+"せん。"
 
 #: app/static/app/js/components/SplatsDialog.jsx:394
 msgid ""
@@ -1790,13 +1848,17 @@ msgid ""
 "point cloud. Some training software might not work properly without one. "
 "Uploading a splats model requires a point cloud."
 msgstr ""
-"このタスクには点群データがありません。トレーニングデータには空の点群データが含まれます。点群データがないと正しく動作しないトレーニングソフトウェアもあります。スプラットモデルのアップロードには点群データが必要です。"
+"このタスクには点群データがありません。トレーニングデータには空の点群データが"
+"含まれます。点群データがないと正しく動作しないトレーニングソフトウェアもあり"
+"ます。スプラットモデルのアップロードには点群データが必要です。"
 
 #: app/static/app/js/components/SplatsDialog.jsx:399
 msgid ""
 "This task is missing camera information and a point cloud. No splats can be "
 "downloaded or uploaded."
-msgstr "このタスクにはカメラ情報と点群データがありません。スプラットのダウンロードやアップロードはできません。"
+msgstr ""
+"このタスクにはカメラ情報と点群データがありません。スプラットのダウンロードや"
+"アップロードはできません。"
 
 #: app/static/app/js/components/SplatsDialog.jsx:404
 msgid ""
@@ -1804,13 +1866,17 @@ msgid ""
 "download. After extracting the .zip file, copy the original images into the "
 "\"images\" folder before training."
 msgstr ""
-"このタスクの画像は利用できないため、ダウンロードには含まれません。.zipファイルを展開した後、トレーニングの前に元の画像を「images」フォルダーにコピーしてください。"
+"このタスクの画像は利用できないため、ダウンロードには含まれません。.zipファイ"
+"ルを展開した後、トレーニングの前に元の画像を「images」フォルダーにコピーして"
+"ください。"
 
 #: app/static/app/js/components/SplatsDialog.jsx:409
 msgid ""
 "Most images in this dataset are nadir. Splats typically require obliques and/"
 "or orbits for good results."
-msgstr "このデータセットの画像のほとんどは直下視です。良い結果を得るには、通常、斜め撮影や周回撮影の画像が必要です。"
+msgstr ""
+"このデータセットの画像のほとんどは直下視です。良い結果を得るには、通常、斜め"
+"撮影や周回撮影の画像が必要です。"
 
 #: app/static/app/js/components/SplatsDialog.jsx:421
 msgid "A splats model has been added."
@@ -1831,7 +1897,8 @@ msgstr "学習データをダウンロード"
 #: app/static/app/js/components/SplatsDialog.jsx:497
 #, python-format
 msgid "Train a model using %(link_start)s compatible software %(link_end)s"
-msgstr "%(link_start)s対応ソフトウェア%(link_end)sを使用してモデルを学習させます"
+msgstr ""
+"%(link_start)s対応ソフトウェア%(link_end)sを使用してモデルを学習させます"
 
 #: app/static/app/js/components/SplatsDialog.jsx:507
 msgid "You don't have permission to upload a splats model to this task."
@@ -1932,7 +1999,9 @@ msgid ""
 "This might indicate a corrupted installation. If you built ODM, please check "
 "that all programs built without errors."
 msgstr ""
-"処理中のノードに、タスクの完了に必要なプログラムがありません。インストールが破損している可能性があります。ODMをビルドした場合は、すべてのプログラムがエラーなくビルドされたか確認してください。"
+"処理中のノードに、タスクの完了に必要なプログラムがありません。インストールが"
+"破損している可能性があります。ODMをビルドした場合は、すべてのプログラムがエ"
+"ラーなくビルドされたか確認してください。"
 
 #: app/static/app/js/components/TaskListItem.jsx:372
 #, python-format
@@ -1948,8 +2017,16 @@ msgid "Cannot restart task."
 msgstr "タスクを再開できません。"
 
 #: app/static/app/js/components/TaskListItem.jsx:442
-msgid "Cannot restart task from (stage)s."
+#, fuzzy, python-format
+#| msgid "Cannot restart task from (stage)s."
+msgid "Cannot restart task from %(stage)s."
 msgstr "(stage)sからタスクを再開できません。"
+
+#: app/static/app/js/components/TaskListItem.jsx:442
+#, fuzzy
+#| msgid "Restart"
+msgid "the start"
+msgstr "再起動"
 
 #: app/static/app/js/components/TaskListItem.jsx:491
 msgid "GPS"
@@ -2105,9 +2182,9 @@ msgid ""
 "Sometimes it's a problem with the dataset, sometimes it can be solved by "
 "tweaking the Task Options. Check the documentation at %(link)s"
 msgstr ""
-"「Process exited with code "
-"1」は処理の一部が失敗したことを意味します。データセットに問題がある場合もあれば、タスクの設定を調整することで解決できる場合もあります。ドキュメントを確認してください: "
-"%(link)s"
+"「Process exited with code 1」は処理の一部が失敗したことを意味します。データ"
+"セットに問題がある場合もあれば、タスクの設定を調整することで解決できる場合も"
+"あります。ドキュメントを確認してください: %(link)s"
 
 #: app/static/app/js/components/TaskListItem.jsx:816
 msgid "Set a processing node"
@@ -2131,7 +2208,9 @@ msgid ""
 "used for processing. It will no longer be possible to restart the task. Maps "
 "and models will remain in place. Continue?"
 msgstr ""
-"圧縮すると、処理に使用した元の画像が完全に削除され、ディスク容量が解放されます。タスクを再起動することはできなくなります。マップとモデルはそのまま残ります。続行しますか？"
+"圧縮すると、処理に使用した元の画像が完全に削除され、ディスク容量が解放されま"
+"す。タスクを再起動することはできなくなります。マップとモデルはそのまま残りま"
+"す。続行しますか？"
 
 #: app/static/app/js/components/TaskListItem.jsx:886
 msgid "Cannot compact task."
@@ -2183,108 +2262,72 @@ msgstr "%(count)s個のファイルのアップロードが成功"
 
 #: app/static/app/js/translations/odm_autogenerated.js:3
 msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
-msgstr ""
-"プロジェクトフォルダへのパス。プロジェクトフォルダはデータセット毎にサブフォ"
-"ルダが必要です。それぞれのデータセットには\"イメージ\"フォルダが必要です。"
+"Permanently delete all previous results and rerun the processing pipeline."
+msgstr "前の結果を全て完全に削除し、処理パイプラインを再実行。"
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
 #, python-format
 msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
-"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
 msgstr ""
-"マッチャーアルゴリズム。Fast Library for Approximate Nearest Neighbors または Bag of "
-"Words。FLANN は遅いですが、より安定しています。BOW は高速ですが、有効なマッチを見逃すことがあります。BRUTEFORCE "
-"は非常に遅いですが堅牢です。HAMMING は大規模なデータセットではるかに高速ですが、GPU が必要です。次のいずれか: "
-"%(choices)s。デフォルト: %(default)s"
+"画像がどのようにグループ分けされるかコントロールする image groups fileへのパ"
+"ス。ファイルは次のフォーマットを使用する必要があります: image_name "
+"group_nameDefault: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
 msgid ""
-"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
-"simple morphological filter. Check the --dem* and --smrf* parameters for "
-"finer tuning. Default: %(default)s"
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
 msgstr ""
-"このタグを使用して、単純モルフォロジカルフィルタを使ったDTM（数値地形モデル、"
-"地上のみ）を構築。--dem* と --smrf* パラメータでより細かい調整が可能です。デ"
-"フォルト：%(default)s"
+"画像ごとに抽出する特徴点の最小数。特徴点が多ければ、画像間でより多くの一致を"
+"見つけることができ、重なりの少ない領域や特徴点が不十分な領域を再構築できる可"
+"能性があります。また、特徴点が多いと処理速度が遅くなります。デフォルト: "
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:6
-msgid "show this help message and exit"
-msgstr "このヘルプメッセージを表示して閉じる"
+#, python-format
+msgid ""
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
+"マルチスペクトルのデータセットを処理する時に、再構築に使用する第一のバンド名"
+"を指定することができます。細部が鮮明で焦点が合っているバンドの選択を推奨しま"
+"す。デフォルト：%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
 msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
 msgstr ""
-"レポートPDFの生成をスキップ。レポートが不要な場合は時間を短縮できます。デフォ"
-"ルト: %(default)s"
+"点群データの出力を分類します。このオプションの動作は--dem-*パラメータで調整で"
+"きます。デフォルト: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:8
 #, python-format
 msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
 msgstr ""
-"複数のマテリアルとテクスチャファイルではなく、単一のマテリアルと単一のテクスチャファイルを持つ OBJ を生成します。デフォルト:  "
-"%(default)s"
+"オルソフォトの解像度(cm/ピクセル)。この値は地上サンプリング距離(GSD)の推定値"
+"で上限が設定されます。デフォルト: %(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
 msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
 msgstr ""
-"部分的な再構成をマージしません。これは画像の重なりが不十分な場合や画像が孤立している場合に発生することがあります。デフォルト: %(default)s"
+"キーポイントを抽出し、記述子を計算するためのアルゴリズムを選択します。 次のい"
+"ずれかになります：%(choices)s。デフォルト：%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:10
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
-msgstr ""
-"オルソフォトをPNGで生成したい場合はこのパラメーターをセット。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"URL to a ClusterODM instance for distributing a split-merge workflow on "
-"multiple nodes in parallel. Default: %(default)s"
-msgstr ""
-"スプリット-マージのワークフローを並列の複数ノードに分配するClusterODMへの"
-"URL。 Default: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-#, python-format
-msgid ""
-"Radius of the overlap between submodels in meters. After grouping images "
-"into clusters, images that are closer than this radius to a cluster are "
-"added to the cluster. This is done to ensure that neighboring submodels "
-"overlap. All imagesneed GPS information. Default: %(default)s"
-msgstr ""
-"サブモデル間のオーバーラップ半径(メートル)。画像をクラスターにグループ化した後、この半径内でクラスターに近い画像がそのクラスターに追加されます。これは隣接するサブモデルが確実に重なるようにするためです。すべての画像にGPS情報が必要です。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"特徴を抽出する際の品質を設定します。品質を高くするほど良い特徴が得られます"
-"が、より多くのメモリを必要とし、時間がかかります。以下のいずれかになります："
-"%(choices)s。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:14
 #, python-format
 msgid ""
 "Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
@@ -2295,20 +2338,273 @@ msgid ""
 "image output quality. Never set --ignore-gsd to true unless you are positive "
 "you need it, and even then: do not use it. Default: %(default)s"
 msgstr ""
-"地上サンプリング距離(GSD)を無視します。trueに設定すると、デフォルトの動作に比べてメモリとプロセッサを大量に消費します。通常、GSDの推定値は画像出力の最大解像度を制限するために使用され、必要に応じて画像をリサイズすることで、処理の高速化とメモリ使用量の削減につながります。GSDは推定値であるため、無視すると画像出力の品質がわずかに向上する場合があります。必要だと確信できない限り "
-"--ignore-gsd を true に設定しないでください。確信できたとしても使用しないでください。デフォルト: %(default)s"
+"地上サンプリング距離(GSD)を無視します。trueに設定すると、デフォルトの動作に比"
+"べてメモリとプロセッサを大量に消費します。通常、GSDの推定値は画像出力の最大解"
+"像度を制限するために使用され、必要に応じて画像をリサイズすることで、処理の高"
+"速化とメモリ使用量の削減につながります。GSDは推定値であるため、無視すると画像"
+"出力の品質がわずかに向上する場合があります。必要だと確信できない限り --"
+"ignore-gsd を true に設定しないでください。確信できたとしても使用しないでくだ"
+"さい。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:11
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"特徴を抽出する際の品質を設定します。品質を高くするほど良い特徴が得られます"
+"が、より多くのメモリを必要とし、時間がかかります。以下のいずれかになります："
+"%(choices)s。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:12
+#, python-format
+msgid ""
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
+msgstr ""
+"レポートPDFの生成をスキップ。レポートが不要な場合は時間を短縮できます。デフォ"
+"ルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:13
+#, python-format
+msgid ""
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
+msgstr ""
+"処理のために動画ファイルから抽出する最大フレーム数。0で無制限になります。デ"
+"フォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:14
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgstr ""
+"単純モルフォロジカルフィルタの標高スカラーパラメーター。デフォルト："
+"%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:15
 #, python-format
 msgid ""
-"Choose what to merge in the merge step in a split dataset. By default all "
-"available outputs are merged. Options: %(choices)s. Default: %(default)s"
-msgstr ""
-"分割データセットのマージステップで何をマージするか選択。デフォルトでは全ての"
-"使用可能なアウトプットがマージされます。オプション：%(choices)s。デフォルト："
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
 "%(default)s"
+msgstr ""
+"局所的な平均値からN標準偏差以上離れた点を削除して、点群をフィルタリングしま"
+"す。0に設定するとフィルタリングは無効になります。デフォルト:%(default)s"
 
 #: app/static/app/js/translations/odm_autogenerated.js:16
+#, python-format
+msgid ""
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"オルソフォトの圧縮をセット。ここから選択可能: %(choices)s. Default: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:17
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+"フル3Dモデルの生成をスキップ。2DのオルソフォトやDEM等のみ必要な場合は時間を短"
+"縮できます。 デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:18
+#, python-format
+msgid ""
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
+"%(default)s"
+msgstr ""
+"サブモデルあたりの平均画像数。大きなデータセットを小さなサブモデルに分割する"
+"際、画像はクラスタにまとめられます。この値は、各クラスタが平均的に持つべき画"
+"像の数を調整します。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:19
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr "出力メッシュの最大頂点数。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:20
+msgid "show this help message and exit"
+msgstr "このヘルプメッセージを表示して閉じる"
+
+#: app/static/app/js/translations/odm_autogenerated.js:21
+#, python-format
+msgid ""
+"The maximum output resolution of extracted video frames in pixels. Default: "
+"%(default)s"
+msgstr ""
+"抽出する動画フレームの最大出力解像度(ピクセル)。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:22
+#, python-format
+msgid ""
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
+msgstr ""
+"ジオリファレンスされた点群データをCloud Optimized Point Cloud(COPC)形式で保存"
+"します。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:23
+#, python-format
+msgid ""
+"Set point cloud quality. Higher quality generates better, denser point "
+"clouds, but requires more memory and takes longer. Each step up in quality "
+"increases processing time roughly by a factor of 4x.Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+"点群データの品質をセット。高品質では、より良い高密度の点群データが生成されま"
+"すが、より多くのメモリと時間を要求します。 質を上げるごとに処理時間はおよそ４"
+"倍になります。ここから一つ:選択 %(choices)s. Default: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:24
+msgid "Copy output results to this folder after processing."
+msgstr "処理後にアウトプット結果をこのフォルダにコピー。"
+
+#: app/static/app/js/translations/odm_autogenerated.js:25
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
+"Default: %(default)s"
+msgstr ""
+"ジオリファレンスされた点群データを Entwine Point Tile (EPT) フォーマットでエ"
+"クスポートします。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:26
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+"単一ファイルのBinary glTF(GLB)テクスチャ付きモデルを生成します。デフォルト:  "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:27
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+"通常のGeoTIFFではなく、クラウド最適化GeoTIFFを作成します。デフォルト: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:28
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+"オルソフォトから Google Earth (KMZ) を生成したい場合はこのパラメーターをセッ"
+"トしてください。 Default: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:29
+#, python-format
+msgid ""
+"Octree depth used in the mesh reconstruction, increase to get more vertices, "
+"recommended values are 8-12. Default: %(default)s"
+msgstr ""
+"メッシュの再構築に使用されるOctreeの深度で、増やすとより多くの頂点を得ます。"
+"推奨値は8〜12です。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:30
+msgid ""
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
+msgstr ""
+"プロジェクトフォルダへのパス。プロジェクトフォルダはデータセット毎にサブフォ"
+"ルダが必要です。それぞれのデータセットには\"イメージ\"フォルダが必要です。"
+
+#: app/static/app/js/translations/odm_autogenerated.js:31
+#, python-format
+msgid ""
+"Override the rolling shutter readout time for your camera sensor (in "
+"milliseconds), instead of using the rolling shutter readout database. Note "
+"that not all cameras are present in the database. Set to 0 to use the "
+"database value. Default: %(default)s"
+msgstr ""
+"ローリングシャッター読み出しデータベースを使用する代わりに、カメラセンサーの"
+"ローリングシャッター読み出し時間(ミリ秒)を上書きします。すべてのカメラがデー"
+"タベースに登録されているわけではありません。0に設定するとデータベースの値を使"
+"用します。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
+#, python-format
+msgid ""
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+msgstr ""
+"カメラの撮影位置を使って自動的に境界線を設定し、再構築の範囲を限定します。こ"
+"れにより、遠く離れた背景のアーティファクト（空、背景の風景など）を取り除くこ"
+"とができます。--boundary も参照してください。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:33
+#, python-format
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgstr "OGC 3D Tilesを出力します。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:34
+#, python-format
+msgid ""
+"Generates a polygon around the cropping area that cuts the orthophoto around "
+"the edges of features. This polygon can be useful for stitching seamless "
+"mosaics with multiple overlapping orthophotos. Default: %(default)s"
+msgstr ""
+"オルソフォトをフィーチャーのエッジでカットするトリミング領域の周囲にポリゴン"
+"を生成します。このポリゴンは、複数のオルソフォトが重なったシームレスなモザイ"
+"クをつなぎ合わせるのに便利です。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:35
+#, python-format
+msgid ""
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
+msgstr ""
+"サブモデル間のオーバーラップ半径(メートル)。画像をクラスターにグループ化した"
+"後、この半径内でクラスターに近い画像がそのクラスターに追加されます。これは隣"
+"接するサブモデルが確実に重なるようにするためです。すべての画像にGPS情報が必要"
+"です。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:36
+#, python-format
+msgid ""
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
+msgstr ""
+"カメラのパラメータを計算する代わりに、別のデータセットから計算されたものを使"
+"用します。camera.jsonファイルへのパス、または、camera.jsonファイルの内容を表"
+"すJSON文字列として指定できます。デフォルト:%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:37
+#, python-format
+msgid ""
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"このステージから処理を再実行。ここから選択可: %(choices)s. Default: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:38
+#, python-format
+msgid ""
+"Choose the structure from motion algorithm. For aerial datasets, if camera "
+"GPS positions and angles are available, triangulation can be faster. Planar "
+"is deprecated and will be removed in a future version. Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+"Structure From Motionのアルゴリズムを選択します。空撮データセットでカメラの"
+"GPS位置と角度が利用可能な場合、triangulationの方が高速になることがあります。"
+"Planarは非推奨であり、将来のバージョンで削除されます。選択肢: %(choices)s。デ"
+"フォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:39
 #, python-format
 msgid ""
 "Number of steps used to fill areas with gaps. Set to 0 to disable gap "
@@ -2323,119 +2619,56 @@ msgstr ""
 "ジされます。残ったギャップは、最近傍補間を使ってマージされます。デフォルト: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:17
+#: app/static/app/js/translations/odm_autogenerated.js:40
 #, python-format
 msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
-"mosaics with multiple overlapping orthophotos. Default: %(default)s"
-msgstr ""
-"オルソフォトをフィーチャーのエッジでカットするトリミング領域の周囲にポリゴン"
-"を生成します。このポリゴンは、複数のオルソフォトが重なったシームレスなモザイ"
-"クをつなぎ合わせるのに便利です。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:18
-#, python-format
-msgid ""
-"Set a value in meters for the GPS Dilution of Precision (DOP) information "
-"for all images. If your images are tagged with high precision GPS "
-"information (RTK), this value will be automatically set accordingly. You can "
-"use this option to manually set it in case the reconstruction fails. "
-"Lowering this option can sometimes help control bowling-effects over large "
-"areas. Default: %(default)s"
-msgstr ""
-"すべての画像のGPS精度低下率(DOP)情報の値をメートル単位で設定します。画像に高精度GPS情報(RTK)がタグ付けされている場合、この値は自動的に適切に設定されます。再構築が失敗した場合、このオプションで手動設定できます。この値を下げると、広域でのボウル状の歪みを抑えられる場合があります。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:19
-#, python-format
-msgid ""
-"Choose the structure from motion algorithm. For aerial datasets, if camera "
-"GPS positions and angles are available, triangulation can be faster. Planar "
-"is deprecated and will be removed in a future version. Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-"Structure From "
-"Motionのアルゴリズムを選択します。空撮データセットでカメラのGPS位置と角度が利用可能な場合、triangulationの方が高速になることがあります。Planarは非推奨であり、将来のバージョンで削除されます。選択肢: "
-"%(choices)s。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:20
-#, python-format
-msgid ""
-"Delete heavy intermediate files to optimize disk space usage. This affects "
-"the ability to restart the pipeline from an intermediate stage, but allows "
-"datasets to be processed on machines that don't have sufficient disk space "
-"available. Default: %(default)s"
-msgstr ""
-"ディスクスペース使用を最適化するため重い中間ファイルを削除。中間ステージから"
-"パイプラインを再スタートする場合に影響しますが、十分なディスクスペースがない"
-"マシンでのデータセット処理が可能になります。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr "出力メッシュの最大頂点数。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
-#, python-format
-msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
-msgstr ""
-"カメラの撮影位置を使って自動的に境界線を設定し、再構築の範囲を限定します。こ"
-"れにより、遠く離れた背景のアーティファクト（空、背景の風景など）を取り除くこ"
-"とができます。--boundary も参照してください。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-"GCPファイルの代わりにEXIF情報をジオリファレンスに使用したい場合は、このタグを"
-"使用。 デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"The maximum output resolution of extracted video frames in pixels. Default: "
-"%(default)s"
-msgstr "抽出する動画フレームの最大出力解像度(ピクセル)。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:25
-#, python-format
-msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
-msgstr ""
-"マルチスペクトルのデータセットを処理する時に、再構築に使用する第一のバンド名"
-"を指定することができます。細部が鮮明で焦点が合っているバンドの選択を推奨しま"
-"す。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:26
-#, python-format
-msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
-msgstr ""
-"GCPデータが存在しても、再構築には画像のGPS exifデータを使用してください。この"
-"フラグは高精度のGPS計測がある場合に有効です。このフラグはGCPが無い場合は何も"
-"起こりません。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:27
-#, python-format
-msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
 "%(default)s"
 msgstr ""
-"データセットの境界周囲に滑らかなバッファを作成し、Nメートル縮小して画像出力を自動的に切り抜きます。0で切り抜きを無効にします。デフォルト: "
+"ローリングシャッター補正をオンにします。カメラがローリングシャッター方式で、"
+"移動しながら撮影された画像の場合、このオプションをオンにすると結果の精度が向"
+"上します。あわせて --rolling-shutter-readout も参照してください。デフォルト: "
 "%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:28
+#: app/static/app/js/translations/odm_autogenerated.js:41
+#, python-format
+msgid ""
+"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
+msgstr ""
+"どのカメラにも映っていない面をメッシュ内に保持。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:42
+#, python-format
+msgid ""
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
+msgstr ""
+"DSM/DTMの解像度(cm/ピクセル)。この値は地上サンプリング距離(GSD)の推定値で上限"
+"が設定されます。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:43
+#, python-format
+msgid ""
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
+msgstr ""
+"オルソフォトの生成をスキップします。3D結果やDEMのみが必要な場合、時間を節約で"
+"きます。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, python-format
+msgid ""
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
+msgstr ""
+"マルチスペクトルデータセットの処理時に、各バンドの画像を自動的に位置合わせし"
+"ます。画像が後処理済みですでに位置合わせされている場合は、このオプションを使"
+"用してください。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:45
 #, python-format
 msgid ""
 "Run local bundle adjustment for every image added to the reconstruction and "
@@ -2446,51 +2679,7 @@ msgstr ""
 "グローバルアジャストメントを実行する。巨大なデータセットで再構築の速度を上げ"
 "ます。Default: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
-msgstr ""
-"どのカメラにも映っていない面をメッシュ内に保持。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
-msgstr ""
-"ジオリファレンスに使用するカメラ中心座標を含む画像位置情報ファイルへのパス。yaw/pitch/rollの値がない場合は0に設定できます。ファイルは次の形式である必要があります: "
-"EPSG:<code> or <+proj definition>image_name geo_x geo_y geo_z [yaw "
-"(degrees)] [pitch (degrees)] [roll (degrees)] [horz accuracy (meters)] [vert "
-"accuracy (meters)]デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:31
-#, python-format
-msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-"画像ごとに抽出する特徴点の最小数。特徴点が多ければ、画像間でより多くの一致を"
-"見つけることができ、重なりの少ない領域や特徴点が不十分な領域を再構築できる可"
-"能性があります。また、特徴点が多いと処理速度が遅くなります。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
-msgstr ""
-"メッシュの再構築に使用されるOctreeの深度で、増やすとより多くの頂点を得ます。"
-"推奨値は8〜12です。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
+#: app/static/app/js/translations/odm_autogenerated.js:46
 #, python-format
 msgid ""
 "Set the radiometric calibration to perform on images. When processing "
@@ -2512,34 +2701,98 @@ msgstr ""
 "ダウンウェリングライトセンサー（DLS）を介して登録された分光放射輝度を補正しま"
 "す。次のいずれかになります。%(choices)s。デフォルト：%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:34
+#: app/static/app/js/translations/odm_autogenerated.js:47
 #, python-format
 msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate.Default: %(default)s"
+"Set a value in meters for the GPS Dilution of Precision (DOP) information "
+"for all images. If your images are tagged with high precision GPS "
+"information (RTK), this value will be automatically set accordingly. You can "
+"use this option to manually set it in case the reconstruction fails. "
+"Lowering this option can sometimes help control bowling-effects over large "
+"areas. Default: %(default)s"
 msgstr ""
-"オルソフォトの解像度(cm/ピクセル)。この値は地上サンプリング距離(GSD)の推定値で上限が設定されます。デフォルト: %(default)s"
+"すべての画像のGPS精度低下率(DOP)情報の値をメートル単位で設定します。画像に高"
+"精度GPS情報(RTK)がタグ付けされている場合、この値は自動的に適切に設定されま"
+"す。再構築が失敗した場合、このオプションで手動設定できます。この値を下げる"
+"と、広域でのボウル状の歪みを抑えられる場合があります。デフォルト: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:35
+#: app/static/app/js/translations/odm_autogenerated.js:48
 #, python-format
 msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
+"Export the georeferenced point cloud in LAS format. Default: %(default)s"
+msgstr ""
+"ジオリファレンスされた点群をLAS形式でエクスポート。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:49
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+"部分的な再構成をマージしません。これは画像の重なりが不十分な場合や画像が孤立"
+"している場合に発生することがあります。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:50
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+"LeafletやOpenLayersなどのビューアに適したオルソフォトやDEMの静的タイルを生成"
+"します。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:51
+#, python-format
+msgid ""
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
-"サブモデルあたりの平均画像数。大きなデータセットを小さなサブモデルに分割する"
-"際、画像はクラスタにまとめられます。この値は、各クラスタが平均的に持つべき画"
-"像の数を調整します。デフォルト：%(default)s"
+"このステージのみ再実行して停止。次から選択: %(choices)s。デフォルト: "
+"%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:36
+#: app/static/app/js/translations/odm_autogenerated.js:52
 #, python-format
 msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
-msgstr "点群データの出力を分類します。このオプションの動作は--dem-*パラメータで調整できます。デフォルト: %(default)s"
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"PDFレポートの単位を設定します。デフォルトでは座標参照系の垂直単位が使用されま"
+"す。選択肢: %(choices)s。デフォルト: %(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:37
+#: app/static/app/js/translations/odm_autogenerated.js:53
+#, python-format
+msgid ""
+"Name of dataset (i.e subfolder name within project folder). Default: "
+"%(default)s"
+msgstr ""
+"データセットの名称（すなわち、プロジェクトフォルダ内のサブフォルダの名称）。"
+"Default:%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
+#, python-format
+msgid ""
+"Delete heavy intermediate files to optimize disk space usage. This affects "
+"the ability to restart the pipeline from an intermediate stage, but allows "
+"datasets to be processed on machines that don't have sufficient disk space "
+"available. Default: %(default)s"
+msgstr ""
+"ディスクスペース使用を最適化するため重い中間ファイルを削除。中間ステージから"
+"パイプラインを再スタートする場合に影響しますが、十分なディスクスペースがない"
+"マシンでのデータセット処理が可能になります。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+"オルソフォトの計算に2.5D メッシュの代わりに フル 3D メッシュを使用する。この"
+"オプションは速度が少し向上し、平面的な場所では同様の結果を得られます。"
+"Default: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
 #, python-format
 msgid ""
 "Path to the file containing the ground control points used for "
@@ -2552,28 +2805,356 @@ msgstr ""
 "<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
 "[extra2]デフォルト：%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:38
+#: app/static/app/js/translations/odm_autogenerated.js:57
 #, python-format
 msgid ""
-"Override the rolling shutter readout time for your camera sensor (in "
-"milliseconds), instead of using the rolling shutter readout database. Note "
-"that not all cameras are present in the database. Set to 0 to use the "
-"database value. Default: %(default)s"
-msgstr ""
-"ローリングシャッター読み出しデータベースを使用する代わりに、カメラセンサーのローリングシャッター読み出し時間(ミリ秒)を上書きします。すべてのカメラがデータベースに登録されているわけではありません。0に設定するとデータベースの値を使用します。デフォルト: "
+"Simple Morphological Filter slope parameter (rise over run). Default: "
 "%(default)s"
+msgstr ""
+"単純モルフォロジカルフィルタの傾きパラメータ（垂直距離/水平距離）。デフォル"
+"ト：%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:39
+#: app/static/app/js/translations/odm_autogenerated.js:58
 #, python-format
 msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
+msgstr ""
+"GCPファイルの代わりにEXIF情報をジオリファレンスに使用したい場合は、このタグを"
+"使用。 デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
+msgstr ""
+"GCPデータが存在しても、再構築には画像のGPS exifデータを使用してください。この"
+"フラグは高精度のGPS計測がある場合に有効です。このフラグはGCPが無い場合は何も"
+"起こりません。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
+#, python-format
+msgid ""
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
+msgstr ""
+"幾何推定は幾何学的に一貫した深度マップを計算することで点群データの精度を向上"
+"させますが、大規模なデータセットでは使用できない場合があります。このフラグは"
+"幾何推定を無効にします。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
+msgid ""
+"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
+"simple morphological filter. Check the --dem* and --smrf* parameters for "
+"finer tuning. Default: %(default)s"
+msgstr ""
+"このタグを使用して、単純モルフォロジカルフィルタを使ったDTM（数値地形モデル、"
+"地上のみ）を構築。--dem* と --smrf* パラメータでより細かい調整が可能です。デ"
+"フォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, python-format
+msgid ""
+"Turn off camera parameter optimization during bundle adjustment. This can be "
+"sometimes useful for improving results that exhibit doming/bowling or when "
+"images are taken with a rolling shutter camera. Default: %(default)s"
+msgstr ""
+"バンドル調整時のカメラパラメータ最適化をオフにする。この機能は、ドーミングや"
+"ボーリングが発生した場合や、ローリングシャッターカメラで撮影した画像を改善す"
+"るのに有効な場合があります。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:63
+#, python-format
+msgid ""
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
+msgstr ""
+"GPS EXIFデータの高度値に加算することで、垂直軸（Z）のGPSオフセットをメートル"
+"単位で設定します。GCPの値は変更されません。例えば楕円体高から正標高への調整に"
+"役立ちます。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:64
+#, python-format
+msgid ""
+"Perform image matching with the nearest images based on GPS exif data. Set "
+"to 0 to match by triangulation. Default: %(default)s"
+msgstr ""
+"GPS exifデータに基づき、最も近い画像と画像マッチングを行います。0に設定すると"
+"三角測量でマッチングします。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:65
+#, python-format
+msgid ""
+"URL to a ClusterODM instance for distributing a split-merge workflow on "
+"multiple nodes in parallel. Default: %(default)s"
+msgstr ""
+"スプリット-マージのワークフローを並列の複数ノードに分配するClusterODMへの"
+"URL。 Default: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:66
+#, python-format
+msgid ""
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+"split-mergeでのサブモデルの位置合わせをスキップします。非常に大規模なデータ"
+"セットでGPSの精度が十分な場合に便利です。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
+msgstr ""
+"全画像の色の正規化をスキップ。放射測定データを処理する場合に効果的です。デ"
+"フォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+"AIを使用して画像マスクを自動計算し、空を除去します。実験的機能。デフォルト: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
+#, python-format
+msgid ""
+"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
+"a progressive morphological filter. Check the --dem* parameters for finer "
+"tuning. Default: %(default)s"
+msgstr ""
+"このタグを使用し、プログレッシブ・モルフォロジカル・フィルターを用いたDSM（数"
+"値表層モデル、地面＋物体）を構築。--dem* パラメーターでより細かい調整が可能で"
+"す。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:70
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation threshold parameter (meters). Default: "
 "%(default)s"
 msgstr ""
-"局所的な平均値からN標準偏差以上離れた点を削除して、点群をフィルタリングしま"
-"す。0に設定するとフィルタリングは無効になります。デフォルト:%(default)s"
+"単純モルフォロジカルフィルタの標高閾値パラメーター (meters). Default: "
+"%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:40
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Perform image matching with the nearest N images based on image filename "
+"order. Can speed up processing of sequential images, such as those extracted "
+"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"disable. Default: %(default)s"
+msgstr ""
+"画像ファイル名の順序に基づき、最も近いN枚の画像と画像マッチングを行います。動"
+"画から抽出した画像など、連続した画像の処理を高速化できます。ジオリファレンス"
+"されていないデータセットにのみ適用されます。0で無効になります。デフォルト: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+"AIを使用して画像マスクを自動計算し、背景を除去します。実験的機能。デフォル"
+"ト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
+msgstr ""
+"複数のマテリアルとテクスチャファイルではなく、単一のマテリアルと単一のテクス"
+"チャファイルを持つ OBJ を生成します。デフォルト:  %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+"再構築の範囲を制限するGeoJSONポリゴン。GeoJSONファイルへのパス、またはGeoJSON"
+"ファイルの内容を表すJSON文字列として指定できます。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid ""
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
+msgstr ""
+"様々なプロセスで使用する最大のプロセス数です。ピーク時の必要メモリは、1スレッ"
+"ドあたり～1GB、画像解像度は2メガピクセルです。デフォルト:%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"End processing at this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+"このステージで処理を終了。次から選択: %(choices)s. デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+msgid "Displays version number and exits. "
+msgstr "バージョン番号を表示して閉じる。 "
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
+#, python-format
+msgid ""
+"Skips dense reconstruction and 3D model generation. It generates an "
+"orthophoto directly from the sparse reconstruction. On flat terrain with no "
+"objects/structures, turn this on to save time. Default: %(default)s"
+msgstr ""
+"高密度再構築と3Dモデル生成をスキップし、疎な再構築から直接オルソフォトを生成"
+"します。オブジェクトや構造物のない平坦な地形では、オンにすると時間を節約でき"
+"ます。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:79
+#, python-format
+msgid ""
+"Decimate the points before generating the DEM. 1 is no decimation (full "
+"quality). 100 decimates ~99%% of the points. Useful for speeding up "
+"generation of DEM results in very large datasets. Default: %(default)s"
+msgstr ""
+"DEMを生成する前にポイントを間引きます。1 は間引きなし（高品質）です。100はポ"
+"イントの~99%%を間引きます。非常に大きなデータセットでのDEM結果の生成を高速化"
+"するのに便利です。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:80
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgstr ""
+"ジオリファレンスされた点群をCSV形式でエクスポート。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:81
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
+msgstr ""
+"オルソフォトをPNGで生成したい場合はこのパラメーターをセット。デフォルト: "
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:82
+#, python-format
+msgid ""
+"Choose what to merge in the merge step in a split dataset. By default all "
+"available outputs are merged. Options: %(choices)s. Default: %(default)s"
+msgstr ""
+"分割データセットのマージステップで何をマージするか選択。デフォルトでは全ての"
+"使用可能なアウトプットがマージされます。オプション：%(choices)s。デフォルト："
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:83
+#, python-format
+msgid ""
+"Computes an euclidean raster map for each DEM. The map reports the distance "
+"from each cell to the nearest NODATA value (before any hole filling takes "
+"place). This can be useful to isolate the areas that have been filled. "
+"Default: %(default)s"
+msgstr ""
+"各DEMのユークリッドラスターマップを計算します。このマップでは、各セルから最も"
+"近いNODATAの値までの距離が報告されます（穴埋めが行われる前の状態）。これは、"
+"穴埋めが行われたエリアを分離するのに便利です。デフォルト：%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:84
+#, python-format
+msgid ""
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
+"%(default)s"
+msgstr ""
+"半径N（メートル）を中心とした単一の点のみを残して点群をフィルタリングします。"
+"これは、点群の出力解像度を制限したり、重複した点を削除するのに役立ちます。0に"
+"設定すると、サンプリングを無効にします。デフォルト:%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:85
+#, python-format
+msgid ""
+"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
+"outputs should be automatically aligned to. Experimental. Default: "
+"%(default)s"
+msgstr ""
+"再構築の出力を自動的に位置合わせする対象となるGeoTIFF DEMまたはLAS/LAZ点群"
+"データへのパス。試験的機能です。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:86
+#, python-format
+msgid ""
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
+msgstr ""
+"ジオリファレンスに使用するカメラ中心座標を含む画像位置情報ファイルへのパス。"
+"yaw/pitch/rollの値がない場合は0に設定できます。ファイルは次の形式である必要が"
+"あります: EPSG:<code> or <+proj definition>image_name geo_x geo_y geo_z [yaw "
+"(degrees)] [pitch (degrees)] [roll (degrees)] [horz accuracy (meters)] [vert "
+"accuracy (meters)]デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:87
+#, python-format
+msgid ""
+"Specify the distance between camera shot locations and the outer edge of the "
+"boundary when computing the boundary with --auto-boundary. Set to 0 to "
+"automatically choose a value. Default: %(default)s"
+msgstr ""
+"--auto-boundary で境界を計算する際の、撮影位置と境界外縁との距離を指定しま"
+"す。0にすると値を自動で選択します。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgstr ""
+"ストライプのGeoTIFFが必要な場合は、このパラメーターを設定します。デフォルト："
+"%(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"%(default)s"
+msgstr ""
+"データセットの境界周囲に滑らかなバッファを作成し、Nメートル縮小して画像出力を"
+"自動的に切り抜きます。0で切り抜きを無効にします。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:90
+#, python-format
+msgid ""
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
+"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+"マッチャーアルゴリズム。Fast Library for Approximate Nearest Neighbors また"
+"は Bag of Words。FLANN は遅いですが、より安定しています。BOW は高速ですが、有"
+"効なマッチを見逃すことがあります。BRUTEFORCE は非常に遅いですが堅牢です。"
+"HAMMING は大規模なデータセットではるかに高速ですが、GPU が必要です。次のいず"
+"れか: %(choices)s。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:91
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr ""
+"GPUアクセラレーションが利用可能でも使用しません。デフォルト: %(default)s"
+
+#: app/static/app/js/translations/odm_autogenerated.js:92
 #, python-format
 msgid ""
 "Set a camera projection type. Manually setting a value can help improve "
@@ -2586,430 +3167,7 @@ msgstr ""
 "レンズタイプを判断しようとします。以下のいずれかから指定できます："
 "%(choices)s。デフォルト：%(default)s"
 
-#: app/static/app/js/translations/odm_autogenerated.js:41
-#, python-format
-msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
-msgstr ""
-"データセットの名称（すなわち、プロジェクトフォルダ内のサブフォルダの名称）。"
-"Default:%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:42
-msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
-msgstr "前の結果を全て完全に削除し、処理パイプラインを再実行。"
-
-#: app/static/app/js/translations/odm_autogenerated.js:43
-#, python-format
-msgid ""
-"Perform image matching with the nearest images based on GPS exif data. Set "
-"to 0 to match by triangulation. Default: %(default)s"
-msgstr ""
-"GPS exifデータに基づき、最も近い画像と画像マッチングを行います。0に設定すると三角測量でマッチングします。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:44
-#, python-format
-msgid ""
-"Skips dense reconstruction and 3D model generation. It generates an "
-"orthophoto directly from the sparse reconstruction. On flat terrain with no "
-"objects/structures, turn this on to save time. Default: %(default)s"
-msgstr ""
-"高密度再構築と3Dモデル生成をスキップし、疎な再構築から直接オルソフォトを生成します。オブジェクトや構造物のない平坦な地形では、オンにすると時間を節約できます。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:45
-#, python-format
-msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
-"%(default)s"
-msgstr ""
-"様々なプロセスで使用する最大のプロセス数です。ピーク時の必要メモリは、1スレッ"
-"ドあたり～1GB、画像解像度は2メガピクセルです。デフォルト:%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:46
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
-"Default: %(default)s"
-msgstr ""
-"ジオリファレンスされた点群データを Entwine Point Tile (EPT) フォーマットでエ"
-"クスポートします。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:47
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
-msgstr ""
-"オルソフォトから Google Earth (KMZ) を生成したい場合はこのパラメーターをセッ"
-"トしてください。 Default: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:48
-#, python-format
-msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-"オルソフォトの圧縮をセット。ここから選択可能: %(choices)s. Default: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:49
-#, python-format
-msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
-msgstr ""
-"ジオリファレンスされた点群データをCloud Optimized Point Cloud(COPC)形式で保存します。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:50
-msgid "Displays version number and exits. "
-msgstr "バージョン番号を表示して閉じる。 "
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-"再構築の範囲を制限するGeoJSONポリゴン。GeoJSONファイルへのパス、またはGeoJSON"
-"ファイルの内容を表すJSON文字列として指定できます。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
-#, python-format
-msgid ""
-"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
-"a progressive morphological filter. Check the --dem* parameters for finer "
-"tuning. Default: %(default)s"
-msgstr ""
-"このタグを使用し、プログレッシブ・モルフォロジカル・フィルターを用いたDSM（数"
-"値表層モデル、地面＋物体）を構築。--dem* パラメーターでより細かい調整が可能で"
-"す。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:53
-msgid "Copy output results to this folder after processing."
-msgstr "処理後にアウトプット結果をこのフォルダにコピー。"
-
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"このステージから処理を再実行。ここから選択可: %(choices)s. Default: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr "GPUアクセラレーションが利用可能でも使用しません。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:56
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
-"%(default)s"
-msgstr ""
-"単純モルフォロジカルフィルタの標高閾値パラメーター (meters). Default: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-"キーポイントを抽出し、記述子を計算するためのアルゴリズムを選択します。 次のい"
-"ずれかになります：%(choices)s。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-#, python-format
-msgid ""
-"Set point cloud quality. Higher quality generates better, denser point "
-"clouds, but requires more memory and takes longer. Each step up in quality "
-"increases processing time roughly by a factor of 4x.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-"点群データの品質をセット。高品質では、より良い高密度の点群データが生成されま"
-"すが、より多くのメモリと時間を要求します。 質を上げるごとに処理時間はおよそ４"
-"倍になります。ここから一つ:選択 %(choices)s. Default: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"End processing at this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"このステージで処理を終了。次から選択: %(choices)s. デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
-msgstr ""
-"DSM/DTMの解像度(cm/ピクセル)。この値は地上サンプリング距離(GSD)の推定値で上限が設定されます。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-"カメラのパラメータを計算する代わりに、別のデータセットから計算されたものを使"
-"用します。camera.jsonファイルへのパス、または、camera.jsonファイルの内容を表"
-"すJSON文字列として指定できます。デフォルト:%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, python-format
-msgid ""
-"Set the units of the PDF report. By default the vertical units of the "
-"coordinate reference system are used. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"PDFレポートの単位を設定します。デフォルトでは座標参照系の垂直単位が使用されます。選択肢: %(choices)s。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
-msgstr ""
-"単純モルフォロジカルフィルタの標高スカラーパラメーター。デフォルト："
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr "単一ファイルのBinary glTF(GLB)テクスチャ付きモデルを生成します。デフォルト:  %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-"このステージのみ再実行して停止。次から選択: %(choices)s。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:66
-#, python-format
-msgid ""
-"Decimate the points before generating the DEM. 1 is no decimation (full "
-"quality). 100 decimates ~99%% of the points. Useful for speeding up "
-"generation of DEM results in very large datasets. Default: %(default)s"
-msgstr ""
-"DEMを生成する前にポイントを間引きます。1 は間引きなし（高品質）です。100はポ"
-"イントの~99%%を間引きます。非常に大きなデータセットでのDEM結果の生成を高速化"
-"するのに便利です。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:67
-#, python-format
-msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
-"%(default)s"
-msgstr ""
-"通常のGeoTIFFではなく、クラウド最適化GeoTIFFを作成します。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:68
-#, python-format
-msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
-msgstr ""
-"画像がどのようにグループ分けされるかコントロールする image groups fileへのパ"
-"ス。ファイルは次のフォーマットを使用する必要があります: image_name "
-"group_nameDefault: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
-msgstr ""
-"半径N（メートル）を中心とした単一の点のみを残して点群をフィルタリングします。"
-"これは、点群の出力解像度を制限したり、重複した点を削除するのに役立ちます。0に"
-"設定すると、サンプリングを無効にします。デフォルト:%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-"オルソフォトの計算に2.5D メッシュの代わりに フル 3D メッシュを使用する。この"
-"オプションは速度が少し向上し、平面的な場所では同様の結果を得られます。"
-"Default: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
-msgstr "AIを使用して画像マスクを自動計算し、背景を除去します。実験的機能。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:72
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
-msgstr "AIを使用して画像マスクを自動計算し、空を除去します。実験的機能。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:73
-#, python-format
-msgid ""
-"Computes an euclidean raster map for each DEM. The map reports the distance "
-"from each cell to the nearest NODATA value (before any hole filling takes "
-"place). This can be useful to isolate the areas that have been filled. "
-"Default: %(default)s"
-msgstr ""
-"各DEMのユークリッドラスターマップを計算します。このマップでは、各セルから最も"
-"近いNODATAの値までの距離が報告されます（穴埋めが行われる前の状態）。これは、"
-"穴埋めが行われたエリアを分離するのに便利です。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
-msgstr ""
-"ストライプのGeoTIFFが必要な場合は、このパラメーターを設定します。デフォルト："
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
-msgstr "OGC 3D Tilesを出力します。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
-#, python-format
-msgid ""
-"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
-"altitude value of the GPS EXIF data. This does not change the value of any "
-"GCPs. This can be useful for example when adjusting from ellipsoidal to "
-"orthometric height. Default: %(default)s"
-msgstr ""
-"GPS "
-"EXIFデータの高度値に加算することで、垂直軸（Z）のGPSオフセットをメートル単位で設定します。GCPの値は変更されません。例えば楕円体高から正標高への調整に役立ちます。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in LAS format. Default: %(default)s"
-msgstr ""
-"ジオリファレンスされた点群をLAS形式でエクスポート。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:78
-#, python-format
-msgid ""
-"Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
-msgstr ""
-"幾何推定は幾何学的に一貫した深度マップを計算することで点群データの精度を向上させますが、大規模なデータセットでは使用できない場合があります。このフラグは幾何推定を無効にします。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:79
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
-"%(default)s"
-msgstr "ローリングシャッター補正をオンにします。カメラがローリングシャッター方式で、移動しながら撮影された画像の場合、このオプションをオンにすると結果の精度が向上します。あわせて --rolling-shutter-readout も参照してください。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:80
-#, python-format
-msgid ""
-"Perform image matching with the nearest N images based on image filename "
-"order. Can speed up processing of sequential images, such as those extracted "
-"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
-"disable. Default: %(default)s"
-msgstr ""
-"画像ファイル名の順序に基づき、最も近いN枚の画像と画像マッチングを行います。動画から抽出した画像など、連続した画像の処理を高速化できます。ジオリファレンスされていないデータセットにのみ適用されます。0で無効になります。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:81
-#, python-format
-msgid ""
-"Turn off camera parameter optimization during bundle adjustment. This can be "
-"sometimes useful for improving results that exhibit doming/bowling or when "
-"images are taken with a rolling shutter camera. Default: %(default)s"
-msgstr ""
-"バンドル調整時のカメラパラメータ最適化をオフにする。この機能は、ドーミングや"
-"ボーリングが発生した場合や、ローリングシャッターカメラで撮影した画像を改善す"
-"るのに有効な場合があります。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:82
-#, python-format
-msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
-msgstr ""
-"フル3Dモデルの生成をスキップ。2DのオルソフォトやDEM等のみ必要な場合は時間を短"
-"縮できます。 デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:83
-#, python-format
-msgid ""
-"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
-"outputs should be automatically aligned to. Experimental. Default: "
-"%(default)s"
-msgstr ""
-"再構築の出力を自動的に位置合わせする対象となるGeoTIFF DEMまたはLAS/LAZ点群データへのパス。試験的機能です。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:84
-#, python-format
-msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
-msgstr ""
-"全画像の色の正規化をスキップ。放射測定データを処理する場合に効果的です。デ"
-"フォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:85
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-"LeafletやOpenLayersなどのビューアに適したオルソフォトやDEMの静的タイルを生成"
-"します。デフォルト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:86
-#, python-format
-msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
-msgstr "処理のために動画ファイルから抽出する最大フレーム数。0で無制限になります。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:87
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr "オルソフォトの生成をスキップします。3D結果やDEMのみが必要な場合、時間を節約できます。デフォルト: %(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:88
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
-"%(default)s"
-msgstr ""
-"単純モルフォロジカルフィルタの傾きパラメータ（垂直距離/水平距離）。デフォル"
-"ト：%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:89
+#: app/static/app/js/translations/odm_autogenerated.js:93
 #, python-format
 msgid ""
 "Simple Morphological Filter window radius parameter (meters). Default: "
@@ -3017,42 +3175,6 @@ msgid ""
 msgstr ""
 "単純モルフォロジカルフィルタウィンドウの半径パラメーター (meters). Default: "
 "%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:90
-#, python-format
-msgid ""
-"When processing multispectral datasets, automatically align the images for "
-"each band. If the images have been postprocessed and are already aligned, "
-"use this option. Default: %(default)s"
-msgstr ""
-"マルチスペクトルデータセットの処理時に、各バンドの画像を自動的に位置合わせします。画像が後処理済みですでに位置合わせされている場合は、このオプションを使用してください。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:91
-#, python-format
-msgid ""
-"Specify the distance between camera shot locations and the outer edge of the "
-"boundary when computing the boundary with --auto-boundary. Set to 0 to "
-"automatically choose a value. Default: %(default)s"
-msgstr ""
-"--auto-boundary で境界を計算する際の、撮影位置と境界外縁との距離を指定します。0にすると値を自動で選択します。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:92
-#, python-format
-msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
-msgstr ""
-"split-mergeでのサブモデルの位置合わせをスキップします。非常に大規模なデータセットでGPSの精度が十分な場合に便利です。デフォルト: "
-"%(default)s"
-
-#: app/static/app/js/translations/odm_autogenerated.js:93
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
-msgstr ""
-"ジオリファレンスされた点群をCSV形式でエクスポート。デフォルト：%(default)s"
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
 msgid "Compute volume, area and length measurements on Leaflet"
@@ -3583,6 +3705,7 @@ msgid "Base Surface"
 msgstr "基準面"
 
 #: coreplugins/annotate/public/Popup.jsx:1079
+#: coreplugins/annotate/public/Popup.jsx:1080
 msgid "Show 3D"
 msgstr "3D表示"
 
@@ -3732,8 +3855,9 @@ msgid ""
 "visit %(link)s and make sure you can access the cloud platform, then try "
 "again."
 msgstr ""
-"Lightningクラウドプラットフォームのアカウントはまだ有効になっていません。有効にするには、%(link)s "
-"にアクセスしてクラウドプラットフォームにアクセスできることを確認してから、もう一度お試しください。"
+"Lightningクラウドプラットフォームのアカウントはまだ有効になっていません。有効"
+"にするには、%(link)s にアクセスしてクラウドプラットフォームにアクセスできるこ"
+"とを確認してから、もう一度お試しください。"
 
 #: coreplugins/lightning/public/CloudLogin.jsx:114
 msgid "Please confirm the password of your Lightning account to continue:"
@@ -3872,7 +3996,9 @@ msgstr "ログインと同期"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:119
 msgid "Cannot communicate with Lightning's cloud platform. Try again later."
-msgstr "Lightningのクラウドプラットフォームと通信できません。後でもう一度お試しください。"
+msgstr ""
+"Lightningのクラウドプラットフォームと通信できません。後でもう一度お試しくださ"
+"い。"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:150
 msgid "Cannot calculate size. Try again later."
@@ -3907,7 +4033,8 @@ msgid ""
 "Your Lightning account does not have permanent cloud storage. You can still "
 "share, but data will be deleted shortly after upload."
 msgstr ""
-"お使いのLightningアカウントには永続的なクラウドストレージがありません。共有は可能ですが、データはアップロード後まもなく削除されます。"
+"お使いのLightningアカウントには永続的なクラウドストレージがありません。共有は"
+"可能ですが、データはアップロード後まもなく削除されます。"
 
 #: coreplugins/lightning/public/ShareDialog.jsx:313
 msgid "Create New"
@@ -3948,14 +4075,17 @@ msgstr "Lightning"
 #: coreplugins/lightning/public/app.jsx:43
 msgid ""
 "Lightning is a cloud service built by WebODM developers that allows you to:"
-msgstr "Lightningは、WebODM開発者が構築したクラウドサービスで、次のことができます:"
+msgstr ""
+"Lightningは、WebODM開発者が構築したクラウドサービスで、次のことができます:"
 
 #: coreplugins/lightning/public/app.jsx:46
 #, python-format
 msgid ""
 "Quickly process datasets with high performance servers powered by the "
 "%(link)s photogrammetry engine"
-msgstr "%(link)s フォトグラメトリエンジンを搭載した高性能サーバーでデータセットを素早く処理"
+msgstr ""
+"%(link)s フォトグラメトリエンジンを搭載した高性能サーバーでデータセットを素早"
+"く処理"
 
 #: coreplugins/lightning/public/app.jsx:49
 msgid "Easily share public links to your datasets"
@@ -4070,7 +4200,8 @@ msgstr "物体検出"
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:47
 msgid ""
 "No orthophoto is available. To use object detection you need an orthophoto."
-msgstr "オルソフォトがありません。物体検出を使用するにはオルソフォトが必要です。"
+msgstr ""
+"オルソフォトがありません。物体検出を使用するにはオルソフォトが必要です。"
 
 #: coreplugins/objdetect/public/ObjDetectPanel.jsx:93
 msgid "Label:"
@@ -4162,9 +4293,6 @@ msgstr "件数:"
 #~ "点群上で地表面の修正を行います。これは、間違って分類されたグラウンドポイン"
 #~ "トが再分類され、ギャップが埋められることを意味します。DTMの生成に便利で"
 #~ "す。デフォルト:%(default)s"
-
-#~ msgid "Opacity:"
-#~ msgstr "不透過度:"
 
 #~ msgid "Waiting for image upload..."
 #~ msgstr "画像のアップロードを待機中..."

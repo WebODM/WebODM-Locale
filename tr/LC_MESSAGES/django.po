@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-11-06 07:51+0000\n"
 "Last-Translator: Erdem <gnserdem13@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/webodm/webodm/tr/"
@@ -84,7 +84,7 @@ msgstr "Sürüm"
 msgid "Author"
 msgstr "Yazar"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr ""
@@ -113,7 +113,28 @@ msgstr "Eklenti devre dışı bırakılamıyor %(plugin)s: %(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "%(plugin)s eklentisi silinemiyor: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr ""
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr ""
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
@@ -122,7 +143,7 @@ msgstr ""
 "%(plugin)s eklentisi başarıyla güncellendi. Değişikliklerin uygulanması için "
 "lütfen WebODM'yi yeniden başlatın."
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "%(plugin)s başarıyla yüklendi"
@@ -136,15 +157,20 @@ msgstr "Eklenti yüklenemiyor: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "Bir zip dosyası yüklemeniz gerekiyor"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Devre dışı bırak"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Etkinleştir"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr ""
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Eylemler"
 
@@ -178,6 +204,12 @@ msgstr ""
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr ""
+
+#: app/api/externalauth.py:37
+#, fuzzy
+#| msgid "Invalid rescale value"
+msgid "Invalid credentials"
+msgstr "Geçersiz yeniden ölçeklendirme değeri"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -422,7 +454,7 @@ msgstr "DXF veya sıkıştırılmış shapefile değil: %(file)s"
 msgid "Invalid EPSG code"
 msgstr "Geçersiz EPSG kodu"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "Dönüştürülemiyor %(file)s: %(reason)s"
@@ -630,6 +662,11 @@ msgstr "Geçersiz tepe gölgesi değeri: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "Jeoreferanssız veri kümesinde epsg kullanılamıyor"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Uygulama"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Tip"
@@ -679,7 +716,7 @@ msgstr "Varsayılan"
 msgid "Basemap"
 msgstr "Altlık Harita"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Altlık Haritalar"
 
@@ -704,7 +741,7 @@ msgstr "Aktif"
 msgid "Plugin"
 msgstr "Eklenti"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Eklentiler"
 
@@ -946,17 +983,13 @@ msgid "Organization website"
 msgstr "Organizasyon web sitesi"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Tema"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Aktif tema"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Uygulama"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1872,7 +1905,7 @@ msgid ""
 "georeferencing accuracy"
 msgstr ""
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr ""
@@ -1920,39 +1953,43 @@ msgstr ""
 msgid "%(used)s of %(total)s used"
 msgstr "%(used)s / %(total)s kullanıldı"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr ""
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Çıkış"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Proje Paneli"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Yeni Ekle"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Hesaplar"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr ""
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "Hakkında"
 
@@ -2031,22 +2068,22 @@ msgstr ""
 msgid "Create Account"
 msgstr ""
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr ""
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "%(num)s saat içinde"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr ""
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr ""
 
@@ -2074,23 +2111,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr ""
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Resimlerden YKN dosyaları oluşturmak için kullanılan bir eklenti"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "2D haritalarda kolayca çizim yapın ve ölçüm alın"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "Ortofotoğraflardaki nesneleri yapay zeka ile tespit edin"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr ""
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 
@@ -2387,6 +2423,12 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Düğüm tarafından kullanılan motor."
+
+#: webodm/urls.py:33
+#, fuzzy
+#| msgid "Django administration"
+msgid "WebODM Administration"
+msgstr "Django yönetimi"
 
 #~ msgid "Enter a username and password."
 #~ msgstr "Kullanıcı adı ve parola girin."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-04-29 07:09+0000\n"
 "Last-Translator: NtskwK <natsukawa247@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -82,7 +82,7 @@ msgstr "版本"
 msgid "Author"
 msgstr "作者"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr "需要重新启动。请重新启动 WebODM 以启用%(plugin)s"
@@ -107,14 +107,35 @@ msgstr "无法禁用插件%(plugin)s:%(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "无法删除插件%(plugin)s:%(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr "校验和不匹配。下载的文件可能已损坏。"
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr "插件有多个根目录（应该只有一个）"
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr "这看起来不像插件。请检查 plugin.py 和 manifest.json 是否在正确的位置？"
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr "名字为 %(plugin)s 的插件已存在。请先移除它，再上传同名插件。"
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr "插件 %(plugin)s 更新成功。请重启 WebODM 以应用更改。"
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, python-format
 msgid "%(plugin)s installed successfully"
 msgstr "%(plugin)s 安装成功"
@@ -128,15 +149,20 @@ msgstr "无法加载插件：%(message)s"
 msgid "You need to upload a zip file"
 msgstr "你需要上传一个zip文件"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "禁用"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "启用"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr "确定要删除 %(plugin)s 吗？"
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "动作"
 
@@ -168,6 +194,10 @@ msgstr "签名已过期。"
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr "解码签名时出错。"
+
+#: app/api/externalauth.py:37
+msgid "Invalid credentials"
+msgstr "凭据无效"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -375,7 +405,7 @@ msgstr "不是 DXF 或压缩的 shapefile：%(file)s"
 msgid "Invalid EPSG code"
 msgstr "无效的EPSG代码"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "无法转换 %(file)s：%(reason)s"
@@ -579,6 +609,11 @@ msgstr "无效的山体阴影值：%(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "不能在非地理坐标的数据集上使用epsg"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "应用"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "类型"
@@ -628,7 +663,7 @@ msgstr "默认"
 msgid "Basemap"
 msgstr "底图"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "底图"
 
@@ -653,7 +688,7 @@ msgstr "已开启"
 msgid "Plugin"
 msgstr "插件"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "插件"
 
@@ -890,17 +925,13 @@ msgid "Organization website"
 msgstr "机构网站"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "主题"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "激活主题"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "应用"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1380,7 +1411,8 @@ msgstr "服务器错误 <em>(500)</em>"
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
-msgstr "出现了一个错误。已通过电子邮件报告给站点管理员，应会很快修复。感谢您的耐心。"
+msgstr ""
+"出现了一个错误。已通过电子邮件报告给站点管理员，应会很快修复。感谢您的耐心。"
 
 #: app/templates/app/admin/actions.html:8
 msgid "Run the selected action"
@@ -1638,7 +1670,9 @@ msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
-msgstr "你的数据库安装有误。请确保已创建相应的数据库表，并确保相应用户可以读取该数据库。"
+msgstr ""
+"你的数据库安装有误。请确保已创建相应的数据库表，并确保相应用户可以读取该数据"
+"库。"
 
 #: app/templates/app/admin/object_history.html:10
 msgid "History"
@@ -1764,7 +1798,7 @@ msgid ""
 "georeferencing accuracy"
 msgstr "%(link_start)sGCP文件%(link_end)s是任意的，但是可以提高参考的精度"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "开发工具"
@@ -1811,39 +1845,43 @@ msgstr "你好，%(user)s！"
 msgid "%(used)s of %(total)s used"
 msgstr "在%(total)s中使用了%(used)s"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr "语言"
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "退出登录"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "任务列表"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "处理节点"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "新加"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "管理"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "账户"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "组"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "商标"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "关于"
 
@@ -1922,22 +1960,22 @@ msgstr "在我们开始之前，我们需要为你创建一个管理员账户：
 msgid "Create Account"
 msgstr "创建帐户"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "%(num)s 天"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "%(num)s 小时"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "%(num)s 分钟"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "很快"
 
@@ -1962,23 +2000,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "计算传单上的体积、面积和长度测量值"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "从图像创建GCP文件的插件"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "在2d地图轻松注释和测量"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "在正射图像中使用人工智能来检测物体"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "一个用于开发的示例插件"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr "一个插件，可以添加一个按钮，用于创建地图或3D模型的快照。"
 
@@ -2003,7 +2040,9 @@ msgstr "三维模型显示"
 msgid ""
 "%(node)s is deprecated might stop working in a future version. See the "
 "%(link_start)s migration guide %(link_end)s to upgrade."
-msgstr "%(node)s 已弃用，可能在未来版本中停止工作。请参阅%(link_start)s迁移指南%(link_end)s进行升级。"
+msgstr ""
+"%(node)s 已弃用，可能在未来版本中停止工作。请参阅%(link_start)s迁移指"
+"南%(link_end)s进行升级。"
 
 #: app/views/app.py:150
 #, python-format
@@ -2069,7 +2108,9 @@ msgid ""
 "No terrain model available. From the Dashboard, select this task, press "
 "Edit, from the options make sure to check \"dtm\", then press Restart --> "
 "From DEM."
-msgstr "没有可用的地形模型。请在任务列表中选择此任务，点击编辑，在选项中确保勾选 \"dtm\"，然后点击重启 --> 从 DEM 开始。"
+msgstr ""
+"没有可用的地形模型。请在任务列表中选择此任务，点击编辑，在选项中确保勾选 "
+"\"dtm\"，然后点击重启 --> 从 DEM 开始。"
 
 #: coreplugins/annotate/api.py:66 coreplugins/annotate/api.py:106
 #: coreplugins/annotate/dist/annotate/api.py:66
@@ -2264,6 +2305,10 @@ msgstr "此节点的可选标签。设置后，将显示此标签，而不是主
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "节点使用的引擎。"
+
+#: webodm/urls.py:33
+msgid "WebODM Administration"
+msgstr "WebODM 管理"
 
 #, python-format
 #~ msgid ""

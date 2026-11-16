@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-12 19:02+0000\n"
+"POT-Creation-Date: 2026-11-16 19:00+0000\n"
 "PO-Revision-Date: 2026-05-04 03:09+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -86,7 +86,7 @@ msgstr "Versi"
 msgid "Author"
 msgstr "Pembuat"
 
-#: app/admin.py:272
+#: app/admin.py:272 app/admin.py:374
 #, python-format
 msgid "Restart required. Please restart WebODM to enable %(plugin)s"
 msgstr "Diperlukan restart. Mulai ulang WebODM untuk mengaktifkan %(plugin)s"
@@ -113,14 +113,35 @@ msgstr "Tidak dapat menonaktifkan plugin %(plugin)s: %(message)s"
 msgid "Cannot delete plugin %(plugin)s: %(message)s"
 msgstr "Tidak dapat menghapus plugin %(plugin)s: %(message)s"
 
-#: app/admin.py:372
+#: app/admin.py:329
+msgid "Checksum mismatch. The downloaded file might be corrupted."
+msgstr ""
+
+#: app/admin.py:336
+msgid "The plugin has more than 1 root directory (it should have only one)"
+msgstr ""
+
+#: app/admin.py:341
+msgid ""
+"This doesn't look like a plugin. Are plugin.py and manifest.json in the "
+"proper place?"
+msgstr ""
+
+#: app/admin.py:352
+#, python-format
+msgid ""
+"A plugin with the name %(plugin)s already exists. Please remove it before "
+"uploading one with the same name."
+msgstr ""
+
+#: app/admin.py:369
 #, python-format
 msgid ""
 "Plugin %(plugin)s updated successfully. Please restart WebODM to apply the "
 "changes."
 msgstr ""
 
-#: app/admin.py:374
+#: app/admin.py:371
 #, fuzzy, python-format
 #| msgid "Plugin added successfully"
 msgid "%(plugin)s installed successfully"
@@ -135,15 +156,20 @@ msgstr "Tidak dapat memuat plugin: %(message)s"
 msgid "You need to upload a zip file"
 msgstr "Anda perlu mengunggah file zip"
 
-#: app/admin.py:406
+#: app/admin.py:407
 msgid "Disable"
 msgstr "Nonaktifkan"
 
-#: app/admin.py:409
+#: app/admin.py:410
 msgid "Enable"
 msgstr "Aktifkan"
 
-#: app/admin.py:414
+#: app/admin.py:412
+#, python-format
+msgid "Are you sure you want to delete %(plugin)s?"
+msgstr ""
+
+#: app/admin.py:415
 msgid "Actions"
 msgstr "Tindakan"
 
@@ -179,6 +205,12 @@ msgstr ""
 #: app/api/authentication.py:75 app/api/jwt.py:69
 msgid "Error decoding signature."
 msgstr ""
+
+#: app/api/externalauth.py:37
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid credentials"
+msgstr "Tindakan tidak valid"
 
 #: app/api/formulas.py:12 app/api/formulas.py:32
 msgid ""
@@ -424,7 +456,7 @@ msgstr ""
 msgid "Invalid EPSG code"
 msgstr "Kode EPSG tidak valid: %(value)s"
 
-#: app/api/overlays.py:283 app/api/overlays.py:290
+#: app/api/overlays.py:284 app/api/overlays.py:291
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr ""
@@ -643,6 +675,11 @@ msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 "Tidak dapat menggunakan epsg pada dataset yang tidak memiliki georeferensi"
 
+#: app/apps.py:7 app/models/setting.py:73
+#: app/templates/app/logged_in_base.html:142
+msgid "Application"
+msgstr "Aplikasi"
+
 #: app/models/basemap.py:14
 msgid "Type"
 msgstr "Jenis"
@@ -692,7 +729,7 @@ msgstr "Bawaan"
 msgid "Basemap"
 msgstr "Peta dasar"
 
-#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:125
+#: app/models/basemap.py:36 app/templates/app/logged_in_base.html:139
 msgid "Basemaps"
 msgstr "Peta-peta dasar"
 
@@ -717,7 +754,7 @@ msgstr "Diaktifkan"
 msgid "Plugin"
 msgstr "Plugin"
 
-#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:122
+#: app/models/plugin.py:21 app/templates/app/logged_in_base.html:136
 msgid "Plugins"
 msgstr "Plugin-plugin"
 
@@ -959,17 +996,13 @@ msgid "Organization website"
 msgstr "Situs web organisasi"
 
 #: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
-#: app/templates/app/logged_in_base.html:119
+#: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Tema"
 
 #: app/models/setting.py:34
 msgid "Active theme"
 msgstr "Tema aktif"
-
-#: app/models/setting.py:73 app/templates/app/logged_in_base.html:128
-msgid "Application"
-msgstr "Aplikasi"
 
 #: app/models/setting.py:76 app/models/setting.py:77
 msgid "Settings"
@@ -1928,7 +1961,7 @@ msgstr ""
 "%(link_start)sFile GCP%(link_end)s bersifat opsional, tetapi dapat "
 "meningkatkan akurasi georeferensi"
 
-#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:137
+#: app/templates/app/dev_tools.html:6 app/templates/app/logged_in_base.html:151
 #: app/views/dev.py:78
 msgid "Developer Tools"
 msgstr "Alat Pengembang"
@@ -1976,39 +2009,43 @@ msgstr "Halo, %(user)s!"
 msgid "%(used)s of %(total)s used"
 msgstr "%(used)s dari %(total)s telah digunakan"
 
-#: app/templates/app/logged_in_base.html:43
+#: app/templates/app/logged_in_base.html:47
+msgid "Language"
+msgstr ""
+
+#: app/templates/app/logged_in_base.html:55
 msgid "Logout"
 msgstr "Keluar"
 
-#: app/templates/app/logged_in_base.html:57 app/views/app.py:65
+#: app/templates/app/logged_in_base.html:69 app/views/app.py:65
 msgid "Dashboard"
 msgstr "Dasbor"
 
-#: app/templates/app/logged_in_base.html:83 nodeodm/models.py:37
+#: app/templates/app/logged_in_base.html:97 nodeodm/models.py:37
 msgid "Processing Nodes"
 msgstr "Node Pemrosesan"
 
-#: app/templates/app/logged_in_base.html:93
+#: app/templates/app/logged_in_base.html:107
 msgid "Add New"
 msgstr "Tambah Baru"
 
-#: app/templates/app/logged_in_base.html:103
+#: app/templates/app/logged_in_base.html:117
 msgid "Administration"
 msgstr "Administrasi"
 
-#: app/templates/app/logged_in_base.html:108
+#: app/templates/app/logged_in_base.html:122
 msgid "Accounts"
 msgstr "Akun"
 
-#: app/templates/app/logged_in_base.html:111
+#: app/templates/app/logged_in_base.html:125
 msgid "Groups"
 msgstr "Grup"
 
-#: app/templates/app/logged_in_base.html:116
+#: app/templates/app/logged_in_base.html:130
 msgid "Brand"
 msgstr "Merek"
 
-#: app/templates/app/logged_in_base.html:141 app/views/app.py:138
+#: app/templates/app/logged_in_base.html:155 app/views/app.py:138
 msgid "About"
 msgstr "Tentang"
 
@@ -2091,22 +2128,22 @@ msgstr ""
 msgid "Create Account"
 msgstr "Buat Akun"
 
-#: app/templatetags/settings.py:74
+#: app/templatetags/settings.py:76
 #, python-format
 msgid "in %(num)s days"
 msgstr "dalam %(num)s hari"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:78
 #, python-format
 msgid "in %(num)s hours"
 msgstr "dalam %(num)s jam"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "dalam %(num)s menit"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:82
 msgid "very soon"
 msgstr "segera"
 
@@ -2132,23 +2169,22 @@ msgid "Compute volume, area and length measurements on Leaflet"
 msgstr "Hitung volume, luas, dan panjang pada Leaflet"
 
 #: app/translations/plugin_manifest_autogenerated.py:9
-#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "A plugin to create GCP files from images"
 msgstr "Plugin untuk membuat berkas GCP dari gambar"
 
-#: app/translations/plugin_manifest_autogenerated.py:11
+#: app/translations/plugin_manifest_autogenerated.py:10
 msgid "Annotate and measure on 2D maps with ease"
 msgstr "Beri anotasi dan lakukan pengukuran pada peta 2D dengan mudah"
 
-#: app/translations/plugin_manifest_autogenerated.py:12
+#: app/translations/plugin_manifest_autogenerated.py:11
 msgid "Detect objects using AI in orthophotos"
 msgstr "Deteksi objek menggunakan AI pada orthophoto"
 
-#: app/translations/plugin_manifest_autogenerated.py:13
+#: app/translations/plugin_manifest_autogenerated.py:12
 msgid "An example plugin for development"
 msgstr "Contoh plugin untuk pengembangan"
 
-#: app/translations/plugin_manifest_autogenerated.py:14
+#: app/translations/plugin_manifest_autogenerated.py:13
 msgid "A plugin to add a button for taking a snapshot of the map or 3D model."
 msgstr ""
 "Plugin untuk menambahkan tombol guna mengambil snapshot dari peta atau model "
@@ -2458,6 +2494,12 @@ msgstr ""
 #: nodeodm/models.py:33
 msgid "Engine used by the node."
 msgstr "Mesin yang digunakan oleh node."
+
+#: webodm/urls.py:33
+#, fuzzy
+#| msgid "Administration"
+msgid "WebODM Administration"
+msgstr "Administrasi"
 
 #, python-format
 #~ msgid ""
