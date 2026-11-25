@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 19:00+0000\n"
+"POT-Creation-Date: 2026-11-25 17:47+0000\n"
 "PO-Revision-Date: 2026-05-04 03:09+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/webodm/webodm/"
@@ -422,43 +422,55 @@ msgstr "UUID tidak valid"
 msgid "File exceeds maximum allowed size"
 msgstr "File melebihi ukuran maksimum yang diizinkan"
 
-#: app/api/overlays.py:38
+#: app/api/overlays.py:40
 msgid "Invalid overlay ID"
 msgstr ""
 
-#: app/api/overlays.py:82 app/api/overlays.py:234
+#: app/api/overlays.py:84 app/api/overlays.py:236
 msgid "Missing file"
 msgstr ""
 
-#: app/api/overlays.py:85 app/api/overlays.py:242
+#: app/api/overlays.py:87 app/api/overlays.py:244
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
 msgstr ""
 
-#: app/api/overlays.py:93 app/api/overlays.py:169
+#: app/api/overlays.py:95 app/api/overlays.py:171
 msgid "Invalid overlay metadata"
 msgstr ""
 
-#: app/api/overlays.py:104 app/api/overlays.py:185
+#: app/api/overlays.py:106 app/api/overlays.py:187 app/api/overlays.py:313
+#: app/api/overlays.py:317 app/api/overlays.py:319 app/api/overlays.py:342
 #, fuzzy
 #| msgid "Invalid action"
 msgid "Invalid GeoJSON"
 msgstr "Tindakan tidak valid"
 
-#: app/api/overlays.py:240
+#: app/api/overlays.py:242
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
 msgstr ""
 
-#: app/api/overlays.py:251 app/api/overlays.py:253
+#: app/api/overlays.py:253 app/api/overlays.py:255
 #, fuzzy
 #| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
 msgstr "Kode EPSG tidak valid: %(value)s"
 
-#: app/api/overlays.py:284 app/api/overlays.py:291
+#: app/api/overlays.py:286 app/api/overlays.py:293
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
+msgstr ""
+
+#: app/api/overlays.py:324 app/api/overlays.py:329
+#, fuzzy
+#| msgid "Invalid uuid"
+msgid "Invalid SRS"
+msgstr "UUID tidak valid"
+
+#: app/api/overlays.py:354 app/api/overlays.py:358
+#, python-format
+msgid "Cannot reproject: %(reason)s"
 msgstr ""
 
 #: app/api/projects.py:147
@@ -675,7 +687,7 @@ msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 "Tidak dapat menggunakan epsg pada dataset yang tidak memiliki georeferensi"
 
-#: app/apps.py:7 app/models/setting.py:73
+#: app/apps.py:7 app/models/setting.py:77
 #: app/templates/app/logged_in_base.html:142
 msgid "Application"
 msgstr "Aplikasi"
@@ -979,32 +991,32 @@ msgstr "Logo aplikasi Anda berukuran 512x512 (.png atau .jpeg)"
 msgid "App logo"
 msgstr "Logo aplikasi"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "The name of your organization"
 msgstr "Nama organisasi Anda"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "Organization name"
 msgstr "Nama organisasi"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "The website URL of your organization"
 msgstr "URL situs web organisasi Anda"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "Organization website"
 msgstr "Situs web organisasi"
 
-#: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
+#: app/models/setting.py:37 app/models/theme.py:50 app/models/theme.py:51
 #: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Tema"
 
-#: app/models/setting.py:34
+#: app/models/setting.py:38
 msgid "Active theme"
 msgstr "Tema aktif"
 
-#: app/models/setting.py:76 app/models/setting.py:77
+#: app/models/setting.py:80 app/models/setting.py:81
 msgid "Settings"
 msgstr "Pengaturan"
 
@@ -2128,22 +2140,22 @@ msgstr ""
 msgid "Create Account"
 msgstr "Buat Akun"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s days"
 msgstr "dalam %(num)s hari"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:82
 #, python-format
 msgid "in %(num)s hours"
 msgstr "dalam %(num)s jam"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:84
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "dalam %(num)s menit"
 
-#: app/templatetags/settings.py:82
+#: app/templatetags/settings.py:86
 msgid "very soon"
 msgstr "segera"
 
@@ -2407,7 +2419,7 @@ msgstr "Halo Dunia"
 msgid "Lightning"
 msgstr "Lightning"
 
-#: coreplugins/objdetect/api.py:57
+#: coreplugins/objdetect/api.py:58
 msgid "No orthophoto is available."
 msgstr "Tidak ada orthophoto yang tersedia."
 

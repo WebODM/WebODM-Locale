@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 19:00+0000\n"
+"POT-Creation-Date: 2026-11-25 17:47+0000\n"
 "PO-Revision-Date: 2026-04-29 07:09+0000\n"
 "Last-Translator: NtskwK <natsukawa247@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -375,40 +375,50 @@ msgstr "无效的uuid"
 msgid "File exceeds maximum allowed size"
 msgstr "文件超过允许的最大大小"
 
-#: app/api/overlays.py:38
+#: app/api/overlays.py:40
 msgid "Invalid overlay ID"
 msgstr "无效的叠加层 ID"
 
-#: app/api/overlays.py:82 app/api/overlays.py:234
+#: app/api/overlays.py:84 app/api/overlays.py:236
 msgid "Missing file"
 msgstr "缺少文件"
 
-#: app/api/overlays.py:85 app/api/overlays.py:242
+#: app/api/overlays.py:87 app/api/overlays.py:244
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
 msgstr "%(file)s 大于 %(size)s MB。"
 
-#: app/api/overlays.py:93 app/api/overlays.py:169
+#: app/api/overlays.py:95 app/api/overlays.py:171
 msgid "Invalid overlay metadata"
 msgstr "无效的叠加层元数据"
 
-#: app/api/overlays.py:104 app/api/overlays.py:185
+#: app/api/overlays.py:106 app/api/overlays.py:187 app/api/overlays.py:313
+#: app/api/overlays.py:317 app/api/overlays.py:319 app/api/overlays.py:342
 msgid "Invalid GeoJSON"
 msgstr "无效的GeoJSON"
 
-#: app/api/overlays.py:240
+#: app/api/overlays.py:242
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
 msgstr "不是 DXF 或压缩的 shapefile：%(file)s"
 
-#: app/api/overlays.py:251 app/api/overlays.py:253
+#: app/api/overlays.py:253 app/api/overlays.py:255
 msgid "Invalid EPSG code"
 msgstr "无效的EPSG代码"
 
-#: app/api/overlays.py:284 app/api/overlays.py:291
+#: app/api/overlays.py:286 app/api/overlays.py:293
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "无法转换 %(file)s：%(reason)s"
+
+#: app/api/overlays.py:324 app/api/overlays.py:329
+msgid "Invalid SRS"
+msgstr "无效的空间参考系统"
+
+#: app/api/overlays.py:354 app/api/overlays.py:358
+#, python-format
+msgid "Cannot reproject: %(reason)s"
+msgstr "无法重投影:%(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -609,7 +619,7 @@ msgstr "无效的山体阴影值：%(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "不能在非地理坐标的数据集上使用epsg"
 
-#: app/apps.py:7 app/models/setting.py:73
+#: app/apps.py:7 app/models/setting.py:77
 #: app/templates/app/logged_in_base.html:142
 msgid "Application"
 msgstr "应用"
@@ -908,32 +918,32 @@ msgstr "你的应用程序的512x512徽标(.png或.jpeg)"
 msgid "App logo"
 msgstr "应用程序徽标"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "The name of your organization"
 msgstr "组织名称"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "Organization name"
 msgstr "组织名称"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "The website URL of your organization"
 msgstr "您的组织的网站URL"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "Organization website"
 msgstr "机构网站"
 
-#: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
+#: app/models/setting.py:37 app/models/theme.py:50 app/models/theme.py:51
 #: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "主题"
 
-#: app/models/setting.py:34
+#: app/models/setting.py:38
 msgid "Active theme"
 msgstr "激活主题"
 
-#: app/models/setting.py:76 app/models/setting.py:77
+#: app/models/setting.py:80 app/models/setting.py:81
 msgid "Settings"
 msgstr "设置"
 
@@ -1960,22 +1970,22 @@ msgstr "在我们开始之前，我们需要为你创建一个管理员账户：
 msgid "Create Account"
 msgstr "创建帐户"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s days"
 msgstr "%(num)s 天"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:82
 #, python-format
 msgid "in %(num)s hours"
 msgstr "%(num)s 小时"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:84
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "%(num)s 分钟"
 
-#: app/templatetags/settings.py:82
+#: app/templatetags/settings.py:86
 msgid "very soon"
 msgstr "很快"
 
@@ -2225,7 +2235,7 @@ msgstr "Hello World"
 msgid "Lightning"
 msgstr "Lightning"
 
-#: coreplugins/objdetect/api.py:57
+#: coreplugins/objdetect/api.py:58
 msgid "No orthophoto is available."
 msgstr "没有可用的正射影像。"
 

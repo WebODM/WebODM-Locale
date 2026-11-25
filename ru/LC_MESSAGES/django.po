@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 19:00+0000\n"
+"POT-Creation-Date: 2026-11-25 17:47+0000\n"
 "PO-Revision-Date: 2026-11-02 17:51+0000\n"
 "Last-Translator: djp1-hub <djp1-hub@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/webodm/webodm/ru/"
@@ -427,40 +427,50 @@ msgstr "Недопустимый uuid"
 msgid "File exceeds maximum allowed size"
 msgstr "Размер файла превышает максимально допустимый"
 
-#: app/api/overlays.py:38
+#: app/api/overlays.py:40
 msgid "Invalid overlay ID"
 msgstr "Недопустимый идентификатор наложения"
 
-#: app/api/overlays.py:82 app/api/overlays.py:234
+#: app/api/overlays.py:84 app/api/overlays.py:236
 msgid "Missing file"
 msgstr "Файл отсутствует"
 
-#: app/api/overlays.py:85 app/api/overlays.py:242
+#: app/api/overlays.py:87 app/api/overlays.py:244
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
 msgstr "Размер файла %(file)s превышает %(size)s МБ."
 
-#: app/api/overlays.py:93 app/api/overlays.py:169
+#: app/api/overlays.py:95 app/api/overlays.py:171
 msgid "Invalid overlay metadata"
 msgstr "Недопустимые метаданные наложения"
 
-#: app/api/overlays.py:104 app/api/overlays.py:185
+#: app/api/overlays.py:106 app/api/overlays.py:187 app/api/overlays.py:313
+#: app/api/overlays.py:317 app/api/overlays.py:319 app/api/overlays.py:342
 msgid "Invalid GeoJSON"
 msgstr "Некорректный GeoJSON"
 
-#: app/api/overlays.py:240
+#: app/api/overlays.py:242
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
 msgstr "Файл %(file)s не является DXF или ZIP-архивом с Shapefile"
 
-#: app/api/overlays.py:251 app/api/overlays.py:253
+#: app/api/overlays.py:253 app/api/overlays.py:255
 msgid "Invalid EPSG code"
 msgstr "Некорректный код EPSG"
 
-#: app/api/overlays.py:284 app/api/overlays.py:291
+#: app/api/overlays.py:286 app/api/overlays.py:293
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "Не удалось преобразовать %(file)s: %(reason)s"
+
+#: app/api/overlays.py:324 app/api/overlays.py:329
+msgid "Invalid SRS"
+msgstr "Недопустимая система координат"
+
+#: app/api/overlays.py:354 app/api/overlays.py:358
+#, python-format
+msgid "Cannot reproject: %(reason)s"
+msgstr "Не удалось перепроецировать: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -667,7 +677,7 @@ msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr ""
 "Невозможно использовать epsg для набора данных без географической привязки"
 
-#: app/apps.py:7 app/models/setting.py:73
+#: app/apps.py:7 app/models/setting.py:77
 #: app/templates/app/logged_in_base.html:142
 msgid "Application"
 msgstr "Приложение"
@@ -972,32 +982,32 @@ msgstr "Логотип вашего приложения 512x512 (.png или .j
 msgid "App logo"
 msgstr "Логотип приложения"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "The name of your organization"
 msgstr "Наименование вашей организации"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "Organization name"
 msgstr "Название организации"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "The website URL of your organization"
 msgstr "URL-адрес сайта вашей организации"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "Organization website"
 msgstr "Веб-сайт организации"
 
-#: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
+#: app/models/setting.py:37 app/models/theme.py:50 app/models/theme.py:51
 #: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Тема"
 
-#: app/models/setting.py:34
+#: app/models/setting.py:38
 msgid "Active theme"
 msgstr "Активная тема"
 
-#: app/models/setting.py:76 app/models/setting.py:77
+#: app/models/setting.py:80 app/models/setting.py:81
 msgid "Settings"
 msgstr "Настройки"
 
@@ -2080,22 +2090,22 @@ msgstr ""
 msgid "Create Account"
 msgstr "Создать аккаунт"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s days"
 msgstr "через %(num)s дня(-ей)"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:82
 #, python-format
 msgid "in %(num)s hours"
 msgstr "через %(num)s часа(ов)"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:84
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "через %(num)s минут(ы)"
 
-#: app/templatetags/settings.py:82
+#: app/templatetags/settings.py:86
 msgid "very soon"
 msgstr "очень скоро"
 
@@ -2353,7 +2363,7 @@ msgstr "Привет, мир"
 msgid "Lightning"
 msgstr "Lightning"
 
-#: coreplugins/objdetect/api.py:57
+#: coreplugins/objdetect/api.py:58
 msgid "No orthophoto is available."
 msgstr "Ортофото недоступно."
 

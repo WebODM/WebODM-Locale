@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 19:00+0000\n"
+"POT-Creation-Date: 2026-11-25 17:47+0000\n"
 "PO-Revision-Date: 2026-04-28 01:09+0000\n"
 "Last-Translator: protonchang <protonmo@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
@@ -392,43 +392,55 @@ msgstr "無效的動作"
 msgid "File exceeds maximum allowed size"
 msgstr ""
 
-#: app/api/overlays.py:38
+#: app/api/overlays.py:40
 msgid "Invalid overlay ID"
 msgstr ""
 
-#: app/api/overlays.py:82 app/api/overlays.py:234
+#: app/api/overlays.py:84 app/api/overlays.py:236
 msgid "Missing file"
 msgstr ""
 
-#: app/api/overlays.py:85 app/api/overlays.py:242
+#: app/api/overlays.py:87 app/api/overlays.py:244
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
 msgstr ""
 
-#: app/api/overlays.py:93 app/api/overlays.py:169
+#: app/api/overlays.py:95 app/api/overlays.py:171
 msgid "Invalid overlay metadata"
 msgstr ""
 
-#: app/api/overlays.py:104 app/api/overlays.py:185
+#: app/api/overlays.py:106 app/api/overlays.py:187 app/api/overlays.py:313
+#: app/api/overlays.py:317 app/api/overlays.py:319 app/api/overlays.py:342
 #, fuzzy
 #| msgid "Invalid action"
 msgid "Invalid GeoJSON"
 msgstr "無效的動作"
 
-#: app/api/overlays.py:240
+#: app/api/overlays.py:242
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
 msgstr ""
 
-#: app/api/overlays.py:251 app/api/overlays.py:253
+#: app/api/overlays.py:253 app/api/overlays.py:255
 #, fuzzy
 #| msgid "Invalid EPSG code: %(value)s"
 msgid "Invalid EPSG code"
 msgstr "無效的 EPSG 代碼：%(value)s"
 
-#: app/api/overlays.py:284 app/api/overlays.py:291
+#: app/api/overlays.py:286 app/api/overlays.py:293
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
+msgstr ""
+
+#: app/api/overlays.py:324 app/api/overlays.py:329
+#, fuzzy
+#| msgid "Invalid action"
+msgid "Invalid SRS"
+msgstr "無效的動作"
+
+#: app/api/overlays.py:354 app/api/overlays.py:358
+#, python-format
+msgid "Cannot reproject: %(reason)s"
 msgstr ""
 
 #: app/api/projects.py:147
@@ -649,7 +661,7 @@ msgstr "無效的陰影地形值：%(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "無法在非地理參考的資料集中使用 EPSG"
 
-#: app/apps.py:7 app/models/setting.py:73
+#: app/apps.py:7 app/models/setting.py:77
 #: app/templates/app/logged_in_base.html:142
 msgid "Application"
 msgstr "應用程式"
@@ -958,32 +970,32 @@ msgstr "您的應用程式的 512x512 標誌（.png 或 .jpeg）"
 msgid "App logo"
 msgstr "應用程式標誌"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "The name of your organization"
 msgstr "您組織的名稱"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "Organization name"
 msgstr "組織名稱"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "The website URL of your organization"
 msgstr "您組織的網站 URL"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "Organization website"
 msgstr "組織網站"
 
-#: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
+#: app/models/setting.py:37 app/models/theme.py:50 app/models/theme.py:51
 #: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "主題"
 
-#: app/models/setting.py:34
+#: app/models/setting.py:38
 msgid "Active theme"
 msgstr "使用中的主題"
 
-#: app/models/setting.py:76 app/models/setting.py:77
+#: app/models/setting.py:80 app/models/setting.py:81
 msgid "Settings"
 msgstr "設定"
 
@@ -2064,22 +2076,22 @@ msgstr "在開始之前，我們需要為您建立一個管理員帳號："
 msgid "Create Account"
 msgstr "建立帳號"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s days"
 msgstr "於 %(num)s 天後"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:82
 #, python-format
 msgid "in %(num)s hours"
 msgstr "於 %(num)s 小時後"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:84
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "於 %(num)s 分鐘後"
 
-#: app/templatetags/settings.py:82
+#: app/templatetags/settings.py:86
 msgid "very soon"
 msgstr "即將"
 
@@ -2336,7 +2348,7 @@ msgstr ""
 msgid "Lightning"
 msgstr "閃電"
 
-#: coreplugins/objdetect/api.py:57
+#: coreplugins/objdetect/api.py:58
 msgid "No orthophoto is available."
 msgstr "沒有可用的正射影像。"
 

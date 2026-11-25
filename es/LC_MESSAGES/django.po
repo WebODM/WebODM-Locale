@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 19:00+0000\n"
+"POT-Creation-Date: 2026-11-25 17:47+0000\n"
 "PO-Revision-Date: 2026-06-23 13:01+0000\n"
 "Last-Translator: Matheus Rocha Pereira <matheusrp11@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/webodm/webodm/es/"
@@ -421,40 +421,50 @@ msgstr "uuid no válido"
 msgid "File exceeds maximum allowed size"
 msgstr "El archivo supera el tamaño máximo permitido"
 
-#: app/api/overlays.py:38
+#: app/api/overlays.py:40
 msgid "Invalid overlay ID"
 msgstr "ID de capa superpuesta no válido"
 
-#: app/api/overlays.py:82 app/api/overlays.py:234
+#: app/api/overlays.py:84 app/api/overlays.py:236
 msgid "Missing file"
 msgstr "Falta el archivo"
 
-#: app/api/overlays.py:85 app/api/overlays.py:242
+#: app/api/overlays.py:87 app/api/overlays.py:244
 #, python-format
 msgid "%(file)s is bigger than %(size)s MB."
 msgstr "%(file)s supera los %(size)s MB."
 
-#: app/api/overlays.py:93 app/api/overlays.py:169
+#: app/api/overlays.py:95 app/api/overlays.py:171
 msgid "Invalid overlay metadata"
 msgstr "Metadatos de capa superpuesta no válidos"
 
-#: app/api/overlays.py:104 app/api/overlays.py:185
+#: app/api/overlays.py:106 app/api/overlays.py:187 app/api/overlays.py:313
+#: app/api/overlays.py:317 app/api/overlays.py:319 app/api/overlays.py:342
 msgid "Invalid GeoJSON"
 msgstr "GeoJSON no válido"
 
-#: app/api/overlays.py:240
+#: app/api/overlays.py:242
 #, python-format
 msgid "Not a DXF or zipped shapefile: %(file)s"
 msgstr "No es un DXF ni un shapefile comprimido: %(file)s"
 
-#: app/api/overlays.py:251 app/api/overlays.py:253
+#: app/api/overlays.py:253 app/api/overlays.py:255
 msgid "Invalid EPSG code"
 msgstr "Código EPSG no válido"
 
-#: app/api/overlays.py:284 app/api/overlays.py:291
+#: app/api/overlays.py:286 app/api/overlays.py:293
 #, python-format
 msgid "Cannot convert %(file)s: %(reason)s"
 msgstr "No se puede convertir %(file)s: %(reason)s"
+
+#: app/api/overlays.py:324 app/api/overlays.py:329
+msgid "Invalid SRS"
+msgstr "SRS no válido"
+
+#: app/api/overlays.py:354 app/api/overlays.py:358
+#, python-format
+msgid "Cannot reproject: %(reason)s"
+msgstr "No se puede reproyectar: %(reason)s"
 
 #: app/api/projects.py:147
 msgid "Cannot duplicate project"
@@ -661,7 +671,7 @@ msgstr "Valor de sombreado no válido: %(value)s"
 msgid "Cannot use epsg on non-georeferenced dataset"
 msgstr "No se puede usar epsg en un conjunto de datos no georreferenciado"
 
-#: app/apps.py:7 app/models/setting.py:73
+#: app/apps.py:7 app/models/setting.py:77
 #: app/templates/app/logged_in_base.html:142
 msgid "Application"
 msgstr "Aplicación"
@@ -968,32 +978,32 @@ msgstr "Un logotipo de 512x512 de su aplicación (.png o .jpeg)"
 msgid "App logo"
 msgstr "Logotipo de la aplicación"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "The name of your organization"
 msgstr "El nombre de su organización"
 
-#: app/models/setting.py:31
+#: app/models/setting.py:35
 msgid "Organization name"
 msgstr "Nombre de organización"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "The website URL of your organization"
 msgstr "La dirección URL del sitio web de su organización"
 
-#: app/models/setting.py:32
+#: app/models/setting.py:36
 msgid "Organization website"
 msgstr "Sitio web de la organización"
 
-#: app/models/setting.py:33 app/models/theme.py:50 app/models/theme.py:51
+#: app/models/setting.py:37 app/models/theme.py:50 app/models/theme.py:51
 #: app/templates/app/logged_in_base.html:133
 msgid "Theme"
 msgstr "Tema"
 
-#: app/models/setting.py:34
+#: app/models/setting.py:38
 msgid "Active theme"
 msgstr "Tema activo"
 
-#: app/models/setting.py:76 app/models/setting.py:77
+#: app/models/setting.py:80 app/models/setting.py:81
 msgid "Settings"
 msgstr "Configuraciones"
 
@@ -2074,22 +2084,22 @@ msgstr ""
 msgid "Create Account"
 msgstr "Crear cuenta"
 
-#: app/templatetags/settings.py:76
+#: app/templatetags/settings.py:80
 #, python-format
 msgid "in %(num)s days"
 msgstr "en %(num)s días"
 
-#: app/templatetags/settings.py:78
+#: app/templatetags/settings.py:82
 #, python-format
 msgid "in %(num)s hours"
 msgstr "en %(num)s horas"
 
-#: app/templatetags/settings.py:80
+#: app/templatetags/settings.py:84
 #, python-format
 msgid "in %(num)s minutes"
 msgstr "en %(num)s minutos"
 
-#: app/templatetags/settings.py:82
+#: app/templatetags/settings.py:86
 msgid "very soon"
 msgstr "muy pronto"
 
@@ -2348,7 +2358,7 @@ msgstr "Hola Mundo"
 msgid "Lightning"
 msgstr "Lightning (rayos)"
 
-#: coreplugins/objdetect/api.py:57
+#: coreplugins/objdetect/api.py:58
 msgid "No orthophoto is available."
 msgstr "No hay ninguna ortofoto disponible."
 
