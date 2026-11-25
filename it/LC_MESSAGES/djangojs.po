@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-11-25 17:47+0000\n"
-"PO-Revision-Date: 2026-11-17 06:49+0000\n"
-"Last-Translator: Piero Toffanin <pierotofy@users.noreply.hosted.weblate."
-"org>\n"
+"PO-Revision-Date: 2026-11-26 18:51+0000\n"
+"Last-Translator: Piero Toffanin <pierotofy@users.noreply.hosted.weblate.org>"
+"\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/webodm/react-ui/"
 "it/>\n"
 "Language: it\n"
@@ -2367,7 +2367,7 @@ msgstr "Ripeti"
 
 #: app/static/app/js/components/modelview/HistoryPanel.jsx:27
 msgid "No history"
-msgstr "Nessuna storia"
+msgstr "Nessuna cronologia"
 
 #: app/static/app/js/components/modelview/Minimap.jsx:208
 msgid "Double-click to move here"
