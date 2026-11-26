@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-25 17:47+0000\n"
+"POT-Creation-Date: 2026-11-26 21:14+0000\n"
 "PO-Revision-Date: 2026-03-05 19:44+0000\n"
 "Last-Translator: Morga Huber <morgan.huber88@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/webodm/react-ui/"
@@ -87,74 +87,75 @@ msgstr "Terrängmodel"
 msgid "A map is not available for this task or project."
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:293 app/static/app/js/ModelView.jsx:1259
+#: app/static/app/js/ModelView.jsx:347 app/static/app/js/ModelView.jsx:1344
 #: app/static/app/js/classes/AssetDownloads.js:54
 #: app/static/app/js/components/EditPresetDialog.jsx:61
 #: app/static/app/js/components/ImportExternalPanel.jsx:15
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:454
+#: app/static/app/js/components/modelview/LayersPanel.jsx:464
 #: app/static/app/js/components/modelview/SettingsWindow.jsx:85
 msgid "Point Cloud"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:294 app/static/app/js/ModelView.jsx:1266
+#: app/static/app/js/ModelView.jsx:348 app/static/app/js/ModelView.jsx:1351
 #: app/static/app/js/classes/AssetDownloads.js:56
 #: app/static/app/js/components/ImportExternalPanel.jsx:16
 msgid "Textured Model"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:295 app/static/app/js/ModelView.jsx:1273
+#: app/static/app/js/ModelView.jsx:349 app/static/app/js/ModelView.jsx:1358
 #: app/static/app/js/classes/AssetDownloads.js:63
 #: app/static/app/js/components/TaskListItem.jsx:866
 msgid "Splats"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:302 app/static/app/js/ModelView.jsx:1375
+#: app/static/app/js/ModelView.jsx:357 app/static/app/js/ModelView.jsx:1477
 msgid "Loading textured model..."
 msgstr "Laddar model med textur..."
 
-#: app/static/app/js/ModelView.jsx:303 app/static/app/js/ModelView.jsx:1375
+#: app/static/app/js/ModelView.jsx:358 app/static/app/js/ModelView.jsx:1477
 msgid "Loading splats..."
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:354
+#: app/static/app/js/ModelView.jsx:409
 msgid ""
 "Could not load point cloud. This task doesn't seem to have one. Try "
 "processing the task again."
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:568
+#: app/static/app/js/ModelView.jsx:647
 msgid "Changed scene"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:578
+#: app/static/app/js/ModelView.jsx:657
 #, python-format
 msgid "Added %(name)s"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:579
+#: app/static/app/js/ModelView.jsx:658
 #, python-format
 msgid "Removed %(name)s"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:580
+#: app/static/app/js/ModelView.jsx:659
 #, python-format
 msgid "Modified %(name)s"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:681 app/static/app/js/ModelView.jsx:683
+#: app/static/app/js/ModelView.jsx:764 app/static/app/js/ModelView.jsx:766
 msgid "Cannot set initial camera view"
 msgstr "Kan inte bestämma första kameravy"
 
-#: app/static/app/js/ModelView.jsx:1085 app/static/app/js/ModelView.jsx:1087
+#: app/static/app/js/ModelView.jsx:1170 app/static/app/js/ModelView.jsx:1172
 msgid "Cannot load splats renderer"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:1152
+#: app/static/app/js/ModelView.jsx:1237
 msgid ""
 "Could not load splats. This task doesn't seem to have a valid splats file."
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:1368 app/static/app/js/PluginBrowser.jsx:276
+#: app/static/app/js/ModelView.jsx:1454 app/static/app/js/ModelView.jsx:1464
+#: app/static/app/js/PluginBrowser.jsx:276
 #: app/static/app/js/components/ErrorMessage.jsx:34
 #: app/static/app/js/components/ImportExternalPanel.jsx:283
 #: app/static/app/js/components/ImportTaskPanel.jsx:165
@@ -167,19 +168,25 @@ msgstr ""
 #: app/static/app/js/components/SplatsDialog.jsx:580
 #: app/static/app/js/components/Toaster.jsx:317
 #: app/static/app/js/components/modelview/HistoryPanel.jsx:23
+#: app/static/app/js/components/modelview/LayersPanel.jsx:445
 #: app/static/app/js/components/modelview/Minimap.jsx:217
 #: app/static/app/js/components/modelview/ProfilePanel.jsx:50
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:435
 #: app/static/app/js/components/modelview/SettingsWindow.jsx:219
 msgid "Close"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:1369
+#: app/static/app/js/ModelView.jsx:1455
 msgid "Enter VR"
 msgstr ""
 
-#: app/static/app/js/ModelView.jsx:1370
+#: app/static/app/js/ModelView.jsx:1456
 msgid "Continue in Browser"
+msgstr ""
+
+#: app/static/app/js/ModelView.jsx:1472
+#: app/static/app/js/components/modelview/Toolbar.jsx:149
+#: app/static/app/js/components/modelview/Toolbar.jsx:151
+msgid "Set Scale"
 msgstr ""
 
 #: app/static/app/js/PluginBrowser.jsx:57
@@ -192,7 +199,7 @@ msgid "Requires WebODM %(version)s"
 msgstr ""
 
 #: app/static/app/js/PluginBrowser.jsx:65
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:787
+#: app/static/app/js/components/modelview/LayersPanel.jsx:797
 msgid "Update"
 msgstr ""
 
@@ -810,7 +817,7 @@ msgstr "Namn"
 
 #: app/static/app/js/components/EditPresetDialog.jsx:571
 #: app/static/app/js/components/Paginator.jsx:136
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:431
+#: app/static/app/js/components/modelview/LayersPanel.jsx:441
 msgid "Search"
 msgstr ""
 
@@ -863,7 +870,7 @@ msgstr ""
 #: app/static/app/js/components/EditProjectDialog.jsx:165
 #: app/static/app/js/components/EditTaskForm.jsx:586
 #: app/static/app/js/components/TaskListItem.jsx:873
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:813
+#: app/static/app/js/components/modelview/LayersPanel.jsx:823
 msgid "Duplicate"
 msgstr ""
 
@@ -991,10 +998,10 @@ msgstr ""
 #: app/static/app/js/components/ProjectListItem.jsx:969
 #: app/static/app/js/components/TaskListItem.jsx:580
 #: app/static/app/js/components/TaskListItem.jsx:890
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:234
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:814
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:865
-#: app/static/app/js/components/modelview/VRControls.js:317
+#: app/static/app/js/components/modelview/LayersPanel.jsx:244
+#: app/static/app/js/components/modelview/LayersPanel.jsx:824
+#: app/static/app/js/components/modelview/LayersPanel.jsx:875
+#: app/static/app/js/components/modelview/VRControls.js:351
 #: coreplugins/annotate/public/Popup.jsx:1156
 #: coreplugins/measure/public/app.jsx:35
 msgid "Delete"
@@ -1051,7 +1058,7 @@ msgid "CRS:"
 msgstr ""
 
 #: app/static/app/js/components/ExportAssetPanel.jsx:238
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:527
+#: app/static/app/js/components/modelview/LayersPanel.jsx:537
 #: coreplugins/contours/public/ContoursPanel.jsx:367
 msgid "Lat/Lon"
 msgstr ""
@@ -1081,7 +1088,7 @@ msgid "Exporting..."
 msgstr "Importerar..."
 
 #: app/static/app/js/components/FormDialog.jsx:10
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:739
+#: app/static/app/js/components/modelview/LayersPanel.jsx:749
 msgid "Title"
 msgstr ""
 
@@ -1241,7 +1248,7 @@ msgstr ""
 "Dina inställningar kommer försvinna. Är du säker på att du vill fortsätta?"
 
 #: app/static/app/js/components/LayersControlAnnotations.jsx:149
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:460
+#: app/static/app/js/components/modelview/LayersPanel.jsx:470
 msgid "Annotations"
 msgstr ""
 
@@ -1257,7 +1264,7 @@ msgid "Side By Side"
 msgstr ""
 
 #: app/static/app/js/components/LayersControlLayer.jsx:411
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:863
+#: app/static/app/js/components/modelview/LayersPanel.jsx:873
 msgid "Zoom To"
 msgstr ""
 
@@ -1292,7 +1299,7 @@ msgid "Display:"
 msgstr ""
 
 #: app/static/app/js/components/LayersControlLayer.jsx:473
-#: app/static/app/js/components/modelview/Toolbar.jsx:155
+#: app/static/app/js/components/modelview/Toolbar.jsx:162
 #: coreplugins/annotate/public/Popup.jsx:984
 msgid "Elevation"
 msgstr ""
@@ -1449,13 +1456,13 @@ msgid "Filename"
 msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:559
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:746
+#: app/static/app/js/components/modelview/LayersPanel.jsx:756
 #: coreplugins/annotate/public/Popup.jsx:947
 msgid "Description"
 msgstr ""
 
 #: app/static/app/js/components/ManageMediaDialog.jsx:560
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:476
+#: app/static/app/js/components/modelview/LayersPanel.jsx:486
 #: coreplugins/lightning/public/ShareDialog.jsx:336
 msgid "Size"
 msgstr ""
@@ -1469,8 +1476,8 @@ msgid "Bounds:"
 msgstr ""
 
 #: app/static/app/js/components/Map.jsx:606
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:444
-#: app/static/app/js/components/modelview/Toolbar.jsx:171
+#: app/static/app/js/components/modelview/LayersPanel.jsx:454
+#: app/static/app/js/components/modelview/Toolbar.jsx:178
 msgid "Cameras"
 msgstr "Kameror"
 
@@ -1818,7 +1825,7 @@ msgid "Share This Project"
 msgstr ""
 
 #: app/static/app/js/components/SharePopup.jsx:203
-#: app/static/app/js/components/modelview/Toolbar.jsx:288
+#: app/static/app/js/components/modelview/Toolbar.jsx:295
 msgid "VR"
 msgstr ""
 
@@ -2301,12 +2308,361 @@ msgid "Undo"
 msgstr ""
 
 #: app/static/app/js/components/modelview/HistoryPanel.jsx:22
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:778
+#: app/static/app/js/components/modelview/LayersPanel.jsx:788
 msgid "Redo"
 msgstr ""
 
 #: app/static/app/js/components/modelview/HistoryPanel.jsx:27
 msgid "No history"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:193
+msgid "Delete all"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:196
+msgid "Delete all items in this folder?"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:200
+#: app/static/app/js/components/modelview/LayersPanel.jsx:246
+#: app/static/app/js/components/modelview/LayersPanel.jsx:456
+#: app/static/app/js/components/modelview/LayersPanel.jsx:872
+msgid "Hide"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:200
+#: app/static/app/js/components/modelview/LayersPanel.jsx:246
+#: app/static/app/js/components/modelview/LayersPanel.jsx:456
+#: app/static/app/js/components/modelview/LayersPanel.jsx:872
+#: coreplugins/annotate/public/Popup.jsx:1013
+#: coreplugins/annotate/public/Popup.jsx:1014
+msgid "Show"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:243
+#: app/static/app/js/components/modelview/LayersPanel.jsx:752
+#: app/static/app/js/components/modelview/Toolbar.jsx:217
+msgid "Annotation"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:304
+#: app/static/app/js/components/modelview/LayersPanel.jsx:311
+#: app/static/app/js/components/modelview/Toolbar.jsx:189
+#: app/static/app/js/components/modelview/Toolbar.jsx:190
+#: app/static/app/js/components/modelview/VRControls.js:340
+msgid "Distance"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:305
+msgid "Total distance"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:306
+#: app/static/app/js/components/modelview/Toolbar.jsx:202
+#: app/static/app/js/components/modelview/VRControls.js:346
+#: coreplugins/annotate/public/Popup.jsx:903
+#: coreplugins/annotate/public/Popup.jsx:1036
+#: coreplugins/measure/public/app.jsx:26
+msgid "Area"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:307
+msgid "Pitch"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:310
+#: app/static/app/js/components/modelview/Toolbar.jsx:191
+#: app/static/app/js/components/modelview/Toolbar.jsx:192
+#: app/static/app/js/components/modelview/VRControls.js:341
+msgid "Height"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:312
+msgid "Delta X"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:313
+msgid "Delta Y"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:316
+msgid "Alpha (α)"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:316
+msgid "Beta (β)"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:316
+msgid "Gamma (γ)"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:316
+#, python-format
+msgid "Angle %(num)s"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:321
+msgid "Center"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:322
+msgid "Radius"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:323
+msgid "Circumference"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:327
+#: app/static/app/js/components/modelview/Toolbar.jsx:203
+#: app/static/app/js/components/modelview/Toolbar.jsx:204
+#: app/static/app/js/components/modelview/VRControls.js:347
+msgid "Azimuth"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:330
+#: app/static/app/js/components/modelview/Toolbar.jsx:205
+#: coreplugins/annotate/public/Popup.jsx:904
+#: coreplugins/annotate/public/Popup.jsx:1042
+msgid "Volume"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:343
+#, python-format
+msgid "Times add up to %(total)s s. Scale them to fit %(duration)s s."
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:349
+msgid "Rebalance"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:376
+#: app/static/app/js/components/modelview/LayersPanel.jsx:483
+#: app/static/app/js/components/modelview/LayersPanel.jsx:501
+msgid "Properties"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:379
+msgid "Attribute"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:382
+#: app/static/app/js/components/modelview/Toolbar.jsx:159
+msgid "Colors"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:388
+#: app/static/app/js/components/modelview/SettingsWindow.jsx:133
+msgid "Gradient"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:412
+msgid "Min"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:417
+msgid "Max"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:443
+#: app/static/app/js/components/modelview/ProfilePanel.jsx:48
+#: coreplugins/contours/public/ContoursPanel.jsx:396
+msgid "Export"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:467
+#: app/static/app/js/components/modelview/SettingsWindow.jsx:201
+#: app/static/app/js/components/modelview/Toolbar.jsx:185
+#: app/static/app/js/components/modelview/VRControls.js:350
+msgid "Measurements"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:473
+msgid "Animations"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:476
+msgid "Clips"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:503
+msgid "Point attributes"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:503
+msgid "Points"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:514
+#: coreplugins/annotate/public/Popup.jsx:969
+msgid "Coordinates"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:528
+#: app/static/app/js/components/modelview/LayersPanel.jsx:848
+msgid "Copy"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:533
+#: app/static/app/js/components/modelview/SettingsWindow.jsx:84
+#: app/static/app/js/components/modelview/Toolbar.jsx:157
+#: coreplugins/annotate/public/Popup.jsx:935
+msgid "Display"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:543
+msgid "Position"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:543
+msgid "Rotation"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:543
+msgid "Scale"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:563
+#, python-format
+msgid "Width (%(unit)s)"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:572
+msgid "Height Profile"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:577
+msgid "Type"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:579
+msgid "Views"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:580
+#: app/static/app/js/components/modelview/SettingsWindow.jsx:190
+#: app/static/app/js/components/modelview/Toolbar.jsx:127
+msgid "Orbit"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:585
+#, fuzzy
+#| msgid "Options"
+msgid "Interpolation"
+msgstr "Inställningar"
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:587
+msgid "Centripetal"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:588
+msgid "Chordal"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:614
+msgid "Seconds to the next view"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:636
+#: app/static/app/js/components/modelview/LayersPanel.jsx:799
+msgid "Look At"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:640
+msgid "Loop"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:643
+msgid "Reverse"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:646
+msgid "Duration (s)"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:659
+#: coreplugins/annotate/public/Popup.jsx:897
+#: coreplugins/annotate/public/Popup.jsx:1002
+msgid "Length"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:664
+msgid "Playback"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:669
+msgid "Quality"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:671
+msgid "Native"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:676
+msgid "Pause"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:676
+msgid "Play"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:682
+msgid "Rewind"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:684
+msgid "Stop recording"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:684
+msgid "Record movie"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:761
+msgid "Link"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:768
+msgid "Zoom to"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:770
+msgid "Set Position"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:808
+#, fuzzy
+#| msgid "set initial camera view"
+msgid "Set As Initial View"
+msgstr "ställ in första kameravy"
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:816
+#, python-format
+msgid "%(name)s (copy)"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:835
+msgid "No attributes"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:851
+#, fuzzy
+#| msgid "Add Project"
+msgid "Add point"
+msgstr "Lägg till projekt"
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:861
+msgid "Remove point"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:874
+msgid "Rename"
+msgstr ""
+
+#: app/static/app/js/components/modelview/LayersPanel.jsx:894
+msgid "Cannot export GeoJSON"
 msgstr ""
 
 #: app/static/app/js/components/modelview/Minimap.jsx:208
@@ -2319,12 +2675,6 @@ msgstr ""
 
 #: app/static/app/js/components/modelview/ProfilePanel.jsx:47
 msgid "Profile"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProfilePanel.jsx:48
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:433
-#: coreplugins/contours/public/ContoursPanel.jsx:396
-msgid "Export"
 msgstr ""
 
 #: app/static/app/js/components/modelview/ProfilePanel.jsx:69
@@ -2343,353 +2693,10 @@ msgstr ""
 msgid "Move backward"
 msgstr ""
 
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:183
-msgid "Delete all"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:186
-msgid "Delete all items in this folder?"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:190
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:236
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:446
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:862
-msgid "Hide"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:190
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:236
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:446
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:862
-#: coreplugins/annotate/public/Popup.jsx:1013
-#: coreplugins/annotate/public/Popup.jsx:1014
-msgid "Show"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:233
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:742
-#: app/static/app/js/components/modelview/Toolbar.jsx:210
-msgid "Annotation"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:294
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:301
-#: app/static/app/js/components/modelview/Toolbar.jsx:182
-#: app/static/app/js/components/modelview/Toolbar.jsx:183
-#: app/static/app/js/components/modelview/VRControls.js:306
-msgid "Distance"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:295
-msgid "Total distance"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:296
-#: app/static/app/js/components/modelview/Toolbar.jsx:195
-#: app/static/app/js/components/modelview/VRControls.js:312
-#: coreplugins/annotate/public/Popup.jsx:903
-#: coreplugins/annotate/public/Popup.jsx:1036
-#: coreplugins/measure/public/app.jsx:26
-msgid "Area"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:297
-msgid "Pitch"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:300
-#: app/static/app/js/components/modelview/Toolbar.jsx:184
-#: app/static/app/js/components/modelview/Toolbar.jsx:185
-#: app/static/app/js/components/modelview/VRControls.js:307
-msgid "Height"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:302
-msgid "Delta X"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:303
-msgid "Delta Y"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:306
-msgid "Alpha (α)"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:306
-msgid "Beta (β)"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:306
-msgid "Gamma (γ)"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:306
-#, python-format
-msgid "Angle %(num)s"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:311
-msgid "Center"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:312
-msgid "Radius"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:313
-msgid "Circumference"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:317
-#: app/static/app/js/components/modelview/Toolbar.jsx:196
-#: app/static/app/js/components/modelview/Toolbar.jsx:197
-#: app/static/app/js/components/modelview/VRControls.js:313
-msgid "Azimuth"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:320
-#: app/static/app/js/components/modelview/Toolbar.jsx:198
-#: coreplugins/annotate/public/Popup.jsx:904
-#: coreplugins/annotate/public/Popup.jsx:1042
-msgid "Volume"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:333
-#, python-format
-msgid "Times add up to %(total)s s. Scale them to fit %(duration)s s."
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:339
-msgid "Rebalance"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:366
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:473
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:491
-msgid "Properties"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:369
-msgid "Attribute"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:372
-#: app/static/app/js/components/modelview/Toolbar.jsx:152
-msgid "Colors"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:378
-#: app/static/app/js/components/modelview/SettingsWindow.jsx:133
-msgid "Gradient"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:402
-msgid "Min"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:407
-msgid "Max"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:457
-#: app/static/app/js/components/modelview/SettingsWindow.jsx:201
-#: app/static/app/js/components/modelview/Toolbar.jsx:178
-#: app/static/app/js/components/modelview/VRControls.js:316
-msgid "Measurements"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:463
-msgid "Animations"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:466
-msgid "Clips"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:493
-msgid "Point attributes"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:493
-msgid "Points"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:504
-#: coreplugins/annotate/public/Popup.jsx:969
-msgid "Coordinates"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:518
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:838
-msgid "Copy"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:523
-#: app/static/app/js/components/modelview/SettingsWindow.jsx:84
-#: app/static/app/js/components/modelview/Toolbar.jsx:150
-#: coreplugins/annotate/public/Popup.jsx:935
-msgid "Display"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:533
-msgid "Position"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:533
-msgid "Rotation"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:533
-msgid "Scale"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:553
-#, python-format
-msgid "Width (%(unit)s)"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:562
-msgid "Height Profile"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:567
-msgid "Type"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:569
-msgid "Views"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:570
-#: app/static/app/js/components/modelview/SettingsWindow.jsx:190
-#: app/static/app/js/components/modelview/Toolbar.jsx:126
-msgid "Orbit"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:575
-#, fuzzy
-#| msgid "Options"
-msgid "Interpolation"
-msgstr "Inställningar"
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:577
-msgid "Centripetal"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:578
-msgid "Chordal"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:604
-msgid "Seconds to the next view"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:626
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:789
-msgid "Look At"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:630
-msgid "Loop"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:633
-msgid "Reverse"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:636
-msgid "Duration (s)"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:649
-#: coreplugins/annotate/public/Popup.jsx:897
-#: coreplugins/annotate/public/Popup.jsx:1002
-msgid "Length"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:654
-msgid "Playback"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:659
-msgid "Quality"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:661
-msgid "Native"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:666
-msgid "Pause"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:666
-msgid "Play"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:672
-msgid "Rewind"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:674
-msgid "Stop recording"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:674
-msgid "Record movie"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:751
-msgid "Link"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:758
-msgid "Zoom to"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:760
-msgid "Set Position"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:798
-#, fuzzy
-#| msgid "set initial camera view"
-msgid "Set As Initial View"
-msgstr "ställ in första kameravy"
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:806
-#, python-format
-msgid "%(name)s (copy)"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:825
-msgid "No attributes"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:841
-#, fuzzy
-#| msgid "Add Project"
-msgid "Add point"
-msgstr "Lägg till projekt"
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:851
-msgid "Remove point"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:864
-msgid "Rename"
-msgstr ""
-
-#: app/static/app/js/components/modelview/ProjectPanel.jsx:884
-msgid "Cannot export GeoJSON"
-msgstr ""
-
 #: app/static/app/js/components/modelview/Roofs.js:80
-#: app/static/app/js/components/modelview/Toolbar.jsx:190
-#: app/static/app/js/components/modelview/Toolbar.jsx:191
-#: app/static/app/js/components/modelview/VRControls.js:310
+#: app/static/app/js/components/modelview/Toolbar.jsx:197
+#: app/static/app/js/components/modelview/Toolbar.jsx:198
+#: app/static/app/js/components/modelview/VRControls.js:344
 msgid "Roof Plane"
 msgstr ""
 
@@ -2698,7 +2705,7 @@ msgid "General"
 msgstr ""
 
 #: app/static/app/js/components/modelview/SettingsWindow.jsx:86
-#: app/static/app/js/components/modelview/Toolbar.jsx:124
+#: app/static/app/js/components/modelview/Toolbar.jsx:125
 msgid "Navigation"
 msgstr ""
 
@@ -2853,9 +2860,9 @@ msgid "Square"
 msgstr "Ytmodel (Tiles)"
 
 #: app/static/app/js/components/modelview/SettingsWindow.jsx:162
-#: app/static/app/js/components/modelview/Toolbar.jsx:188
-#: app/static/app/js/components/modelview/Toolbar.jsx:189
-#: app/static/app/js/components/modelview/VRControls.js:309
+#: app/static/app/js/components/modelview/Toolbar.jsx:195
+#: app/static/app/js/components/modelview/Toolbar.jsx:196
+#: app/static/app/js/components/modelview/VRControls.js:343
 msgid "Circle"
 msgstr ""
 
@@ -3013,421 +3020,196 @@ msgid ""
 msgstr ""
 
 #: app/static/app/js/components/modelview/SettingsWindow.jsx:218
-#: app/static/app/js/components/modelview/Toolbar.jsx:275
+#: app/static/app/js/components/modelview/Toolbar.jsx:282
 msgid "Settings"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:129
+#: app/static/app/js/components/modelview/Toolbar.jsx:130
 msgid "Earth"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:132
+#: app/static/app/js/components/modelview/Toolbar.jsx:133
 msgid "Fly"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:135
-#: app/static/app/js/components/modelview/VRControls.js:298
+#: app/static/app/js/components/modelview/Toolbar.jsx:136
+#: app/static/app/js/components/modelview/VRControls.js:332
 msgid "Walk"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:139
+#: app/static/app/js/components/modelview/Toolbar.jsx:140
 msgid "Viewpoint"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:142
-#: app/static/app/js/components/modelview/Toolbar.jsx:144
+#: app/static/app/js/components/modelview/Toolbar.jsx:143
+#: app/static/app/js/components/modelview/Toolbar.jsx:145
 msgid "Reorient"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:158
+#: app/static/app/js/components/modelview/Toolbar.jsx:165
 msgid "Classification"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:163
+#: app/static/app/js/components/modelview/Toolbar.jsx:170
 msgid "X-ray"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:180
-#: app/static/app/js/components/modelview/Toolbar.jsx:181
-#: app/static/app/js/components/modelview/VRControls.js:305
+#: app/static/app/js/components/modelview/Toolbar.jsx:187
+#: app/static/app/js/components/modelview/Toolbar.jsx:188
+#: app/static/app/js/components/modelview/VRControls.js:339
 #: coreplugins/annotate/public/Toolbox.jsx:1024
 #: coreplugins/annotate/public/Toolbox.jsx:1180
 msgid "Point"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:186
-#: app/static/app/js/components/modelview/Toolbar.jsx:187
-#: app/static/app/js/components/modelview/VRControls.js:308
+#: app/static/app/js/components/modelview/Toolbar.jsx:193
+#: app/static/app/js/components/modelview/Toolbar.jsx:194
+#: app/static/app/js/components/modelview/VRControls.js:342
 msgid "Angle"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:192
-#: app/static/app/js/components/modelview/Toolbar.jsx:193
-#: app/static/app/js/components/modelview/VRControls.js:311
+#: app/static/app/js/components/modelview/Toolbar.jsx:199
+#: app/static/app/js/components/modelview/Toolbar.jsx:200
+#: app/static/app/js/components/modelview/VRControls.js:345
 msgid "Perpendicular distance"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:194
-#: app/static/app/js/components/modelview/VRControls.js:312
+#: app/static/app/js/components/modelview/Toolbar.jsx:201
+#: app/static/app/js/components/modelview/VRControls.js:346
 #, fuzzy
 #| msgid "Surface Model"
 msgid "Surface area"
 msgstr "Ytmodel"
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:200
+#: app/static/app/js/components/modelview/Toolbar.jsx:207
 msgid "Height profile"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:214
+#: app/static/app/js/components/modelview/Toolbar.jsx:221
 #, fuzzy
 #| msgid "Cameras"
 msgid "Camera"
 msgstr "Kameror"
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:216
+#: app/static/app/js/components/modelview/Toolbar.jsx:223
 msgid "Point of View"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:219
-#: app/static/app/js/components/modelview/Toolbar.jsx:225
+#: app/static/app/js/components/modelview/Toolbar.jsx:226
+#: app/static/app/js/components/modelview/Toolbar.jsx:232
 #, python-format
 msgid "View %(num)s"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:230
+#: app/static/app/js/components/modelview/Toolbar.jsx:237
 msgid "Video animation"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:233
+#: app/static/app/js/components/modelview/Toolbar.jsx:240
 msgid "Camera Animation"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:241
+#: app/static/app/js/components/modelview/Toolbar.jsx:248
 msgid "Clipping"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:243
-#: app/static/app/js/components/modelview/Toolbar.jsx:244
+#: app/static/app/js/components/modelview/Toolbar.jsx:250
+#: app/static/app/js/components/modelview/Toolbar.jsx:251
 msgid "Clip box"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:245
-#: app/static/app/js/components/modelview/Toolbar.jsx:248
+#: app/static/app/js/components/modelview/Toolbar.jsx:252
+#: app/static/app/js/components/modelview/Toolbar.jsx:255
 msgid "Clip polygon"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:250
+#: app/static/app/js/components/modelview/Toolbar.jsx:257
 msgid "Highlight"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:253
+#: app/static/app/js/components/modelview/Toolbar.jsx:260
 msgid "Clip In"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:256
+#: app/static/app/js/components/modelview/Toolbar.jsx:263
 msgid "Clip Out"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:259
+#: app/static/app/js/components/modelview/Toolbar.jsx:266
 msgid "Remove all clips"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:265
+#: app/static/app/js/components/modelview/Toolbar.jsx:272
 msgid "Layer List"
 msgstr ""
 
-#: app/static/app/js/components/modelview/Toolbar.jsx:270
+#: app/static/app/js/components/modelview/Toolbar.jsx:277
 msgid "Action history"
 msgstr ""
 
-#: app/static/app/js/components/modelview/VRControls.js:298
+#: app/static/app/js/components/modelview/VRControls.js:332
 #, fuzzy
 #| msgid "Show Model"
 msgid "Mode"
 msgstr "Visa model"
 
-#: app/static/app/js/components/modelview/VRControls.js:298
+#: app/static/app/js/components/modelview/VRControls.js:332
 msgid "Tabletop"
 msgstr ""
 
-#: app/static/app/js/components/modelview/VRControls.js:299
+#: app/static/app/js/components/modelview/VRControls.js:333
 #, fuzzy
 #| msgid "Show Model"
 msgid "Model"
 msgstr "Visa model"
 
-#: app/static/app/js/components/modelview/VRControls.js:300
+#: app/static/app/js/components/modelview/VRControls.js:334
 msgid "Units"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:3
 #, python-format
 msgid ""
-"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
-"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
-"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
-"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
-"Default: %(default)s"
+"Simple Morphological Filter slope parameter (rise over run). Default: "
+"%(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:4
-#, python-format
-msgid ""
-"Filters the point cloud by removing points that deviate more than N standard "
-"deviations from the local mean. Set to 0 to disable filtering. Default: "
-"%(default)s"
+msgid "Displays version number and exits. "
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:5
 #, python-format
-msgid ""
-"Name of dataset (i.e subfolder name within project folder). Default: "
-"%(default)s"
+msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:6
 #, python-format
 msgid ""
-"Automatically compute image masks using AI to remove the sky. Experimental. "
-"Default: %(default)s"
+"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
+"%(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:7
 #, python-format
 msgid ""
-"Set feature extraction quality. Higher quality generates better features, "
-"but requires more memory and takes longer. Can be one of: %(choices)s. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:8
-msgid ""
-"Permanently delete all previous results and rerun the processing pipeline."
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:9
-#, python-format
-msgid ""
-"Automatically crop image outputs by creating a smooth buffer around the "
-"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:10
-msgid ""
-"Path to the project folder. Your project folder should contain subfolders "
-"for each dataset. Each dataset should have an \"images\" folder."
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:11
-#, python-format
-msgid ""
-"Geometric estimates improve the accuracy of the point cloud by computing "
-"geometrically consistent depthmaps but may not be usable in larger datasets. "
-"This flag disables geometric estimates. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:12
-msgid "show this help message and exit"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:13
-#, python-format
-msgid ""
 "Export the georeferenced point cloud in LAS format. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:14
-#, python-format
-msgid ""
-"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:15
-#, python-format
-msgid ""
-"Set a camera projection type. Manually setting a value can help improve "
-"geometric undistortion. By default the application tries to determine a lens "
-"type from the images metadata. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:16
-#, python-format
-msgid ""
-"Do not attempt to merge partial reconstructions. This can happen when images "
-"do not have sufficient overlap or are isolated. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:17
-msgid "Copy output results to this folder after processing."
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:18
-#, python-format
-msgid ""
-"Do not use GPU acceleration, even if it's available. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:19
-#, python-format
-msgid "The maximum vertex count of the output mesh. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:20
-#, python-format
-msgid ""
-"Maximum number of frames to extract from video files for processing. Set to "
-"0 for no limit. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:21
-#, python-format
-msgid ""
-"Radius of the overlap between submodels in meters. After grouping images "
-"into clusters, images that are closer than this radius to a cluster are "
-"added to the cluster. This is done to ensure that neighboring submodels "
-"overlap. All imagesneed GPS information. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:22
-#, python-format
-msgid ""
-"Automatically compute image masks using AI to remove the background. "
-"Experimental. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:23
-#, python-format
-msgid ""
-"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
-"very large datasets. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:24
-#, python-format
-msgid ""
-"Skip generation of the orthophoto. This can save time if you only need 3D "
-"results or DEMs. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:25
-#, python-format
-msgid ""
-"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
-"simple morphological filter. Check the --dem* and --smrf* parameters for "
-"finer tuning. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:26
-#, python-format
-msgid ""
-"Delete heavy intermediate files to optimize disk space usage. This affects "
-"the ability to restart the pipeline from an intermediate stage, but allows "
-"datasets to be processed on machines that don't have sufficient disk space "
-"available. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:27
-#, python-format
-msgid ""
-"When processing multispectral datasets, automatically align the images for "
-"each band. If the images have been postprocessed and are already aligned, "
-"use this option. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:28
-#, python-format
-msgid ""
-"Skip generation of PDF report. This can save time if you don't need a "
-"report. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:29
-#, python-format
-msgid ""
-"Skip normalization of colors across all images. Useful when processing "
-"radiometric data. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:30
+#: app/static/app/js/translations/odm_autogenerated.js:8
 #, python-format
 msgid ""
 "Export the georeferenced point cloud in Entwine Point Tile (EPT) format. "
 "Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:31
+#: app/static/app/js/translations/odm_autogenerated.js:9
 #, python-format
 msgid ""
-"Filters the point cloud by keeping only a single point around a radius N (in "
-"meters). This can be useful to limit the output resolution of the point "
-"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
-"%(default)s"
+"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:32
-#, python-format
-msgid ""
-"Choose the algorithm for extracting keypoints and computing descriptors. Can "
-"be one of: %(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:33
-#, python-format
-msgid ""
-"When processing multispectral datasets, you can specify the name of the "
-"primary band that will be used for reconstruction. It's recommended to "
-"choose a band which has sharp details and is in focus. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:34
-#, python-format
-msgid ""
-"Set point cloud quality. Higher quality generates better, denser point "
-"clouds, but requires more memory and takes longer. Each step up in quality "
-"increases processing time roughly by a factor of 4x.Can be one of: "
-"%(choices)s. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:35
-#, python-format
-msgid ""
-"Set the units of the PDF report. By default the vertical units of the "
-"coordinate reference system are used. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:36
-#, python-format
-msgid ""
-"Turn on rolling shutter correction. If the camera has a rolling shutter and "
-"the images were taken in motion, you can turn on this option to improve the "
-"accuracy of the results. See also --rolling-shutter-readout. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:37
-#, python-format
-msgid ""
-"Path to the image geolocation file containing the camera center coordinates "
-"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
-"set them to 0. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
-"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
-"(meters)]Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:38
-#, python-format
-msgid ""
-"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
-"a progressive morphological filter. Check the --dem* parameters for finer "
-"tuning. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:39
+#: app/static/app/js/translations/odm_autogenerated.js:10
 #, python-format
 msgid ""
 "Turn off camera parameter optimization during bundle adjustment. This can be "
@@ -3435,47 +3217,27 @@ msgid ""
 "images are taken with a rolling shutter camera. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:40
+#: app/static/app/js/translations/odm_autogenerated.js:11
 #, python-format
 msgid ""
-"Minimum number of features to extract per image. More features can be useful "
-"for finding more matches between images, potentially allowing the "
-"reconstruction of areas with little overlap or insufficient features. More "
-"features also slow down processing. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:41
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation threshold parameter (meters). Default: "
+"Rerun this stage only and stop. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:42
-#, python-format
-msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+#: app/static/app/js/translations/odm_autogenerated.js:12
+msgid ""
+"Permanently delete all previous results and rerun the processing pipeline."
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:43
+#: app/static/app/js/translations/odm_autogenerated.js:13
 #, python-format
 msgid ""
-"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
-"relative to the default behavior if set to true. Ordinarily, GSD estimates "
-"are used to cap the maximum resolution of image outputs and resizes images "
-"when necessary, resulting in faster processing and lower memory usage. Since "
-"GSD is an estimate, sometimes ignoring it can result in slightly better "
-"image output quality. Never set --ignore-gsd to true unless you are positive "
-"you need it, and even then: do not use it. Default: %(default)s"
+"Generates a polygon around the cropping area that cuts the orthophoto around "
+"the edges of features. This polygon can be useful for stitching seamless "
+"mosaics with multiple overlapping orthophotos. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:44
-#, python-format
-msgid ""
-"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
-"sampling distance (GSD) estimate. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:45
+#: app/static/app/js/translations/odm_autogenerated.js:14
 #, python-format
 msgid ""
 "Set the radiometric calibration to perform on images. When processing "
@@ -3489,275 +3251,67 @@ msgid ""
 "the sun. Can be one of: %(choices)s. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:46
+#: app/static/app/js/translations/odm_autogenerated.js:15
 #, python-format
 msgid ""
-"Set this parameter if you want to generate a PNG rendering of the "
-"orthophoto. Default: %(default)s"
+"Use this tag to build a DTM (Digital Terrain Model, ground only) using a "
+"simple morphological filter. Check the --dem* and --smrf* parameters for "
+"finer tuning. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:47
+#: app/static/app/js/translations/odm_autogenerated.js:16
 #, python-format
 msgid ""
-"Path to the image groups file that controls how images should be split into "
-"groups. The file needs to use the following format: image_name "
-"group_nameDefault: %(default)s"
+"Generate OBJs that have a single material and a single texture file instead "
+"of multiple ones. Default:  %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:48
+#: app/static/app/js/translations/odm_autogenerated.js:17
 #, python-format
 msgid ""
-"Classify the point cloud outputs. You can control the behavior of this "
-"option by tweaking the --dem-* parameters. Default: %(default)s"
+"Minimum number of features to extract per image. More features can be useful "
+"for finding more matches between images, potentially allowing the "
+"reconstruction of areas with little overlap or insufficient features. More "
+"features also slow down processing. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:49
+#: app/static/app/js/translations/odm_autogenerated.js:18
 #, python-format
 msgid ""
-"Choose the structure from motion algorithm. For aerial datasets, if camera "
-"GPS positions and angles are available, triangulation can be faster. Planar "
-"is deprecated and will be removed in a future version. Can be one of: "
-"%(choices)s. Default: %(default)s"
+"Use this tag to build a DSM (Digital Surface Model, ground + objects) using "
+"a progressive morphological filter. Check the --dem* parameters for finer "
+"tuning. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:50
-#, python-format
-msgid ""
-"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
-"either as path to a GeoJSON file or as a JSON string representing the "
-"contents of a GeoJSON file. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:51
-#, python-format
-msgid ""
-"Keep faces in the mesh that are not seen in any camera. Default:  %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:52
-#, python-format
-msgid ""
-"Export the georeferenced point cloud in CSV format. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:53
-#, python-format
-msgid ""
-"Specify the distance between camera shot locations and the outer edge of the "
-"boundary when computing the boundary with --auto-boundary. Set to 0 to "
-"automatically choose a value. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:54
-#, python-format
-msgid ""
-"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
-"the orthophoto. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:55
-#, python-format
-msgid ""
-"Perform image matching with the nearest images based on GPS exif data. Set "
-"to 0 to match by triangulation. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:56
-#, python-format
-msgid ""
-"Simple Morphological Filter slope parameter (rise over run). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:57
-#, python-format
-msgid ""
-"Rerun processing from this stage. Can be one of: %(choices)s. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:58
-#, python-format
-msgid ""
-"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
-"outputs should be automatically aligned to. Experimental. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:59
-#, python-format
-msgid ""
-"Generates a polygon around the cropping area that cuts the orthophoto around "
-"the edges of features. This polygon can be useful for stitching seamless "
-"mosaics with multiple overlapping orthophotos. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:60
-#, python-format
-msgid ""
-"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:61
-msgid "Displays version number and exits. "
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:62
-#, python-format
-msgid ""
-"Computes an euclidean raster map for each DEM. The map reports the distance "
-"from each cell to the nearest NODATA value (before any hole filling takes "
-"place). This can be useful to isolate the areas that have been filled. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:63
-#, python-format
-msgid ""
-"Skip generation of a full 3D model. This can save time if you only need 2D "
-"results such as orthophotos and DEMs. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:64
-#, python-format
-msgid ""
-"Use this tag if you have a GCP File but want to use the EXIF information for "
-"georeferencing instead. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:65
+#: app/static/app/js/translations/odm_autogenerated.js:19
 #, python-format
 msgid ""
 "URL to a ClusterODM instance for distributing a split-merge workflow on "
 "multiple nodes in parallel. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:66
+#: app/static/app/js/translations/odm_autogenerated.js:20
 #, python-format
 msgid ""
-"The maximum output resolution of extracted video frames in pixels. Default: "
-"%(default)s"
+"Path to the image geolocation file containing the camera center coordinates "
+"used for georeferencing. If you don't have values for yaw/pitch/roll you can "
+"set them to 0. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>image_name geo_x geo_y geo_z [yaw (degrees)] [pitch "
+"(degrees)] [roll (degrees)] [horz accuracy (meters)] [vert accuracy "
+"(meters)]Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:67
+#: app/static/app/js/translations/odm_autogenerated.js:21
 #, python-format
 msgid ""
-"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
-"altitude value of the GPS EXIF data. This does not change the value of any "
-"GCPs. This can be useful for example when adjusting from ellipsoidal to "
-"orthometric height. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:68
-#, python-format
-msgid ""
-"Average number of images per submodel. When splitting a large dataset into "
-"smaller submodels, images are grouped into clusters. This value regulates "
-"the number of images that each cluster should have on average. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:69
-#, python-format
-msgid ""
-"Perform image matching with the nearest N images based on image filename "
-"order. Can speed up processing of sequential images, such as those extracted "
-"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
-"disable. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:70
-#, python-format
-msgid ""
-"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:71
-#, python-format
-msgid ""
-"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
-"filling. Starting with a radius equal to the output resolution, N different "
-"DEMs are generated with progressively bigger radius using the inverse "
-"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
-"then merged using nearest neighbor interpolation. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:72
-#, python-format
-msgid ""
-"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Matcher algorithm, Fast Library for Approximate Nearest Neighbors or Bag of "
+"Words. FLANN is slower, but more stable. BOW is faster, but can sometimes "
+"miss valid matches. BRUTEFORCE is very slow but robust. HAMMING is much "
+"faster with large datasets but requires a GPU.Can be one of: %(choices)s. "
 "Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:73
-#, python-format
-msgid ""
-"Skips dense reconstruction and 3D model generation. It generates an "
-"orthophoto directly from the sparse reconstruction. On flat terrain with no "
-"objects/structures, turn this on to save time. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:74
-#, python-format
-msgid ""
-"Simple Morphological Filter window radius parameter (meters). Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:75
-#, python-format
-msgid ""
-"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:76
-#, python-format
-msgid ""
-"Octree depth used in the mesh reconstruction, increase to get more vertices, "
-"recommended values are 8-12. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:77
-#, python-format
-msgid ""
-"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
-"option is a bit faster and provides similar results in planar areas. "
-"Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:78
-#, python-format
-msgid ""
-"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
-"like Leaflet or OpenLayers. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:79
-#, python-format
-msgid ""
-"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
-"ground sampling distance (GSD) estimate.Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:80
-#, python-format
-msgid ""
-"Run local bundle adjustment for every image added to the reconstruction and "
-"a global adjustment every 100 images. Speeds up reconstruction for very "
-"large datasets. Default: %(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:81
-#, python-format
-msgid ""
-"Use the camera parameters computed from another dataset instead of "
-"calculating them. Can be specified either as path to a cameras.json file or "
-"as a JSON string representing the contents of a cameras.json file. Default: "
-"%(default)s"
-msgstr ""
-
-#: app/static/app/js/translations/odm_autogenerated.js:82
+#: app/static/app/js/translations/odm_autogenerated.js:22
 #, python-format
 msgid ""
 "Set a value in meters for the GPS Dilution of Precision (DOP) information "
@@ -3768,45 +3322,388 @@ msgid ""
 "areas. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:83
+#: app/static/app/js/translations/odm_autogenerated.js:23
 #, python-format
 msgid ""
-"Path to the file containing the ground control points used for "
-"georeferencing. The file needs to use the following format: EPSG:<code> or "
-"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
-"[extra2]Default: %(default)s"
+"Skips dense reconstruction and 3D model generation. It generates an "
+"orthophoto directly from the sparse reconstruction. On flat terrain with no "
+"objects/structures, turn this on to save time. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:84
+#: app/static/app/js/translations/odm_autogenerated.js:24
 #, python-format
 msgid ""
-"Generate OBJs that have a single material and a single texture file instead "
-"of multiple ones. Default:  %(default)s"
+"Skip generation of PDF report. This can save time if you don't need a "
+"report. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:85
+#: app/static/app/js/translations/odm_autogenerated.js:25
 #, python-format
 msgid ""
-"Use images' GPS exif data for reconstruction, even if there are GCPs present."
-"This flag is useful if you have high precision GPS measurements. If there "
-"are no GCPs, this flag does nothing. Default: %(default)s"
+"Skip generation of the orthophoto. This can save time if you only need 3D "
+"results or DEMs. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:86
+#: app/static/app/js/translations/odm_autogenerated.js:26
 #, python-format
 msgid ""
-"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
-"format. Default: %(default)s"
+"Perform image matching with the nearest N images based on image filename "
+"order. Can speed up processing of sequential images, such as those extracted "
+"from video. It is applied only on non-georeferenced datasets. Set to 0 to "
+"disable. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:87
+#: app/static/app/js/translations/odm_autogenerated.js:27
+#, python-format
+msgid ""
+"Radius of the overlap between submodels in meters. After grouping images "
+"into clusters, images that are closer than this radius to a cluster are "
+"added to the cluster. This is done to ensure that neighboring submodels "
+"overlap. All imagesneed GPS information. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:28
+#, python-format
+msgid ""
+"Specify the distance between camera shot locations and the outer edge of the "
+"boundary when computing the boundary with --auto-boundary. Set to 0 to "
+"automatically choose a value. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:29
+#, python-format
+msgid ""
+"Export the georeferenced point cloud in CSV format. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:30
+#, python-format
+msgid ""
+"Set the compression to use for orthophotos. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:31
+#, python-format
+msgid ""
+"Perform image matching with the nearest images based on GPS exif data. Set "
+"to 0 to match by triangulation. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:32
+#, python-format
+msgid ""
+"Use this tag if you have a GCP File but want to use the EXIF information for "
+"georeferencing instead. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:33
+#, python-format
+msgid ""
+"DSM/DTM resolution in cm / pixel. Note that this value is capped by a ground "
+"sampling distance (GSD) estimate. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:34
+#, python-format
+msgid ""
+"Turn on rolling shutter correction. If the camera has a rolling shutter and "
+"the images were taken in motion, you can turn on this option to improve the "
+"accuracy of the results. See also --rolling-shutter-readout. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:35
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a Google Earth (KMZ) rendering of "
+"the orthophoto. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:36
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the background. "
+"Experimental. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:37
+#, python-format
+msgid ""
+"Number of steps used to fill areas with gaps. Set to 0 to disable gap "
+"filling. Starting with a radius equal to the output resolution, N different "
+"DEMs are generated with progressively bigger radius using the inverse "
+"distance weighted (IDW) algorithm and merged together. Remaining gaps are "
+"then merged using nearest neighbor interpolation. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:38
+#, python-format
+msgid ""
+"Average number of images per submodel. When splitting a large dataset into "
+"smaller submodels, images are grouped into clusters. This value regulates "
+"the number of images that each cluster should have on average. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:39
 #, python-format
 msgid ""
 "End processing at this stage. Can be one of: %(choices)s. Default: "
 "%(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:88
+#: app/static/app/js/translations/odm_autogenerated.js:40
+#, python-format
+msgid ""
+"Do not use GPU acceleration, even if it's available. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:41
+#, python-format
+msgid ""
+"Simple Morphological Filter window radius parameter (meters). Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:42
+#, python-format
+msgid ""
+"Computes an euclidean raster map for each DEM. The map reports the distance "
+"from each cell to the nearest NODATA value (before any hole filling takes "
+"place). This can be useful to isolate the areas that have been filled. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:43
+#, python-format
+msgid ""
+"Name of dataset (i.e subfolder name within project folder). Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:44
+#, python-format
+msgid ""
+"Set the units of the PDF report. By default the vertical units of the "
+"coordinate reference system are used. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:45
+#, python-format
+msgid ""
+"Delete heavy intermediate files to optimize disk space usage. This affects "
+"the ability to restart the pipeline from an intermediate stage, but allows "
+"datasets to be processed on machines that don't have sufficient disk space "
+"available. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:46
+#, python-format
+msgid ""
+"Set this parameter if you want to generate a PNG rendering of the "
+"orthophoto. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:47
+#, python-format
+msgid ""
+"Set feature extraction quality. Higher quality generates better features, "
+"but requires more memory and takes longer. Can be one of: %(choices)s. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:48
+#, python-format
+msgid "Set this parameter if you want a striped GeoTIFF. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:49
+#, python-format
+msgid ""
+"Ignore Ground Sampling Distance (GSD).A memory and processor hungry change "
+"relative to the default behavior if set to true. Ordinarily, GSD estimates "
+"are used to cap the maximum resolution of image outputs and resizes images "
+"when necessary, resulting in faster processing and lower memory usage. Since "
+"GSD is an estimate, sometimes ignoring it can result in slightly better "
+"image output quality. Never set --ignore-gsd to true unless you are positive "
+"you need it, and even then: do not use it. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:50
+#, python-format
+msgid "The maximum vertex count of the output mesh. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:51
+#, python-format
+msgid ""
+"The maximum number of processes to use in various processes. Peak memory "
+"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:52
+#, python-format
+msgid ""
+"Orthophoto resolution in cm / pixel. Note that this value is capped by a "
+"ground sampling distance (GSD) estimate.Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:53
+#, python-format
+msgid ""
+"Filters the point cloud by removing points that deviate more than N standard "
+"deviations from the local mean. Set to 0 to disable filtering. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:54
+msgid ""
+"Path to the project folder. Your project folder should contain subfolders "
+"for each dataset. Each dataset should have an \"images\" folder."
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:55
+#, python-format
+msgid ""
+"Automatically set a boundary using camera shot locations to limit the area "
+"of the reconstruction. This can help remove far away background artifacts "
+"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:56
+#, python-format
+msgid ""
+"The maximum output resolution of extracted video frames in pixels. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:57
+#, python-format
+msgid ""
+"Skip alignment of submodels in split-merge. Useful if GPS is good enough on "
+"very large datasets. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:58
+#, python-format
+msgid ""
+"Generate static tiles for orthophotos and DEMs that are suitable for viewers "
+"like Leaflet or OpenLayers. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:59
+#, python-format
+msgid ""
+"When processing multispectral datasets, automatically align the images for "
+"each band. If the images have been postprocessed and are already aligned, "
+"use this option. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:60
+#, python-format
+msgid ""
+"Do not attempt to merge partial reconstructions. This can happen when images "
+"do not have sufficient overlap or are isolated. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:61
+#, python-format
+msgid ""
+"Automatically crop image outputs by creating a smooth buffer around the "
+"dataset boundaries, shrunk by N meters. Use 0 to disable cropping. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:62
+#, python-format
+msgid ""
+"Classify the point cloud outputs. You can control the behavior of this "
+"option by tweaking the --dem-* parameters. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:63
+#, python-format
+msgid ""
+"Use a full 3D mesh to compute the orthophoto instead of a 2.5D mesh. This "
+"option is a bit faster and provides similar results in planar areas. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:64
+msgid "show this help message and exit"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:65
+#, python-format
+msgid ""
+"GeoJSON polygon limiting the area of the reconstruction. Can be specified "
+"either as path to a GeoJSON file or as a JSON string representing the "
+"contents of a GeoJSON file. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:66
+#, python-format
+msgid ""
+"Skip generation of a full 3D model. This can save time if you only need 2D "
+"results such as orthophotos and DEMs. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:67
+#, python-format
+msgid ""
+"Filters the point cloud by keeping only a single point around a radius N (in "
+"meters). This can be useful to limit the output resolution of the point "
+"cloud and remove duplicate points. Set to 0 to disable sampling. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:68
+#, python-format
+msgid ""
+"Octree depth used in the mesh reconstruction, increase to get more vertices, "
+"recommended values are 8-12. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:69
+#, python-format
+msgid ""
+"Set point cloud quality. Higher quality generates better, denser point "
+"clouds, but requires more memory and takes longer. Each step up in quality "
+"increases processing time roughly by a factor of 4x.Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:70
+#, python-format
+msgid ""
+"Save the georeferenced point cloud in Cloud Optimized Point Cloud (COPC) "
+"format. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:71
+#, python-format
+msgid ""
+"Automatically compute image masks using AI to remove the sky. Experimental. "
+"Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:72
+#, python-format
+msgid ""
+"Generate single file Binary glTF (GLB) textured models. Default:  %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:73
+#, python-format
+msgid ""
+"Maximum number of frames to extract from video files for processing. Set to "
+"0 for no limit. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:74
 #, python-format
 msgid ""
 "Decimate the points before generating the DEM. 1 is no decimation (full "
@@ -3814,7 +3711,57 @@ msgid ""
 "generation of DEM results in very large datasets. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:89
+#: app/static/app/js/translations/odm_autogenerated.js:75
+#, python-format
+msgid ""
+"Run local bundle adjustment for every image added to the reconstruction and "
+"a global adjustment every 100 images. Speeds up reconstruction for very "
+"large datasets. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:76
+#, python-format
+msgid ""
+"Path to a GeoTIFF DEM or a LAS/LAZ point cloud that the reconstruction "
+"outputs should be automatically aligned to. Experimental. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:77
+#, python-format
+msgid ""
+"Set a camera projection type. Manually setting a value can help improve "
+"geometric undistortion. By default the application tries to determine a lens "
+"type from the images metadata. Can be one of: %(choices)s. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:78
+#, python-format
+msgid ""
+"Path to the image groups file that controls how images should be split into "
+"groups. The file needs to use the following format: image_name "
+"group_nameDefault: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:79
+#, python-format
+msgid ""
+"Use the camera parameters computed from another dataset instead of "
+"calculating them. Can be specified either as path to a cameras.json file or "
+"as a JSON string representing the contents of a cameras.json file. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:80
+#, python-format
+msgid ""
+"Geometric estimates improve the accuracy of the point cloud by computing "
+"geometrically consistent depthmaps but may not be usable in larger datasets. "
+"This flag disables geometric estimates. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:81
 #, python-format
 msgid ""
 "Override the rolling shutter readout time for your camera sensor (in "
@@ -3823,32 +3770,92 @@ msgid ""
 "database value. Default: %(default)s"
 msgstr ""
 
+#: app/static/app/js/translations/odm_autogenerated.js:82
+msgid "Copy output results to this folder after processing."
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:83
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation threshold parameter (meters). Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:84
+#, python-format
+msgid ""
+"Choose the algorithm for extracting keypoints and computing descriptors. Can "
+"be one of: %(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:85
+#, python-format
+msgid ""
+"Simple Morphological Filter elevation scalar parameter. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:86
+#, python-format
+msgid ""
+"Create Cloud-Optimized GeoTIFFs instead of normal GeoTIFFs. Default: "
+"%(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:87
+#, python-format
+msgid ""
+"Set a GPS offset in meters for the vertical axis (Z) by adding it to the "
+"altitude value of the GPS EXIF data. This does not change the value of any "
+"GCPs. This can be useful for example when adjusting from ellipsoidal to "
+"orthometric height. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:88
+#, python-format
+msgid ""
+"Choose the structure from motion algorithm. For aerial datasets, if camera "
+"GPS positions and angles are available, triangulation can be faster. Planar "
+"is deprecated and will be removed in a future version. Can be one of: "
+"%(choices)s. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:89
+#, python-format
+msgid ""
+"When processing multispectral datasets, you can specify the name of the "
+"primary band that will be used for reconstruction. It's recommended to "
+"choose a band which has sharp details and is in focus. Default: %(default)s"
+msgstr ""
+
 #: app/static/app/js/translations/odm_autogenerated.js:90
+#, python-format
+msgid ""
+"Skip normalization of colors across all images. Useful when processing "
+"radiometric data. Default: %(default)s"
+msgstr ""
+
+#: app/static/app/js/translations/odm_autogenerated.js:91
 #, python-format
 msgid ""
 "Choose what to merge in the merge step in a split dataset. By default all "
 "available outputs are merged. Options: %(choices)s. Default: %(default)s"
 msgstr ""
 
-#: app/static/app/js/translations/odm_autogenerated.js:91
-#, python-format
-msgid ""
-"The maximum number of processes to use in various processes. Peak memory "
-"requirement is ~1GB per thread and 2 megapixel image resolution. Default: "
-"%(default)s"
-msgstr ""
-
 #: app/static/app/js/translations/odm_autogenerated.js:92
 #, python-format
-msgid "Generate OGC 3D Tiles outputs. Default: %(default)s"
+msgid ""
+"Use images' GPS exif data for reconstruction, even if there are GCPs present."
+"This flag is useful if you have high precision GPS measurements. If there "
+"are no GCPs, this flag does nothing. Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/odm_autogenerated.js:93
 #, python-format
 msgid ""
-"Automatically set a boundary using camera shot locations to limit the area "
-"of the reconstruction. This can help remove far away background artifacts "
-"(sky, background landscapes, etc.). See also --boundary. Default: %(default)s"
+"Path to the file containing the ground control points used for "
+"georeferencing. The file needs to use the following format: EPSG:<code> or "
+"<+proj definition>geo_x geo_y geo_z im_x im_y image_name [gcp_name] [extra1] "
+"[extra2]Default: %(default)s"
 msgstr ""
 
 #: app/static/app/js/translations/plugin_manifest_autogenerated.js:3
